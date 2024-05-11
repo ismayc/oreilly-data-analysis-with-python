@@ -5,33 +5,32 @@
 To help your students get their local machines set up for using Jupyter Notebooks along with pandas, matplotlib, seaborn, and plotly, you can provide the following step-by-step instructions. These will guide them through the installation of Python, necessary libraries, and setting up their development environment.
 
 ### Step 1: Install Python
-1. **Download Python**: Go to the [official Python website](https://www.python.org/downloads/) and download the latest version of Python for your operating system (Windows, macOS, or Linux).
-2. **Install Python**: Run the downloaded installer. Ensure that you check the box that says "Add Python to PATH" before clicking "Install Now."
+- **Download Python**: Go to the [official Python website](https://www.python.org/downloads/) and download the latest version of Python for your operating system (Windows, macOS, or Linux).
 
 ### Step 2: Install Jupyter Notebook
-1. **Open your command prompt (Windows) or terminal (macOS/Linux)**.
-2. **Install Jupyter using pip**:
+- **Open your command prompt (Windows) or terminal (macOS/Linux)**.
+- **Install Jupyter using pip**:
    ```bash
    pip install notebook
    ```
 
 ### Step 3: Install Required Libraries
-1. **Install pandas, matplotlib, seaborn, and plotly**:
+- **Install pandas, matplotlib, seaborn, and plotly**:
    ```bash
    pip install pandas matplotlib seaborn plotly
    ```
 
 ### Step 4: Launch Jupyter Notebook
-1. **Open your command prompt or terminal**.
-2. **Run Jupyter Notebook**:
+- **Open your command prompt or terminal**.
+- **Run Jupyter Notebook**:
    ```bash
    jupyter notebook
    ```
    This command will open Jupyter Notebook in your default web browser.
 
 ### Step 5: Verify Installation
-1. **Create a new notebook**: In the Jupyter Notebook interface, click on "New" and select "Python 3" to open a new notebook.
-2. **Test the installation of the libraries**:
+- **Create a new notebook**: In the Jupyter Notebook interface, click on "New" and select "Python 3" to open a new notebook.
+- **Test the installation of the libraries**:
    - Import the libraries in the first cell of your notebook:
      ```python
      import pandas as pd
