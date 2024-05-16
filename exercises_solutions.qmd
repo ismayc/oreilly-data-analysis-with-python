@@ -31,9 +31,9 @@ import plotly.express as px
 
 ## Exercise #1: Setting Up the Python Environment
 
-By completing this exercise, you will be able to
-- Import necessary Python packages
-- Check for successful package loading
+By completing this exercise, you will be able to  
+- Import necessary Python packages  
+- Check for successful package loading  
 
 
 Follow the instructions above in Walkthrough #1 to check for correct installation 
@@ -86,9 +86,9 @@ economies.dtypes
 
 ## Exercise #2: Loading and Inspecting Data with Pandas
 
-By completing this exercise, you will be able to use `pandas` to 
-- Import data from a CSV or from an Excel file
-- Perform an initial exploration of the data
+By completing this exercise, you will be able to use `pandas` to  
+- Import data from a CSV or from an Excel file   
+- Perform an initial exploration of the data  
 
 ```{python}
 # Load the populations data from an Excel file
@@ -100,8 +100,6 @@ By completing this exercise, you will be able to use `pandas` to
 ```
 
 ```{python}
-# SOLUTION
-
 # Load the populations data from an Excel file
 populations = pd.read_excel("populations.xlsx")
 
@@ -120,13 +118,6 @@ populations.dtypes
 
 
 ## Walkthrough #3: Cleaning and Preparing Data with Pandas
-
-By completing this exercise, you will be able to use `pandas` to  
-- Handle missing data  
-- Convert a column to a different data type   
-- Rename a column  
-- Change a DataFrame’s index  
-- Filter a DataFrame  
 
 ### Handle missing data
 
@@ -264,6 +255,108 @@ top_gdp_2010_2015.head()
 
 ## Exercise #3: Cleaning and Preparing Data with Pandas
 
+By completing this exercise, you will be able to use `pandas` to  
+- Handle missing data  
+- Convert a column to a different data type   
+- Rename a column  
+- Change a DataFrame’s index  
+- Filter a DataFrame  
+
+### Handle Missing Data
+
+#### Remove rows
+
+```{python}
+# Remove rows with any missing values
+populations_cleaned_any = populations.dropna(how='any')
+populations_cleaned_any
+```
+
+```{python}
+# Remove rows only if all values are missing
+populations_cleaned_all = populations.dropna(how='all')
+populations_cleaned_all
+```
+
+```{python}
+# Remove rows with missing values in specific columns
+populations_cleaned_subset = populations.dropna(subset=['fertility_rate', 'life_expectancy'])
+populations_cleaned_subset
+```
+
+#### Remove columns
+
+```{python}
+# Remove columns with any missing values
+populations_no_missing_columns = populations.dropna(axis=1)
+populations_no_missing_columns.head()
+```
+
+#### Replace missing values with specific value
+
+```{python}
+# Replace missing values with a specific value (e.g., 0 for numerical columns, 
+# 'Unknown' for categorical columns)
+populations_fill_value = populations.fillna({
+    'fertility_rate': 0,
+    'life_expectancy': 0,
+    'size': 0,
+    'continent': 'Unknown',
+    'region': 'Unknown'
+})
+
+populations_fill_value.head()
+```
+
+### Convert a Column to a Different Data Type and Rename a Column
+
+#### Convert a Column to a Different Data Type
+
+```{python}
+# Convert the 'year' column to string type
+populations['year'] = populations['year'].astype(str)
+populations.dtypes
+```
+
+#### Rename a Column
+
+```{python}
+# Rename the 'fertility_rate' column to 'fertility'
+populations_renamed = populations.rename(columns={'fertility_rate': 'fertility'})
+populations_renamed.head()
+```
+
+### Change a DataFrame’s Index and Filter a DataFrame
+
+#### Change a DataFrame’s Index
+
+```{python}
+# Set the 'country_code' column as the index
+populations_indexed = populations.set_index('country_code')
+populations_indexed.head()
+```
+
+#### Filter a DataFrame
+
+```{python}
+# Filter the DataFrame to include only rows where the 'continent' is 'Asia'
+populations_asia = populations[populations['continent'] == 'Asia']
+populations_asia.head()
+```
+
+```{python}
+# Filter the DataFrame to include only rows where the 'year' is 2020
+populations_2020 = populations[populations['year'] == '2020']
+populations_2020.head()
+```
+
+```{python}
+# Filter the DataFrame to include only rows where the 'fertility_rate' is greater than 2
+populations_high_fertility = populations[populations['fertility_rate'] > 2]
+populations_high_fertility.head()
+```
+
+
 ## Walkthrough #4: Transforming and Aggregating Data with Pandas
 
 ### Grouping data
@@ -272,7 +365,6 @@ top_gdp_2010_2015.head()
 grouped_data = economies.groupby('income_group')['gdp_percapita'].mean()
 grouped_data
 ```
-
 
 ### Applying Functions
 
@@ -346,12 +438,91 @@ income_group_counts
 
 ## Exercise #4: Transforming and Aggregating Data with Pandas
 
-By completing this exercise, you will be able to use `pandas` to 
-- Transform data by applying functions element-wise, across rows/columns, or to groups
-- Aggregate data effectively by grouping it
-- Create summary tables
-- Analyze categorical data using cross-tabulation (value_counts)
+By completing this exercise, you will be able to use `pandas` to
+- Aggregate data effectively by grouping it  
+- Transform data by applying functions element-wise, across rows/columns, or to groups  
+- Create summary tables  
+- Analyze categorical data using cross-tabulation and counts  
 
+
+### Grouping Data
+
+```{python}
+# Group data by continent and calculate the mean life expectancy
+grouped_data = populations.groupby('continent')['life_expectancy'].mean()
+grouped_data
+```
+
+### Applying Functions
+
+#### Applying a function element-wise with `map()`
+
+```{python}
+# Convert continent to uppercase using map()
+populations_plus = populations.copy()
+populations_plus['continent_upper'] = populations['continent'].map(str.upper)
+populations_plus.head()
+```
+
+#### Applying a function across columns with `apply()`
+
+```{python}
+# Filter rows for the years 2015 and 2020
+populations_focused = populations[populations['year'].isin([2015, 2020])].copy()
+
+# Calculate percentage change in population size across columns for 2015 to 2020
+pop_size_pct_change = populations_focused.groupby('country_code')['size'].apply(lambda x: x.pct_change())
+
+# Reset the index of the result to align it with the original DataFrame
+pop_size_pct_change = pop_size_pct_change.reset_index(level=0, drop=True)
+
+# Assign the calculated percentage change back to the DataFrame
+populations_focused['size_change'] = pop_size_pct_change
+populations_focused.head()
+```
+
+#### Applying a function to groups with `groupby()` and `agg()`
+
+```{python}
+# Calculate the median fertility rate and life expectancy for each continent
+median_values = populations.groupby('continent').agg({
+    'fertility_rate': 'median',
+    'life_expectancy': 'median'
+})
+median_values
+```
+
+### Summary Tables
+
+```{python}
+# Create a pivot table of fertility rate and life expectancy by continent and year
+pivot_table = pd.pivot_table(
+    populations,
+    values=['fertility_rate', 'life_expectancy'],
+    index=['continent'],
+    columns=['year'],
+    aggfunc='mean'
+)
+pivot_table
+```
+
+### Analyzing Categorical Data
+
+#### Using Cross-Tabulation
+
+```{python}
+# Create a cross-tabulation of continent and year.
+cross_tab = pd.crosstab(populations['continent'], populations['year'])
+cross_tab
+```
+
+#### By Getting Group Counts
+
+```{python}
+# Count the occurrences of each region
+region_counts = populations['region'].value_counts()
+region_counts
+```
 
 ---
 
@@ -426,10 +597,82 @@ plt.show()
 
 ## Exercise #5: Creating Basic Plots with Matplotlib
 
-By completing this exercise, you will be able to use `matplotlib` to 
-- Create line plots and bar charts
-- Add labels and titles
-- Adjust axes and tick marks
+By completing this exercise, you will be able to use `matplotlib` to  
+- Create line plots and bar charts  
+- Add labels and titles  
+- Adjust axes and tick marks  
+
+### Line Plot
+
+```{python}
+import matplotlib.pyplot as plt
+
+# Filter data for India
+india_data = populations[populations['country_code'] == 'IND']
+
+# Line plot of fertility rate over the years
+plt.figure(figsize=(10, 6))
+plt.plot(india_data['year'], india_data['fertility_rate'], marker='o', linestyle='-', color='b')
+plt.show()
+```
+
+### Bar Chart
+
+```{python}
+# Filter data for selected Asian countries and the year 2020
+asian_countries = ['CHN', 'IND', 'IDN', 'PAK', 'BGD']
+data_2020_asia = populations[(populations['year'] == 2020) & (populations['country_code'].isin(asian_countries))]
+
+# Bar chart of population size for selected Asian countries in 2020
+plt.figure(figsize=(10, 6))
+plt.bar(data_2020_asia['country_code'], data_2020_asia['size'], color='g')
+plt.show()
+```
+
+### Adding Labels and Titles
+
+```{python}
+# Filter data for Nigeria
+nigeria_data = populations[populations['country_code'] == 'NGA']
+
+# Line plot of life expectancy over the years with labels and titles
+plt.figure(figsize=(10, 6))
+plt.plot(nigeria_data['year'], nigeria_data['life_expectancy'], marker='o', linestyle='-', color='r')
+plt.xlabel('Year')
+plt.ylabel('Life Expectancy')
+plt.title('Life Expectancy Over Years for Nigeria (NGA)')
+plt.grid(True)
+plt.show()
+```
+
+### Adjusting Axes and Tick Marks
+
+```{python}
+# Filter data for selected African countries and the year 2020
+african_countries = ['NGA', 'ETH', 'EGY', 'ZAF', 'DZA']
+
+# Need to convert year back to an integer?
+populations['year'] = populations['year'].astype(int)
+
+data_2020_africa = populations[(populations['year'] == 2020) & (populations['country_code'].isin(african_countries))]
+
+# Bar chart of fertility rate for selected African countries in 2020 with adjusted axes and tick marks
+plt.figure(figsize=(10, 6))
+plt.bar(data_2020_africa['country_code'], data_2020_africa['fertility_rate'], color='purple')
+plt.xlabel('Country Code')
+plt.ylabel('Fertility Rate')
+plt.title('Fertility Rate for Selected African Countries in 2020')
+
+# Adjust axes
+plt.ylim(0, max(data_2020_africa['fertility_rate']) + 1)
+
+# Adjust tick marks
+plt.xticks(rotation=45)
+plt.yticks(range(0, int(max(data_2020_africa['fertility_rate']) + 1), 1))
+
+plt.grid(axis='y')
+plt.show()
+```
 
 
 ## Walkthrough #6: Data Visualization Techniques with Seaborn
@@ -491,11 +734,83 @@ plt.show()
 
 ## Exercise #6: Data Visualization Techniques with Seaborn
 
-By completing this exercise, you will be able to use `seaborn` to
-- Create heatmaps
-- Design pair plots and violin plots
-- Customize Seaborn plots
+By completing this exercise, you will be able to use `seaborn` to  
+- Create heatmaps  
+- Design pair plots and violin plots  
+- Customize Seaborn plots  
 
+### Heatmap
+
+```{python}
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+# Select only the numeric columns
+numeric_cols = populations.select_dtypes(include=['float64', 'int64']).columns
+numeric_populations = populations[numeric_cols]
+
+# Calculate correlation matrix
+corr_matrix = numeric_populations.corr()
+
+# Create heatmap
+plt.figure(figsize=(10, 8))
+sns.heatmap(corr_matrix, annot=True, cmap='coolwarm', fmt='.2f')
+plt.title('Correlation Heatmap')
+plt.show()
+```
+
+### Pair Plot
+
+```{python}
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+# Pair plot of fertility rate, life expectancy, and population size
+sns.pairplot(populations, vars=['fertility_rate', 'life_expectancy', 'size'])
+plt.suptitle('Pair Plot of Selected Numerical Columns', y=1.02)
+plt.show()
+```
+
+### Violin Plot
+
+```{python}
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+# Violin plot of fertility rate by continent
+plt.figure(figsize=(10, 6))
+sns.violinplot(x='continent', y='fertility_rate', data=populations)
+plt.xlabel('Continent')
+plt.ylabel('Fertility Rate')
+plt.title('Violin Plot of Fertility Rate by Continent')
+plt.show()
+```
+
+### Customizing Seaborn Plots
+
+```{python}
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+# Filter data for selected European countries and the year 2020
+european_countries = ['DEU', 'FRA', 'ITA', 'ESP', 'GBR']
+data_2020_europe = populations[(populations['year'] == 2020) & (populations['country_code'].isin(european_countries))]
+
+# Bar plot with customization
+plt.figure(figsize=(10, 6))
+sns.barplot(x='country_code', y='life_expectancy', data=data_2020_europe, palette='viridis')
+plt.xlabel('Country Code')
+plt.ylabel('Life Expectancy')
+plt.title('Life Expectancy for Selected European Countries in 2020')
+
+# Customizing axes and tick marks
+plt.ylim(0, max(data_2020_europe['life_expectancy']) + 10)
+plt.xticks(rotation=45)
+plt.yticks(range(0, int(max(data_2020_europe['life_expectancy']) + 10), 10))
+
+plt.grid(axis='y')
+plt.show()
+```
 
 ---
 
@@ -559,11 +874,66 @@ fig.show()
 
 ## Exercise #7: Interactive Charts and Dashboards with Plotly
 
-By completing this exercise, you will be able to use `plotly` to 
-- Create a basic interactive chart
-- Add interactive elements: hover, zoom, and selection tools
-- Design a simple dashboard with multiple charts
+By completing this exercise, you will be able to use `plotly` to  
+- Create a basic interactive chart  
+- Add interactive elements: hover, zoom, and selection tools  
+- Design a simple dashboard with multiple charts  
 
+### Basic Interactive Chart
+
+```{python}
+import plotly.express as px
+
+# Filter data for a specific country
+bra_data = populations[populations['country_code'] == 'BRA']
+
+# Create an interactive line chart
+fig = px.line(bra_data, x='year', y='fertility_rate', title='Fertility Rate Over Years for Brazil (BRA)')
+fig.show()
+```
+
+### Adding Interactive Elements
+
+```{python}
+import plotly.express as px
+
+# Create an interactive scatter plot
+fig = px.scatter(populations, x='fertility_rate', y='life_expectancy', color='continent',
+                 hover_name='country', title='Fertility Rate vs. Life Expectancy',
+                 labels={'fertility_rate': 'Fertility Rate', 'life_expectancy': 'Life Expectancy'})
+
+# Add hover, zoom, and selection tools
+fig.update_traces(marker=dict(size=10), selector=dict(mode='markers'))
+fig.update_layout(hovermode='closest')
+
+fig.show()
+```
+
+### Designing a Simple Dashboard
+
+```{python}
+import plotly.graph_objects as go
+from plotly.subplots import make_subplots
+
+# Filter data for the year 2020
+data_2020 = populations[populations['year'] == 2020]
+
+# Create a subplot figure with 1 row and 2 columns
+fig = make_subplots(rows=1, cols=2, subplot_titles=('Fertility Rate Over Years for Brazil', 'Life Expectancy for Different Countries in 2020'))
+
+# Line chart of Fertility Rate for Brazil
+bra_data = populations[populations['country_code'] == 'BRA']
+line_chart = go.Scatter(x=bra_data['year'], y=bra_data['fertility_rate'], mode='lines+markers', name='Brazil')
+fig.add_trace(line_chart, row=1, col=1)
+
+# Bar chart of Life Expectancy for different countries in 2020
+bar_chart = go.Bar(x=data_2020['country'], y=data_2020['life_expectancy'], name='2020')
+fig.add_trace(bar_chart, row=1, col=2)
+
+# Update layout
+fig.update_layout(title_text='Simple Dashboard with Multiple Charts', showlegend=False)
+fig.show()
+```
 
 ## Walkthrough #8: Creating a Dynamic Data Report
 
@@ -662,11 +1032,100 @@ fig.show()
 
 ## Exercise #8: Creating a Dynamic Data Report
 
-By completing this exercise, you will be able to use `pandas` and `plotly` to 
-- Select relevant data
-- Build a dynamic report
-- Add contextual text and summaries
+By completing this exercise, you will be able to use `pandas` and `plotly` to  
+- Select relevant data  
+- Build a dynamic report  
+- Add contextual text and summaries  
 
+### Selecting Relevant Data
+
+```{python}
+# Select relevant data for the year 2020 and specific columns
+selected_data = populations[populations['year'] == 2020][['country_code', 'fertility_rate', 'life_expectancy', 'size', 'continent']]
+selected_data.head()
+```
+
+### Building a Dynamic Report
+
+```{python}
+import plotly.express as px
+import plotly.graph_objects as go
+from plotly.subplots import make_subplots
+
+# Scatter plot of Fertility Rate vs. Life Expectancy
+scatter_fig = px.scatter(selected_data, x='fertility_rate', y='life_expectancy', color='continent',
+                         hover_name='country_code', title='Fertility Rate vs. Life Expectancy (2020)',
+                         labels={'fertility_rate': 'Fertility Rate', 'life_expectancy': 'Life Expectancy'})
+
+# Bar chart of Population Size by Continent
+bar_fig = px.bar(selected_data, x='country_code', y='size', color='continent',
+                 title='Population Size by Country and Continent (2020)',
+                 labels={'size': 'Population Size', 'country_code': 'Country Code'})
+
+# Line chart of Life Expectancy by Continent
+line_fig = px.line(selected_data, x='country_code', y='life_expectancy', color='continent',
+                   title='Life Expectancy by Country and Continent (2020)',
+                   labels={'life_expectancy': 'Life Expectancy', 'country_code': 'Country Code'})
+
+# Create a subplot figure with 3 rows
+fig = make_subplots(rows=3, cols=1, subplot_titles=('Fertility Rate vs. Life Expectancy', 'Population Size by Country and Continent', 'Life Expectancy by Country and Continent'))
+
+# Add scatter plot
+fig.add_trace(go.Scatter(x=selected_data['fertility_rate'], y=selected_data['life_expectancy'], mode='markers', marker=dict(color=selected_data['continent'].astype('category').cat.codes), text=selected_data['country_code'], name='Scatter'), row=1, col=1)
+
+# Add bar chart
+fig.add_trace(go.Bar(x=selected_data['country_code'], y=selected_data['size'], marker=dict(color=selected_data['continent'].astype('category').cat.codes), name='Bar'), row=2, col=1)
+
+# Add line chart
+fig.add_trace(go.Scatter(x=selected_data['country_code'], y=selected_data['life_expectancy'], mode='lines+markers', marker=dict(color=selected_data['continent'].astype('category').cat.codes), name='Line'), row=3, col=1)
+
+# Update layout
+fig.update_layout(title_text='Dynamic Data Report for Population Indicators (2020)', showlegend=False, height=900)
+
+fig.show()
+```
+
+### Adding Contextual Text and Summaries
+
+```{python}
+import plotly.io as pio
+import plotly.graph_objects as go
+
+# Create a subplot figure with 3 rows
+fig = make_subplots(rows=3, cols=1, subplot_titles=('Fertility Rate vs. Life Expectancy', 'Population Size by Country and Continent', 'Life Expectancy by Country and Continent'))
+
+# Add scatter plot
+fig.add_trace(go.Scatter(x=selected_data['fertility_rate'], y=selected_data['life_expectancy'], mode='markers', marker=dict(color=selected_data['continent'].astype('category').cat.codes), text=selected_data['country_code'], name='Scatter'), row=1, col=1)
+
+# Add bar chart
+fig.add_trace(go.Bar(x=selected_data['country_code'], y=selected_data['size'], marker=dict(color=selected_data['continent'].astype('category').cat.codes), name='Bar'), row=2, col=1)
+
+# Add line chart
+fig.add_trace(go.Scatter(x=selected_data['country_code'], y=selected_data['life_expectancy'], mode='lines+markers', marker=dict(color=selected_data['continent'].astype('category').cat.codes), name='Line'), row=3, col=1)
+
+# Update layout
+fig.update_layout(
+    title_text='Dynamic Data Report for Population Indicators (2020)', 
+    showlegend=False, 
+    height=900,
+    annotations=[
+        go.layout.Annotation(
+            text='''This report presents key population indicators for various countries in 2020, categorized by continent. 
+            The scatter plot shows the relationship between Fertility Rate and Life Expectancy. The bar chart compares Population Size 
+            across countries, while the line chart illustrates Life Expectancy. These visualizations provide insights into population 
+            trends and disparities among different continents.''', 
+            xref='paper', yref='paper', x=0.5, y=1.15, showarrow=False, font=dict(size=12)
+        )
+    ]
+)
+
+# Add summaries below each subplot
+fig.add_annotation(text='The scatter plot reveals a relationship between Fertility Rate and Life Expectancy across different continents.', xref='paper', yref='paper', x=0.5, y=0.83, showarrow=False, font=dict(size=10))
+fig.add_annotation(text='The bar chart shows that countries with larger populations are spread across various continents.', xref='paper', yref='paper', x=0.5, y=0.5, showarrow=False, font=dict(size=10))
+fig.add_annotation(text='The line chart indicates that life expectancy varies significantly among countries and continents.', xref='paper', yref='paper', x=0.5, y=0.17, showarrow=False, font=dict(size=10))
+
+fig.show()
+```
 
 ---
 
@@ -772,11 +1231,104 @@ By following these steps, you can effectively select, clean, transform, and anal
 
 ## Exercise #9: Interactive Charts and Dashboards with Plotly
 
-By completing this exercise, you will be able to identify ways to best
-- Select a dataset
-- Apply cleaning, transforming, and analysis techniques
-- Review initial findings and interpretation
+By completing this exercise, you will be able to identify ways to best  
+- Select a dataset  
+- Apply cleaning, transforming, and analysis techniques  
+- Review initial findings and interpretation  
 
+### Selecting a Dataset
+
+#### Questions to Ask:
+1. **What industry problem or area of interest does the dataset align with?**
+   - Is the dataset relevant to demographic analysis, public health planning, policy making, or another industry?
+2. **Does the dataset provide sufficient complexity and scope for a thorough analysis?**
+   - Does it include multiple variables and data points across different time periods and categories (e.g., continents, countries)?
+3. **What specific questions or hypotheses do we want to explore with this dataset?**
+   - Are we interested in comparing population indicators across countries, understanding the impact of fertility rate on life expectancy, or identifying trends over time?
+
+#### Example:
+- **Dataset**: The `populations` dataset.
+- **Industry Problem**: Understanding demographic disparities between countries and the impact of population indicators on overall public health.
+- **Specific Questions**:
+  - How do fertility rates and life expectancy vary across different continents?
+  - What is the relationship between population size and life expectancy?
+
+### Applying Cleaning, Transforming, and Analysis Techniques
+
+#### Questions to Ask:
+1. **What cleaning steps are necessary to prepare the data for analysis?**
+   - Are there any missing values that need to be handled? Are there any inconsistencies in data types?
+2. **What transformations are required to make the data analysis-ready?**
+   - Do we need to create new columns, filter specific rows, or aggregate data by certain categories?
+3. **How can we analyze the data to uncover patterns, trends, or anomalies?**
+   - What statistical methods or visualizations can we use to explore relationships between variables?
+
+#### Example:
+- **Cleaning**:
+  ```{python}
+  # Handle missing values
+  populations_cleaned = populations.fillna({
+      'fertility_rate': populations['fertility_rate'].mean(),
+      'life_expectancy': populations['life_expectancy'].mean(),
+      'size': populations['size'].mean(),
+      'continent': 'Unknown',
+      'region': 'Unknown'
+  })
+
+  # Convert categorical variables to category type
+  populations_cleaned['continent'] = populations_cleaned['continent'].astype('category')
+  ```
+
+- **Transforming**:
+  ```{python}
+  # Create new columns for analysis
+  populations_cleaned['population_growth'] = populations_cleaned.groupby('country_code')['size'].pct_change()
+  ```
+
+- **Analyzing**:
+  ```{python}
+  import seaborn as sns
+  import matplotlib.pyplot as plt
+
+  # Analyze the relationship between fertility rate and life expectancy
+  sns.scatterplot(data=populations_cleaned, x='fertility_rate', y='life_expectancy', hue='continent')
+  plt.title('Fertility Rate vs. Life Expectancy by Continent')
+  plt.show()
+
+  # Analyze the trend of life expectancy over time
+  sns.lineplot(data=populations_cleaned, x='year', y='life_expectancy', hue='continent')
+  plt.title('Life Expectancy Over Time by Continent')
+  plt.show()
+  ```
+
+### Initial Findings and Interpretation
+
+#### Questions to Ask:
+1. **What do the initial findings tell us about the data?**
+   - Are there any notable patterns or trends in the data? Are there any unexpected results?
+2. **How do these insights relate to the problem defined earlier?**
+   - Do the findings help us understand demographic disparities between countries? Do they provide insights into the impact of certain population indicators?
+3. **What hypotheses can we test based on the initial results?**
+   - Can we test hypotheses about the relationship between fertility rate and life expectancy? Can we refine our analysis to explore these hypotheses further?
+
+#### Example:
+- **Initial Findings**:
+  - **Fertility Rate vs. Life Expectancy**: The scatter plot shows that countries in Africa tend to have higher fertility rates and lower life expectancy, while countries in Europe have lower fertility rates and higher life expectancy.
+  - **Life Expectancy Over Time**: The line plot indicates that life expectancy has generally increased over time across all continents, but the rate of increase varies.
+
+- **Interpretation**:
+  - These findings suggest that demographic health, as measured by fertility rate and life expectancy, is strongly influenced by the continent of a country. African countries appear to have higher fertility rates but lower life expectancy compared to European countries.
+  - The increase in life expectancy over time highlights improvements in public health, but the varying rates suggest that some regions may still face significant challenges.
+
+- **Hypotheses**:
+  - **Hypothesis 1**: African countries have higher average fertility rates and lower life expectancy compared to European countries.
+  - **Hypothesis 2**: The rate of increase in life expectancy over time is different across continents, with African countries experiencing slower improvements compared to other regions.
+
+- **Next Steps**:
+  - Conduct further analysis to test these hypotheses, using statistical methods to confirm the observed patterns.
+  - Explore other population indicators to gain a more comprehensive understanding of demographic disparities and trends.
+
+By following these steps, you can effectively select, clean, transform, and analyze the `populations` dataset to gain valuable insights and address common industry problems or research questions.
 
 ## Walkthrough #10: Finalizing and Presenting Your Data Analysis Project
 
@@ -894,7 +1446,125 @@ By following these steps, you can effectively integrate feedback, finalize your 
 
 ## Exercise #10: Finalizing and Presenting Your Data Analysis Project
 
-By completing this exercise, you will be able to identify the best strategies to
-- Integrate feedback to refine the analysis
-- Finalize the presentation with impactful visuals and narrative
-- Rehearse the presentation
+By completing this exercise, you will be able to identify the best strategies to  
+- Integrate feedback to refine the analysis  
+- Finalize the presentation with impactful visuals and narrative  
+- Rehearse the presentation  
+
+### Integrate Feedback to Refine the Analysis
+
+#### Questions to Ask:
+1. **What feedback have you received from peers, stakeholders, or mentors?**
+   - Is there feedback on the clarity of the analysis, choice of visualizations, or the comprehensiveness of the analysis?
+2. **How can you incorporate this feedback into your analysis?**
+   - Are there additional variables that need to be analyzed? Do you need to clean the data further or adjust the visualizations?
+3. **What new questions or hypotheses have emerged from the feedback?**
+   - Does the feedback suggest new directions for the analysis or areas that need more focus?
+
+#### Example:
+- **Feedback**:
+  - Peers suggested that the analysis should also consider the impact of population size on fertility rates.
+  - Stakeholders requested more clarity on the relationship between fertility rates and life expectancy across different continents.
+
+- **Refining the Analysis**:
+
+```{python}
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+# Include additional variables in the analysis
+selected_data = populations[populations['year'] == 2020][['country_code', 'fertility_rate', 'life_expectancy', 'size', 'continent']]
+
+# Analyze the relationship between fertility rate and population size
+sns.scatterplot(data=selected_data, x='fertility_rate', y='size', hue='continent')
+plt.title('Fertility Rate vs. Population Size by Continent (2020)')
+plt.show()
+
+# Re-analyze the relationship between fertility rate and life expectancy with more clarity
+sns.scatterplot(data=selected_data, x='fertility_rate', y='life_expectancy', hue='continent')
+plt.title('Fertility Rate vs. Life Expectancy by Continent (2020)')
+plt.show()
+```
+
+### Finalize the Presentation with Impactful Visuals and Narrative
+
+#### Questions to Ask:
+1. **What are the key insights from the analysis that need to be highlighted?**
+   - What are the most important findings that should be communicated to the audience?
+2. **How can you create impactful visuals that clearly convey these insights?**
+   - What types of charts or visualizations best represent the data and findings?
+3. **What narrative will you use to guide the audience through the presentation?**
+   - How will you structure the presentation to tell a compelling story with the data?
+
+#### Example:
+- **Key Insights**:
+  - Different continents exhibit varying fertility rates and life expectancy.
+  - There is a relationship between fertility rates and population size.
+  - Life expectancy varies significantly across continents.
+  - Population size influences fertility rates.
+
+- **Impactful Visuals**:
+
+```{python}
+import plotly.express as px
+
+# Bar chart of Life Expectancy by Country and Continent
+bar_fig = px.bar(selected_data, x='country_code', y='life_expectancy', color='continent',
+                 title='Life Expectancy by Country and Continent (2020)',
+                 labels={'life_expectancy': 'Life Expectancy', 'country_code': 'Country Code'})
+bar_fig.show()
+
+# Scatter plot of Fertility Rate vs. Population Size by Continent
+scatter_fig = px.scatter(selected_data, x='fertility_rate', y='size', color='continent',
+                         hover_name='country_code', title='Fertility Rate vs. Population Size (2020)',
+                         labels={'fertility_rate': 'Fertility Rate', 'size': 'Population Size'})
+scatter_fig.show()
+
+# Line chart of Life Expectancy by Continent
+line_fig = px.line(selected_data, x='country_code', y='life_expectancy', color='continent',
+                   title='Life Expectancy by Country and Continent (2020)',
+                   labels={'life_expectancy': 'Life Expectancy', 'country_code': 'Country Code'})
+line_fig.show()
+
+# Scatter plot of Fertility Rate vs. Life Expectancy by Continent
+scatter_fig_2 = px.scatter(selected_data, x='fertility_rate', y='life_expectancy', color='continent',
+                           hover_name='country_code', title='Fertility Rate vs. Life Expectancy (2020)',
+                           labels={'fertility_rate': 'Fertility Rate', 'life_expectancy': 'Life Expectancy'})
+scatter_fig_2.show()
+```
+
+- **Narrative**:
+  - **Introduction**: Introduce the dataset and the industry problem. Explain why understanding population indicators across different continents is important.
+  - **Key Findings**: Present the key findings using the visualizations created. Highlight the relationship between fertility rates, life expectancy, and population size.
+  - **Detailed Analysis**: Dive deeper into each key finding, providing more context and interpretation. Explain the significance of the trends and patterns observed in the data.
+  - **Conclusion**: Summarize the insights and discuss potential implications for policy or public health decisions. Suggest areas for further research or analysis based on the findings.
+
+### Rehearse the Presentation
+
+#### Questions to Ask:
+1. **How will you structure your presentation to ensure a smooth flow?**
+   - What order will you present the visualizations and insights? How will you transition between different sections?
+2. **How will you engage your audience and ensure they understand the key points?**
+   - What techniques will you use to highlight important information and keep the audience's attention?
+3. **What potential questions or feedback might you receive, and how will you address them?**
+   - How will you prepare for questions about the data, analysis methods, or findings?
+
+#### Example:
+- **Structuring the Presentation**:
+  - Start with an overview of the dataset and the industry problem.
+  - Move on to the key findings, using the most impactful visualizations to illustrate each point.
+  - Provide a detailed analysis of each finding, explaining the significance and implications.
+  - Conclude with a summary of insights and suggestions for further research.
+
+- **Engaging the Audience**:
+  - Use clear and concise language to explain complex concepts.
+  - Highlight key points using annotations or callouts on the visualizations.
+  - Encourage questions and interaction to keep the audience engaged.
+
+- **Preparing for Questions**:
+  - Anticipate common questions about the data sources, cleaning methods, and analysis techniques.
+  - Prepare explanations for any limitations of the data or analysis.
+  - Be ready to discuss potential next steps and areas for further research based on the findings.
+
+By following these steps, you can effectively integrate feedback, finalize your presentation with impactful visuals and narrative, and rehearse to ensure a smooth and engaging delivery.
+
