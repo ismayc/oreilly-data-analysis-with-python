@@ -1,0 +1,45 @@
+---
+title: "Data Prep"
+format: html
+engine: knitr
+---
+
+
+
+```{python}
+import pandas as pd
+```
+
+```{python}
+#| eval: false
+populations_pre = pd.read_csv("populations.csv")
+economies = pd.read_csv("economies.csv")
+economies = economies.drop(columns=['econ_id'])
+import pyarrow.parquet as pq
+
+# Read the Parquet file
+# lookup (filled in missing values on Excel xlsx file)
+lookup_parq = pq.read_table("lookup.parquet")
+
+# Convert to a Pandas DataFrame
+lookup = lookup_parq.to_pandas()
+lookup = lookup.drop(columns=['iso_name'])
+
+# Output to Excel file
+lookup.to_excel("lookup.xlsx")
+
+# Merge populations and lookup DataFrames
+populations = pd.merge(populations_pre, lookup, left_on='country_code', right_on='iso')
+
+populations.to_excel("populations.xlsx")
+economies.to_excel("economies.xlsx")
+```
+
+```{python}
+import pyarrow.parquet as pq
+economies = pq.read_table("economies.parquet").to_pandas()
+populations = pq.read_table("populations.parquet").to_pandas()
+economies.to_excel("economies.xlsx", index=False)
+populations.to_excel("populations.xlsx", index=False)
+```
+

@@ -5,6 +5,15 @@ format: html
 engine: knitr
 ---
 
+```{python}
+#| include: false
+import pandas as pd
+
+# Display all columns
+pd.set_option('display.max_columns', None)
+```
+
+
 # Intro: Foundations of Data Analysis with Python
 
 ## Walkthrough #1: Setting Up the Python Environment
@@ -22,6 +31,11 @@ import plotly.express as px
 
 ## Exercise #1: Setting Up the Python Environment
 
+By completing this exercise, you will be able to
+- Import necessary Python packages
+- Check for successful package loading
+
+
 Follow the instructions above to check for correct installation of necessary
 packages. We'll wait a few minutes to make sure as many of you are set up as
 possible. Please give a thumbs up in the pulse check if you are ready to move on.
@@ -32,15 +46,97 @@ possible. Please give a thumbs up in the pulse check if you are ready to move on
 
 ## Walkthrough #2: Loading and Inspecting Data with Pandas
 
+```{python}
+# Load the data from a CSV file
+economies = pd.read_csv("economies.csv")
+
+# Load the data from an Excel file
+economies = pd.read_excel("economies.xlsx")
+```
+
+```{python}
+# Display the first few rows of the DataFrame
+economies.head()
+```
+
+```{python}
+# Display the information about the DataFrame
+economies.info()
+```
+
+```{python}
+# Display summary statistics of the DataFrame
+economies.describe()
+```
+
+```{python}
+# Check for missing data
+economies.isnull().sum()
+```
+
+```{python}
+# Check data types
+economies.dtypes
+```
+
 ## Exercise #2: Loading and Inspecting Data with Pandas
+
+By completing this exercise, you will be able to use `pandas` to 
+- Import data from a CSV or from an Excel file
+- Perform an initial exploration of the data
+
+```{python}
+# Load the populations data from an Excel file
+
+# Inspection methods for populations DataFrame
+
+# Checking for missing data and data types for populations DataFrame
+
+```
+
+```{python}
+#| include: false
+# SOLUTION
+
+# Load the populations data from an Excel file
+populations = pd.read_excel("populations.xlsx")
+
+# Inspection methods for populations DataFrame
+populations.head()
+
+populations.info()
+
+populations.describe()
+
+# Checking for missing data and data types for populations DataFrame
+populations.isnull().sum()
+
+populations.dtypes
+```
+
 
 ## Walkthrough #3: Cleaning and Preparing Data with Pandas
 
 ## Exercise #3: Cleaning and Preparing Data with Pandas
 
+By completing this exercise, you will be able to use `pandas` to 
+- Handle missing data
+- Convert a column to a different data type
+- Rename a column
+- Change a DataFrame’s index
+- Filter a DataFrame
+
+
 ## Walkthrough #4: Transforming and Aggregating Data with Pandas
 
 ## Exercise #4: Transforming and Aggregating Data with Pandas
+
+By completing this exercise, you will be able to use `pandas` to 
+- Transform data by applying functions element-wise, across rows/columns, or to groups
+- Aggregate data effectively by grouping it
+- Create summary tables
+- Analyze categorical data using cross-tabulation
+
 
 ---
 
@@ -50,9 +146,21 @@ possible. Please give a thumbs up in the pulse check if you are ready to move on
 
 ## Exercise #5: Creating Basic Plots with Matplotlib
 
+By completing this exercise, you will be able to use `matplotlib` to 
+- Create line plots and bar charts
+- Add labels and titles
+- Adjust axes and tick marks
+
+
 ## Walkthrough #6: Data Visualization Techniques with Seaborn
 
 ## Exercise #6: Data Visualization Techniques with Seaborn
+
+By completing this exercise, you will be able to use `seaborn` to
+- Create heatmaps
+- Design pair plots and violin plots
+- Customize Seaborn plots
+
 
 ---
 
@@ -62,9 +170,21 @@ possible. Please give a thumbs up in the pulse check if you are ready to move on
 
 ## Exercise #7: Interactive Charts and Dashboards with Plotly
 
+By completing this exercise, you will be able to use `plotly` to 
+- Create a basic interactive chart
+- Add interactive elements: hover, zoom, and selection tools
+- Design a simple dashboard with multiple charts
+
+
 ## Walkthrough #8: Creating a Dynamic Data Report
 
 ## Exercise #8: Creating a Dynamic Data Report
+
+By completing this exercise, you will be able to use `pandas` and `plotly` to 
+- Select relevant data
+- Build a dynamic report
+- Add contextual text and summaries
+
 
 ---
 
@@ -74,6 +194,17 @@ possible. Please give a thumbs up in the pulse check if you are ready to move on
 
 ## Exercise #9: Interactive Charts and Dashboards with Plotly
 
+By completing this exercise, you will be able to identify ways to best
+- Select a dataset
+- Apply cleaning, transforming, and analysis techniques
+- Review initial findings and interpretation
+
+
 ## Walkthrough #10: Finalizing and Presenting Your Data Analysis Project
 
 ## Exercise #10: Finalizing and Presenting Your Data Analysis Project
+
+By completing this exercise, you will be able to identify the best strategies to
+- Integrate feedback to refine the analysis
+- Finalize the presentation with impactful visuals and narrative
+- Rehearse the presentation

@@ -1,0 +1,900 @@
+---
+title: 'Walkthroughs and Exercises for *Data Analysis in Python*'
+author: "Dr. Chester Ismay"
+format: html
+engine: knitr
+---
+
+```{python}
+#| include: false
+import pandas as pd
+
+# Display all columns
+pd.set_option('display.max_columns', None)
+```
+
+
+# Intro: Foundations of Data Analysis with Python
+
+## Walkthrough #1: Setting Up the Python Environment
+
+If you haven't already installed Python, Jupyter, and the necessary packages, there are instructions on the course repo in the README to do so [here](https://github.com/ismayc/oreilly-data-analysis-with-python/blob/main/README.md). 
+
+If you aren't able to do this on your machine, you may want to check out [Google Colab](https://colab.research.google.com/). It's a free service that allows you to run Jupyter notebooks in the cloud.
+
+```{python}
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+import plotly.express as px
+```
+
+## Exercise #1: Setting Up the Python Environment
+
+By completing this exercise, you will be able to
+- Import necessary Python packages
+- Check for successful package loading
+
+
+Follow the instructions above in Walkthrough #1 to check for correct installation 
+of necessary packages. We'll wait a few minutes to make sure as many of you are
+set up as possible. Please give a thumbs up in the pulse check if you are ready
+to move on.
+
+---
+
+# Module 1: Data Wrangling with Pandas
+
+## Walkthrough #2: Loading and Inspecting Data with Pandas
+
+### Import data from a CSV or from an Excel file
+
+```{python}
+# Load the data from a CSV file
+economies = pd.read_csv("economies.csv")
+
+# Load the data from an Excel file
+economies = pd.read_excel("economies.xlsx")
+```
+
+### Perform an initial exploration of the data
+
+```{python}
+# Display the first few rows of the DataFrame
+economies.head()
+```
+
+```{python}
+# Display the information about the DataFrame
+economies.info()
+```
+
+```{python}
+# Display summary statistics of the DataFrame
+economies.describe()
+```
+
+```{python}
+# Check for missing data
+economies.isnull().sum()
+```
+
+```{python}
+# Check data types
+economies.dtypes
+```
+
+## Exercise #2: Loading and Inspecting Data with Pandas
+
+By completing this exercise, you will be able to use `pandas` to 
+- Import data from a CSV or from an Excel file
+- Perform an initial exploration of the data
+
+```{python}
+# Load the populations data from an Excel file
+
+# Inspection methods for populations DataFrame
+
+# Checking for missing data and data types for populations DataFrame
+
+```
+
+```{python}
+# SOLUTION
+
+# Load the populations data from an Excel file
+populations = pd.read_excel("populations.xlsx")
+
+# Inspection methods for populations DataFrame
+populations.head()
+
+populations.info()
+
+populations.describe()
+
+# Checking for missing data and data types for populations DataFrame
+populations.isnull().sum()
+
+populations.dtypes
+```
+
+
+## Walkthrough #3: Cleaning and Preparing Data with Pandas
+
+By completing this exercise, you will be able to use `pandas` to  
+- Handle missing data  
+- Convert a column to a different data type   
+- Rename a column  
+- Change a DataFrame’s index  
+- Filter a DataFrame  
+
+### Handle missing data
+
+#### Remove rows
+
+```{python}
+# Remove rows with any missing values
+economies_cleaned_any = economies.dropna(how='any')
+economies_cleaned_any
+```
+
+```{python}
+# Remove rows only if all values are missing
+economies_cleaned_all = economies.dropna(how='all')
+economies_cleaned_all
+```
+
+```{python}
+# Remove rows with missing values in specific columns
+economies_cleaned_subset = economies.dropna(subset=['exports', 'imports'])
+economies_cleaned_subset
+```
+
+#### Remove columns
+
+```{python}
+# Remove columns with any missing values
+economies_no_missing_columns = economies.dropna(axis=1)
+
+# Display the DataFrame after removing columns with missing values
+economies_no_missing_columns.head()
+```
+
+#### Replace missing values with specific value
+
+```{python}
+# Replace missing values with a specific value (e.g., 0 for numerical columns, 'Unknown' for categorical columns)
+economies_fill_value = economies.fillna({
+    'gdp_percapita': 0,
+    'gross_savings': 0,
+    'inflation_rate': 0,
+    'total_investment': 0,
+    'unemployment_rate': 0,
+    'exports': 0,
+    'imports': 0,
+    'income_group': 'Unknown'
+})
+
+# Display the DataFrame after replacing missing values with specific values
+economies_fill_value.head()
+```
+
+This can be extended to replace missing values with the mean, median, or mode of the column too, but that's beyond the scope of this course.
+
+### Convert a column to a different data type
+
+```{python}
+# Change year to be a string instead of an integer
+economies_char_year = economies.astype({'year': 'str'})
+
+# Display the information on the DataFrame with year as a string
+economies_char_year.info()
+```
+
+```{python}
+# Change the year of string type back to integer
+economies_int_year = economies_char_year.astype({'year': 'int'})
+
+# Display the information on the DataFrame with year as a string
+economies_int_year.info()
+```
+
+### Rename a column
+
+```{python}
+# Rename the 'income_group' column to 'income_category'
+economies_renamed = economies.rename(columns={'income_group': 'income_category'})
+economies_renamed.head()
+```
+
+### Changing a DataFrame’s index
+
+#### Set the index
+
+```{python}
+# Set unique combinations of 'code' and 'year' as the index
+economies_indexed = economies.set_index(['code', 'year'])
+economies_indexed.head()
+```
+
+#### Reset the index
+
+```{python}
+# Reset the index
+economies_reset = economies_indexed.reset_index()
+economies_reset.head()
+```
+
+### Filtering rows based on conditions
+
+#### Conditions on a single column
+
+```{python}
+# Filter rows where 'gdp_percapita' is greater than 20,000
+economies_high_gdp = economies[economies['gdp_percapita'] > 20000]
+economies_high_gdp.head()
+```
+
+```{python}
+# Filter rows where 'income_group' is 'High income'
+economies_high_income = economies[economies['income_group'] == 'High income']
+economies_high_income.head()
+```
+
+```{python}
+# Filter rows where total_investment is not NaN
+non_null_investment = economies[economies['total_investment'].notna()]
+non_null_investment.head()
+```
+
+#### Conditions on multiple columns
+
+```{python}
+# Filter rows where inflation_rate is less than 0 and income_group is 'Low income'
+deflation_low_income = economies[(economies['inflation_rate'] < 0) & (economies['income_group'] == 'Low income')]
+deflation_low_income.head()
+```
+
+```{python}
+# Filter rows where gdp_percapita is greater than 40,000 and year is less than or equal to 2016
+top_gdp_2010_2015 = economies[(economies['gdp_percapita'] > 40000) & (economies['year'] <= 2015)]
+top_gdp_2010_2015.head()
+
+```
+
+## Exercise #3: Cleaning and Preparing Data with Pandas
+
+## Walkthrough #4: Transforming and Aggregating Data with Pandas
+
+### Grouping data
+
+```{python}
+grouped_data = economies.groupby('income_group')['gdp_percapita'].mean()
+grouped_data
+```
+
+
+### Applying Functions
+
+#### Applying a function element-Wise with `map()`
+
+```{python}
+# Convert income_group to uppercase using map()
+economies_plus = economies.copy()
+economies_plus['income_group_upper'] = economies['income_group'].map(str.upper)
+economies_plus.head()
+```
+
+#### Applying a function across columns with `apply()`
+
+```{python}
+# Calculate percentage change in gdp_percapita across rows for 2015 to 2020
+# Filter rows for the years 2015 and 2020
+economies_focused = economies[economies['year'].isin([2015, 2020])].copy()
+
+# Calculate percentage change in gdp_percapita across columns for 2015 to 2020
+gdp_pct_change = economies_focused.groupby('code')['gdp_percapita'].apply(lambda x: x.pct_change())
+
+# Reset the index of the result to align it with the original DataFrame
+gdp_pct_change = gdp_pct_change.reset_index(level=0, drop=True)
+
+# Assign the calculated percentage change back to the DataFrame
+economies_focused['gdp_percapita_change'] = gdp_pct_change
+```
+
+#### Applying a Function to Groups with `groupby()` and `agg()`
+
+```{python}
+# Calculate the median gdp_percapita and inflation_rate for each income_group
+median_values = economies.groupby('income_group').agg({
+    'gdp_percapita': 'median',
+    'inflation_rate': 'median'
+})
+median_values
+```
+
+### Summary tables
+
+```{python}
+# Create a pivot table of gdp_percapita and inflation_rate by income_group and year
+pivot_table = pd.pivot_table(
+    economies,
+    values=['gdp_percapita', 'inflation_rate'],
+    index=['income_group'],
+    columns=['year'],
+    aggfunc='mean'
+)
+pivot_table
+```
+
+### Analyzing categorical data 
+
+#### Using cross-tabulation
+
+```{python}
+cross_tab = pd.crosstab(economies['income_group'], economies['year'])
+cross_tab
+```
+
+#### By getting group counts
+
+```{python}
+# Count the occurrences of each income_group
+income_group_counts = economies['income_group'].value_counts()
+income_group_counts
+```
+
+## Exercise #4: Transforming and Aggregating Data with Pandas
+
+By completing this exercise, you will be able to use `pandas` to 
+- Transform data by applying functions element-wise, across rows/columns, or to groups
+- Aggregate data effectively by grouping it
+- Create summary tables
+- Analyze categorical data using cross-tabulation (value_counts)
+
+
+---
+
+# Module 2: Data Visualization Basics with Matplotlib and Seaborn
+
+## Walkthrough #5: Creating Basic Plots with Matplotlib
+
+### Line plot
+
+```{python}
+# Filter data for a specific country
+afg_data = economies[economies['code'] == 'AFG']
+
+# Line plot of gdp_percapita over the years
+plt.figure(figsize=(10, 6))
+plt.plot(afg_data['year'], afg_data['gdp_percapita'], marker='o', linestyle='-', color='b')
+plt.show()
+```
+
+### Bar chart
+
+```{python}
+# Filter data for Caribbean countries and the year 2020
+caribbean_countries = ['ABW', 'BHS', 'BRB', 'DOM']
+data_2020_caribbean = economies[(economies['year'] == 2020) & (economies['code'].isin(caribbean_countries))]
+
+# Bar chart of gdp_percapita for different Caribbean countries in 2020
+plt.figure(figsize=(10, 6))
+plt.bar(data_2020_caribbean['code'], data_2020_caribbean['gdp_percapita'], color='g')
+plt.xticks(rotation=45)
+plt.show()
+```
+
+### Adding labels and titles
+
+```{python}
+# Filter data for a specific country
+liberia_data = economies[economies['code'] == 'LBR']
+
+# Line plot of gdp_percapita over the years with labels and titles
+plt.figure(figsize=(10, 6))
+plt.plot(liberia_data['year'], liberia_data['gdp_percapita'], marker='o', linestyle='-', color='r')
+plt.xlabel('Year')
+plt.ylabel('GDP Per Capita')
+plt.title('GDP Per Capita Over Years for Liberia (LBR)')
+plt.grid(True)
+plt.show()
+```
+
+### Adjusting axes and tick marks
+
+```{python}
+# Bar chart of gdp_percapita for different Caribbean countries in 2020 with 
+# adjusted axes and tick marks
+plt.figure(figsize=(10, 6))
+plt.bar(data_2020_caribbean['code'], data_2020_caribbean['gdp_percapita'], color='purple')
+plt.xlabel('Country Code')
+plt.ylabel('GDP Per Capita')
+plt.title('GDP Per Capita for Different Countries in 2020')
+
+# Adjust axes
+plt.ylim(0, max(data_2020_caribbean['gdp_percapita']) + 5000)
+
+# Adjust tick marks
+plt.xticks(rotation=45)
+plt.yticks(range(0, int(max(data_2020_caribbean['gdp_percapita']) + 5000), 5000))
+
+plt.grid(axis='y')
+plt.show()
+```
+
+
+## Exercise #5: Creating Basic Plots with Matplotlib
+
+By completing this exercise, you will be able to use `matplotlib` to 
+- Create line plots and bar charts
+- Add labels and titles
+- Adjust axes and tick marks
+
+
+## Walkthrough #6: Data Visualization Techniques with Seaborn
+
+### Heatmap
+
+```{python}
+# Select only the numeric columns
+numeric_cols = economies.select_dtypes(include=['float64', 'int64']).columns
+numeric_economies = economies[numeric_cols]
+
+# Calculate correlation matrix
+corr_matrix = numeric_economies.corr()
+
+# Create heatmap
+plt.figure(figsize=(10, 8))
+sns.heatmap(corr_matrix, annot=True, cmap='coolwarm', fmt='.2f')
+plt.title('Correlation Heatmap')
+plt.show()
+```
+
+### Pair plot
+
+```{python}
+sns.pairplot(economies, vars=['gdp_percapita', 'gross_savings', 'inflation_rate', 'total_investment'])
+plt.suptitle('Pair Plot of Numerical Columns', y=1.02)
+plt.show()
+```
+
+### Violin plot
+
+```{python}
+plt.figure(figsize=(10, 6))
+sns.violinplot(x='income_group', y='gdp_percapita', data=economies)
+plt.xlabel('Income Group')
+plt.ylabel('GDP Per Capita')
+plt.title('Violin Plot of GDP Per Capita by Income Group')
+plt.show()
+```
+
+### Customizing Seaborn plots
+
+```{python}
+# Bar plot with customization
+plt.figure(figsize=(10, 6))
+sns.barplot(x='code', y='gdp_percapita', data=data_2020_caribbean, palette='viridis')
+plt.xlabel('Country Code')
+plt.ylabel('GDP Per Capita')
+plt.title('GDP Per Capita for Different Caribbean Countries in 2020')
+
+# Customizing axes and tick marks
+plt.ylim(0, max(data_2020_caribbean['gdp_percapita']) + 5000)
+plt.xticks(rotation=60)
+plt.yticks(range(0, int(max(data_2020_caribbean['gdp_percapita']) + 5000), 5000))
+
+plt.grid(axis='y')
+plt.show()
+```
+
+## Exercise #6: Data Visualization Techniques with Seaborn
+
+By completing this exercise, you will be able to use `seaborn` to
+- Create heatmaps
+- Design pair plots and violin plots
+- Customize Seaborn plots
+
+
+---
+
+# Module 3: Interactive Data Visualization with Plotly
+
+## Walkthrough #7: Interactive Charts and Dashboards with Plotly
+
+### Basic interactive chart
+
+```{python}
+# Filter data for a specific country
+afg_data = economies[economies['code'] == 'AFG']
+
+# Create an interactive line chart
+fig = px.line(afg_data, x='year', y='gdp_percapita', title='GDP Per Capita Over Years for Afghanistan (AFG)')
+fig.show()
+```
+
+### Adding interactive elements
+
+```{python}
+# Create an interactive scatter plot
+fig = px.scatter(economies, x='gdp_percapita', y='gross_savings', color='income_group',
+                 hover_name='code', title='GDP Per Capita vs. Gross Savings',
+                 labels={'gdp_percapita': 'GDP Per Capita', 'gross_savings': 'Gross Savings (%)'})
+
+# Add hover, zoom, and selection tools
+fig.update_traces(marker=dict(size=10), selector=dict(mode='markers'))
+fig.update_layout(hovermode='closest')
+
+fig.show()
+```
+
+### Designing a simple dashboard
+
+```{python}
+import plotly.graph_objects as go
+from plotly.subplots import make_subplots
+
+# Filter data for the year 2020
+data_2020 = economies[economies['year'] == 2020]
+
+# Create a subplot figure with 1 row and 2 columns
+fig = make_subplots(rows=1, cols=2, subplot_titles=('GDP Per Capita Over Years for Afghanistan', 'GDP Per Capita for Different Countries in 2020'))
+
+# Line chart of GDP Per Capita for Afghanistan
+afg_data = economies[economies['code'] == 'AFG']
+line_chart = go.Scatter(x=afg_data['year'], y=afg_data['gdp_percapita'], mode='lines+markers', name='Afghanistan')
+fig.add_trace(line_chart, row=1, col=1)
+
+# Bar chart of GDP Per Capita for different countries in 2020
+bar_chart = go.Bar(x=data_2020['code'], y=data_2020['gdp_percapita'], name='2020')
+fig.add_trace(bar_chart, row=1, col=2)
+
+# Update layout
+fig.update_layout(title_text='Simple Dashboard with Multiple Charts', showlegend=False)
+fig.show()
+
+```
+
+
+## Exercise #7: Interactive Charts and Dashboards with Plotly
+
+By completing this exercise, you will be able to use `plotly` to 
+- Create a basic interactive chart
+- Add interactive elements: hover, zoom, and selection tools
+- Design a simple dashboard with multiple charts
+
+
+## Walkthrough #8: Creating a Dynamic Data Report
+
+### Selecting relevant data
+
+```{python}
+# Select relevant data for the year 2020 and specific columns
+selected_data = economies[economies['year'] == 2020][['code', 'gdp_percapita', 'gross_savings', 'inflation_rate', 'income_group']]
+selected_data.head()
+```
+
+### Building a dynamic report
+
+```{python}
+import plotly.express as px
+import plotly.graph_objects as go
+from plotly.subplots import make_subplots
+
+# Scatter plot of GDP per Capita vs. Gross Savings
+scatter_fig = px.scatter(selected_data, x='gdp_percapita', y='gross_savings', color='income_group',
+                         hover_name='code', title='GDP Per Capita vs. Gross Savings (2020)',
+                         labels={'gdp_percapita': 'GDP Per Capita', 'gross_savings': 'Gross Savings (%)'})
+
+# Bar chart of GDP per Capita for different income groups
+bar_fig = px.bar(selected_data, x='code', y='gdp_percapita', color='income_group',
+                 title='GDP Per Capita by Country and Income Group (2020)',
+                 labels={'gdp_percapita': 'GDP Per Capita', 'code': 'Country Code'})
+
+# Line chart of Inflation Rate for different income groups
+line_fig = px.line(selected_data, x='code', y='inflation_rate', color='income_group',
+                   title='Inflation Rate by Country and Income Group (2020)',
+                   labels={'inflation_rate': 'Inflation Rate (%)', 'code': 'Country Code'})
+
+# Create a subplot figure with 3 rows
+fig = make_subplots(rows=3, cols=1, subplot_titles=('GDP Per Capita vs. Gross Savings', 'GDP Per Capita by Country and Income Group', 'Inflation Rate by Country and Income Group'))
+
+# Add scatter plot
+fig.add_trace(go.Scatter(x=selected_data['gdp_percapita'], y=selected_data['gross_savings'], mode='markers', marker=dict(color=selected_data['income_group'].astype('category').cat.codes), text=selected_data['code'], name='Scatter'), row=1, col=1)
+
+# Add bar chart
+fig.add_trace(go.Bar(x=selected_data['code'], y=selected_data['gdp_percapita'], marker=dict(color=selected_data['income_group'].astype('category').cat.codes), name='Bar'), row=2, col=1)
+
+# Add line chart
+fig.add_trace(go.Scatter(x=selected_data['code'], y=selected_data['inflation_rate'], mode='lines+markers', marker=dict(color=selected_data['income_group'].astype('category').cat.codes), name='Line'), row=3, col=1)
+
+# Update layout
+fig.update_layout(title_text='Dynamic Data Report for Economic Indicators (2020)', showlegend=False, height=900)
+
+fig.show()
+
+```
+
+### Adding contextual text and summaries
+
+```{python}
+import plotly.io as pio
+import plotly.graph_objects as go
+
+# Create a subplot figure with 3 rows
+fig = make_subplots(rows=3, cols=1, subplot_titles=('GDP Per Capita vs. Gross Savings', 'GDP Per Capita by Country and Income Group', 'Inflation Rate by Country and Income Group'))
+
+# Add scatter plot
+fig.add_trace(go.Scatter(x=selected_data['gdp_percapita'], y=selected_data['gross_savings'], mode='markers', marker=dict(color=selected_data['income_group'].astype('category').cat.codes), text=selected_data['code'], name='Scatter'), row=1, col=1)
+
+# Add bar chart
+fig.add_trace(go.Bar(x=selected_data['code'], y=selected_data['gdp_percapita'], marker=dict(color=selected_data['income_group'].astype('category').cat.codes), name='Bar'), row=2, col=1)
+
+# Add line chart
+fig.add_trace(go.Scatter(x=selected_data['code'], y=selected_data['inflation_rate'], mode='lines+markers', marker=dict(color=selected_data['income_group'].astype('category').cat.codes), name='Line'), row=3, col=1)
+
+# Update layout
+fig.update_layout(
+    title_text='Dynamic Data Report for Economic Indicators (2020)', 
+    showlegend=False, 
+    height=900,
+    annotations=[
+        go.layout.Annotation(
+            text='''This report presents key economic indicators for various countries in 2020, categorized by income group. 
+            The scatter plot shows the relationship between GDP per Capita and Gross Savings. The bar chart compares GDP per Capita 
+            across countries, while the line chart illustrates inflation rates. These visualizations provide insights into economic 
+            performance and disparities among different income groups.''', 
+            xref='paper', yref='paper', x=0.5, y=1.15, showarrow=False, font=dict(size=12)
+        )
+    ]
+)
+
+# Add summaries below each subplot
+fig.add_annotation(text='The scatter plot reveals a positive correlation between GDP per Capita and Gross Savings, especially for high-income countries.', xref='paper', yref='paper', x=0.5, y=0.83, showarrow=False, font=dict(size=10))
+fig.add_annotation(text='The bar chart shows that high-income countries generally have higher GDP per Capita compared to low-income countries.', xref='paper', yref='paper', x=0.5, y=0.5, showarrow=False, font=dict(size=10))
+fig.add_annotation(text='The line chart indicates varied inflation rates among countries, with low-income countries experiencing higher volatility.', xref='paper', yref='paper', x=0.5, y=0.17, showarrow=False, font=dict(size=10))
+
+fig.show()
+
+```
+
+
+## Exercise #8: Creating a Dynamic Data Report
+
+By completing this exercise, you will be able to use `pandas` and `plotly` to 
+- Select relevant data
+- Build a dynamic report
+- Add contextual text and summaries
+
+
+---
+
+# Module 4: Real-World Data Analysis Project
+
+## Walkthrough #9: Interactive Charts and Dashboards with Plotly
+
+### Selecting a Dataset
+
+#### Questions to Ask:
+1. **What industry problem or area of interest does the dataset align with?**
+   - Is the dataset relevant to economic analysis, market research, policy planning, or another industry?
+2. **Does the dataset provide sufficient complexity and scope for a thorough analysis?**
+   - Does it include multiple variables and data points across different time periods and categories (e.g., income groups, countries)?
+3. **What specific questions or hypotheses do we want to explore with this dataset?**
+   - Are we interested in comparing economic indicators across countries, understanding the impact of GDP per capita on other variables, or identifying trends over time?
+
+#### Example:
+- **Dataset**: The `economies` dataset.
+- **Industry Problem**: Understanding economic disparities between countries and the impact of economic indicators on overall economic health.
+- **Specific Questions**:
+  - How do GDP per capita and gross savings vary across different income groups?
+  - What is the relationship between inflation rate and GDP per capita?
+
+### Applying Cleaning, Transforming, and Analysis Techniques
+
+#### Questions to Ask:
+1. **What cleaning steps are necessary to prepare the data for analysis?**
+   - Are there any missing values that need to be handled? Are there any inconsistencies in data types?
+2. **What transformations are required to make the data analysis-ready?**
+   - Do we need to create new columns, filter specific rows, or aggregate data by certain categories?
+3. **How can we analyze the data to uncover patterns, trends, or anomalies?**
+   - What statistical methods or visualizations can we use to explore relationships between variables?
+
+#### Example:
+- **Cleaning**:
+  ```{python}
+  # Handle missing values
+  economies_cleaned = economies.fillna({
+      'gdp_percapita': economies['gdp_percapita'].mean(),
+      'gross_savings': economies['gross_savings'].mean(),
+      'inflation_rate': economies['inflation_rate'].mean(),
+      'total_investment': economies['total_investment'].mean(),
+      'unemployment_rate': economies['unemployment_rate'].mean(),
+      'exports': economies['exports'].mean(),
+      'imports': economies['imports'].mean()
+  })
+
+  # Convert categorical variables to category type
+  economies_cleaned['income_group'] = economies_cleaned['income_group'].astype('category')
+  ```
+
+- **Transforming**:
+  ```{python}
+  # Create new columns for analysis
+  economies_cleaned['gdp_growth'] = economies_cleaned.groupby('code')['gdp_percapita'].pct_change()
+  ```
+
+- **Analyzing**:
+  ```{python}
+  import seaborn as sns
+  import matplotlib.pyplot as plt
+
+  # Analyze the relationship between GDP per capita and gross savings
+  sns.scatterplot(data=economies_cleaned, x='gdp_percapita', y='gross_savings', hue='income_group')
+  plt.title('GDP Per Capita vs. Gross Savings by Income Group')
+  plt.show()
+
+  # Analyze the trend of inflation rate over time
+  sns.lineplot(data=economies_cleaned, x='year', y='inflation_rate', hue='income_group')
+  plt.title('Inflation Rate Over Time by Income Group')
+  plt.show()
+  ```
+
+### Initial Findings and Interpretation
+
+#### Questions to Ask:
+1. **What do the initial findings tell us about the data?**
+   - Are there any notable patterns or trends in the data? Are there any unexpected results?
+2. **How do these insights relate to the problem defined earlier?**
+   - Do the findings help us understand economic disparities between countries? Do they provide insights into the impact of certain economic indicators?
+3. **What hypotheses can we test based on the initial results?**
+   - Can we test hypotheses about the relationship between GDP per capita and other economic indicators? Can we refine our analysis to explore these hypotheses further?
+
+#### Example:
+- **Initial Findings**:
+  - **GDP per Capita vs. Gross Savings**: The scatter plot shows that high-income countries generally have higher GDP per capita and gross savings. There is a positive correlation between these two indicators.
+  - **Inflation Rate Over Time**: The line plot indicates that inflation rates vary significantly over time and across different income groups. Low-income countries tend to experience higher volatility in inflation rates.
+
+- **Interpretation**:
+  - These findings suggest that economic health, as measured by GDP per capita and gross savings, is strongly influenced by the income group of a country. High-income countries appear to have more stable and higher economic performance.
+  - The volatility in inflation rates among low-income countries may indicate economic instability, which could be a key area for policy intervention.
+
+- **Hypotheses**:
+  - **Hypothesis 1**: High-income countries have a higher average GDP per capita and gross savings compared to low-income countries.
+  - **Hypothesis 2**: Low-income countries experience greater volatility in inflation rates compared to high-income countries.
+
+- **Next Steps**:
+  - Conduct further analysis to test these hypotheses, using statistical methods to confirm the observed patterns.
+  - Explore other economic indicators to gain a more comprehensive understanding of economic disparities and trends.
+
+By following these steps, you can effectively select, clean, transform, and analyze the `economies` dataset to gain valuable insights and address common industry problems or research questions.
+
+## Exercise #9: Interactive Charts and Dashboards with Plotly
+
+By completing this exercise, you will be able to identify ways to best
+- Select a dataset
+- Apply cleaning, transforming, and analysis techniques
+- Review initial findings and interpretation
+
+
+## Walkthrough #10: Finalizing and Presenting Your Data Analysis Project
+
+### Integrate Feedback to Refine the Analysis
+
+#### Questions to Ask:
+1. **What feedback have you received from peers, stakeholders, or mentors?**
+   - Is there feedback on the clarity of the analysis, choice of visualizations, or the comprehensiveness of the analysis?
+2. **How can you incorporate this feedback into your analysis?**
+   - Are there additional variables that need to be analyzed? Do you need to clean the data further or adjust the visualizations?
+3. **What new questions or hypotheses have emerged from the feedback?**
+   - Does the feedback suggest new directions for the analysis or areas that need more focus?
+
+#### Example:
+- **Feedback**:
+  - Peers suggested that the analysis should also consider the impact of unemployment rates.
+  - Stakeholders requested more clarity on the relationship between GDP per capita and inflation rates across different income groups.
+
+- **Refining the Analysis**:
+  ```{python}
+  # Include additional variables in the analysis
+  selected_data = economies[economies['year'] == 2020][['code', 'gdp_percapita', 'gross_savings', 'inflation_rate', 'unemployment_rate', 'income_group']]
+
+  # Analyze the relationship between GDP per capita and unemployment rate
+  sns.scatterplot(data=selected_data, x='gdp_percapita', y='unemployment_rate', hue='income_group')
+  plt.title('GDP Per Capita vs. Unemployment Rate by Income Group (2020)')
+  plt.show()
+
+  # Re-analyze the relationship between GDP per capita and inflation rate with more clarity
+  sns.scatterplot(data=selected_data, x='gdp_percapita', y='inflation_rate', hue='income_group')
+  plt.title('GDP Per Capita vs. Inflation Rate by Income Group (2020)')
+  plt.show()
+  ```
+
+### Finalize the Presentation with Impactful Visuals and Narrative
+
+#### Questions to Ask:
+1. **What are the key insights from the analysis that need to be highlighted?**
+   - What are the most important findings that should be communicated to the audience?
+2. **How can you create impactful visuals that clearly convey these insights?**
+   - What types of charts or visualizations best represent the data and findings?
+3. **What narrative will you use to guide the audience through the presentation?**
+   - How will you structure the presentation to tell a compelling story with the data?
+
+#### Example:
+- **Key Insights**:
+  - High-income countries have higher GDP per capita and gross savings.
+  - There is a positive correlation between GDP per capita and gross savings.
+  - Low-income countries experience greater volatility in inflation rates.
+  - Unemployment rates vary significantly across income groups.
+
+- **Impactful Visuals**:
+  ```{python}
+  import plotly.express as px
+
+  # Bar chart of GDP per Capita by Country and Income Group
+  bar_fig = px.bar(selected_data, x='code', y='gdp_percapita', color='income_group',
+                   title='GDP Per Capita by Country and Income Group (2020)',
+                   labels={'gdp_percapita': 'GDP Per Capita', 'code': 'Country Code'})
+  bar_fig.show()
+
+  # Scatter plot of GDP per Capita vs. Gross Savings by Income Group
+  scatter_fig = px.scatter(selected_data, x='gdp_percapita', y='gross_savings', color='income_group',
+                           hover_name='code', title='GDP Per Capita vs. Gross Savings (2020)',
+                           labels={'gdp_percapita': 'GDP Per Capita', 'gross_savings': 'Gross Savings (%)'})
+  scatter_fig.show()
+
+  # Line chart of Inflation Rate by Income Group
+  line_fig = px.line(selected_data, x='code', y='inflation_rate', color='income_group',
+                     title='Inflation Rate by Country and Income Group (2020)',
+                     labels={'inflation_rate': 'Inflation Rate (%)', 'code': 'Country Code'})
+  line_fig.show()
+
+  # Scatter plot of GDP per Capita vs. Unemployment Rate by Income Group
+  scatter_fig_2 = px.scatter(selected_data, x='gdp_percapita', y='unemployment_rate', color='income_group',
+                             hover_name='code', title='GDP Per Capita vs. Unemployment Rate (2020)',
+                             labels={'gdp_percapita': 'GDP Per Capita', 'unemployment_rate': 'Unemployment Rate (%)'})
+  scatter_fig_2.show()
+  ```
+
+- **Narrative**:
+  - **Introduction**: Introduce the dataset and the industry problem. Explain why understanding economic indicators across different income groups is important.
+  - **Key Findings**: Present the key findings using the visualizations created. Highlight the relationship between GDP per capita, gross savings, inflation rates, and unemployment rates.
+  - **Detailed Analysis**: Dive deeper into each key finding, providing more context and interpretation. Explain the significance of the trends and patterns observed in the data.
+  - **Conclusion**: Summarize the insights and discuss potential implications for policy or business decisions. Suggest areas for further research or analysis based on the findings.
+
+### Rehearse the Presentation
+
+#### Questions to Ask:
+1. **How will you structure your presentation to ensure a smooth flow?**
+   - What order will you present the visualizations and insights? How will you transition between different sections?
+2. **How will you engage your audience and ensure they understand the key points?**
+   - What techniques will you use to highlight important information and keep the audience's attention?
+3. **What potential questions or feedback might you receive, and how will you address them?**
+   - How will you prepare for questions about the data, analysis methods, or findings?
+
+#### Example:
+- **Structuring the Presentation**:
+  - Start with an overview of the dataset and the industry problem.
+  - Move on to the key findings, using the most impactful visualizations to illustrate each point.
+  - Provide a detailed analysis of each finding, explaining the significance and implications.
+  - Conclude with a summary of insights and suggestions for further research.
+
+- **Engaging the Audience**:
+  - Use clear and concise language to explain complex concepts.
+  - Highlight key points using annotations or callouts on the visualizations.
+  - Encourage questions and interaction to keep the audience engaged.
+
+- **Preparing for Questions**:
+  - Anticipate common questions about the data sources, cleaning methods, and analysis techniques.
+  - Prepare explanations for any limitations of the data or analysis.
+  - Be ready to discuss potential next steps and areas for further research based on the findings.
+
+By following these steps, you can effectively integrate feedback, finalize your presentation with impactful visuals and narrative, and rehearse to ensure a smooth and engaging delivery.
+
+## Exercise #10: Finalizing and Presenting Your Data Analysis Project
+
+By completing this exercise, you will be able to identify the best strategies to
+- Integrate feedback to refine the analysis
+- Finalize the presentation with impactful visuals and narrative
+- Rehearse the presentation
