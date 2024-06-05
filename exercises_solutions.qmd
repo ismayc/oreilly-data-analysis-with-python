@@ -29,6 +29,10 @@ import seaborn as sns
 import plotly.express as px
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
+
+# For plotly to load directly in Jupyter notebook
+import plotly.offline as pyo
+pyo.init_notebook_mode(connected=True)
 ```
 
 ## Exercise #1: Setting Up the Python Environment
@@ -91,15 +95,6 @@ economies.dtypes
 By completing this exercise, you will be able to use `pandas` to  
 - Import data from a CSV or from an Excel file   
 - Perform an initial exploration of the data  
-
-```{python}
-# Load the populations data from an Excel file
-
-# Inspection methods for populations DataFrame
-
-# Checking for missing data and data types for populations DataFrame
-
-```
 
 ```{python}
 # Load the populations data from an Excel file
@@ -1167,9 +1162,9 @@ fig.update_layout(
 )
 
 # Add summaries below each subplot
-fig.add_annotation(text='The scatter plot reveals a negative correlation between Fertility Rate and Life Expectancy.', xref='paper', yref='paper', x=0, y=0.75, showarrow=False, font=dict(size=12))
-fig.add_annotation(text='The bar chart shows that fertility rates vary significantly across countries, with African countries (indicated by blue bars) generally exhibiting higher fertility rates.', xref='paper', yref='paper', x=0, y=0.30, showarrow=False, font=dict(size=12))
-fig.add_annotation(text='The scatter plot shows that life expectancy varies across countries and continents, with European (purple points) tending to have higher life expectancies.', xref='paper', yref='paper', x=0, y=-0.1, showarrow=False, font=dict(size=12))
+fig.add_annotation(text='A negative correlation between Fertility Rate and Life Expectancy.', xref='paper', yref='paper', x=0, y=0.75, showarrow=False, font=dict(size=12))
+fig.add_annotation(text='Fertility rates vary significantly across countries, with African countries generally exhibiting higher fertility rates.', xref='paper', yref='paper', x=0, y=0.30, showarrow=False, font=dict(size=12))
+fig.add_annotation(text='Life expectancy varies across countries and continents, with European tending to have higher life expectancies.', xref='paper', yref='paper', x=0, y=-0.1, showarrow=False, font=dict(size=12))
 
 fig.show()
 ```
