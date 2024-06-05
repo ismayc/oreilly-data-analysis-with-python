@@ -1,0 +1,30 @@
+# Ignore all .csv files
+*.csv
+
+# Ignore all .xlsx files
+*.xlsx
+
+# Ignore all .parquet files
+*.parquet
+
+# Ignore all files in folders
+bin/
+data_prep_files/
+etc/
+exercises_files/
+exercises_solutions_files
+include/
+lib/
+share/
+
+# Ignore HTML files
+*.html
+
+# Ignore config file
+pyvenv.cfg
+
+# Ignore all files in the data-raw directory
+data-raw/
+
+# Ignore hidden files
+.*
