@@ -2,8 +2,6 @@
 
 ## Recommended instructions on getting set up with Python and Jupyter Notebook
 
-To help your students get their local machines set up for using Jupyter Notebooks along with pandas, matplotlib, seaborn, and plotly, you can provide the following step-by-step instructions. These will guide them through the installation of Python, necessary libraries, and setting up their development environment.
-
 ### Step 1: Install Python
 - **Download Python**: Go to the [official Python website](https://www.python.org/downloads/) and download the latest version of Python for your operating system (Windows, macOS, or Linux).
 
