@@ -8,6 +8,7 @@
 archive/
 renv/
 renv.lock
+requirements.txt
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
