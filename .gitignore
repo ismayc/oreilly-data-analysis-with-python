@@ -1,6 +1,10 @@
 .DS_Store
 .Rhistory
 archive/
+.RData
+.renvignore
+.Rhistory
+.Rprofile
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
