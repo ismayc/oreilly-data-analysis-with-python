@@ -27,6 +27,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 import plotly.express as px
+import plotly.graph_objects as go
+from plotly.subplots import make_subplots
 ```
 
 ## Exercise #1: Setting Up the Python Environment
@@ -429,6 +431,7 @@ pivot_table
 #### Using cross-tabulation
 
 ```{python}
+# Show counts of income_group by year
 cross_tab = pd.crosstab(economies['income_group'], economies['year'])
 cross_tab
 ```
@@ -655,7 +658,8 @@ plt.show()
 ### Adjusting Axes and Tick Marks
 
 ```{python}
-# Filter data for selected African countries and the year 2020
+# Filter data for selected African countries ('NGA', 'ETH', 'EGY', 'ZAF', 'DZA')
+# and the year 2020
 african_countries = ['NGA', 'ETH', 'EGY', 'ZAF', 'DZA']
 
 # Need to convert year back to an integer?
@@ -663,7 +667,8 @@ populations['year'] = populations['year'].astype(int)
 
 data_2020_africa = populations[(populations['year'] == 2020) & (populations['country_code'].isin(african_countries))]
 
-# Bar chart of fertility rate for selected African countries in 2020 with adjusted axes and tick marks
+# Bar chart of fertility rate for selected African countries in 2020 with 
+# adjusted axes and tick marks
 plt.figure(figsize=(10, 6))
 plt.bar(data_2020_africa['country_code'], data_2020_africa['fertility_rate'], color='purple')
 plt.xlabel('Country Code')
@@ -799,7 +804,8 @@ plt.show()
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-# Filter data for selected European countries and the year 2020
+# Filter data for selected European countries ('DEU', 'FRA', 'ITA', 'ESP', 'GBR')
+# and the year 2020
 european_countries = ['DEU', 'FRA', 'ITA', 'ESP', 'GBR']
 data_2020_europe = populations[(populations['year'] == 2020) & (populations['country_code'].isin(european_countries))]
 
@@ -893,10 +899,10 @@ By completing this exercise, you will be able to use `plotly` to
 ```{python}
 import plotly.express as px
 
-# Filter data for a specific country
+# Filter data for a specific country (Brazil)
 bra_data = populations[populations['country_code'] == 'BRA']
 
-# Create an interactive line chart
+# Create an interactive line chart (Fertility Rate Over Years)
 fig = px.line(bra_data, x='year', y='fertility_rate', title='Fertility Rate Over Years for Brazil (BRA)')
 fig.show()
 ```
@@ -940,7 +946,7 @@ south_american_data_2020 = data_2020[data_2020['continent'] == 'South America']
 bar_chart = go.Bar(x=south_american_data_2020['country'], y=south_american_data_2020['life_expectancy'], name='2020')
 fig.add_trace(bar_chart, row=1, col=2)
 
-# Update layout
+# Update layout to add a title and hide the legend
 fig.update_layout(title_text='Simple Dashboard with Multiple Charts', showlegend=False)
 fig.show()
 ```
@@ -961,21 +967,6 @@ selected_data.head()
 import plotly.express as px
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
-
-# Scatter plot of GDP per Capita vs. Gross Savings
-scatter_fig = px.scatter(selected_data, x='gdp_percapita', y='gross_savings', color='income_group',
-                         hover_name='code', title='GDP Per Capita vs. Gross Savings (2020)',
-                         labels={'gdp_percapita': 'GDP Per Capita', 'gross_savings': 'Gross Savings (%)'})
-
-# Bar chart of GDP per Capita for different income groups
-bar_fig = px.bar(selected_data, x='code', y='gdp_percapita', color='income_group',
-                 title='GDP Per Capita by Country and Income Group (2020)',
-                 labels={'gdp_percapita': 'GDP Per Capita', 'code': 'Country Code'})
-
-# Scatter plot of Gross Savings for different income groups
-scatter_fig2 = px.scatter(selected_data, x='code', y='gross_savings', color='income_group',
-                   title='Gross Savings by Country and Income Group (2020)',
-                   labels={'gross_savings': 'Gross Savings', 'code': 'Country Code'})
 
 # Create a subplot figure with 3 rows
 fig = make_subplots(rows=3, cols=1, 
@@ -1082,31 +1073,49 @@ import plotly.express as px
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 
-# Create a subplot figure with 3 rows
+# Create a subplot figure with 3 rows and subplot titles
 fig = make_subplots(rows=3, cols=1, 
                     subplot_titles=('Fertility Rate vs. Life Expectancy', 
                                     'Fertility Rate by Country and Continent', 
                                     'Life Expectancy by Country and Continent'))
 
-# Add scatter plot
+# Adding a scatter plot trace to the figure
+# - x-axis: 'fertility_rate' from the selected population data
+# - y-axis: 'life_expectancy' from the selected population data
+# - mode: 'markers' to display points
+# - marker color: based on the 'continent' category codes, to differentiate points by continent
+# - text: 'country_code' to show country codes on hover
+# - name: 'Scatter' to label this trace
+# The trace is added to the first row and first column of the subplot grid
 fig.add_trace(go.Scatter(x=pop_selected_data['fertility_rate'], y=pop_selected_data['life_expectancy'], 
                          mode='markers', 
                          marker=dict(color=pop_selected_data['continent'].astype('category').cat.codes), 
                          text=pop_selected_data['country_code'], name='Scatter'), 
               row=1, col=1)
 
-# Add bar chart
+# Adding a bar chart trace to the figure
+# - x-axis: 'country_code' from the selected population data
+# - y-axis: 'fertility_rate' from the selected population data
+# - marker color: based on the 'continent' category codes, to differentiate bars by continent
+# - name: 'Bar' to label this trace
+# The trace is added to the second row and first column of the subplot grid
 fig.add_trace(go.Bar(x=pop_selected_data['country_code'], y=pop_selected_data['fertility_rate'], 
                      marker=dict(color=pop_selected_data['continent'].astype('category').cat.codes), name='Bar'), 
               row=2, col=1)
 
-# Add another scatter plot
+# Adding a scatter plot trace to the figure
+# - x-axis: 'country_code' from the selected population data
+# - y-axis: 'life_expectancy' from the selected population data
+# - mode: 'markers' to display points
+# - marker color: based on the 'continent' category codes, to differentiate points by continent
+# - name: 'Scatter' to label this trace
+# The trace is added to the third row and first column of the subplot grid
 fig.add_trace(go.Scatter(x=pop_selected_data['country_code'], y=pop_selected_data['life_expectancy'], 
                          mode='markers', 
                          marker=dict(color=pop_selected_data['continent'].astype('category').cat.codes), name='Scatter'), 
               row=3, col=1)
 
-# Update layout
+# Update layout to include title, hide legend, and set height to 900
 fig.update_layout(title_text='Dynamic Data Report for Population Indicators (2020)', showlegend=False, height=900)
 
 fig.show()
@@ -1318,19 +1327,19 @@ By following these steps, you can effectively select, clean, transform, and anal
   import plotly.express as px
 
   # Bar chart of GDP per Capita by Country and Income Group
-  bar_fig = px.bar(selected_data, x='code', y='gdp_percapita', color='income_group',
+  bar_fig = px.bar(economies_cleaned, x='code', y='gdp_percapita', color='income_group',
                    title='GDP Per Capita by Country and Income Group (2020)',
                    labels={'gdp_percapita': 'GDP Per Capita', 'code': 'Country Code'})
   bar_fig.show()
 
   # Scatter plot of GDP per Capita vs. Gross Savings by Income Group
-  scatter_fig = px.scatter(selected_data, x='gdp_percapita', y='gross_savings', color='income_group',
+  scatter_fig = px.scatter(economies_cleaned, x='gdp_percapita', y='gross_savings', color='income_group',
                            hover_name='code', title='GDP Per Capita vs. Gross Savings (2020)',
                            labels={'gdp_percapita': 'GDP Per Capita', 'gross_savings': 'Gross Savings (%)'})
   scatter_fig.show()
 
   # Scatter plot of GDP per Capita vs. Unemployment Rate by Income Group
-  scatter_fig_2 = px.scatter(selected_data, x='gdp_percapita', y='unemployment_rate', color='income_group',
+  scatter_fig_2 = px.scatter(economies_cleaned, x='gdp_percapita', y='unemployment_rate', color='income_group',
                              hover_name='code', title='GDP Per Capita vs. Unemployment Rate (2020)',
                              labels={'gdp_percapita': 'GDP Per Capita', 'unemployment_rate': 'Unemployment Rate (%)'})
   scatter_fig_2.show()
