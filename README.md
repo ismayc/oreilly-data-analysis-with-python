@@ -37,6 +37,8 @@ To help your students get their local machines set up for using Jupyter Notebook
      import matplotlib.pyplot as plt
      import seaborn as sns
      import plotly.express as px
+     import plotly.graph_objects as go
+     from plotly.subplots import make_subplots
      ```
    - Run the cell (`Shift + Enter`). If no errors appear, the libraries are installed correctly.
 
