@@ -1,5 +1,13 @@
 # Materials for the course "Data Analysis with Python" for O'Reilly by Dr. Chester Ismay
 
+# Course content
+
+The major files in this repository are
+- `economies.csv` and `economies.xlsx`: Two different versions of the same data for code walkthroughs, one as Comma-Separated Values and the other as a Microsoft Excel file
+- `populations.csv` and `populations.xlsx`: Two different versions of the same data for student exercises.
+- `exercises.ipynb`: A Jupyter Notebook with pseudocode/instructions provide to be filled in for code walkthroughs and student exercises
+- `exercises_solutions.ipynb`: A Jupyter Notebook with answers to the code walkthroughs and exercises. An HTML version of these solutions is available at https://ismay-oreilly-dap.netlify.app/exercises_solutions.html and is the recommended way to view solutions.
+
 ## Recommended instructions on getting set up with Python and Jupyter Notebook
 
 ### Step 1: Install Python
