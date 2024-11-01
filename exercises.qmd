@@ -420,7 +420,7 @@ By completing this exercise, you will be able to use `pandas` to
 
 By completing this exercise, you will be able to use `pandas` to
 - Aggregate data effectively by grouping it  
-- Transform data by applying functions element-wise, across rows/columns, or to groups  
+- Transform data by applying functions element-wise or to groups  
 - Create summary tables  
 - Analyze categorical data using cross-tabulation and counts  
 
