@@ -11,6 +11,10 @@ import pandas as pd
 
 # Display all columns
 pd.set_option('display.max_columns', None)
+
+# Display all outputs from each cell
+from IPython.core.interactiveshell import InteractiveShell
+InteractiveShell.ast_node_interactivity = "all"
 ```
 
 
