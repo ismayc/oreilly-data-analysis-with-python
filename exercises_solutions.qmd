@@ -1,8 +1,8 @@
 ---
-title: 'Walkthroughs and Exercises for *Data Analysis in Python*'
-author: "Dr. Chester Ismay"
-format: html
-engine: knitr
+title: 'Walkthroughs and Exercises for *Data Analysis in Python*'  
+author: "Dr. Chester Ismay"  
+format: html  
+engine: knitr  
 ---
 
 ```{python}
@@ -379,23 +379,6 @@ economies_plus['income_group_upper'] = economies['income_group'].map(str.upper)
 economies_plus.head()
 ```
 
-#### Applying a function across columns with `apply()`
-
-```{python}
-# Calculate percentage change in gdp_percapita across rows for 2015 to 2020
-# Filter rows for the years 2015 and 2020
-economies_focused = economies[economies['year'].isin([2015, 2020])].copy()
-
-# Calculate percentage change in gdp_percapita across columns for 2015 to 2020
-gdp_pct_change = economies_focused.groupby('code')['gdp_percapita'].apply(lambda x: x.pct_change(fill_method=None))
-
-# Reset the index of the result to align it with the original DataFrame
-gdp_pct_change = gdp_pct_change.reset_index(level=0, drop=True)
-
-# Assign the calculated percentage change back to the DataFrame
-economies_focused['gdp_percapita_change'] = gdp_pct_change
-```
-
 #### Applying a Function to Groups with `groupby()` and `agg()`
 
 ```{python}
@@ -543,7 +526,7 @@ afg_data = economies[economies['code'] == 'AFG']
 plt.figure(figsize=(10, 6))
 plt.plot(afg_data['year'], afg_data['gdp_percapita'], 
          marker='o', linestyle='-', color='b')
-plt.show()
+plt.show();
 ```
 
 ### Bar chart
@@ -557,7 +540,7 @@ data_2020_caribbean = economies[(economies['year'] == 2020) & (economies['code']
 plt.figure(figsize=(10, 6))
 plt.bar(data_2020_caribbean['code'], data_2020_caribbean['gdp_percapita'], color='g')
 plt.xticks(rotation=45)
-plt.show()
+plt.show();
 ```
 
 ### Adding labels and titles
@@ -573,7 +556,7 @@ plt.xlabel('Year')
 plt.ylabel('GDP Per Capita')
 plt.title('GDP Per Capita Over Years for Liberia (LBR)')
 plt.grid(True)
-plt.show()
+plt.show();
 ```
 
 ### Adjusting axes and tick marks
@@ -595,7 +578,7 @@ plt.xticks(rotation=45)
 plt.yticks(range(0, int(max(data_2020_caribbean['gdp_percapita']) + 5000), 5000))
 
 plt.grid(axis='y')
-plt.show()
+plt.show();
 ```
 
 
@@ -617,7 +600,7 @@ india_data = populations[populations['country_code'] == 'IND']
 # Line plot of fertility rate over the years
 plt.figure(figsize=(10, 6))
 plt.plot(india_data['year'], india_data['fertility_rate'], marker='o', linestyle='-', color='b')
-plt.show()
+plt.show();
 ```
 
 ### Bar Chart
@@ -630,7 +613,7 @@ data_2020_asia = populations[(populations['year'] == 2020) & (populations['count
 # Bar chart of population size for selected Asian countries in 2020
 plt.figure(figsize=(10, 6))
 plt.bar(data_2020_asia['country_code'], data_2020_asia['size'], color='g')
-plt.show()
+plt.show();
 ```
 
 ### Adding Labels and Titles
@@ -647,7 +630,7 @@ plt.xlabel('Year')
 plt.ylabel('Life Expectancy')
 plt.title('Life Expectancy Over Years for Nigeria (NGA)')
 plt.grid(True)
-plt.show()
+plt.show();
 ```
 
 ### Adjusting Axes and Tick Marks
@@ -678,7 +661,7 @@ plt.xticks(rotation=45)
 plt.yticks(range(0, int(max(data_2020_africa['fertility_rate']) + 1), 1))
 
 plt.grid(axis='y')
-plt.show()
+plt.show();
 ```
 
 
@@ -698,7 +681,7 @@ corr_matrix = numeric_economies.corr()
 plt.figure(figsize=(10, 8))
 sns.heatmap(corr_matrix, annot=True, cmap='coolwarm', fmt='.2f')
 plt.title('Correlation Heatmap')
-plt.show()
+plt.show();
 ```
 
 ### Pair plot
@@ -706,7 +689,7 @@ plt.show()
 ```{python}
 sns.pairplot(economies, vars=['gdp_percapita', 'gross_savings', 'inflation_rate', 'total_investment'])
 plt.suptitle('Pair Plot of Numerical Columns', y=1)
-plt.show()
+plt.show();
 ```
 
 ### Violin plot
@@ -717,7 +700,7 @@ sns.violinplot(x='income_group', y='gdp_percapita', data=economies)
 plt.xlabel('Income Group')
 plt.ylabel('GDP Per Capita')
 plt.title('Violin Plot of GDP Per Capita by Income Group')
-plt.show()
+plt.show();
 ```
 
 ### Customizing Seaborn plots
@@ -736,7 +719,7 @@ plt.xticks(rotation=60)
 plt.yticks(range(0, int(max(data_2020_caribbean['gdp_percapita']) + 5000), 5000))
 
 plt.grid(axis='y')
-plt.show()
+plt.show();
 ```
 
 ## Exercise #6: Data Visualization Techniques with Seaborn
@@ -763,7 +746,7 @@ pop_corr_matrix = numeric_populations.corr()
 plt.figure(figsize=(10, 8))
 sns.heatmap(pop_corr_matrix, annot=True, cmap='coolwarm', fmt='.2f')
 plt.title('Correlation Heatmap')
-plt.show()
+plt.show();
 ```
 
 ### Pair Plot
@@ -775,7 +758,7 @@ import matplotlib.pyplot as plt
 # Pair plot of fertility rate, life expectancy, and population size
 sns.pairplot(populations, vars=['fertility_rate', 'life_expectancy', 'size'])
 plt.suptitle('Pair Plot of Selected Numerical Columns', y=1)
-plt.show()
+plt.show();
 ```
 
 ### Violin Plot
@@ -790,7 +773,7 @@ sns.violinplot(x='continent', y='fertility_rate', data=populations)
 plt.xlabel('Continent')
 plt.ylabel('Fertility Rate')
 plt.title('Violin Plot of Fertility Rate by Continent')
-plt.show()
+plt.show();
 ```
 
 ### Customizing Seaborn Plots
@@ -817,7 +800,7 @@ plt.xticks(rotation=45)
 plt.yticks(range(0, int(max(data_2020_europe['life_expectancy']) + 10), 10))
 
 plt.grid(axis='y')
-plt.show()
+plt.show();
 ```
 
 ---
@@ -834,7 +817,7 @@ afg_data = economies[economies['code'] == 'AFG']
 
 # Create an interactive line chart
 fig = px.line(afg_data, x='year', y='gdp_percapita', title='GDP Per Capita Over Years for Afghanistan (AFG)')
-fig.show()
+fig.show();
 ```
 
 ### Adding interactive elements
@@ -849,7 +832,7 @@ fig = px.scatter(economies, x='gdp_percapita', y='gross_savings', color='income_
 fig.update_traces(marker=dict(size=10), selector=dict(mode='markers'))
 fig.update_layout(hovermode='closest')
 
-fig.show()
+fig.show();
 ```
 
 ### Designing a simple dashboard
@@ -877,8 +860,7 @@ fig.add_trace(bar_chart, row=1, col=2)
 
 # Update layout
 fig.update_layout(title_text='Simple Dashboard with Multiple Charts', showlegend=False)
-fig.show()
-
+fig.show();
 ```
 
 
@@ -899,7 +881,7 @@ bra_data = populations[populations['country_code'] == 'BRA']
 
 # Create an interactive line chart (Fertility Rate Over Years)
 fig = px.line(bra_data, x='year', y='fertility_rate', title='Fertility Rate Over Years for Brazil (BRA)')
-fig.show()
+fig.show();
 ```
 
 ### Adding Interactive Elements
@@ -916,7 +898,7 @@ fig = px.scatter(populations, x='fertility_rate', y='life_expectancy', color='co
 fig.update_traces(marker=dict(size=10), selector=dict(mode='markers'))
 fig.update_layout(hovermode='closest')
 
-fig.show()
+fig.show();
 ```
 
 ### Designing a Simple Dashboard
@@ -943,7 +925,7 @@ fig.add_trace(bar_chart, row=1, col=2)
 
 # Update layout to add a title and hide the legend
 fig.update_layout(title_text='Simple Dashboard with Multiple Charts', showlegend=False)
-fig.show()
+fig.show();
 ```
 
 ## Walkthrough #8: Creating a Dynamic Data Report
@@ -990,7 +972,7 @@ fig.add_trace(go.Scatter(x=selected_data['code'], y=selected_data['gross_savings
 # Update layout
 fig.update_layout(title_text='Dynamic Data Report for Economic Indicators (2020)', showlegend=False, height=900)
 
-fig.show()
+fig.show();
 ```
 
 ### Adding contextual text and summaries
@@ -1042,7 +1024,7 @@ fig.add_annotation(text='The scatter plot reveals a positive correlation between
 fig.add_annotation(text='The bar chart shows that high-income countries generally have higher GDP per Capita compared to low-income countries.', xref='paper', yref='paper', x=0, y=0.30, showarrow=False, font=dict(size=12))
 fig.add_annotation(text='The scatter plot indicates no clear relationship between income group and gross savings.', xref='paper', yref='paper', x=0, y=-0.1, showarrow=False, font=dict(size=12))
 
-fig.show()
+fig.show();
 ```
 
 
@@ -1113,7 +1095,7 @@ fig.add_trace(go.Scatter(x=pop_selected_data['country_code'], y=pop_selected_dat
 # Update layout to include title, hide legend, and set height to 900
 fig.update_layout(title_text='Dynamic Data Report for Population Indicators (2020)', showlegend=False, height=900)
 
-fig.show()
+fig.show();
 ```
 
 ### Adding Contextual Text and Summaries
@@ -1166,7 +1148,7 @@ fig.add_annotation(text='A negative correlation between Fertility Rate and Life 
 fig.add_annotation(text='Fertility rates vary significantly across countries, with African countries generally exhibiting higher fertility rates.', xref='paper', yref='paper', x=0, y=0.30, showarrow=False, font=dict(size=12))
 fig.add_annotation(text='Life expectancy varies across countries and continents, with European tending to have higher life expectancies.', xref='paper', yref='paper', x=0, y=-0.1, showarrow=False, font=dict(size=12))
 
-fig.show()
+fig.show();
 ```
 
 ---
@@ -1247,7 +1229,7 @@ fig.show()
                hue='income_group', errorbar=None)
   plt.title('Inflation Rate Over Time by Specified Income Group')
   plt.legend(title='Income Group', labels=classified_data['income_group'].unique())
-  plt.show()
+  plt.show();
   ```
 
 ### Initial Findings and Interpretation
@@ -1325,19 +1307,19 @@ By following these steps, you can effectively select, clean, transform, and anal
   bar_fig = px.bar(economies_cleaned, x='code', y='gdp_percapita', color='income_group',
                    title='GDP Per Capita by Country and Income Group (2020)',
                    labels={'gdp_percapita': 'GDP Per Capita', 'code': 'Country Code'})
-  bar_fig.show()
+  bar_fig.show();
 
   # Scatter plot of GDP per Capita vs. Gross Savings by Income Group
   scatter_fig = px.scatter(economies_cleaned, x='gdp_percapita', y='gross_savings', color='income_group',
                            hover_name='code', title='GDP Per Capita vs. Gross Savings (2020)',
                            labels={'gdp_percapita': 'GDP Per Capita', 'gross_savings': 'Gross Savings (%)'})
-  scatter_fig.show()
+  scatter_fig.show();
 
   # Scatter plot of GDP per Capita vs. Unemployment Rate by Income Group
   scatter_fig_2 = px.scatter(economies_cleaned, x='gdp_percapita', y='unemployment_rate', color='income_group',
                              hover_name='code', title='GDP Per Capita vs. Unemployment Rate (2020)',
                              labels={'gdp_percapita': 'GDP Per Capita', 'unemployment_rate': 'Unemployment Rate (%)'})
-  scatter_fig_2.show()
+  scatter_fig_2.show();
   ```
 
 - **Narrative**:

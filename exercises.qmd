@@ -373,24 +373,6 @@ By completing this exercise, you will be able to use `pandas` to
 
 ```
 
-#### Applying a function across columns with `apply()`
-
-```{python}
-# Calculate percentage change in gdp_percapita across rows for 2015 to 2020
-# Filter rows for the years 2015 and 2020
-
-
-# Calculate percentage change in gdp_percapita across columns for 2015 to 2020
-
-
-
-# Reset the index of the result to align it with the original DataFrame
-
-
-# Assign the calculated percentage change back to the DataFrame
-
-```
-
 #### Applying a Function to Groups with `groupby()` and `agg()`
 
 ```{python}
@@ -1111,7 +1093,6 @@ from plotly.subplots import make_subplots
 
 
 
-# Add summaries below each subplot
 # Add summaries below each subplot
 fig.add_annotation(text='A negative correlation between Fertility Rate and Life Expectancy.', xref='paper', yref='paper', x=0, y=0.75, showarrow=False, font=dict(size=12))
 fig.add_annotation(text='Fertility rates vary significantly across countries, with African countries generally exhibiting higher fertility rates.', xref='paper', yref='paper', x=0, y=0.30, showarrow=False, font=dict(size=12))
