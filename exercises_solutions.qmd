@@ -450,23 +450,6 @@ populations_plus['continent_upper'] = populations['continent'].map(str.upper)
 populations_plus.head()
 ```
 
-#### Applying a function across columns with `apply()`
-
-```{python}
-# Filter rows for the years 2015 and 2020
-populations_focused = populations[populations['year'].isin([2015, 2020])].copy()
-
-# Calculate percentage change in population size across columns for 2015 to 2020
-pop_size_pct_change = populations_focused.groupby('country_code')['size'].apply(lambda x: x.pct_change())
-
-# Reset the index of the result to align it with the original DataFrame
-pop_size_pct_change = pop_size_pct_change.reset_index(level=0, drop=True)
-
-# Assign the calculated percentage change back to the DataFrame
-populations_focused['size_change'] = pop_size_pct_change
-populations_focused.head()
-```
-
 #### Applying a function to groups with `groupby()` and `agg()`
 
 ```{python}

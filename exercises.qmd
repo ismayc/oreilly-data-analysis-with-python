@@ -274,7 +274,7 @@ By completing this exercise, you will be able to use `pandas` to
 ```
 
 ```{python}
-# Remove rows with missing values in specific columns
+# Remove rows with missing values in specific columns (e.g., 'fertility_rate', 'life_expectancy')
 
 ```
 
@@ -443,22 +443,6 @@ By completing this exercise, you will be able to use `pandas` to
 
 ```
 
-#### Applying a function across columns with `apply()`
-
-```{python}
-# Filter rows for the years 2015 and 2020
-
-
-# Calculate percentage change in population size across columns for 2015 to 2020
-
-
-# Reset the index of the result to align it with the original DataFrame
-
-
-# Assign the calculated percentage change back to the DataFrame
-
-
-```
 
 #### Applying a function to groups with `groupby()` and `agg()`
 
