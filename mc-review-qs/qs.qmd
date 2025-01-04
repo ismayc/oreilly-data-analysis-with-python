@@ -1,0 +1,237 @@
+---
+title: "Data Analysis with Python - Review Questions"
+author: "Dr. Chester Ismay"
+format: revealjs
+---
+
+
+# Review Questions
+
+Welcome to the quiz!  
+- Each slide contains a question with multiple-choice answers.  
+- Enter the letter of your response into the chat.  
+- Test your brain's understanding! It helps with learning and retention.
+
+---
+
+## Question 1
+
+**What does data analysis involve?**
+
+- **A)** Gathering, storing, and deleting data
+- **B)** Analyzing, formatting, modifying, and explaining data
+- **C)** Collecting, hiding, and securing data
+- **D)** Ignoring, discarding, and overlooking data
+
+---
+
+## Question 2
+
+**Why is Python considered a powerful programming language for data analysis?**
+
+- **A)** Because it is only used for web development
+- **B)** Because it has a limited number of libraries
+- **C)** Because of its versatility and widespread use
+- **D)** Because it is the oldest programming language
+
+---
+
+## Question 3
+
+**What is a Series in Pandas?**
+
+- **A)** A two-dimensional, tabular data structure
+- **B)** A programming language
+- **C)** A file format for data storage
+- **D)** A one-dimensional array-like structure
+
+---
+
+## Question 4
+
+**How can you handle missing data in Pandas?**
+
+- **A)** By removing those rows or columns or replacing them with a specific value
+- **B)** By ignoring it completely
+- **C)** By converting all data to strings
+- **D)** By duplicating the data
+
+---
+
+## Question 5
+
+**What does renaming columns in Pandas help you achieve?**
+
+- **A)** It removes all data from the DataFrame
+- **B)** It updates the labels on columns to be more accurate and descriptive
+- **C)** It converts all data to numerical values
+- **D)** It filters out unwanted rows
+
+---
+
+## Question 6
+
+**Why is data visualization important?**
+
+- **A)** It hides data from users
+- **B)** It duplicates data entries
+- **C)** It converts all data to text format
+- **D)** It transforms raw data into representations that help reveal patterns
+
+---
+
+## Question 7
+
+**When creating a heatmap in Seaborn, what does the `annot` parameter do?**
+
+- **A)** Adds numerical labels to each cell
+- **B)** Changes the color of the heatmap
+- **C)** Adjusts the size of the heatmap
+- **D)** Filters out non-numeric data
+
+---
+
+## Question 8
+
+**What is the primary purpose of pair plots in Seaborn?**
+
+- **A)** To show distribution differences between categories
+- **B)** To visualize time-series data
+- **C)** To examine relationships between multiple variables simultaneously
+- **D)** To create correlation matrices
+
+---
+
+## Question 9
+
+**How do you create a horizontal bar chart in Matplotlib?**
+
+- **A)** `barh(y, width)`
+- **B)** `barh(width, y)`
+- **C)** `hbar(y, width)`
+- **D)** `horizontal_bar(y, width)`
+
+---
+
+## Question 10
+
+**How can Seaborn plots be customized to add grouping and facets?**
+
+- **A)** By using arguments like `hue`, `col`, and `row`
+- **B)** By adjusting the plot size
+- **C)** By changing the axis labels only
+- **D)** By using grayscale color schemes
+
+---
+
+## Question 11
+
+**What should you consider when selecting a dataset for analysis?**
+
+- **A)** Its alignment with a common industry problem or area of interest
+- **B)** Its size only
+- **C)** The color of the data points
+- **D)** The name of the dataset
+
+---
+
+## Question 12
+
+**Why is it important to define clear, actionable questions in data analysis?**
+
+- **A)** To make the process faster
+- **B)** To guide the analysis and determine which data to collect
+- **C)** To reduce the size of the dataset
+- **D)** To simplify the visualization process
+
+---
+
+## Question 13
+
+**What is the purpose of applying data transformations?**
+
+- **A)** To increase the data volume
+- **B)** To change the data format
+- **C)** To remove all data points
+- **D)** To make the data analysis-ready
+
+---
+
+## Question 14
+
+**Why is it important to tailor visualizations to the needs and expectations of different audiences?**
+
+- **A)** To maximize understanding and impact
+- **B)** To make the visualizations look more colorful
+- **C)** To increase the amount of data presented
+- **D)** To make the visualizations more complex
+
+---
+
+## Question 15
+
+**How do interactive visualizations enhance a data report?**
+
+- **A)** By reducing the amount of data shown
+- **B)** By hiding less important data
+- **C)** By making the report more complex
+- **D)** By allowing users to engage more deeply with the data
+
+---
+
+## Question 16
+
+**What is a key technique for effective data storytelling?**
+
+- **A)** Using as many technical terms as possible
+- **B)** Avoiding the use of visuals
+- **C)** Utilizing a clear structure and highlighting key insights through visuals
+- **D)** Presenting raw data without context
+
+---
+
+## Question 17
+
+**What role does feedback play in refining your data presentation?**
+
+- **A)** It helps to ignore less important details
+- **B)** It provides insights on how to improve visualizations and narrative flow
+- **C)** It reduces the need for practice
+- **D)** It increases the data complexity
+
+---
+
+## Question 18
+
+**What should be done after discussing initial findings in data analysis?**
+
+- **A)** Select a new dataset
+- **B)** Remove all visualizations
+- **C)** Skip to the final report
+- **D)** Refine your analysis direction based on the initial results
+
+---
+
+## Question 19
+
+**What is the goal of ensuring every graphic in your presentation tells part of the story clearly?**
+
+- **A)** To add more graphics
+- **B)** To reduce the presentation's length
+- **C)** To ensure the data's narrative is effectively communicated
+- **D)** To use all available visualization tools
+
+---
+
+## Question 20
+
+**Why is rehearsing your presentation important?**
+
+- **A)** To increase the presentation length
+- **B)** To remove interactive elements
+- **C)** To add more data points
+- **D)** To gain confidence and ensure smooth delivery
+
+
+# THE END! Well done!
+

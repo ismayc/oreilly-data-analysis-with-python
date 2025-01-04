@@ -5,6 +5,11 @@
 *.Rprofile
 *.Rproj
 
+# Answers to review questions
+mc-review-qs/answers.html
+mc-review-qs/answers.qmd
+mc-review-qs/answers_files/
+
 archive/
 renv/
 renv.lock
