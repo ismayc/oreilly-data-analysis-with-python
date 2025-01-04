@@ -1,6 +1,7 @@
 ---
-title: "Data Analysis with Python - Review Questions"
-author: "Dr. Chester Ismay"
+title: "<h2> Data Analysis with Python </h2>"
+subtitle: "Review Questions"
+author: "<small> Dr. Chester Ismay</small>" 
 format: revealjs
 ---
 
