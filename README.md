@@ -33,11 +33,11 @@ The major files in this repository are
 - **Open Anaconda Prompt (Windows) or Terminal (macOS/Linux)** (if using Anaconda), or **open your command prompt (Windows) or terminal (macOS/Linux)** (if using Python installation).
 - **Install Required Libraries using conda (Anaconda)**:
   ```bash
-  conda install pandas matplotlib seaborn plotly
+  conda install pandas matplotlib seaborn plotly openpyxl
   ```
 - **Install Required Libraries using pip** (if not using Anaconda):
   ```bash
-  pip install pandas matplotlib seaborn plotly
+  pip install pandas matplotlib seaborn plotly openpyxl
   ```
 
 ### Step 4: Verify Installation
@@ -51,6 +51,10 @@ The major files in this repository are
     import plotly.express as px
     import plotly.graph_objects as go
     from plotly.subplots import make_subplots
+    
+    # For plotly to load directly in Jupyter notebook
+    import plotly.io as pio
+    pio.renderers.default = 'iframe'
     ```
   - Run the cell (`Shift + Enter`). If no errors appear, the libraries are installed correctly.
 
