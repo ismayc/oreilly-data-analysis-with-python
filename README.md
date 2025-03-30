@@ -3,7 +3,7 @@
 # Course content
 
 The major files in this repository are
-- `slides_2025-01.pdf`: PDF version of the slides used in this course to motivate the code.
+- `slides_2025-03.pdf`: PDF version of the slides used in this course to motivate the code.
 - `economies.csv` and `economies.xlsx`: Two different versions of the same data for code walkthroughs, one as Comma-Separated Values and the other as a Microsoft Excel file
 - `populations.csv` and `populations.xlsx`: Two different versions of the same data for student exercises.
 - `exercises.ipynb`: A Jupyter Notebook with pseudocode/instructions provide to be filled in for code walkthroughs and student exercises
