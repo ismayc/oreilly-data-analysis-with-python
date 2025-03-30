@@ -1,4 +1,5 @@
 .DS_Store
+slide_content.Rmd
 *.Rhistory
 *.RData
 *.renvignore
