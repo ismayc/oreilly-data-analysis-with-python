@@ -171,7 +171,7 @@ By completing this exercise, you will be able to use `pandas` to
 
 ```
 
-This can be extended to replace missing values with the mean, median, or mode of the column too, but that's beyond the scope of this course.
+This can be extended to replace missing values with the mean, median, or mode of the column too.
 
 ### Convert a column to a different data type
 

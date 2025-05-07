@@ -171,7 +171,7 @@ economies_fill_value = economies.fillna({
 economies_fill_value.head()
 ```
 
-This can be extended to replace missing values with the mean, median, or mode of the column too, but that's beyond the scope of this course.
+This can be extended to replace missing values with the mean, median, or mode of the column too.
 
 ### Convert a column to a different data type
 
@@ -527,6 +527,11 @@ data_2020_caribbean = economies[(economies['year'] == 2020) & (economies['code']
 plt.figure(figsize=(10, 6))
 plt.bar(data_2020_caribbean['code'], data_2020_caribbean['gdp_percapita'], color='g')
 plt.xticks(rotation=45)
+plt.show();
+
+# Horizontal version
+plt.figure(figsize=(10, 6))
+plt.barh(data_2020_caribbean['code'], data_2020_caribbean['gdp_percapita'], color='g')
 plt.show();
 ```
 
