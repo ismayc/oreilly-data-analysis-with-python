@@ -57,8 +57,8 @@ Alternatively, I've set up some temporary notebooks on Binder [here](https://myb
     from plotly.subplots import make_subplots
     
     # For plotly to load directly in Jupyter notebook
-    import plotly.offline as pyo
-    pyo.init_notebook_mode(connected=True)
+    import plotly.io as pio
+    pio.renderers.default = 'iframe'
     ```
   - Run the cell (`Shift + Enter`). If no errors appear, the libraries are installed correctly.
 
