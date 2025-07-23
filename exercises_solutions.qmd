@@ -525,13 +525,17 @@ data_2020_caribbean = economies[(economies['year'] == 2020) & (economies['code']
 
 # Bar chart of gdp_percapita for different Caribbean countries in 2020
 plt.figure(figsize=(10, 6))
-plt.bar(data_2020_caribbean['code'], data_2020_caribbean['gdp_percapita'], color='g')
-plt.xticks(rotation=45)
+plt.bar(x=data_2020_caribbean['code'], 
+        height=data_2020_caribbean['gdp_percapita'], 
+        color='g')
+plt.xticks(rotation=45);
 plt.show();
 
 # Horizontal version
 plt.figure(figsize=(10, 6))
-plt.barh(data_2020_caribbean['code'], data_2020_caribbean['gdp_percapita'], color='g')
+plt.barh(y=data_2020_caribbean['code'], 
+         width=data_2020_caribbean['gdp_percapita'], 
+         color='g')
 plt.show();
 ```
 
@@ -543,11 +547,11 @@ liberia_data = economies[economies['code'] == 'LBR']
 
 # Line plot of gdp_percapita over the years with labels and titles
 plt.figure(figsize=(10, 6))
-plt.plot(liberia_data['year'], liberia_data['gdp_percapita'], marker='o', linestyle='-', color='r')
-plt.xlabel('Year')
-plt.ylabel('GDP Per Capita')
-plt.title('GDP Per Capita Over Years for Liberia (LBR)')
-plt.grid(True)
+plt.plot(liberia_data['year'], liberia_data['gdp_percapita'], marker='o', linestyle='-', color='r');
+plt.xlabel('Year');
+plt.ylabel('GDP Per Capita');
+plt.title('GDP Per Capita Over Years for Liberia (LBR)');
+plt.grid(True);
 plt.show();
 ```
 
@@ -563,11 +567,11 @@ plt.ylabel('GDP Per Capita')
 plt.title('GDP Per Capita for Different Countries in 2020')
 
 # Adjust axes
-plt.ylim(0, max(data_2020_caribbean['gdp_percapita']) + 5000)
+plt.ylim(0, max(data_2020_caribbean['gdp_percapita']) + 5000);
 
 # Adjust tick marks
 plt.xticks(rotation=45)
-plt.yticks(range(0, int(max(data_2020_caribbean['gdp_percapita']) + 5000), 5000))
+plt.yticks(range(0, int(max(data_2020_caribbean['gdp_percapita']) + 5000), 5000));
 
 plt.grid(axis='y')
 plt.show();
@@ -706,9 +710,9 @@ plt.ylabel('GDP Per Capita')
 plt.title('GDP Per Capita for Different Caribbean Countries in 2020')
 
 # Customizing axes and tick marks
-plt.ylim(0, max(data_2020_caribbean['gdp_percapita']) + 5000)
-plt.xticks(rotation=60)
-plt.yticks(range(0, int(max(data_2020_caribbean['gdp_percapita']) + 5000), 5000))
+plt.ylim(0, max(data_2020_caribbean['gdp_percapita']) + 5000);
+plt.xticks(rotation=60);
+plt.yticks(range(0, int(max(data_2020_caribbean['gdp_percapita']) + 5000), 5000));
 
 plt.grid(axis='y')
 plt.show();
@@ -787,9 +791,9 @@ plt.ylabel('Life Expectancy')
 plt.title('Life Expectancy for Selected European Countries in 2020')
 
 # Customizing axes and tick marks
-plt.ylim(0, max(data_2020_europe['life_expectancy']) + 10)
-plt.xticks(rotation=45)
-plt.yticks(range(0, int(max(data_2020_europe['life_expectancy']) + 10), 10))
+plt.ylim(0, max(data_2020_europe['life_expectancy']) + 10);
+plt.xticks(rotation=45);
+plt.yticks(range(0, int(max(data_2020_europe['life_expectancy']) + 10), 10));
 
 plt.grid(axis='y')
 plt.show();
