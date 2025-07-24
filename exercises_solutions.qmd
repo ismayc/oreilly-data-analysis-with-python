@@ -33,7 +33,10 @@ import seaborn as sns
 import plotly.express as px
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
+```
 
+```{python}
+#| output: false
 # For plotly to load directly in Jupyter notebook
 import plotly.offline as pyo
 pyo.init_notebook_mode(connected=True)
@@ -428,7 +431,7 @@ income_group_counts
 
 ## Exercise #4: Transforming and Aggregating Data with Pandas
 
-By completing this exercise, you will be able to use `pandas` to
+By completing this exercise, you will be able to use `pandas` to  
 - Aggregate data effectively by grouping it  
 - Transform data by applying functions element-wise or to groups  
 - Create summary tables  
