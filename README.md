@@ -12,7 +12,8 @@ The major files in this repository are
 ## Recommended instructions on getting set up with Python and Jupyter Notebook
 
 If you aren't able to do this on your machine, you may want to check out [Google Colab](https://colab.research.google.com/). 
-It's a free service that allows you to run Jupyter notebooks in the cloud. 
+It's a free service that allows you to run Jupyter notebooks in the cloud. You can start our exercises notebook directly on Google Colab by clicking [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ismayc/oreilly-data-analysis-with-python/blob/main/exercises.ipynb).
+
 Alternatively, I've set up some temporary notebooks on Binder [here](https://mybinder.org/v2/gh/ismayc/oreilly-data-analysis-with-python/HEAD?urlpath=%2Fdoc%2Ftree%2Fexercises.ipynb) that you can work with online as well.
 
 ### Step 1: Install Python
