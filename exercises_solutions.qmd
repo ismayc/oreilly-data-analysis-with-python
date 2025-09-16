@@ -1,8 +1,8 @@
 ---
-title: 'Walkthroughs and Exercises for *Data Analysis in Python*'  
+title: 'Walkthroughs and Exercises for Data Analysis in Python'  
 author: "Dr. Chester Ismay"  
-format: html  
-engine: knitr  
+format: ipynb #html  
+engine: jupyter #knitr  
 ---
 
 ```{python}
