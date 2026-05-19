@@ -1,8 +1,12 @@
 ---
 title: 'Walkthroughs and Exercises for Data Analysis in Python'  
 author: "Dr. Chester Ismay"  
-format: ipynb #html  
-engine: jupyter #knitr  
+format:
+  ipynb: default
+  html:
+    grid:
+      body-width: 1200px
+engine: jupyter #knitr
 ---
 
 ```{python}
