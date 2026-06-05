@@ -1,0 +1,58 @@
+name: Rebuild browser apps
+
+# Rebuild the Quarto Live + JupyterLite sites (committed under app/) whenever the
+# source notebooks change. Netlify then auto-deploys the updated app/ from main.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'exercises.qmd'
+      - 'exercises_solutions.qmd'
+      - 'economies.csv'
+      - 'economies_indexed.csv'
+      - 'populations.csv'
+      - 'economies.xlsx'
+      - 'populations.xlsx'
+      - 'scripts/**'
+      - 'live/_quarto.yml'
+      - 'live/index.qmd'
+      - 'live/_extensions/**'
+      - '.github/workflows/build-app.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: rebuild-browser-apps
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.13'
+
+      - name: Build app/ (Quarto Live + JupyterLite)
+        run: bash scripts/build-app.sh
+
+      - name: Commit & push updated app/
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -f app
+          if git diff --cached --quiet; then
+            echo "app/ unchanged — nothing to commit."
+          else
+            git commit -m "Auto-rebuild browser apps from notebook changes [skip ci]"
+            git push
+          fi

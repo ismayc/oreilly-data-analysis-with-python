@@ -1,0 +1,56 @@
+project:
+  type: website
+  output-dir: _site
+  render:
+    - index.qmd
+    - exercises.qmd
+    - solutions.qmd
+
+website:
+  title: "Data Analysis with Python"
+  description: "Run the course code in your browser — no Python or Jupyter to install."
+  navbar:
+    background: primary
+    left:
+      - text: "Home"
+        href: index.qmd
+      - text: "Exercises"
+        href: exercises.qmd
+      - text: "Solutions"
+        href: solutions.qmd
+    right:
+      - icon: github
+        href: https://github.com/ismayc/oreilly-data-analysis-with-python
+        aria-label: GitHub repository
+  page-footer:
+    center: "Dr. Chester Ismay · O'Reilly · Runs in your browser via Quarto Live + Pyodide"
+
+format:
+  live-html:
+    theme: cosmo
+    toc: true
+    toc-location: left
+    code-copy: true
+    grid:
+      body-width: 1000px
+    pyodide:
+      packages:
+        - numpy
+        - pandas
+        - matplotlib
+        - seaborn
+        - plotly
+        - openpyxl
+      resources:
+        - economies.csv
+        - economies_indexed.csv
+        - populations.csv
+        - economies.xlsx
+        - populations.xlsx
+
+resources:
+  - economies.csv
+  - economies_indexed.csv
+  - populations.csv
+  - economies.xlsx
+  - populations.xlsx

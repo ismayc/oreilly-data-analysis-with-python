@@ -1,0 +1,562 @@
+code,year,country,gdp_percapita,gross_savings,inflation_rate,total_investment,unemployment_rate,exports,imports,income_group
+ABW,2010,Aruba,24087.95,13.255,2.078,,10.6,,,High income
+ABW,2015,Aruba,27126.62,21.411,0.475,,7.298,,,High income
+ABW,2020,Aruba,21832.92,-7.521,-1.338,,13.997,,,High income
+AFG,2010,Afghanistan,631.49,59.699,2.179,30.269,,9.768,32.285,Low income
+AFG,2015,Afghanistan,711.337,22.223,-0.662,18.427,,-11.585,15.309,Low income
+AFG,2020,Afghanistan,580.817,27.132,5.607,16.42,,-10.424,2.892,Low income
+AGO,2010,Angola,3641.44,34.833,14.48,28.197,,-3.266,-21.656,Lower middle income
+AGO,2015,Angola,4354.92,28.491,9.159,34.202,,6.721,-19.515,Lower middle income
+AGO,2020,Angola,2012.15,22.399,22.277,23.006,,1.257,-25.423,Lower middle income
+ALB,2010,Albania,4097.83,20.023,3.615,31.318,14.0,10.473,-9.316,Upper middle income
+ALB,2015,Albania,3953.61,15.804,1.868,26.237,17.1,5.272,0.076,Upper middle income
+ALB,2020,Albania,5286.68,13.255,1.603,22.845,12.5,-28.951,-21.446,Upper middle income
+ARE,2010,United Arab Emirates,35064.26,31.33,0.878,27.121,,7.54,0.405,High income
+ARE,2015,United Arab Emirates,37380.57,30.54,4.07,25.639,,3.055,2.488,High income
+ARE,2020,United Arab Emirates,31982.23,28.223,-2.074,25.126,,-13.652,-18.151,High income
+ARG,2010,Argentina,10412.97,17.323,10.461,17.706,7.75,13.701,39.414,Upper middle income
+ARG,2015,Argentina,14895.32,14.328,,17.071,6.533,-1.633,2.644,Upper middle income
+ARG,2020,Argentina,8554.64,17.798,42.015,16.845,11.364,-13.124,-10.722,Upper middle income
+ARM,2010,Armenia,3121.78,15.797,7.274,29.419,19.0,15.021,4.906,Upper middle income
+ARM,2015,Armenia,3529.03,18.506,3.731,21.204,18.5,9.179,-10.123,Upper middle income
+ARM,2020,Armenia,4155.27,12.661,1.23,17.225,24.169,-35.532,-31.1,Upper middle income
+ATG,2010,Antigua and Barbuda,13564.68,,3.37,,,,,High income
+ATG,2015,Antigua and Barbuda,14696.89,7.052,0.969,4.858,,-0.129,7.208,High income
+ATG,2020,Antigua and Barbuda,14168.26,14.314,1.058,27.013,,-56.005,-41.974,High income
+AUS,2010,Australia,56459.8,23.105,2.863,26.369,5.208,5.717,15.507,High income
+AUS,2015,Australia,51484.05,21.608,1.485,25.88,6.05,6.533,1.962,High income
+AUS,2020,Australia,52824.82,24.571,0.868,22.317,6.508,-10.275,-12.976,High income
+AUT,2010,Austria,46955.17,25.463,1.693,22.608,4.817,13.131,11.97,High income
+AUT,2015,Austria,44267.81,25.531,0.808,23.806,5.742,3.049,3.63,High income
+AUT,2020,Austria,48154.38,27.536,1.391,25.193,5.333,-10.383,-10.238,High income
+AZE,2010,Azerbaijan,5880.81,44.139,5.664,18.06,5.631,-1.86,-8.929,Upper middle income
+AZE,2015,Azerbaijan,5300.14,27.348,4.048,27.914,4.958,9.967,11.791,Upper middle income
+AZE,2020,Azerbaijan,4218.0,15.845,2.824,17.418,6.541,-0.624,-5.16,Upper middle income
+BDI,2010,Burundi,231.549,3.688,6.496,15.926,,16.901,66.795,Low income
+BDI,2015,Burundi,304.243,5.768,5.554,17.286,,-7.099,-29.36,Low income
+BDI,2020,Burundi,253.593,6.593,7.305,19.935,,-19.818,5.942,Low income
+BEL,2010,Belgium,44448.17,24.751,2.334,23.127,8.308,8.484,7.171,High income
+BEL,2015,Belgium,41147.26,25.011,0.62,23.628,8.483,1.368,1.053,High income
+BEL,2020,Belgium,44529.39,24.53,0.428,25.271,5.608,-5.827,-5.176,High income
+BEN,2010,Benin,1037.38,10.041,2.179,15.608,,6.291,-13.484,Lower middle income
+BEN,2015,Benin,1076.91,14.768,0.21,20.732,,-8.167,-5.397,Lower middle income
+BEN,2020,Benin,1250.87,23.638,3.0,28.334,,-9.783,-6.974,Lower middle income
+BFA,2010,Burkina Faso,648.365,20.194,-0.608,21.99,,54.547,13.986,Low income
+BFA,2015,Burkina Faso,653.393,11.863,1.653,19.43,,6.504,8.45,Low income
+BFA,2020,Burkina Faso,790.968,20.033,1.885,23.779,,-17.123,7.721,Low income
+BGD,2010,Bangladesh,781.154,29.443,6.817,26.247,,5.491,1.836,Lower middle income
+BGD,2015,Bangladesh,1248.89,29.02,6.405,28.887,,5.822,6.948,Lower middle income
+BGD,2020,Bangladesh,1998.43,26.256,5.648,27.729,,-12.996,-3.401,Lower middle income
+BGR,2010,Bulgaria,6713.33,20.925,3.039,22.655,10.306,11.046,-0.932,Upper middle income
+BGR,2015,Bulgaria,7079.78,21.169,-1.067,21.049,9.233,6.448,4.782,Upper middle income
+BGR,2020,Bulgaria,9919.3,19.52,1.219,19.408,5.207,-9.085,-5.897,Upper middle income
+BHR,2010,Bahrain,20827.72,30.275,1.962,27.286,3.6,2.083,5.06,High income
+BHR,2015,Bahrain,22659.37,24.17,1.849,26.592,3.358,-0.845,-5.669,High income
+BHR,2020,Bahrain,22402.0,24.87,-2.324,34.471,5.039,-1.057,-2.836,High income
+BHS,2010,Bahamas,29303.26,19.579,1.621,27.463,15.082,3.21,-4.774,High income
+BHS,2015,Bahamas,32154.95,11.728,1.878,25.48,13.379,-5.099,-5.413,High income
+BHS,2020,Bahamas,29220.54,10.365,0.039,27.942,25.571,-65.258,-15.004,High income
+BIH,2010,Bosnia and Herzegovina,4633.86,9.914,2.124,15.917,27.2,13.68,2.032,Upper middle income
+BIH,2015,Bosnia and Herzegovina,4727.26,12.844,-1.023,17.94,27.7,9.751,1.672,Upper middle income
+BIH,2020,Bosnia and Herzegovina,5912.98,18.449,-0.577,21.924,19.0,-8.708,-10.937,Upper middle income
+BLR,2010,Belarus,6023.15,26.186,7.743,40.656,5.738,6.407,9.366,Upper middle income
+BLR,2015,Belarus,5941.24,25.784,13.523,29.035,5.821,1.318,-12.048,Upper middle income
+BLR,2020,Belarus,6398.87,27.61,5.536,27.521,4.1,0.405,-9.301,Upper middle income
+BLZ,2010,Belize,4265.62,9.617,0.918,12.942,18.515,10.21,6.779,Upper middle income
+BLZ,2015,Belize,4681.77,11.873,-0.862,22.007,10.157,-3.67,7.057,Upper middle income
+BLZ,2020,Belize,3944.94,6.83,0.12,14.865,23.699,-34.576,-25.084,Upper middle income
+BOL,2010,Bolivia,1994.91,24.969,2.502,17.007,4.375,28.526,8.836,Lower middle income
+BOL,2015,Bolivia,3050.65,14.216,4.061,20.281,4.0,-22.741,4.407,Lower middle income
+BOL,2020,Bolivia,3359.73,11.733,0.942,16.548,8.0,-5.286,-6.611,Lower middle income
+BRA,2010,Brazil,11333.02,18.224,5.039,21.801,8.5,7.124,34.532,Upper middle income
+BRA,2015,Brazil,8846.48,14.385,9.03,17.412,8.283,8.092,-13.46,Upper middle income
+BRA,2020,Brazil,6783.05,14.536,3.212,15.405,13.242,-1.286,-7.68,Upper middle income
+BRB,2010,Barbados,16203.26,11.277,5.824,15.88,10.25,4.608,-1.781,High income
+BRB,2015,Barbados,16589.45,10.804,-1.112,16.923,11.3,8.17,14.612,High income
+BRB,2020,Barbados,15162.57,9.791,2.882,17.186,17.145,-37.981,-11.205,High income
+BRN,2010,Brunei,35437.22,,0.227,23.69,,11.874,-0.311,High income
+BRN,2015,Brunei,31355.74,,-0.311,35.247,7.7,-10.806,-11.711,High income
+BRN,2020,Brunei,26089.28,,1.937,40.553,6.822,7.525,-2.055,High income
+BTN,2010,Bhutan,2097.66,33.899,4.83,55.727,3.3,-0.018,30.544,Lower middle income
+BTN,2015,Bhutan,2693.63,25.815,6.67,54.326,2.5,-2.143,-0.976,Lower middle income
+BTN,2020,Bhutan,3358.96,14.445,4.15,34.472,,5.197,-9.275,Lower middle income
+BWA,2010,Botswana,6374.99,37.536,6.95,41.412,,16.024,6.481,Upper middle income
+BWA,2015,Botswana,6811.43,39.538,3.054,32.603,,-16.284,2.325,Upper middle income
+BWA,2020,Botswana,6780.72,25.775,1.994,36.12,,-23.542,-4.078,Upper middle income
+CAF,2010,Central African Republic,492.078,4.218,1.491,13.636,,9.368,14.01,Low income
+CAF,2015,Central African Republic,377.476,4.508,1.403,13.616,,2.203,23.594,Low income
+CAF,2020,Central African Republic,489.869,10.665,2.304,18.595,,-4.421,-1.389,Low income
+CAN,2010,Canada,47627.35,19.918,1.777,23.482,8.075,6.678,13.788,High income
+CAN,2015,Canada,43626.47,20.326,1.125,23.822,6.942,3.419,0.751,High income
+CAN,2020,Canada,43278.22,20.164,0.717,22.1,9.6,-9.855,-11.265,High income
+CHE,2010,Switzerland,77433.67,39.762,0.688,25.178,3.516,12.184,8.003,High income
+CHE,2015,Switzerland,85240.79,35.012,-1.142,24.747,3.178,3.972,4.561,High income
+CHE,2020,Switzerland,86849.47,30.662,-0.726,26.849,3.143,-6.845,-6.259,High income
+CHL,2010,Chile,12794.28,24.855,1.408,23.16,8.305,2.34,25.563,High income
+CHL,2015,Chile,13570.89,21.338,4.349,23.774,6.328,-1.731,-1.195,High income
+CHL,2020,Chile,12989.6,21.203,3.044,19.845,10.778,-1.07,-12.791,High income
+CHN,2010,China,4499.79,50.909,3.3,46.968,4.14,28.461,23.094,Upper middle income
+CHN,2015,China,8084.8,45.77,1.441,43.033,4.05,-2.156,-0.438,Upper middle income
+CHN,2020,China,10483.88,45.669,2.39,43.655,3.8,2.03,-1.545,Upper middle income
+CIV,2010,Côte dIvoire,1650.96,11.072,1.366,15.731,,-7.723,9.795,Lower middle income
+CIV,2015,Côte dIvoire,1932.22,22.53,1.244,23.485,,-2.841,15.083,Lower middle income
+CIV,2020,Côte dIvoire,2277.72,18.185,2.5,21.874,,-1.364,7.105,Lower middle income
+CMR,2010,Cameroon,1287.57,25.514,1.279,27.995,,-10.334,-3.021,Lower middle income
+CMR,2015,Cameroon,1327.64,23.888,2.698,27.684,,12.51,2.895,Lower middle income
+CMR,2020,Cameroon,1469.91,21.894,2.801,27.199,,-8.729,-8.953,Lower middle income
+COD,2010,"Congo, The Democratic Republic of the",326.681,23.572,23.461,28.698,,30.423,44.548,Low income
+COD,2015,"Congo, The Democratic Republic of the",490.698,14.1,0.738,18.872,,-2.018,-7.321,Low income
+COD,2020,"Congo, The Democratic Republic of the",540.534,6.852,11.349,10.493,,8.254,4.964,Low income
+COG,2010,Congo,3597.96,54.044,0.391,47.19,,7.269,21.024,Lower middle income
+COG,2015,Congo,2873.72,39.315,3.168,78.301,,-1.36,34.843,Lower middle income
+COG,2020,Congo,2185.58,17.652,2.386,21.423,,-10.785,-12.6,Lower middle income
+COL,2010,Colombia,6295.29,18.81,2.268,21.889,11.775,2.064,10.829,Upper middle income
+COL,2015,Colombia,6088.67,17.197,4.994,23.774,8.925,1.657,-1.081,Upper middle income
+COL,2020,Colombia,5335.59,15.488,2.522,18.834,16.083,-10.143,-16.036,Upper middle income
+COM,2010,Comoros,1322.64,17.919,3.899,18.175,,14.004,2.912,Lower middle income
+COM,2015,Comoros,1231.14,13.501,0.941,13.759,,-7.418,-2.81,Lower middle income
+COM,2020,Comoros,1361.86,17.599,1.088,18.008,,-31.238,-6.102,Lower middle income
+CPV,2010,Cape Verde,3312.04,35.22,2.074,47.647,10.7,2.645,0.59,Lower middle income
+CPV,2015,Cape Verde,2996.36,35.386,0.143,38.565,12.4,-6.549,-22.606,Lower middle income
+CPV,2020,Cape Verde,3147.69,22.721,0.605,36.525,8.5,-44.643,-18.208,Lower middle income
+CRI,2010,Costa Rica,8268.86,16.61,5.662,19.834,9.213,9.327,18.726,Upper middle income
+CRI,2015,Costa Rica,11635.2,15.45,0.803,18.854,9.604,2.888,4.498,Upper middle income
+CRI,2020,Costa Rica,11982.28,13.257,0.724,15.877,19.98,-13.7,-10.878,Upper middle income
+CYP,2010,Cyprus,31439.12,13.292,2.56,23.912,6.275,6.137,10.795,High income
+CYP,2015,Cyprus,23428.72,13.229,-1.54,13.18,14.9,9.924,9.132,High income
+CYP,2020,Cyprus,27053.8,13.043,-1.097,23.266,7.6,-17.402,-5.84,High income
+CZE,2010,Czech Republic,19983.58,23.809,1.473,27.36,7.284,14.662,14.812,High income
+CZE,2015,Czech Republic,17842.87,28.432,0.309,27.983,5.021,6.032,6.848,High income
+CZE,2020,Czech Republic,22578.83,28.129,3.161,24.616,2.7,-5.936,-6.073,High income
+DEU,2010,Germany,42379.84,25.81,1.119,20.066,6.967,14.047,12.648,High income
+DEU,2015,Germany,41107.22,28.344,0.68,19.743,4.633,4.878,5.361,High income
+DEU,2020,Germany,45732.8,27.439,0.371,20.351,4.183,-10.153,-9.045,High income
+DJI,2010,Djibouti,1833.85,17.162,2.485,14.787,,1.368,-17.986,Lower middle income
+DJI,2015,Djibouti,2532.6,29.727,-0.847,0.521,,-3.555,-6.856,Lower middle income
+DJI,2020,Djibouti,3074.39,32.394,2.878,29.494,,4.787,12.102,Lower middle income
+DMA,2010,Dominica,6980.94,2.462,2.81,30.557,,,,Upper middle income
+DMA,2015,Dominica,7666.36,11.451,-0.852,16.104,,3.469,16.397,Upper middle income
+DMA,2020,Dominica,6903.76,-6.668,-0.295,12.129,,-49.913,-42.97,Upper middle income
+DNK,2010,Denmark,58177.16,24.639,2.198,18.076,7.733,2.94,0.541,High income
+DNK,2015,Denmark,53478.5,28.876,0.226,20.631,6.283,3.577,4.561,High income
+DNK,2020,Denmark,60494.2,31.374,0.333,23.512,5.642,-8.534,-5.61,High income
+DOM,2010,Dominican Republic,5688.75,18.918,6.33,26.38,6.52,38.869,34.614,Upper middle income
+DOM,2015,Dominican Republic,7139.51,21.645,0.836,23.442,7.328,8.145,18.931,Upper middle income
+DOM,2020,Dominican Republic,7530.19,22.376,3.783,24.244,5.732,-31.403,-10.43,Upper middle income
+DZA,2010,Algeria,4480.72,48.936,3.911,41.43,9.961,-3.218,-0.038,Lower middle income
+DZA,2015,Algeria,4153.32,34.326,4.784,50.781,11.214,5.733,-6.089,Lower middle income
+DZA,2020,Algeria,3262.58,35.203,2.415,45.69,14.242,-4.154,-25.571,Lower middle income
+ECU,2010,Ecuador,4633.25,25.762,3.554,28.037,5.02,1.112,14.292,Upper middle income
+ECU,2015,Ecuador,6099.35,24.633,3.966,26.87,4.77,-0.435,-7.82,Upper middle income
+ECU,2020,Ecuador,5520.36,21.278,-0.339,20.762,5.267,-2.662,-20.379,Upper middle income
+EGY,2010,Egypt,2922.8,19.421,11.658,21.298,9.21,-2.744,-7.706,Lower middle income
+EGY,2015,Egypt,3731.18,10.632,10.988,14.289,12.859,17.835,20.08,Lower middle income
+EGY,2020,Egypt,3586.97,10.735,5.7,13.821,8.296,-4.07,-0.807,Lower middle income
+ERI,2010,Eritrea,501.424,7.167,10.297,18.173,,-5.856,-5.382,Low income
+ERI,2015,Eritrea,603.193,31.046,28.483,10.284,,-11.753,6.396,Low income
+ERI,2020,Eritrea,588.253,17.61,4.914,6.958,,-8.386,-1.522,Low income
+ESP,2010,Spain,30566.88,18.648,1.8,22.303,19.858,9.064,6.2,High income
+ESP,2015,Spain,25764.22,21.022,-0.5,18.996,22.058,4.316,5.078,High income
+ESP,2020,Spain,27132.32,20.855,-0.323,20.181,15.533,-20.893,-16.84,High income
+EST,2010,Estonia,14818.44,23.283,2.741,21.514,16.707,24.217,21.255,High income
+EST,2015,Estonia,17531.06,26.58,0.068,24.82,6.185,-1.502,-1.887,High income
+EST,2020,Estonia,23330.09,29.625,-0.634,30.665,6.844,-5.45,0.717,High income
+ETH,2010,Ethiopia,324.285,24.415,8.134,25.524,,15.739,33.358,Low income
+ETH,2015,Ethiopia,702.767,31.409,9.569,39.417,,2.229,26.602,Low income
+ETH,2020,Ethiopia,994.197,26.552,20.354,30.752,,-6.564,1.376,Low income
+FIN,2010,Finland,46647.0,23.536,1.686,22.048,8.5,6.182,6.304,High income
+FIN,2015,Finland,42867.09,20.748,-0.156,21.686,9.575,0.392,1.963,High income
+FIN,2020,Finland,48981.44,24.892,0.383,24.089,7.783,-6.292,-6.64,High income
+FJI,2010,Fiji Islands,4004.67,,3.689,18.738,7.1,,,Upper middle income
+FJI,2015,Fiji Islands,5385.52,,1.376,21.109,5.5,,,Upper middle income
+FJI,2020,Fiji Islands,4797.32,,-2.6,20.167,13.351,,,Upper middle income
+FRA,2010,France,42178.58,21.317,1.737,21.946,9.25,8.695,8.893,High income
+FRA,2015,France,37937.86,22.344,0.088,22.712,10.367,4.646,5.898,High income
+FRA,2020,France,39907.14,21.39,0.525,23.727,8.175,-16.349,-11.474,High income
+FSM,2010,"Micronesia, Federated States of",2887.35,,3.701,,,,,Lower middle income
+FSM,2015,"Micronesia, Federated States of",3050.72,,-0.158,,,,,Lower middle income
+FSM,2020,"Micronesia, Federated States of",3899.48,,0.484,,,,,Lower middle income
+GAB,2010,Gabon,8933.31,41.009,1.447,26.105,,8.167,12.412,Upper middle income
+GAB,2015,Gabon,7453.11,29.246,-0.143,34.817,,20.173,-10.199,Upper middle income
+GAB,2020,Gabon,7421.18,24.591,1.335,29.718,,21.747,-7.775,Upper middle income
+GBR,2010,United Kingdom,39579.62,13.088,3.298,16.197,7.9,5.823,7.921,High income
+GBR,2015,United Kingdom,45053.49,12.697,0.04,17.72,5.375,2.799,5.412,High income
+GBR,2020,United Kingdom,40406.28,13.07,0.851,16.999,4.5,-16.721,-18.127,High income
+GEO,2010,Georgia,3222.07,10.758,7.111,20.524,27.196,3.883,-3.104,Upper middle income
+GEO,2015,Georgia,4017.62,14.502,4.004,26.295,21.912,-18.519,-12.701,Upper middle income
+GEO,2020,Georgia,4247.94,14.923,5.202,27.214,,-38.827,-18.647,Upper middle income
+GHA,2010,Ghana,1745.56,44.693,6.698,51.127,,13.565,31.211,Lower middle income
+GHA,2015,Ghana,1753.85,21.34,17.153,30.049,,-8.675,0.666,Lower middle income
+GHA,2020,Ghana,2222.91,19.928,9.885,23.259,,-6.787,-6.454,Lower middle income
+GIN,2010,Guinea,630.549,-0.936,15.466,5.462,,-9.896,8.689,Lower middle income
+GIN,2015,Guinea,712.047,-5.693,8.151,7.256,,21.284,12.221,Lower middle income
+GIN,2020,Guinea,1106.47,4.133,10.602,16.241,,2.189,14.428,Lower middle income
+GMB,2010,Gambia,860.639,3.757,5.049,13.806,,0.299,7.179,Low income
+GMB,2015,Gambia,649.511,3.65,6.808,13.538,,-11.783,5.056,Low income
+GMB,2020,Gambia,790.829,12.332,5.931,17.837,,-36.362,1.044,Low income
+GNB,2010,Guinea-Bissau,644.344,11.965,1.071,19.494,,-7.451,4.443,Low income
+GNB,2015,Guinea-Bissau,707.897,16.798,1.481,14.975,,6.699,13.81,Low income
+GNB,2020,Guinea-Bissau,789.877,14.446,1.463,24.499,,-24.573,-2.037,Low income
+GNQ,2010,Equatorial Guinea,17153.17,17.812,5.32,38.056,,0.381,29.52,Upper middle income
+GNQ,2015,Equatorial Guinea,11217.99,8.266,1.695,24.701,,0.996,-15.453,Upper middle income
+GNQ,2020,Equatorial Guinea,6772.73,5.382,4.798,13.808,,-33.111,-57.963,Upper middle income
+GRC,2010,Greece,26743.4,7.944,4.704,17.986,12.725,8.593,-3.763,High income
+GRC,2015,Greece,17997.4,10.591,-1.094,12.097,24.9,4.158,3.589,High income
+GRC,2020,Greece,17670.29,6.016,-1.262,13.45,16.4,-25.653,-14.027,High income
+GRD,2010,Grenada,7258.18,,3.437,,,,,Upper middle income
+GRD,2015,Grenada,9096.54,5.226,-0.584,17.733,,4.736,11.364,Upper middle income
+GRD,2020,Grenada,9185.56,6.335,-0.742,23.522,,-60.254,-15.63,Upper middle income
+GTM,2010,Guatemala,2836.01,12.632,3.86,14.481,,5.799,10.004,Upper middle income
+GTM,2015,Guatemala,3825.88,13.584,2.389,14.828,,2.838,3.648,Upper middle income
+GTM,2020,Guatemala,4288.75,17.63,2.437,12.603,,-2.5,-5.5,Upper middle income
+GUY,2010,Guyana,3837.3,6.545,4.302,13.087,,4.484,1.632,High income
+GUY,2015,Guyana,5579.97,6.907,-0.865,10.347,,-1.906,12.599,High income
+GUY,2020,Guyana,7327.17,-0.533,0.722,12.96,,159.103,5.941,High income
+HKG,2010,Hong Kong,32421.36,30.892,2.314,23.89,4.322,17.546,18.342,High income
+HKG,2015,Hong Kong,42325.35,24.859,2.995,21.541,3.307,-1.368,-1.776,High income
+HKG,2020,Hong Kong,46753.46,26.253,0.325,19.76,5.853,-6.054,-6.214,High income
+HND,2010,Honduras,1891.16,16.768,4.699,21.88,4.119,20.02,9.222,Lower middle income
+HND,2015,Honduras,2302.04,20.447,3.158,25.118,6.147,5.741,18.649,Lower middle income
+HND,2020,Honduras,2382.88,17.29,3.468,14.517,6.184,-11.877,-4.186,Lower middle income
+HRV,2010,Croatia,13562.42,18.954,1.031,21.11,17.167,7.783,-3.039,High income
+HRV,2015,Croatia,11780.6,23.879,-0.464,20.607,17.067,10.343,9.388,High income
+HRV,2020,Croatia,14072.08,20.852,0.258,24.391,9.188,-26.854,-16.21,High income
+HTI,2010,Haiti,1171.39,24.538,4.136,25.412,,-3.598,37.585,Lower middle income
+HTI,2015,Haiti,1388.96,12.406,7.524,14.194,,8.579,12.89,Lower middle income
+HTI,2020,Haiti,1252.87,21.218,22.945,15.751,,-34.516,-14.624,Lower middle income
+HUN,2010,Hungary,13173.21,20.754,4.867,20.367,10.801,11.118,9.907,High income
+HUN,2015,Hungary,12690.17,25.557,-0.07,23.076,6.626,7.365,6.01,High income
+HUN,2020,Hungary,15820.1,27.458,3.319,27.461,4.115,-14.635,-12.696,High income
+IDN,2010,Indonesia,3178.13,33.582,5.141,32.88,7.14,6.978,17.635,Upper middle income
+IDN,2015,Indonesia,3367.69,32.028,6.361,34.063,6.18,-3.798,-7.433,Upper middle income
+IDN,2020,Indonesia,3921.62,31.92,2.033,32.367,7.07,-3.614,-14.572,Upper middle income
+IND,2010,India,1384.17,33.701,10.528,36.502,,27.532,15.822,Lower middle income
+IND,2015,India,1605.61,31.067,4.9,32.117,,-4.999,1.316,Lower middle income
+IND,2020,India,1964.88,29.427,6.195,28.42,,-8.016,-15.399,Lower middle income
+IRL,2010,Ireland,48758.01,16.023,-1.619,17.217,14.583,6.289,0.678,High income
+IRL,2015,Ireland,61951.73,29.966,-0.05,25.576,9.95,38.212,32.303,High income
+IRL,2020,Ireland,83849.81,36.262,-0.459,31.65,5.625,6.175,-9.973,High income
+IRN,2010,Iran,6564.06,45.625,12.299,41.245,13.5,7.758,2.375,Lower middle income
+IRN,2015,Iran,4844.5,36.89,11.919,36.537,11.0,49.861,-8.025,Lower middle income
+IRN,2020,Iran,7554.77,41.963,36.5,42.665,10.823,22.982,7.532,Lower middle income
+IRQ,2010,Iraq,4473.71,23.736,2.445,,,,,Upper middle income
+IRQ,2015,Iraq,5044.62,18.568,1.393,,,,,Upper middle income
+IRQ,2020,Iraq,4288.77,1.899,0.573,,,,,Upper middle income
+ISL,2010,Iceland,43293.02,7.814,5.4,13.909,8.317,0.954,2.319,High income
+ISL,2015,Iceland,53227.63,25.034,1.634,19.404,4.5,8.948,13.542,High income
+ISL,2020,Iceland,59633.72,22.717,2.851,21.668,6.433,-30.51,-22.04,High income
+ISR,2010,Israel,30705.4,22.223,2.694,18.882,8.25,15.049,15.279,High income
+ISR,2015,Israel,35828.17,25.284,-0.632,19.926,5.275,-2.391,0.165,High income
+ISR,2020,Israel,43688.58,26.78,-0.587,21.878,4.3,0.564,-8.105,High income
+ITA,2010,Italy,35805.44,17.285,1.62,20.58,8.342,11.762,12.167,High income
+ITA,2015,Italy,30213.1,18.529,0.108,17.107,11.908,4.274,6.464,High income
+ITA,2020,Italy,31288.02,21.126,-0.145,17.5,9.12,-13.76,-12.591,High income
+JAM,2010,Jamaica,4894.37,13.418,12.616,20.207,12.375,-8.528,-12.085,Upper middle income
+JAM,2015,Jamaica,5204.83,18.112,3.681,21.352,13.5,14.568,16.681,Upper middle income
+JAM,2020,Jamaica,5095.64,18.64,5.21,19.303,,-37.82,-16.208,Upper middle income
+JOR,2010,Jordan,3777.82,22.575,4.931,29.521,12.475,12.582,-3.992,Lower middle income
+JOR,2015,Jordan,4218.83,11.8,-1.098,20.793,13.075,-7.272,-2.613,Lower middle income
+JOR,2020,Jordan,4259.26,10.727,0.397,18.801,22.7,-17.415,-11.663,Lower middle income
+JPN,2010,Japan,45135.8,26.427,-0.721,22.59,5.058,24.861,11.285,High income
+JPN,2015,Japan,35005.66,28.235,0.793,25.165,3.375,3.211,0.44,High income
+JPN,2020,Japan,40146.07,28.831,-0.017,25.546,2.792,-12.309,-6.788,High income
+KAZ,2010,Kazakhstan,9005.04,26.309,7.125,25.374,5.766,7.494,-5.745,Upper middle income
+KAZ,2015,Kazakhstan,10435.17,24.648,6.652,27.908,5.11,-7.178,-6.897,Upper middle income
+KAZ,2020,Kazakhstan,8732.64,26.833,6.799,30.393,5.479,-5.05,-10.691,Upper middle income
+KEN,2010,Kenya,1036.26,14.809,4.309,20.735,,8.744,8.113,Lower middle income
+KEN,2015,Kenya,1483.48,14.568,6.582,21.466,,6.204,1.172,Lower middle income
+KEN,2020,Kenya,2039.05,8.017,5.29,12.804,,-13.013,-2.196,Lower middle income
+KGZ,2010,Kyrgyzstan,884.846,20.439,7.968,27.054,8.644,-11.447,-13.785,Lower middle income
+KGZ,2015,Kyrgyzstan,1132.84,18.433,6.503,34.285,7.554,-6.98,-14.544,Lower middle income
+KGZ,2020,Kyrgyzstan,1146.39,11.072,6.323,19.298,6.605,-30.641,-6.645,Lower middle income
+KHM,2010,Cambodia,788.19,8.616,3.997,17.368,,31.695,5.471,Lower middle income
+KHM,2015,Cambodia,1203.48,13.714,1.225,22.453,,14.975,21.517,Lower middle income
+KHM,2020,Cambodia,1655.39,9.495,2.94,22.0,,-5.388,-3.036,Lower middle income
+KIR,2010,Kiribati,1518.57,,-3.9,,,-4.551,3.571,Lower middle income
+KIR,2015,Kiribati,1556.5,,0.572,,,7.076,-3.945,Lower middle income
+KIR,2020,Kiribati,1687.51,,2.482,,,-18.408,-2.241,Lower middle income
+KNA,2010,Saint Kitts and Nevis,14776.44,,0.851,,,,,High income
+KNA,2015,Saint Kitts and Nevis,17004.85,16.226,-2.302,24.883,,-2.214,17.872,High income
+KNA,2020,Saint Kitts and Nevis,14918.75,21.944,-0.589,30.0,,-53.818,-37.966,High income
+KOR,2010,South Korea,23077.16,34.996,2.939,32.552,3.708,13.028,17.51,High income
+KOR,2015,South Korea,28737.44,36.7,0.706,29.529,3.592,0.234,2.113,High income
+KOR,2020,South Korea,31496.77,36.258,0.537,31.642,3.942,-2.459,-3.771,High income
+KWT,2010,Kuwait,32216.41,50.831,4.496,17.659,2.072,-0.497,6.33,High income
+KWT,2015,Kuwait,27398.08,37.116,3.678,25.428,1.322,-0.867,6.837,High income
+KWT,2020,Kuwait,22105.09,27.38,2.102,28.482,,-11.792,-9.685,High income
+LAO,2010,Laos,1200.87,,5.984,,,16.731,13.412,Lower middle income
+LAO,2015,Laos,2130.63,,1.278,,,-4.798,-0.199,Lower middle income
+LAO,2020,Laos,2625.53,,5.071,,,-13.057,-10.729,Lower middle income
+LBN,2010,Lebanon,7761.64,2.303,3.983,,,-9.898,-10.36,Lower middle income
+LBN,2015,Lebanon,7644.55,-0.315,-3.696,,,21.215,4.617,Lower middle income
+LBN,2020,Lebanon,2802.14,-6.08,88.176,,,-49.453,-50.087,Lower middle income
+LBR,2010,Liberia,543.365,,7.291,,,-7.648,-1.919,Low income
+LBR,2015,Liberia,746.238,,7.742,,,6.409,2.931,Low income
+LBR,2020,Liberia,646.27,,16.953,,,-9.958,-8.282,Low income
+LBY,2010,Libyan Arab Jamahiriya,11417.42,,2.458,105.34,,-0.838,11.181,Upper middle income
+LBY,2015,Libyan Arab Jamahiriya,2723.37,,14.848,361.493,,8.67,-33.55,Upper middle income
+LBY,2020,Libyan Arab Jamahiriya,3280.83,,22.256,363.411,,-80.939,-59.381,Upper middle income
+LCA,2010,Saint Lucia,8968.8,,3.25,,,,,Upper middle income
+LCA,2015,Saint Lucia,10375.92,18.136,-0.984,18.124,,9.707,16.816,Upper middle income
+LCA,2020,Saint Lucia,9351.36,7.589,-1.753,23.882,,-59.663,-27.862,Upper middle income
+LKA,2010,Sri Lanka,2799.96,28.458,6.25,30.352,5.0,13.791,16.52,Lower middle income
+LKA,2015,Sri Lanka,3841.52,28.845,2.237,31.181,4.7,3.621,17.031,Lower middle income
+LKA,2020,Sri Lanka,3678.73,24.589,4.557,25.981,5.8,-24.737,-19.78,Lower middle income
+LSO,2010,Lesotho,1222.2,20.145,3.495,29.652,,3.347,3.598,Lower middle income
+LSO,2015,Lesotho,1106.83,25.993,3.218,29.949,,16.738,5.838,Lower middle income
+LSO,2020,Lesotho,1002.98,9.283,4.936,24.778,,-23.193,-3.232,Lower middle income
+LTU,2010,Lithuania,12009.03,16.851,1.191,18.126,17.814,16.382,16.811,High income
+LTU,2015,Lithuania,14265.41,18.459,-0.677,21.27,9.119,2.42,9.353,High income
+LTU,2020,Lithuania,19916.5,20.698,1.062,12.78,8.85,-1.331,-6.029,High income
+LUX,2010,Luxembourg,106177.04,23.984,2.795,17.885,5.808,10.373,12.172,High income
+LUX,2015,Luxembourg,102625.13,24.394,0.06,19.324,6.626,4.701,3.399,High income
+LUX,2020,Luxembourg,116921.11,20.024,0.004,15.628,6.327,2.472,2.149,High income
+LVA,2010,Latvia,11276.11,22.388,-1.224,20.685,19.475,13.444,12.806,High income
+LVA,2015,Latvia,13722.08,23.246,0.213,23.84,9.875,2.966,1.65,High income
+LVA,2020,Latvia,17559.86,25.555,0.081,22.603,8.173,-2.705,-3.271,High income
+MAC,2010,Macao,51135.16,,2.809,13.247,2.825,,,High income
+MAC,2015,Macao,69666.75,,4.561,25.33,1.825,,,High income
+MAC,2020,Macao,36350.16,,0.811,27.605,2.9,,,High income
+MAR,2010,Morocco,2896.56,29.7,0.871,34.074,9.063,24.733,-1.467,Lower middle income
+MAR,2015,Morocco,2964.96,28.661,1.411,30.801,9.707,8.73,3.401,Lower middle income
+MAR,2020,Morocco,3158.32,26.854,0.622,29.059,11.9,-20.453,-7.306,Lower middle income
+MDA,2010,Moldova,2428.11,16.7,7.358,23.601,7.4,17.0,14.0,Upper middle income
+MDA,2015,Moldova,2715.78,17.604,9.628,23.595,5.025,1.0,-5.0,Upper middle income
+MDA,2020,Moldova,4365.85,20.301,3.768,26.846,8.0,-14.25,-9.93,Upper middle income
+MDG,2010,Madagascar,471.959,18.079,9.247,27.027,,-10.003,-20.541,Low income
+MDG,2015,Madagascar,467.235,14.366,7.404,15.992,,-7.684,-7.134,Low income
+MDG,2020,Madagascar,501.756,8.546,4.188,15.095,,-31.522,-19.599,Low income
+MDV,2010,Maldives,8086.7,12.678,6.15,20.0,,8.827,3.835,Upper middle income
+MDV,2015,Maldives,11781.03,12.513,1.371,20.0,,4.953,14.083,Upper middle income
+MDV,2020,Maldives,9934.09,-4.42,-1.594,20.0,,-49.149,-41.285,Upper middle income
+MEX,2010,Mexico,9299.46,22.336,4.155,22.793,5.273,22.362,17.055,Upper middle income
+MEX,2015,Mexico,9657.12,20.663,2.719,23.313,4.351,8.414,5.922,Upper middle income
+MEX,2020,Mexico,8421.19,21.799,3.399,19.314,4.42,-7.865,-15.503,Upper middle income
+MHL,2010,Marshall Islands,3030.39,,1.768,,,27.621,,Upper middle income
+MHL,2015,Marshall Islands,3406.48,,-2.236,,,5.85,,Upper middle income
+MHL,2020,Marshall Islands,4240.1,,0.614,,,-28.817,,Upper middle income
+MKD,2010,Macedonia,4576.23,22.443,1.508,,32.05,23.68,10.367,Upper middle income
+MKD,2015,Macedonia,4860.42,28.45,-0.3,,26.05,8.476,9.945,Upper middle income
+MKD,2020,Macedonia,5918.11,26.164,1.2,,16.375,-10.851,-10.489,Upper middle income
+MLI,2010,Mali,733.666,13.306,1.289,24.026,,-1.013,18.877,Low income
+MLI,2015,Mali,773.945,15.437,1.442,20.761,,31.237,46.53,Low income
+MLI,2020,Mali,897.287,16.317,0.627,18.36,,-11.222,-3.936,Low income
+MLT,2010,Malta,21842.07,17.767,2.041,22.277,6.842,8.205,8.217,High income
+MLT,2015,Malta,25228.18,26.839,1.176,24.14,5.392,15.438,19.266,High income
+MLT,2020,Malta,28293.63,22.994,0.787,23.608,4.292,-7.826,-4.111,High income
+MMR,2010,Myanmar,774.72,25.773,5.924,21.036,,-4.974,-45.255,Lower middle income
+MMR,2015,Myanmar,1223.74,30.079,7.259,33.552,,18.055,9.971,Lower middle income
+MMR,2020,Myanmar,1527.44,28.831,5.725,32.285,,-3.247,2.175,Lower middle income
+MNG,2010,Mongolia,2602.37,29.763,10.046,42.087,9.9,17.968,31.486,Lower middle income
+MNG,2015,Mongolia,3842.54,18.34,5.736,26.413,7.5,3.167,-10.98,Lower middle income
+MNG,2020,Mongolia,3916.09,20.169,3.717,24.555,7.5,-10.601,-13.152,Lower middle income
+MOZ,2010,Mozambique,469.47,7.111,12.426,21.82,,-17.588,-5.597,Low income
+MOZ,2015,Mozambique,570.129,3.835,3.551,41.249,,-1.988,1.352,Low income
+MOZ,2020,Mozambique,449.63,5.92,3.141,66.57,,-23.858,41.267,Low income
+MRT,2010,Mauritania,1715.92,32.01,6.262,32.251,,14.015,12.698,Lower middle income
+MRT,2015,Mauritania,1668.07,21.73,0.486,38.461,,2.006,-13.294,Lower middle income
+MRT,2020,Mauritania,1971.45,30.69,2.264,33.322,,1.025,-0.83,Lower middle income
+MUS,2010,Mauritius,8000.38,14.723,2.924,27.105,7.8,9.386,7.76,Upper middle income
+MUS,2015,Mauritius,9258.56,16.807,1.275,18.091,7.9,-2.019,4.727,Upper middle income
+MUS,2020,Mauritius,8993.48,12.571,2.52,18.516,10.9,-35.588,-12.41,Upper middle income
+MWI,2010,Malawi,442.765,26.25,7.409,22.823,,40.949,42.098,Low income
+MWI,2015,Malawi,353.507,-3.248,21.86,13.949,,-27.876,11.88,Low income
+MWI,2020,Malawi,406.65,-8.412,8.638,11.353,,-7.244,15.564,Low income
+MYS,2010,Malaysia,9046.99,33.597,1.72,23.657,3.3,3.622,12.117,Upper middle income
+MYS,2015,Malaysia,9663.11,28.411,2.104,25.424,3.15,4.05,1.693,Upper middle income
+MYS,2020,Malaysia,10269.86,24.068,-1.139,19.678,4.525,-2.423,-9.248,Upper middle income
+NAM,2010,Namibia,5410.98,20.691,4.875,22.872,,8.488,-4.294,Upper middle income
+NAM,2015,Namibia,5020.47,17.087,3.396,28.895,,-7.081,10.505,Upper middle income
+NAM,2020,Namibia,4175.18,16.428,2.568,17.098,,-25.821,-21.163,Upper middle income
+NER,2010,Niger,476.062,18.233,0.944,32.722,,19.73,11.503,Low income
+NER,2015,Niger,484.171,17.019,0.961,32.368,,-8.997,7.367,Low income
+NER,2020,Niger,565.867,17.515,2.762,30.836,,-14.733,-5.126,Low income
+NGA,2010,Nigeria,2328.43,20.843,13.742,17.291,5.092,10.732,22.92,Lower middle income
+NGA,2015,Nigeria,2718.59,12.355,9.01,15.49,9.0,8.665,4.202,Lower middle income
+NGA,2020,Nigeria,2083.16,21.45,13.247,25.124,,-13.608,-21.581,Lower middle income
+NIC,2010,Nicaragua,1506.07,15.965,5.455,24.84,7.829,15.769,11.89,Lower middle income
+NIC,2015,Nicaragua,2036.93,23.603,3.997,33.477,5.909,-1.12,12.059,Lower middle income
+NIC,2020,Nicaragua,1869.71,24.299,3.705,21.034,8.061,-6.541,7.708,Lower middle income
+NLD,2010,Netherlands,51165.82,27.156,0.929,20.222,4.995,9.764,8.552,High income
+NLD,2015,Netherlands,45302.8,28.774,0.216,22.475,6.891,7.444,14.883,High income
+NLD,2020,Netherlands,52247.54,31.375,1.117,21.384,3.832,-4.195,-4.415,High income
+NOR,2010,Norway,87356.19,36.282,2.419,25.425,3.794,0.556,8.416,High income
+NOR,2015,Norway,74115.16,35.521,2.171,27.476,4.531,4.342,1.935,High income
+NOR,2020,Norway,67176.43,32.841,1.287,30.303,4.595,-0.87,-12.192,High income
+NPL,2010,Nepal,677.187,31.411,9.565,38.867,,,,Lower middle income
+NPL,2015,Nepal,901.75,35.659,7.212,31.277,,,,Lower middle income
+NPL,2020,Nepal,1195.59,30.383,6.15,31.328,,,,Lower middle income
+NRU,2010,Nauru,4748.08,,-1.968,,,,,High income
+NRU,2015,Nauru,6994.05,,9.784,,,,,High income
+NRU,2020,Nauru,8866.87,,0.891,,,,,High income
+NZL,2010,New Zealand,33376.46,25.358,2.302,20.329,6.2,3.293,10.791,High income
+NZL,2015,New Zealand,38195.64,20.314,0.293,23.103,5.425,7.895,4.306,High income
+NZL,2020,New Zealand,41127.16,20.879,1.715,21.671,4.6,-12.149,-16.34,High income
+OMN,2010,Oman,19027.78,34.686,3.256,26.128,,5.35,-3.623,High income
+OMN,2015,Oman,16570.74,14.312,0.065,30.167,,5.373,9.333,High income
+OMN,2020,Oman,14215.58,9.007,-0.904,19.0,,-4.833,-27.841,High income
+PAK,2010,Pakistan,1029.17,13.572,10.103,15.805,5.55,5.391,-3.555,Lower middle income
+PAK,2015,Pakistan,1422.92,14.665,4.525,15.707,5.9,2.615,12.933,Lower middle income
+PAK,2020,Pakistan,1260.01,14.276,10.741,15.407,4.5,-1.247,-13.085,Lower middle income
+PAN,2010,Panama,8039.76,27.639,3.491,38.213,6.516,5.024,28.006,High income
+PAN,2015,Panama,13606.6,33.793,0.137,42.756,5.052,-4.84,-1.207,High income
+PAN,2020,Panama,12373.05,27.968,-1.55,28.547,18.548,-35.94,-38.194,High income
+PER,2010,Peru,5055.04,22.028,1.53,24.42,7.88,1.358,27.198,Upper middle income
+PER,2015,Peru,6141.43,18.704,3.548,23.682,6.49,2.988,0.183,Upper middle income
+PER,2020,Peru,6083.87,19.292,1.827,18.807,13.6,-13.394,-11.103,Upper middle income
+PHL,2010,Philippines,2237.16,23.887,3.783,20.442,7.325,17.976,18.487,Lower middle income
+PHL,2015,Philippines,3039.23,23.712,0.674,21.341,6.275,2.966,7.722,Lower middle income
+PHL,2020,Philippines,3330.36,20.625,2.635,17.414,10.4,-20.671,-25.703,Lower middle income
+PLW,2010,Palau,10044.33,,1.094,24.498,,2.969,-4.013,Upper middle income
+PLW,2015,Palau,15787.6,,2.199,25.428,,12.426,14.308,Upper middle income
+PLW,2020,Palau,14411.66,,0.0,31.438,,-43.679,-13.94,Upper middle income
+PNG,2010,Papua New Guinea,2132.19,,5.102,,,4.837,37.329,Lower middle income
+PNG,2015,Papua New Guinea,2742.92,,5.996,,,45.776,-23.88,Lower middle income
+PNG,2020,Papua New Guinea,2684.77,,4.992,,,-8.262,18.562,Lower middle income
+POL,2010,Poland,12619.62,15.95,2.583,21.506,9.635,12.836,14.22,High income
+POL,2015,Poland,12563.61,19.685,-0.933,20.595,7.499,8.033,6.918,High income
+POL,2020,Poland,15653.56,20.805,3.4,17.312,3.163,-0.545,-2.556,High income
+PRI,2010,Puerto Rico,26435.74,,2.474,9.16,16.4,,,High income
+PRI,2015,Puerto Rico,29755.35,,-0.751,8.599,12.0,,,High income
+PRI,2020,Puerto Rico,30317.39,,-1.301,13.388,8.6,,,High income
+PRT,2010,Portugal,22539.04,10.738,1.391,21.126,10.77,-1.243,-3.725,High income
+PRT,2015,Portugal,19252.02,15.125,0.508,15.855,12.444,6.339,8.088,High income
+PRT,2020,Portugal,22488.62,17.135,-0.121,19.113,6.794,-18.771,-11.917,High income
+PRY,2010,Paraguay,4326.22,23.982,4.651,23.8,5.674,20.474,31.039,Upper middle income
+PRY,2015,Paraguay,5353.06,20.447,3.129,20.848,5.351,4.591,0.239,Upper middle income
+PRY,2020,Paraguay,4946.46,24.038,1.768,22.469,6.559,-9.709,-15.488,Upper middle income
+QAT,2010,Qatar,69796.14,48.177,-2.389,,,31.09,-1.425,High income
+QAT,2015,Qatar,66346.96,45.569,0.939,,,-1.827,-9.173,High income
+QAT,2020,Qatar,52144.16,38.637,-2.719,,,0.356,-15.459,High income
+RUS,2010,Russian Federation,11431.15,24.79,6.849,20.66,7.358,8.62,28.995,Upper middle income
+RUS,2015,Russian Federation,9257.94,27.144,15.534,22.149,5.575,2.97,-25.823,Upper middle income
+RUS,2020,Russian Federation,10037.24,25.625,3.378,23.42,5.783,-7.917,-13.545,Upper middle income
+RWA,2010,Rwanda,614.796,6.677,2.306,21.562,,11.672,4.098,Low income
+RWA,2015,Rwanda,759.764,6.175,2.507,25.251,,-3.763,11.979,Low income
+RWA,2020,Rwanda,818.99,3.768,8.0,21.651,,-12.493,0.341,Low income
+SAU,2010,Saudi Arabia,19163.34,43.564,3.699,30.926,5.548,7.47,-1.767,High income
+SAU,2015,Saudi Arabia,21063.31,26.458,1.216,35.127,5.591,4.051,3.43,High income
+SAU,2020,Saudi Arabia,20178.23,25.535,3.438,27.667,,-15.581,-23.318,High income
+SDN,2010,Sudan,1637.42,17.729,12.978,,13.733,6.43,5.984,Low income
+SDN,2015,Sudan,1679.07,4.491,16.91,,21.6,-0.593,24.655,Low income
+SDN,2020,Sudan,775.043,-7.469,163.259,,26.83,-13.915,-0.59,Low income
+SEN,2010,Senegal,1272.62,16.565,1.228,20.087,,-1.338,-5.231,Lower middle income
+SEN,2015,Senegal,1219.37,20.118,0.858,25.833,,-2.723,-3.238,Lower middle income
+SEN,2020,Senegal,1459.51,20.044,2.533,31.002,,-9.421,13.787,Lower middle income
+SGP,2010,Singapore,47236.67,50.592,2.824,27.658,2.175,17.788,16.307,High income
+SGP,2015,Singapore,55645.61,44.046,-0.523,25.353,1.9,4.968,3.381,High income
+SGP,2020,Singapore,58902.22,40.204,-0.182,22.619,3.05,-4.32,-7.076,High income
+SLB,2010,Solomon Islands,1608.46,-5.783,0.905,20.589,,27.814,44.131,Lower middle income
+SLB,2015,Solomon Islands,2231.83,13.068,-0.569,15.758,,2.841,6.082,Lower middle income
+SLB,2020,Solomon Islands,2392.24,6.802,3.436,8.55,,-27.667,-19.78,Lower middle income
+SLE,2010,Sierra Leone,401.835,9.548,7.194,31.089,,12.41,84.555,Low income
+SLE,2015,Sierra Leone,592.903,-10.331,6.694,13.813,,-25.586,-10.377,Low income
+SLE,2020,Sierra Leone,526.514,0.815,15.696,15.801,,-14.79,-5.726,Low income
+SLV,2010,El Salvador,2983.23,13.783,1.179,16.672,7.0,13.251,7.943,Upper middle income
+SLV,2015,El Salvador,3705.58,12.801,-0.731,16.017,7.0,3.893,13.265,Upper middle income
+SLV,2020,El Salvador,3794.31,15.661,0.214,17.163,9.044,-24.723,-10.11,Upper middle income
+SMR,2010,San Marino,60426.24,,2.413,19.613,4.945,,,High income
+SMR,2015,San Marino,43068.69,,0.146,12.086,9.183,,,High income
+SMR,2020,San Marino,44818.19,,0.215,23.46,7.342,,,High income
+SOM,2010,Somalia,,,,,,,,Low income
+SOM,2015,Somalia,310.457,,,,,,,Low income
+SOM,2020,Somalia,326.982,,,,,,,Low income
+STP,2010,Sao Tome and Principe,1128.31,33.101,13.339,55.894,14.628,7.675,9.112,Lower middle income
+STP,2015,Sao Tome and Principe,1623.81,20.101,6.086,32.061,13.433,-2.733,8.834,Lower middle income
+STP,2020,Sao Tome and Principe,1918.01,-0.352,9.808,17.097,,-36.273,-9.276,Lower middle income
+SUR,2010,Suriname,8224.07,52.436,6.948,,7.2,9.707,-11.102,Upper middle income
+SUR,2015,Suriname,8439.04,54.004,6.896,,7.0,-7.729,12.12,Upper middle income
+SUR,2020,Suriname,3988.45,32.116,34.913,,11.291,-11.407,-18.831,Upper middle income
+SVK,2010,Slovakia,16784.02,19.172,0.698,23.84,14.483,17.336,16.617,High income
+SVK,2015,Slovakia,16326.57,22.161,-0.331,24.253,11.483,6.644,8.519,High income
+SVK,2020,Slovakia,19071.2,16.422,2.01,16.872,6.675,-7.133,-8.54,High income
+SVN,2010,Slovenia,23570.18,21.594,1.797,22.362,7.283,10.16,6.632,High income
+SVN,2015,Slovenia,20898.91,22.98,-0.521,19.164,8.992,4.741,4.319,High income
+SVN,2020,Slovenia,25210.72,27.891,-0.051,20.593,5.132,-8.671,-10.232,High income
+SWE,2010,Sweden,52658.79,28.799,1.901,22.962,8.575,11.107,11.816,High income
+SWE,2015,Sweden,51274.28,27.743,0.704,24.429,7.4,4.995,5.031,High income
+SWE,2020,Sweden,51796.38,29.755,0.657,24.518,8.292,-5.191,-5.358,High income
+SWZ,2010,Swaziland,4263.91,5.734,4.509,14.482,,4.152,12.683,Lower middle income
+SWZ,2015,Swaziland,3765.92,25.485,4.951,12.516,,-0.987,2.662,Lower middle income
+SWZ,2020,Swaziland,3504.45,19.897,3.872,12.944,,1.17,-20.579,Lower middle income
+SYC,2010,Seychelles,10805.1,17.241,-2.405,36.622,4.605,-20.183,-7.111,High income
+SYC,2015,Seychelles,14786.12,15.187,4.043,33.788,2.684,28.317,7.205,High income
+SYC,2020,Seychelles,11638.72,-6.72,1.203,22.351,3.0,-18.775,-18.052,High income
+SYR,2010,Syria,2806.69,23.845,4.398,26.688,8.613,11.328,5.364,Low income
+SYR,2015,Syria,,,,,,,,Low income
+SYR,2020,Syria,,,,,,,,Low income
+TCD,2010,Chad,895.354,25.871,-2.11,34.388,,-5.488,17.218,Low income
+TCD,2015,Chad,776.105,13.125,4.827,26.905,,36.632,-21.353,Low income
+TCD,2020,Chad,653.98,16.605,3.482,25.389,,10.419,3.902,Low income
+TGO,2010,Togo,721.036,11.998,0.212,15.709,,-1.51,-0.926,Low income
+TGO,2015,Togo,770.358,15.603,1.79,23.223,,-8.527,8.151,Low income
+TGO,2020,Togo,904.675,17.115,1.831,20.854,,-5.393,1.829,Low income
+THA,2010,Thailand,5073.71,28.724,3.299,25.357,1.05,14.22,22.956,Upper middle income
+THA,2015,Thailand,5837.81,29.274,-0.899,22.356,0.9,1.25,0.004,Upper middle income
+THA,2020,Thailand,7190.37,27.151,-0.847,23.855,2.0,-19.409,-13.28,Upper middle income
+TJK,2010,Tajikistan,738.287,7.664,6.463,17.964,2.2,21.517,7.406,Lower middle income
+TJK,2015,Tajikistan,919.073,12.105,5.781,18.177,,13.208,-0.07,Lower middle income
+TJK,2020,Tajikistan,843.974,17.189,8.589,19.511,,14.202,1.861,Lower middle income
+TKM,2010,Turkmenistan,4439.2,,4.447,,,23.613,1.391,Upper middle income
+TKM,2015,Turkmenistan,6432.67,,7.405,,,-5.856,-12.742,Upper middle income
+TKM,2020,Turkmenistan,7967.3,,7.583,,,-9.24,4.783,Upper middle income
+TON,2010,Tonga,3569.1,,1.674,,,-3.266,9.962,Upper middle income
+TON,2015,Tonga,4298.22,,0.054,,,-5.387,7.55,Upper middle income
+TON,2020,Tonga,5125.12,,0.242,,,,,Upper middle income
+TTO,2010,Trinidad and Tobago,16957.43,36.892,10.537,,5.925,11.436,-13.506,High income
+TTO,2015,Trinidad and Tobago,18214.37,28.964,4.659,,3.425,-9.455,12.961,High income
+TTO,2020,Trinidad and Tobago,15384.13,7.0,0.599,,,-20.543,-8.166,High income
+TUN,2010,Tunisia,4140.47,20.029,4.361,25.632,13.048,6.507,15.427,Lower middle income
+TUN,2015,Tunisia,3829.5,10.3,4.437,19.996,15.39,-2.818,-2.564,Lower middle income
+TUN,2020,Tunisia,3322.93,0.971,5.687,7.788,,-12.3,-13.627,Lower middle income
+TUR,2010,Turkey,10533.45,21.771,8.566,26.753,11.127,6.602,17.43,Upper middle income
+TUR,2015,Turkey,10973.59,25.218,7.671,28.199,10.279,1.493,1.502,Upper middle income
+TUR,2020,Turkey,8548.18,26.665,12.279,31.483,13.11,-17.99,5.381,Upper middle income
+TUV,2010,Tuvalu,3034.68,,-2.033,,,,,Upper middle income
+TUV,2015,Tuvalu,3238.99,,3.144,,,,,Upper middle income
+TUV,2020,Tuvalu,4372.4,,1.57,,,,,Upper middle income
+TZA,2010,Tanzania,732.315,24.066,7.192,32.39,,7.512,7.675,Lower middle income
+TZA,2015,Tanzania,947.897,25.457,5.588,32.759,,13.903,1.714,Lower middle income
+TZA,2020,Tanzania,1090.39,33.185,3.0,34.427,,-2.569,2.233,Lower middle income
+UGA,2010,Uganda,808.713,16.245,3.716,22.767,,-9.319,-1.891,Low income
+UGA,2015,Uganda,773.284,18.148,5.412,24.238,,3.421,12.096,Low income
+UGA,2020,Uganda,912.442,18.203,3.792,27.322,,-16.028,3.48,Low income
+UKR,2010,Ukraine,2982.81,18.654,9.365,20.873,8.097,9.293,15.014,Lower middle income
+UKR,2015,Ukraine,2124.62,17.663,48.684,15.933,9.143,-11.211,-28.549,Lower middle income
+UKR,2020,Ukraine,3653.11,10.936,2.74,6.591,9.036,-2.623,-5.92,Lower middle income
+URY,2010,Uruguay,12883.88,16.195,6.699,17.588,7.025,,,High income
+URY,2015,Uruguay,16692.65,17.223,8.666,17.477,7.525,-7.564,-8.145,High income
+URY,2020,Uruguay,15777.96,12.873,9.756,14.319,10.35,-28.231,-12.544,High income
+USA,2010,United States,48403.3,15.466,1.637,18.743,9.608,12.137,13.128,High income
+USA,2015,United States,56848.51,20.141,0.121,21.163,5.275,0.421,5.175,High income
+USA,2020,United States,63415.99,17.802,1.248,20.988,8.108,-12.97,-9.285,High income
+UZB,2010,Uzbekistan,1667.27,28.083,12.304,21.463,,2.026,-2.781,Lower middle income
+UZB,2015,Uzbekistan,2621.98,25.376,8.464,24.059,,2.332,-11.21,Lower middle income
+UZB,2020,Uzbekistan,1701.94,31.561,12.855,37.005,,-17.914,-13.564,Lower middle income
+VCT,2010,Saint Vincent and the Grenadines,6224.22,,0.752,,,,,Upper middle income
+VCT,2015,Saint Vincent and the Grenadines,6867.52,9.997,-1.726,25.328,,19.189,9.132,Upper middle income
+VCT,2020,Saint Vincent and the Grenadines,7121.64,12.724,-0.606,26.457,,-48.943,-32.136,Upper middle income
+VEN,2010,Venezuela,11158.18,31.591,28.187,21.972,8.508,-12.877,-2.891,Not classified
+VEN,2015,Venezuela,10568.1,2.352,121.738,30.868,7.4,-0.863,-23.102,Not classified
+VEN,2020,Venezuela,1690.66,,2355.15,,,-48.13,-20.566,Not classified
+VNM,2010,Vietnam,1628.52,32.352,9.207,35.367,2.88,6.577,4.404,Lower middle income
+VNM,2015,Vietnam,2582.39,26.444,0.631,27.339,2.33,9.713,15.426,Lower middle income
+VNM,2020,Vietnam,3498.98,28.603,3.222,26.444,3.3,2.822,2.948,Lower middle income
+VUT,2010,Vanuatu,2719.25,,2.763,37.007,,,,Lower middle income
+VUT,2015,Vanuatu,2771.66,,2.483,32.9,,,,Lower middle income
+VUT,2020,Vanuatu,2875.95,,2.915,34.085,,,,Lower middle income
+WSM,2010,Samoa,3566.51,,-0.201,,,,,Lower middle income
+WSM,2015,Samoa,4073.68,,1.923,,,,,Lower middle income
+WSM,2020,Samoa,3960.61,,1.48,,,,,Lower middle income
+YEM,2010,Yemen,1266.79,8.25,11.175,11.661,,6.237,-6.359,Low income
+YEM,2015,Yemen,1500.69,-4.439,22.0,1.645,,-34.107,-7.089,Low income
+YEM,2020,Yemen,620.24,2.362,26.183,4.801,,-6.866,-30.204,Low income
+ZAF,2010,South Africa,7311.74,18.012,4.264,19.513,24.875,7.718,10.794,Upper middle income
+ZAF,2015,South Africa,5731.73,16.3,4.575,20.918,25.35,2.925,5.443,Upper middle income
+ZAF,2020,South Africa,5067.15,14.602,3.268,12.426,29.175,-10.28,-16.615,Upper middle income
+ZMB,2010,Zambia,1456.05,37.405,8.5,29.878,,19.476,32.492,Lower middle income
+ZMB,2015,Zambia,1310.46,40.103,10.107,42.791,,-11.407,0.696,Lower middle income
+ZMB,2020,Zambia,981.311,36.03,16.35,34.514,,1.143,2.635,Lower middle income
+ZWE,2010,Zimbabwe,975.851,,3.045,,,,,Lower middle income
+ZWE,2015,Zimbabwe,1425.01,,-2.41,,,,,Lower middle income
+ZWE,2020,Zimbabwe,1385.04,,557.21,,,,,Lower middle income

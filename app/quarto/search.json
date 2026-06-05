@@ -1,0 +1,289 @@
+[
+  {
+    "objectID": "solutions.html",
+    "href": "solutions.html",
+    "title": "Solutions — Data Analysis with Python",
+    "section": "",
+    "text": "NoteAbout this page\n\n\n\n\n\nThese are the completed solutions, runnable in your browser — no install needed. Click Run Code on any cell (run the import and data-loading cells near the top first). Edit any cell to experiment.\nLooking for the blanks to fill in yourself? See the exercises page."
+  },
+  {
+    "objectID": "solutions.html#walkthrough-setting-up-the-python-environment",
+    "href": "solutions.html#walkthrough-setting-up-the-python-environment",
+    "title": "Solutions — Data Analysis with Python",
+    "section": "Walkthrough: Setting Up the Python Environment",
+    "text": "Walkthrough: Setting Up the Python Environment\nIf you haven’t already installed Python, Jupyter, and the necessary packages, there are instructions on the course repo in the README to do so here.\nIf you aren’t able to do this on your machine, you may want to check out Google Colab. It’s a free service that allows you to run Jupyter notebooks in the cloud."
+  },
+  {
+    "objectID": "solutions.html#exercise-setting-up-the-python-environment",
+    "href": "solutions.html#exercise-setting-up-the-python-environment",
+    "title": "Solutions — Data Analysis with Python",
+    "section": "Exercise: Setting Up the Python Environment",
+    "text": "Exercise: Setting Up the Python Environment\nBy completing this exercise, you will be able to - Import necessary Python packages - Check for successful package loading\nFollow the instructions above in Walkthrough to check for correct installation of necessary packages. We’ll wait a few minutes to make sure as many of you are set up as possible. Please give a thumbs up in the pulse check if you are ready to move on."
+  },
+  {
+    "objectID": "solutions.html#walkthrough-1.1-loading-and-inspecting-data-with-pandas",
+    "href": "solutions.html#walkthrough-1.1-loading-and-inspecting-data-with-pandas",
+    "title": "Solutions — Data Analysis with Python",
+    "section": "Walkthrough 1.1: Loading and Inspecting Data with Pandas",
+    "text": "Walkthrough 1.1: Loading and Inspecting Data with Pandas\n\nImport data from a CSV or from an Excel file\n\n\n\n\n\n\n\nCommon Pitfall: read_excel relies on the openpyxl engine for .xlsx files. If you see an ImportError or Missing optional dependency 'openpyxl', install it with pip install openpyxl. Also note that read_excel reads only the first sheet by default; pass sheet_name= if your workbook has multiple sheets.\n\n\n\nPerform an initial exploration of the data"
+  },
+  {
+    "objectID": "solutions.html#exercise-1.1-loading-and-inspecting-data-with-pandas",
+    "href": "solutions.html#exercise-1.1-loading-and-inspecting-data-with-pandas",
+    "title": "Solutions — Data Analysis with Python",
+    "section": "Exercise 1.1: Loading and Inspecting Data with Pandas",
+    "text": "Exercise 1.1: Loading and Inspecting Data with Pandas\nBy completing this exercise, you will be able to use pandas to - Import data from a CSV or from an Excel file - Perform an initial exploration of the data"
+  },
+  {
+    "objectID": "solutions.html#walkthrough-1.2-cleaning-and-preparing-data-with-pandas",
+    "href": "solutions.html#walkthrough-1.2-cleaning-and-preparing-data-with-pandas",
+    "title": "Solutions — Data Analysis with Python",
+    "section": "Walkthrough 1.2: Cleaning and Preparing Data with Pandas",
+    "text": "Walkthrough 1.2: Cleaning and Preparing Data with Pandas\n\nHandle missing data\n\nRemove rows\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRemove columns\n\n\n\n\n\n\n\n\nReplace missing values with specific value\n\n\n\n\n\n\nThis can be extended to replace missing values with the mean, median, or mode of the column too.\n\nCommon Pitfall: Methods like dropna, fillna, and rename return a new DataFrame by default and do NOT modify the original in place. Assign the result to a variable (or pass inplace=True) or your changes will be lost. Reassigning, as done here, is the recommended pattern.\n\n\n\n\nConvert a column to a different data type\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRename a column\n\n\n\n\n\n\n\n\nChanging a DataFrame’s index\n\nSet the index\n\n\n\n\n\n\n\n\nReset the index\n\n\n\n\n\n\n\n\n\nFiltering rows based on conditions\n\nConditions on a single column\n\n\n\n\n\n\n\nCommon Pitfall: When combining multiple conditions, wrap each comparison in parentheses and use & (and) / | (or), not the Python keywords and/or. Forgetting the parentheses, e.g. economies['inflation_rate'] &lt; 0 & ..., triggers an operator-precedence error because & binds more tightly than &lt;.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nConditions on multiple columns"
+  },
+  {
+    "objectID": "solutions.html#exercise-1.2-cleaning-and-preparing-data-with-pandas",
+    "href": "solutions.html#exercise-1.2-cleaning-and-preparing-data-with-pandas",
+    "title": "Solutions — Data Analysis with Python",
+    "section": "Exercise 1.2: Cleaning and Preparing Data with Pandas",
+    "text": "Exercise 1.2: Cleaning and Preparing Data with Pandas\nBy completing this exercise, you will be able to use pandas to - Handle missing data - Convert a column to a different data type - Rename a column - Change a DataFrame’s index - Filter a DataFrame\n\nHandle Missing Data\n\nRemove rows\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRemove columns\n\n\n\n\n\n\n\n\nReplace missing values with specific value\n\n\n\n\n\n\n\n\n\nConvert a Column to a Different Data Type and Rename a Column\n\nConvert a Column to a Different Data Type\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRename a Column\n\n\n\n\n\n\n\n\n\nChange a DataFrame’s Index and Filter a DataFrame\n\nChange a DataFrame’s Index\n\n\n\n\n\n\n\n\nFilter a DataFrame"
+  },
+  {
+    "objectID": "solutions.html#walkthrough-1.3-transforming-and-aggregating-data-with-pandas",
+    "href": "solutions.html#walkthrough-1.3-transforming-and-aggregating-data-with-pandas",
+    "title": "Solutions — Data Analysis with Python",
+    "section": "Walkthrough 1.3: Transforming and Aggregating Data with Pandas",
+    "text": "Walkthrough 1.3: Transforming and Aggregating Data with Pandas\n\nGrouping data\n\n\n\n\n\n\n\n\nApplying Functions\n\nApplying a function element-wise with map()\n\n\n\n\n\n\n\n\nApplying a Function to Groups with groupby() and agg()\n\n\n\n\n\n\n\n\n\nSummary tables\n\n\n\n\n\n\n\n\nAnalyzing categorical data\n\nUsing cross-tabulation\n\n\n\n\n\n\n\n\nBy getting group counts"
+  },
+  {
+    "objectID": "solutions.html#exercise-1.3-transforming-and-aggregating-data-with-pandas",
+    "href": "solutions.html#exercise-1.3-transforming-and-aggregating-data-with-pandas",
+    "title": "Solutions — Data Analysis with Python",
+    "section": "Exercise 1.3: Transforming and Aggregating Data with Pandas",
+    "text": "Exercise 1.3: Transforming and Aggregating Data with Pandas\nBy completing this exercise, you will be able to use pandas to - Aggregate data effectively by grouping it - Transform data by applying functions element-wise or to groups - Create summary tables - Analyze categorical data using cross-tabulation and counts\n\nGrouping Data\n\n\n\n\n\n\n\n\nApplying Functions\n\nApplying a function element-wise with map()\n\n\n\n\n\n\n\n\nApplying a function to groups with groupby() and agg()\n\n\n\n\n\n\n\n\n\nSummary Tables\n\n\n\n\n\n\n\n\nAnalyzing Categorical Data\n\nUsing Cross-Tabulation\n\n\n\n\n\n\n\n\nBy Getting Group Counts\n\n\n\n\n\n\n\n\n\nSelf-Check\nBy the end of this module, you should be able to:\n\nLoad data from CSV and Excel files with read_csv and read_excel\nInspect a DataFrame using head(), info(), describe(), dtypes, and isnull().sum()\nHandle missing data by dropping rows/columns or filling values with dropna and fillna\nConvert column data types, rename columns, and set or reset the index\nFilter rows using single and multiple boolean conditions\nAggregate and summarize data with groupby, agg, pivot_table, crosstab, and value_counts"
+  },
+  {
+    "objectID": "solutions.html#walkthrough-2.1-creating-basic-plots-with-matplotlib",
+    "href": "solutions.html#walkthrough-2.1-creating-basic-plots-with-matplotlib",
+    "title": "Solutions — Data Analysis with Python",
+    "section": "Walkthrough 2.1: Creating Basic Plots with Matplotlib",
+    "text": "Walkthrough 2.1: Creating Basic Plots with Matplotlib\n\nLine plot\n\n\n\n\n\n\n\n\nBar chart\n\n\n\n\n\n\n\n\nAdding labels and titles\n\n\n\n\n\n\n\n\nAdjusting axes and tick marks\n\n\n\n\n\n\n\nCommon Pitfall: Call plt.figure() before each new plot and plt.show() after it. If you skip plt.figure(), matplotlib keeps drawing onto the previous figure, and successive plots can overlap or accumulate unexpectedly within the same axes."
+  },
+  {
+    "objectID": "solutions.html#exercise-2.1-creating-basic-plots-with-matplotlib",
+    "href": "solutions.html#exercise-2.1-creating-basic-plots-with-matplotlib",
+    "title": "Solutions — Data Analysis with Python",
+    "section": "Exercise 2.1: Creating Basic Plots with Matplotlib",
+    "text": "Exercise 2.1: Creating Basic Plots with Matplotlib\nBy completing this exercise, you will be able to use matplotlib to - Create line plots and bar charts - Add labels and titles - Adjust axes and tick marks\n\nLine Plot\n\n\n\n\n\n\n\n\nBar Chart\n\n\n\n\n\n\n\n\nAdding Labels and Titles\n\n\n\n\n\n\n\n\nAdjusting Axes and Tick Marks"
+  },
+  {
+    "objectID": "solutions.html#walkthrough-2.2-data-visualization-techniques-with-seaborn",
+    "href": "solutions.html#walkthrough-2.2-data-visualization-techniques-with-seaborn",
+    "title": "Solutions — Data Analysis with Python",
+    "section": "Walkthrough 2.2: Data Visualization Techniques with Seaborn",
+    "text": "Walkthrough 2.2: Data Visualization Techniques with Seaborn\n\nHeatmap\n\n\n\n\n\n\n\nCommon Pitfall: corr() only works on numeric columns. Select numeric columns first (as shown with select_dtypes); passing a DataFrame that still contains string columns such as code or income_group will either error or silently drop them depending on your pandas version.\n\n\n\nPair plot\n\n\n\n\n\n\n\n\nViolin plot\n\n\n\n\n\n\n\n\nCustomizing Seaborn plots"
+  },
+  {
+    "objectID": "solutions.html#exercise-2.2-data-visualization-techniques-with-seaborn",
+    "href": "solutions.html#exercise-2.2-data-visualization-techniques-with-seaborn",
+    "title": "Solutions — Data Analysis with Python",
+    "section": "Exercise 2.2: Data Visualization Techniques with Seaborn",
+    "text": "Exercise 2.2: Data Visualization Techniques with Seaborn\nBy completing this exercise, you will be able to use seaborn to - Create heatmaps - Design pair plots and violin plots - Customize Seaborn plots\n\nHeatmap\n\n\n\n\n\n\n\n\nPair Plot\n\n\n\n\n\n\n\n\nViolin Plot\n\n\n\n\n\n\n\n\nCustomizing Seaborn Plots\n\n\n\n\n\n\n\n\nSelf-Check\nBy the end of this module, you should be able to:\n\nCreate line plots and bar charts (vertical and horizontal) with matplotlib\nAdd axis labels, titles, and gridlines to a plot\nAdjust axis limits and tick marks with ylim, xticks, and yticks\nBuild heatmaps, pair plots, and violin plots with seaborn\nCompute a correlation matrix on numeric columns before plotting it\nCustomize seaborn plots with palettes, hues, and matplotlib styling"
+  },
+  {
+    "objectID": "solutions.html#walkthrough-3.1-interactive-charts-and-dashboards-with-plotly",
+    "href": "solutions.html#walkthrough-3.1-interactive-charts-and-dashboards-with-plotly",
+    "title": "Solutions — Data Analysis with Python",
+    "section": "Walkthrough 3.1: Interactive Charts and Dashboards with Plotly",
+    "text": "Walkthrough 3.1: Interactive Charts and Dashboards with Plotly\n\nBasic interactive chart\n\n\n\n\n\n\n\nCommon Pitfall: If a Plotly figure shows up blank in a Jupyter notebook, the renderer was likely not initialized. Make sure the setup cell that runs pyo.init_notebook_mode(connected=True) was executed first, and remember that you must call fig.show() – simply creating fig does not display anything.\n\n\n\nAdding interactive elements\n\n\n\n\n\n\n\n\nDesigning a simple dashboard\n\n\n\n\n\n\n\nCommon Pitfall: Plotly subplot positions are 1-indexed, so the first cell is row=1, col=1 (not 0). The rows/cols you pass to make_subplots must also be large enough to hold every add_trace position, or you will get an index error."
+  },
+  {
+    "objectID": "solutions.html#exercise-3.1-interactive-charts-and-dashboards-with-plotly",
+    "href": "solutions.html#exercise-3.1-interactive-charts-and-dashboards-with-plotly",
+    "title": "Solutions — Data Analysis with Python",
+    "section": "Exercise 3.1: Interactive Charts and Dashboards with Plotly",
+    "text": "Exercise 3.1: Interactive Charts and Dashboards with Plotly\nBy completing this exercise, you will be able to use plotly to - Create a basic interactive chart - Add interactive elements: hover, zoom, and selection tools - Design a simple dashboard with multiple charts\n\nBasic Interactive Chart\n\n\n\n\n\n\n\n\nAdding Interactive Elements\n\n\n\n\n\n\n\n\nDesigning a Simple Dashboard"
+  },
+  {
+    "objectID": "solutions.html#walkthrough-3.2-creating-a-dynamic-data-report",
+    "href": "solutions.html#walkthrough-3.2-creating-a-dynamic-data-report",
+    "title": "Solutions — Data Analysis with Python",
+    "section": "Walkthrough 3.2: Creating a Dynamic Data Report",
+    "text": "Walkthrough 3.2: Creating a Dynamic Data Report\n\nSelecting relevant data\n\n\n\n\n\n\n\n\nBuilding a dynamic report\n\n\n\n\n\n\n\n\nAdding contextual text and summaries"
+  },
+  {
+    "objectID": "solutions.html#exercise-3.2-creating-a-dynamic-data-report",
+    "href": "solutions.html#exercise-3.2-creating-a-dynamic-data-report",
+    "title": "Solutions — Data Analysis with Python",
+    "section": "Exercise 3.2: Creating a Dynamic Data Report",
+    "text": "Exercise 3.2: Creating a Dynamic Data Report\nBy completing this exercise, you will be able to use pandas and plotly to - Select relevant data - Build a dynamic report - Add contextual text and summaries\n\nSelecting Relevant Data\n\n\n\n\n\n\n\n\nBuilding a Dynamic Report\n\n\n\n\n\n\n\n\nAdding Contextual Text and Summaries\n\n\n\n\n\n\n\n\nSelf-Check\nBy the end of this module, you should be able to:\n\nCreate basic interactive charts with Plotly Express (px.line, px.scatter)\nAdd interactive elements such as hover text, color encoding, and custom labels\nBuild multi-panel dashboards with make_subplots and add_trace\nCombine go.Scatter and go.Bar traces into a single figure\nAdd contextual annotations and summary text to a report with add_annotation\nConfirm Plotly figures render by initializing the notebook mode and calling fig.show()"
+  },
+  {
+    "objectID": "solutions.html#walkthrough-4.1-interactive-charts-and-dashboards-with-plotly",
+    "href": "solutions.html#walkthrough-4.1-interactive-charts-and-dashboards-with-plotly",
+    "title": "Solutions — Data Analysis with Python",
+    "section": "Walkthrough 4.1: Interactive Charts and Dashboards with Plotly",
+    "text": "Walkthrough 4.1: Interactive Charts and Dashboards with Plotly\n\nSelecting a Dataset\n\nQuestions to Ask:\n\nWhat industry problem or area of interest does the dataset align with?\n\nIs the dataset relevant to economic analysis, market research, policy planning, or another industry?\n\nDoes the dataset provide sufficient complexity and scope for a thorough analysis?\n\nDoes it include multiple variables and data points across different time periods and categories (e.g., income groups, countries)?\n\nWhat specific questions or hypotheses do we want to explore with this dataset?\n\nAre we interested in comparing economic indicators across countries, understanding the impact of GDP per capita on other variables, or identifying trends over time?\n\n\n\n\nExample:\n\nDataset: The economies dataset.\nIndustry Problem: Understanding economic disparities between countries and the impact of economic indicators on overall economic health.\nSpecific Questions:\n\nHow do GDP per capita and gross savings vary across different income groups?\nHow has the inflation rate changed over time for specified income groups?\n\n\n\n\n\nApplying Cleaning, Transforming, and Analysis Techniques\n\nQuestions to Ask:\n\nWhat cleaning steps are necessary to prepare the data for analysis?\n\nAre there any missing values that need to be handled? Are there any inconsistencies in data types?\n\nWhat transformations are required to make the data analysis-ready?\n\nDo we need to create new columns, filter specific rows, or aggregate data by certain categories?\n\nHow can we analyze the data to uncover patterns, trends, or anomalies?\n\nWhat statistical methods or visualizations can we use to explore relationships between variables?\n\n\n\n\nExample:\n\nCleaning:\n\n\n\n\n\n\n\n\nCommon Pitfall: Build new columns on a DataFrame you fully own (here economies_cleaned, created by fillna), not on a filtered slice of another DataFrame. Assigning to a column of a slice can raise pandas’ SettingWithCopyWarning and may not update the data you expect. When you need an independent copy, use .copy().\n\n\nTransforming:\n\n\n\n\n\n\nAnalyzing:\n\n\n\n\n\n\n\n\n\n\nInitial Findings and Interpretation\n\nQuestions to Ask:\n\nWhat do the initial findings tell us about the data?\n\nAre there any notable patterns or trends in the data? Are there any unexpected results?\n\nHow do these insights relate to the problem defined earlier?\n\nDo the findings help us understand economic disparities between countries? Do they provide insights into the impact of certain economic indicators?\n\nWhat hypotheses can we test based on the initial results?\n\nCan we test hypotheses about the relationship between GDP per capita and other economic indicators? Can we refine our analysis to explore these hypotheses further?\n\n\n\n\nExample:\n\nInitial Findings:\n\nGDP per Capita vs. Gross Savings: The scatter plot shows that high-income countries generally have higher GDP per capita and gross savings. There seems to be a slight positive correlation between these two indicators.\nInflation Rate Over Time: The line plot indicates that inflation rates vary significantly over time and across different income groups. Low and lower middle income countries tend to experience higher volatility in inflation rates.\n\nInterpretation:\n\nThese findings suggest that economic health, as measured by GDP per capita and gross savings, is strongly influenced by the income group of a country. High-income countries appear to have more stable and higher economic performance.\nThe volatility in inflation rates among low-income countries may indicate economic instability, which could be a key area for policy intervention.\n\nHypotheses:\n\nHypothesis 1: High-income countries have a higher average GDP per capita and gross savings compared to low-income countries.\nHypothesis 2: Low-income countries experience greater volatility in inflation rates compared to high-income countries.\n\nNext Steps:\n\nConduct further analysis to test these hypotheses, using statistical methods to confirm the observed patterns.\nExplore other economic indicators to gain a more comprehensive understanding of economic disparities and trends.\n\n\nBy following these steps, you can effectively select, clean, transform, and analyze the economies dataset to gain valuable insights and address common industry problems or research questions."
+  },
+  {
+    "objectID": "solutions.html#walkthrough-4.2-finalizing-and-presenting-your-data-analysis-project",
+    "href": "solutions.html#walkthrough-4.2-finalizing-and-presenting-your-data-analysis-project",
+    "title": "Solutions — Data Analysis with Python",
+    "section": "Walkthrough 4.2: Finalizing and Presenting Your Data Analysis Project",
+    "text": "Walkthrough 4.2: Finalizing and Presenting Your Data Analysis Project\n\nIntegrate Feedback to Refine the Analysis\n\nQuestions to Ask:\n\nWhat feedback have you received from peers, stakeholders, or mentors?\n\nIs there feedback on the clarity of the analysis, choice of visualizations, or the comprehensiveness of the analysis?\n\nHow can you incorporate this feedback into your analysis?\n\nAre there additional variables that need to be analyzed? Do you need to clean the data further or adjust the visualizations?\n\nWhat new questions or hypotheses have emerged from the feedback?\n\nDoes the feedback suggest new directions for the analysis or areas that need more focus?\n\n\n\n\nExample:\n\nFeedback:\n\nPeers suggested that the analysis should also consider the impact of unemployment rates.\nStakeholders requested more clarity on the relationship between GDP per capita and inflation rates across different income groups.\n\nRefining the Analysis:\n\nAdditional data needs to be found to meet the request for more clarity. Or maybe a further drilldown on specific countries would be helpful?\n\n\n\n\n\nFinalize the Presentation with Impactful Visuals and Narrative\n\nQuestions to Ask:\n\nWhat are the key insights from the analysis that need to be highlighted?\n\nWhat are the most important findings that should be communicated to the audience?\n\nHow can you create impactful visuals that clearly convey these insights?\n\nWhat types of charts or visualizations best represent the data and findings?\n\nWhat narrative will you use to guide the audience through the presentation?\n\nHow will you structure the presentation to tell a compelling story with the data?\n\n\n\n\nExample:\n\nKey Insights:\n\nHigh-income countries have higher GDP per capita and gross savings.\nThere is a positive correlation between GDP per capita and gross savings.\nLow-income countries experience greater volatility in inflation rates.\nUnemployment rates vary significantly across income groups.\n\nImpactful Visuals:\n\n\n\n\n\n\nNarrative:\n\nIntroduction: Introduce the dataset and the industry problem. Explain why understanding economic indicators across different income groups is important.\nKey Findings: Present the key findings using the visualizations created. Highlight the relationship between GDP per capita, gross savings, inflation rates, and unemployment rates.\nDetailed Analysis: Dive deeper into each key finding, providing more context and interpretation. Explain the significance of the trends and patterns observed in the data.\nConclusion: Summarize the insights and discuss potential implications for policy or business decisions. Suggest areas for further research or analysis based on the findings.\n\n\n\n\n\nRehearse the Presentation\n\nQuestions to Ask:\n\nHow will you structure your presentation to ensure a smooth flow?\n\nWhat order will you present the visualizations and insights? How will you transition between different sections?\n\nHow will you engage your audience and ensure they understand the key points?\n\nWhat techniques will you use to highlight important information and keep the audience’s attention?\n\nWhat potential questions or feedback might you receive, and how will you address them?\n\nHow will you prepare for questions about the data, analysis methods, or findings?\n\n\n\n\nExample:\n\nStructuring the Presentation:\n\nStart with an overview of the dataset and the industry problem.\nMove on to the key findings, using the most impactful visualizations to illustrate each point.\nProvide a detailed analysis of each finding, explaining the significance and implications.\nConclude with a summary of insights and suggestions for further research.\n\nEngaging the Audience:\n\nUse clear and concise language to explain complex concepts.\nHighlight key points using annotations or callouts on the visualizations.\nEncourage questions and interaction to keep the audience engaged.\n\nPreparing for Questions:\n\nAnticipate common questions about the data sources, cleaning methods, and analysis techniques.\nPrepare explanations for any limitations of the data or analysis.\nBe ready to discuss potential next steps and areas for further research based on the findings.\n\n\nBy following these steps, you can effectively integrate feedback, finalize your presentation with impactful visuals and narrative, and rehearse to ensure a smooth and engaging delivery.\n\n\n\nSelf-Check\nBy the end of this module, you should be able to:\n\nSelect a dataset and frame the industry problem and questions it can answer\nApply cleaning and transforming techniques to prepare data for analysis\nEngineer new columns, such as a grouped pct_change, for deeper analysis\nProduce exploratory visuals and interpret initial findings into hypotheses\nIntegrate feedback to refine the analysis and choice of visualizations\nFinalize and rehearse a presentation that tells a clear, impactful data story"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Data Analysis with Python",
+    "section": "",
+    "text": "Welcome! This site lets you run all of the course code directly in your browser. Python runs locally on your own machine via Pyodide (WebAssembly) — there is nothing to install, no account to create, and no cloud server involved."
+  },
+  {
+    "objectID": "index.html#two-ways-to-work",
+    "href": "index.html#two-ways-to-work",
+    "title": "Data Analysis with Python",
+    "section": "Two ways to work",
+    "text": "Two ways to work\n\n\n📝 Exercises\nThe live-coding template. Code cells start mostly empty so you can fill them in as we go. Your edits are saved automatically in this browser, so you can pick up where you left off.\n\n\n✅ Solutions\nThe completed code for every walkthrough and exercise. Run any cell to see the output, or edit a cell to experiment with your own variations."
+  },
+  {
+    "objectID": "index.html#how-it-works",
+    "href": "index.html#how-it-works",
+    "title": "Data Analysis with Python",
+    "section": "How it works",
+    "text": "How it works\n\nClick Run Code on any code cell to execute it in your browser.\nRun the import cell and the data-loading cells near the top of a page first, then work top to bottom — later cells reuse variables from earlier ones.\nThe first cell you run takes a few seconds while Python and the data packages load. After that it’s fast.\nThe course datasets (economies.csv, populations.csv, their .xlsx versions, and economies_indexed.csv) are bundled with the page, so pd.read_csv(...) / pd.read_excel(...) just work.\n\n\n\n\n\n\n\nNoteNeed the originals?\n\n\n\nThe Jupyter notebooks, slides, and data are all in the course GitHub repository. You can also run the notebooks on Google Colab if you prefer a full Jupyter environment.\n\n\n\n\n\n\n\n\nTipBrowser support\n\n\n\nThe in-browser plots need a modern browser (Chrome, Edge, Firefox, or Safari, kept up to date). If a plot cell shows an OffscreenCanvas error, update your browser to the latest version."
+  },
+  {
+    "objectID": "exercises.html",
+    "href": "exercises.html",
+    "title": "Walkthroughs & Exercises — Data Analysis with Python",
+    "section": "",
+    "text": "TipHow to use this page\n\n\n\n\n\nEverything runs in your browser — there’s no Python or Jupyter to install.\n\nClick Run Code on the import cell and the data-loading cells near the top first.\nThen work through the page top to bottom, filling in each cell as we live-code together.\nYour edits are saved automatically in this browser. Use Start Over on a cell to reset it.\nThe very first run takes a few seconds while Python loads in the background.\n\nStuck? Open the completed solutions in another tab."
+  },
+  {
+    "objectID": "exercises.html#walkthrough-setting-up-the-python-environment",
+    "href": "exercises.html#walkthrough-setting-up-the-python-environment",
+    "title": "Walkthroughs & Exercises — Data Analysis with Python",
+    "section": "Walkthrough: Setting Up the Python Environment",
+    "text": "Walkthrough: Setting Up the Python Environment\nIf you haven’t already installed Python, Jupyter, and the necessary packages, there are instructions on the course repo in the README to do so here.\nIf you aren’t able to do this on your machine, you may want to check out Google Colab. It’s a free service that allows you to run Jupyter notebooks in the cloud. Alternatively, I’ve set up some temporary notebooks on Binder here that you can work with online as well."
+  },
+  {
+    "objectID": "exercises.html#exercise-setting-up-the-python-environment",
+    "href": "exercises.html#exercise-setting-up-the-python-environment",
+    "title": "Walkthroughs & Exercises — Data Analysis with Python",
+    "section": "Exercise: Setting Up the Python Environment",
+    "text": "Exercise: Setting Up the Python Environment\nBy completing this exercise, you will be able to - Import necessary Python packages - Check for successful package loading\nFollow the instructions above in Walkthrough to check for correct installation of necessary packages. We’ll wait a few minutes to make sure as many of you are set up as possible. Please give a thumbs up in the pulse check if you are ready to move on."
+  },
+  {
+    "objectID": "exercises.html#walkthrough-1.1-loading-and-inspecting-data-with-pandas",
+    "href": "exercises.html#walkthrough-1.1-loading-and-inspecting-data-with-pandas",
+    "title": "Walkthroughs & Exercises — Data Analysis with Python",
+    "section": "Walkthrough 1.1: Loading and Inspecting Data with Pandas",
+    "text": "Walkthrough 1.1: Loading and Inspecting Data with Pandas\n\nImport data from a CSV or from an Excel file\n\n\n\n\n\n\n\nCommon Pitfall: read_excel relies on the openpyxl engine for .xlsx files. If you see an ImportError or Missing optional dependency 'openpyxl', install it with pip install openpyxl. Also note that read_excel reads only the first sheet by default; pass sheet_name= if your workbook has multiple sheets.\n\n\n\nPerform an initial exploration of the data"
+  },
+  {
+    "objectID": "exercises.html#exercise-1.1-loading-and-inspecting-data-with-pandas",
+    "href": "exercises.html#exercise-1.1-loading-and-inspecting-data-with-pandas",
+    "title": "Walkthroughs & Exercises — Data Analysis with Python",
+    "section": "Exercise 1.1: Loading and Inspecting Data with Pandas",
+    "text": "Exercise 1.1: Loading and Inspecting Data with Pandas\nBy completing this exercise, you will be able to use pandas to - Import data from a CSV or from an Excel file - Perform an initial exploration of the data"
+  },
+  {
+    "objectID": "exercises.html#walkthrough-1.2-cleaning-and-preparing-data-with-pandas",
+    "href": "exercises.html#walkthrough-1.2-cleaning-and-preparing-data-with-pandas",
+    "title": "Walkthroughs & Exercises — Data Analysis with Python",
+    "section": "Walkthrough 1.2: Cleaning and Preparing Data with Pandas",
+    "text": "Walkthrough 1.2: Cleaning and Preparing Data with Pandas\n\nHandle missing data\n\nRemove rows\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRemove columns\n\n\n\n\n\n\n\n\nReplace missing values with specific value\n\n\n\n\n\n\nThis can be extended to replace missing values with the mean, median, or mode of the column too.\n\nCommon Pitfall: Methods like dropna, fillna, and rename return a new DataFrame by default and do NOT modify the original in place. Assign the result to a variable (or pass inplace=True) or your changes will be lost. Reassigning is the recommended pattern.\n\n\n\n\nConvert a column to a different data type\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRename a column\n\n\n\n\n\n\n\n\nChanging a DataFrame’s index\n\nSet the index\n\n\n\n\n\n\n\n\nReset the index\n\n\n\n\n\n\n\n\n\nFiltering rows based on conditions\n\nConditions on a single column\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCommon Pitfall: When combining multiple conditions, wrap each comparison in parentheses and use & (and) / | (or), not the Python keywords and/or. Forgetting the parentheses, e.g. economies['inflation_rate'] &lt; 0 & ..., triggers an operator-precedence error because & binds more tightly than &lt;.\n\n\n\nConditions on multiple columns"
+  },
+  {
+    "objectID": "exercises.html#exercise-1.2-cleaning-and-preparing-data-with-pandas",
+    "href": "exercises.html#exercise-1.2-cleaning-and-preparing-data-with-pandas",
+    "title": "Walkthroughs & Exercises — Data Analysis with Python",
+    "section": "Exercise 1.2: Cleaning and Preparing Data with Pandas",
+    "text": "Exercise 1.2: Cleaning and Preparing Data with Pandas\nBy completing this exercise, you will be able to use pandas to - Handle missing data - Convert a column to a different data type - Rename a column - Change a DataFrame’s index - Filter a DataFrame\n\nHandle Missing Data\n\nRemove rows\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRemove columns\n\n\n\n\n\n\n\n\nReplace missing values with specific value\n\n\n\n\n\n\n\n\n\nConvert a Column to a Different Data Type and Rename a Column\n\nConvert a Column to a Different Data Type\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRename a Column\n\n\n\n\n\n\n\n\n\nChange a DataFrame’s Index and Filter a DataFrame\n\nChange a DataFrame’s Index\n\n\n\n\n\n\n\n\nFilter a DataFrame"
+  },
+  {
+    "objectID": "exercises.html#walkthrough-1.3-transforming-and-aggregating-data-with-pandas",
+    "href": "exercises.html#walkthrough-1.3-transforming-and-aggregating-data-with-pandas",
+    "title": "Walkthroughs & Exercises — Data Analysis with Python",
+    "section": "Walkthrough 1.3: Transforming and Aggregating Data with Pandas",
+    "text": "Walkthrough 1.3: Transforming and Aggregating Data with Pandas\n\nGrouping data\n\n\n\n\n\n\n\n\nApplying Functions\n\nApplying a function element-wise with map()\n\n\n\n\n\n\n\n\nApplying a Function to Groups with groupby() and agg()\n\n\n\n\n\n\n\n\n\nSummary tables\n\n\n\n\n\n\n\n\nAnalyzing categorical data\n\nUsing cross-tabulation\n\n\n\n\n\n\n\n\nBy getting group counts"
+  },
+  {
+    "objectID": "exercises.html#exercise-1.3-transforming-and-aggregating-data-with-pandas",
+    "href": "exercises.html#exercise-1.3-transforming-and-aggregating-data-with-pandas",
+    "title": "Walkthroughs & Exercises — Data Analysis with Python",
+    "section": "Exercise 1.3: Transforming and Aggregating Data with Pandas",
+    "text": "Exercise 1.3: Transforming and Aggregating Data with Pandas\nBy completing this exercise, you will be able to use pandas to - Aggregate data effectively by grouping it - Transform data by applying functions element-wise or to groups - Create summary tables - Analyze categorical data using cross-tabulation and counts\n\nGrouping Data\n\n\n\n\n\n\n\n\nApplying Functions\n\nApplying a function element-wise with map()\n\n\n\n\n\n\n\n\nApplying a function to groups with groupby() and agg()\n\n\n\n\n\n\n\n\n\nSummary Tables\n\n\n\n\n\n\n\n\nAnalyzing Categorical Data\n\nUsing Cross-Tabulation\n\n\n\n\n\n\n\n\nBy Getting Group Counts\n\n\n\n\n\n\n\n\n\nSelf-Check\nBy the end of this module, you should be able to:\n\nLoad data from CSV and Excel files with read_csv and read_excel\nInspect a DataFrame using head(), info(), describe(), dtypes, and isnull().sum()\nHandle missing data by dropping rows/columns or filling values with dropna and fillna\nConvert column data types, rename columns, and set or reset the index\nFilter rows using single and multiple boolean conditions\nAggregate and summarize data with groupby, agg, pivot_table, crosstab, and value_counts"
+  },
+  {
+    "objectID": "exercises.html#walkthrough-2.1-creating-basic-plots-with-matplotlib",
+    "href": "exercises.html#walkthrough-2.1-creating-basic-plots-with-matplotlib",
+    "title": "Walkthroughs & Exercises — Data Analysis with Python",
+    "section": "Walkthrough 2.1: Creating Basic Plots with Matplotlib",
+    "text": "Walkthrough 2.1: Creating Basic Plots with Matplotlib\n\nLine plot\n\n\n\n\n\n\n\n\nBar chart\n\n\n\n\n\n\n\n\nAdding labels and titles\n\n\n\n\n\n\n\n\nAdjusting axes and tick marks\n\n\n\n\n\n\n\nCommon Pitfall: Call plt.figure() before each new plot and plt.show() after it. If you skip plt.figure(), matplotlib keeps drawing onto the previous figure, and successive plots can overlap or accumulate unexpectedly within the same axes."
+  },
+  {
+    "objectID": "exercises.html#exercise-2.1-creating-basic-plots-with-matplotlib",
+    "href": "exercises.html#exercise-2.1-creating-basic-plots-with-matplotlib",
+    "title": "Walkthroughs & Exercises — Data Analysis with Python",
+    "section": "Exercise 2.1: Creating Basic Plots with Matplotlib",
+    "text": "Exercise 2.1: Creating Basic Plots with Matplotlib\nBy completing this exercise, you will be able to use matplotlib to - Create line plots and bar charts - Add labels and titles - Adjust axes and tick marks\n\nLine Plot\n\n\n\n\n\n\n\n\nBar Chart\n\n\n\n\n\n\n\n\nAdding Labels and Titles\n\n\n\n\n\n\n\n\nAdjusting Axes and Tick Marks"
+  },
+  {
+    "objectID": "exercises.html#walkthrough-2.2-data-visualization-techniques-with-seaborn",
+    "href": "exercises.html#walkthrough-2.2-data-visualization-techniques-with-seaborn",
+    "title": "Walkthroughs & Exercises — Data Analysis with Python",
+    "section": "Walkthrough 2.2: Data Visualization Techniques with Seaborn",
+    "text": "Walkthrough 2.2: Data Visualization Techniques with Seaborn\n\nHeatmap\n\n\n\n\n\n\n\nCommon Pitfall: corr() only works on numeric columns. Select numeric columns first (as with select_dtypes); passing a DataFrame that still contains string columns such as code or income_group will either error or silently drop them depending on your pandas version.\n\n\n\nPair plot\n\n\n\n\n\n\n\n\nViolin plot\n\n\n\n\n\n\n\n\nCustomizing Seaborn plots"
+  },
+  {
+    "objectID": "exercises.html#exercise-2.2-data-visualization-techniques-with-seaborn",
+    "href": "exercises.html#exercise-2.2-data-visualization-techniques-with-seaborn",
+    "title": "Walkthroughs & Exercises — Data Analysis with Python",
+    "section": "Exercise 2.2: Data Visualization Techniques with Seaborn",
+    "text": "Exercise 2.2: Data Visualization Techniques with Seaborn\nBy completing this exercise, you will be able to use seaborn to - Create heatmaps - Design pair plots and violin plots - Customize Seaborn plots\n\nHeatmap\n\n\n\n\n\n\n\n\nPair Plot\n\n\n\n\n\n\n\n\nViolin Plot\n\n\n\n\n\n\n\n\nCustomizing Seaborn Plots\n\n\n\n\n\n\n\n\nSelf-Check\nBy the end of this module, you should be able to:\n\nCreate line plots and bar charts (vertical and horizontal) with matplotlib\nAdd axis labels, titles, and gridlines to a plot\nAdjust axis limits and tick marks with ylim, xticks, and yticks\nBuild heatmaps, pair plots, and violin plots with seaborn\nCompute a correlation matrix on numeric columns before plotting it\nCustomize seaborn plots with palettes, hues, and matplotlib styling"
+  },
+  {
+    "objectID": "exercises.html#walkthrough-3.1-interactive-charts-and-dashboards-with-plotly",
+    "href": "exercises.html#walkthrough-3.1-interactive-charts-and-dashboards-with-plotly",
+    "title": "Walkthroughs & Exercises — Data Analysis with Python",
+    "section": "Walkthrough 3.1: Interactive Charts and Dashboards with Plotly",
+    "text": "Walkthrough 3.1: Interactive Charts and Dashboards with Plotly\n\nBasic interactive chart\n\n\n\n\n\n\n\nCommon Pitfall: If a Plotly figure shows up blank in a Jupyter notebook, the renderer was likely not initialized. Make sure the setup cell that runs pyo.init_notebook_mode(connected=True) was executed first, and remember that you must call fig.show() – simply creating fig does not display anything.\n\n\n\nAdding interactive elements\n\n\n\n\n\n\n\n\nDesigning a simple dashboard\n\n\n\n\n\n\n\nCommon Pitfall: Plotly subplot positions are 1-indexed, so the first cell is row=1, col=1 (not 0). The rows/cols you pass to make_subplots must also be large enough to hold every add_trace position, or you will get an index error."
+  },
+  {
+    "objectID": "exercises.html#exercise-3.1-interactive-charts-and-dashboards-with-plotly",
+    "href": "exercises.html#exercise-3.1-interactive-charts-and-dashboards-with-plotly",
+    "title": "Walkthroughs & Exercises — Data Analysis with Python",
+    "section": "Exercise 3.1: Interactive Charts and Dashboards with Plotly",
+    "text": "Exercise 3.1: Interactive Charts and Dashboards with Plotly\nBy completing this exercise, you will be able to use plotly to - Create a basic interactive chart - Add interactive elements: hover, zoom, and selection tools - Design a simple dashboard with multiple charts\n\nBasic Interactive Chart\n\n\n\n\n\n\n\n\nAdding Interactive Elements\n\n\n\n\n\n\n\n\nDesigning a Simple Dashboard"
+  },
+  {
+    "objectID": "exercises.html#walkthrough-3.2-creating-a-dynamic-data-report",
+    "href": "exercises.html#walkthrough-3.2-creating-a-dynamic-data-report",
+    "title": "Walkthroughs & Exercises — Data Analysis with Python",
+    "section": "Walkthrough 3.2: Creating a Dynamic Data Report",
+    "text": "Walkthrough 3.2: Creating a Dynamic Data Report\n\nSelecting relevant data\n\n\n\n\n\n\n\n\nBuilding a dynamic report\n\n\n\n\n\n\n\n\nAdding contextual text and summaries"
+  },
+  {
+    "objectID": "exercises.html#exercise-3.2-creating-a-dynamic-data-report",
+    "href": "exercises.html#exercise-3.2-creating-a-dynamic-data-report",
+    "title": "Walkthroughs & Exercises — Data Analysis with Python",
+    "section": "Exercise 3.2: Creating a Dynamic Data Report",
+    "text": "Exercise 3.2: Creating a Dynamic Data Report\nBy completing this exercise, you will be able to use pandas and plotly to - Select relevant data - Build a dynamic report - Add contextual text and summaries\n\nSelecting Relevant Data\n\n\n\n\n\n\n\n\nBuilding a Dynamic Report\n\n\n\n\n\n\n\n\nAdding Contextual Text and Summaries\n\n\n\n\n\n\n\n\nSelf-Check\nBy the end of this module, you should be able to:\n\nCreate basic interactive charts with Plotly Express (px.line, px.scatter)\nAdd interactive elements such as hover text, color encoding, and custom labels\nBuild multi-panel dashboards with make_subplots and add_trace\nCombine go.Scatter and go.Bar traces into a single figure\nAdd contextual annotations and summary text to a report with add_annotation\nConfirm Plotly figures render by initializing the notebook mode and calling fig.show()"
+  },
+  {
+    "objectID": "exercises.html#walkthrough-4.1-interactive-charts-and-dashboards-with-plotly",
+    "href": "exercises.html#walkthrough-4.1-interactive-charts-and-dashboards-with-plotly",
+    "title": "Walkthroughs & Exercises — Data Analysis with Python",
+    "section": "Walkthrough 4.1: Interactive Charts and Dashboards with Plotly",
+    "text": "Walkthrough 4.1: Interactive Charts and Dashboards with Plotly\n\nSelecting a Dataset\n\nQuestions to Ask:\n\nWhat industry problem or area of interest does the dataset align with?\n\nIs the dataset relevant to economic analysis, market research, policy planning, or another industry?\n\nDoes the dataset provide sufficient complexity and scope for a thorough analysis?\n\nDoes it include multiple variables and data points across different time periods and categories (e.g., income groups, countries)?\n\nWhat specific questions or hypotheses do we want to explore with this dataset?\n\nAre we interested in comparing economic indicators across countries, understanding the impact of GDP per capita on other variables, or identifying trends over time?\n\n\n\n\nExample:\n\nDataset: The economies dataset.\nIndustry Problem: Understanding economic disparities between countries and the impact of economic indicators on overall economic health.\nSpecific Questions:\n\nHow do GDP per capita and gross savings vary across different income groups?\nHow has the inflation rate changed over time for specified income groups?\n\n\n\n\n\nApplying Cleaning, Transforming, and Analysis Techniques\n\nQuestions to Ask:\n\nWhat cleaning steps are necessary to prepare the data for analysis?\n\nAre there any missing values that need to be handled? Are there any inconsistencies in data types?\n\nWhat transformations are required to make the data analysis-ready?\n\nDo we need to create new columns, filter specific rows, or aggregate data by certain categories?\n\nHow can we analyze the data to uncover patterns, trends, or anomalies?\n\nWhat statistical methods or visualizations can we use to explore relationships between variables?\n\n\n\n\nExample:\n\nCleaning:\n\n\n\n\n\n\n\n\nCommon Pitfall: Build new columns on a DataFrame you fully own (here economies_cleaned, created by fillna), not on a filtered slice of another DataFrame. Assigning to a column of a slice can raise pandas’ SettingWithCopyWarning and may not update the data you expect. When you need an independent copy, use .copy().\n\n\nTransforming:\n\n\n\n\n\n\n\n\nAnalyzing:\n\n\n\n\n\n\n\n\n\n\nInitial Findings and Interpretation\n\nQuestions to Ask:\n\nWhat do the initial findings tell us about the data?\n\nAre there any notable patterns or trends in the data? Are there any unexpected results?\n\nHow do these insights relate to the problem defined earlier?\n\nDo the findings help us understand economic disparities between countries? Do they provide insights into the impact of certain economic indicators?\n\nWhat hypotheses can we test based on the initial results?\n\nCan we test hypotheses about the relationship between GDP per capita and other economic indicators? Can we refine our analysis to explore these hypotheses further?\n\n\n\n\nExample:\n\nInitial Findings:\n\nGDP per Capita vs. Gross Savings: The scatter plot shows that high-income countries generally have higher GDP per capita and gross savings. There seems to be a slight positive correlation between these two indicators.\nInflation Rate Over Time: The line plot indicates that inflation rates vary significantly over time and across different income groups. Low and lower middle income countries tend to experience higher volatility in inflation rates.\n\nInterpretation:\n\nThese findings suggest that economic health, as measured by GDP per capita and gross savings, is strongly influenced by the income group of a country. High-income countries appear to have more stable and higher economic performance.\nThe volatility in inflation rates among low-income countries may indicate economic instability, which could be a key area for policy intervention.\n\nHypotheses:\n\nHypothesis 1: High-income countries have a higher average GDP per capita and gross savings compared to low-income countries.\nHypothesis 2: Low-income countries experience greater volatility in inflation rates compared to high-income countries.\n\nNext Steps:\n\nConduct further analysis to test these hypotheses, using statistical methods to confirm the observed patterns.\nExplore other economic indicators to gain a more comprehensive understanding of economic disparities and trends.\n\n\nBy following these steps, you can effectively select, clean, transform, and analyze the economies dataset to gain valuable insights and address common industry problems or research questions."
+  },
+  {
+    "objectID": "exercises.html#walkthrough-4.2-finalizing-and-presenting-your-data-analysis-project",
+    "href": "exercises.html#walkthrough-4.2-finalizing-and-presenting-your-data-analysis-project",
+    "title": "Walkthroughs & Exercises — Data Analysis with Python",
+    "section": "Walkthrough 4.2: Finalizing and Presenting Your Data Analysis Project",
+    "text": "Walkthrough 4.2: Finalizing and Presenting Your Data Analysis Project\n\nIntegrate Feedback to Refine the Analysis\n\nQuestions to Ask:\n\nWhat feedback have you received from peers, stakeholders, or mentors?\n\nIs there feedback on the clarity of the analysis, choice of visualizations, or the comprehensiveness of the analysis?\n\nHow can you incorporate this feedback into your analysis?\n\nAre there additional variables that need to be analyzed? Do you need to clean the data further or adjust the visualizations?\n\nWhat new questions or hypotheses have emerged from the feedback?\n\nDoes the feedback suggest new directions for the analysis or areas that need more focus?\n\n\n\n\nExample:\n\nFeedback:\n\nPeers suggested that the analysis should also consider the impact of unemployment rates.\nStakeholders requested more clarity on the relationship between GDP per capita and inflation rates across different income groups.\n\nRefining the Analysis:\n\nAdditional data needs to be found to meet the request for more clarity. Or maybe a further drilldown on specific countries would be helpful?\n\n\n\n\n\nFinalize the Presentation with Impactful Visuals and Narrative\n\nQuestions to Ask:\n\nWhat are the key insights from the analysis that need to be highlighted?\n\nWhat are the most important findings that should be communicated to the audience?\n\nHow can you create impactful visuals that clearly convey these insights?\n\nWhat types of charts or visualizations best represent the data and findings?\n\nWhat narrative will you use to guide the audience through the presentation?\n\nHow will you structure the presentation to tell a compelling story with the data?\n\n\n\n\nExample:\n\nKey Insights:\n\nHigh-income countries have higher GDP per capita and gross savings.\nThere is a positive correlation between GDP per capita and gross savings.\nLow-income countries experience greater volatility in inflation rates.\nUnemployment rates vary significantly across income groups.\n\nImpactful Visuals:\n\n\n\n\n\n\n\n\nNarrative:\n\nIntroduction: Introduce the dataset and the industry problem. Explain why understanding economic indicators across different income groups is important.\nKey Findings: Present the key findings using the visualizations created. Highlight the relationship between GDP per capita, gross savings, inflation rates, and unemployment rates.\nDetailed Analysis: Dive deeper into each key finding, providing more context and interpretation. Explain the significance of the trends and patterns observed in the data.\nConclusion: Summarize the insights and discuss potential implications for policy or business decisions. Suggest areas for further research or analysis based on the findings.\n\n\n\n\n\nRehearse the Presentation\n\nQuestions to Ask:\n\nHow will you structure your presentation to ensure a smooth flow?\n\nWhat order will you present the visualizations and insights? How will you transition between different sections?\n\nHow will you engage your audience and ensure they understand the key points?\n\nWhat techniques will you use to highlight important information and keep the audience’s attention?\n\nWhat potential questions or feedback might you receive, and how will you address them?\n\nHow will you prepare for questions about the data, analysis methods, or findings?\n\n\n\n\nExample:\n\nStructuring the Presentation:\n\nStart with an overview of the dataset and the industry problem.\nMove on to the key findings, using the most impactful visualizations to illustrate each point.\nProvide a detailed analysis of each finding, explaining the significance and implications.\nConclude with a summary of insights and suggestions for further research.\n\nEngaging the Audience:\n\nUse clear and concise language to explain complex concepts.\nHighlight key points using annotations or callouts on the visualizations.\nEncourage questions and interaction to keep the audience engaged.\n\nPreparing for Questions:\n\nAnticipate common questions about the data sources, cleaning methods, and analysis techniques.\nPrepare explanations for any limitations of the data or analysis.\nBe ready to discuss potential next steps and areas for further research based on the findings.\n\n\nBy following these steps, you can effectively integrate feedback, finalize your presentation with impactful visuals and narrative, and rehearse to ensure a smooth and engaging delivery.\n\n\n\nSelf-Check\nBy the end of this module, you should be able to:\n\nSelect a dataset and frame the industry problem and questions it can answer\nApply cleaning and transforming techniques to prepare data for analysis\nEngineer new columns, such as a grouped pct_change, for deeper analysis\nProduce exploratory visuals and interpret initial findings into hypotheses\nIntegrate feedback to refine the analysis and choice of visualizations\nFinalize and rehearse a presentation that tells a clear, impactful data story"
+  }
+]

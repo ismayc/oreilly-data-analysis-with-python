@@ -1,0 +1,2001 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.36">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Dr.&nbsp;Chester Ismay">
+
+<title>Walkthroughs &amp; Exercises — Data Analysis with Python – Data Analysis with Python</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-6e5d3d8f06bab3c9fe439197eeba8315.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-contrib/live-runtime/live-runtime.js" type="module"></script>
+<link href="site_libs/quarto-contrib/live-runtime/live-runtime.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script type="module" src="site_libs/quarto-ojs/quarto-ojs-runtime.js"></script>
+<link href="site_libs/quarto-ojs/quarto-ojs.css" rel="stylesheet">
+
+
+</head>
+
+<body class="floating nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Data Analysis with Python</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./exercises.html" aria-current="page"> 
+<span class="menu-text">Exercises</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./solutions.html"> 
+<span class="menu-text">Solutions</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/ismayc/oreilly-data-analysis-with-python"> <i class="bi bi-github" role="img" aria-label="GitHub repository">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#intro-foundations-of-data-analysis-with-python" id="toc-intro-foundations-of-data-analysis-with-python" class="nav-link active" data-scroll-target="#intro-foundations-of-data-analysis-with-python">Intro: Foundations of Data Analysis with Python</a>
+  <ul class="collapse">
+  <li><a href="#walkthrough-setting-up-the-python-environment" id="toc-walkthrough-setting-up-the-python-environment" class="nav-link" data-scroll-target="#walkthrough-setting-up-the-python-environment">Walkthrough: Setting Up the Python Environment</a></li>
+  <li><a href="#exercise-setting-up-the-python-environment" id="toc-exercise-setting-up-the-python-environment" class="nav-link" data-scroll-target="#exercise-setting-up-the-python-environment">Exercise: Setting Up the Python Environment</a></li>
+  </ul></li>
+  <li><a href="#module-1-data-wrangling-with-pandas" id="toc-module-1-data-wrangling-with-pandas" class="nav-link" data-scroll-target="#module-1-data-wrangling-with-pandas">Module 1: Data Wrangling with Pandas</a>
+  <ul class="collapse">
+  <li><a href="#walkthrough-1.1-loading-and-inspecting-data-with-pandas" id="toc-walkthrough-1.1-loading-and-inspecting-data-with-pandas" class="nav-link" data-scroll-target="#walkthrough-1.1-loading-and-inspecting-data-with-pandas">Walkthrough 1.1: Loading and Inspecting Data with Pandas</a>
+  <ul class="collapse">
+  <li><a href="#import-data-from-a-csv-or-from-an-excel-file" id="toc-import-data-from-a-csv-or-from-an-excel-file" class="nav-link" data-scroll-target="#import-data-from-a-csv-or-from-an-excel-file">Import data from a CSV or from an Excel file</a></li>
+  <li><a href="#perform-an-initial-exploration-of-the-data" id="toc-perform-an-initial-exploration-of-the-data" class="nav-link" data-scroll-target="#perform-an-initial-exploration-of-the-data">Perform an initial exploration of the data</a></li>
+  </ul></li>
+  <li><a href="#exercise-1.1-loading-and-inspecting-data-with-pandas" id="toc-exercise-1.1-loading-and-inspecting-data-with-pandas" class="nav-link" data-scroll-target="#exercise-1.1-loading-and-inspecting-data-with-pandas">Exercise 1.1: Loading and Inspecting Data with Pandas</a></li>
+  <li><a href="#walkthrough-1.2-cleaning-and-preparing-data-with-pandas" id="toc-walkthrough-1.2-cleaning-and-preparing-data-with-pandas" class="nav-link" data-scroll-target="#walkthrough-1.2-cleaning-and-preparing-data-with-pandas">Walkthrough 1.2: Cleaning and Preparing Data with Pandas</a>
+  <ul class="collapse">
+  <li><a href="#handle-missing-data" id="toc-handle-missing-data" class="nav-link" data-scroll-target="#handle-missing-data">Handle missing data</a></li>
+  <li><a href="#convert-a-column-to-a-different-data-type" id="toc-convert-a-column-to-a-different-data-type" class="nav-link" data-scroll-target="#convert-a-column-to-a-different-data-type">Convert a column to a different data type</a></li>
+  <li><a href="#rename-a-column" id="toc-rename-a-column" class="nav-link" data-scroll-target="#rename-a-column">Rename a column</a></li>
+  <li><a href="#changing-a-dataframes-index" id="toc-changing-a-dataframes-index" class="nav-link" data-scroll-target="#changing-a-dataframes-index">Changing a DataFrame’s index</a></li>
+  <li><a href="#filtering-rows-based-on-conditions" id="toc-filtering-rows-based-on-conditions" class="nav-link" data-scroll-target="#filtering-rows-based-on-conditions">Filtering rows based on conditions</a></li>
+  </ul></li>
+  <li><a href="#exercise-1.2-cleaning-and-preparing-data-with-pandas" id="toc-exercise-1.2-cleaning-and-preparing-data-with-pandas" class="nav-link" data-scroll-target="#exercise-1.2-cleaning-and-preparing-data-with-pandas">Exercise 1.2: Cleaning and Preparing Data with Pandas</a>
+  <ul class="collapse">
+  <li><a href="#handle-missing-data-1" id="toc-handle-missing-data-1" class="nav-link" data-scroll-target="#handle-missing-data-1">Handle Missing Data</a></li>
+  <li><a href="#convert-a-column-to-a-different-data-type-and-rename-a-column" id="toc-convert-a-column-to-a-different-data-type-and-rename-a-column" class="nav-link" data-scroll-target="#convert-a-column-to-a-different-data-type-and-rename-a-column">Convert a Column to a Different Data Type and Rename a Column</a></li>
+  <li><a href="#change-a-dataframes-index-and-filter-a-dataframe" id="toc-change-a-dataframes-index-and-filter-a-dataframe" class="nav-link" data-scroll-target="#change-a-dataframes-index-and-filter-a-dataframe">Change a DataFrame’s Index and Filter a DataFrame</a></li>
+  </ul></li>
+  <li><a href="#walkthrough-1.3-transforming-and-aggregating-data-with-pandas" id="toc-walkthrough-1.3-transforming-and-aggregating-data-with-pandas" class="nav-link" data-scroll-target="#walkthrough-1.3-transforming-and-aggregating-data-with-pandas">Walkthrough 1.3: Transforming and Aggregating Data with Pandas</a>
+  <ul class="collapse">
+  <li><a href="#grouping-data" id="toc-grouping-data" class="nav-link" data-scroll-target="#grouping-data">Grouping data</a></li>
+  <li><a href="#applying-functions" id="toc-applying-functions" class="nav-link" data-scroll-target="#applying-functions">Applying Functions</a></li>
+  <li><a href="#summary-tables" id="toc-summary-tables" class="nav-link" data-scroll-target="#summary-tables">Summary tables</a></li>
+  <li><a href="#analyzing-categorical-data" id="toc-analyzing-categorical-data" class="nav-link" data-scroll-target="#analyzing-categorical-data">Analyzing categorical data</a></li>
+  </ul></li>
+  <li><a href="#exercise-1.3-transforming-and-aggregating-data-with-pandas" id="toc-exercise-1.3-transforming-and-aggregating-data-with-pandas" class="nav-link" data-scroll-target="#exercise-1.3-transforming-and-aggregating-data-with-pandas">Exercise 1.3: Transforming and Aggregating Data with Pandas</a>
+  <ul class="collapse">
+  <li><a href="#grouping-data-1" id="toc-grouping-data-1" class="nav-link" data-scroll-target="#grouping-data-1">Grouping Data</a></li>
+  <li><a href="#applying-functions-1" id="toc-applying-functions-1" class="nav-link" data-scroll-target="#applying-functions-1">Applying Functions</a></li>
+  <li><a href="#summary-tables-1" id="toc-summary-tables-1" class="nav-link" data-scroll-target="#summary-tables-1">Summary Tables</a></li>
+  <li><a href="#analyzing-categorical-data-1" id="toc-analyzing-categorical-data-1" class="nav-link" data-scroll-target="#analyzing-categorical-data-1">Analyzing Categorical Data</a></li>
+  <li><a href="#self-check" id="toc-self-check" class="nav-link" data-scroll-target="#self-check">Self-Check</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#module-2-data-visualization-basics-with-matplotlib-and-seaborn" id="toc-module-2-data-visualization-basics-with-matplotlib-and-seaborn" class="nav-link" data-scroll-target="#module-2-data-visualization-basics-with-matplotlib-and-seaborn">Module 2: Data Visualization Basics with Matplotlib and Seaborn</a>
+  <ul class="collapse">
+  <li><a href="#walkthrough-2.1-creating-basic-plots-with-matplotlib" id="toc-walkthrough-2.1-creating-basic-plots-with-matplotlib" class="nav-link" data-scroll-target="#walkthrough-2.1-creating-basic-plots-with-matplotlib">Walkthrough 2.1: Creating Basic Plots with Matplotlib</a>
+  <ul class="collapse">
+  <li><a href="#line-plot" id="toc-line-plot" class="nav-link" data-scroll-target="#line-plot">Line plot</a></li>
+  <li><a href="#bar-chart" id="toc-bar-chart" class="nav-link" data-scroll-target="#bar-chart">Bar chart</a></li>
+  <li><a href="#adding-labels-and-titles" id="toc-adding-labels-and-titles" class="nav-link" data-scroll-target="#adding-labels-and-titles">Adding labels and titles</a></li>
+  <li><a href="#adjusting-axes-and-tick-marks" id="toc-adjusting-axes-and-tick-marks" class="nav-link" data-scroll-target="#adjusting-axes-and-tick-marks">Adjusting axes and tick marks</a></li>
+  </ul></li>
+  <li><a href="#exercise-2.1-creating-basic-plots-with-matplotlib" id="toc-exercise-2.1-creating-basic-plots-with-matplotlib" class="nav-link" data-scroll-target="#exercise-2.1-creating-basic-plots-with-matplotlib">Exercise 2.1: Creating Basic Plots with Matplotlib</a>
+  <ul class="collapse">
+  <li><a href="#line-plot-1" id="toc-line-plot-1" class="nav-link" data-scroll-target="#line-plot-1">Line Plot</a></li>
+  <li><a href="#bar-chart-1" id="toc-bar-chart-1" class="nav-link" data-scroll-target="#bar-chart-1">Bar Chart</a></li>
+  <li><a href="#adding-labels-and-titles-1" id="toc-adding-labels-and-titles-1" class="nav-link" data-scroll-target="#adding-labels-and-titles-1">Adding Labels and Titles</a></li>
+  <li><a href="#adjusting-axes-and-tick-marks-1" id="toc-adjusting-axes-and-tick-marks-1" class="nav-link" data-scroll-target="#adjusting-axes-and-tick-marks-1">Adjusting Axes and Tick Marks</a></li>
+  </ul></li>
+  <li><a href="#walkthrough-2.2-data-visualization-techniques-with-seaborn" id="toc-walkthrough-2.2-data-visualization-techniques-with-seaborn" class="nav-link" data-scroll-target="#walkthrough-2.2-data-visualization-techniques-with-seaborn">Walkthrough 2.2: Data Visualization Techniques with Seaborn</a>
+  <ul class="collapse">
+  <li><a href="#heatmap" id="toc-heatmap" class="nav-link" data-scroll-target="#heatmap">Heatmap</a></li>
+  <li><a href="#pair-plot" id="toc-pair-plot" class="nav-link" data-scroll-target="#pair-plot">Pair plot</a></li>
+  <li><a href="#violin-plot" id="toc-violin-plot" class="nav-link" data-scroll-target="#violin-plot">Violin plot</a></li>
+  <li><a href="#customizing-seaborn-plots" id="toc-customizing-seaborn-plots" class="nav-link" data-scroll-target="#customizing-seaborn-plots">Customizing Seaborn plots</a></li>
+  </ul></li>
+  <li><a href="#exercise-2.2-data-visualization-techniques-with-seaborn" id="toc-exercise-2.2-data-visualization-techniques-with-seaborn" class="nav-link" data-scroll-target="#exercise-2.2-data-visualization-techniques-with-seaborn">Exercise 2.2: Data Visualization Techniques with Seaborn</a>
+  <ul class="collapse">
+  <li><a href="#heatmap-1" id="toc-heatmap-1" class="nav-link" data-scroll-target="#heatmap-1">Heatmap</a></li>
+  <li><a href="#pair-plot-1" id="toc-pair-plot-1" class="nav-link" data-scroll-target="#pair-plot-1">Pair Plot</a></li>
+  <li><a href="#violin-plot-1" id="toc-violin-plot-1" class="nav-link" data-scroll-target="#violin-plot-1">Violin Plot</a></li>
+  <li><a href="#customizing-seaborn-plots-1" id="toc-customizing-seaborn-plots-1" class="nav-link" data-scroll-target="#customizing-seaborn-plots-1">Customizing Seaborn Plots</a></li>
+  <li><a href="#self-check-1" id="toc-self-check-1" class="nav-link" data-scroll-target="#self-check-1">Self-Check</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#module-3-interactive-data-visualization-with-plotly" id="toc-module-3-interactive-data-visualization-with-plotly" class="nav-link" data-scroll-target="#module-3-interactive-data-visualization-with-plotly">Module 3: Interactive Data Visualization with Plotly</a>
+  <ul class="collapse">
+  <li><a href="#walkthrough-3.1-interactive-charts-and-dashboards-with-plotly" id="toc-walkthrough-3.1-interactive-charts-and-dashboards-with-plotly" class="nav-link" data-scroll-target="#walkthrough-3.1-interactive-charts-and-dashboards-with-plotly">Walkthrough 3.1: Interactive Charts and Dashboards with Plotly</a>
+  <ul class="collapse">
+  <li><a href="#basic-interactive-chart" id="toc-basic-interactive-chart" class="nav-link" data-scroll-target="#basic-interactive-chart">Basic interactive chart</a></li>
+  <li><a href="#adding-interactive-elements" id="toc-adding-interactive-elements" class="nav-link" data-scroll-target="#adding-interactive-elements">Adding interactive elements</a></li>
+  <li><a href="#designing-a-simple-dashboard" id="toc-designing-a-simple-dashboard" class="nav-link" data-scroll-target="#designing-a-simple-dashboard">Designing a simple dashboard</a></li>
+  </ul></li>
+  <li><a href="#exercise-3.1-interactive-charts-and-dashboards-with-plotly" id="toc-exercise-3.1-interactive-charts-and-dashboards-with-plotly" class="nav-link" data-scroll-target="#exercise-3.1-interactive-charts-and-dashboards-with-plotly">Exercise 3.1: Interactive Charts and Dashboards with Plotly</a>
+  <ul class="collapse">
+  <li><a href="#basic-interactive-chart-1" id="toc-basic-interactive-chart-1" class="nav-link" data-scroll-target="#basic-interactive-chart-1">Basic Interactive Chart</a></li>
+  <li><a href="#adding-interactive-elements-1" id="toc-adding-interactive-elements-1" class="nav-link" data-scroll-target="#adding-interactive-elements-1">Adding Interactive Elements</a></li>
+  <li><a href="#designing-a-simple-dashboard-1" id="toc-designing-a-simple-dashboard-1" class="nav-link" data-scroll-target="#designing-a-simple-dashboard-1">Designing a Simple Dashboard</a></li>
+  </ul></li>
+  <li><a href="#walkthrough-3.2-creating-a-dynamic-data-report" id="toc-walkthrough-3.2-creating-a-dynamic-data-report" class="nav-link" data-scroll-target="#walkthrough-3.2-creating-a-dynamic-data-report">Walkthrough 3.2: Creating a Dynamic Data Report</a>
+  <ul class="collapse">
+  <li><a href="#selecting-relevant-data" id="toc-selecting-relevant-data" class="nav-link" data-scroll-target="#selecting-relevant-data">Selecting relevant data</a></li>
+  <li><a href="#building-a-dynamic-report" id="toc-building-a-dynamic-report" class="nav-link" data-scroll-target="#building-a-dynamic-report">Building a dynamic report</a></li>
+  <li><a href="#adding-contextual-text-and-summaries" id="toc-adding-contextual-text-and-summaries" class="nav-link" data-scroll-target="#adding-contextual-text-and-summaries">Adding contextual text and summaries</a></li>
+  </ul></li>
+  <li><a href="#exercise-3.2-creating-a-dynamic-data-report" id="toc-exercise-3.2-creating-a-dynamic-data-report" class="nav-link" data-scroll-target="#exercise-3.2-creating-a-dynamic-data-report">Exercise 3.2: Creating a Dynamic Data Report</a>
+  <ul class="collapse">
+  <li><a href="#selecting-relevant-data-1" id="toc-selecting-relevant-data-1" class="nav-link" data-scroll-target="#selecting-relevant-data-1">Selecting Relevant Data</a></li>
+  <li><a href="#building-a-dynamic-report-1" id="toc-building-a-dynamic-report-1" class="nav-link" data-scroll-target="#building-a-dynamic-report-1">Building a Dynamic Report</a></li>
+  <li><a href="#adding-contextual-text-and-summaries-1" id="toc-adding-contextual-text-and-summaries-1" class="nav-link" data-scroll-target="#adding-contextual-text-and-summaries-1">Adding Contextual Text and Summaries</a></li>
+  <li><a href="#self-check-2" id="toc-self-check-2" class="nav-link" data-scroll-target="#self-check-2">Self-Check</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#module-4-real-world-data-analysis-project" id="toc-module-4-real-world-data-analysis-project" class="nav-link" data-scroll-target="#module-4-real-world-data-analysis-project">Module 4: Real-World Data Analysis Project</a>
+  <ul class="collapse">
+  <li><a href="#walkthrough-4.1-interactive-charts-and-dashboards-with-plotly" id="toc-walkthrough-4.1-interactive-charts-and-dashboards-with-plotly" class="nav-link" data-scroll-target="#walkthrough-4.1-interactive-charts-and-dashboards-with-plotly">Walkthrough 4.1: Interactive Charts and Dashboards with Plotly</a>
+  <ul class="collapse">
+  <li><a href="#selecting-a-dataset" id="toc-selecting-a-dataset" class="nav-link" data-scroll-target="#selecting-a-dataset">Selecting a Dataset</a></li>
+  <li><a href="#applying-cleaning-transforming-and-analysis-techniques" id="toc-applying-cleaning-transforming-and-analysis-techniques" class="nav-link" data-scroll-target="#applying-cleaning-transforming-and-analysis-techniques">Applying Cleaning, Transforming, and Analysis Techniques</a></li>
+  <li><a href="#initial-findings-and-interpretation" id="toc-initial-findings-and-interpretation" class="nav-link" data-scroll-target="#initial-findings-and-interpretation">Initial Findings and Interpretation</a></li>
+  </ul></li>
+  <li><a href="#walkthrough-4.2-finalizing-and-presenting-your-data-analysis-project" id="toc-walkthrough-4.2-finalizing-and-presenting-your-data-analysis-project" class="nav-link" data-scroll-target="#walkthrough-4.2-finalizing-and-presenting-your-data-analysis-project">Walkthrough 4.2: Finalizing and Presenting Your Data Analysis Project</a>
+  <ul class="collapse">
+  <li><a href="#integrate-feedback-to-refine-the-analysis" id="toc-integrate-feedback-to-refine-the-analysis" class="nav-link" data-scroll-target="#integrate-feedback-to-refine-the-analysis">Integrate Feedback to Refine the Analysis</a></li>
+  <li><a href="#finalize-the-presentation-with-impactful-visuals-and-narrative" id="toc-finalize-the-presentation-with-impactful-visuals-and-narrative" class="nav-link" data-scroll-target="#finalize-the-presentation-with-impactful-visuals-and-narrative">Finalize the Presentation with Impactful Visuals and Narrative</a></li>
+  <li><a href="#rehearse-the-presentation" id="toc-rehearse-the-presentation" class="nav-link" data-scroll-target="#rehearse-the-presentation">Rehearse the Presentation</a></li>
+  <li><a href="#self-check-3" id="toc-self-check-3" class="nav-link" data-scroll-target="#self-check-3">Self-Check</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Walkthroughs &amp; Exercises — Data Analysis with Python</h1>
+<p class="subtitle lead">Interactive, in-browser edition — fill in the code as we go. Nothing to install.</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Dr.&nbsp;Chester Ismay </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>How to use this page
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<p>Everything runs <strong>in your browser</strong> — there’s no Python or Jupyter to install.</p>
+<ol type="1">
+<li>Click <strong>Run Code</strong> on the <strong>import</strong> cell and the <strong>data-loading</strong> cells near the top first.</li>
+<li>Then work through the page top to bottom, filling in each cell as we live-code together.</li>
+<li>Your edits are <strong>saved automatically in this browser</strong>. Use <strong>Start Over</strong> on a cell to reset it.</li>
+<li>The very first run takes a few seconds while Python loads in the background.</li>
+</ol>
+<p>Stuck? Open the <a href="solutions.html">completed solutions</a> in another tab.</p>
+</div>
+</div>
+</div>
+<div>
+<div id="pyodide-1" class="exercise-cell">
+
+</div>
+<script type="pyodide-1-contents">
+eyJhdHRyIjp7ImVkaXQiOmZhbHNlLCJldmFsIjpmYWxzZSwicGVyc2lzdCI6dHJ1ZX0sImNvZGUiOiIjIHBpcCBpbnN0YWxsIG5vdCBuZWVkZWQgaW4tYnJvd3NlciAocGFja2FnZXMgYXV0by1sb2FkKSJ9
+</script>
+</div>
+<div>
+<div id="pyodide-2" class="exercise-cell">
+
+</div>
+<script type="pyodide-2-contents">
+eyJhdHRyIjp7ImVjaG8iOmZhbHNlLCJlZGl0IjpmYWxzZSwiZXZhbCI6dHJ1ZSwiaW5jbHVkZSI6ZmFsc2UsIm91dHB1dCI6ZmFsc2UsInBlcnNpc3QiOnRydWV9LCJjb2RlIjoiaW1wb3J0IHBhbmRhcyBhcyBwZFxuXG4jIERpc3BsYXkgYWxsIGNvbHVtbnNcbnBkLnNldF9vcHRpb24oJ2Rpc3BsYXkubWF4X2NvbHVtbnMnLCBOb25lKVxuXG4jIERpc3BsYXkgYWxsIG91dHB1dHMgZnJvbSBlYWNoIGNlbGxcbmZyb20gSVB5dGhvbi5jb3JlLmludGVyYWN0aXZlc2hlbGwgaW1wb3J0IEludGVyYWN0aXZlU2hlbGxcbkludGVyYWN0aXZlU2hlbGwuYXN0X25vZGVfaW50ZXJhY3Rpdml0eSA9IFwiYWxsXCIifQ==
+</script>
+</div>
+<section id="intro-foundations-of-data-analysis-with-python" class="level1">
+<h1>Intro: Foundations of Data Analysis with Python</h1>
+<section id="walkthrough-setting-up-the-python-environment" class="level2">
+<h2 class="anchored" data-anchor-id="walkthrough-setting-up-the-python-environment">Walkthrough: Setting Up the Python Environment</h2>
+<p>If you haven’t already installed Python, Jupyter, and the necessary packages, there are instructions on the course repo in the README to do so <a href="https://github.com/ismayc/oreilly-data-analysis-with-python/blob/main/README.md">here</a>.</p>
+<p>If you aren’t able to do this on your machine, you may want to check out <a href="https://colab.research.google.com/">Google Colab</a>. It’s a free service that allows you to run Jupyter notebooks in the cloud. Alternatively, I’ve set up some temporary notebooks on Binder <a href="https://mybinder.org/v2/gh/ismayc/oreilly-data-analysis-with-python/HEAD?urlpath=%2Fdoc%2Ftree%2Fexercises.ipynb">here</a> that you can work with online as well.</p>
+<div>
+<div id="pyodide-3" class="exercise-cell">
+
+</div>
+<script type="pyodide-3-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWUsInBlcnNpc3QiOnRydWV9LCJjb2RlIjoiaW1wb3J0IHBhbmRhcyBhcyBwZFxuaW1wb3J0IG1hdHBsb3RsaWIucHlwbG90IGFzIHBsdFxuaW1wb3J0IHNlYWJvcm4gYXMgc25zXG5pbXBvcnQgcGxvdGx5LmV4cHJlc3MgYXMgcHhcbmltcG9ydCBwbG90bHkuZ3JhcGhfb2JqZWN0cyBhcyBnb1xuZnJvbSBwbG90bHkuc3VicGxvdHMgaW1wb3J0IG1ha2Vfc3VicGxvdHNcblxuIyBGb3IgcGxvdGx5IHRvIGxvYWQgZGlyZWN0bHkgaW4gSnVweXRlciBub3RlYm9va1xuaW1wb3J0IHBsb3RseS5vZmZsaW5lIGFzIHB5b1xucHlvLmluaXRfbm90ZWJvb2tfbW9kZShjb25uZWN0ZWQ9VHJ1ZSkifQ==
+</script>
+</div>
+</section>
+<section id="exercise-setting-up-the-python-environment" class="level2">
+<h2 class="anchored" data-anchor-id="exercise-setting-up-the-python-environment">Exercise: Setting Up the Python Environment</h2>
+<p>By completing this exercise, you will be able to - Import necessary Python packages - Check for successful package loading</p>
+<p>Follow the instructions above in Walkthrough to check for correct installation of necessary packages. We’ll wait a few minutes to make sure as many of you are set up as possible. Please give a thumbs up in the pulse check if you are ready to move on.</p>
+<hr>
+</section>
+</section>
+<section id="module-1-data-wrangling-with-pandas" class="level1">
+<h1>Module 1: Data Wrangling with Pandas</h1>
+<section id="walkthrough-1.1-loading-and-inspecting-data-with-pandas" class="level2">
+<h2 class="anchored" data-anchor-id="walkthrough-1.1-loading-and-inspecting-data-with-pandas">Walkthrough 1.1: Loading and Inspecting Data with Pandas</h2>
+<section id="import-data-from-a-csv-or-from-an-excel-file" class="level3">
+<h3 class="anchored" data-anchor-id="import-data-from-a-csv-or-from-an-excel-file">Import data from a CSV or from an Excel file</h3>
+<div>
+<div id="pyodide-4" class="exercise-cell">
+
+</div>
+<script type="pyodide-4-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWUsInBlcnNpc3QiOnRydWV9LCJjb2RlIjoiIyBMb2FkIHRoZSBkYXRhIGZyb20gYSBDU1YgZmlsZVxuXG5cbiMgT3IgbG9hZCB0aGUgZGF0YSBmcm9tIGFuIEV4Y2VsIGZpbGUifQ==
+</script>
+</div>
+<blockquote class="blockquote">
+<p><strong>Common Pitfall:</strong> <code>read_excel</code> relies on the <code>openpyxl</code> engine for <code>.xlsx</code> files. If you see an <code>ImportError</code> or <code>Missing optional dependency 'openpyxl'</code>, install it with <code>pip install openpyxl</code>. Also note that <code>read_excel</code> reads only the first sheet by default; pass <code>sheet_name=</code> if your workbook has multiple sheets.</p>
+</blockquote>
+</section>
+<section id="perform-an-initial-exploration-of-the-data" class="level3">
+<h3 class="anchored" data-anchor-id="perform-an-initial-exploration-of-the-data">Perform an initial exploration of the data</h3>
+<div>
+<div id="pyodide-5" class="exercise-cell">
+
+</div>
+<script type="pyodide-5-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWUsInBlcnNpc3QiOnRydWV9LCJjb2RlIjoiIyBEaXNwbGF5IHRoZSBmaXJzdCBmZXcgcm93cyBvZiB0aGUgRGF0YUZyYW1lIn0=
+</script>
+</div>
+<div>
+<div id="pyodide-6" class="exercise-cell">
+
+</div>
+<script type="pyodide-6-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWUsInBlcnNpc3QiOnRydWV9LCJjb2RlIjoiIyBEaXNwbGF5IHRoZSBpbmZvcm1hdGlvbiBhYm91dCB0aGUgRGF0YUZyYW1lIn0=
+</script>
+</div>
+<div>
+<div id="pyodide-7" class="exercise-cell">
+
+</div>
+<script type="pyodide-7-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWUsInBlcnNpc3QiOnRydWV9LCJjb2RlIjoiIyBEaXNwbGF5IHN1bW1hcnkgc3RhdGlzdGljcyBvZiB0aGUgRGF0YUZyYW1lIn0=
+</script>
+</div>
+<div>
+<div id="pyodide-8" class="exercise-cell">
+
+</div>
+<script type="pyodide-8-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWUsInBlcnNpc3QiOnRydWV9LCJjb2RlIjoiIyBDaGVjayBmb3IgbWlzc2luZyBkYXRhIn0=
+</script>
+</div>
+<div>
+<div id="pyodide-9" class="exercise-cell">
+
+</div>
+<script type="pyodide-9-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWUsInBlcnNpc3QiOnRydWV9LCJjb2RlIjoiIyBDaGVjayBkYXRhIHR5cGVzIn0=
+</script>
+</div>
+</section>
+</section>
+<section id="exercise-1.1-loading-and-inspecting-data-with-pandas" class="level2">
+<h2 class="anchored" data-anchor-id="exercise-1.1-loading-and-inspecting-data-with-pandas">Exercise 1.1: Loading and Inspecting Data with Pandas</h2>
+<p>By completing this exercise, you will be able to use <code>pandas</code> to - Import data from a CSV or from an Excel file - Perform an initial exploration of the data</p>
+<div>
+<div id="pyodide-10" class="exercise-cell">
+
+</div>
+<script type="pyodide-10-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWUsInBlcnNpc3QiOnRydWV9LCJjb2RlIjoiIyBMb2FkIHRoZSBwb3B1bGF0aW9ucyBkYXRhIGZyb20gYW4gRXhjZWwgZmlsZVxuXG5cbiMgSW5zcGVjdGlvbiBtZXRob2RzIGZvciBwb3B1bGF0aW9ucyBEYXRhRnJhbWVcblxuXG5cblxuXG5cbiMgQ2hlY2tpbmcgZm9yIG1pc3NpbmcgZGF0YSBhbmQgZGF0YSB0eXBlcyBmb3IgcG9wdWxhdGlvbnMgRGF0YUZyYW1lXG5cbiJ9
+</script>
+</div>
+</section>
+<section id="walkthrough-1.2-cleaning-and-preparing-data-with-pandas" class="level2">
+<h2 class="anchored" data-anchor-id="walkthrough-1.2-cleaning-and-preparing-data-with-pandas">Walkthrough 1.2: Cleaning and Preparing Data with Pandas</h2>
+<section id="handle-missing-data" class="level3">
+<h3 class="anchored" data-anchor-id="handle-missing-data">Handle missing data</h3>
+<section id="remove-rows" class="level4">
+<h4 class="anchored" data-anchor-id="remove-rows">Remove rows</h4>
+<div>
+<div id="pyodide-11" class="exercise-cell">
+
+</div>
+<script type="pyodide-11-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWUsInBlcnNpc3QiOnRydWV9LCJjb2RlIjoiIyBSZW1vdmUgcm93cyB3aXRoIGFueSBtaXNzaW5nIHZhbHVlc1xuIn0=
+</script>
+</div>
+<div>
+<div id="pyodide-12" class="exercise-cell">
+
+</div>
+<script type="pyodide-12-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWUsInBlcnNpc3QiOnRydWV9LCJjb2RlIjoiIyBSZW1vdmUgcm93cyBvbmx5IGlmIGFsbCB2YWx1ZXMgYXJlIG1pc3NpbmdcbiJ9
+</script>
+</div>
+<div>
+<div id="pyodide-13" class="exercise-cell">
+
+</div>
+<script type="pyodide-13-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWUsInBlcnNpc3QiOnRydWV9LCJjb2RlIjoiIyBSZW1vdmUgcm93cyB3aXRoIG1pc3NpbmcgdmFsdWVzIGluIHNwZWNpZmljIGNvbHVtbnNcbiJ9
+</script>
+</div>
+</section>
+<section id="remove-columns" class="level4">
+<h4 class="anchored" data-anchor-id="remove-columns">Remove columns</h4>
+<div>
+<div id="pyodide-14" class="exercise-cell">
+
+</div>
+<script type="pyodide-14-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWUsInBlcnNpc3QiOnRydWV9LCJjb2RlIjoiIyBSZW1vdmUgY29sdW1ucyB3aXRoIGFueSBtaXNzaW5nIHZhbHVlc1xuXG5cbiMgRGlzcGxheSB0aGUgRGF0YUZyYW1lIGFmdGVyIHJlbW92aW5nIGNvbHVtbnMgd2l0aCBtaXNzaW5nIHZhbHVlcyJ9
+</script>
+</div>
+</section>
+<section id="replace-missing-values-with-specific-value" class="level4">
+<h4 class="anchored" data-anchor-id="replace-missing-values-with-specific-value">Replace missing values with specific value</h4>
+<div>
+<div id="pyodide-15" class="exercise-cell">
+
+</div>
+<script type="pyodide-15-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWUsInBlcnNpc3QiOnRydWV9LCJjb2RlIjoiIyBSZXBsYWNlIG1pc3NpbmcgdmFsdWVzIHdpdGggYSBzcGVjaWZpYyB2YWx1ZSAoZS5nLiwgMCBmb3IgbnVtZXJpY2FsIGNvbHVtbnMsICdVbmtub3duJyBmb3IgY2F0ZWdvcmljYWwgY29sdW1ucylcblxuXG5cblxuXG5cblxuXG5cblxuXG4jIERpc3BsYXkgdGhlIERhdGFGcmFtZSBhZnRlciByZXBsYWNpbmcgbWlzc2luZyB2YWx1ZXMgd2l0aCBzcGVjaWZpYyB2YWx1ZXMifQ==
+</script>
+</div>
+<p>This can be extended to replace missing values with the mean, median, or mode of the column too.</p>
+<blockquote class="blockquote">
+<p><strong>Common Pitfall:</strong> Methods like <code>dropna</code>, <code>fillna</code>, and <code>rename</code> return a new DataFrame by default and do NOT modify the original in place. Assign the result to a variable (or pass <code>inplace=True</code>) or your changes will be lost. Reassigning is the recommended pattern.</p>
+</blockquote>
+</section>
+</section>
+<section id="convert-a-column-to-a-different-data-type" class="level3">
+<h3 class="anchored" data-anchor-id="convert-a-column-to-a-different-data-type">Convert a column to a different data type</h3>
+<div>
+<div id="pyodide-16" class="exercise-cell">
+
+</div>
+<script type="pyodide-16-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWUsInBlcnNpc3QiOnRydWV9LCJjb2RlIjoiIyBDaGFuZ2UgeWVhciB0byBiZSBhIHN0cmluZyBpbnN0ZWFkIG9mIGFuIGludGVnZXJcblxuXG4jIERpc3BsYXkgdGhlIGluZm9ybWF0aW9uIG9uIHRoZSBEYXRhRnJhbWUgd2l0aCB5ZWFyIGFzIGEgc3RyaW5nIn0=
+</script>
+</div>
+<div>
+<div id="pyodide-17" class="exercise-cell">
+
+</div>
+<script type="pyodide-17-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWUsInBlcnNpc3QiOnRydWV9LCJjb2RlIjoiIyBDaGFuZ2UgdGhlIHllYXIgb2Ygc3RyaW5nIHR5cGUgYmFjayB0byBpbnRlZ2VyXG5cblxuIyBEaXNwbGF5IHRoZSBpbmZvcm1hdGlvbiBvbiB0aGUgRGF0YUZyYW1lIHdpdGggeWVhciBhcyBhIHN0cmluZyJ9
+</script>
+</div>
+</section>
+<section id="rename-a-column" class="level3">
+<h3 class="anchored" data-anchor-id="rename-a-column">Rename a column</h3>
+<div>
+<div id="pyodide-18" class="exercise-cell">
+
+</div>
+<script type="pyodide-18-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWUsInBlcnNpc3QiOnRydWV9LCJjb2RlIjoiIyBSZW5hbWUgdGhlICdpbmNvbWVfZ3JvdXAnIGNvbHVtbiB0byAnaW5jb21lX2NhdGVnb3J5J1xuIn0=
+</script>
+</div>
+</section>
+<section id="changing-a-dataframes-index" class="level3">
+<h3 class="anchored" data-anchor-id="changing-a-dataframes-index">Changing a DataFrame’s index</h3>
+<section id="set-the-index" class="level4">
+<h4 class="anchored" data-anchor-id="set-the-index">Set the index</h4>
+<div>
+<div id="pyodide-19" class="exercise-cell">
+
+</div>
+<script type="pyodide-19-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWUsInBlcnNpc3QiOnRydWV9LCJjb2RlIjoiIyBTZXQgdW5pcXVlIGNvbWJpbmF0aW9ucyBvZiAnY29kZScgYW5kICd5ZWFyJyBhcyB0aGUgaW5kZXhcbiJ9
+</script>
+</div>
+</section>
+<section id="reset-the-index" class="level4">
+<h4 class="anchored" data-anchor-id="reset-the-index">Reset the index</h4>
+<div>
+<div id="pyodide-20" class="exercise-cell">
+
+</div>
+<script type="pyodide-20-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWUsInBlcnNpc3QiOnRydWV9LCJjb2RlIjoiIyBSZXNldCB0aGUgaW5kZXhcbiJ9
+</script>
+</div>
+</section>
+</section>
+<section id="filtering-rows-based-on-conditions" class="level3">
+<h3 class="anchored" data-anchor-id="filtering-rows-based-on-conditions">Filtering rows based on conditions</h3>
+<section id="conditions-on-a-single-column" class="level4">
+<h4 class="anchored" data-anchor-id="conditions-on-a-single-column">Conditions on a single column</h4>
+<div>
+<div id="pyodide-21" class="exercise-cell">
+
+</div>
+<script type="pyodide-21-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWUsInBlcnNpc3QiOnRydWV9LCJjb2RlIjoiIyBGaWx0ZXIgcm93cyB3aGVyZSAnZ2RwX3BlcmNhcGl0YScgaXMgZ3JlYXRlciB0aGFuIDIwLDAwMFxuIn0=
+</script>
+</div>
+<div>
+<div id="pyodide-22" class="exercise-cell">
+
+</div>
+<script type="pyodide-22-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWUsInBlcnNpc3QiOnRydWV9LCJjb2RlIjoiIyBGaWx0ZXIgcm93cyB3aGVyZSAnaW5jb21lX2dyb3VwJyBpcyAnSGlnaCBpbmNvbWUnXG4ifQ==
+</script>
+</div>
+<div>
+<div id="pyodide-23" class="exercise-cell">
+
+</div>
+<script type="pyodide-23-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWUsInBlcnNpc3QiOnRydWV9LCJjb2RlIjoiIyBGaWx0ZXIgcm93cyB3aGVyZSB0b3RhbF9pbnZlc3RtZW50IGlzIG5vdCBOYU5cbiJ9
+</script>
+</div>
+<blockquote class="blockquote">
+<p><strong>Common Pitfall:</strong> When combining multiple conditions, wrap each comparison in parentheses and use <code>&amp;</code> (and) / <code>|</code> (or), not the Python keywords <code>and</code>/<code>or</code>. Forgetting the parentheses, e.g.&nbsp;<code>economies['inflation_rate'] &lt; 0 &amp; ...</code>, triggers an operator-precedence error because <code>&amp;</code> binds more tightly than <code>&lt;</code>.</p>
+</blockquote>
+</section>
+<section id="conditions-on-multiple-columns" class="level4">
+<h4 class="anchored" data-anchor-id="conditions-on-multiple-columns">Conditions on multiple columns</h4>
+<div>
+<div id="pyodide-24" class="exercise-cell">
+
+</div>
+<script type="pyodide-24-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWUsInBlcnNpc3QiOnRydWV9LCJjb2RlIjoiIyBGaWx0ZXIgcm93cyB3aGVyZSBpbmZsYXRpb25fcmF0ZSBpcyBsZXNzIHRoYW4gMCBhbmQgaW5jb21lX2dyb3VwIGlzICdMb3cgaW5jb21lJ1xuXG4ifQ==
+</script>
+</div>
+<div>
+<div id="pyodide-25" class="exercise-cell">
+
+</div>
+<script type="pyodide-25-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWUsInBlcnNpc3QiOnRydWV9LCJjb2RlIjoiIyBGaWx0ZXIgcm93cyB3aGVyZSBnZHBfcGVyY2FwaXRhIGlzIGdyZWF0ZXIgdGhhbiA0MCwwMDAgYW5kIHllYXIgaXMgbGVzcyB0aGFuIG9yIGVxdWFsIHRvIDIwMTZcbiJ9
+</script>
+</div>
+</section>
+</section>
+</section>
+<section id="exercise-1.2-cleaning-and-preparing-data-with-pandas" class="level2">
+<h2 class="anchored" data-anchor-id="exercise-1.2-cleaning-and-preparing-data-with-pandas">Exercise 1.2: Cleaning and Preparing Data with Pandas</h2>
+<p>By completing this exercise, you will be able to use <code>pandas</code> to - Handle missing data - Convert a column to a different data type - Rename a column - Change a DataFrame’s index - Filter a DataFrame</p>
+<section id="handle-missing-data-1" class="level3">
+<h3 class="anchored" data-anchor-id="handle-missing-data-1">Handle Missing Data</h3>
+<section id="remove-rows-1" class="level4">
+<h4 class="anchored" data-anchor-id="remove-rows-1">Remove rows</h4>
+<div>
+<div id="pyodide-26" class="exercise-cell">
+
+</div>
+<script type="pyodide-26-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWUsInBlcnNpc3QiOnRydWV9LCJjb2RlIjoiIyBSZW1vdmUgcm93cyB3aXRoIGFueSBtaXNzaW5nIHZhbHVlcyJ9
+</script>
+</div>
+<div>
+<div id="pyodide-27" class="exercise-cell">
+
+</div>
+<script type="pyodide-27-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWUsInBlcnNpc3QiOnRydWV9LCJjb2RlIjoiIyBSZW1vdmUgcm93cyBvbmx5IGlmIGFsbCB2YWx1ZXMgYXJlIG1pc3NpbmcifQ==
+</script>
+</div>
+<div>
+<div id="pyodide-28" class="exercise-cell">
+
+</div>
+<script type="pyodide-28-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWUsInBlcnNpc3QiOnRydWV9LCJjb2RlIjoiIyBSZW1vdmUgcm93cyB3aXRoIG1pc3NpbmcgdmFsdWVzIGluIHNwZWNpZmljIGNvbHVtbnMgKGUuZy4sICdmZXJ0aWxpdHlfcmF0ZScsICdsaWZlX2V4cGVjdGFuY3knKSJ9
+</script>
+</div>
+</section>
+<section id="remove-columns-1" class="level4">
+<h4 class="anchored" data-anchor-id="remove-columns-1">Remove columns</h4>
+<div>
+<div id="pyodide-29" class="exercise-cell">
+
+</div>
+<script type="pyodide-29-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWUsInBlcnNpc3QiOnRydWV9LCJjb2RlIjoiIyBSZW1vdmUgY29sdW1ucyB3aXRoIGFueSBtaXNzaW5nIHZhbHVlcyJ9
+</script>
+</div>
+</section>
+<section id="replace-missing-values-with-specific-value-1" class="level4">
+<h4 class="anchored" data-anchor-id="replace-missing-values-with-specific-value-1">Replace missing values with specific value</h4>
+<div>
+<div id="pyodide-30" class="exercise-cell">
+
+</div>
+<script type="pyodide-30-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWUsInBlcnNpc3QiOnRydWV9LCJjb2RlIjoiIyBSZXBsYWNlIG1pc3NpbmcgdmFsdWVzIHdpdGggYSBzcGVjaWZpYyB2YWx1ZSAoZS5nLiwgMCBmb3IgbnVtZXJpY2FsIGNvbHVtbnMsXG4jICdVbmtub3duJyBmb3IgY2F0ZWdvcmljYWwgY29sdW1ucylcblxuXG5cblxuXG5cbiJ9
+</script>
+</div>
+</section>
+</section>
+<section id="convert-a-column-to-a-different-data-type-and-rename-a-column" class="level3">
+<h3 class="anchored" data-anchor-id="convert-a-column-to-a-different-data-type-and-rename-a-column">Convert a Column to a Different Data Type and Rename a Column</h3>
+<section id="convert-a-column-to-a-different-data-type-1" class="level4">
+<h4 class="anchored" data-anchor-id="convert-a-column-to-a-different-data-type-1">Convert a Column to a Different Data Type</h4>
+<div>
+<div id="pyodide-31" class="exercise-cell">
+
+</div>
+<script type="pyodide-31-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWUsInBlcnNpc3QiOnRydWV9LCJjb2RlIjoiIyBDb252ZXJ0IHRoZSAneWVhcicgY29sdW1uIHRvIHN0cmluZyB0eXBlIn0=
+</script>
+</div>
+<div>
+<div id="pyodide-32" class="exercise-cell">
+
+</div>
+<script type="pyodide-32-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWUsInBlcnNpc3QiOnRydWV9LCJjb2RlIjoiIyBDb252ZXJ0IGl0IGJhY2sgdG8gaW50ZWdlciJ9
+</script>
+</div>
+</section>
+<section id="rename-a-column-1" class="level4">
+<h4 class="anchored" data-anchor-id="rename-a-column-1">Rename a Column</h4>
+<div>
+<div id="pyodide-33" class="exercise-cell">
+
+</div>
+<script type="pyodide-33-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWUsInBlcnNpc3QiOnRydWV9LCJjb2RlIjoiIyBSZW5hbWUgdGhlICdmZXJ0aWxpdHlfcmF0ZScgY29sdW1uIHRvICdmZXJ0aWxpdHknXG4ifQ==
+</script>
+</div>
+</section>
+</section>
+<section id="change-a-dataframes-index-and-filter-a-dataframe" class="level3">
+<h3 class="anchored" data-anchor-id="change-a-dataframes-index-and-filter-a-dataframe">Change a DataFrame’s Index and Filter a DataFrame</h3>
+<section id="change-a-dataframes-index" class="level4">
+<h4 class="anchored" data-anchor-id="change-a-dataframes-index">Change a DataFrame’s Index</h4>
+<div>
+<div id="pyodide-34" class="exercise-cell">
+
+</div>
+<script type="pyodide-34-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWUsInBlcnNpc3QiOnRydWV9LCJjb2RlIjoiIyBTZXQgdGhlICdjb3VudHJ5X2NvZGUnIGNvbHVtbiBhcyB0aGUgaW5kZXhcbiJ9
+</script>
+</div>
+</section>
+<section id="filter-a-dataframe" class="level4">
+<h4 class="anchored" data-anchor-id="filter-a-dataframe">Filter a DataFrame</h4>
+<div>
+<div id="pyodide-35" class="exercise-cell">
+
+</div>
+<script type="pyodide-35-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWUsInBlcnNpc3QiOnRydWV9LCJjb2RlIjoiIyBGaWx0ZXIgdGhlIERhdGFGcmFtZSB0byBpbmNsdWRlIG9ubHkgcm93cyB3aGVyZSB0aGUgJ2NvbnRpbmVudCcgaXMgJ0FzaWEnXG4ifQ==
+</script>
+</div>
+<div>
+<div id="pyodide-36" class="exercise-cell">
+
+</div>
+<script type="pyodide-36-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWUsInBlcnNpc3QiOnRydWV9LCJjb2RlIjoiIyBGaWx0ZXIgdGhlIERhdGFGcmFtZSB0byBpbmNsdWRlIG9ubHkgcm93cyB3aGVyZSB0aGUgJ3llYXInIGlzIDIwMjBcbiJ9
+</script>
+</div>
+<div>
+<div id="pyodide-37" class="exercise-cell">
+
+</div>
+<script type="pyodide-37-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWUsInBlcnNpc3QiOnRydWV9LCJjb2RlIjoiIyBGaWx0ZXIgdGhlIERhdGFGcmFtZSB0byBpbmNsdWRlIG9ubHkgcm93cyB3aGVyZSB0aGUgJ2ZlcnRpbGl0eV9yYXRlJyBpcyBncmVhdGVyIHRoYW4gMlxuIn0=
+</script>
+</div>
+</section>
+</section>
+</section>
+<section id="walkthrough-1.3-transforming-and-aggregating-data-with-pandas" class="level2">
+<h2 class="anchored" data-anchor-id="walkthrough-1.3-transforming-and-aggregating-data-with-pandas">Walkthrough 1.3: Transforming and Aggregating Data with Pandas</h2>
+<section id="grouping-data" class="level3">
+<h3 class="anchored" data-anchor-id="grouping-data">Grouping data</h3>
+<div>
+<div id="pyodide-38" class="exercise-cell">
+
+</div>
+<script type="pyodide-38-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWUsInBlcnNpc3QiOnRydWV9LCJjb2RlIjoiIn0=
+</script>
+</div>
+</section>
+<section id="applying-functions" class="level3">
+<h3 class="anchored" data-anchor-id="applying-functions">Applying Functions</h3>
+<section id="applying-a-function-element-wise-with-map" class="level4">
+<h4 class="anchored" data-anchor-id="applying-a-function-element-wise-with-map">Applying a function element-wise with <code>map()</code></h4>
+<div>
+<div id="pyodide-39" class="exercise-cell">
+
+</div>
+<script type="pyodide-39-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWUsInBlcnNpc3QiOnRydWV9LCJjb2RlIjoiIyBDb252ZXJ0IGluY29tZV9ncm91cCB0byB1cHBlcmNhc2UgdXNpbmcgbWFwKClcblxuIn0=
+</script>
+</div>
+</section>
+<section id="applying-a-function-to-groups-with-groupby-and-agg" class="level4">
+<h4 class="anchored" data-anchor-id="applying-a-function-to-groups-with-groupby-and-agg">Applying a Function to Groups with <code>groupby()</code> and <code>agg()</code></h4>
+<div>
+<div id="pyodide-40" class="exercise-cell">
+
+</div>
+<script type="pyodide-40-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWUsInBlcnNpc3QiOnRydWV9LCJjb2RlIjoiIyBDYWxjdWxhdGUgdGhlIG1lZGlhbiBnZHBfcGVyY2FwaXRhIGFuZCBpbmZsYXRpb25fcmF0ZSBmb3IgZWFjaCBpbmNvbWVfZ3JvdXBcblxuXG5cbiJ9
+</script>
+</div>
+</section>
+</section>
+<section id="summary-tables" class="level3">
+<h3 class="anchored" data-anchor-id="summary-tables">Summary tables</h3>
+<div>
+<div id="pyodide-41" class="exercise-cell">
+
+</div>
+<script type="pyodide-41-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWUsInBlcnNpc3QiOnRydWV9LCJjb2RlIjoiIyBDcmVhdGUgYSBwaXZvdCB0YWJsZSBvZiBnZHBfcGVyY2FwaXRhIGFuZCBpbmZsYXRpb25fcmF0ZSBieSBpbmNvbWVfZ3JvdXAgYW5kIHllYXJcblxuXG5cblxuXG5cbiJ9
+</script>
+</div>
+</section>
+<section id="analyzing-categorical-data" class="level3">
+<h3 class="anchored" data-anchor-id="analyzing-categorical-data">Analyzing categorical data</h3>
+<section id="using-cross-tabulation" class="level4">
+<h4 class="anchored" data-anchor-id="using-cross-tabulation">Using cross-tabulation</h4>
+<div>
+<div id="pyodide-42" class="exercise-cell">
+
+</div>
+<script type="pyodide-42-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWUsInBlcnNpc3QiOnRydWV9LCJjb2RlIjoiIyBTaG93IGNvdW50cyBvZiBpbmNvbWVfZ3JvdXAgYnkgeWVhclxuIn0=
+</script>
+</div>
+</section>
+<section id="by-getting-group-counts" class="level4">
+<h4 class="anchored" data-anchor-id="by-getting-group-counts">By getting group counts</h4>
+<div>
+<div id="pyodide-43" class="exercise-cell">
+
+</div>
+<script type="pyodide-43-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWUsInBlcnNpc3QiOnRydWV9LCJjb2RlIjoiIyBDb3VudCB0aGUgb2NjdXJyZW5jZXMgb2YgZWFjaCBpbmNvbWVfZ3JvdXBcbiJ9
+</script>
+</div>
+</section>
+</section>
+</section>
+<section id="exercise-1.3-transforming-and-aggregating-data-with-pandas" class="level2">
+<h2 class="anchored" data-anchor-id="exercise-1.3-transforming-and-aggregating-data-with-pandas">Exercise 1.3: Transforming and Aggregating Data with Pandas</h2>
+<p>By completing this exercise, you will be able to use <code>pandas</code> to - Aggregate data effectively by grouping it - Transform data by applying functions element-wise or to groups - Create summary tables - Analyze categorical data using cross-tabulation and counts</p>
+<section id="grouping-data-1" class="level3">
+<h3 class="anchored" data-anchor-id="grouping-data-1">Grouping Data</h3>
+<div>
+<div id="pyodide-44" class="exercise-cell">
+
+</div>
+<script type="pyodide-44-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWUsInBlcnNpc3QiOnRydWV9LCJjb2RlIjoiIyBHcm91cCBkYXRhIGJ5IGNvbnRpbmVudCBhbmQgY2FsY3VsYXRlIHRoZSBtZWFuIGxpZmUgZXhwZWN0YW5jeVxuIn0=
+</script>
+</div>
+</section>
+<section id="applying-functions-1" class="level3">
+<h3 class="anchored" data-anchor-id="applying-functions-1">Applying Functions</h3>
+<section id="applying-a-function-element-wise-with-map-1" class="level4">
+<h4 class="anchored" data-anchor-id="applying-a-function-element-wise-with-map-1">Applying a function element-wise with <code>map()</code></h4>
+<div>
+<div id="pyodide-45" class="exercise-cell">
+
+</div>
+<script type="pyodide-45-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWUsInBlcnNpc3QiOnRydWV9LCJjb2RlIjoiIyBDb252ZXJ0IGNvbnRpbmVudCB0byB1cHBlcmNhc2UgdXNpbmcgbWFwKClcbiJ9
+</script>
+</div>
+</section>
+<section id="applying-a-function-to-groups-with-groupby-and-agg-1" class="level4">
+<h4 class="anchored" data-anchor-id="applying-a-function-to-groups-with-groupby-and-agg-1">Applying a function to groups with <code>groupby()</code> and <code>agg()</code></h4>
+<div>
+<div id="pyodide-46" class="exercise-cell">
+
+</div>
+<script type="pyodide-46-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWUsInBlcnNpc3QiOnRydWV9LCJjb2RlIjoiIyBDYWxjdWxhdGUgdGhlIG1lZGlhbiBmZXJ0aWxpdHkgcmF0ZSBhbmQgbGlmZSBleHBlY3RhbmN5IGZvciBlYWNoIGNvbnRpbmVudFxuXG5cblxuIn0=
+</script>
+</div>
+</section>
+</section>
+<section id="summary-tables-1" class="level3">
+<h3 class="anchored" data-anchor-id="summary-tables-1">Summary Tables</h3>
+<div>
+<div id="pyodide-47" class="exercise-cell">
+
+</div>
+<script type="pyodide-47-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWUsInBlcnNpc3QiOnRydWV9LCJjb2RlIjoiIyBDcmVhdGUgYSBwaXZvdCB0YWJsZSBvZiBmZXJ0aWxpdHkgcmF0ZSBhbmQgbGlmZSBleHBlY3RhbmN5IGJ5IGNvbnRpbmVudCBhbmQgeWVhclxuXG5cblxuIn0=
+</script>
+</div>
+</section>
+<section id="analyzing-categorical-data-1" class="level3">
+<h3 class="anchored" data-anchor-id="analyzing-categorical-data-1">Analyzing Categorical Data</h3>
+<section id="using-cross-tabulation-1" class="level4">
+<h4 class="anchored" data-anchor-id="using-cross-tabulation-1">Using Cross-Tabulation</h4>
+<div>
+<div id="pyodide-48" class="exercise-cell">
+
+</div>
+<script type="pyodide-48-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWUsInBlcnNpc3QiOnRydWV9LCJjb2RlIjoiIyBDcmVhdGUgYSBjcm9zcy10YWJ1bGF0aW9uIG9mIGNvbnRpbmVudCBhbmQgeWVhclxuIn0=
+</script>
+</div>
+</section>
+<section id="by-getting-group-counts-1" class="level4">
+<h4 class="anchored" data-anchor-id="by-getting-group-counts-1">By Getting Group Counts</h4>
+<div>
+<div id="pyodide-49" class="exercise-cell">
+
+</div>
+<script type="pyodide-49-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWUsInBlcnNpc3QiOnRydWV9LCJjb2RlIjoiIyBDb3VudCB0aGUgb2NjdXJyZW5jZXMgb2YgZWFjaCByZWdpb25cbiJ9
+</script>
+</div>
+</section>
+</section>
+<section id="self-check" class="level3">
+<h3 class="anchored" data-anchor-id="self-check">Self-Check</h3>
+<p>By the end of this module, you should be able to:</p>
+<ul class="task-list">
+<li><label><input type="checkbox">Load data from CSV and Excel files with <code>read_csv</code> and <code>read_excel</code></label></li>
+<li><label><input type="checkbox">Inspect a DataFrame using <code>head()</code>, <code>info()</code>, <code>describe()</code>, <code>dtypes</code>, and <code>isnull().sum()</code></label></li>
+<li><label><input type="checkbox">Handle missing data by dropping rows/columns or filling values with <code>dropna</code> and <code>fillna</code></label></li>
+<li><label><input type="checkbox">Convert column data types, rename columns, and set or reset the index</label></li>
+<li><label><input type="checkbox">Filter rows using single and multiple boolean conditions</label></li>
+<li><label><input type="checkbox">Aggregate and summarize data with <code>groupby</code>, <code>agg</code>, <code>pivot_table</code>, <code>crosstab</code>, and <code>value_counts</code></label></li>
+</ul>
+<hr>
+</section>
+</section>
+</section>
+<section id="module-2-data-visualization-basics-with-matplotlib-and-seaborn" class="level1">
+<h1>Module 2: Data Visualization Basics with Matplotlib and Seaborn</h1>
+<section id="walkthrough-2.1-creating-basic-plots-with-matplotlib" class="level2">
+<h2 class="anchored" data-anchor-id="walkthrough-2.1-creating-basic-plots-with-matplotlib">Walkthrough 2.1: Creating Basic Plots with Matplotlib</h2>
+<section id="line-plot" class="level3">
+<h3 class="anchored" data-anchor-id="line-plot">Line plot</h3>
+<div>
+<div id="pyodide-50" class="exercise-cell">
+
+</div>
+<script type="pyodide-50-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWUsInBlcnNpc3QiOnRydWV9LCJjb2RlIjoiIyBGaWx0ZXIgZGF0YSBmb3IgYSBzcGVjaWZpYyBjb3VudHJ5XG5cblxuXG5cblxuIn0=
+</script>
+</div>
+</section>
+<section id="bar-chart" class="level3">
+<h3 class="anchored" data-anchor-id="bar-chart">Bar chart</h3>
+<div>
+<div id="pyodide-51" class="exercise-cell">
+
+</div>
+<script type="pyodide-51-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWUsInBlcnNpc3QiOnRydWV9LCJjb2RlIjoiIyBGaWx0ZXIgZGF0YSBmb3IgQ2FyaWJiZWFuIGNvdW50cmllcyBhbmQgdGhlIHllYXIgMjAyMFxuXG5cblxuXG4jIEJhciBjaGFydCBvZiBnZHBfcGVyY2FwaXRhIGZvciBkaWZmZXJlbnQgQ2FyaWJiZWFuIGNvdW50cmllcyBpbiAyMDIwXG5cblxuIn0=
+</script>
+</div>
+</section>
+<section id="adding-labels-and-titles" class="level3">
+<h3 class="anchored" data-anchor-id="adding-labels-and-titles">Adding labels and titles</h3>
+<div>
+<div id="pyodide-52" class="exercise-cell">
+
+</div>
+<script type="pyodide-52-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWUsInBlcnNpc3QiOnRydWV9LCJjb2RlIjoiIyBGaWx0ZXIgZGF0YSBmb3IgYSBzcGVjaWZpYyBjb3VudHJ5XG5cblxuIyBMaW5lIHBsb3Qgb2YgZ2RwX3BlcmNhcGl0YSBvdmVyIHRoZSB5ZWFycyB3aXRoIGxhYmVscyBhbmQgdGl0bGVzXG5cblxuXG5cblxuIn0=
+</script>
+</div>
+</section>
+<section id="adjusting-axes-and-tick-marks" class="level3">
+<h3 class="anchored" data-anchor-id="adjusting-axes-and-tick-marks">Adjusting axes and tick marks</h3>
+<div>
+<div id="pyodide-53" class="exercise-cell">
+
+</div>
+<script type="pyodide-53-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWUsInBlcnNpc3QiOnRydWV9LCJjb2RlIjoiIyBCYXIgY2hhcnQgb2YgZ2RwX3BlcmNhcGl0YSBmb3IgZGlmZmVyZW50IENhcmliYmVhbiBjb3VudHJpZXMgaW4gMjAyMCB3aXRoXG4jIGFkanVzdGVkIGF4ZXMgYW5kIHRpY2sgbWFya3NcblxuXG5cblxuXG5cbiMgQWRqdXN0IGF4ZXNcblxuXG5cbiMgQWRqdXN0IHRpY2sgbWFya3NcblxuXG5cbiJ9
+</script>
+</div>
+<blockquote class="blockquote">
+<p><strong>Common Pitfall:</strong> Call <code>plt.figure()</code> before each new plot and <code>plt.show()</code> after it. If you skip <code>plt.figure()</code>, matplotlib keeps drawing onto the previous figure, and successive plots can overlap or accumulate unexpectedly within the same axes.</p>
+</blockquote>
+</section>
+</section>
+<section id="exercise-2.1-creating-basic-plots-with-matplotlib" class="level2">
+<h2 class="anchored" data-anchor-id="exercise-2.1-creating-basic-plots-with-matplotlib">Exercise 2.1: Creating Basic Plots with Matplotlib</h2>
+<p>By completing this exercise, you will be able to use <code>matplotlib</code> to - Create line plots and bar charts - Add labels and titles - Adjust axes and tick marks</p>
+<section id="line-plot-1" class="level3">
+<h3 class="anchored" data-anchor-id="line-plot-1">Line Plot</h3>
+<div>
+<div id="pyodide-54" class="exercise-cell">
+
+</div>
+<script type="pyodide-54-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWUsInBlcnNpc3QiOnRydWV9LCJjb2RlIjoiIyBGaWx0ZXIgZGF0YSBmb3IgSW5kaWFcblxuXG4jIExpbmUgcGxvdCBvZiBmZXJ0aWxpdHkgcmF0ZSBvdmVyIHRoZSB5ZWFyc1xuXG5cbiJ9
+</script>
+</div>
+</section>
+<section id="bar-chart-1" class="level3">
+<h3 class="anchored" data-anchor-id="bar-chart-1">Bar Chart</h3>
+<div>
+<div id="pyodide-55" class="exercise-cell">
+
+</div>
+<script type="pyodide-55-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWUsInBlcnNpc3QiOnRydWV9LCJjb2RlIjoiIyBGaWx0ZXIgZGF0YSBmb3Igc2VsZWN0ZWQgQXNpYW4gY291bnRyaWVzIGFuZCB0aGUgeWVhciAyMDIwXG5cblxuXG5cbiMgQmFyIGNoYXJ0IG9mIHBvcHVsYXRpb24gc2l6ZSBmb3Igc2VsZWN0ZWQgQXNpYW4gY291bnRyaWVzIGluIDIwMjBcblxuIn0=
+</script>
+</div>
+</section>
+<section id="adding-labels-and-titles-1" class="level3">
+<h3 class="anchored" data-anchor-id="adding-labels-and-titles-1">Adding Labels and Titles</h3>
+<div>
+<div id="pyodide-56" class="exercise-cell">
+
+</div>
+<script type="pyodide-56-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWUsInBlcnNpc3QiOnRydWV9LCJjb2RlIjoiIyBGaWx0ZXIgZGF0YSBmb3IgTmlnZXJpYVxuXG5cbiMgTGluZSBwbG90IG9mIGxpZmUgZXhwZWN0YW5jeSBvdmVyIHRoZSB5ZWFycyB3aXRoIGxhYmVscyBhbmQgdGl0bGVzXG5cblxuXG5cblxuXG4ifQ==
+</script>
+</div>
+</section>
+<section id="adjusting-axes-and-tick-marks-1" class="level3">
+<h3 class="anchored" data-anchor-id="adjusting-axes-and-tick-marks-1">Adjusting Axes and Tick Marks</h3>
+<div>
+<div id="pyodide-57" class="exercise-cell">
+
+</div>
+<script type="pyodide-57-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWUsInBlcnNpc3QiOnRydWV9LCJjb2RlIjoiIyBGaWx0ZXIgZGF0YSBmb3Igc2VsZWN0ZWQgQWZyaWNhbiBjb3VudHJpZXMgKCdOR0EnLCAnRVRIJywgJ0VHWScsICdaQUYnLCAnRFpBJylcbiMgYW5kIHRoZSB5ZWFyIDIwMjBcblxuXG4jIE5lZWQgdG8gY29udmVydCB5ZWFyIGJhY2sgdG8gYW4gaW50ZWdlcj9cblxuXG5cblxuIyBCYXIgY2hhcnQgb2YgZmVydGlsaXR5IHJhdGUgZm9yIHNlbGVjdGVkIEFmcmljYW4gY291bnRyaWVzIGluIDIwMjAgd2l0aFxuIyBhZGp1c3RlZCBheGVzIGFuZCB0aWNrIG1hcmtzXG5cblxuXG5cblxuXG5cbiMgQWRqdXN0IGF4ZXNcblxuXG4jIEFkanVzdCB0aWNrIG1hcmtzXG5cblxuXG4ifQ==
+</script>
+</div>
+</section>
+</section>
+<section id="walkthrough-2.2-data-visualization-techniques-with-seaborn" class="level2">
+<h2 class="anchored" data-anchor-id="walkthrough-2.2-data-visualization-techniques-with-seaborn">Walkthrough 2.2: Data Visualization Techniques with Seaborn</h2>
+<section id="heatmap" class="level3">
+<h3 class="anchored" data-anchor-id="heatmap">Heatmap</h3>
+<div>
+<div id="pyodide-58" class="exercise-cell">
+
+</div>
+<script type="pyodide-58-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWUsInBlcnNpc3QiOnRydWV9LCJjb2RlIjoiIyBTZWxlY3Qgb25seSB0aGUgbnVtZXJpYyBjb2x1bW5zXG5cblxuXG4jIENhbGN1bGF0ZSBjb3JyZWxhdGlvbiBtYXRyaXhcblxuXG4jIENyZWF0ZSBoZWF0bWFwXG5cblxuIn0=
+</script>
+</div>
+<blockquote class="blockquote">
+<p><strong>Common Pitfall:</strong> <code>corr()</code> only works on numeric columns. Select numeric columns first (as with <code>select_dtypes</code>); passing a DataFrame that still contains string columns such as <code>code</code> or <code>income_group</code> will either error or silently drop them depending on your pandas version.</p>
+</blockquote>
+</section>
+<section id="pair-plot" class="level3">
+<h3 class="anchored" data-anchor-id="pair-plot">Pair plot</h3>
+<div>
+<div id="pyodide-59" class="exercise-cell">
+
+</div>
+<script type="pyodide-59-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWUsInBlcnNpc3QiOnRydWV9LCJjb2RlIjoiXG5cblxuIn0=
+</script>
+</div>
+</section>
+<section id="violin-plot" class="level3">
+<h3 class="anchored" data-anchor-id="violin-plot">Violin plot</h3>
+<div>
+<div id="pyodide-60" class="exercise-cell">
+
+</div>
+<script type="pyodide-60-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWUsInBlcnNpc3QiOnRydWV9LCJjb2RlIjoiXG5cblxuXG4ifQ==
+</script>
+</div>
+</section>
+<section id="customizing-seaborn-plots" class="level3">
+<h3 class="anchored" data-anchor-id="customizing-seaborn-plots">Customizing Seaborn plots</h3>
+<div>
+<div id="pyodide-61" class="exercise-cell">
+
+</div>
+<script type="pyodide-61-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWUsInBlcnNpc3QiOnRydWV9LCJjb2RlIjoiIyBCYXIgcGxvdCB3aXRoIGN1c3RvbWl6YXRpb25cblxuXG5cblxuXG5cbiMgQ3VzdG9taXppbmcgYXhlcyBhbmQgdGljayBtYXJrc1xuXG5cblxuXG4ifQ==
+</script>
+</div>
+</section>
+</section>
+<section id="exercise-2.2-data-visualization-techniques-with-seaborn" class="level2">
+<h2 class="anchored" data-anchor-id="exercise-2.2-data-visualization-techniques-with-seaborn">Exercise 2.2: Data Visualization Techniques with Seaborn</h2>
+<p>By completing this exercise, you will be able to use <code>seaborn</code> to - Create heatmaps - Design pair plots and violin plots - Customize Seaborn plots</p>
+<section id="heatmap-1" class="level3">
+<h3 class="anchored" data-anchor-id="heatmap-1">Heatmap</h3>
+<div>
+<div id="pyodide-62" class="exercise-cell">
+
+</div>
+<script type="pyodide-62-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWUsInBlcnNpc3QiOnRydWV9LCJjb2RlIjoiIyBTZWxlY3Qgb25seSB0aGUgbnVtZXJpYyBjb2x1bW5zXG5cblxuXG4jIENhbGN1bGF0ZSBjb3JyZWxhdGlvbiBtYXRyaXhcblxuXG4jIENyZWF0ZSBoZWF0bWFwXG5cblxuIn0=
+</script>
+</div>
+</section>
+<section id="pair-plot-1" class="level3">
+<h3 class="anchored" data-anchor-id="pair-plot-1">Pair Plot</h3>
+<div>
+<div id="pyodide-63" class="exercise-cell">
+
+</div>
+<script type="pyodide-63-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWUsInBlcnNpc3QiOnRydWV9LCJjb2RlIjoiIyBQYWlyIHBsb3Qgb2YgZmVydGlsaXR5IHJhdGUsIGxpZmUgZXhwZWN0YW5jeSwgYW5kIHBvcHVsYXRpb24gc2l6ZVxuXG5cbiJ9
+</script>
+</div>
+</section>
+<section id="violin-plot-1" class="level3">
+<h3 class="anchored" data-anchor-id="violin-plot-1">Violin Plot</h3>
+<div>
+<div id="pyodide-64" class="exercise-cell">
+
+</div>
+<script type="pyodide-64-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWUsInBlcnNpc3QiOnRydWV9LCJjb2RlIjoiIyBWaW9saW4gcGxvdCBvZiBmZXJ0aWxpdHkgcmF0ZSBieSBjb250aW5lbnRcblxuXG5cblxuIn0=
+</script>
+</div>
+</section>
+<section id="customizing-seaborn-plots-1" class="level3">
+<h3 class="anchored" data-anchor-id="customizing-seaborn-plots-1">Customizing Seaborn Plots</h3>
+<div>
+<div id="pyodide-65" class="exercise-cell">
+
+</div>
+<script type="pyodide-65-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWUsInBlcnNpc3QiOnRydWV9LCJjb2RlIjoiIyBGaWx0ZXIgZGF0YSBmb3Igc2VsZWN0ZWQgRXVyb3BlYW4gY291bnRyaWVzICgnREVVJywgJ0ZSQScsICdJVEEnLCAnRVNQJywgJ0dCUicpXG4jIGFuZCB0aGUgeWVhciAyMDIwXG5cblxuXG4jIEJhciBwbG90IHdpdGggY3VzdG9taXphdGlvblxuXG5cblxuXG5cblxuIyBDdXN0b21pemluZyBheGVzIGFuZCB0aWNrIG1hcmtzXG5cblxuXG5cbiJ9
+</script>
+</div>
+</section>
+<section id="self-check-1" class="level3">
+<h3 class="anchored" data-anchor-id="self-check-1">Self-Check</h3>
+<p>By the end of this module, you should be able to:</p>
+<ul class="task-list">
+<li><label><input type="checkbox">Create line plots and bar charts (vertical and horizontal) with <code>matplotlib</code></label></li>
+<li><label><input type="checkbox">Add axis labels, titles, and gridlines to a plot</label></li>
+<li><label><input type="checkbox">Adjust axis limits and tick marks with <code>ylim</code>, <code>xticks</code>, and <code>yticks</code></label></li>
+<li><label><input type="checkbox">Build heatmaps, pair plots, and violin plots with <code>seaborn</code></label></li>
+<li><label><input type="checkbox">Compute a correlation matrix on numeric columns before plotting it</label></li>
+<li><label><input type="checkbox">Customize seaborn plots with palettes, hues, and matplotlib styling</label></li>
+</ul>
+<hr>
+</section>
+</section>
+</section>
+<section id="module-3-interactive-data-visualization-with-plotly" class="level1">
+<h1>Module 3: Interactive Data Visualization with Plotly</h1>
+<section id="walkthrough-3.1-interactive-charts-and-dashboards-with-plotly" class="level2">
+<h2 class="anchored" data-anchor-id="walkthrough-3.1-interactive-charts-and-dashboards-with-plotly">Walkthrough 3.1: Interactive Charts and Dashboards with Plotly</h2>
+<section id="basic-interactive-chart" class="level3">
+<h3 class="anchored" data-anchor-id="basic-interactive-chart">Basic interactive chart</h3>
+<div>
+<div id="pyodide-66" class="exercise-cell">
+
+</div>
+<script type="pyodide-66-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWUsInBlcnNpc3QiOnRydWV9LCJjb2RlIjoiIyBGaWx0ZXIgZGF0YSBmb3IgYSBzcGVjaWZpYyBjb3VudHJ5XG5cblxuIyBDcmVhdGUgYW4gaW50ZXJhY3RpdmUgbGluZSBjaGFydFxuXG4ifQ==
+</script>
+</div>
+<blockquote class="blockquote">
+<p><strong>Common Pitfall:</strong> If a Plotly figure shows up blank in a Jupyter notebook, the renderer was likely not initialized. Make sure the setup cell that runs <code>pyo.init_notebook_mode(connected=True)</code> was executed first, and remember that you must call <code>fig.show()</code> – simply creating <code>fig</code> does not display anything.</p>
+</blockquote>
+</section>
+<section id="adding-interactive-elements" class="level3">
+<h3 class="anchored" data-anchor-id="adding-interactive-elements">Adding interactive elements</h3>
+<div>
+<div id="pyodide-67" class="exercise-cell">
+
+</div>
+<script type="pyodide-67-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWUsInBlcnNpc3QiOnRydWV9LCJjb2RlIjoiIyBDcmVhdGUgYW4gaW50ZXJhY3RpdmUgc2NhdHRlciBwbG90XG5cblxuXG5cblxuXG4jIEFkZCBob3Zlciwgem9vbSwgYW5kIHNlbGVjdGlvbiB0b29sc1xuXG5cblxuIn0=
+</script>
+</div>
+</section>
+<section id="designing-a-simple-dashboard" class="level3">
+<h3 class="anchored" data-anchor-id="designing-a-simple-dashboard">Designing a simple dashboard</h3>
+<div>
+<div id="pyodide-68" class="exercise-cell">
+
+</div>
+<script type="pyodide-68-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWUsInBlcnNpc3QiOnRydWV9LCJjb2RlIjoiIyBGaWx0ZXIgZGF0YSBmb3IgdGhlIHllYXIgMjAyMFxuXG5cbiMgQ3JlYXRlIGEgc3VicGxvdCBmaWd1cmUgd2l0aCAxIHJvdyBhbmQgMiBjb2x1bW5zXG5cblxuXG5cblxuIyBMaW5lIGNoYXJ0IG9mIEdEUCBQZXIgQ2FwaXRhIGZvciBBZmdoYW5pc3RhblxuXG5cblxuXG4jIEJhciBjaGFydCBvZiBHRFAgUGVyIENhcGl0YSBmb3IgZGlmZmVyZW50IGNvdW50cmllcyBpbiAyMDIwXG5cblxuXG5cbiMgVXBkYXRlIGxheW91dFxuIn0=
+</script>
+</div>
+<blockquote class="blockquote">
+<p><strong>Common Pitfall:</strong> Plotly subplot positions are 1-indexed, so the first cell is <code>row=1, col=1</code> (not <code>0</code>). The <code>rows</code>/<code>cols</code> you pass to <code>make_subplots</code> must also be large enough to hold every <code>add_trace</code> position, or you will get an index error.</p>
+</blockquote>
+</section>
+</section>
+<section id="exercise-3.1-interactive-charts-and-dashboards-with-plotly" class="level2">
+<h2 class="anchored" data-anchor-id="exercise-3.1-interactive-charts-and-dashboards-with-plotly">Exercise 3.1: Interactive Charts and Dashboards with Plotly</h2>
+<p>By completing this exercise, you will be able to use <code>plotly</code> to - Create a basic interactive chart - Add interactive elements: hover, zoom, and selection tools - Design a simple dashboard with multiple charts</p>
+<section id="basic-interactive-chart-1" class="level3">
+<h3 class="anchored" data-anchor-id="basic-interactive-chart-1">Basic Interactive Chart</h3>
+<div>
+<div id="pyodide-69" class="exercise-cell">
+
+</div>
+<script type="pyodide-69-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWUsInBlcnNpc3QiOnRydWV9LCJjb2RlIjoiIyBGaWx0ZXIgZGF0YSBmb3IgYSBzcGVjaWZpYyBjb3VudHJ5IChCcmF6aWwpXG5cbiMgQ3JlYXRlIGFuIGludGVyYWN0aXZlIGxpbmUgY2hhcnQgKEZlcnRpbGl0eSBSYXRlIE92ZXIgWWVhcnMpXG5cbiJ9
+</script>
+</div>
+</section>
+<section id="adding-interactive-elements-1" class="level3">
+<h3 class="anchored" data-anchor-id="adding-interactive-elements-1">Adding Interactive Elements</h3>
+<div>
+<div id="pyodide-70" class="exercise-cell">
+
+</div>
+<script type="pyodide-70-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWUsInBlcnNpc3QiOnRydWV9LCJjb2RlIjoiIyBDcmVhdGUgYW4gaW50ZXJhY3RpdmUgc2NhdHRlciBwbG90XG5cblxuXG5cbiMgQWRkIGhvdmVyLCB6b29tLCBhbmQgc2VsZWN0aW9uIHRvb2xzXG5cbiJ9
+</script>
+</div>
+</section>
+<section id="designing-a-simple-dashboard-1" class="level3">
+<h3 class="anchored" data-anchor-id="designing-a-simple-dashboard-1">Designing a Simple Dashboard</h3>
+<div>
+<div id="pyodide-71" class="exercise-cell">
+
+</div>
+<script type="pyodide-71-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWUsInBlcnNpc3QiOnRydWV9LCJjb2RlIjoiIyBGaWx0ZXIgZGF0YSBmb3IgdGhlIHllYXIgMjAyMFxuXG4jIENyZWF0ZSBhIHN1YnBsb3QgZmlndXJlIHdpdGggMSByb3cgYW5kIDIgY29sdW1uc1xuXG5cblxuIyBMaW5lIGNoYXJ0IG9mIExpZmUgRXhwZWN0YW5jeSBmb3IgQnJhemlsXG5cblxuXG5cbiMgQmFyIGNoYXJ0IG9mIExpZmUgRXhwZWN0YW5jeSBmb3IgU291dGggQW1lcmljYW4gY291bnRyaWVzIGluIDIwMjBcblxuXG5cblxuIyBVcGRhdGUgbGF5b3V0IHRvIGFkZCBhIHRpdGxlIGFuZCBoaWRlIHRoZSBsZWdlbmRcbiJ9
+</script>
+</div>
+</section>
+</section>
+<section id="walkthrough-3.2-creating-a-dynamic-data-report" class="level2">
+<h2 class="anchored" data-anchor-id="walkthrough-3.2-creating-a-dynamic-data-report">Walkthrough 3.2: Creating a Dynamic Data Report</h2>
+<section id="selecting-relevant-data" class="level3">
+<h3 class="anchored" data-anchor-id="selecting-relevant-data">Selecting relevant data</h3>
+<div>
+<div id="pyodide-72" class="exercise-cell">
+
+</div>
+<script type="pyodide-72-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWUsInBlcnNpc3QiOnRydWV9LCJjb2RlIjoiIyBTZWxlY3QgcmVsZXZhbnQgZGF0YSBmb3IgdGhlIHllYXIgMjAyMCBhbmQgc3BlY2lmaWMgY29sdW1uc1xuc2VsZWN0ZWRfZGF0YSA9IGVjb25vbWllc1tlY29ub21pZXNbJ3llYXInXSA9PSAyMDIwXVtbJ2NvZGUnLCAnZ2RwX3BlcmNhcGl0YScsICdncm9zc19zYXZpbmdzJywgJ2luZmxhdGlvbl9yYXRlJywgJ2luY29tZV9ncm91cCddXVxuc2VsZWN0ZWRfZGF0YS5oZWFkKCkifQ==
+</script>
+</div>
+</section>
+<section id="building-a-dynamic-report" class="level3">
+<h3 class="anchored" data-anchor-id="building-a-dynamic-report">Building a dynamic report</h3>
+<div>
+<div id="pyodide-73" class="exercise-cell">
+
+</div>
+<script type="pyodide-73-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWUsInBlcnNpc3QiOnRydWV9LCJjb2RlIjoiIyBDcmVhdGUgYSBzdWJwbG90IGZpZ3VyZSB3aXRoIDMgcm93c1xuZmlnID0gbWFrZV9zdWJwbG90cyhyb3dzPTMsIGNvbHM9MSxcbiAgICAgICAgICAgICAgICAgICAgc3VicGxvdF90aXRsZXM9KCdHRFAgUGVyIENhcGl0YSB2cy4gR3Jvc3MgU2F2aW5ncycsXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAnR0RQIFBlciBDYXBpdGEgYnkgQ291bnRyeSBhbmQgSW5jb21lIEdyb3VwJyxcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICdHcm9zcyBTYXZpbmdzIGJ5IENvdW50cnkgYW5kIEluY29tZSBHcm91cCcpKVxuXG4jIEFkZCBzY2F0dGVyIHBsb3RcbmZpZy5hZGRfdHJhY2UoZ28uU2NhdHRlcih4PXNlbGVjdGVkX2RhdGFbJ2dkcF9wZXJjYXBpdGEnXSwgeT1zZWxlY3RlZF9kYXRhWydncm9zc19zYXZpbmdzJ10sXG4gICAgICAgICAgICAgICAgICAgICAgICAgbW9kZT0nbWFya2VycycsXG4gICAgICAgICAgICAgICAgICAgICAgICAgbWFya2VyPWRpY3QoY29sb3I9c2VsZWN0ZWRfZGF0YVsnaW5jb21lX2dyb3VwJ10uYXN0eXBlKCdjYXRlZ29yeScpLmNhdC5jb2RlcyksXG4gICAgICAgICAgICAgICAgICAgICAgICAgdGV4dD1zZWxlY3RlZF9kYXRhWydjb2RlJ10sIG5hbWU9J1NjYXR0ZXInKSxcbiAgICAgICAgICAgICAgcm93PTEsIGNvbD0xKVxuXG4jIEFkZCBiYXIgY2hhcnRcbmZpZy5hZGRfdHJhY2UoZ28uQmFyKHg9c2VsZWN0ZWRfZGF0YVsnY29kZSddLCB5PXNlbGVjdGVkX2RhdGFbJ2dkcF9wZXJjYXBpdGEnXSxcbiAgICAgICAgICAgICAgICAgICAgIG1hcmtlcj1kaWN0KGNvbG9yPXNlbGVjdGVkX2RhdGFbJ2luY29tZV9ncm91cCddLmFzdHlwZSgnY2F0ZWdvcnknKS5jYXQuY29kZXMpLCBuYW1lPSdCYXInKSxcbiAgICAgICAgICAgICAgcm93PTIsIGNvbD0xKVxuXG4jIEFkZCBhbm90aGVyIHNjYXR0ZXIgcGxvdFxuZmlnLmFkZF90cmFjZShnby5TY2F0dGVyKHg9c2VsZWN0ZWRfZGF0YVsnY29kZSddLCB5PXNlbGVjdGVkX2RhdGFbJ2dyb3NzX3NhdmluZ3MnXSxcbiAgICAgICAgICAgICAgICAgICAgICAgICBtb2RlPSdtYXJrZXJzJyxcbiAgICAgICAgICAgICAgICAgICAgICAgICBtYXJrZXI9ZGljdChjb2xvcj1zZWxlY3RlZF9kYXRhWydpbmNvbWVfZ3JvdXAnXS5hc3R5cGUoJ2NhdGVnb3J5JykuY2F0LmNvZGVzKSwgdGV4dD1zZWxlY3RlZF9kYXRhWydjb2RlJ10sIG5hbWU9J1NjYXR0ZXInKSxcbiAgICAgICAgICAgICAgcm93PTMsIGNvbD0xKVxuXG4jIFVwZGF0ZSBsYXlvdXRcbmZpZy51cGRhdGVfbGF5b3V0KHRpdGxlX3RleHQ9J0R5bmFtaWMgRGF0YSBSZXBvcnQgZm9yIEVjb25vbWljIEluZGljYXRvcnMgKDIwMjApJywgc2hvd2xlZ2VuZD1GYWxzZSwgaGVpZ2h0PTkwMClcblxuZmlnLnNob3coKSJ9
+</script>
+</div>
+</section>
+<section id="adding-contextual-text-and-summaries" class="level3">
+<h3 class="anchored" data-anchor-id="adding-contextual-text-and-summaries">Adding contextual text and summaries</h3>
+<div>
+<div id="pyodide-74" class="exercise-cell">
+
+</div>
+<script type="pyodide-74-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWUsInBlcnNpc3QiOnRydWV9LCJjb2RlIjoiaW1wb3J0IHBsb3RseS5pbyBhcyBwaW9cbmltcG9ydCBwbG90bHkuZ3JhcGhfb2JqZWN0cyBhcyBnb1xuXG4jIENyZWF0ZSBhIHN1YnBsb3QgZmlndXJlIHdpdGggMyByb3dzXG5maWcgPSBtYWtlX3N1YnBsb3RzKHJvd3M9MywgY29scz0xLFxuICAgICAgICAgICAgICAgICAgICBzdWJwbG90X3RpdGxlcz0oJ0dEUCBQZXIgQ2FwaXRhIHZzLiBHcm9zcyBTYXZpbmdzJyxcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICdHRFAgUGVyIENhcGl0YSBieSBDb3VudHJ5IGFuZCBJbmNvbWUgR3JvdXAnLFxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgJ0dyb3NzIFNhdmluZ3MgYnkgQ291bnRyeSBhbmQgSW5jb21lIEdyb3VwJykpXG5cbiMgQWRkIHNjYXR0ZXIgcGxvdFxuZmlnLmFkZF90cmFjZShnby5TY2F0dGVyKHg9c2VsZWN0ZWRfZGF0YVsnZ2RwX3BlcmNhcGl0YSddLCB5PXNlbGVjdGVkX2RhdGFbJ2dyb3NzX3NhdmluZ3MnXSxcbiAgICAgICAgICAgICAgICAgICAgICAgICBtb2RlPSdtYXJrZXJzJyxcbiAgICAgICAgICAgICAgICAgICAgICAgICBtYXJrZXI9ZGljdChjb2xvcj1zZWxlY3RlZF9kYXRhWydpbmNvbWVfZ3JvdXAnXS5hc3R5cGUoJ2NhdGVnb3J5JykuY2F0LmNvZGVzKSxcbiAgICAgICAgICAgICAgICAgICAgICAgICB0ZXh0PXNlbGVjdGVkX2RhdGFbJ2NvZGUnXSwgbmFtZT0nU2NhdHRlcicpLFxuICAgICAgICAgICAgICByb3c9MSwgY29sPTEpXG5cbiMgQWRkIGJhciBjaGFydFxuZmlnLmFkZF90cmFjZShnby5CYXIoeD1zZWxlY3RlZF9kYXRhWydjb2RlJ10sIHk9c2VsZWN0ZWRfZGF0YVsnZ2RwX3BlcmNhcGl0YSddLFxuICAgICAgICAgICAgICAgICAgICAgbWFya2VyPWRpY3QoY29sb3I9c2VsZWN0ZWRfZGF0YVsnaW5jb21lX2dyb3VwJ10uYXN0eXBlKCdjYXRlZ29yeScpLmNhdC5jb2RlcyksIG5hbWU9J0JhcicpLFxuICAgICAgICAgICAgICByb3c9MiwgY29sPTEpXG5cbiMgQWRkIGFub3RoZXIgc2NhdHRlciBwbG90XG5maWcuYWRkX3RyYWNlKGdvLlNjYXR0ZXIoeD1zZWxlY3RlZF9kYXRhWydjb2RlJ10sIHk9c2VsZWN0ZWRfZGF0YVsnZ3Jvc3Nfc2F2aW5ncyddLFxuICAgICAgICAgICAgICAgICAgICAgICAgIG1vZGU9J21hcmtlcnMnLFxuICAgICAgICAgICAgICAgICAgICAgICAgIG1hcmtlcj1kaWN0KGNvbG9yPXNlbGVjdGVkX2RhdGFbJ2luY29tZV9ncm91cCddLmFzdHlwZSgnY2F0ZWdvcnknKS5jYXQuY29kZXMpLFxuICAgICAgICAgICAgICAgICAgICAgICAgIHRleHQ9c2VsZWN0ZWRfZGF0YVsnY29kZSddLCBuYW1lPSdTY2F0dGVyJyksXG4gICAgICAgICAgICAgIHJvdz0zLCBjb2w9MSlcblxuIyBVcGRhdGUgbGF5b3V0XG5maWcudXBkYXRlX2xheW91dChcbiAgICB0aXRsZV90ZXh0PSdEeW5hbWljIERhdGEgUmVwb3J0IGZvciBFY29ub21pYyBJbmRpY2F0b3JzICgyMDIwKScsXG4gICAgc2hvd2xlZ2VuZD1GYWxzZSxcbiAgICBoZWlnaHQ9OTAwLFxuICAgIGFubm90YXRpb25zPVtcbiAgICAgICAgZ28ubGF5b3V0LkFubm90YXRpb24oXG4gICAgICAgICAgICB0ZXh0PScnJ1RoaXMgcmVwb3J0IHByZXNlbnRzIGtleSBlY29ub21pYyBpbmRpY2F0b3JzIGZvciB2YXJpb3VzIGNvdW50cmllcyBpbiAyMDIwLCBjYXRlZ29yaXplZCBieSBpbmNvbWUgZ3JvdXAuICcnJyxcbiAgICAgICAgICAgIHhyZWY9J3BhcGVyJywgeXJlZj0ncGFwZXInLCB4PTAuNSwgeT0xLCBzaG93YXJyb3c9RmFsc2UsIGZvbnQ9ZGljdChzaXplPTE0KVxuICAgICAgICApXG4gICAgXVxuKVxuXG4jIEFkZCBzdW1tYXJpZXMgYmVsb3cgZWFjaCBzdWJwbG90XG5maWcuYWRkX2Fubm90YXRpb24odGV4dD0nVGhlIHNjYXR0ZXIgcGxvdCByZXZlYWxzIGEgcG9zaXRpdmUgY29ycmVsYXRpb24gYmV0d2VlbiBHRFAgcGVyIENhcGl0YSBhbmQgR3Jvc3MgU2F2aW5ncywgZXNwZWNpYWxseSBmb3IgaGlnaC1pbmNvbWUgY291bnRyaWVzLicsIHhyZWY9J3BhcGVyJywgeXJlZj0ncGFwZXInLCB4PTAsIHk9MC43NSwgc2hvd2Fycm93PUZhbHNlLCBmb250PWRpY3Qoc2l6ZT0xMikpXG5maWcuYWRkX2Fubm90YXRpb24odGV4dD0nVGhlIGJhciBjaGFydCBzaG93cyB0aGF0IGhpZ2gtaW5jb21lIGNvdW50cmllcyBnZW5lcmFsbHkgaGF2ZSBoaWdoZXIgR0RQIHBlciBDYXBpdGEgY29tcGFyZWQgdG8gbG93LWluY29tZSBjb3VudHJpZXMuJywgeHJlZj0ncGFwZXInLCB5cmVmPSdwYXBlcicsIHg9MCwgeT0wLjMwLCBzaG93YXJyb3c9RmFsc2UsIGZvbnQ9ZGljdChzaXplPTEyKSlcbmZpZy5hZGRfYW5ub3RhdGlvbih0ZXh0PSdUaGUgc2NhdHRlciBwbG90IGluZGljYXRlcyBubyBjbGVhciByZWxhdGlvbnNoaXAgYmV0d2VlbiBpbmNvbWUgZ3JvdXAgYW5kIGdyb3NzIHNhdmluZ3MuJywgeHJlZj0ncGFwZXInLCB5cmVmPSdwYXBlcicsIHg9MCwgeT0tMC4xLCBzaG93YXJyb3c9RmFsc2UsIGZvbnQ9ZGljdChzaXplPTEyKSlcblxuZmlnLnNob3coKSJ9
+</script>
+</div>
+</section>
+</section>
+<section id="exercise-3.2-creating-a-dynamic-data-report" class="level2">
+<h2 class="anchored" data-anchor-id="exercise-3.2-creating-a-dynamic-data-report">Exercise 3.2: Creating a Dynamic Data Report</h2>
+<p>By completing this exercise, you will be able to use <code>pandas</code> and <code>plotly</code> to - Select relevant data - Build a dynamic report - Add contextual text and summaries</p>
+<section id="selecting-relevant-data-1" class="level3">
+<h3 class="anchored" data-anchor-id="selecting-relevant-data-1">Selecting Relevant Data</h3>
+<div>
+<div id="pyodide-75" class="exercise-cell">
+
+</div>
+<script type="pyodide-75-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWUsInBlcnNpc3QiOnRydWV9LCJjb2RlIjoiIyBTZWxlY3QgcmVsZXZhbnQgZGF0YSBmb3IgdGhlIHllYXIgMjAyMCBhbmQgc3BlY2lmaWMgY29sdW1ucyAoY291bnRyeV9jb2RlLCBmZXJ0aWxpdHlfcmF0ZSwgbGlmZV9leHBlY3RhbmN5LCBjb250aW5lbnQpXG5cbiJ9
+</script>
+</div>
+</section>
+<section id="building-a-dynamic-report-1" class="level3">
+<h3 class="anchored" data-anchor-id="building-a-dynamic-report-1">Building a Dynamic Report</h3>
+<div>
+<div id="pyodide-76" class="exercise-cell">
+
+</div>
+<script type="pyodide-76-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWUsInBlcnNpc3QiOnRydWV9LCJjb2RlIjoiaW1wb3J0IHBsb3RseS5leHByZXNzIGFzIHB4XG5pbXBvcnQgcGxvdGx5LmdyYXBoX29iamVjdHMgYXMgZ29cbmZyb20gcGxvdGx5LnN1YnBsb3RzIGltcG9ydCBtYWtlX3N1YnBsb3RzXG5cbiMgQ3JlYXRlIGEgc3VicGxvdCBmaWd1cmUgd2l0aCAzIHJvd3MgYW5kIHN1YnBsb3QgdGl0bGVzXG5cblxuXG5cblxuIyBBZGRpbmcgYSBzY2F0dGVyIHBsb3QgdHJhY2UgdG8gdGhlIGZpZ3VyZVxuIyAtIHgtYXhpczogJ2ZlcnRpbGl0eV9yYXRlJyBmcm9tIHRoZSBzZWxlY3RlZCBwb3B1bGF0aW9uIGRhdGFcbiMgLSB5LWF4aXM6ICdsaWZlX2V4cGVjdGFuY3knIGZyb20gdGhlIHNlbGVjdGVkIHBvcHVsYXRpb24gZGF0YVxuIyAtIG1vZGU6ICdtYXJrZXJzJyB0byBkaXNwbGF5IHBvaW50c1xuIyAtIG1hcmtlciBjb2xvcjogYmFzZWQgb24gdGhlICdjb250aW5lbnQnIGNhdGVnb3J5IGNvZGVzLCB0byBkaWZmZXJlbnRpYXRlIHBvaW50cyBieSBjb250aW5lbnRcbiMgLSB0ZXh0OiAnY291bnRyeV9jb2RlJyB0byBzaG93IGNvdW50cnkgY29kZXMgb24gaG92ZXJcbiMgLSBuYW1lOiAnU2NhdHRlcicgdG8gbGFiZWwgdGhpcyB0cmFjZVxuIyBUaGUgdHJhY2UgaXMgYWRkZWQgdG8gdGhlIGZpcnN0IHJvdyBhbmQgZmlyc3QgY29sdW1uIG9mIHRoZSBzdWJwbG90IGdyaWRcblxuXG5cblxuXG4jIEFkZGluZyBhIGJhciBjaGFydCB0cmFjZSB0byB0aGUgZmlndXJlXG4jIC0geC1heGlzOiAnY291bnRyeV9jb2RlJyBmcm9tIHRoZSBzZWxlY3RlZCBwb3B1bGF0aW9uIGRhdGFcbiMgLSB5LWF4aXM6ICdmZXJ0aWxpdHlfcmF0ZScgZnJvbSB0aGUgc2VsZWN0ZWQgcG9wdWxhdGlvbiBkYXRhXG4jIC0gbWFya2VyIGNvbG9yOiBiYXNlZCBvbiB0aGUgJ2NvbnRpbmVudCcgY2F0ZWdvcnkgY29kZXMsIHRvIGRpZmZlcmVudGlhdGUgYmFycyBieSBjb250aW5lbnRcbiMgLSBuYW1lOiAnQmFyJyB0byBsYWJlbCB0aGlzIHRyYWNlXG4jIFRoZSB0cmFjZSBpcyBhZGRlZCB0byB0aGUgc2Vjb25kIHJvdyBhbmQgZmlyc3QgY29sdW1uIG9mIHRoZSBzdWJwbG90IGdyaWRcblxuXG5cblxuXG4jIEFkZGluZyBhIHNjYXR0ZXIgcGxvdCB0cmFjZSB0byB0aGUgZmlndXJlXG4jIC0geC1heGlzOiAnY291bnRyeV9jb2RlJyBmcm9tIHRoZSBzZWxlY3RlZCBwb3B1bGF0aW9uIGRhdGFcbiMgLSB5LWF4aXM6ICdsaWZlX2V4cGVjdGFuY3knIGZyb20gdGhlIHNlbGVjdGVkIHBvcHVsYXRpb24gZGF0YVxuIyAtIG1vZGU6ICdtYXJrZXJzJyB0byBkaXNwbGF5IHBvaW50c1xuIyAtIG1hcmtlciBjb2xvcjogYmFzZWQgb24gdGhlICdjb250aW5lbnQnIGNhdGVnb3J5IGNvZGVzLCB0byBkaWZmZXJlbnRpYXRlIHBvaW50cyBieSBjb250aW5lbnRcbiMgLSBuYW1lOiAnU2NhdHRlcicgdG8gbGFiZWwgdGhpcyB0cmFjZVxuIyBUaGUgdHJhY2UgaXMgYWRkZWQgdG8gdGhlIHRoaXJkIHJvdyBhbmQgZmlyc3QgY29sdW1uIG9mIHRoZSBzdWJwbG90IGdyaWRcblxuXG5cblxuXG4jIFVwZGF0ZSBsYXlvdXQgdG8gaW5jbHVkZSB0aXRsZSwgaGlkZSBsZWdlbmQsIGFuZCBzZXQgaGVpZ2h0IHRvIDkwMFxuXG4ifQ==
+</script>
+</div>
+</section>
+<section id="adding-contextual-text-and-summaries-1" class="level3">
+<h3 class="anchored" data-anchor-id="adding-contextual-text-and-summaries-1">Adding Contextual Text and Summaries</h3>
+<div>
+<div id="pyodide-77" class="exercise-cell">
+
+</div>
+<script type="pyodide-77-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWUsInBlcnNpc3QiOnRydWV9LCJjb2RlIjoiIyBDb3B5IG92ZXIgcGxvdCBjcmVhdGlvbiBjb2RlIGZyb20gcHJldmlvdXNcblxuIyBVcGRhdGluZyB0aGUgbGF5b3V0IG9mIHRoZSBmaWd1cmVcbiMgLSBTZXR0aW5nIHRoZSB0aXRsZSB0ZXh0IG9mIHRoZSBlbnRpcmUgZmlndXJlXG4jIC0gRGlzYWJsaW5nIHRoZSBsZWdlbmQgZGlzcGxheVxuIyAtIFNldHRpbmcgdGhlIGhlaWdodCBvZiB0aGUgZmlndXJlIHRvIDkwMCBwaXhlbHNcbiMgLSBBZGRpbmcgYW4gYW5ub3RhdGlvbiB0byBwcm92aWRlIGFkZGl0aW9uYWwgaW5mb3JtYXRpb24gYWJvdXQgdGhlIHJlcG9ydFxuIyAgIC0gQW5ub3RhdGlvbiB0ZXh0OiBBIGJyaWVmIGRlc2NyaXB0aW9uIG9mIHRoZSByZXBvcnQgY29udGVudFxuIyAgIC0geHJlZiBhbmQgeXJlZjogU2V0dGluZyB0aGUgcmVmZXJlbmNlIGZyYW1lIHRvICdwYXBlcicgY29vcmRpbmF0ZXMgKHJlbGF0aXZlIHRvIHRoZSBlbnRpcmUgZmlndXJlKVxuIyAgIC0geCBhbmQgeTogUG9zaXRpb25pbmcgdGhlIGFubm90YXRpb24gYXQgdGhlIGNlbnRlciB0b3Agb2YgdGhlIGZpZ3VyZVxuIyAgIC0gc2hvd2Fycm93OiBEaXNhYmxpbmcgdGhlIGFycm93IGZvciB0aGUgYW5ub3RhdGlvblxuIyAgIC0gZm9udDogU2V0dGluZyB0aGUgZm9udCBzaXplIG9mIHRoZSBhbm5vdGF0aW9uIHRleHRcblxuXG5cblxuIyBBZGQgc3VtbWFyaWVzIGJlbG93IGVhY2ggc3VicGxvdFxuZmlnLmFkZF9hbm5vdGF0aW9uKHRleHQ9J0EgbmVnYXRpdmUgY29ycmVsYXRpb24gYmV0d2VlbiBGZXJ0aWxpdHkgUmF0ZSBhbmQgTGlmZSBFeHBlY3RhbmN5LicsIHhyZWY9J3BhcGVyJywgeXJlZj0ncGFwZXInLCB4PTAsIHk9MC43NSwgc2hvd2Fycm93PUZhbHNlLCBmb250PWRpY3Qoc2l6ZT0xMikpXG5maWcuYWRkX2Fubm90YXRpb24odGV4dD0nRmVydGlsaXR5IHJhdGVzIHZhcnkgc2lnbmlmaWNhbnRseSBhY3Jvc3MgY291bnRyaWVzLCB3aXRoIEFmcmljYW4gY291bnRyaWVzIGdlbmVyYWxseSBleGhpYml0aW5nIGhpZ2hlciBmZXJ0aWxpdHkgcmF0ZXMuJywgeHJlZj0ncGFwZXInLCB5cmVmPSdwYXBlcicsIHg9MCwgeT0wLjMwLCBzaG93YXJyb3c9RmFsc2UsIGZvbnQ9ZGljdChzaXplPTEyKSlcbmZpZy5hZGRfYW5ub3RhdGlvbih0ZXh0PSdMaWZlIGV4cGVjdGFuY3kgdmFyaWVzIGFjcm9zcyBjb3VudHJpZXMgYW5kIGNvbnRpbmVudHMsIHdpdGggRXVyb3BlYW4gdGVuZGluZyB0byBoYXZlIGhpZ2hlciBsaWZlIGV4cGVjdGFuY2llcy4nLCB4cmVmPSdwYXBlcicsIHlyZWY9J3BhcGVyJywgeD0wLCB5PS0wLjEsIHNob3dhcnJvdz1GYWxzZSwgZm9udD1kaWN0KHNpemU9MTIpKVxuXG5maWcuc2hvdygpIn0=
+</script>
+</div>
+</section>
+<section id="self-check-2" class="level3">
+<h3 class="anchored" data-anchor-id="self-check-2">Self-Check</h3>
+<p>By the end of this module, you should be able to:</p>
+<ul class="task-list">
+<li><label><input type="checkbox">Create basic interactive charts with Plotly Express (<code>px.line</code>, <code>px.scatter</code>)</label></li>
+<li><label><input type="checkbox">Add interactive elements such as hover text, color encoding, and custom labels</label></li>
+<li><label><input type="checkbox">Build multi-panel dashboards with <code>make_subplots</code> and <code>add_trace</code></label></li>
+<li><label><input type="checkbox">Combine <code>go.Scatter</code> and <code>go.Bar</code> traces into a single figure</label></li>
+<li><label><input type="checkbox">Add contextual annotations and summary text to a report with <code>add_annotation</code></label></li>
+<li><label><input type="checkbox">Confirm Plotly figures render by initializing the notebook mode and calling <code>fig.show()</code></label></li>
+</ul>
+<hr>
+</section>
+</section>
+</section>
+<section id="module-4-real-world-data-analysis-project" class="level1">
+<h1>Module 4: Real-World Data Analysis Project</h1>
+<section id="walkthrough-4.1-interactive-charts-and-dashboards-with-plotly" class="level2">
+<h2 class="anchored" data-anchor-id="walkthrough-4.1-interactive-charts-and-dashboards-with-plotly">Walkthrough 4.1: Interactive Charts and Dashboards with Plotly</h2>
+<section id="selecting-a-dataset" class="level3">
+<h3 class="anchored" data-anchor-id="selecting-a-dataset">Selecting a Dataset</h3>
+<section id="questions-to-ask" class="level4">
+<h4 class="anchored" data-anchor-id="questions-to-ask">Questions to Ask:</h4>
+<ol type="1">
+<li><strong>What industry problem or area of interest does the dataset align with?</strong>
+<ul>
+<li>Is the dataset relevant to economic analysis, market research, policy planning, or another industry?</li>
+</ul></li>
+<li><strong>Does the dataset provide sufficient complexity and scope for a thorough analysis?</strong>
+<ul>
+<li>Does it include multiple variables and data points across different time periods and categories (e.g., income groups, countries)?</li>
+</ul></li>
+<li><strong>What specific questions or hypotheses do we want to explore with this dataset?</strong>
+<ul>
+<li>Are we interested in comparing economic indicators across countries, understanding the impact of GDP per capita on other variables, or identifying trends over time?</li>
+</ul></li>
+</ol>
+</section>
+<section id="example" class="level4">
+<h4 class="anchored" data-anchor-id="example">Example:</h4>
+<ul>
+<li><strong>Dataset</strong>: The <code>economies</code> dataset.</li>
+<li><strong>Industry Problem</strong>: Understanding economic disparities between countries and the impact of economic indicators on overall economic health.</li>
+<li><strong>Specific Questions</strong>:
+<ul>
+<li>How do GDP per capita and gross savings vary across different income groups?</li>
+<li>How has the inflation rate changed over time for specified income groups?</li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="applying-cleaning-transforming-and-analysis-techniques" class="level3">
+<h3 class="anchored" data-anchor-id="applying-cleaning-transforming-and-analysis-techniques">Applying Cleaning, Transforming, and Analysis Techniques</h3>
+<section id="questions-to-ask-1" class="level4">
+<h4 class="anchored" data-anchor-id="questions-to-ask-1">Questions to Ask:</h4>
+<ol type="1">
+<li><strong>What cleaning steps are necessary to prepare the data for analysis?</strong>
+<ul>
+<li>Are there any missing values that need to be handled? Are there any inconsistencies in data types?</li>
+</ul></li>
+<li><strong>What transformations are required to make the data analysis-ready?</strong>
+<ul>
+<li>Do we need to create new columns, filter specific rows, or aggregate data by certain categories?</li>
+</ul></li>
+<li><strong>How can we analyze the data to uncover patterns, trends, or anomalies?</strong>
+<ul>
+<li>What statistical methods or visualizations can we use to explore relationships between variables?</li>
+</ul></li>
+</ol>
+</section>
+<section id="example-1" class="level4">
+<h4 class="anchored" data-anchor-id="example-1">Example:</h4>
+<ul>
+<li><strong>Cleaning</strong>:</li>
+</ul>
+<div>
+<div id="pyodide-78" class="exercise-cell">
+
+</div>
+<script type="pyodide-78-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWUsInBlcnNpc3QiOnRydWV9LCJjb2RlIjoiICAjIEhhbmRsZSBtaXNzaW5nIHZhbHVlc1xuICBlY29ub21pZXNfY2xlYW5lZCA9IGVjb25vbWllcy5maWxsbmEoe1xuICAgICAgJ2dkcF9wZXJjYXBpdGEnOiBlY29ub21pZXNbJ2dkcF9wZXJjYXBpdGEnXS5tZWFuKCksXG4gICAgICAnZ3Jvc3Nfc2F2aW5ncyc6IGVjb25vbWllc1snZ3Jvc3Nfc2F2aW5ncyddLm1lYW4oKSxcbiAgICAgICdpbmZsYXRpb25fcmF0ZSc6IGVjb25vbWllc1snaW5mbGF0aW9uX3JhdGUnXS5tZWFuKCksXG4gICAgICAndG90YWxfaW52ZXN0bWVudCc6IGVjb25vbWllc1sndG90YWxfaW52ZXN0bWVudCddLm1lYW4oKSxcbiAgICAgICd1bmVtcGxveW1lbnRfcmF0ZSc6IGVjb25vbWllc1sndW5lbXBsb3ltZW50X3JhdGUnXS5tZWFuKCksXG4gICAgICAnZXhwb3J0cyc6IGVjb25vbWllc1snZXhwb3J0cyddLm1lYW4oKSxcbiAgICAgICdpbXBvcnRzJzogZWNvbm9taWVzWydpbXBvcnRzJ10ubWVhbigpXG4gIH0pXG5cbiAgIyBDb252ZXJ0IGNhdGVnb3JpY2FsIHZhcmlhYmxlcyB0byBjYXRlZ29yeSB0eXBlXG4gIGVjb25vbWllc19jbGVhbmVkWydpbmNvbWVfZ3JvdXAnXSA9IGVjb25vbWllc19jbGVhbmVkWydpbmNvbWVfZ3JvdXAnXS5hc3R5cGUoJ2NhdGVnb3J5JylcbiAgZWNvbm9taWVzX2NsZWFuZWQifQ==
+</script>
+</div>
+<blockquote class="blockquote">
+<p><strong>Common Pitfall:</strong> Build new columns on a DataFrame you fully own (here <code>economies_cleaned</code>, created by <code>fillna</code>), not on a filtered slice of another DataFrame. Assigning to a column of a slice can raise pandas’ <code>SettingWithCopyWarning</code> and may not update the data you expect. When you need an independent copy, use <code>.copy()</code>.</p>
+</blockquote>
+<ul>
+<li><strong>Transforming</strong>:</li>
+</ul>
+<div>
+<div id="pyodide-79" class="exercise-cell">
+
+</div>
+<script type="pyodide-79-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWUsInBlcnNpc3QiOnRydWV9LCJjb2RlIjoiICAjIENyZWF0ZSBuZXcgY29sdW1ucyBmb3IgYW5hbHlzaXNcbiAgZWNvbm9taWVzX2NsZWFuZWRbJ2dkcF9ncm93dGgnXSA9IGVjb25vbWllc19jbGVhbmVkLmdyb3VwYnkoJ2NvZGUnKVsnZ2RwX3BlcmNhcGl0YSddLnBjdF9jaGFuZ2UoKVxuICBlY29ub21pZXNfY2xlYW5lZCJ9
+</script>
+</div>
+<ul>
+<li><strong>Analyzing</strong>:</li>
+</ul>
+<div>
+<div id="pyodide-80" class="exercise-cell">
+
+</div>
+<script type="pyodide-80-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWUsInBlcnNpc3QiOnRydWV9LCJjb2RlIjoiICBpbXBvcnQgc2VhYm9ybiBhcyBzbnNcbiAgaW1wb3J0IG1hdHBsb3RsaWIucHlwbG90IGFzIHBsdFxuXG4gIHBsdC5jbGYoKVxuXG4gICMgQW5hbHl6ZSB0aGUgcmVsYXRpb25zaGlwIGJldHdlZW4gR0RQIHBlciBjYXBpdGEgYW5kIGdyb3NzIHNhdmluZ3NcbiAgc25zLnNjYXR0ZXJwbG90KGRhdGE9ZWNvbm9taWVzX2NsZWFuZWQsIHg9J2dkcF9wZXJjYXBpdGEnLCB5PSdncm9zc19zYXZpbmdzJywgaHVlPSdpbmNvbWVfZ3JvdXAnKVxuICBwbHQudGl0bGUoJ0dEUCBQZXIgQ2FwaXRhIHZzLiBHcm9zcyBTYXZpbmdzIGJ5IEluY29tZSBHcm91cCcpXG4gIHBsdC5zaG93KClcbiAgcGx0LmNsZigpXG5cbiAgIyBBbmFseXplIHRoZSB0cmVuZCBvZiBpbmZsYXRpb24gcmF0ZSBvdmVyIHRpbWUgZm9yIGFsbCBjbGFzc2lmaWVkIGluY29tZSBncm91cHNcbiAgY2xhc3NpZmllZF9kYXRhID0gZWNvbm9taWVzX2NsZWFuZWRbZWNvbm9taWVzX2NsZWFuZWRbJ2luY29tZV9ncm91cCddICE9ICdOb3QgY2xhc3NpZmllZCddXG4gIHNucy5saW5lcGxvdChkYXRhPWNsYXNzaWZpZWRfZGF0YSwgeD0neWVhcicsIHk9J2luZmxhdGlvbl9yYXRlJyxcbiAgICAgICAgICAgICAgIGh1ZT0naW5jb21lX2dyb3VwJywgZXJyb3JiYXI9Tm9uZSlcbiAgcGx0LnRpdGxlKCdJbmZsYXRpb24gUmF0ZSBPdmVyIFRpbWUgYnkgU3BlY2lmaWVkIEluY29tZSBHcm91cCcpXG4gIHBsdC5sZWdlbmQodGl0bGU9J0luY29tZSBHcm91cCcsIGxhYmVscz1jbGFzc2lmaWVkX2RhdGFbJ2luY29tZV9ncm91cCddLnVuaXF1ZSgpKVxuICBwbHQuc2hvdygpIn0=
+</script>
+</div>
+</section>
+</section>
+<section id="initial-findings-and-interpretation" class="level3">
+<h3 class="anchored" data-anchor-id="initial-findings-and-interpretation">Initial Findings and Interpretation</h3>
+<section id="questions-to-ask-2" class="level4">
+<h4 class="anchored" data-anchor-id="questions-to-ask-2">Questions to Ask:</h4>
+<ol type="1">
+<li><strong>What do the initial findings tell us about the data?</strong>
+<ul>
+<li>Are there any notable patterns or trends in the data? Are there any unexpected results?</li>
+</ul></li>
+<li><strong>How do these insights relate to the problem defined earlier?</strong>
+<ul>
+<li>Do the findings help us understand economic disparities between countries? Do they provide insights into the impact of certain economic indicators?</li>
+</ul></li>
+<li><strong>What hypotheses can we test based on the initial results?</strong>
+<ul>
+<li>Can we test hypotheses about the relationship between GDP per capita and other economic indicators? Can we refine our analysis to explore these hypotheses further?</li>
+</ul></li>
+</ol>
+</section>
+<section id="example-2" class="level4">
+<h4 class="anchored" data-anchor-id="example-2">Example:</h4>
+<ul>
+<li><strong>Initial Findings</strong>:
+<ul>
+<li><strong>GDP per Capita vs.&nbsp;Gross Savings</strong>: The scatter plot shows that high-income countries generally have higher GDP per capita and gross savings. There seems to be a slight positive correlation between these two indicators.</li>
+<li><strong>Inflation Rate Over Time</strong>: The line plot indicates that inflation rates vary significantly over time and across different income groups. Low and lower middle income countries tend to experience higher volatility in inflation rates.</li>
+</ul></li>
+<li><strong>Interpretation</strong>:
+<ul>
+<li>These findings suggest that economic health, as measured by GDP per capita and gross savings, is strongly influenced by the income group of a country. High-income countries appear to have more stable and higher economic performance.</li>
+<li>The volatility in inflation rates among low-income countries may indicate economic instability, which could be a key area for policy intervention.</li>
+</ul></li>
+<li><strong>Hypotheses</strong>:
+<ul>
+<li><strong>Hypothesis 1</strong>: High-income countries have a higher average GDP per capita and gross savings compared to low-income countries.</li>
+<li><strong>Hypothesis 2</strong>: Low-income countries experience greater volatility in inflation rates compared to high-income countries.</li>
+</ul></li>
+<li><strong>Next Steps</strong>:
+<ul>
+<li>Conduct further analysis to test these hypotheses, using statistical methods to confirm the observed patterns.</li>
+<li>Explore other economic indicators to gain a more comprehensive understanding of economic disparities and trends.</li>
+</ul></li>
+</ul>
+<p>By following these steps, you can effectively select, clean, transform, and analyze the <code>economies</code> dataset to gain valuable insights and address common industry problems or research questions.</p>
+</section>
+</section>
+</section>
+<section id="walkthrough-4.2-finalizing-and-presenting-your-data-analysis-project" class="level2">
+<h2 class="anchored" data-anchor-id="walkthrough-4.2-finalizing-and-presenting-your-data-analysis-project">Walkthrough 4.2: Finalizing and Presenting Your Data Analysis Project</h2>
+<section id="integrate-feedback-to-refine-the-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="integrate-feedback-to-refine-the-analysis">Integrate Feedback to Refine the Analysis</h3>
+<section id="questions-to-ask-3" class="level4">
+<h4 class="anchored" data-anchor-id="questions-to-ask-3">Questions to Ask:</h4>
+<ol type="1">
+<li><strong>What feedback have you received from peers, stakeholders, or mentors?</strong>
+<ul>
+<li>Is there feedback on the clarity of the analysis, choice of visualizations, or the comprehensiveness of the analysis?</li>
+</ul></li>
+<li><strong>How can you incorporate this feedback into your analysis?</strong>
+<ul>
+<li>Are there additional variables that need to be analyzed? Do you need to clean the data further or adjust the visualizations?</li>
+</ul></li>
+<li><strong>What new questions or hypotheses have emerged from the feedback?</strong>
+<ul>
+<li>Does the feedback suggest new directions for the analysis or areas that need more focus?</li>
+</ul></li>
+</ol>
+</section>
+<section id="example-3" class="level4">
+<h4 class="anchored" data-anchor-id="example-3">Example:</h4>
+<ul>
+<li><strong>Feedback</strong>:
+<ul>
+<li>Peers suggested that the analysis should also consider the impact of unemployment rates.</li>
+<li>Stakeholders requested more clarity on the relationship between GDP per capita and inflation rates across different income groups.</li>
+</ul></li>
+<li><strong>Refining the Analysis</strong>:
+<ul>
+<li>Additional data needs to be found to meet the request for more clarity. Or maybe a further drilldown on specific countries would be helpful?</li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="finalize-the-presentation-with-impactful-visuals-and-narrative" class="level3">
+<h3 class="anchored" data-anchor-id="finalize-the-presentation-with-impactful-visuals-and-narrative">Finalize the Presentation with Impactful Visuals and Narrative</h3>
+<section id="questions-to-ask-4" class="level4">
+<h4 class="anchored" data-anchor-id="questions-to-ask-4">Questions to Ask:</h4>
+<ol type="1">
+<li><strong>What are the key insights from the analysis that need to be highlighted?</strong>
+<ul>
+<li>What are the most important findings that should be communicated to the audience?</li>
+</ul></li>
+<li><strong>How can you create impactful visuals that clearly convey these insights?</strong>
+<ul>
+<li>What types of charts or visualizations best represent the data and findings?</li>
+</ul></li>
+<li><strong>What narrative will you use to guide the audience through the presentation?</strong>
+<ul>
+<li>How will you structure the presentation to tell a compelling story with the data?</li>
+</ul></li>
+</ol>
+</section>
+<section id="example-4" class="level4">
+<h4 class="anchored" data-anchor-id="example-4">Example:</h4>
+<ul>
+<li><strong>Key Insights</strong>:
+<ul>
+<li>High-income countries have higher GDP per capita and gross savings.</li>
+<li>There is a positive correlation between GDP per capita and gross savings.</li>
+<li>Low-income countries experience greater volatility in inflation rates.</li>
+<li>Unemployment rates vary significantly across income groups.</li>
+</ul></li>
+<li><strong>Impactful Visuals</strong>:</li>
+</ul>
+<div>
+<div id="pyodide-81" class="exercise-cell">
+
+</div>
+<script type="pyodide-81-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWUsInBlcnNpc3QiOnRydWV9LCJjb2RlIjoiICBpbXBvcnQgcGxvdGx5LmV4cHJlc3MgYXMgcHhcblxuICAjIEJhciBjaGFydCBvZiBHRFAgcGVyIENhcGl0YSBieSBDb3VudHJ5IGFuZCBJbmNvbWUgR3JvdXBcbiAgYmFyX2ZpZyA9IHB4LmJhcihlY29ub21pZXNfY2xlYW5lZCwgeD0nY29kZScsIHk9J2dkcF9wZXJjYXBpdGEnLCBjb2xvcj0naW5jb21lX2dyb3VwJyxcbiAgICAgICAgICAgICAgICAgICB0aXRsZT0nR0RQIFBlciBDYXBpdGEgYnkgQ291bnRyeSBhbmQgSW5jb21lIEdyb3VwICgyMDIwKScsXG4gICAgICAgICAgICAgICAgICAgbGFiZWxzPXsnZ2RwX3BlcmNhcGl0YSc6ICdHRFAgUGVyIENhcGl0YScsICdjb2RlJzogJ0NvdW50cnkgQ29kZSd9KVxuICBiYXJfZmlnLnNob3coKVxuXG4gICMgU2NhdHRlciBwbG90IG9mIEdEUCBwZXIgQ2FwaXRhIHZzLiBHcm9zcyBTYXZpbmdzIGJ5IEluY29tZSBHcm91cFxuICBzY2F0dGVyX2ZpZyA9IHB4LnNjYXR0ZXIoZWNvbm9taWVzX2NsZWFuZWQsIHg9J2dkcF9wZXJjYXBpdGEnLCB5PSdncm9zc19zYXZpbmdzJywgY29sb3I9J2luY29tZV9ncm91cCcsXG4gICAgICAgICAgICAgICAgICAgICAgICAgICBob3Zlcl9uYW1lPSdjb2RlJywgdGl0bGU9J0dEUCBQZXIgQ2FwaXRhIHZzLiBHcm9zcyBTYXZpbmdzICgyMDIwKScsXG4gICAgICAgICAgICAgICAgICAgICAgICAgICBsYWJlbHM9eydnZHBfcGVyY2FwaXRhJzogJ0dEUCBQZXIgQ2FwaXRhJywgJ2dyb3NzX3NhdmluZ3MnOiAnR3Jvc3MgU2F2aW5ncyAoJSknfSlcbiAgc2NhdHRlcl9maWcuc2hvdygpXG5cbiAgIyBTY2F0dGVyIHBsb3Qgb2YgR0RQIHBlciBDYXBpdGEgdnMuIFVuZW1wbG95bWVudCBSYXRlIGJ5IEluY29tZSBHcm91cFxuICBzY2F0dGVyX2ZpZ18yID0gcHguc2NhdHRlcihlY29ub21pZXNfY2xlYW5lZCwgeD0nZ2RwX3BlcmNhcGl0YScsIHk9J3VuZW1wbG95bWVudF9yYXRlJywgY29sb3I9J2luY29tZV9ncm91cCcsXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgIGhvdmVyX25hbWU9J2NvZGUnLCB0aXRsZT0nR0RQIFBlciBDYXBpdGEgdnMuIFVuZW1wbG95bWVudCBSYXRlICgyMDIwKScsXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgIGxhYmVscz17J2dkcF9wZXJjYXBpdGEnOiAnR0RQIFBlciBDYXBpdGEnLCAndW5lbXBsb3ltZW50X3JhdGUnOiAnVW5lbXBsb3ltZW50IFJhdGUgKCUpJ30pXG4gIHNjYXR0ZXJfZmlnXzIuc2hvdygpIn0=
+</script>
+</div>
+<ul>
+<li><strong>Narrative</strong>:
+<ul>
+<li><strong>Introduction</strong>: Introduce the dataset and the industry problem. Explain why understanding economic indicators across different income groups is important.</li>
+<li><strong>Key Findings</strong>: Present the key findings using the visualizations created. Highlight the relationship between GDP per capita, gross savings, inflation rates, and unemployment rates.</li>
+<li><strong>Detailed Analysis</strong>: Dive deeper into each key finding, providing more context and interpretation. Explain the significance of the trends and patterns observed in the data.</li>
+<li><strong>Conclusion</strong>: Summarize the insights and discuss potential implications for policy or business decisions. Suggest areas for further research or analysis based on the findings.</li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="rehearse-the-presentation" class="level3">
+<h3 class="anchored" data-anchor-id="rehearse-the-presentation">Rehearse the Presentation</h3>
+<section id="questions-to-ask-5" class="level4">
+<h4 class="anchored" data-anchor-id="questions-to-ask-5">Questions to Ask:</h4>
+<ol type="1">
+<li><strong>How will you structure your presentation to ensure a smooth flow?</strong>
+<ul>
+<li>What order will you present the visualizations and insights? How will you transition between different sections?</li>
+</ul></li>
+<li><strong>How will you engage your audience and ensure they understand the key points?</strong>
+<ul>
+<li>What techniques will you use to highlight important information and keep the audience’s attention?</li>
+</ul></li>
+<li><strong>What potential questions or feedback might you receive, and how will you address them?</strong>
+<ul>
+<li>How will you prepare for questions about the data, analysis methods, or findings?</li>
+</ul></li>
+</ol>
+</section>
+<section id="example-5" class="level4">
+<h4 class="anchored" data-anchor-id="example-5">Example:</h4>
+<ul>
+<li><strong>Structuring the Presentation</strong>:
+<ul>
+<li>Start with an overview of the dataset and the industry problem.</li>
+<li>Move on to the key findings, using the most impactful visualizations to illustrate each point.</li>
+<li>Provide a detailed analysis of each finding, explaining the significance and implications.</li>
+<li>Conclude with a summary of insights and suggestions for further research.</li>
+</ul></li>
+<li><strong>Engaging the Audience</strong>:
+<ul>
+<li>Use clear and concise language to explain complex concepts.</li>
+<li>Highlight key points using annotations or callouts on the visualizations.</li>
+<li>Encourage questions and interaction to keep the audience engaged.</li>
+</ul></li>
+<li><strong>Preparing for Questions</strong>:
+<ul>
+<li>Anticipate common questions about the data sources, cleaning methods, and analysis techniques.</li>
+<li>Prepare explanations for any limitations of the data or analysis.</li>
+<li>Be ready to discuss potential next steps and areas for further research based on the findings.</li>
+</ul></li>
+</ul>
+<p>By following these steps, you can effectively integrate feedback, finalize your presentation with impactful visuals and narrative, and rehearse to ensure a smooth and engaging delivery.</p>
+</section>
+</section>
+<section id="self-check-3" class="level3">
+<h3 class="anchored" data-anchor-id="self-check-3">Self-Check</h3>
+<p>By the end of this module, you should be able to:</p>
+<ul class="task-list">
+<li><label><input type="checkbox">Select a dataset and frame the industry problem and questions it can answer</label></li>
+<li><label><input type="checkbox">Apply cleaning and transforming techniques to prepare data for analysis</label></li>
+<li><label><input type="checkbox">Engineer new columns, such as a grouped <code>pct_change</code>, for deeper analysis</label></li>
+<li><label><input type="checkbox">Produce exploratory visuals and interpret initial findings into hypotheses</label></li>
+<li><label><input type="checkbox">Integrate feedback to refine the analysis and choice of visualizations</label></li>
+<li><label><input type="checkbox">Finalize and rehearse a presentation that tells a clear, impactful data story</label></li>
+</ul>
+
+
+<script type="pyodide-data">
+eyJvcHRpb25zIjp7ImVudiI6eyJQTE9UTFlfUkVOREVSRVIiOiJwbG90bHlfbWltZXR5cGUifSwiaW5kZXhVUkwiOiJodHRwczovL2Nkbi5qc2RlbGl2ci5uZXQvcHlvZGlkZS92MC4yOC4xL2Z1bGwvIn0sInBhY2thZ2VzIjp7InBrZ3MiOlsicHlvZGlkZV9odHRwIiwibWljcm9waXAiLCJpcHl0aG9uIiwibnVtcHkiLCJwYW5kYXMiLCJtYXRwbG90bGliIiwic2VhYm9ybiIsInBsb3RseSIsIm9wZW5weXhsIl19fQ==
+</script>
+<script type="ojs-module-contents">
+eyJjb250ZW50cyI6W3siY2VsbE5hbWUiOiJweW9kaWRlLTgxIiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldCIsInNvdXJjZSI6InZpZXdvZiBfcHlvZGlkZV9lZGl0b3JfODEgPSB7XG4gIGNvbnN0IHsgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yLCBiNjREZWNvZGUgfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWU7XG5cbiAgY29uc3Qgc2NyaXB0Q29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJweW9kaWRlLTgxLWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHB5b2RpZGUtODEtY29udGVudHNgIH0sIGJsb2NrLmF0dHIpO1xuICBjb25zdCBlZGl0b3IgPSBuZXcgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yKFxuICAgIHB5b2RpZGVPanMucHlvZGlkZVByb21pc2UsXG4gICAgYmxvY2suY29kZSxcbiAgICBvcHRpb25zXG4gICk7XG5cbiAgcmV0dXJuIGVkaXRvci5jb250YWluZXI7XG59XG5fcHlvZGlkZV92YWx1ZV84MSA9IHB5b2RpZGVPanMucHJvY2VzcyhfcHlvZGlkZV9lZGl0b3JfODEsIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJweW9kaWRlLTgwIiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldCIsInNvdXJjZSI6InZpZXdvZiBfcHlvZGlkZV9lZGl0b3JfODAgPSB7XG4gIGNvbnN0IHsgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yLCBiNjREZWNvZGUgfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWU7XG5cbiAgY29uc3Qgc2NyaXB0Q29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJweW9kaWRlLTgwLWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHB5b2RpZGUtODAtY29udGVudHNgIH0sIGJsb2NrLmF0dHIpO1xuICBjb25zdCBlZGl0b3IgPSBuZXcgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yKFxuICAgIHB5b2RpZGVPanMucHlvZGlkZVByb21pc2UsXG4gICAgYmxvY2suY29kZSxcbiAgICBvcHRpb25zXG4gICk7XG5cbiAgcmV0dXJuIGVkaXRvci5jb250YWluZXI7XG59XG5fcHlvZGlkZV92YWx1ZV84MCA9IHB5b2RpZGVPanMucHJvY2VzcyhfcHlvZGlkZV9lZGl0b3JfODAsIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJweW9kaWRlLTc5IiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldCIsInNvdXJjZSI6InZpZXdvZiBfcHlvZGlkZV9lZGl0b3JfNzkgPSB7XG4gIGNvbnN0IHsgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yLCBiNjREZWNvZGUgfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWU7XG5cbiAgY29uc3Qgc2NyaXB0Q29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJweW9kaWRlLTc5LWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHB5b2RpZGUtNzktY29udGVudHNgIH0sIGJsb2NrLmF0dHIpO1xuICBjb25zdCBlZGl0b3IgPSBuZXcgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yKFxuICAgIHB5b2RpZGVPanMucHlvZGlkZVByb21pc2UsXG4gICAgYmxvY2suY29kZSxcbiAgICBvcHRpb25zXG4gICk7XG5cbiAgcmV0dXJuIGVkaXRvci5jb250YWluZXI7XG59XG5fcHlvZGlkZV92YWx1ZV83OSA9IHB5b2RpZGVPanMucHJvY2VzcyhfcHlvZGlkZV9lZGl0b3JfNzksIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJweW9kaWRlLTc4IiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldCIsInNvdXJjZSI6InZpZXdvZiBfcHlvZGlkZV9lZGl0b3JfNzggPSB7XG4gIGNvbnN0IHsgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yLCBiNjREZWNvZGUgfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWU7XG5cbiAgY29uc3Qgc2NyaXB0Q29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJweW9kaWRlLTc4LWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHB5b2RpZGUtNzgtY29udGVudHNgIH0sIGJsb2NrLmF0dHIpO1xuICBjb25zdCBlZGl0b3IgPSBuZXcgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yKFxuICAgIHB5b2RpZGVPanMucHlvZGlkZVByb21pc2UsXG4gICAgYmxvY2suY29kZSxcbiAgICBvcHRpb25zXG4gICk7XG5cbiAgcmV0dXJuIGVkaXRvci5jb250YWluZXI7XG59XG5fcHlvZGlkZV92YWx1ZV83OCA9IHB5b2RpZGVPanMucHJvY2VzcyhfcHlvZGlkZV9lZGl0b3JfNzgsIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJweW9kaWRlLTc3IiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldCIsInNvdXJjZSI6InZpZXdvZiBfcHlvZGlkZV9lZGl0b3JfNzcgPSB7XG4gIGNvbnN0IHsgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yLCBiNjREZWNvZGUgfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWU7XG5cbiAgY29uc3Qgc2NyaXB0Q29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJweW9kaWRlLTc3LWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHB5b2RpZGUtNzctY29udGVudHNgIH0sIGJsb2NrLmF0dHIpO1xuICBjb25zdCBlZGl0b3IgPSBuZXcgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yKFxuICAgIHB5b2RpZGVPanMucHlvZGlkZVByb21pc2UsXG4gICAgYmxvY2suY29kZSxcbiAgICBvcHRpb25zXG4gICk7XG5cbiAgcmV0dXJuIGVkaXRvci5jb250YWluZXI7XG59XG5fcHlvZGlkZV92YWx1ZV83NyA9IHB5b2RpZGVPanMucHJvY2VzcyhfcHlvZGlkZV9lZGl0b3JfNzcsIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJweW9kaWRlLTc2IiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldCIsInNvdXJjZSI6InZpZXdvZiBfcHlvZGlkZV9lZGl0b3JfNzYgPSB7XG4gIGNvbnN0IHsgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yLCBiNjREZWNvZGUgfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWU7XG5cbiAgY29uc3Qgc2NyaXB0Q29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJweW9kaWRlLTc2LWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHB5b2RpZGUtNzYtY29udGVudHNgIH0sIGJsb2NrLmF0dHIpO1xuICBjb25zdCBlZGl0b3IgPSBuZXcgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yKFxuICAgIHB5b2RpZGVPanMucHlvZGlkZVByb21pc2UsXG4gICAgYmxvY2suY29kZSxcbiAgICBvcHRpb25zXG4gICk7XG5cbiAgcmV0dXJuIGVkaXRvci5jb250YWluZXI7XG59XG5fcHlvZGlkZV92YWx1ZV83NiA9IHB5b2RpZGVPanMucHJvY2VzcyhfcHlvZGlkZV9lZGl0b3JfNzYsIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJweW9kaWRlLTc1IiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldCIsInNvdXJjZSI6InZpZXdvZiBfcHlvZGlkZV9lZGl0b3JfNzUgPSB7XG4gIGNvbnN0IHsgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yLCBiNjREZWNvZGUgfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWU7XG5cbiAgY29uc3Qgc2NyaXB0Q29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJweW9kaWRlLTc1LWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHB5b2RpZGUtNzUtY29udGVudHNgIH0sIGJsb2NrLmF0dHIpO1xuICBjb25zdCBlZGl0b3IgPSBuZXcgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yKFxuICAgIHB5b2RpZGVPanMucHlvZGlkZVByb21pc2UsXG4gICAgYmxvY2suY29kZSxcbiAgICBvcHRpb25zXG4gICk7XG5cbiAgcmV0dXJuIGVkaXRvci5jb250YWluZXI7XG59XG5fcHlvZGlkZV92YWx1ZV83NSA9IHB5b2RpZGVPanMucHJvY2VzcyhfcHlvZGlkZV9lZGl0b3JfNzUsIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJweW9kaWRlLTc0IiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldCIsInNvdXJjZSI6InZpZXdvZiBfcHlvZGlkZV9lZGl0b3JfNzQgPSB7XG4gIGNvbnN0IHsgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yLCBiNjREZWNvZGUgfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWU7XG5cbiAgY29uc3Qgc2NyaXB0Q29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJweW9kaWRlLTc0LWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHB5b2RpZGUtNzQtY29udGVudHNgIH0sIGJsb2NrLmF0dHIpO1xuICBjb25zdCBlZGl0b3IgPSBuZXcgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yKFxuICAgIHB5b2RpZGVPanMucHlvZGlkZVByb21pc2UsXG4gICAgYmxvY2suY29kZSxcbiAgICBvcHRpb25zXG4gICk7XG5cbiAgcmV0dXJuIGVkaXRvci5jb250YWluZXI7XG59XG5fcHlvZGlkZV92YWx1ZV83NCA9IHB5b2RpZGVPanMucHJvY2VzcyhfcHlvZGlkZV9lZGl0b3JfNzQsIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJweW9kaWRlLTczIiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldCIsInNvdXJjZSI6InZpZXdvZiBfcHlvZGlkZV9lZGl0b3JfNzMgPSB7XG4gIGNvbnN0IHsgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yLCBiNjREZWNvZGUgfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWU7XG5cbiAgY29uc3Qgc2NyaXB0Q29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJweW9kaWRlLTczLWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHB5b2RpZGUtNzMtY29udGVudHNgIH0sIGJsb2NrLmF0dHIpO1xuICBjb25zdCBlZGl0b3IgPSBuZXcgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yKFxuICAgIHB5b2RpZGVPanMucHlvZGlkZVByb21pc2UsXG4gICAgYmxvY2suY29kZSxcbiAgICBvcHRpb25zXG4gICk7XG5cbiAgcmV0dXJuIGVkaXRvci5jb250YWluZXI7XG59XG5fcHlvZGlkZV92YWx1ZV83MyA9IHB5b2RpZGVPanMucHJvY2VzcyhfcHlvZGlkZV9lZGl0b3JfNzMsIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJweW9kaWRlLTcyIiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldCIsInNvdXJjZSI6InZpZXdvZiBfcHlvZGlkZV9lZGl0b3JfNzIgPSB7XG4gIGNvbnN0IHsgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yLCBiNjREZWNvZGUgfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWU7XG5cbiAgY29uc3Qgc2NyaXB0Q29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJweW9kaWRlLTcyLWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHB5b2RpZGUtNzItY29udGVudHNgIH0sIGJsb2NrLmF0dHIpO1xuICBjb25zdCBlZGl0b3IgPSBuZXcgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yKFxuICAgIHB5b2RpZGVPanMucHlvZGlkZVByb21pc2UsXG4gICAgYmxvY2suY29kZSxcbiAgICBvcHRpb25zXG4gICk7XG5cbiAgcmV0dXJuIGVkaXRvci5jb250YWluZXI7XG59XG5fcHlvZGlkZV92YWx1ZV83MiA9IHB5b2RpZGVPanMucHJvY2VzcyhfcHlvZGlkZV9lZGl0b3JfNzIsIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJweW9kaWRlLTcxIiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldCIsInNvdXJjZSI6InZpZXdvZiBfcHlvZGlkZV9lZGl0b3JfNzEgPSB7XG4gIGNvbnN0IHsgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yLCBiNjREZWNvZGUgfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWU7XG5cbiAgY29uc3Qgc2NyaXB0Q29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJweW9kaWRlLTcxLWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHB5b2RpZGUtNzEtY29udGVudHNgIH0sIGJsb2NrLmF0dHIpO1xuICBjb25zdCBlZGl0b3IgPSBuZXcgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yKFxuICAgIHB5b2RpZGVPanMucHlvZGlkZVByb21pc2UsXG4gICAgYmxvY2suY29kZSxcbiAgICBvcHRpb25zXG4gICk7XG5cbiAgcmV0dXJuIGVkaXRvci5jb250YWluZXI7XG59XG5fcHlvZGlkZV92YWx1ZV83MSA9IHB5b2RpZGVPanMucHJvY2VzcyhfcHlvZGlkZV9lZGl0b3JfNzEsIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJweW9kaWRlLTcwIiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldCIsInNvdXJjZSI6InZpZXdvZiBfcHlvZGlkZV9lZGl0b3JfNzAgPSB7XG4gIGNvbnN0IHsgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yLCBiNjREZWNvZGUgfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWU7XG5cbiAgY29uc3Qgc2NyaXB0Q29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJweW9kaWRlLTcwLWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHB5b2RpZGUtNzAtY29udGVudHNgIH0sIGJsb2NrLmF0dHIpO1xuICBjb25zdCBlZGl0b3IgPSBuZXcgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yKFxuICAgIHB5b2RpZGVPanMucHlvZGlkZVByb21pc2UsXG4gICAgYmxvY2suY29kZSxcbiAgICBvcHRpb25zXG4gICk7XG5cbiAgcmV0dXJuIGVkaXRvci5jb250YWluZXI7XG59XG5fcHlvZGlkZV92YWx1ZV83MCA9IHB5b2RpZGVPanMucHJvY2VzcyhfcHlvZGlkZV9lZGl0b3JfNzAsIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJweW9kaWRlLTY5IiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldCIsInNvdXJjZSI6InZpZXdvZiBfcHlvZGlkZV9lZGl0b3JfNjkgPSB7XG4gIGNvbnN0IHsgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yLCBiNjREZWNvZGUgfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWU7XG5cbiAgY29uc3Qgc2NyaXB0Q29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJweW9kaWRlLTY5LWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHB5b2RpZGUtNjktY29udGVudHNgIH0sIGJsb2NrLmF0dHIpO1xuICBjb25zdCBlZGl0b3IgPSBuZXcgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yKFxuICAgIHB5b2RpZGVPanMucHlvZGlkZVByb21pc2UsXG4gICAgYmxvY2suY29kZSxcbiAgICBvcHRpb25zXG4gICk7XG5cbiAgcmV0dXJuIGVkaXRvci5jb250YWluZXI7XG59XG5fcHlvZGlkZV92YWx1ZV82OSA9IHB5b2RpZGVPanMucHJvY2VzcyhfcHlvZGlkZV9lZGl0b3JfNjksIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJweW9kaWRlLTY4IiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldCIsInNvdXJjZSI6InZpZXdvZiBfcHlvZGlkZV9lZGl0b3JfNjggPSB7XG4gIGNvbnN0IHsgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yLCBiNjREZWNvZGUgfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWU7XG5cbiAgY29uc3Qgc2NyaXB0Q29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJweW9kaWRlLTY4LWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHB5b2RpZGUtNjgtY29udGVudHNgIH0sIGJsb2NrLmF0dHIpO1xuICBjb25zdCBlZGl0b3IgPSBuZXcgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yKFxuICAgIHB5b2RpZGVPanMucHlvZGlkZVByb21pc2UsXG4gICAgYmxvY2suY29kZSxcbiAgICBvcHRpb25zXG4gICk7XG5cbiAgcmV0dXJuIGVkaXRvci5jb250YWluZXI7XG59XG5fcHlvZGlkZV92YWx1ZV82OCA9IHB5b2RpZGVPanMucHJvY2VzcyhfcHlvZGlkZV9lZGl0b3JfNjgsIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJweW9kaWRlLTY3IiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldCIsInNvdXJjZSI6InZpZXdvZiBfcHlvZGlkZV9lZGl0b3JfNjcgPSB7XG4gIGNvbnN0IHsgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yLCBiNjREZWNvZGUgfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWU7XG5cbiAgY29uc3Qgc2NyaXB0Q29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJweW9kaWRlLTY3LWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHB5b2RpZGUtNjctY29udGVudHNgIH0sIGJsb2NrLmF0dHIpO1xuICBjb25zdCBlZGl0b3IgPSBuZXcgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yKFxuICAgIHB5b2RpZGVPanMucHlvZGlkZVByb21pc2UsXG4gICAgYmxvY2suY29kZSxcbiAgICBvcHRpb25zXG4gICk7XG5cbiAgcmV0dXJuIGVkaXRvci5jb250YWluZXI7XG59XG5fcHlvZGlkZV92YWx1ZV82NyA9IHB5b2RpZGVPanMucHJvY2VzcyhfcHlvZGlkZV9lZGl0b3JfNjcsIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJweW9kaWRlLTY2IiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldCIsInNvdXJjZSI6InZpZXdvZiBfcHlvZGlkZV9lZGl0b3JfNjYgPSB7XG4gIGNvbnN0IHsgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yLCBiNjREZWNvZGUgfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWU7XG5cbiAgY29uc3Qgc2NyaXB0Q29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJweW9kaWRlLTY2LWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHB5b2RpZGUtNjYtY29udGVudHNgIH0sIGJsb2NrLmF0dHIpO1xuICBjb25zdCBlZGl0b3IgPSBuZXcgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yKFxuICAgIHB5b2RpZGVPanMucHlvZGlkZVByb21pc2UsXG4gICAgYmxvY2suY29kZSxcbiAgICBvcHRpb25zXG4gICk7XG5cbiAgcmV0dXJuIGVkaXRvci5jb250YWluZXI7XG59XG5fcHlvZGlkZV92YWx1ZV82NiA9IHB5b2RpZGVPanMucHJvY2VzcyhfcHlvZGlkZV9lZGl0b3JfNjYsIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJweW9kaWRlLTY1IiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldCIsInNvdXJjZSI6InZpZXdvZiBfcHlvZGlkZV9lZGl0b3JfNjUgPSB7XG4gIGNvbnN0IHsgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yLCBiNjREZWNvZGUgfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWU7XG5cbiAgY29uc3Qgc2NyaXB0Q29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJweW9kaWRlLTY1LWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHB5b2RpZGUtNjUtY29udGVudHNgIH0sIGJsb2NrLmF0dHIpO1xuICBjb25zdCBlZGl0b3IgPSBuZXcgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yKFxuICAgIHB5b2RpZGVPanMucHlvZGlkZVByb21pc2UsXG4gICAgYmxvY2suY29kZSxcbiAgICBvcHRpb25zXG4gICk7XG5cbiAgcmV0dXJuIGVkaXRvci5jb250YWluZXI7XG59XG5fcHlvZGlkZV92YWx1ZV82NSA9IHB5b2RpZGVPanMucHJvY2VzcyhfcHlvZGlkZV9lZGl0b3JfNjUsIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJweW9kaWRlLTY0IiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldCIsInNvdXJjZSI6InZpZXdvZiBfcHlvZGlkZV9lZGl0b3JfNjQgPSB7XG4gIGNvbnN0IHsgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yLCBiNjREZWNvZGUgfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWU7XG5cbiAgY29uc3Qgc2NyaXB0Q29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJweW9kaWRlLTY0LWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHB5b2RpZGUtNjQtY29udGVudHNgIH0sIGJsb2NrLmF0dHIpO1xuICBjb25zdCBlZGl0b3IgPSBuZXcgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yKFxuICAgIHB5b2RpZGVPanMucHlvZGlkZVByb21pc2UsXG4gICAgYmxvY2suY29kZSxcbiAgICBvcHRpb25zXG4gICk7XG5cbiAgcmV0dXJuIGVkaXRvci5jb250YWluZXI7XG59XG5fcHlvZGlkZV92YWx1ZV82NCA9IHB5b2RpZGVPanMucHJvY2VzcyhfcHlvZGlkZV9lZGl0b3JfNjQsIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJweW9kaWRlLTYzIiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldCIsInNvdXJjZSI6InZpZXdvZiBfcHlvZGlkZV9lZGl0b3JfNjMgPSB7XG4gIGNvbnN0IHsgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yLCBiNjREZWNvZGUgfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWU7XG5cbiAgY29uc3Qgc2NyaXB0Q29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJweW9kaWRlLTYzLWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHB5b2RpZGUtNjMtY29udGVudHNgIH0sIGJsb2NrLmF0dHIpO1xuICBjb25zdCBlZGl0b3IgPSBuZXcgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yKFxuICAgIHB5b2RpZGVPanMucHlvZGlkZVByb21pc2UsXG4gICAgYmxvY2suY29kZSxcbiAgICBvcHRpb25zXG4gICk7XG5cbiAgcmV0dXJuIGVkaXRvci5jb250YWluZXI7XG59XG5fcHlvZGlkZV92YWx1ZV82MyA9IHB5b2RpZGVPanMucHJvY2VzcyhfcHlvZGlkZV9lZGl0b3JfNjMsIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJweW9kaWRlLTYyIiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldCIsInNvdXJjZSI6InZpZXdvZiBfcHlvZGlkZV9lZGl0b3JfNjIgPSB7XG4gIGNvbnN0IHsgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yLCBiNjREZWNvZGUgfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWU7XG5cbiAgY29uc3Qgc2NyaXB0Q29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJweW9kaWRlLTYyLWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHB5b2RpZGUtNjItY29udGVudHNgIH0sIGJsb2NrLmF0dHIpO1xuICBjb25zdCBlZGl0b3IgPSBuZXcgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yKFxuICAgIHB5b2RpZGVPanMucHlvZGlkZVByb21pc2UsXG4gICAgYmxvY2suY29kZSxcbiAgICBvcHRpb25zXG4gICk7XG5cbiAgcmV0dXJuIGVkaXRvci5jb250YWluZXI7XG59XG5fcHlvZGlkZV92YWx1ZV82MiA9IHB5b2RpZGVPanMucHJvY2VzcyhfcHlvZGlkZV9lZGl0b3JfNjIsIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJweW9kaWRlLTYxIiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldCIsInNvdXJjZSI6InZpZXdvZiBfcHlvZGlkZV9lZGl0b3JfNjEgPSB7XG4gIGNvbnN0IHsgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yLCBiNjREZWNvZGUgfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWU7XG5cbiAgY29uc3Qgc2NyaXB0Q29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJweW9kaWRlLTYxLWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHB5b2RpZGUtNjEtY29udGVudHNgIH0sIGJsb2NrLmF0dHIpO1xuICBjb25zdCBlZGl0b3IgPSBuZXcgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yKFxuICAgIHB5b2RpZGVPanMucHlvZGlkZVByb21pc2UsXG4gICAgYmxvY2suY29kZSxcbiAgICBvcHRpb25zXG4gICk7XG5cbiAgcmV0dXJuIGVkaXRvci5jb250YWluZXI7XG59XG5fcHlvZGlkZV92YWx1ZV82MSA9IHB5b2RpZGVPanMucHJvY2VzcyhfcHlvZGlkZV9lZGl0b3JfNjEsIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJweW9kaWRlLTYwIiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldCIsInNvdXJjZSI6InZpZXdvZiBfcHlvZGlkZV9lZGl0b3JfNjAgPSB7XG4gIGNvbnN0IHsgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yLCBiNjREZWNvZGUgfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWU7XG5cbiAgY29uc3Qgc2NyaXB0Q29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJweW9kaWRlLTYwLWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHB5b2RpZGUtNjAtY29udGVudHNgIH0sIGJsb2NrLmF0dHIpO1xuICBjb25zdCBlZGl0b3IgPSBuZXcgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yKFxuICAgIHB5b2RpZGVPanMucHlvZGlkZVByb21pc2UsXG4gICAgYmxvY2suY29kZSxcbiAgICBvcHRpb25zXG4gICk7XG5cbiAgcmV0dXJuIGVkaXRvci5jb250YWluZXI7XG59XG5fcHlvZGlkZV92YWx1ZV82MCA9IHB5b2RpZGVPanMucHJvY2VzcyhfcHlvZGlkZV9lZGl0b3JfNjAsIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJweW9kaWRlLTU5IiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldCIsInNvdXJjZSI6InZpZXdvZiBfcHlvZGlkZV9lZGl0b3JfNTkgPSB7XG4gIGNvbnN0IHsgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yLCBiNjREZWNvZGUgfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWU7XG5cbiAgY29uc3Qgc2NyaXB0Q29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJweW9kaWRlLTU5LWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHB5b2RpZGUtNTktY29udGVudHNgIH0sIGJsb2NrLmF0dHIpO1xuICBjb25zdCBlZGl0b3IgPSBuZXcgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yKFxuICAgIHB5b2RpZGVPanMucHlvZGlkZVByb21pc2UsXG4gICAgYmxvY2suY29kZSxcbiAgICBvcHRpb25zXG4gICk7XG5cbiAgcmV0dXJuIGVkaXRvci5jb250YWluZXI7XG59XG5fcHlvZGlkZV92YWx1ZV81OSA9IHB5b2RpZGVPanMucHJvY2VzcyhfcHlvZGlkZV9lZGl0b3JfNTksIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJweW9kaWRlLTU4IiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldCIsInNvdXJjZSI6InZpZXdvZiBfcHlvZGlkZV9lZGl0b3JfNTggPSB7XG4gIGNvbnN0IHsgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yLCBiNjREZWNvZGUgfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWU7XG5cbiAgY29uc3Qgc2NyaXB0Q29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJweW9kaWRlLTU4LWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHB5b2RpZGUtNTgtY29udGVudHNgIH0sIGJsb2NrLmF0dHIpO1xuICBjb25zdCBlZGl0b3IgPSBuZXcgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yKFxuICAgIHB5b2RpZGVPanMucHlvZGlkZVByb21pc2UsXG4gICAgYmxvY2suY29kZSxcbiAgICBvcHRpb25zXG4gICk7XG5cbiAgcmV0dXJuIGVkaXRvci5jb250YWluZXI7XG59XG5fcHlvZGlkZV92YWx1ZV81OCA9IHB5b2RpZGVPanMucHJvY2VzcyhfcHlvZGlkZV9lZGl0b3JfNTgsIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJweW9kaWRlLTU3IiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldCIsInNvdXJjZSI6InZpZXdvZiBfcHlvZGlkZV9lZGl0b3JfNTcgPSB7XG4gIGNvbnN0IHsgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yLCBiNjREZWNvZGUgfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWU7XG5cbiAgY29uc3Qgc2NyaXB0Q29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJweW9kaWRlLTU3LWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHB5b2RpZGUtNTctY29udGVudHNgIH0sIGJsb2NrLmF0dHIpO1xuICBjb25zdCBlZGl0b3IgPSBuZXcgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yKFxuICAgIHB5b2RpZGVPanMucHlvZGlkZVByb21pc2UsXG4gICAgYmxvY2suY29kZSxcbiAgICBvcHRpb25zXG4gICk7XG5cbiAgcmV0dXJuIGVkaXRvci5jb250YWluZXI7XG59XG5fcHlvZGlkZV92YWx1ZV81NyA9IHB5b2RpZGVPanMucHJvY2VzcyhfcHlvZGlkZV9lZGl0b3JfNTcsIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJweW9kaWRlLTU2IiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldCIsInNvdXJjZSI6InZpZXdvZiBfcHlvZGlkZV9lZGl0b3JfNTYgPSB7XG4gIGNvbnN0IHsgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yLCBiNjREZWNvZGUgfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWU7XG5cbiAgY29uc3Qgc2NyaXB0Q29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJweW9kaWRlLTU2LWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHB5b2RpZGUtNTYtY29udGVudHNgIH0sIGJsb2NrLmF0dHIpO1xuICBjb25zdCBlZGl0b3IgPSBuZXcgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yKFxuICAgIHB5b2RpZGVPanMucHlvZGlkZVByb21pc2UsXG4gICAgYmxvY2suY29kZSxcbiAgICBvcHRpb25zXG4gICk7XG5cbiAgcmV0dXJuIGVkaXRvci5jb250YWluZXI7XG59XG5fcHlvZGlkZV92YWx1ZV81NiA9IHB5b2RpZGVPanMucHJvY2VzcyhfcHlvZGlkZV9lZGl0b3JfNTYsIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJweW9kaWRlLTU1IiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldCIsInNvdXJjZSI6InZpZXdvZiBfcHlvZGlkZV9lZGl0b3JfNTUgPSB7XG4gIGNvbnN0IHsgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yLCBiNjREZWNvZGUgfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWU7XG5cbiAgY29uc3Qgc2NyaXB0Q29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJweW9kaWRlLTU1LWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHB5b2RpZGUtNTUtY29udGVudHNgIH0sIGJsb2NrLmF0dHIpO1xuICBjb25zdCBlZGl0b3IgPSBuZXcgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yKFxuICAgIHB5b2RpZGVPanMucHlvZGlkZVByb21pc2UsXG4gICAgYmxvY2suY29kZSxcbiAgICBvcHRpb25zXG4gICk7XG5cbiAgcmV0dXJuIGVkaXRvci5jb250YWluZXI7XG59XG5fcHlvZGlkZV92YWx1ZV81NSA9IHB5b2RpZGVPanMucHJvY2VzcyhfcHlvZGlkZV9lZGl0b3JfNTUsIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJweW9kaWRlLTU0IiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldCIsInNvdXJjZSI6InZpZXdvZiBfcHlvZGlkZV9lZGl0b3JfNTQgPSB7XG4gIGNvbnN0IHsgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yLCBiNjREZWNvZGUgfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWU7XG5cbiAgY29uc3Qgc2NyaXB0Q29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJweW9kaWRlLTU0LWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHB5b2RpZGUtNTQtY29udGVudHNgIH0sIGJsb2NrLmF0dHIpO1xuICBjb25zdCBlZGl0b3IgPSBuZXcgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yKFxuICAgIHB5b2RpZGVPanMucHlvZGlkZVByb21pc2UsXG4gICAgYmxvY2suY29kZSxcbiAgICBvcHRpb25zXG4gICk7XG5cbiAgcmV0dXJuIGVkaXRvci5jb250YWluZXI7XG59XG5fcHlvZGlkZV92YWx1ZV81NCA9IHB5b2RpZGVPanMucHJvY2VzcyhfcHlvZGlkZV9lZGl0b3JfNTQsIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJweW9kaWRlLTUzIiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldCIsInNvdXJjZSI6InZpZXdvZiBfcHlvZGlkZV9lZGl0b3JfNTMgPSB7XG4gIGNvbnN0IHsgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yLCBiNjREZWNvZGUgfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWU7XG5cbiAgY29uc3Qgc2NyaXB0Q29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJweW9kaWRlLTUzLWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHB5b2RpZGUtNTMtY29udGVudHNgIH0sIGJsb2NrLmF0dHIpO1xuICBjb25zdCBlZGl0b3IgPSBuZXcgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yKFxuICAgIHB5b2RpZGVPanMucHlvZGlkZVByb21pc2UsXG4gICAgYmxvY2suY29kZSxcbiAgICBvcHRpb25zXG4gICk7XG5cbiAgcmV0dXJuIGVkaXRvci5jb250YWluZXI7XG59XG5fcHlvZGlkZV92YWx1ZV81MyA9IHB5b2RpZGVPanMucHJvY2VzcyhfcHlvZGlkZV9lZGl0b3JfNTMsIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJweW9kaWRlLTUyIiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldCIsInNvdXJjZSI6InZpZXdvZiBfcHlvZGlkZV9lZGl0b3JfNTIgPSB7XG4gIGNvbnN0IHsgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yLCBiNjREZWNvZGUgfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWU7XG5cbiAgY29uc3Qgc2NyaXB0Q29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJweW9kaWRlLTUyLWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHB5b2RpZGUtNTItY29udGVudHNgIH0sIGJsb2NrLmF0dHIpO1xuICBjb25zdCBlZGl0b3IgPSBuZXcgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yKFxuICAgIHB5b2RpZGVPanMucHlvZGlkZVByb21pc2UsXG4gICAgYmxvY2suY29kZSxcbiAgICBvcHRpb25zXG4gICk7XG5cbiAgcmV0dXJuIGVkaXRvci5jb250YWluZXI7XG59XG5fcHlvZGlkZV92YWx1ZV81MiA9IHB5b2RpZGVPanMucHJvY2VzcyhfcHlvZGlkZV9lZGl0b3JfNTIsIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJweW9kaWRlLTUxIiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldCIsInNvdXJjZSI6InZpZXdvZiBfcHlvZGlkZV9lZGl0b3JfNTEgPSB7XG4gIGNvbnN0IHsgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yLCBiNjREZWNvZGUgfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWU7XG5cbiAgY29uc3Qgc2NyaXB0Q29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJweW9kaWRlLTUxLWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHB5b2RpZGUtNTEtY29udGVudHNgIH0sIGJsb2NrLmF0dHIpO1xuICBjb25zdCBlZGl0b3IgPSBuZXcgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yKFxuICAgIHB5b2RpZGVPanMucHlvZGlkZVByb21pc2UsXG4gICAgYmxvY2suY29kZSxcbiAgICBvcHRpb25zXG4gICk7XG5cbiAgcmV0dXJuIGVkaXRvci5jb250YWluZXI7XG59XG5fcHlvZGlkZV92YWx1ZV81MSA9IHB5b2RpZGVPanMucHJvY2VzcyhfcHlvZGlkZV9lZGl0b3JfNTEsIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJweW9kaWRlLTUwIiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldCIsInNvdXJjZSI6InZpZXdvZiBfcHlvZGlkZV9lZGl0b3JfNTAgPSB7XG4gIGNvbnN0IHsgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yLCBiNjREZWNvZGUgfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWU7XG5cbiAgY29uc3Qgc2NyaXB0Q29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJweW9kaWRlLTUwLWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHB5b2RpZGUtNTAtY29udGVudHNgIH0sIGJsb2NrLmF0dHIpO1xuICBjb25zdCBlZGl0b3IgPSBuZXcgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yKFxuICAgIHB5b2RpZGVPanMucHlvZGlkZVByb21pc2UsXG4gICAgYmxvY2suY29kZSxcbiAgICBvcHRpb25zXG4gICk7XG5cbiAgcmV0dXJuIGVkaXRvci5jb250YWluZXI7XG59XG5fcHlvZGlkZV92YWx1ZV81MCA9IHB5b2RpZGVPanMucHJvY2VzcyhfcHlvZGlkZV9lZGl0b3JfNTAsIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJweW9kaWRlLTQ5IiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldCIsInNvdXJjZSI6InZpZXdvZiBfcHlvZGlkZV9lZGl0b3JfNDkgPSB7XG4gIGNvbnN0IHsgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yLCBiNjREZWNvZGUgfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWU7XG5cbiAgY29uc3Qgc2NyaXB0Q29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJweW9kaWRlLTQ5LWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHB5b2RpZGUtNDktY29udGVudHNgIH0sIGJsb2NrLmF0dHIpO1xuICBjb25zdCBlZGl0b3IgPSBuZXcgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yKFxuICAgIHB5b2RpZGVPanMucHlvZGlkZVByb21pc2UsXG4gICAgYmxvY2suY29kZSxcbiAgICBvcHRpb25zXG4gICk7XG5cbiAgcmV0dXJuIGVkaXRvci5jb250YWluZXI7XG59XG5fcHlvZGlkZV92YWx1ZV80OSA9IHB5b2RpZGVPanMucHJvY2VzcyhfcHlvZGlkZV9lZGl0b3JfNDksIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJweW9kaWRlLTQ4IiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldCIsInNvdXJjZSI6InZpZXdvZiBfcHlvZGlkZV9lZGl0b3JfNDggPSB7XG4gIGNvbnN0IHsgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yLCBiNjREZWNvZGUgfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWU7XG5cbiAgY29uc3Qgc2NyaXB0Q29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJweW9kaWRlLTQ4LWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHB5b2RpZGUtNDgtY29udGVudHNgIH0sIGJsb2NrLmF0dHIpO1xuICBjb25zdCBlZGl0b3IgPSBuZXcgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yKFxuICAgIHB5b2RpZGVPanMucHlvZGlkZVByb21pc2UsXG4gICAgYmxvY2suY29kZSxcbiAgICBvcHRpb25zXG4gICk7XG5cbiAgcmV0dXJuIGVkaXRvci5jb250YWluZXI7XG59XG5fcHlvZGlkZV92YWx1ZV80OCA9IHB5b2RpZGVPanMucHJvY2VzcyhfcHlvZGlkZV9lZGl0b3JfNDgsIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJweW9kaWRlLTQ3IiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldCIsInNvdXJjZSI6InZpZXdvZiBfcHlvZGlkZV9lZGl0b3JfNDcgPSB7XG4gIGNvbnN0IHsgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yLCBiNjREZWNvZGUgfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWU7XG5cbiAgY29uc3Qgc2NyaXB0Q29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJweW9kaWRlLTQ3LWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHB5b2RpZGUtNDctY29udGVudHNgIH0sIGJsb2NrLmF0dHIpO1xuICBjb25zdCBlZGl0b3IgPSBuZXcgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yKFxuICAgIHB5b2RpZGVPanMucHlvZGlkZVByb21pc2UsXG4gICAgYmxvY2suY29kZSxcbiAgICBvcHRpb25zXG4gICk7XG5cbiAgcmV0dXJuIGVkaXRvci5jb250YWluZXI7XG59XG5fcHlvZGlkZV92YWx1ZV80NyA9IHB5b2RpZGVPanMucHJvY2VzcyhfcHlvZGlkZV9lZGl0b3JfNDcsIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJweW9kaWRlLTQ2IiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldCIsInNvdXJjZSI6InZpZXdvZiBfcHlvZGlkZV9lZGl0b3JfNDYgPSB7XG4gIGNvbnN0IHsgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yLCBiNjREZWNvZGUgfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWU7XG5cbiAgY29uc3Qgc2NyaXB0Q29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJweW9kaWRlLTQ2LWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHB5b2RpZGUtNDYtY29udGVudHNgIH0sIGJsb2NrLmF0dHIpO1xuICBjb25zdCBlZGl0b3IgPSBuZXcgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yKFxuICAgIHB5b2RpZGVPanMucHlvZGlkZVByb21pc2UsXG4gICAgYmxvY2suY29kZSxcbiAgICBvcHRpb25zXG4gICk7XG5cbiAgcmV0dXJuIGVkaXRvci5jb250YWluZXI7XG59XG5fcHlvZGlkZV92YWx1ZV80NiA9IHB5b2RpZGVPanMucHJvY2VzcyhfcHlvZGlkZV9lZGl0b3JfNDYsIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJweW9kaWRlLTQ1IiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldCIsInNvdXJjZSI6InZpZXdvZiBfcHlvZGlkZV9lZGl0b3JfNDUgPSB7XG4gIGNvbnN0IHsgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yLCBiNjREZWNvZGUgfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWU7XG5cbiAgY29uc3Qgc2NyaXB0Q29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJweW9kaWRlLTQ1LWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHB5b2RpZGUtNDUtY29udGVudHNgIH0sIGJsb2NrLmF0dHIpO1xuICBjb25zdCBlZGl0b3IgPSBuZXcgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yKFxuICAgIHB5b2RpZGVPanMucHlvZGlkZVByb21pc2UsXG4gICAgYmxvY2suY29kZSxcbiAgICBvcHRpb25zXG4gICk7XG5cbiAgcmV0dXJuIGVkaXRvci5jb250YWluZXI7XG59XG5fcHlvZGlkZV92YWx1ZV80NSA9IHB5b2RpZGVPanMucHJvY2VzcyhfcHlvZGlkZV9lZGl0b3JfNDUsIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJweW9kaWRlLTQ0IiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldCIsInNvdXJjZSI6InZpZXdvZiBfcHlvZGlkZV9lZGl0b3JfNDQgPSB7XG4gIGNvbnN0IHsgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yLCBiNjREZWNvZGUgfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWU7XG5cbiAgY29uc3Qgc2NyaXB0Q29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJweW9kaWRlLTQ0LWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHB5b2RpZGUtNDQtY29udGVudHNgIH0sIGJsb2NrLmF0dHIpO1xuICBjb25zdCBlZGl0b3IgPSBuZXcgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yKFxuICAgIHB5b2RpZGVPanMucHlvZGlkZVByb21pc2UsXG4gICAgYmxvY2suY29kZSxcbiAgICBvcHRpb25zXG4gICk7XG5cbiAgcmV0dXJuIGVkaXRvci5jb250YWluZXI7XG59XG5fcHlvZGlkZV92YWx1ZV80NCA9IHB5b2RpZGVPanMucHJvY2VzcyhfcHlvZGlkZV9lZGl0b3JfNDQsIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJweW9kaWRlLTQzIiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldCIsInNvdXJjZSI6InZpZXdvZiBfcHlvZGlkZV9lZGl0b3JfNDMgPSB7XG4gIGNvbnN0IHsgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yLCBiNjREZWNvZGUgfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWU7XG5cbiAgY29uc3Qgc2NyaXB0Q29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJweW9kaWRlLTQzLWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHB5b2RpZGUtNDMtY29udGVudHNgIH0sIGJsb2NrLmF0dHIpO1xuICBjb25zdCBlZGl0b3IgPSBuZXcgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yKFxuICAgIHB5b2RpZGVPanMucHlvZGlkZVByb21pc2UsXG4gICAgYmxvY2suY29kZSxcbiAgICBvcHRpb25zXG4gICk7XG5cbiAgcmV0dXJuIGVkaXRvci5jb250YWluZXI7XG59XG5fcHlvZGlkZV92YWx1ZV80MyA9IHB5b2RpZGVPanMucHJvY2VzcyhfcHlvZGlkZV9lZGl0b3JfNDMsIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJweW9kaWRlLTQyIiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldCIsInNvdXJjZSI6InZpZXdvZiBfcHlvZGlkZV9lZGl0b3JfNDIgPSB7XG4gIGNvbnN0IHsgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yLCBiNjREZWNvZGUgfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWU7XG5cbiAgY29uc3Qgc2NyaXB0Q29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJweW9kaWRlLTQyLWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHB5b2RpZGUtNDItY29udGVudHNgIH0sIGJsb2NrLmF0dHIpO1xuICBjb25zdCBlZGl0b3IgPSBuZXcgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yKFxuICAgIHB5b2RpZGVPanMucHlvZGlkZVByb21pc2UsXG4gICAgYmxvY2suY29kZSxcbiAgICBvcHRpb25zXG4gICk7XG5cbiAgcmV0dXJuIGVkaXRvci5jb250YWluZXI7XG59XG5fcHlvZGlkZV92YWx1ZV80MiA9IHB5b2RpZGVPanMucHJvY2VzcyhfcHlvZGlkZV9lZGl0b3JfNDIsIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJweW9kaWRlLTQxIiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldCIsInNvdXJjZSI6InZpZXdvZiBfcHlvZGlkZV9lZGl0b3JfNDEgPSB7XG4gIGNvbnN0IHsgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yLCBiNjREZWNvZGUgfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWU7XG5cbiAgY29uc3Qgc2NyaXB0Q29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJweW9kaWRlLTQxLWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHB5b2RpZGUtNDEtY29udGVudHNgIH0sIGJsb2NrLmF0dHIpO1xuICBjb25zdCBlZGl0b3IgPSBuZXcgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yKFxuICAgIHB5b2RpZGVPanMucHlvZGlkZVByb21pc2UsXG4gICAgYmxvY2suY29kZSxcbiAgICBvcHRpb25zXG4gICk7XG5cbiAgcmV0dXJuIGVkaXRvci5jb250YWluZXI7XG59XG5fcHlvZGlkZV92YWx1ZV80MSA9IHB5b2RpZGVPanMucHJvY2VzcyhfcHlvZGlkZV9lZGl0b3JfNDEsIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJweW9kaWRlLTQwIiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldCIsInNvdXJjZSI6InZpZXdvZiBfcHlvZGlkZV9lZGl0b3JfNDAgPSB7XG4gIGNvbnN0IHsgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yLCBiNjREZWNvZGUgfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWU7XG5cbiAgY29uc3Qgc2NyaXB0Q29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJweW9kaWRlLTQwLWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHB5b2RpZGUtNDAtY29udGVudHNgIH0sIGJsb2NrLmF0dHIpO1xuICBjb25zdCBlZGl0b3IgPSBuZXcgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yKFxuICAgIHB5b2RpZGVPanMucHlvZGlkZVByb21pc2UsXG4gICAgYmxvY2suY29kZSxcbiAgICBvcHRpb25zXG4gICk7XG5cbiAgcmV0dXJuIGVkaXRvci5jb250YWluZXI7XG59XG5fcHlvZGlkZV92YWx1ZV80MCA9IHB5b2RpZGVPanMucHJvY2VzcyhfcHlvZGlkZV9lZGl0b3JfNDAsIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJweW9kaWRlLTM5IiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldCIsInNvdXJjZSI6InZpZXdvZiBfcHlvZGlkZV9lZGl0b3JfMzkgPSB7XG4gIGNvbnN0IHsgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yLCBiNjREZWNvZGUgfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWU7XG5cbiAgY29uc3Qgc2NyaXB0Q29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJweW9kaWRlLTM5LWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHB5b2RpZGUtMzktY29udGVudHNgIH0sIGJsb2NrLmF0dHIpO1xuICBjb25zdCBlZGl0b3IgPSBuZXcgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yKFxuICAgIHB5b2RpZGVPanMucHlvZGlkZVByb21pc2UsXG4gICAgYmxvY2suY29kZSxcbiAgICBvcHRpb25zXG4gICk7XG5cbiAgcmV0dXJuIGVkaXRvci5jb250YWluZXI7XG59XG5fcHlvZGlkZV92YWx1ZV8zOSA9IHB5b2RpZGVPanMucHJvY2VzcyhfcHlvZGlkZV9lZGl0b3JfMzksIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJweW9kaWRlLTM4IiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldCIsInNvdXJjZSI6InZpZXdvZiBfcHlvZGlkZV9lZGl0b3JfMzggPSB7XG4gIGNvbnN0IHsgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yLCBiNjREZWNvZGUgfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWU7XG5cbiAgY29uc3Qgc2NyaXB0Q29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJweW9kaWRlLTM4LWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHB5b2RpZGUtMzgtY29udGVudHNgIH0sIGJsb2NrLmF0dHIpO1xuICBjb25zdCBlZGl0b3IgPSBuZXcgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yKFxuICAgIHB5b2RpZGVPanMucHlvZGlkZVByb21pc2UsXG4gICAgYmxvY2suY29kZSxcbiAgICBvcHRpb25zXG4gICk7XG5cbiAgcmV0dXJuIGVkaXRvci5jb250YWluZXI7XG59XG5fcHlvZGlkZV92YWx1ZV8zOCA9IHB5b2RpZGVPanMucHJvY2VzcyhfcHlvZGlkZV9lZGl0b3JfMzgsIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJweW9kaWRlLTM3IiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldCIsInNvdXJjZSI6InZpZXdvZiBfcHlvZGlkZV9lZGl0b3JfMzcgPSB7XG4gIGNvbnN0IHsgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yLCBiNjREZWNvZGUgfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWU7XG5cbiAgY29uc3Qgc2NyaXB0Q29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJweW9kaWRlLTM3LWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHB5b2RpZGUtMzctY29udGVudHNgIH0sIGJsb2NrLmF0dHIpO1xuICBjb25zdCBlZGl0b3IgPSBuZXcgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yKFxuICAgIHB5b2RpZGVPanMucHlvZGlkZVByb21pc2UsXG4gICAgYmxvY2suY29kZSxcbiAgICBvcHRpb25zXG4gICk7XG5cbiAgcmV0dXJuIGVkaXRvci5jb250YWluZXI7XG59XG5fcHlvZGlkZV92YWx1ZV8zNyA9IHB5b2RpZGVPanMucHJvY2VzcyhfcHlvZGlkZV9lZGl0b3JfMzcsIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJweW9kaWRlLTM2IiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldCIsInNvdXJjZSI6InZpZXdvZiBfcHlvZGlkZV9lZGl0b3JfMzYgPSB7XG4gIGNvbnN0IHsgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yLCBiNjREZWNvZGUgfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWU7XG5cbiAgY29uc3Qgc2NyaXB0Q29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJweW9kaWRlLTM2LWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHB5b2RpZGUtMzYtY29udGVudHNgIH0sIGJsb2NrLmF0dHIpO1xuICBjb25zdCBlZGl0b3IgPSBuZXcgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yKFxuICAgIHB5b2RpZGVPanMucHlvZGlkZVByb21pc2UsXG4gICAgYmxvY2suY29kZSxcbiAgICBvcHRpb25zXG4gICk7XG5cbiAgcmV0dXJuIGVkaXRvci5jb250YWluZXI7XG59XG5fcHlvZGlkZV92YWx1ZV8zNiA9IHB5b2RpZGVPanMucHJvY2VzcyhfcHlvZGlkZV9lZGl0b3JfMzYsIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJweW9kaWRlLTM1IiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldCIsInNvdXJjZSI6InZpZXdvZiBfcHlvZGlkZV9lZGl0b3JfMzUgPSB7XG4gIGNvbnN0IHsgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yLCBiNjREZWNvZGUgfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWU7XG5cbiAgY29uc3Qgc2NyaXB0Q29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJweW9kaWRlLTM1LWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHB5b2RpZGUtMzUtY29udGVudHNgIH0sIGJsb2NrLmF0dHIpO1xuICBjb25zdCBlZGl0b3IgPSBuZXcgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yKFxuICAgIHB5b2RpZGVPanMucHlvZGlkZVByb21pc2UsXG4gICAgYmxvY2suY29kZSxcbiAgICBvcHRpb25zXG4gICk7XG5cbiAgcmV0dXJuIGVkaXRvci5jb250YWluZXI7XG59XG5fcHlvZGlkZV92YWx1ZV8zNSA9IHB5b2RpZGVPanMucHJvY2VzcyhfcHlvZGlkZV9lZGl0b3JfMzUsIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJweW9kaWRlLTM0IiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldCIsInNvdXJjZSI6InZpZXdvZiBfcHlvZGlkZV9lZGl0b3JfMzQgPSB7XG4gIGNvbnN0IHsgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yLCBiNjREZWNvZGUgfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWU7XG5cbiAgY29uc3Qgc2NyaXB0Q29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJweW9kaWRlLTM0LWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHB5b2RpZGUtMzQtY29udGVudHNgIH0sIGJsb2NrLmF0dHIpO1xuICBjb25zdCBlZGl0b3IgPSBuZXcgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yKFxuICAgIHB5b2RpZGVPanMucHlvZGlkZVByb21pc2UsXG4gICAgYmxvY2suY29kZSxcbiAgICBvcHRpb25zXG4gICk7XG5cbiAgcmV0dXJuIGVkaXRvci5jb250YWluZXI7XG59XG5fcHlvZGlkZV92YWx1ZV8zNCA9IHB5b2RpZGVPanMucHJvY2VzcyhfcHlvZGlkZV9lZGl0b3JfMzQsIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJweW9kaWRlLTMzIiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldCIsInNvdXJjZSI6InZpZXdvZiBfcHlvZGlkZV9lZGl0b3JfMzMgPSB7XG4gIGNvbnN0IHsgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yLCBiNjREZWNvZGUgfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWU7XG5cbiAgY29uc3Qgc2NyaXB0Q29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJweW9kaWRlLTMzLWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHB5b2RpZGUtMzMtY29udGVudHNgIH0sIGJsb2NrLmF0dHIpO1xuICBjb25zdCBlZGl0b3IgPSBuZXcgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yKFxuICAgIHB5b2RpZGVPanMucHlvZGlkZVByb21pc2UsXG4gICAgYmxvY2suY29kZSxcbiAgICBvcHRpb25zXG4gICk7XG5cbiAgcmV0dXJuIGVkaXRvci5jb250YWluZXI7XG59XG5fcHlvZGlkZV92YWx1ZV8zMyA9IHB5b2RpZGVPanMucHJvY2VzcyhfcHlvZGlkZV9lZGl0b3JfMzMsIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJweW9kaWRlLTMyIiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldCIsInNvdXJjZSI6InZpZXdvZiBfcHlvZGlkZV9lZGl0b3JfMzIgPSB7XG4gIGNvbnN0IHsgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yLCBiNjREZWNvZGUgfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWU7XG5cbiAgY29uc3Qgc2NyaXB0Q29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJweW9kaWRlLTMyLWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHB5b2RpZGUtMzItY29udGVudHNgIH0sIGJsb2NrLmF0dHIpO1xuICBjb25zdCBlZGl0b3IgPSBuZXcgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yKFxuICAgIHB5b2RpZGVPanMucHlvZGlkZVByb21pc2UsXG4gICAgYmxvY2suY29kZSxcbiAgICBvcHRpb25zXG4gICk7XG5cbiAgcmV0dXJuIGVkaXRvci5jb250YWluZXI7XG59XG5fcHlvZGlkZV92YWx1ZV8zMiA9IHB5b2RpZGVPanMucHJvY2VzcyhfcHlvZGlkZV9lZGl0b3JfMzIsIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJweW9kaWRlLTMxIiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldCIsInNvdXJjZSI6InZpZXdvZiBfcHlvZGlkZV9lZGl0b3JfMzEgPSB7XG4gIGNvbnN0IHsgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yLCBiNjREZWNvZGUgfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWU7XG5cbiAgY29uc3Qgc2NyaXB0Q29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJweW9kaWRlLTMxLWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHB5b2RpZGUtMzEtY29udGVudHNgIH0sIGJsb2NrLmF0dHIpO1xuICBjb25zdCBlZGl0b3IgPSBuZXcgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yKFxuICAgIHB5b2RpZGVPanMucHlvZGlkZVByb21pc2UsXG4gICAgYmxvY2suY29kZSxcbiAgICBvcHRpb25zXG4gICk7XG5cbiAgcmV0dXJuIGVkaXRvci5jb250YWluZXI7XG59XG5fcHlvZGlkZV92YWx1ZV8zMSA9IHB5b2RpZGVPanMucHJvY2VzcyhfcHlvZGlkZV9lZGl0b3JfMzEsIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJweW9kaWRlLTMwIiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldCIsInNvdXJjZSI6InZpZXdvZiBfcHlvZGlkZV9lZGl0b3JfMzAgPSB7XG4gIGNvbnN0IHsgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yLCBiNjREZWNvZGUgfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWU7XG5cbiAgY29uc3Qgc2NyaXB0Q29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJweW9kaWRlLTMwLWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHB5b2RpZGUtMzAtY29udGVudHNgIH0sIGJsb2NrLmF0dHIpO1xuICBjb25zdCBlZGl0b3IgPSBuZXcgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yKFxuICAgIHB5b2RpZGVPanMucHlvZGlkZVByb21pc2UsXG4gICAgYmxvY2suY29kZSxcbiAgICBvcHRpb25zXG4gICk7XG5cbiAgcmV0dXJuIGVkaXRvci5jb250YWluZXI7XG59XG5fcHlvZGlkZV92YWx1ZV8zMCA9IHB5b2RpZGVPanMucHJvY2VzcyhfcHlvZGlkZV9lZGl0b3JfMzAsIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJweW9kaWRlLTI5IiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldCIsInNvdXJjZSI6InZpZXdvZiBfcHlvZGlkZV9lZGl0b3JfMjkgPSB7XG4gIGNvbnN0IHsgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yLCBiNjREZWNvZGUgfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWU7XG5cbiAgY29uc3Qgc2NyaXB0Q29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJweW9kaWRlLTI5LWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHB5b2RpZGUtMjktY29udGVudHNgIH0sIGJsb2NrLmF0dHIpO1xuICBjb25zdCBlZGl0b3IgPSBuZXcgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yKFxuICAgIHB5b2RpZGVPanMucHlvZGlkZVByb21pc2UsXG4gICAgYmxvY2suY29kZSxcbiAgICBvcHRpb25zXG4gICk7XG5cbiAgcmV0dXJuIGVkaXRvci5jb250YWluZXI7XG59XG5fcHlvZGlkZV92YWx1ZV8yOSA9IHB5b2RpZGVPanMucHJvY2VzcyhfcHlvZGlkZV9lZGl0b3JfMjksIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJweW9kaWRlLTI4IiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldCIsInNvdXJjZSI6InZpZXdvZiBfcHlvZGlkZV9lZGl0b3JfMjggPSB7XG4gIGNvbnN0IHsgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yLCBiNjREZWNvZGUgfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWU7XG5cbiAgY29uc3Qgc2NyaXB0Q29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJweW9kaWRlLTI4LWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHB5b2RpZGUtMjgtY29udGVudHNgIH0sIGJsb2NrLmF0dHIpO1xuICBjb25zdCBlZGl0b3IgPSBuZXcgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yKFxuICAgIHB5b2RpZGVPanMucHlvZGlkZVByb21pc2UsXG4gICAgYmxvY2suY29kZSxcbiAgICBvcHRpb25zXG4gICk7XG5cbiAgcmV0dXJuIGVkaXRvci5jb250YWluZXI7XG59XG5fcHlvZGlkZV92YWx1ZV8yOCA9IHB5b2RpZGVPanMucHJvY2VzcyhfcHlvZGlkZV9lZGl0b3JfMjgsIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJweW9kaWRlLTI3IiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldCIsInNvdXJjZSI6InZpZXdvZiBfcHlvZGlkZV9lZGl0b3JfMjcgPSB7XG4gIGNvbnN0IHsgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yLCBiNjREZWNvZGUgfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWU7XG5cbiAgY29uc3Qgc2NyaXB0Q29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJweW9kaWRlLTI3LWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHB5b2RpZGUtMjctY29udGVudHNgIH0sIGJsb2NrLmF0dHIpO1xuICBjb25zdCBlZGl0b3IgPSBuZXcgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yKFxuICAgIHB5b2RpZGVPanMucHlvZGlkZVByb21pc2UsXG4gICAgYmxvY2suY29kZSxcbiAgICBvcHRpb25zXG4gICk7XG5cbiAgcmV0dXJuIGVkaXRvci5jb250YWluZXI7XG59XG5fcHlvZGlkZV92YWx1ZV8yNyA9IHB5b2RpZGVPanMucHJvY2VzcyhfcHlvZGlkZV9lZGl0b3JfMjcsIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJweW9kaWRlLTI2IiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldCIsInNvdXJjZSI6InZpZXdvZiBfcHlvZGlkZV9lZGl0b3JfMjYgPSB7XG4gIGNvbnN0IHsgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yLCBiNjREZWNvZGUgfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWU7XG5cbiAgY29uc3Qgc2NyaXB0Q29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJweW9kaWRlLTI2LWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHB5b2RpZGUtMjYtY29udGVudHNgIH0sIGJsb2NrLmF0dHIpO1xuICBjb25zdCBlZGl0b3IgPSBuZXcgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yKFxuICAgIHB5b2RpZGVPanMucHlvZGlkZVByb21pc2UsXG4gICAgYmxvY2suY29kZSxcbiAgICBvcHRpb25zXG4gICk7XG5cbiAgcmV0dXJuIGVkaXRvci5jb250YWluZXI7XG59XG5fcHlvZGlkZV92YWx1ZV8yNiA9IHB5b2RpZGVPanMucHJvY2VzcyhfcHlvZGlkZV9lZGl0b3JfMjYsIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJweW9kaWRlLTI1IiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldCIsInNvdXJjZSI6InZpZXdvZiBfcHlvZGlkZV9lZGl0b3JfMjUgPSB7XG4gIGNvbnN0IHsgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yLCBiNjREZWNvZGUgfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWU7XG5cbiAgY29uc3Qgc2NyaXB0Q29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJweW9kaWRlLTI1LWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHB5b2RpZGUtMjUtY29udGVudHNgIH0sIGJsb2NrLmF0dHIpO1xuICBjb25zdCBlZGl0b3IgPSBuZXcgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yKFxuICAgIHB5b2RpZGVPanMucHlvZGlkZVByb21pc2UsXG4gICAgYmxvY2suY29kZSxcbiAgICBvcHRpb25zXG4gICk7XG5cbiAgcmV0dXJuIGVkaXRvci5jb250YWluZXI7XG59XG5fcHlvZGlkZV92YWx1ZV8yNSA9IHB5b2RpZGVPanMucHJvY2VzcyhfcHlvZGlkZV9lZGl0b3JfMjUsIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJweW9kaWRlLTI0IiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldCIsInNvdXJjZSI6InZpZXdvZiBfcHlvZGlkZV9lZGl0b3JfMjQgPSB7XG4gIGNvbnN0IHsgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yLCBiNjREZWNvZGUgfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWU7XG5cbiAgY29uc3Qgc2NyaXB0Q29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJweW9kaWRlLTI0LWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHB5b2RpZGUtMjQtY29udGVudHNgIH0sIGJsb2NrLmF0dHIpO1xuICBjb25zdCBlZGl0b3IgPSBuZXcgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yKFxuICAgIHB5b2RpZGVPanMucHlvZGlkZVByb21pc2UsXG4gICAgYmxvY2suY29kZSxcbiAgICBvcHRpb25zXG4gICk7XG5cbiAgcmV0dXJuIGVkaXRvci5jb250YWluZXI7XG59XG5fcHlvZGlkZV92YWx1ZV8yNCA9IHB5b2RpZGVPanMucHJvY2VzcyhfcHlvZGlkZV9lZGl0b3JfMjQsIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJweW9kaWRlLTIzIiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldCIsInNvdXJjZSI6InZpZXdvZiBfcHlvZGlkZV9lZGl0b3JfMjMgPSB7XG4gIGNvbnN0IHsgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yLCBiNjREZWNvZGUgfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWU7XG5cbiAgY29uc3Qgc2NyaXB0Q29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJweW9kaWRlLTIzLWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHB5b2RpZGUtMjMtY29udGVudHNgIH0sIGJsb2NrLmF0dHIpO1xuICBjb25zdCBlZGl0b3IgPSBuZXcgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yKFxuICAgIHB5b2RpZGVPanMucHlvZGlkZVByb21pc2UsXG4gICAgYmxvY2suY29kZSxcbiAgICBvcHRpb25zXG4gICk7XG5cbiAgcmV0dXJuIGVkaXRvci5jb250YWluZXI7XG59XG5fcHlvZGlkZV92YWx1ZV8yMyA9IHB5b2RpZGVPanMucHJvY2VzcyhfcHlvZGlkZV9lZGl0b3JfMjMsIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJweW9kaWRlLTIyIiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldCIsInNvdXJjZSI6InZpZXdvZiBfcHlvZGlkZV9lZGl0b3JfMjIgPSB7XG4gIGNvbnN0IHsgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yLCBiNjREZWNvZGUgfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWU7XG5cbiAgY29uc3Qgc2NyaXB0Q29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJweW9kaWRlLTIyLWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHB5b2RpZGUtMjItY29udGVudHNgIH0sIGJsb2NrLmF0dHIpO1xuICBjb25zdCBlZGl0b3IgPSBuZXcgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yKFxuICAgIHB5b2RpZGVPanMucHlvZGlkZVByb21pc2UsXG4gICAgYmxvY2suY29kZSxcbiAgICBvcHRpb25zXG4gICk7XG5cbiAgcmV0dXJuIGVkaXRvci5jb250YWluZXI7XG59XG5fcHlvZGlkZV92YWx1ZV8yMiA9IHB5b2RpZGVPanMucHJvY2VzcyhfcHlvZGlkZV9lZGl0b3JfMjIsIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJweW9kaWRlLTIxIiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldCIsInNvdXJjZSI6InZpZXdvZiBfcHlvZGlkZV9lZGl0b3JfMjEgPSB7XG4gIGNvbnN0IHsgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yLCBiNjREZWNvZGUgfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWU7XG5cbiAgY29uc3Qgc2NyaXB0Q29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJweW9kaWRlLTIxLWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHB5b2RpZGUtMjEtY29udGVudHNgIH0sIGJsb2NrLmF0dHIpO1xuICBjb25zdCBlZGl0b3IgPSBuZXcgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yKFxuICAgIHB5b2RpZGVPanMucHlvZGlkZVByb21pc2UsXG4gICAgYmxvY2suY29kZSxcbiAgICBvcHRpb25zXG4gICk7XG5cbiAgcmV0dXJuIGVkaXRvci5jb250YWluZXI7XG59XG5fcHlvZGlkZV92YWx1ZV8yMSA9IHB5b2RpZGVPanMucHJvY2VzcyhfcHlvZGlkZV9lZGl0b3JfMjEsIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJweW9kaWRlLTIwIiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldCIsInNvdXJjZSI6InZpZXdvZiBfcHlvZGlkZV9lZGl0b3JfMjAgPSB7XG4gIGNvbnN0IHsgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yLCBiNjREZWNvZGUgfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWU7XG5cbiAgY29uc3Qgc2NyaXB0Q29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJweW9kaWRlLTIwLWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHB5b2RpZGUtMjAtY29udGVudHNgIH0sIGJsb2NrLmF0dHIpO1xuICBjb25zdCBlZGl0b3IgPSBuZXcgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yKFxuICAgIHB5b2RpZGVPanMucHlvZGlkZVByb21pc2UsXG4gICAgYmxvY2suY29kZSxcbiAgICBvcHRpb25zXG4gICk7XG5cbiAgcmV0dXJuIGVkaXRvci5jb250YWluZXI7XG59XG5fcHlvZGlkZV92YWx1ZV8yMCA9IHB5b2RpZGVPanMucHJvY2VzcyhfcHlvZGlkZV9lZGl0b3JfMjAsIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJweW9kaWRlLTE5IiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldCIsInNvdXJjZSI6InZpZXdvZiBfcHlvZGlkZV9lZGl0b3JfMTkgPSB7XG4gIGNvbnN0IHsgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yLCBiNjREZWNvZGUgfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWU7XG5cbiAgY29uc3Qgc2NyaXB0Q29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJweW9kaWRlLTE5LWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHB5b2RpZGUtMTktY29udGVudHNgIH0sIGJsb2NrLmF0dHIpO1xuICBjb25zdCBlZGl0b3IgPSBuZXcgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yKFxuICAgIHB5b2RpZGVPanMucHlvZGlkZVByb21pc2UsXG4gICAgYmxvY2suY29kZSxcbiAgICBvcHRpb25zXG4gICk7XG5cbiAgcmV0dXJuIGVkaXRvci5jb250YWluZXI7XG59XG5fcHlvZGlkZV92YWx1ZV8xOSA9IHB5b2RpZGVPanMucHJvY2VzcyhfcHlvZGlkZV9lZGl0b3JfMTksIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJweW9kaWRlLTE4IiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldCIsInNvdXJjZSI6InZpZXdvZiBfcHlvZGlkZV9lZGl0b3JfMTggPSB7XG4gIGNvbnN0IHsgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yLCBiNjREZWNvZGUgfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWU7XG5cbiAgY29uc3Qgc2NyaXB0Q29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJweW9kaWRlLTE4LWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHB5b2RpZGUtMTgtY29udGVudHNgIH0sIGJsb2NrLmF0dHIpO1xuICBjb25zdCBlZGl0b3IgPSBuZXcgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yKFxuICAgIHB5b2RpZGVPanMucHlvZGlkZVByb21pc2UsXG4gICAgYmxvY2suY29kZSxcbiAgICBvcHRpb25zXG4gICk7XG5cbiAgcmV0dXJuIGVkaXRvci5jb250YWluZXI7XG59XG5fcHlvZGlkZV92YWx1ZV8xOCA9IHB5b2RpZGVPanMucHJvY2VzcyhfcHlvZGlkZV9lZGl0b3JfMTgsIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJweW9kaWRlLTE3IiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldCIsInNvdXJjZSI6InZpZXdvZiBfcHlvZGlkZV9lZGl0b3JfMTcgPSB7XG4gIGNvbnN0IHsgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yLCBiNjREZWNvZGUgfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWU7XG5cbiAgY29uc3Qgc2NyaXB0Q29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJweW9kaWRlLTE3LWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHB5b2RpZGUtMTctY29udGVudHNgIH0sIGJsb2NrLmF0dHIpO1xuICBjb25zdCBlZGl0b3IgPSBuZXcgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yKFxuICAgIHB5b2RpZGVPanMucHlvZGlkZVByb21pc2UsXG4gICAgYmxvY2suY29kZSxcbiAgICBvcHRpb25zXG4gICk7XG5cbiAgcmV0dXJuIGVkaXRvci5jb250YWluZXI7XG59XG5fcHlvZGlkZV92YWx1ZV8xNyA9IHB5b2RpZGVPanMucHJvY2VzcyhfcHlvZGlkZV9lZGl0b3JfMTcsIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJweW9kaWRlLTE2IiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldCIsInNvdXJjZSI6InZpZXdvZiBfcHlvZGlkZV9lZGl0b3JfMTYgPSB7XG4gIGNvbnN0IHsgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yLCBiNjREZWNvZGUgfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWU7XG5cbiAgY29uc3Qgc2NyaXB0Q29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJweW9kaWRlLTE2LWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHB5b2RpZGUtMTYtY29udGVudHNgIH0sIGJsb2NrLmF0dHIpO1xuICBjb25zdCBlZGl0b3IgPSBuZXcgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yKFxuICAgIHB5b2RpZGVPanMucHlvZGlkZVByb21pc2UsXG4gICAgYmxvY2suY29kZSxcbiAgICBvcHRpb25zXG4gICk7XG5cbiAgcmV0dXJuIGVkaXRvci5jb250YWluZXI7XG59XG5fcHlvZGlkZV92YWx1ZV8xNiA9IHB5b2RpZGVPanMucHJvY2VzcyhfcHlvZGlkZV9lZGl0b3JfMTYsIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJweW9kaWRlLTE1IiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldCIsInNvdXJjZSI6InZpZXdvZiBfcHlvZGlkZV9lZGl0b3JfMTUgPSB7XG4gIGNvbnN0IHsgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yLCBiNjREZWNvZGUgfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWU7XG5cbiAgY29uc3Qgc2NyaXB0Q29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJweW9kaWRlLTE1LWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHB5b2RpZGUtMTUtY29udGVudHNgIH0sIGJsb2NrLmF0dHIpO1xuICBjb25zdCBlZGl0b3IgPSBuZXcgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yKFxuICAgIHB5b2RpZGVPanMucHlvZGlkZVByb21pc2UsXG4gICAgYmxvY2suY29kZSxcbiAgICBvcHRpb25zXG4gICk7XG5cbiAgcmV0dXJuIGVkaXRvci5jb250YWluZXI7XG59XG5fcHlvZGlkZV92YWx1ZV8xNSA9IHB5b2RpZGVPanMucHJvY2VzcyhfcHlvZGlkZV9lZGl0b3JfMTUsIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJweW9kaWRlLTE0IiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldCIsInNvdXJjZSI6InZpZXdvZiBfcHlvZGlkZV9lZGl0b3JfMTQgPSB7XG4gIGNvbnN0IHsgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yLCBiNjREZWNvZGUgfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWU7XG5cbiAgY29uc3Qgc2NyaXB0Q29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJweW9kaWRlLTE0LWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHB5b2RpZGUtMTQtY29udGVudHNgIH0sIGJsb2NrLmF0dHIpO1xuICBjb25zdCBlZGl0b3IgPSBuZXcgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yKFxuICAgIHB5b2RpZGVPanMucHlvZGlkZVByb21pc2UsXG4gICAgYmxvY2suY29kZSxcbiAgICBvcHRpb25zXG4gICk7XG5cbiAgcmV0dXJuIGVkaXRvci5jb250YWluZXI7XG59XG5fcHlvZGlkZV92YWx1ZV8xNCA9IHB5b2RpZGVPanMucHJvY2VzcyhfcHlvZGlkZV9lZGl0b3JfMTQsIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJweW9kaWRlLTEzIiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldCIsInNvdXJjZSI6InZpZXdvZiBfcHlvZGlkZV9lZGl0b3JfMTMgPSB7XG4gIGNvbnN0IHsgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yLCBiNjREZWNvZGUgfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWU7XG5cbiAgY29uc3Qgc2NyaXB0Q29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJweW9kaWRlLTEzLWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHB5b2RpZGUtMTMtY29udGVudHNgIH0sIGJsb2NrLmF0dHIpO1xuICBjb25zdCBlZGl0b3IgPSBuZXcgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yKFxuICAgIHB5b2RpZGVPanMucHlvZGlkZVByb21pc2UsXG4gICAgYmxvY2suY29kZSxcbiAgICBvcHRpb25zXG4gICk7XG5cbiAgcmV0dXJuIGVkaXRvci5jb250YWluZXI7XG59XG5fcHlvZGlkZV92YWx1ZV8xMyA9IHB5b2RpZGVPanMucHJvY2VzcyhfcHlvZGlkZV9lZGl0b3JfMTMsIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJweW9kaWRlLTEyIiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldCIsInNvdXJjZSI6InZpZXdvZiBfcHlvZGlkZV9lZGl0b3JfMTIgPSB7XG4gIGNvbnN0IHsgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yLCBiNjREZWNvZGUgfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWU7XG5cbiAgY29uc3Qgc2NyaXB0Q29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJweW9kaWRlLTEyLWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHB5b2RpZGUtMTItY29udGVudHNgIH0sIGJsb2NrLmF0dHIpO1xuICBjb25zdCBlZGl0b3IgPSBuZXcgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yKFxuICAgIHB5b2RpZGVPanMucHlvZGlkZVByb21pc2UsXG4gICAgYmxvY2suY29kZSxcbiAgICBvcHRpb25zXG4gICk7XG5cbiAgcmV0dXJuIGVkaXRvci5jb250YWluZXI7XG59XG5fcHlvZGlkZV92YWx1ZV8xMiA9IHB5b2RpZGVPanMucHJvY2VzcyhfcHlvZGlkZV9lZGl0b3JfMTIsIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJweW9kaWRlLTExIiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldCIsInNvdXJjZSI6InZpZXdvZiBfcHlvZGlkZV9lZGl0b3JfMTEgPSB7XG4gIGNvbnN0IHsgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yLCBiNjREZWNvZGUgfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWU7XG5cbiAgY29uc3Qgc2NyaXB0Q29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJweW9kaWRlLTExLWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHB5b2RpZGUtMTEtY29udGVudHNgIH0sIGJsb2NrLmF0dHIpO1xuICBjb25zdCBlZGl0b3IgPSBuZXcgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yKFxuICAgIHB5b2RpZGVPanMucHlvZGlkZVByb21pc2UsXG4gICAgYmxvY2suY29kZSxcbiAgICBvcHRpb25zXG4gICk7XG5cbiAgcmV0dXJuIGVkaXRvci5jb250YWluZXI7XG59XG5fcHlvZGlkZV92YWx1ZV8xMSA9IHB5b2RpZGVPanMucHJvY2VzcyhfcHlvZGlkZV9lZGl0b3JfMTEsIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJweW9kaWRlLTEwIiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldCIsInNvdXJjZSI6InZpZXdvZiBfcHlvZGlkZV9lZGl0b3JfMTAgPSB7XG4gIGNvbnN0IHsgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yLCBiNjREZWNvZGUgfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWU7XG5cbiAgY29uc3Qgc2NyaXB0Q29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJweW9kaWRlLTEwLWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHB5b2RpZGUtMTAtY29udGVudHNgIH0sIGJsb2NrLmF0dHIpO1xuICBjb25zdCBlZGl0b3IgPSBuZXcgUHlvZGlkZUV4ZXJjaXNlRWRpdG9yKFxuICAgIHB5b2RpZGVPanMucHlvZGlkZVByb21pc2UsXG4gICAgYmxvY2suY29kZSxcbiAgICBvcHRpb25zXG4gICk7XG5cbiAgcmV0dXJuIGVkaXRvci5jb250YWluZXI7XG59XG5fcHlvZGlkZV92YWx1ZV8xMCA9IHB5b2RpZGVPanMucHJvY2VzcyhfcHlvZGlkZV9lZGl0b3JfMTAsIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJweW9kaWRlLTkiLCJpbmxpbmUiOmZhbHNlLCJtZXRob2ROYW1lIjoiaW50ZXJwcmV0Iiwic291cmNlIjoidmlld29mIF9weW9kaWRlX2VkaXRvcl85ID0ge1xuICBjb25zdCB7IFB5b2RpZGVFeGVyY2lzZUVkaXRvciwgYjY0RGVjb2RlIH0gPSB3aW5kb3cuX2V4ZXJjaXNlX29qc19ydW50aW1lO1xuXG4gIGNvbnN0IHNjcmlwdENvbnRlbnQgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKGBzY3JpcHRbdHlwZT1cXFwicHlvZGlkZS05LWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHB5b2RpZGUtOS1jb250ZW50c2AgfSwgYmxvY2suYXR0cik7XG4gIGNvbnN0IGVkaXRvciA9IG5ldyBQeW9kaWRlRXhlcmNpc2VFZGl0b3IoXG4gICAgcHlvZGlkZU9qcy5weW9kaWRlUHJvbWlzZSxcbiAgICBibG9jay5jb2RlLFxuICAgIG9wdGlvbnNcbiAgKTtcblxuICByZXR1cm4gZWRpdG9yLmNvbnRhaW5lcjtcbn1cbl9weW9kaWRlX3ZhbHVlXzkgPSBweW9kaWRlT2pzLnByb2Nlc3MoX3B5b2RpZGVfZWRpdG9yXzksIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJweW9kaWRlLTgiLCJpbmxpbmUiOmZhbHNlLCJtZXRob2ROYW1lIjoiaW50ZXJwcmV0Iiwic291cmNlIjoidmlld29mIF9weW9kaWRlX2VkaXRvcl84ID0ge1xuICBjb25zdCB7IFB5b2RpZGVFeGVyY2lzZUVkaXRvciwgYjY0RGVjb2RlIH0gPSB3aW5kb3cuX2V4ZXJjaXNlX29qc19ydW50aW1lO1xuXG4gIGNvbnN0IHNjcmlwdENvbnRlbnQgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKGBzY3JpcHRbdHlwZT1cXFwicHlvZGlkZS04LWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHB5b2RpZGUtOC1jb250ZW50c2AgfSwgYmxvY2suYXR0cik7XG4gIGNvbnN0IGVkaXRvciA9IG5ldyBQeW9kaWRlRXhlcmNpc2VFZGl0b3IoXG4gICAgcHlvZGlkZU9qcy5weW9kaWRlUHJvbWlzZSxcbiAgICBibG9jay5jb2RlLFxuICAgIG9wdGlvbnNcbiAgKTtcblxuICByZXR1cm4gZWRpdG9yLmNvbnRhaW5lcjtcbn1cbl9weW9kaWRlX3ZhbHVlXzggPSBweW9kaWRlT2pzLnByb2Nlc3MoX3B5b2RpZGVfZWRpdG9yXzgsIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJweW9kaWRlLTciLCJpbmxpbmUiOmZhbHNlLCJtZXRob2ROYW1lIjoiaW50ZXJwcmV0Iiwic291cmNlIjoidmlld29mIF9weW9kaWRlX2VkaXRvcl83ID0ge1xuICBjb25zdCB7IFB5b2RpZGVFeGVyY2lzZUVkaXRvciwgYjY0RGVjb2RlIH0gPSB3aW5kb3cuX2V4ZXJjaXNlX29qc19ydW50aW1lO1xuXG4gIGNvbnN0IHNjcmlwdENvbnRlbnQgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKGBzY3JpcHRbdHlwZT1cXFwicHlvZGlkZS03LWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHB5b2RpZGUtNy1jb250ZW50c2AgfSwgYmxvY2suYXR0cik7XG4gIGNvbnN0IGVkaXRvciA9IG5ldyBQeW9kaWRlRXhlcmNpc2VFZGl0b3IoXG4gICAgcHlvZGlkZU9qcy5weW9kaWRlUHJvbWlzZSxcbiAgICBibG9jay5jb2RlLFxuICAgIG9wdGlvbnNcbiAgKTtcblxuICByZXR1cm4gZWRpdG9yLmNvbnRhaW5lcjtcbn1cbl9weW9kaWRlX3ZhbHVlXzcgPSBweW9kaWRlT2pzLnByb2Nlc3MoX3B5b2RpZGVfZWRpdG9yXzcsIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJweW9kaWRlLTYiLCJpbmxpbmUiOmZhbHNlLCJtZXRob2ROYW1lIjoiaW50ZXJwcmV0Iiwic291cmNlIjoidmlld29mIF9weW9kaWRlX2VkaXRvcl82ID0ge1xuICBjb25zdCB7IFB5b2RpZGVFeGVyY2lzZUVkaXRvciwgYjY0RGVjb2RlIH0gPSB3aW5kb3cuX2V4ZXJjaXNlX29qc19ydW50aW1lO1xuXG4gIGNvbnN0IHNjcmlwdENvbnRlbnQgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKGBzY3JpcHRbdHlwZT1cXFwicHlvZGlkZS02LWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHB5b2RpZGUtNi1jb250ZW50c2AgfSwgYmxvY2suYXR0cik7XG4gIGNvbnN0IGVkaXRvciA9IG5ldyBQeW9kaWRlRXhlcmNpc2VFZGl0b3IoXG4gICAgcHlvZGlkZU9qcy5weW9kaWRlUHJvbWlzZSxcbiAgICBibG9jay5jb2RlLFxuICAgIG9wdGlvbnNcbiAgKTtcblxuICByZXR1cm4gZWRpdG9yLmNvbnRhaW5lcjtcbn1cbl9weW9kaWRlX3ZhbHVlXzYgPSBweW9kaWRlT2pzLnByb2Nlc3MoX3B5b2RpZGVfZWRpdG9yXzYsIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJweW9kaWRlLTUiLCJpbmxpbmUiOmZhbHNlLCJtZXRob2ROYW1lIjoiaW50ZXJwcmV0Iiwic291cmNlIjoidmlld29mIF9weW9kaWRlX2VkaXRvcl81ID0ge1xuICBjb25zdCB7IFB5b2RpZGVFeGVyY2lzZUVkaXRvciwgYjY0RGVjb2RlIH0gPSB3aW5kb3cuX2V4ZXJjaXNlX29qc19ydW50aW1lO1xuXG4gIGNvbnN0IHNjcmlwdENvbnRlbnQgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKGBzY3JpcHRbdHlwZT1cXFwicHlvZGlkZS01LWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHB5b2RpZGUtNS1jb250ZW50c2AgfSwgYmxvY2suYXR0cik7XG4gIGNvbnN0IGVkaXRvciA9IG5ldyBQeW9kaWRlRXhlcmNpc2VFZGl0b3IoXG4gICAgcHlvZGlkZU9qcy5weW9kaWRlUHJvbWlzZSxcbiAgICBibG9jay5jb2RlLFxuICAgIG9wdGlvbnNcbiAgKTtcblxuICByZXR1cm4gZWRpdG9yLmNvbnRhaW5lcjtcbn1cbl9weW9kaWRlX3ZhbHVlXzUgPSBweW9kaWRlT2pzLnByb2Nlc3MoX3B5b2RpZGVfZWRpdG9yXzUsIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJweW9kaWRlLTQiLCJpbmxpbmUiOmZhbHNlLCJtZXRob2ROYW1lIjoiaW50ZXJwcmV0Iiwic291cmNlIjoidmlld29mIF9weW9kaWRlX2VkaXRvcl80ID0ge1xuICBjb25zdCB7IFB5b2RpZGVFeGVyY2lzZUVkaXRvciwgYjY0RGVjb2RlIH0gPSB3aW5kb3cuX2V4ZXJjaXNlX29qc19ydW50aW1lO1xuXG4gIGNvbnN0IHNjcmlwdENvbnRlbnQgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKGBzY3JpcHRbdHlwZT1cXFwicHlvZGlkZS00LWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHB5b2RpZGUtNC1jb250ZW50c2AgfSwgYmxvY2suYXR0cik7XG4gIGNvbnN0IGVkaXRvciA9IG5ldyBQeW9kaWRlRXhlcmNpc2VFZGl0b3IoXG4gICAgcHlvZGlkZU9qcy5weW9kaWRlUHJvbWlzZSxcbiAgICBibG9jay5jb2RlLFxuICAgIG9wdGlvbnNcbiAgKTtcblxuICByZXR1cm4gZWRpdG9yLmNvbnRhaW5lcjtcbn1cbl9weW9kaWRlX3ZhbHVlXzQgPSBweW9kaWRlT2pzLnByb2Nlc3MoX3B5b2RpZGVfZWRpdG9yXzQsIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJweW9kaWRlLTMiLCJpbmxpbmUiOmZhbHNlLCJtZXRob2ROYW1lIjoiaW50ZXJwcmV0Iiwic291cmNlIjoidmlld29mIF9weW9kaWRlX2VkaXRvcl8zID0ge1xuICBjb25zdCB7IFB5b2RpZGVFeGVyY2lzZUVkaXRvciwgYjY0RGVjb2RlIH0gPSB3aW5kb3cuX2V4ZXJjaXNlX29qc19ydW50aW1lO1xuXG4gIGNvbnN0IHNjcmlwdENvbnRlbnQgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKGBzY3JpcHRbdHlwZT1cXFwicHlvZGlkZS0zLWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHB5b2RpZGUtMy1jb250ZW50c2AgfSwgYmxvY2suYXR0cik7XG4gIGNvbnN0IGVkaXRvciA9IG5ldyBQeW9kaWRlRXhlcmNpc2VFZGl0b3IoXG4gICAgcHlvZGlkZU9qcy5weW9kaWRlUHJvbWlzZSxcbiAgICBibG9jay5jb2RlLFxuICAgIG9wdGlvbnNcbiAgKTtcblxuICByZXR1cm4gZWRpdG9yLmNvbnRhaW5lcjtcbn1cbl9weW9kaWRlX3ZhbHVlXzMgPSBweW9kaWRlT2pzLnByb2Nlc3MoX3B5b2RpZGVfZWRpdG9yXzMsIHt9KTtcbiJ9LHsiY2VsbE5hbWUiOiJweW9kaWRlLTIiLCJpbmxpbmUiOmZhbHNlLCJtZXRob2ROYW1lIjoiaW50ZXJwcmV0Iiwic291cmNlIjoiX3B5b2RpZGVfdmFsdWVfMiA9IHtcbiAgY29uc3QgeyBoaWdobGlnaHRQeXRob24sIGI2NERlY29kZX0gPSB3aW5kb3cuX2V4ZXJjaXNlX29qc19ydW50aW1lO1xuXG4gIGNvbnN0IHNjcmlwdENvbnRlbnQgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKGBzY3JpcHRbdHlwZT1cXFwicHlvZGlkZS0yLWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XG5cbiAgLy8gRGVmYXVsdCBldmFsdWF0aW9uIGNvbmZpZ3VyYXRpb25cbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oe1xuICAgIGlkOiBcInB5b2RpZGUtMi1jb250ZW50c1wiLFxuICAgIGVjaG86IHRydWUsXG4gICAgb3V0cHV0OiB0cnVlXG4gIH0sIGJsb2NrLmF0dHIpO1xuXG4gIC8vIEV2YWx1YXRlIHRoZSBwcm92aWRlZCBQeXRob24gY29kZVxuICBjb25zdCByZXN1bHQgPSBweW9kaWRlT2pzLnByb2Nlc3Moe2NvZGU6IGJsb2NrLmNvZGUsIG9wdGlvbnN9LCB7fSk7XG5cbiAgLy8gRWFybHkgeWllbGQgd2hpbGUgd2Ugd2FpdCBmb3IgdGhlIGZpcnN0IGV2YWx1YXRpb24gYW5kIHJlbmRlclxuICBpZiAob3B0aW9ucy5vdXRwdXQgJiYgIShcIjJcIiBpbiBweW9kaWRlT2pzLnJlbmRlcmVkT2pzKSkge1xuICAgIGNvbnN0IGNvbnRhaW5lciA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoXCJkaXZcIik7XG4gICAgY29uc3Qgc3Bpbm5lciA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoXCJkaXZcIik7XG5cbiAgICBpZiAob3B0aW9ucy5lY2hvKSB7XG4gICAgICAvLyBTaG93IG91dHB1dCBhcyBoaWdobGlnaHRlZCBzb3VyY2VcbiAgICAgIGNvbnN0IHByZUVsZW0gPSBkb2N1bWVudC5jcmVhdGVFbGVtZW50KFwicHJlXCIpO1xuICAgICAgY29udGFpbmVyLmNsYXNzTmFtZSA9IFwic291cmNlQ29kZVwiO1xuICAgICAgcHJlRWxlbS5jbGFzc05hbWUgPSBcInNvdXJjZUNvZGUgcHl0aG9uXCI7XG4gICAgICBwcmVFbGVtLmFwcGVuZENoaWxkKGhpZ2hsaWdodFB5dGhvbihibG9jay5jb2RlKSk7XG4gICAgICBzcGlubmVyLmNsYXNzTmFtZSA9IFwic3Bpbm5lci1ncm93IHNwaW5uZXItZ3Jvdy1zbSBtLTIgcG9zaXRpb24tYWJzb2x1dGUgdG9wLTAgZW5kLTBcIjtcbiAgICAgIHByZUVsZW0uYXBwZW5kQ2hpbGQoc3Bpbm5lcik7XG4gICAgICBjb250YWluZXIuYXBwZW5kQ2hpbGQocHJlRWxlbSk7XG4gICAgfSBlbHNlIHtcbiAgICAgIHNwaW5uZXIuY2xhc3NOYW1lID0gXCJzcGlubmVyLWJvcmRlciBzcGlubmVyLWJvcmRlci1zbVwiO1xuICAgICAgY29udGFpbmVyLmFwcGVuZENoaWxkKHNwaW5uZXIpO1xuICAgIH1cblxuICAgIHlpZWxkIGNvbnRhaW5lcjtcbiAgfVxuXG4gIHB5b2RpZGVPanMucmVuZGVyZWRPanNbXCIyXCJdID0gdHJ1ZTtcbiAgeWllbGQgYXdhaXQgcmVzdWx0O1xufVxuIn0seyJjZWxsTmFtZSI6InB5b2RpZGUtMSIsImlubGluZSI6ZmFsc2UsIm1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJzb3VyY2UiOiJfcHlvZGlkZV92YWx1ZV8xID0ge1xuICBjb25zdCB7IGhpZ2hsaWdodFB5dGhvbiwgYjY0RGVjb2RlfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWU7XG5cbiAgY29uc3Qgc2NyaXB0Q29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJweW9kaWRlLTEtY29udGVudHNcXFwiXWApLnRleHRDb250ZW50O1xuICBjb25zdCBibG9jayA9IEpTT04ucGFyc2UoYjY0RGVjb2RlKHNjcmlwdENvbnRlbnQpKTtcblxuICAvLyBEZWZhdWx0IGV2YWx1YXRpb24gY29uZmlndXJhdGlvblxuICBjb25zdCBvcHRpb25zID0gT2JqZWN0LmFzc2lnbih7XG4gICAgaWQ6IFwicHlvZGlkZS0xLWNvbnRlbnRzXCIsXG4gICAgZWNobzogdHJ1ZSxcbiAgICBvdXRwdXQ6IHRydWVcbiAgfSwgYmxvY2suYXR0cik7XG5cbiAgLy8gRXZhbHVhdGUgdGhlIHByb3ZpZGVkIFB5dGhvbiBjb2RlXG4gIGNvbnN0IHJlc3VsdCA9IHB5b2RpZGVPanMucHJvY2Vzcyh7Y29kZTogYmxvY2suY29kZSwgb3B0aW9uc30sIHt9KTtcblxuICAvLyBFYXJseSB5aWVsZCB3aGlsZSB3ZSB3YWl0IGZvciB0aGUgZmlyc3QgZXZhbHVhdGlvbiBhbmQgcmVuZGVyXG4gIGlmIChvcHRpb25zLm91dHB1dCAmJiAhKFwiMVwiIGluIHB5b2RpZGVPanMucmVuZGVyZWRPanMpKSB7XG4gICAgY29uc3QgY29udGFpbmVyID0gZG9jdW1lbnQuY3JlYXRlRWxlbWVudChcImRpdlwiKTtcbiAgICBjb25zdCBzcGlubmVyID0gZG9jdW1lbnQuY3JlYXRlRWxlbWVudChcImRpdlwiKTtcblxuICAgIGlmIChvcHRpb25zLmVjaG8pIHtcbiAgICAgIC8vIFNob3cgb3V0cHV0IGFzIGhpZ2hsaWdodGVkIHNvdXJjZVxuICAgICAgY29uc3QgcHJlRWxlbSA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoXCJwcmVcIik7XG4gICAgICBjb250YWluZXIuY2xhc3NOYW1lID0gXCJzb3VyY2VDb2RlXCI7XG4gICAgICBwcmVFbGVtLmNsYXNzTmFtZSA9IFwic291cmNlQ29kZSBweXRob25cIjtcbiAgICAgIHByZUVsZW0uYXBwZW5kQ2hpbGQoaGlnaGxpZ2h0UHl0aG9uKGJsb2NrLmNvZGUpKTtcbiAgICAgIHNwaW5uZXIuY2xhc3NOYW1lID0gXCJzcGlubmVyLWdyb3cgc3Bpbm5lci1ncm93LXNtIG0tMiBwb3NpdGlvbi1hYnNvbHV0ZSB0b3AtMCBlbmQtMFwiO1xuICAgICAgcHJlRWxlbS5hcHBlbmRDaGlsZChzcGlubmVyKTtcbiAgICAgIGNvbnRhaW5lci5hcHBlbmRDaGlsZChwcmVFbGVtKTtcbiAgICB9IGVsc2Uge1xuICAgICAgc3Bpbm5lci5jbGFzc05hbWUgPSBcInNwaW5uZXItYm9yZGVyIHNwaW5uZXItYm9yZGVyLXNtXCI7XG4gICAgICBjb250YWluZXIuYXBwZW5kQ2hpbGQoc3Bpbm5lcik7XG4gICAgfVxuXG4gICAgeWllbGQgY29udGFpbmVyO1xuICB9XG5cbiAgcHlvZGlkZU9qcy5yZW5kZXJlZE9qc1tcIjFcIl0gPSB0cnVlO1xuICB5aWVsZCBhd2FpdCByZXN1bHQ7XG59XG4ifSx7ImNlbGxOYW1lIjoicHlvZGlkZS1wcmVsdWRlIiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldFF1aWV0Iiwic291cmNlIjoicHlvZGlkZU9qcyA9IHtcbiAgY29uc3Qge1xuICAgIFB5b2RpZGVFdmFsdWF0b3IsXG4gICAgUHlvZGlkZUVudmlyb25tZW50TWFuYWdlcixcbiAgICBzZXR1cFB5dGhvbixcbiAgICBzdGFydFB5b2RpZGVXb3JrZXIsXG4gICAgYjY0RGVjb2RlLFxuICAgIGNvbGxhcHNlUGF0aCxcbiAgfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWU7XG5cbiAgY29uc3Qgc3RhdHVzQ29udGFpbmVyID0gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoXCJleGVyY2lzZS1sb2FkaW5nLXN0YXR1c1wiKTtcbiAgY29uc3QgaW5kaWNhdG9yQ29udGFpbmVyID0gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoXCJleGVyY2lzZS1sb2FkaW5nLWluZGljYXRvclwiKTtcbiAgaW5kaWNhdG9yQ29udGFpbmVyLmNsYXNzTGlzdC5yZW1vdmUoXCJkLW5vbmVcIik7XG5cbiAgbGV0IHN0YXR1c1RleHQgPSBkb2N1bWVudC5jcmVhdGVFbGVtZW50KFwiZGl2XCIpXG4gIHN0YXR1c1RleHQuY2xhc3NMaXN0ID0gXCJleGVyY2lzZS1sb2FkaW5nLWRldGFpbHNcIjtcbiAgc3RhdHVzVGV4dCA9IHN0YXR1c0NvbnRhaW5lci5hcHBlbmRDaGlsZChzdGF0dXNUZXh0KTtcbiAgc3RhdHVzVGV4dC50ZXh0Q29udGVudCA9IGBJbml0aWFsaXNlYDtcblxuICAvLyBIb2lzdCBpbmRpY2F0b3Igb3V0IGZyb20gZmluYWwgc2xpZGUgd2hlbiBydW5uaW5nIHVuZGVyIHJldmVhbFxuICBjb25zdCByZXZlYWxTdGF0dXMgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKFwiLnJldmVhbCAuZXhlcmNpc2UtbG9hZGluZy1pbmRpY2F0b3JcIik7XG4gIGlmIChyZXZlYWxTdGF0dXMpIHtcbiAgICByZXZlYWxTdGF0dXMucmVtb3ZlKCk7XG4gICAgZG9jdW1lbnQucXVlcnlTZWxlY3RvcihcIi5yZXZlYWwgPiAuc2xpZGVzXCIpLmFwcGVuZENoaWxkKHJldmVhbFN0YXR1cyk7XG4gIH1cblxuICAvLyBNYWtlIGFueSByZXZlYWwgc2xpZGVzIHdpdGggbGl2ZSBjZWxscyBzY3JvbGxhYmxlXG4gIGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3JBbGwoXCIucmV2ZWFsIC5leGVyY2lzZS1jZWxsXCIpLmZvckVhY2goKGVsKSA9PiB7XG4gICAgZWwuY2xvc2VzdCgnc2VjdGlvbi5zbGlkZScpLmNsYXNzTGlzdC5hZGQoXCJzY3JvbGxhYmxlXCIpO1xuICB9KVxuXG4gIC8vIFB5b2RpZGUgc3VwcGxlbWVudGFsIGRhdGEgYW5kIG9wdGlvbnNcbiAgY29uc3QgZGF0YUNvbnRlbnQgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKGBzY3JpcHRbdHlwZT1cXFwicHlvZGlkZS1kYXRhXFxcIl1gKS50ZXh0Q29udGVudDtcbiAgY29uc3QgZGF0YSA9IEpTT04ucGFyc2UoYjY0RGVjb2RlKGRhdGFDb250ZW50KSk7XG5cbiAgLy8gR3JhYiBsaXN0IG9mIHJlc291cmNlcyB0byBiZSBkb3dubG9hZGVkXG4gIGNvbnN0IGZpbGVzQ29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJ2ZnMtZmlsZVxcXCJdYCkudGV4dENvbnRlbnQ7XG4gIGNvbnN0IGZpbGVzID0gSlNPTi5wYXJzZShiNjREZWNvZGUoZmlsZXNDb250ZW50KSk7XG5cbiAgbGV0IHB5b2RpZGVQcm9taXNlID0gKGFzeW5jICgpID0+IHtcbiAgICBzdGF0dXNUZXh0LnRleHRDb250ZW50ID0gYERvd25sb2FkaW5nIFB5b2RpZGVgO1xuICAgIGNvbnN0IHB5b2RpZGUgPSBhd2FpdCBzdGFydFB5b2RpZGVXb3JrZXIoZGF0YS5vcHRpb25zKTtcblxuICAgIHN0YXR1c1RleHQudGV4dENvbnRlbnQgPSBgRG93bmxvYWRpbmcgcGFja2FnZTogbWljcm9waXBgO1xuICAgIGF3YWl0IHB5b2RpZGUubG9hZFBhY2thZ2UoXCJtaWNyb3BpcFwiKTtcbiAgICBjb25zdCBtaWNyb3BpcCA9IGF3YWl0IHB5b2RpZGUucHlpbXBvcnQoXCJtaWNyb3BpcFwiKTtcbiAgICBhd2FpdCBkYXRhLnBhY2thZ2VzLnBrZ3MubWFwKChwa2cpID0+ICgpID0+IHtcbiAgICAgIHN0YXR1c1RleHQudGV4dENvbnRlbnQgPSBgRG93bmxvYWRpbmcgcGFja2FnZTogJHtwa2d9YDtcbiAgICAgIHJldHVybiBtaWNyb3BpcC5pbnN0YWxsKHBrZyk7XG4gICAgfSkucmVkdWNlKChjdXIsIG5leHQpID0+IGN1ci50aGVuKG5leHQpLCBQcm9taXNlLnJlc29sdmUoKSk7XG4gICAgYXdhaXQgbWljcm9waXAuZGVzdHJveSgpO1xuXG4gICAgLy8gRG93bmxvYWQgYW5kIGluc3RhbGwgcmVzb3VyY2VzXG4gICAgYXdhaXQgZmlsZXMubWFwKChmaWxlKSA9PiBhc3luYyAoKSA9PiB7XG4gICAgICBjb25zdCBuYW1lID0gZmlsZS5zdWJzdHJpbmcoZmlsZS5sYXN0SW5kZXhPZignLycpICsgMSk7XG4gICAgICBzdGF0dXNUZXh0LnRleHRDb250ZW50ID0gYERvd25sb2FkaW5nIHJlc291cmNlOiAke25hbWV9YDtcbiAgICAgIGNvbnN0IHJlc3BvbnNlID0gYXdhaXQgZmV0Y2goZmlsZSk7XG4gICAgICBpZiAoIXJlc3BvbnNlLm9rKSB7XG4gICAgICAgIHRocm93IG5ldyBFcnJvcihgQ2FuJ3QgZG93bmxvYWQgXFxgJHtmaWxlfVxcYC4gRXJyb3IgJHtyZXNwb25zZS5zdGF0dXN9OiBcIiR7cmVzcG9uc2Uuc3RhdHVzVGV4dH1cIi5gKTtcbiAgICAgIH1cbiAgICAgIGNvbnN0IGRhdGEgPSBhd2FpdCByZXNwb25zZS5hcnJheUJ1ZmZlcigpO1xuXG4gICAgICAvLyBTdG9yZSBVUkxzIGluIHRoZSBjd2Qgd2l0aG91dCBhbnkgc3ViZGlyZWN0b3J5IHN0cnVjdHVyZVxuICAgICAgaWYgKGZpbGUuaW5jbHVkZXMoXCI6Ly9cIikpIHtcbiAgICAgICAgZmlsZSA9IG5hbWU7XG4gICAgICB9XG5cbiAgICAgIC8vIENvbGxhcHNlIGhpZ2hlciBkaXJlY3Rvcnkgc3RydWN0dXJlXG4gICAgICBmaWxlID0gY29sbGFwc2VQYXRoKGZpbGUpO1xuXG4gICAgICAvLyBDcmVhdGUgZGlyZWN0b3J5IHRyZWUsIGlnbm9yaW5nIFwiZGlyZWN0b3J5IGV4aXN0c1wiIFZGUyBlcnJvcnNcbiAgICAgIGNvbnN0IHBhcnRzID0gZmlsZS5zcGxpdCgnLycpLnNsaWNlKDAsIC0xKTtcbiAgICAgIGxldCBwYXRoID0gJyc7XG4gICAgICB3aGlsZSAocGFydHMubGVuZ3RoID4gMCkge1xuICAgICAgICBwYXRoICs9IHBhcnRzLnNoaWZ0KCkgKyAnLyc7XG4gICAgICAgIHRyeSB7XG4gICAgICAgICAgYXdhaXQgcHlvZGlkZS5GUy5ta2RpcihwYXRoKTtcbiAgICAgICAgfSBjYXRjaCAoZSkge1xuICAgICAgICAgIGlmIChlLm5hbWUgIT09IFwiRXJybm9FcnJvclwiKSB0aHJvdyBlO1xuICAgICAgICAgIGlmIChlLmVycm5vICE9PSAyMCkge1xuICAgICAgICAgICAgY29uc3QgZXJyb3JUZXh0UHRyID0gYXdhaXQgcHlvZGlkZS5fbW9kdWxlLl9zdHJlcnJvcihlLmVycm5vKTtcbiAgICAgICAgICAgIGNvbnN0IGVycm9yVGV4dCA9IGF3YWl0IHB5b2RpZGUuX21vZHVsZS5VVEY4VG9TdHJpbmcoZXJyb3JUZXh0UHRyKTtcbiAgICAgICAgICAgIHRocm93IG5ldyBFcnJvcihgRmlsZXN5c3RlbSBFcnJvciAke2UuZXJybm99IFwiJHtlcnJvclRleHR9XCIuYCk7XG4gICAgICAgICAgfVxuICAgICAgICB9XG4gICAgICB9XG5cbiAgICAgIC8vIFdyaXRlIHRoaXMgZmlsZSB0byB0aGUgVkZTXG4gICAgICB0cnkge1xuICAgICAgICByZXR1cm4gYXdhaXQgcHlvZGlkZS5GUy53cml0ZUZpbGUoZmlsZSwgbmV3IFVpbnQ4QXJyYXkoZGF0YSkpO1xuICAgICAgfSBjYXRjaCAoZSkge1xuICAgICAgICBpZiAoZS5uYW1lICE9PSBcIkVycm5vRXJyb3JcIikgdGhyb3cgZTtcbiAgICAgICAgY29uc3QgZXJyb3JUZXh0UHRyID0gYXdhaXQgcHlvZGlkZS5fbW9kdWxlLl9zdHJlcnJvcihlLmVycm5vKTtcbiAgICAgICAgY29uc3QgZXJyb3JUZXh0ID0gYXdhaXQgcHlvZGlkZS5fbW9kdWxlLlVURjhUb1N0cmluZyhlcnJvclRleHRQdHIpO1xuICAgICAgICB0aHJvdyBuZXcgRXJyb3IoYEZpbGVzeXN0ZW0gRXJyb3IgJHtlLmVycm5vfSBcIiR7ZXJyb3JUZXh0fVwiLmApO1xuICAgICAgfVxuICAgIH0pLnJlZHVjZSgoY3VyLCBuZXh0KSA9PiBjdXIudGhlbihuZXh0KSwgUHJvbWlzZS5yZXNvbHZlKCkpO1xuXG4gICAgc3RhdHVzVGV4dC50ZXh0Q29udGVudCA9IGBQeW9kaWRlIGVudmlyb25tZW50IHNldHVwYDtcbiAgICBhd2FpdCBzZXR1cFB5dGhvbihweW9kaWRlKTtcblxuICAgIHN0YXR1c1RleHQucmVtb3ZlKCk7XG4gICAgaWYgKHN0YXR1c0NvbnRhaW5lci5jaGlsZHJlbi5sZW5ndGggPT0gMCkge1xuICAgICAgc3RhdHVzQ29udGFpbmVyLnBhcmVudE5vZGUucmVtb3ZlKCk7XG4gICAgfVxuICAgIHJldHVybiBweW9kaWRlO1xuICB9KSgpLmNhdGNoKChlcnIpID0+IHtcbiAgICBzdGF0dXNUZXh0LnN0eWxlLmNvbG9yID0gXCJ2YXIoLS1leGVyY2lzZS1lZGl0b3ItaGwtZXIsICNBRDAwMDApXCI7XG4gICAgc3RhdHVzVGV4dC50ZXh0Q29udGVudCA9IGVyci5tZXNzYWdlO1xuICAgIC8vaW5kaWNhdG9yQ29udGFpbmVyLnF1ZXJ5U2VsZWN0b3IoXCIuc3Bpbm5lci1ncm93XCIpLmNsYXNzTGlzdC5hZGQoXCJkLW5vbmVcIik7XG4gICAgdGhyb3cgZXJyO1xuICB9KTtcblxuICAvLyBLZWVwIHRyYWNrIG9mIGluaXRpYWwgT0pTIGJsb2NrIHJlbmRlclxuICBjb25zdCByZW5kZXJlZE9qcyA9IHt9O1xuXG4gIGNvbnN0IHByb2Nlc3MgPSBhc3luYyAoY29udGV4dCwgaW5wdXRzKSA9PiB7XG4gICAgY29uc3QgcHlvZGlkZSA9IGF3YWl0IHB5b2RpZGVQcm9taXNlO1xuICAgIGNvbnN0IGV2YWx1YXRvciA9IG5ldyBQeW9kaWRlRXZhbHVhdG9yKHB5b2RpZGUsIGNvbnRleHQpO1xuICAgIGF3YWl0IGV2YWx1YXRvci5wcm9jZXNzKGlucHV0cyk7XG4gICAgcmV0dXJuIGV2YWx1YXRvci5jb250YWluZXI7XG4gIH1cblxuICByZXR1cm4ge1xuICAgIHB5b2RpZGVQcm9taXNlLFxuICAgIHJlbmRlcmVkT2pzLFxuICAgIHByb2Nlc3MsXG4gIH07XG59XG4ifV19
+</script>
+<div id="exercise-loading-indicator" class="exercise-loading-indicator d-none d-flex align-items-center gap-2">
+<div id="exercise-loading-status" class="d-flex gap-2">
+
+</div>
+<div class="spinner-grow spinner-grow-sm">
+
+</div>
+</div>
+<script type="vfs-file">
+WyJlY29ub21pZXMuY3N2IiwiZWNvbm9taWVzX2luZGV4ZWQuY3N2IiwicG9wdWxhdGlvbnMuY3N2IiwiZWNvbm9taWVzLnhsc3giLCJwb3B1bGF0aW9ucy54bHN4Il0=
+</script>
+</section>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script type="ojs-module-contents">
+eyJjb250ZW50cyI6W119
+</script>
+<script type="module">
+if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }
+window._ojs.paths.runtimeToDoc = "../..";
+window._ojs.paths.runtimeToRoot = "../..";
+window._ojs.paths.docToRoot = "";
+window._ojs.selfContained = false;
+window._ojs.runtime.interpretFromScriptTags();
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p>Dr.&nbsp;Chester Ismay · O’Reilly · Runs in your browser via Quarto Live + Pyodide</p>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

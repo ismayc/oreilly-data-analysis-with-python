@@ -1,9 +1,21 @@
 ---
-title: 'Walkthroughs and Exercises for *Data Analysis in Python*'
+title: "Walkthroughs and Exercises for Data Analysis with Python"
 author: "Dr. Chester Ismay"
-format: html
-engine: knitr
+format:
+  html:
+    theme: flatly
+    toc: true
+    toc-floating: true
+  ipynb: default
+engine: jupyter
+execute:
+  warning: false
 ---
+
+```{python}
+#| eval: false
+!pip install pandas matplotlib seaborn plotly openpyxl
+```
 
 ```{python}
 #| include: false
@@ -20,9 +32,9 @@ InteractiveShell.ast_node_interactivity = "all"
 
 # Intro: Foundations of Data Analysis with Python
 
-## Walkthrough #1: Setting Up the Python Environment
+## Walkthrough: Setting Up the Python Environment
 
-If you haven't already installed Python, Jupyter, and the necessary packages, there are instructions on the course repo in the README to do so [here](https://github.com/ismayc/oreilly-data-analysis-with-python/blob/main/README.md). 
+If you haven't already installed Python, Jupyter, and the necessary packages, there are instructions on the course repo in the README to do so [here](https://github.com/ismayc/oreilly-data-analysis-with-python/blob/main/README.md).
 
 If you aren't able to do this on your machine, you may want to check out [Google Colab](https://colab.research.google.com/). It's a free service that allows you to run Jupyter notebooks in the cloud. Alternatively, I've set up some temporary notebooks on Binder [here](https://mybinder.org/v2/gh/ismayc/oreilly-data-analysis-with-python/HEAD?urlpath=%2Fdoc%2Ftree%2Fexercises.ipynb) that you can work with online as well.
 
@@ -39,14 +51,14 @@ import plotly.offline as pyo
 pyo.init_notebook_mode(connected=True)
 ```
 
-## Exercise #1: Setting Up the Python Environment
+## Exercise: Setting Up the Python Environment
 
-By completing this exercise, you will be able to  
-- Import necessary Python packages  
-- Check for successful package loading  
+By completing this exercise, you will be able to
+- Import necessary Python packages
+- Check for successful package loading
 
 
-Follow the instructions above in Walkthrough #1 to check for correct installation 
+Follow the instructions above in Walkthrough to check for correct installation
 of necessary packages. We'll wait a few minutes to make sure as many of you are
 set up as possible. Please give a thumbs up in the pulse check if you are ready
 to move on.
@@ -55,7 +67,7 @@ to move on.
 
 # Module 1: Data Wrangling with Pandas
 
-## Walkthrough #2: Loading and Inspecting Data with Pandas
+## Walkthrough 1.1: Loading and Inspecting Data with Pandas
 
 ### Import data from a CSV or from an Excel file
 
@@ -66,6 +78,8 @@ to move on.
 # Or load the data from an Excel file
 
 ```
+
+> **Common Pitfall:** `read_excel` relies on the `openpyxl` engine for `.xlsx` files. If you see an `ImportError` or `Missing optional dependency 'openpyxl'`, install it with `pip install openpyxl`. Also note that `read_excel` reads only the first sheet by default; pass `sheet_name=` if your workbook has multiple sheets.
 
 ### Perform an initial exploration of the data
 
@@ -94,11 +108,11 @@ to move on.
 
 ```
 
-## Exercise #2: Loading and Inspecting Data with Pandas
+## Exercise 1.1: Loading and Inspecting Data with Pandas
 
-By completing this exercise, you will be able to use `pandas` to  
-- Import data from a CSV or from an Excel file   
-- Perform an initial exploration of the data  
+By completing this exercise, you will be able to use `pandas` to
+- Import data from a CSV or from an Excel file
+- Perform an initial exploration of the data
 
 ```{python}
 # Load the populations data from an Excel file
@@ -118,7 +132,7 @@ By completing this exercise, you will be able to use `pandas` to
 ```
 
 
-## Walkthrough #3: Cleaning and Preparing Data with Pandas
+## Walkthrough 1.2: Cleaning and Preparing Data with Pandas
 
 ### Handle missing data
 
@@ -173,6 +187,8 @@ By completing this exercise, you will be able to use `pandas` to
 
 This can be extended to replace missing values with the mean, median, or mode of the column too.
 
+> **Common Pitfall:** Methods like `dropna`, `fillna`, and `rename` return a new DataFrame by default and do NOT modify the original in place. Assign the result to a variable (or pass `inplace=True`) or your changes will be lost. Reassigning is the recommended pattern.
+
 ### Convert a column to a different data type
 
 ```{python}
@@ -199,7 +215,7 @@ This can be extended to replace missing values with the mean, median, or mode of
 
 ```
 
-### Changing a DataFrame’s index
+### Changing a DataFrame's index
 
 #### Set the index
 
@@ -239,6 +255,8 @@ This can be extended to replace missing values with the mean, median, or mode of
 
 ```
 
+> **Common Pitfall:** When combining multiple conditions, wrap each comparison in parentheses and use `&` (and) / `|` (or), not the Python keywords `and`/`or`. Forgetting the parentheses, e.g. `economies['inflation_rate'] < 0 & ...`, triggers an operator-precedence error because `&` binds more tightly than `<`.
+
 #### Conditions on multiple columns
 
 ```{python}
@@ -254,14 +272,14 @@ This can be extended to replace missing values with the mean, median, or mode of
 
 ```
 
-## Exercise #3: Cleaning and Preparing Data with Pandas
+## Exercise 1.2: Cleaning and Preparing Data with Pandas
 
-By completing this exercise, you will be able to use `pandas` to  
-- Handle missing data  
-- Convert a column to a different data type   
-- Rename a column  
-- Change a DataFrame’s index  
-- Filter a DataFrame  
+By completing this exercise, you will be able to use `pandas` to
+- Handle missing data
+- Convert a column to a different data type
+- Rename a column
+- Change a DataFrame's index
+- Filter a DataFrame
 
 ### Handle Missing Data
 
@@ -292,7 +310,7 @@ By completing this exercise, you will be able to use `pandas` to
 #### Replace missing values with specific value
 
 ```{python}
-# Replace missing values with a specific value (e.g., 0 for numerical columns, 
+# Replace missing values with a specific value (e.g., 0 for numerical columns,
 # 'Unknown' for categorical columns)
 
 
@@ -326,9 +344,9 @@ By completing this exercise, you will be able to use `pandas` to
 
 ```
 
-### Change a DataFrame’s Index and Filter a DataFrame
+### Change a DataFrame's Index and Filter a DataFrame
 
-#### Change a DataFrame’s Index
+#### Change a DataFrame's Index
 
 ```{python}
 # Set the 'country_code' column as the index
@@ -357,7 +375,7 @@ By completing this exercise, you will be able to use `pandas` to
 ```
 
 
-## Walkthrough #4: Transforming and Aggregating Data with Pandas
+## Walkthrough 1.3: Transforming and Aggregating Data with Pandas
 
 ### Grouping data
 
@@ -402,7 +420,7 @@ By completing this exercise, you will be able to use `pandas` to
 
 ```
 
-### Analyzing categorical data 
+### Analyzing categorical data
 
 #### Using cross-tabulation
 
@@ -420,13 +438,13 @@ By completing this exercise, you will be able to use `pandas` to
 
 ```
 
-## Exercise #4: Transforming and Aggregating Data with Pandas
+## Exercise 1.3: Transforming and Aggregating Data with Pandas
 
 By completing this exercise, you will be able to use `pandas` to
-- Aggregate data effectively by grouping it  
-- Transform data by applying functions element-wise or to groups  
-- Create summary tables  
-- Analyze categorical data using cross-tabulation and counts  
+- Aggregate data effectively by grouping it
+- Transform data by applying functions element-wise or to groups
+- Create summary tables
+- Analyze categorical data using cross-tabulation and counts
 
 
 ### Grouping Data
@@ -488,11 +506,22 @@ By completing this exercise, you will be able to use `pandas` to
 
 ```
 
+### Self-Check
+
+By the end of this module, you should be able to:
+
+- [ ] Load data from CSV and Excel files with `read_csv` and `read_excel`
+- [ ] Inspect a DataFrame using `head()`, `info()`, `describe()`, `dtypes`, and `isnull().sum()`
+- [ ] Handle missing data by dropping rows/columns or filling values with `dropna` and `fillna`
+- [ ] Convert column data types, rename columns, and set or reset the index
+- [ ] Filter rows using single and multiple boolean conditions
+- [ ] Aggregate and summarize data with `groupby`, `agg`, `pivot_table`, `crosstab`, and `value_counts`
+
 ---
 
 # Module 2: Data Visualization Basics with Matplotlib and Seaborn
 
-## Walkthrough #5: Creating Basic Plots with Matplotlib
+## Walkthrough 2.1: Creating Basic Plots with Matplotlib
 
 ### Line plot
 
@@ -541,7 +570,7 @@ By completing this exercise, you will be able to use `pandas` to
 ### Adjusting axes and tick marks
 
 ```{python}
-# Bar chart of gdp_percapita for different Caribbean countries in 2020 with 
+# Bar chart of gdp_percapita for different Caribbean countries in 2020 with
 # adjusted axes and tick marks
 
 
@@ -561,13 +590,14 @@ By completing this exercise, you will be able to use `pandas` to
 
 ```
 
+> **Common Pitfall:** Call `plt.figure()` before each new plot and `plt.show()` after it. If you skip `plt.figure()`, matplotlib keeps drawing onto the previous figure, and successive plots can overlap or accumulate unexpectedly within the same axes.
 
-## Exercise #5: Creating Basic Plots with Matplotlib
+## Exercise 2.1: Creating Basic Plots with Matplotlib
 
-By completing this exercise, you will be able to use `matplotlib` to  
-- Create line plots and bar charts  
-- Add labels and titles  
-- Adjust axes and tick marks  
+By completing this exercise, you will be able to use `matplotlib` to
+- Create line plots and bar charts
+- Add labels and titles
+- Adjust axes and tick marks
 
 ### Line Plot
 
@@ -625,7 +655,7 @@ By completing this exercise, you will be able to use `matplotlib` to
 
 
 
-# Bar chart of fertility rate for selected African countries in 2020 with 
+# Bar chart of fertility rate for selected African countries in 2020 with
 # adjusted axes and tick marks
 
 
@@ -646,7 +676,7 @@ By completing this exercise, you will be able to use `matplotlib` to
 ```
 
 
-## Walkthrough #6: Data Visualization Techniques with Seaborn
+## Walkthrough 2.2: Data Visualization Techniques with Seaborn
 
 ### Heatmap
 
@@ -664,6 +694,8 @@ By completing this exercise, you will be able to use `matplotlib` to
 
 
 ```
+
+> **Common Pitfall:** `corr()` only works on numeric columns. Select numeric columns first (as with `select_dtypes`); passing a DataFrame that still contains string columns such as `code` or `income_group` will either error or silently drop them depending on your pandas version.
 
 ### Pair plot
 
@@ -705,12 +737,12 @@ By completing this exercise, you will be able to use `matplotlib` to
 
 ```
 
-## Exercise #6: Data Visualization Techniques with Seaborn
+## Exercise 2.2: Data Visualization Techniques with Seaborn
 
-By completing this exercise, you will be able to use `seaborn` to  
-- Create heatmaps  
-- Design pair plots and violin plots  
-- Customize Seaborn plots  
+By completing this exercise, you will be able to use `seaborn` to
+- Create heatmaps
+- Design pair plots and violin plots
+- Customize Seaborn plots
 
 ### Heatmap
 
@@ -775,11 +807,22 @@ By completing this exercise, you will be able to use `seaborn` to
 
 ```
 
+### Self-Check
+
+By the end of this module, you should be able to:
+
+- [ ] Create line plots and bar charts (vertical and horizontal) with `matplotlib`
+- [ ] Add axis labels, titles, and gridlines to a plot
+- [ ] Adjust axis limits and tick marks with `ylim`, `xticks`, and `yticks`
+- [ ] Build heatmaps, pair plots, and violin plots with `seaborn`
+- [ ] Compute a correlation matrix on numeric columns before plotting it
+- [ ] Customize seaborn plots with palettes, hues, and matplotlib styling
+
 ---
 
 # Module 3: Interactive Data Visualization with Plotly
 
-## Walkthrough #7: Interactive Charts and Dashboards with Plotly
+## Walkthrough 3.1: Interactive Charts and Dashboards with Plotly
 
 ### Basic interactive chart
 
@@ -792,6 +835,8 @@ By completing this exercise, you will be able to use `seaborn` to
 
 
 ```
+
+> **Common Pitfall:** If a Plotly figure shows up blank in a Jupyter notebook, the renderer was likely not initialized. Make sure the setup cell that runs `pyo.init_notebook_mode(connected=True)` was executed first, and remember that you must call `fig.show()` -- simply creating `fig` does not display anything.
 
 ### Adding interactive elements
 
@@ -838,13 +883,14 @@ By completing this exercise, you will be able to use `seaborn` to
 
 ```
 
+> **Common Pitfall:** Plotly subplot positions are 1-indexed, so the first cell is `row=1, col=1` (not `0`). The `rows`/`cols` you pass to `make_subplots` must also be large enough to hold every `add_trace` position, or you will get an index error.
 
-## Exercise #7: Interactive Charts and Dashboards with Plotly
+## Exercise 3.1: Interactive Charts and Dashboards with Plotly
 
-By completing this exercise, you will be able to use `plotly` to  
-- Create a basic interactive chart  
-- Add interactive elements: hover, zoom, and selection tools  
-- Design a simple dashboard with multiple charts  
+By completing this exercise, you will be able to use `plotly` to
+- Create a basic interactive chart
+- Add interactive elements: hover, zoom, and selection tools
+- Design a simple dashboard with multiple charts
 
 ### Basic Interactive Chart
 
@@ -895,7 +941,7 @@ By completing this exercise, you will be able to use `plotly` to
 
 ```
 
-## Walkthrough #8: Creating a Dynamic Data Report
+## Walkthrough 3.2: Creating a Dynamic Data Report
 
 ### Selecting relevant data
 
@@ -909,27 +955,27 @@ selected_data.head()
 
 ```{python}
 # Create a subplot figure with 3 rows
-fig = make_subplots(rows=3, cols=1, 
-                    subplot_titles=('GDP Per Capita vs. Gross Savings', 
-                                    'GDP Per Capita by Country and Income Group', 
+fig = make_subplots(rows=3, cols=1,
+                    subplot_titles=('GDP Per Capita vs. Gross Savings',
+                                    'GDP Per Capita by Country and Income Group',
                                     'Gross Savings by Country and Income Group'))
 
 # Add scatter plot
-fig.add_trace(go.Scatter(x=selected_data['gdp_percapita'], y=selected_data['gross_savings'], 
-                         mode='markers', 
-                         marker=dict(color=selected_data['income_group'].astype('category').cat.codes), 
-                         text=selected_data['code'], name='Scatter'), 
+fig.add_trace(go.Scatter(x=selected_data['gdp_percapita'], y=selected_data['gross_savings'],
+                         mode='markers',
+                         marker=dict(color=selected_data['income_group'].astype('category').cat.codes),
+                         text=selected_data['code'], name='Scatter'),
               row=1, col=1)
 
 # Add bar chart
-fig.add_trace(go.Bar(x=selected_data['code'], y=selected_data['gdp_percapita'], 
-                     marker=dict(color=selected_data['income_group'].astype('category').cat.codes), name='Bar'), 
+fig.add_trace(go.Bar(x=selected_data['code'], y=selected_data['gdp_percapita'],
+                     marker=dict(color=selected_data['income_group'].astype('category').cat.codes), name='Bar'),
               row=2, col=1)
 
 # Add another scatter plot
-fig.add_trace(go.Scatter(x=selected_data['code'], y=selected_data['gross_savings'], 
-                         mode='markers', 
-                         marker=dict(color=selected_data['income_group'].astype('category').cat.codes), text=selected_data['code'], name='Scatter'), 
+fig.add_trace(go.Scatter(x=selected_data['code'], y=selected_data['gross_savings'],
+                         mode='markers',
+                         marker=dict(color=selected_data['income_group'].astype('category').cat.codes), text=selected_data['code'], name='Scatter'),
               row=3, col=1)
 
 # Update layout
@@ -945,38 +991,38 @@ import plotly.io as pio
 import plotly.graph_objects as go
 
 # Create a subplot figure with 3 rows
-fig = make_subplots(rows=3, cols=1, 
-                    subplot_titles=('GDP Per Capita vs. Gross Savings', 
-                                    'GDP Per Capita by Country and Income Group', 
+fig = make_subplots(rows=3, cols=1,
+                    subplot_titles=('GDP Per Capita vs. Gross Savings',
+                                    'GDP Per Capita by Country and Income Group',
                                     'Gross Savings by Country and Income Group'))
 
 # Add scatter plot
-fig.add_trace(go.Scatter(x=selected_data['gdp_percapita'], y=selected_data['gross_savings'], 
-                         mode='markers', 
-                         marker=dict(color=selected_data['income_group'].astype('category').cat.codes), 
-                         text=selected_data['code'], name='Scatter'), 
+fig.add_trace(go.Scatter(x=selected_data['gdp_percapita'], y=selected_data['gross_savings'],
+                         mode='markers',
+                         marker=dict(color=selected_data['income_group'].astype('category').cat.codes),
+                         text=selected_data['code'], name='Scatter'),
               row=1, col=1)
 
 # Add bar chart
-fig.add_trace(go.Bar(x=selected_data['code'], y=selected_data['gdp_percapita'], 
-                     marker=dict(color=selected_data['income_group'].astype('category').cat.codes), name='Bar'), 
+fig.add_trace(go.Bar(x=selected_data['code'], y=selected_data['gdp_percapita'],
+                     marker=dict(color=selected_data['income_group'].astype('category').cat.codes), name='Bar'),
               row=2, col=1)
 
 # Add another scatter plot
-fig.add_trace(go.Scatter(x=selected_data['code'], y=selected_data['gross_savings'], 
-                         mode='markers', 
-                         marker=dict(color=selected_data['income_group'].astype('category').cat.codes), 
-                         text=selected_data['code'], name='Scatter'), 
+fig.add_trace(go.Scatter(x=selected_data['code'], y=selected_data['gross_savings'],
+                         mode='markers',
+                         marker=dict(color=selected_data['income_group'].astype('category').cat.codes),
+                         text=selected_data['code'], name='Scatter'),
               row=3, col=1)
 
 # Update layout
 fig.update_layout(
-    title_text='Dynamic Data Report for Economic Indicators (2020)', 
-    showlegend=False, 
+    title_text='Dynamic Data Report for Economic Indicators (2020)',
+    showlegend=False,
     height=900,
     annotations=[
         go.layout.Annotation(
-            text='''This report presents key economic indicators for various countries in 2020, categorized by income group. ''', 
+            text='''This report presents key economic indicators for various countries in 2020, categorized by income group. ''',
             xref='paper', yref='paper', x=0.5, y=1, showarrow=False, font=dict(size=14)
         )
     ]
@@ -991,12 +1037,12 @@ fig.show()
 ```
 
 
-## Exercise #8: Creating a Dynamic Data Report
+## Exercise 3.2: Creating a Dynamic Data Report
 
-By completing this exercise, you will be able to use `pandas` and `plotly` to  
-- Select relevant data  
-- Build a dynamic report  
-- Add contextual text and summaries  
+By completing this exercise, you will be able to use `pandas` and `plotly` to
+- Select relevant data
+- Build a dynamic report
+- Add contextual text and summaries
 
 ### Selecting Relevant Data
 
@@ -1089,11 +1135,22 @@ fig.add_annotation(text='Life expectancy varies across countries and continents,
 fig.show()
 ```
 
+### Self-Check
+
+By the end of this module, you should be able to:
+
+- [ ] Create basic interactive charts with Plotly Express (`px.line`, `px.scatter`)
+- [ ] Add interactive elements such as hover text, color encoding, and custom labels
+- [ ] Build multi-panel dashboards with `make_subplots` and `add_trace`
+- [ ] Combine `go.Scatter` and `go.Bar` traces into a single figure
+- [ ] Add contextual annotations and summary text to a report with `add_annotation`
+- [ ] Confirm Plotly figures render by initializing the notebook mode and calling `fig.show()`
+
 ---
 
 # Module 4: Real-World Data Analysis Project
 
-## Walkthrough #9: Interactive Charts and Dashboards with Plotly
+## Walkthrough 4.1: Interactive Charts and Dashboards with Plotly
 
 ### Selecting a Dataset
 
@@ -1142,8 +1199,10 @@ fig.show()
   economies_cleaned
 ```
 
+> **Common Pitfall:** Build new columns on a DataFrame you fully own (here `economies_cleaned`, created by `fillna`), not on a filtered slice of another DataFrame. Assigning to a column of a slice can raise pandas' `SettingWithCopyWarning` and may not update the data you expect. When you need an independent copy, use `.copy()`.
+
 - **Transforming**:
-  
+
 ```{python}
   # Create new columns for analysis
   economies_cleaned['gdp_growth'] = economies_cleaned.groupby('code')['gdp_percapita'].pct_change()
@@ -1166,7 +1225,7 @@ fig.show()
 
   # Analyze the trend of inflation rate over time for all classified income groups
   classified_data = economies_cleaned[economies_cleaned['income_group'] != 'Not classified']
-  sns.lineplot(data=classified_data, x='year', y='inflation_rate', 
+  sns.lineplot(data=classified_data, x='year', y='inflation_rate',
                hue='income_group', errorbar=None)
   plt.title('Inflation Rate Over Time by Specified Income Group')
   plt.legend(title='Income Group', labels=classified_data['income_group'].unique())
@@ -1203,7 +1262,7 @@ fig.show()
 By following these steps, you can effectively select, clean, transform, and analyze the `economies` dataset to gain valuable insights and address common industry problems or research questions.
 
 
-## Walkthrough #10: Finalizing and Presenting Your Data Analysis Project
+## Walkthrough 4.2: Finalizing and Presenting Your Data Analysis Project
 
 ### Integrate Feedback to Refine the Analysis
 
@@ -1222,7 +1281,7 @@ By following these steps, you can effectively select, clean, transform, and anal
 
 - **Refining the Analysis**:
   - Additional data needs to be found to meet the request for more clarity. Or maybe a further drilldown on specific countries would be helpful?
-  
+
 ### Finalize the Presentation with Impactful Visuals and Narrative
 
 #### Questions to Ask:
@@ -1299,3 +1358,13 @@ By following these steps, you can effectively select, clean, transform, and anal
 
 By following these steps, you can effectively integrate feedback, finalize your presentation with impactful visuals and narrative, and rehearse to ensure a smooth and engaging delivery.
 
+### Self-Check
+
+By the end of this module, you should be able to:
+
+- [ ] Select a dataset and frame the industry problem and questions it can answer
+- [ ] Apply cleaning and transforming techniques to prepare data for analysis
+- [ ] Engineer new columns, such as a grouped `pct_change`, for deeper analysis
+- [ ] Produce exploratory visuals and interpret initial findings into hypotheses
+- [ ] Integrate feedback to refine the analysis and choice of visualizations
+- [ ] Finalize and rehearse a presentation that tells a clear, impactful data story

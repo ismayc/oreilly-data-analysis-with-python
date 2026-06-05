@@ -1,0 +1,55 @@
+---
+title: "Data Analysis with Python"
+subtitle: "Run every walkthrough and exercise right in your web browser — no Python or Jupyter to install."
+author: "Dr. Chester Ismay"
+format: live-html
+engine: markdown
+toc: false
+---
+
+Welcome! This site lets you run all of the course code **directly in your browser**.
+Python runs locally on your own machine via [Pyodide](https://pyodide.org) (WebAssembly) —
+there is **nothing to install**, no account to create, and no cloud server involved.
+
+## Two ways to work
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-6}
+### 📝 [Exercises](exercises.qmd)
+
+The live-coding template. Code cells start mostly empty so you can **fill them in as we go**.
+Your edits are **saved automatically in this browser**, so you can pick up where you left off.
+:::
+
+::: {.g-col-12 .g-col-md-6}
+### ✅ [Solutions](solutions.qmd)
+
+The **completed code** for every walkthrough and exercise. Run any cell to see the output,
+or edit a cell to experiment with your own variations.
+:::
+
+:::
+
+## How it works
+
+- Click **Run Code** on any code cell to execute it in your browser.
+- Run the **import** cell and the **data-loading** cells near the top of a page first, then work top to bottom — later cells reuse variables from earlier ones.
+- The **first** cell you run takes a few seconds while Python and the data packages load. After that it's fast.
+- The course datasets (`economies.csv`, `populations.csv`, their `.xlsx` versions, and `economies_indexed.csv`) are bundled with the page, so `pd.read_csv(...)` / `pd.read_excel(...)` just work.
+
+::: {.callout-note}
+## Need the originals?
+
+The Jupyter notebooks, slides, and data are all in the
+[course GitHub repository](https://github.com/ismayc/oreilly-data-analysis-with-python).
+You can also run the notebooks on [Google Colab](https://colab.research.google.com/)
+if you prefer a full Jupyter environment.
+:::
+
+::: {.callout-tip}
+## Browser support
+
+The in-browser plots need a modern browser (Chrome, Edge, Firefox, or Safari, kept up to date).
+If a plot cell shows an `OffscreenCanvas` error, update your browser to the latest version.
+:::

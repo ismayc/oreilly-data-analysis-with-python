@@ -1,13 +1,21 @@
 ---
-title: 'Walkthroughs and Exercises for Data Analysis in Python'  
-author: "Dr. Chester Ismay"  
+title: "Walkthroughs and Exercises for Data Analysis with Python"
+author: "Dr. Chester Ismay"
 format:
-  ipynb: default
   html:
-    grid:
-      body-width: 1200px
-engine: jupyter #knitr
+    theme: flatly
+    toc: true
+    toc-floating: true
+  ipynb: default
+engine: jupyter
+execute:
+  warning: false
 ---
+
+```{python}
+#| eval: false
+!pip install pandas matplotlib seaborn plotly openpyxl
+```
 
 ```{python}
 #| include: false
@@ -24,9 +32,9 @@ InteractiveShell.ast_node_interactivity = "all"
 
 # Intro: Foundations of Data Analysis with Python
 
-## Walkthrough #1: Setting Up the Python Environment
+## Walkthrough: Setting Up the Python Environment
 
-If you haven't already installed Python, Jupyter, and the necessary packages, there are instructions on the course repo in the README to do so [here](https://github.com/ismayc/oreilly-data-analysis-with-python/blob/main/README.md). 
+If you haven't already installed Python, Jupyter, and the necessary packages, there are instructions on the course repo in the README to do so [here](https://github.com/ismayc/oreilly-data-analysis-with-python/blob/main/README.md).
 
 If you aren't able to do this on your machine, you may want to check out [Google Colab](https://colab.research.google.com/). It's a free service that allows you to run Jupyter notebooks in the cloud.
 
@@ -46,14 +54,14 @@ import plotly.offline as pyo
 pyo.init_notebook_mode(connected=True)
 ```
 
-## Exercise #1: Setting Up the Python Environment
+## Exercise: Setting Up the Python Environment
 
-By completing this exercise, you will be able to  
-- Import necessary Python packages  
-- Check for successful package loading  
+By completing this exercise, you will be able to
+- Import necessary Python packages
+- Check for successful package loading
 
 
-Follow the instructions above in Walkthrough #1 to check for correct installation 
+Follow the instructions above in Walkthrough to check for correct installation
 of necessary packages. We'll wait a few minutes to make sure as many of you are
 set up as possible. Please give a thumbs up in the pulse check if you are ready
 to move on.
@@ -62,7 +70,7 @@ to move on.
 
 # Module 1: Data Wrangling with Pandas
 
-## Walkthrough #2: Loading and Inspecting Data with Pandas
+## Walkthrough 1.1: Loading and Inspecting Data with Pandas
 
 ### Import data from a CSV or from an Excel file
 
@@ -73,6 +81,8 @@ economies = pd.read_csv("economies.csv")
 # Or load the data from an Excel file
 economies = pd.read_excel("economies.xlsx")
 ```
+
+> **Common Pitfall:** `read_excel` relies on the `openpyxl` engine for `.xlsx` files. If you see an `ImportError` or `Missing optional dependency 'openpyxl'`, install it with `pip install openpyxl`. Also note that `read_excel` reads only the first sheet by default; pass `sheet_name=` if your workbook has multiple sheets.
 
 ### Perform an initial exploration of the data
 
@@ -101,11 +111,11 @@ economies.isnull().sum()
 economies.dtypes
 ```
 
-## Exercise #2: Loading and Inspecting Data with Pandas
+## Exercise 1.1: Loading and Inspecting Data with Pandas
 
-By completing this exercise, you will be able to use `pandas` to  
-- Import data from a CSV or from an Excel file   
-- Perform an initial exploration of the data  
+By completing this exercise, you will be able to use `pandas` to
+- Import data from a CSV or from an Excel file
+- Perform an initial exploration of the data
 
 ```{python}
 # Load the populations data from an Excel file
@@ -125,7 +135,7 @@ populations.dtypes
 ```
 
 
-## Walkthrough #3: Cleaning and Preparing Data with Pandas
+## Walkthrough 1.2: Cleaning and Preparing Data with Pandas
 
 ### Handle missing data
 
@@ -180,6 +190,8 @@ economies_fill_value.head()
 
 This can be extended to replace missing values with the mean, median, or mode of the column too.
 
+> **Common Pitfall:** Methods like `dropna`, `fillna`, and `rename` return a new DataFrame by default and do NOT modify the original in place. Assign the result to a variable (or pass `inplace=True`) or your changes will be lost. Reassigning, as done here, is the recommended pattern.
+
 ### Convert a column to a different data type
 
 ```{python}
@@ -206,7 +218,7 @@ economies_renamed = economies.rename(columns={'income_group': 'income_category'}
 economies_renamed.head()
 ```
 
-### Changing a DataFrame’s index
+### Changing a DataFrame's index
 
 #### Set the index
 
@@ -234,6 +246,8 @@ economies_high_gdp = economies[economies['gdp_percapita'] > 20000]
 economies_high_gdp.head()
 ```
 
+> **Common Pitfall:** When combining multiple conditions, wrap each comparison in parentheses and use `&` (and) / `|` (or), not the Python keywords `and`/`or`. Forgetting the parentheses, e.g. `economies['inflation_rate'] < 0 & ...`, triggers an operator-precedence error because `&` binds more tightly than `<`.
+
 ```{python}
 # Filter rows where 'income_group' is 'High income'
 economies_high_income = economies[economies['income_group'] == 'High income']
@@ -260,14 +274,14 @@ top_gdp_2010_2015 = economies[(economies['gdp_percapita'] > 40000) & (economies[
 top_gdp_2010_2015.head()
 ```
 
-## Exercise #3: Cleaning and Preparing Data with Pandas
+## Exercise 1.2: Cleaning and Preparing Data with Pandas
 
-By completing this exercise, you will be able to use `pandas` to  
-- Handle missing data  
-- Convert a column to a different data type   
-- Rename a column  
-- Change a DataFrame’s index  
-- Filter a DataFrame  
+By completing this exercise, you will be able to use `pandas` to
+- Handle missing data
+- Convert a column to a different data type
+- Rename a column
+- Change a DataFrame's index
+- Filter a DataFrame
 
 ### Handle Missing Data
 
@@ -302,7 +316,7 @@ populations_no_missing_columns.head()
 #### Replace missing values with specific value
 
 ```{python}
-# Replace missing values with a specific value (e.g., 0 for numerical columns, 
+# Replace missing values with a specific value (e.g., 0 for numerical columns,
 # 'Unknown' for categorical columns)
 populations_fill_value = populations.fillna({
     'fertility_rate': 0,
@@ -339,9 +353,9 @@ populations_renamed = populations.rename(columns={'fertility_rate': 'fertility'}
 populations_renamed.head()
 ```
 
-### Change a DataFrame’s Index and Filter a DataFrame
+### Change a DataFrame's Index and Filter a DataFrame
 
-#### Change a DataFrame’s Index
+#### Change a DataFrame's Index
 
 ```{python}
 # Set the 'country_code' column as the index
@@ -370,7 +384,7 @@ populations_high_fertility.head()
 ```
 
 
-## Walkthrough #4: Transforming and Aggregating Data with Pandas
+## Walkthrough 1.3: Transforming and Aggregating Data with Pandas
 
 ### Grouping data
 
@@ -415,7 +429,7 @@ pivot_table = pd.pivot_table(
 pivot_table
 ```
 
-### Analyzing categorical data 
+### Analyzing categorical data
 
 #### Using cross-tabulation
 
@@ -433,13 +447,13 @@ income_group_counts = economies['income_group'].value_counts()
 income_group_counts
 ```
 
-## Exercise #4: Transforming and Aggregating Data with Pandas
+## Exercise 1.3: Transforming and Aggregating Data with Pandas
 
-By completing this exercise, you will be able to use `pandas` to  
-- Aggregate data effectively by grouping it  
-- Transform data by applying functions element-wise or to groups  
-- Create summary tables  
-- Analyze categorical data using cross-tabulation and counts  
+By completing this exercise, you will be able to use `pandas` to
+- Aggregate data effectively by grouping it
+- Transform data by applying functions element-wise or to groups
+- Create summary tables
+- Analyze categorical data using cross-tabulation and counts
 
 
 ### Grouping Data
@@ -504,11 +518,22 @@ region_counts = populations['region'].value_counts()
 region_counts
 ```
 
+### Self-Check
+
+By the end of this module, you should be able to:
+
+- [ ] Load data from CSV and Excel files with `read_csv` and `read_excel`
+- [ ] Inspect a DataFrame using `head()`, `info()`, `describe()`, `dtypes`, and `isnull().sum()`
+- [ ] Handle missing data by dropping rows/columns or filling values with `dropna` and `fillna`
+- [ ] Convert column data types, rename columns, and set or reset the index
+- [ ] Filter rows using single and multiple boolean conditions
+- [ ] Aggregate and summarize data with `groupby`, `agg`, `pivot_table`, `crosstab`, and `value_counts`
+
 ---
 
 # Module 2: Data Visualization Basics with Matplotlib and Seaborn
 
-## Walkthrough #5: Creating Basic Plots with Matplotlib
+## Walkthrough 2.1: Creating Basic Plots with Matplotlib
 
 ### Line plot
 
@@ -518,7 +543,7 @@ afg_data = economies[economies['code'] == 'AFG']
 
 # Line plot of gdp_percapita over the years
 plt.figure(figsize=(10, 6))
-plt.plot(afg_data['year'], afg_data['gdp_percapita'], 
+plt.plot(afg_data['year'], afg_data['gdp_percapita'],
          marker='o', linestyle='-', color='b')
 plt.show();
 ```
@@ -532,16 +557,16 @@ data_2020_caribbean = economies[(economies['year'] == 2020) & (economies['code']
 
 # Bar chart of gdp_percapita for different Caribbean countries in 2020
 plt.figure(figsize=(10, 6))
-plt.bar(x=data_2020_caribbean['code'], 
-        height=data_2020_caribbean['gdp_percapita'], 
+plt.bar(x=data_2020_caribbean['code'],
+        height=data_2020_caribbean['gdp_percapita'],
         color='g')
 plt.xticks(rotation=45);
 plt.show();
 
 # Horizontal version
 plt.figure(figsize=(10, 6))
-plt.barh(y=data_2020_caribbean['code'], 
-         width=data_2020_caribbean['gdp_percapita'], 
+plt.barh(y=data_2020_caribbean['code'],
+         width=data_2020_caribbean['gdp_percapita'],
          color='g')
 plt.show();
 ```
@@ -565,7 +590,7 @@ plt.show();
 ### Adjusting axes and tick marks
 
 ```{python}
-# Bar chart of gdp_percapita for different Caribbean countries in 2020 with 
+# Bar chart of gdp_percapita for different Caribbean countries in 2020 with
 # adjusted axes and tick marks
 plt.figure(figsize=(10, 6))
 plt.bar(data_2020_caribbean['code'], data_2020_caribbean['gdp_percapita'], color='purple')
@@ -584,13 +609,14 @@ plt.grid(axis='y')
 plt.show();
 ```
 
+> **Common Pitfall:** Call `plt.figure()` before each new plot and `plt.show()` after it. If you skip `plt.figure()`, matplotlib keeps drawing onto the previous figure, and successive plots can overlap or accumulate unexpectedly within the same axes.
 
-## Exercise #5: Creating Basic Plots with Matplotlib
+## Exercise 2.1: Creating Basic Plots with Matplotlib
 
-By completing this exercise, you will be able to use `matplotlib` to  
-- Create line plots and bar charts  
-- Add labels and titles  
-- Adjust axes and tick marks  
+By completing this exercise, you will be able to use `matplotlib` to
+- Create line plots and bar charts
+- Add labels and titles
+- Adjust axes and tick marks
 
 ### Line Plot
 
@@ -627,7 +653,7 @@ nigeria_data = populations[populations['country_code'] == 'NGA']
 
 # Line plot of life expectancy over the years with labels and titles
 plt.figure(figsize=(10, 6))
-plt.plot(nigeria_data['year'], nigeria_data['life_expectancy'], 
+plt.plot(nigeria_data['year'], nigeria_data['life_expectancy'],
          marker='o', linestyle='-', color='r')
 plt.xlabel('Year')
 plt.ylabel('Life Expectancy')
@@ -648,7 +674,7 @@ populations['year'] = populations['year'].astype(int)
 
 data_2020_africa = populations[(populations['year'] == 2020) & (populations['country_code'].isin(african_countries))]
 
-# Bar chart of fertility rate for selected African countries in 2020 with 
+# Bar chart of fertility rate for selected African countries in 2020 with
 # adjusted axes and tick marks
 plt.figure(figsize=(10, 6))
 plt.bar(data_2020_africa['country_code'], data_2020_africa['fertility_rate'], color='purple')
@@ -668,7 +694,7 @@ plt.show();
 ```
 
 
-## Walkthrough #6: Data Visualization Techniques with Seaborn
+## Walkthrough 2.2: Data Visualization Techniques with Seaborn
 
 ### Heatmap
 
@@ -686,6 +712,8 @@ sns.heatmap(corr_matrix, annot=True, cmap='coolwarm', fmt='.2f')
 plt.title('Correlation Heatmap')
 plt.show();
 ```
+
+> **Common Pitfall:** `corr()` only works on numeric columns. Select numeric columns first (as shown with `select_dtypes`); passing a DataFrame that still contains string columns such as `code` or `income_group` will either error or silently drop them depending on your pandas version.
 
 ### Pair plot
 
@@ -725,12 +753,12 @@ plt.grid(axis='y')
 plt.show();
 ```
 
-## Exercise #6: Data Visualization Techniques with Seaborn
+## Exercise 2.2: Data Visualization Techniques with Seaborn
 
-By completing this exercise, you will be able to use `seaborn` to  
-- Create heatmaps  
-- Design pair plots and violin plots  
-- Customize Seaborn plots  
+By completing this exercise, you will be able to use `seaborn` to
+- Create heatmaps
+- Design pair plots and violin plots
+- Customize Seaborn plots
 
 ### Heatmap
 
@@ -806,11 +834,22 @@ plt.grid(axis='y')
 plt.show();
 ```
 
+### Self-Check
+
+By the end of this module, you should be able to:
+
+- [ ] Create line plots and bar charts (vertical and horizontal) with `matplotlib`
+- [ ] Add axis labels, titles, and gridlines to a plot
+- [ ] Adjust axis limits and tick marks with `ylim`, `xticks`, and `yticks`
+- [ ] Build heatmaps, pair plots, and violin plots with `seaborn`
+- [ ] Compute a correlation matrix on numeric columns before plotting it
+- [ ] Customize seaborn plots with palettes, hues, and matplotlib styling
+
 ---
 
 # Module 3: Interactive Data Visualization with Plotly
 
-## Walkthrough #7: Interactive Charts and Dashboards with Plotly
+## Walkthrough 3.1: Interactive Charts and Dashboards with Plotly
 
 ### Basic interactive chart
 
@@ -822,6 +861,8 @@ afg_data = economies[economies['code'] == 'AFG']
 fig = px.line(afg_data, x='year', y='gdp_percapita', title='GDP Per Capita Over Years for Afghanistan (AFG)')
 fig.show();
 ```
+
+> **Common Pitfall:** If a Plotly figure shows up blank in a Jupyter notebook, the renderer was likely not initialized. Make sure the setup cell that runs `pyo.init_notebook_mode(connected=True)` was executed first, and remember that you must call `fig.show()` -- simply creating `fig` does not display anything.
 
 ### Adding interactive elements
 
@@ -848,8 +889,8 @@ from plotly.subplots import make_subplots
 data_2020 = economies[economies['year'] == 2020]
 
 # Create a subplot figure with 1 row and 2 columns
-fig = make_subplots(rows=1, cols=2, 
-                    subplot_titles=('GDP Per Capita Over Years for Afghanistan', 
+fig = make_subplots(rows=1, cols=2,
+                    subplot_titles=('GDP Per Capita Over Years for Afghanistan',
                                     'GDP Per Capita for Different Countries in 2020'))
 
 # Line chart of GDP Per Capita for Afghanistan
@@ -866,13 +907,14 @@ fig.update_layout(title_text='Simple Dashboard with Multiple Charts', showlegend
 fig.show();
 ```
 
+> **Common Pitfall:** Plotly subplot positions are 1-indexed, so the first cell is `row=1, col=1` (not `0`). The `rows`/`cols` you pass to `make_subplots` must also be large enough to hold every `add_trace` position, or you will get an index error.
 
-## Exercise #7: Interactive Charts and Dashboards with Plotly
+## Exercise 3.1: Interactive Charts and Dashboards with Plotly
 
-By completing this exercise, you will be able to use `plotly` to  
-- Create a basic interactive chart  
-- Add interactive elements: hover, zoom, and selection tools  
-- Design a simple dashboard with multiple charts  
+By completing this exercise, you will be able to use `plotly` to
+- Create a basic interactive chart
+- Add interactive elements: hover, zoom, and selection tools
+- Design a simple dashboard with multiple charts
 
 ### Basic Interactive Chart
 
@@ -931,7 +973,7 @@ fig.update_layout(title_text='Simple Dashboard with Multiple Charts', showlegend
 fig.show();
 ```
 
-## Walkthrough #8: Creating a Dynamic Data Report
+## Walkthrough 3.2: Creating a Dynamic Data Report
 
 ### Selecting relevant data
 
@@ -949,27 +991,27 @@ import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 
 # Create a subplot figure with 3 rows
-fig = make_subplots(rows=3, cols=1, 
-                    subplot_titles=('GDP Per Capita vs. Gross Savings', 
-                                    'GDP Per Capita by Country and Income Group', 
+fig = make_subplots(rows=3, cols=1,
+                    subplot_titles=('GDP Per Capita vs. Gross Savings',
+                                    'GDP Per Capita by Country and Income Group',
                                     'Gross Savings by Country and Income Group'))
 
 # Add scatter plot
-fig.add_trace(go.Scatter(x=selected_data['gdp_percapita'], y=selected_data['gross_savings'], 
-                         mode='markers', 
-                         marker=dict(color=selected_data['income_group'].astype('category').cat.codes), 
-                         text=selected_data['code'], name='Scatter'), 
+fig.add_trace(go.Scatter(x=selected_data['gdp_percapita'], y=selected_data['gross_savings'],
+                         mode='markers',
+                         marker=dict(color=selected_data['income_group'].astype('category').cat.codes),
+                         text=selected_data['code'], name='Scatter'),
               row=1, col=1)
 
 # Add bar chart
-fig.add_trace(go.Bar(x=selected_data['code'], y=selected_data['gdp_percapita'], 
-                     marker=dict(color=selected_data['income_group'].astype('category').cat.codes), name='Bar'), 
+fig.add_trace(go.Bar(x=selected_data['code'], y=selected_data['gdp_percapita'],
+                     marker=dict(color=selected_data['income_group'].astype('category').cat.codes), name='Bar'),
               row=2, col=1)
 
 # Add another scatter plot
-fig.add_trace(go.Scatter(x=selected_data['code'], y=selected_data['gross_savings'], 
-                         mode='markers', 
-                         marker=dict(color=selected_data['income_group'].astype('category').cat.codes), text=selected_data['code'], name='Scatter'), 
+fig.add_trace(go.Scatter(x=selected_data['code'], y=selected_data['gross_savings'],
+                         mode='markers',
+                         marker=dict(color=selected_data['income_group'].astype('category').cat.codes), text=selected_data['code'], name='Scatter'),
               row=3, col=1)
 
 # Update layout
@@ -985,38 +1027,38 @@ import plotly.io as pio
 import plotly.graph_objects as go
 
 # Create a subplot figure with 3 rows
-fig = make_subplots(rows=3, cols=1, 
-                    subplot_titles=('GDP Per Capita vs. Gross Savings', 
-                                    'GDP Per Capita by Country and Income Group', 
+fig = make_subplots(rows=3, cols=1,
+                    subplot_titles=('GDP Per Capita vs. Gross Savings',
+                                    'GDP Per Capita by Country and Income Group',
                                     'Gross Savings by Country and Income Group'))
 
 # Add scatter plot
-fig.add_trace(go.Scatter(x=selected_data['gdp_percapita'], y=selected_data['gross_savings'], 
-                         mode='markers', 
-                         marker=dict(color=selected_data['income_group'].astype('category').cat.codes), 
-                         text=selected_data['code'], name='Scatter'), 
+fig.add_trace(go.Scatter(x=selected_data['gdp_percapita'], y=selected_data['gross_savings'],
+                         mode='markers',
+                         marker=dict(color=selected_data['income_group'].astype('category').cat.codes),
+                         text=selected_data['code'], name='Scatter'),
               row=1, col=1)
 
 # Add bar chart
-fig.add_trace(go.Bar(x=selected_data['code'], y=selected_data['gdp_percapita'], 
-                     marker=dict(color=selected_data['income_group'].astype('category').cat.codes), name='Bar'), 
+fig.add_trace(go.Bar(x=selected_data['code'], y=selected_data['gdp_percapita'],
+                     marker=dict(color=selected_data['income_group'].astype('category').cat.codes), name='Bar'),
               row=2, col=1)
 
 # Add another scatter plot
-fig.add_trace(go.Scatter(x=selected_data['code'], y=selected_data['gross_savings'], 
-                         mode='markers', 
-                         marker=dict(color=selected_data['income_group'].astype('category').cat.codes), 
-                         text=selected_data['code'], name='Scatter'), 
+fig.add_trace(go.Scatter(x=selected_data['code'], y=selected_data['gross_savings'],
+                         mode='markers',
+                         marker=dict(color=selected_data['income_group'].astype('category').cat.codes),
+                         text=selected_data['code'], name='Scatter'),
               row=3, col=1)
 
 # Update layout
 fig.update_layout(
-    title_text='Dynamic Data Report for Economic Indicators (2020)', 
-    showlegend=False, 
+    title_text='Dynamic Data Report for Economic Indicators (2020)',
+    showlegend=False,
     height=900,
     annotations=[
         go.layout.Annotation(
-            text='''This report presents key economic indicators for various countries in 2020, categorized by income group. ''', 
+            text='''This report presents key economic indicators for various countries in 2020, categorized by income group. ''',
             xref='paper', yref='paper', x=0.5, y=1, showarrow=False, font=dict(size=14)
         )
     ]
@@ -1031,12 +1073,12 @@ fig.show();
 ```
 
 
-## Exercise #8: Creating a Dynamic Data Report
+## Exercise 3.2: Creating a Dynamic Data Report
 
-By completing this exercise, you will be able to use `pandas` and `plotly` to  
-- Select relevant data  
-- Build a dynamic report  
-- Add contextual text and summaries  
+By completing this exercise, you will be able to use `pandas` and `plotly` to
+- Select relevant data
+- Build a dynamic report
+- Add contextual text and summaries
 
 ### Selecting Relevant Data
 
@@ -1054,9 +1096,9 @@ import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 
 # Create a subplot figure with 3 rows and subplot titles
-fig = make_subplots(rows=3, cols=1, 
-                    subplot_titles=('Fertility Rate vs. Life Expectancy', 
-                                    'Fertility Rate by Country and Continent', 
+fig = make_subplots(rows=3, cols=1,
+                    subplot_titles=('Fertility Rate vs. Life Expectancy',
+                                    'Fertility Rate by Country and Continent',
                                     'Life Expectancy by Country and Continent'))
 
 # Adding a scatter plot trace to the figure
@@ -1067,10 +1109,10 @@ fig = make_subplots(rows=3, cols=1,
 # - text: 'country_code' to show country codes on hover
 # - name: 'Scatter' to label this trace
 # The trace is added to the first row and first column of the subplot grid
-fig.add_trace(go.Scatter(x=pop_selected_data['fertility_rate'], y=pop_selected_data['life_expectancy'], 
-                         mode='markers', 
-                         marker=dict(color=pop_selected_data['continent'].astype('category').cat.codes), 
-                         text=pop_selected_data['country_code'], name='Scatter'), 
+fig.add_trace(go.Scatter(x=pop_selected_data['fertility_rate'], y=pop_selected_data['life_expectancy'],
+                         mode='markers',
+                         marker=dict(color=pop_selected_data['continent'].astype('category').cat.codes),
+                         text=pop_selected_data['country_code'], name='Scatter'),
               row=1, col=1)
 
 # Adding a bar chart trace to the figure
@@ -1079,8 +1121,8 @@ fig.add_trace(go.Scatter(x=pop_selected_data['fertility_rate'], y=pop_selected_d
 # - marker color: based on the 'continent' category codes, to differentiate bars by continent
 # - name: 'Bar' to label this trace
 # The trace is added to the second row and first column of the subplot grid
-fig.add_trace(go.Bar(x=pop_selected_data['country_code'], y=pop_selected_data['fertility_rate'], 
-                     marker=dict(color=pop_selected_data['continent'].astype('category').cat.codes), name='Bar'), 
+fig.add_trace(go.Bar(x=pop_selected_data['country_code'], y=pop_selected_data['fertility_rate'],
+                     marker=dict(color=pop_selected_data['continent'].astype('category').cat.codes), name='Bar'),
               row=2, col=1)
 
 # Adding a scatter plot trace to the figure
@@ -1090,9 +1132,9 @@ fig.add_trace(go.Bar(x=pop_selected_data['country_code'], y=pop_selected_data['f
 # - marker color: based on the 'continent' category codes, to differentiate points by continent
 # - name: 'Scatter' to label this trace
 # The trace is added to the third row and first column of the subplot grid
-fig.add_trace(go.Scatter(x=pop_selected_data['country_code'], y=pop_selected_data['life_expectancy'], 
-                         mode='markers', 
-                         marker=dict(color=pop_selected_data['continent'].astype('category').cat.codes), name='Scatter'), 
+fig.add_trace(go.Scatter(x=pop_selected_data['country_code'], y=pop_selected_data['life_expectancy'],
+                         mode='markers',
+                         marker=dict(color=pop_selected_data['continent'].astype('category').cat.codes), name='Scatter'),
               row=3, col=1)
 
 # Update layout to include title, hide legend, and set height to 900
@@ -1109,38 +1151,38 @@ import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 
 # Create a subplot figure with 3 rows
-fig = make_subplots(rows=3, cols=1, 
-                    subplot_titles=('Fertility Rate vs. Life Expectancy', 
-                                    'Fertility Rate by Country and Continent', 
+fig = make_subplots(rows=3, cols=1,
+                    subplot_titles=('Fertility Rate vs. Life Expectancy',
+                                    'Fertility Rate by Country and Continent',
                                     'Life Expectancy by Country and Continent'))
 
 # Add scatter plot
-fig.add_trace(go.Scatter(x=pop_selected_data['fertility_rate'], y=pop_selected_data['life_expectancy'], 
-                         mode='markers', 
-                         marker=dict(color=pop_selected_data['continent'].astype('category').cat.codes), 
-                         text=pop_selected_data['country_code'], name='Scatter'), 
+fig.add_trace(go.Scatter(x=pop_selected_data['fertility_rate'], y=pop_selected_data['life_expectancy'],
+                         mode='markers',
+                         marker=dict(color=pop_selected_data['continent'].astype('category').cat.codes),
+                         text=pop_selected_data['country_code'], name='Scatter'),
               row=1, col=1)
 
 # Add bar chart
-fig.add_trace(go.Bar(x=pop_selected_data['country_code'], y=pop_selected_data['fertility_rate'], 
-                     marker=dict(color=pop_selected_data['continent'].astype('category').cat.codes), name='Bar'), 
+fig.add_trace(go.Bar(x=pop_selected_data['country_code'], y=pop_selected_data['fertility_rate'],
+                     marker=dict(color=pop_selected_data['continent'].astype('category').cat.codes), name='Bar'),
               row=2, col=1)
 
 # Add another scatter plot
-fig.add_trace(go.Scatter(x=pop_selected_data['country_code'], y=pop_selected_data['life_expectancy'], 
-                         mode='markers', 
-                         marker=dict(color=pop_selected_data['continent'].astype('category').cat.codes), name='Scatter'), 
+fig.add_trace(go.Scatter(x=pop_selected_data['country_code'], y=pop_selected_data['life_expectancy'],
+                         mode='markers',
+                         marker=dict(color=pop_selected_data['continent'].astype('category').cat.codes), name='Scatter'),
               row=3, col=1)
 
 
 # Update layout
 fig.update_layout(
-    title_text='Dynamic Data Report for Population Indicators (2020)', 
-    showlegend=False, 
+    title_text='Dynamic Data Report for Population Indicators (2020)',
+    showlegend=False,
     height=900,
     annotations=[
         go.layout.Annotation(
-            text='''This report presents key population-based indicators for various countries in 2020, categorized by continent. ''', 
+            text='''This report presents key population-based indicators for various countries in 2020, categorized by continent. ''',
             xref='paper', yref='paper', x=0.5, y=1, showarrow=False, font=dict(size=14)
         )
     ]
@@ -1154,11 +1196,22 @@ fig.add_annotation(text='Life expectancy varies across countries and continents,
 fig.show();
 ```
 
+### Self-Check
+
+By the end of this module, you should be able to:
+
+- [ ] Create basic interactive charts with Plotly Express (`px.line`, `px.scatter`)
+- [ ] Add interactive elements such as hover text, color encoding, and custom labels
+- [ ] Build multi-panel dashboards with `make_subplots` and `add_trace`
+- [ ] Combine `go.Scatter` and `go.Bar` traces into a single figure
+- [ ] Add contextual annotations and summary text to a report with `add_annotation`
+- [ ] Confirm Plotly figures render by initializing the notebook mode and calling `fig.show()`
+
 ---
 
 # Module 4: Real-World Data Analysis Project
 
-## Walkthrough #9: Interactive Charts and Dashboards with Plotly
+## Walkthrough 4.1: Interactive Charts and Dashboards with Plotly
 
 ### Selecting a Dataset
 
@@ -1206,6 +1259,8 @@ fig.show();
   economies_cleaned
   ```
 
+> **Common Pitfall:** Build new columns on a DataFrame you fully own (here `economies_cleaned`, created by `fillna`), not on a filtered slice of another DataFrame. Assigning to a column of a slice can raise pandas' `SettingWithCopyWarning` and may not update the data you expect. When you need an independent copy, use `.copy()`.
+
 - **Transforming**:
   ```{python}
   # Create new columns for analysis
@@ -1228,7 +1283,7 @@ fig.show();
 
   # Analyze the trend of inflation rate over time for all classified income groups
   classified_data = economies_cleaned[economies_cleaned['income_group'] != 'Not classified']
-  sns.lineplot(data=classified_data, x='year', y='inflation_rate', 
+  sns.lineplot(data=classified_data, x='year', y='inflation_rate',
                hue='income_group', errorbar=None)
   plt.title('Inflation Rate Over Time by Specified Income Group')
   plt.legend(title='Income Group', labels=classified_data['income_group'].unique())
@@ -1265,7 +1320,7 @@ fig.show();
 By following these steps, you can effectively select, clean, transform, and analyze the `economies` dataset to gain valuable insights and address common industry problems or research questions.
 
 
-## Walkthrough #10: Finalizing and Presenting Your Data Analysis Project
+## Walkthrough 4.2: Finalizing and Presenting Your Data Analysis Project
 
 ### Integrate Feedback to Refine the Analysis
 
@@ -1284,7 +1339,7 @@ By following these steps, you can effectively select, clean, transform, and anal
 
 - **Refining the Analysis**:
   - Additional data needs to be found to meet the request for more clarity. Or maybe a further drilldown on specific countries would be helpful?
-  
+
 ### Finalize the Presentation with Impactful Visuals and Narrative
 
 #### Questions to Ask:
@@ -1360,3 +1415,13 @@ By following these steps, you can effectively select, clean, transform, and anal
 
 By following these steps, you can effectively integrate feedback, finalize your presentation with impactful visuals and narrative, and rehearse to ensure a smooth and engaging delivery.
 
+### Self-Check
+
+By the end of this module, you should be able to:
+
+- [ ] Select a dataset and frame the industry problem and questions it can answer
+- [ ] Apply cleaning and transforming techniques to prepare data for analysis
+- [ ] Engineer new columns, such as a grouped `pct_change`, for deeper analysis
+- [ ] Produce exploratory visuals and interpret initial findings into hypotheses
+- [ ] Integrate feedback to refine the analysis and choice of visualizations
+- [ ] Finalize and rehearse a presentation that tells a clear, impactful data story
