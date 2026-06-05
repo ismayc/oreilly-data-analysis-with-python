@@ -53,6 +53,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "app/ unchanged — nothing to commit."
           else
-            git commit -m "Auto-rebuild browser apps from notebook changes [skip ci]"
+            git commit -m "Auto-rebuild browser apps from notebook changes [skip actions]"
             git push
           fi
