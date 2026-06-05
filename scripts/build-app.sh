@@ -41,6 +41,11 @@ quarto convert exercises_solutions.qmd  --output jupyterlite/contents/exercises_
 # No shell in the in-browser kernel; comment out the pip line (packages auto-load on import)
 perl -0777 -i -pe 's/!\s*pip install/# (no pip needed in this in-browser kernel) pip install/g' \
   jupyterlite/contents/exercises.ipynb jupyterlite/contents/exercises_solutions.ipynb
+
+
+# Tidy notebooks for plain Jupyter: drop the YAML cell, strip #| directives
+"$PYBIN" scripts/clean-notebooks.py \
+  jupyterlite/contents/exercises.ipynb jupyterlite/contents/exercises_solutions.ipynb
 cp economies.csv economies_indexed.csv populations.csv economies.xlsx populations.xlsx jupyterlite/contents/
 
 echo "==> Building JupyterLite site"
