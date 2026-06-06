@@ -152,3 +152,8 @@ oreilly-data-analysis-with-python.Rproj
 *with_notes*
 
 .jupyterlite.doit.db
+
+# iCloud Drive conflict copies (e.g. "index 2.html") and placeholder files
+* [0-9].*
+* [0-9]
+*.icloud
