@@ -18,6 +18,20 @@ execute:
 ```
 
 ```{python}
+# Colab setup: download the course data files into this runtime so the
+# read_csv / read_excel calls below work. Runs only on Google Colab; it is a
+# no-op locally or in JupyterLite, where the data files are already present.
+import os, sys, urllib.request
+
+if "google.colab" in sys.modules:
+    _DATA_BASE = "https://raw.githubusercontent.com/ismayc/oreilly-data-analysis-with-python/main/"
+    for _fname in ["economies.csv", "economies.xlsx", "populations.xlsx"]:
+        if not os.path.exists(_fname):
+            print(f"Downloading {_fname} ...")
+            urllib.request.urlretrieve(_DATA_BASE + _fname, _fname)
+```
+
+```{python}
 #| include: false
 import pandas as pd
 
@@ -36,7 +50,7 @@ InteractiveShell.ast_node_interactivity = "all"
 
 If you haven't already installed Python, Jupyter, and the necessary packages, there are instructions on the course repo in the README to do so [here](https://github.com/ismayc/oreilly-data-analysis-with-python/blob/main/README.md).
 
-If you aren't able to do this on your machine, you may want to check out [Google Colab](https://colab.research.google.com/). It's a free service that allows you to run Jupyter notebooks in the cloud.
+If you aren't able to do this on your machine, you may want to check out [Google Colab](https://colab.research.google.com/github/ismayc/oreilly-data-analysis-with-python/blob/main/exercises_solutions.ipynb). It's a free service that allows you to run Jupyter notebooks in the cloud.
 
 ```{python}
 import pandas as pd

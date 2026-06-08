@@ -1,5 +1,22 @@
 # Materials for the course "Data Analysis with Python" for O'Reilly by Dr. Chester Ismay
 
+## Run this course online — nothing to install
+
+**▶️ Course page: <https://ismay-oreilly-dap.netlify.app/app/>**
+
+Run every walkthrough and exercise right in your web browser from the course page
+above — choose **Quarto Live** (a guided page with runnable code cells) or
+**JupyterLite** (the full notebook interface), or open the notebooks in **Google
+Colab**. Pick whichever you prefer; there's nothing to install, and the course data
+files load automatically.
+
+Prefer Google Colab? Open a notebook directly (the data files download the first time you run it):
+
+| Notebook | Open in Colab |
+| --- | --- |
+| Walkthroughs &amp; exercises | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ismayc/oreilly-data-analysis-with-python/blob/main/exercises.ipynb) |
+| Solutions | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ismayc/oreilly-data-analysis-with-python/blob/main/exercises_solutions.ipynb) |
+
 # Course content
 
 The major files in this repository are
@@ -11,7 +28,7 @@ The major files in this repository are
 
 ## Recommended instructions on getting set up with Python and Jupyter Notebook
 
-If you aren't able to do this on your machine, you may want to check out [Google Colab](https://colab.research.google.com/). 
+If you aren't able to do this on your machine, you may want to check out [Google Colab](https://colab.research.google.com/github/ismayc/oreilly-data-analysis-with-python/blob/main/exercises.ipynb). 
 It's a free service that allows you to run Jupyter notebooks in the cloud. <!-- You can start our exercises notebook directly on Google Colab by clicking [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ismayc/oreilly-data-analysis-with-python/blob/main/exercises.ipynb). -->
 
 Alternatively, I've set up some temporary notebooks on Binder [here](https://mybinder.org/v2/gh/ismayc/oreilly-data-analysis-with-python/HEAD?urlpath=%2Fdoc%2Ftree%2Fexercises.ipynb) that you can work with online as well.
