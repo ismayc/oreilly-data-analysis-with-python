@@ -38,8 +38,11 @@ echo "==> Converting qmd -> ipynb (no execution)"
 mkdir -p jupyterlite/contents
 quarto convert exercises.qmd            --output jupyterlite/contents/exercises.ipynb
 quarto convert exercises_solutions.qmd  --output jupyterlite/contents/exercises_solutions.ipynb
-# No shell in the in-browser kernel; comment out the pip line (packages auto-load on import)
-perl -0777 -i -pe 's/!\s*pip install/# (no pip needed in this in-browser kernel) pip install/g' \
+# In-browser kernel has no shell: rewrite the !pip cell as an in-kernel %pip install
+# (piplite). The Pyodide kernel does NOT auto-load non-core packages (seaborn,
+# statsmodels, scikit-learn, plotly, ...), so they must be installed; drop any package
+# with no Pyodide/PyPI wheel (e.g. jupyter).
+perl -0777 -i -pe 's{!\s*pip install ([^"\\]*)}{my $p=$1;$p=~s/\s+/ /g;$p=~s/^ | $//g;my @k=grep{length&&!/^(jupyter|jupyterlab|notebook|ipykernel)$/}split(/ /,$p);"%pip install -q ".join(" ",@k)}ge' \
   jupyterlite/contents/exercises.ipynb jupyterlite/contents/exercises_solutions.ipynb
 
 
