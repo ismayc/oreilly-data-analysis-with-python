@@ -5,7 +5,8 @@ format:
   html:
     theme: flatly
     toc: true
-    toc-floating: true
+    toc-location: right
+    embed-resources: true
   ipynb: default
 engine: jupyter
 execute:

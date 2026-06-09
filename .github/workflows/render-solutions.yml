@@ -1,0 +1,66 @@
+name: Render solutions HTML
+
+# Render exercises_solutions.qmd to a self-contained exercises_solutions.html and commit
+# it, so Netlify (linked to this repo's main branch) serves a current copy. Rendering
+# EXECUTES the notebook, so it runs in CI for a consistent result across courses rather
+# than depending on whoever last rendered locally.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'exercises_solutions.qmd'
+      - 'requirements.txt'
+      - '*.csv'
+      - '*.xlsx'
+      - '.github/workflows/render-solutions.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: render-solutions
+  cancel-in-progress: true
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      MPLBACKEND: Agg
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt jupyter ipykernel nbclient nbformat
+          python -m ipykernel install --user --name python3
+
+      - name: Render solutions to HTML (executes the notebook)
+        env:
+          QUARTO_PYTHON: python3
+        run: quarto render exercises_solutions.qmd --to html
+
+      - name: Commit & push solutions HTML if it changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -f exercises_solutions.html
+          # embed-resources makes the HTML self-contained; drop any previously-tracked figure dir
+          git rm -r --cached --ignore-unmatch exercises_solutions_files >/dev/null 2>&1 || true
+          if git diff --cached --quiet; then
+            echo "exercises_solutions.html already up to date - nothing to push."
+          else
+            git commit -m "Auto-render solutions HTML [skip actions]"
+            git push origin HEAD || { git pull --rebase origin main && git push origin HEAD; }
+          fi
