@@ -1,0 +1,32 @@
+# Serve the in-browser course page (built under app/) at the site root, and
+# redirect the old /app/ URLs to the clean root URLs. The Netlify publish
+# directory is the repo root, so app/ lives at /app/ and the rendered solutions
+# HTML is served at /exercises_solutions.html.
+
+# 1) Canonicalize the old /app/ paths to clean root URLs.
+[[redirects]]
+  from = "/app/*"
+  to = "/:splat"
+  status = 301
+  force = true
+
+# 2) Serve the landing page and the two app sub-sites from the root.
+[[redirects]]
+  from = "/"
+  to = "/app/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/index.html"
+  to = "/app/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/quarto/*"
+  to = "/app/quarto/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/jupyterlite/*"
+  to = "/app/jupyterlite/:splat"
+  status = 200

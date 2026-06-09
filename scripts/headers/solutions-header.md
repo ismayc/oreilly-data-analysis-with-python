@@ -5,7 +5,7 @@ author: "Dr. Chester Ismay"
 format: live-html
 engine: markdown
 toc: true
-toc-location: left
+toc-location: right
 ---
 
 ::: {.callout-note collapse="false"}

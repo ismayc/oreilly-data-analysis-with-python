@@ -9,7 +9,7 @@ format:
         persist: true
 engine: markdown
 toc: true
-toc-location: left
+toc-location: right
 ---
 
 ::: {.callout-tip collapse="false"}
