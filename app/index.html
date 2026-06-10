@@ -21,7 +21,8 @@
     .card p { margin:0; color:#444; font-size:.97rem; }
     .tag { display:inline-block; font-size:.72rem; letter-spacing:.04em; text-transform:uppercase;
            background:#eaf2f8; color:var(--accent); padding:.2rem .55rem; border-radius:999px; }
-    footer { margin-top:2.5rem; color:#777; font-size:.85rem; }
+    footer { margin-top:2.5rem; color:#777; font-size:.85rem; display:flex;
+             justify-content:space-between; align-items:baseline; flex-wrap:wrap; gap:.4rem 1rem; }
     a.repo { color:var(--accent); }
   </style>
 </head>
@@ -47,8 +48,8 @@
       </a>
     </div>
     <footer>
-      Dr. Chester Ismay · O'Reilly · Runs locally in your browser via Pyodide (WebAssembly).
-      Source &amp; data: <a class="repo" href="https://github.com/ismayc/oreilly-data-analysis-with-python">GitHub repository</a>.
+      <span>Dr. Chester Ismay · O'Reilly</span>
+      <span><a class="repo" href="https://github.com/ismayc/oreilly-data-analysis-with-python">Source &amp; data on GitHub</a></span>
     </footer>
   </div>
 </body>
