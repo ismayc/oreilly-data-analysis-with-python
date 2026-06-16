@@ -11,7 +11,7 @@
     "href": "solutions.html#walkthrough-setting-up-the-python-environment",
     "title": "Solutions — Data Analysis with Python",
     "section": "Walkthrough: Setting Up the Python Environment",
-    "text": "Walkthrough: Setting Up the Python Environment\nIf you haven’t already installed Python, Jupyter, and the necessary packages, there are instructions on the course repo in the README to do so here.\nIf you aren’t able to do this on your machine, you may want to check out Google Colab. It’s a free service that allows you to run Jupyter notebooks in the cloud."
+    "text": "Walkthrough: Setting Up the Python Environment\nIf you haven’t already installed Python, Jupyter, and the necessary packages, there are instructions on the course repo in the README to do so here."
   },
   {
     "objectID": "solutions.html#exercise-setting-up-the-python-environment",
