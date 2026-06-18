@@ -36,13 +36,15 @@ from pathlib import Path
 
 GH_OWNER = "ismayc"
 
-# Files every course repo must have. Missing -> FAIL.
+# Files every course repo must have COMMITTED. Missing -> FAIL.
+# NOTE: exercises_solutions_with_notes.qmd is deliberately NOT here -- it's the gitignored,
+# local-only annotated instructor edition (see PLAYBOOK), so it never exists in a fresh
+# checkout and requiring it would fail CI on every repo.
 REQUIRED_FILES = (
     "README.md",
     "requirements.txt",
     "exercises.qmd",
     "exercises_solutions.qmd",
-    "exercises_solutions_with_notes.qmd",
     "slides.pdf",
     ".github/workflows/render-solutions.yml",
 )
