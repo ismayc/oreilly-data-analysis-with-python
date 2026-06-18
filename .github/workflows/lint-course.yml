@@ -1,0 +1,33 @@
+name: Lint course repo
+
+# Structural lint against the house conventions (oreilly-tools/CHECKLIST.md), run from a
+# vendored copy of check-course.py at scripts/check-course.py. Fails the build on a FAIL
+# finding (missing required file, leftover <<token>>, wrong-slug Colab link, committed
+# render byproduct); WARN findings are printed but don't fail. The canonical copy of the
+# script lives in the (private) oreilly-tools repo -- re-copy it here when it changes.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'README.md'
+      - 'index.html'
+      - '*.qmd'
+      - '.gitignore'
+      - 'scripts/check-course.py'
+      - '.github/workflows/lint-course.yml'
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.13'
+
+      - name: Lint this repo against house conventions
+        run: python scripts/check-course.py .
