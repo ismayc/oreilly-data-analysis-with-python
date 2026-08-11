@@ -37,10 +37,6 @@ import pandas as pd
 
 # Display all columns
 pd.set_option('display.max_columns', None)
-
-# Display all outputs from each cell
-from IPython.core.interactiveshell import InteractiveShell
-InteractiveShell.ast_node_interactivity = "all"
 ```
 
 
@@ -129,17 +125,11 @@ By completing this exercise, you will be able to use `pandas` to
 ```{python}
 # Load the populations data from an Excel file
 
-
 # Inspection methods for populations DataFrame
+```
 
-
-
-
-
-
+```{python}
 # Checking for missing data and data types for populations DataFrame
-
-
 
 ```
 
@@ -279,7 +269,7 @@ This can be extended to replace missing values with the mean, median, or mode of
 ```
 
 ```{python}
-# Filter rows where gdp_percapita is greater than 40,000 and year is less than or equal to 2016
+# Filter rows where gdp_percapita is greater than 40,000 and year is less than or equal to 2015
 
 
 ```

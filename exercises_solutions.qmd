@@ -38,10 +38,6 @@ import pandas as pd
 
 # Display all columns
 pd.set_option('display.max_columns', None)
-
-# Display all outputs from each cell
-from IPython.core.interactiveshell import InteractiveShell
-InteractiveShell.ast_node_interactivity = "all"
 ```
 
 
@@ -136,14 +132,22 @@ populations = pd.read_excel("populations.xlsx")
 
 # Inspection methods for populations DataFrame
 populations.head()
+```
 
+```{python}
 populations.info()
+```
 
+```{python}
 populations.describe()
+```
 
+```{python}
 # Checking for missing data and data types for populations DataFrame
 populations.isnull().sum()
+```
 
+```{python}
 populations.dtypes
 ```
 
@@ -282,7 +286,7 @@ deflation_low_income.head()
 ```
 
 ```{python}
-# Filter rows where gdp_percapita is greater than 40,000 and year is less than or equal to 2016
+# Filter rows where gdp_percapita is greater than 40,000 and year is less than or equal to 2015
 top_gdp_2010_2015 = economies[(economies['gdp_percapita'] > 40000) & (economies['year'] <= 2015)]
 top_gdp_2010_2015.head()
 ```
