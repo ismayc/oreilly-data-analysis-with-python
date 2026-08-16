@@ -51,7 +51,7 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -f app
           if git diff --cached --quiet; then
-            echo "app/ unchanged — nothing to commit."
+            echo "app/ unchanged, nothing to commit."
           else
             git commit -m "Auto-rebuild browser apps from notebook changes [skip actions]"
             git push

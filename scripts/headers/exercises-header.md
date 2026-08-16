@@ -1,6 +1,6 @@
 ---
-title: "Walkthroughs & Exercises — Data Analysis with Python"
-subtitle: "Interactive, in-browser edition — fill in the code as we go. Nothing to install."
+title: "Walkthroughs & Exercises: Data Analysis with Python"
+subtitle: "Interactive, in-browser edition: fill in the code as we go. Nothing to install."
 author: "Dr. Chester Ismay"
 format:
   live-html:
@@ -15,7 +15,7 @@ toc-location: right
 ::: {.callout-tip collapse="false"}
 ## How to use this page
 
-Everything runs **in your browser** — there's no Python or Jupyter to install.
+Everything runs **in your browser**: there's no Python or Jupyter to install.
 
 1. Click **Run Code** on the **import** cell and the **data-loading** cells near the top first.
 2. Then work through the page top to bottom, filling in each cell as we live-code together.

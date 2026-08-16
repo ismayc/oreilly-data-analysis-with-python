@@ -8,7 +8,7 @@ project:
 
 website:
   title: "Data Analysis with Python"
-  description: "Run the course code in your browser — no Python or Jupyter to install."
+  description: "Run the course code in your browser: no Python or Jupyter to install."
   navbar:
     background: primary
     left:

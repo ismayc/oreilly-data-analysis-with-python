@@ -1,11 +1,11 @@
 # Materials for the course "Data Analysis with Python" for O'Reilly by Dr. Chester Ismay
 
-## Run this course online — nothing to install
+## Run this course online: nothing to install
 
 **▶️ Course page: <https://ismay-oreilly-dap.netlify.app/>**
 
 Run every walkthrough and exercise right in your web browser from the course page
-above — choose **Quarto Live** (a guided page with runnable code cells) or
+above. Choose **Quarto Live** (a guided page with runnable code cells) or
 **JupyterLite** (the full notebook interface), or open the notebooks in **Google
 Colab**. Pick whichever you prefer; there's nothing to install, and the course data
 files load automatically.
