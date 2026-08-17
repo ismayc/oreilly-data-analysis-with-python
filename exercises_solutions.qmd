@@ -879,7 +879,7 @@ fig = px.line(afg_data, x='year', y='gdp_percapita', title='GDP Per Capita Over 
 fig.show();
 ```
 
-> **Common Pitfall:** If a Plotly figure shows up blank in a Jupyter notebook, the renderer was likely not initialized. Make sure the setup cell that runs `pyo.init_notebook_mode(connected=True)` was executed first, and remember that you must call `fig.show()` -- simply creating `fig` does not display anything.
+> **Common Pitfall:** If a Plotly figure shows up blank in a Jupyter notebook, the renderer was likely not initialized. Make sure the setup cell that runs `pyo.init_notebook_mode(connected=True)` was executed first, and remember that you must call `fig.show()`, simply creating `fig` does not display anything.
 
 ### Adding interactive elements
 
