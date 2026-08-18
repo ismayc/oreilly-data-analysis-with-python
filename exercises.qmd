@@ -125,11 +125,30 @@ By completing this exercise, you will be able to use `pandas` to
 ```{python}
 # Load the populations data from an Excel file
 
-# Inspection methods for populations DataFrame
 ```
 
 ```{python}
-# Checking for missing data and data types for populations DataFrame
+# Display the first few rows of the DataFrame
+
+```
+
+```{python}
+# Display the information about the DataFrame
+
+```
+
+```{python}
+# Display summary statistics of the DataFrame
+
+```
+
+```{python}
+# Check for missing data
+
+```
+
+```{python}
+# Check data types
 
 ```
 
