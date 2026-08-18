@@ -1228,7 +1228,7 @@ By the end of this module, you should be able to:
 
 # Module 4: Real-World Data Analysis Project
 
-## Walkthrough 4.1: Interactive Charts and Dashboards with Plotly
+## Walkthrough 4.1: Applying Your Skills, From Data to Insights
 
 ### Selecting a Dataset
 
