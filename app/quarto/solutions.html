@@ -78,6 +78,9 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <script type="module" src="site_libs/quarto-ojs/quarto-ojs-runtime.js"></script>
 <link href="site_libs/quarto-ojs/quarto-ojs.css" rel="stylesheet">
+<script src="site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 </head>
@@ -302,6 +305,11 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
+<style>
+.cell-output-display:has(.mermaid-js) { text-align: center; }
+.cell-output-display .mermaid-js { display: inline-block; max-width: 100%; }
+.cell-output-display .mermaid-js > svg { max-width: 100%; height: auto; }
+</style>
 <div>
 <div id="pyodide-1" class="exercise-cell">
 
@@ -328,6 +336,29 @@ eyJhdHRyIjp7ImVjaG8iOmZhbHNlLCJlZGl0IjpmYWxzZSwiZXZhbCI6dHJ1ZSwiaW5jbHVkZSI6ZmFs
 </div>
 <section id="intro-foundations-of-data-analysis-with-python" class="level1">
 <h1>Intro: Foundations of Data Analysis with Python</h1>
+<!-- diagram: course-map -->
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">%%{init: {'theme': 'base', 'themeVariables': {'fontSize': '16px'}, 'flowchart': {'wrappingWidth': 500}}}%%
+flowchart LR
+  F[("A CSV or&lt;br/&gt;Excel file")]:::data --&gt; M1["Module 1&lt;br/&gt;Wrangle it&lt;br/&gt;with pandas"]:::proc
+  M1 --&gt; M2["Module 2&lt;br/&gt;Chart it&lt;br/&gt;matplotlib, seaborn"]:::proc
+  M2 --&gt; M3["Module 3&lt;br/&gt;Make it interactive&lt;br/&gt;plotly"]:::proc
+  M3 --&gt; M4["Module 4&lt;br/&gt;Tell the story"]:::accent
+  M4 --&gt; O[/"A finding someone&lt;br/&gt;can act on"/]:::good
+  classDef data fill:#d1f0ec,stroke:#0b7a75,color:#1a1a1a
+  classDef proc fill:#dbe9ff,stroke:#1a73e8,color:#1a1a1a
+  classDef accent fill:#ede0ff,stroke:#6a1b9a,color:#1a1a1a
+  classDef good fill:#d8f5d8,stroke:#2e7d32,color:#1a1a1a
+</pre>
+</div>
+<p></p><figcaption> The arc of the course: a file becomes a table, the table becomes a chart, and the chart becomes something someone can act on.</figcaption> </figure><p></p>
+</div>
+</div>
+</div>
 <section id="walkthrough-setting-up-the-python-environment" class="level2">
 <h2 class="anchored" data-anchor-id="walkthrough-setting-up-the-python-environment">Walkthrough: Setting Up the Python Environment</h2>
 <p>If you haven’t already installed Python, Jupyter, and the necessary packages, there are instructions on the course repo in the README to do so <a href="https://github.com/ismayc/oreilly-data-analysis-with-python/blob/main/README.md">here</a>.</p>
@@ -359,6 +390,32 @@ eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWUsIm91dHB1dCI6ZmFsc2V9LCJjb2RlIjoiIyBG
 <h1>Module 1: Data Wrangling with Pandas</h1>
 <section id="walkthrough-1.1-loading-and-inspecting-data-with-pandas" class="level2">
 <h2 class="anchored" data-anchor-id="walkthrough-1.1-loading-and-inspecting-data-with-pandas">Walkthrough 1.1: Loading and Inspecting Data with Pandas</h2>
+<!-- diagram: load-and-inspect -->
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">%%{init: {'theme': 'base', 'themeVariables': {'fontSize': '16px'}, 'flowchart': {'wrappingWidth': 500}}}%%
+flowchart TD
+  C[("economies.csv")]:::data --&gt; RC["read_csv()"]:::proc
+  X[("economies.xlsx")]:::data --&gt; RX["read_excel()&lt;br/&gt;needs openpyxl"]:::proc
+  RC --&gt; DF[/"One DataFrame"/]:::good
+  RX --&gt; DF
+  DF --&gt; Q1["head()&lt;br/&gt;what does a row&lt;br/&gt;look like?"]:::accent
+  DF --&gt; Q2["info(), dtypes&lt;br/&gt;what type is&lt;br/&gt;each column?"]:::accent
+  DF --&gt; Q3["describe()&lt;br/&gt;what range are&lt;br/&gt;the numbers in?"]:::accent
+  DF --&gt; Q4["isnull().sum()&lt;br/&gt;what is missing?"]:::accent
+  classDef data fill:#d1f0ec,stroke:#0b7a75,color:#1a1a1a
+  classDef proc fill:#dbe9ff,stroke:#1a73e8,color:#1a1a1a
+  classDef good fill:#d8f5d8,stroke:#2e7d32,color:#1a1a1a
+  classDef accent fill:#ede0ff,stroke:#6a1b9a,color:#1a1a1a
+</pre>
+</div>
+<p></p><figcaption> Either file type lands in the same DataFrame. Four calls then answer four questions about it.</figcaption> </figure><p></p>
+</div>
+</div>
+</div>
 <section id="import-data-from-a-csv-or-from-an-excel-file" class="level3">
 <h3 class="anchored" data-anchor-id="import-data-from-a-csv-or-from-an-excel-file">Import data from a CSV or from an Excel file</h3>
 <div>
@@ -471,8 +528,54 @@ eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoiIyBDaGVjayBkYXRhIHR5cGVz
 </section>
 <section id="walkthrough-1.2-cleaning-and-preparing-data-with-pandas" class="level2">
 <h2 class="anchored" data-anchor-id="walkthrough-1.2-cleaning-and-preparing-data-with-pandas">Walkthrough 1.2: Cleaning and Preparing Data with Pandas</h2>
+<!-- diagram: cleaning-order -->
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">%%{init: {'theme': 'base', 'themeVariables': {'fontSize': '16px'}, 'flowchart': {'wrappingWidth': 500}}}%%
+flowchart LR
+  R[("Raw&lt;br/&gt;DataFrame")]:::data --&gt; A["1. Missing values&lt;br/&gt;dropna, fillna"]:::proc
+  A --&gt; B["2. Types&lt;br/&gt;astype"]:::proc
+  B --&gt; C["3. Names&lt;br/&gt;rename"]:::proc
+  C --&gt; D["4. Index&lt;br/&gt;set_index,&lt;br/&gt;reset_index"]:::proc
+  D --&gt; E["5. Rows you want&lt;br/&gt;boolean filter"]:::proc
+  E --&gt; T[/"A table you can&lt;br/&gt;analyze"/]:::good
+  classDef data fill:#d1f0ec,stroke:#0b7a75,color:#1a1a1a
+  classDef proc fill:#dbe9ff,stroke:#1a73e8,color:#1a1a1a
+  classDef good fill:#d8f5d8,stroke:#2e7d32,color:#1a1a1a
+</pre>
+</div>
+<p></p><figcaption> Cleaning has an order. Settle what is missing, then types, then names, then the index, and cut down to the rows you want last.</figcaption> </figure><p></p>
+</div>
+</div>
+</div>
 <section id="handle-missing-data" class="level3">
 <h3 class="anchored" data-anchor-id="handle-missing-data">Handle missing data</h3>
+<!-- diagram: missing-data-choice -->
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">%%{init: {'theme': 'base', 'themeVariables': {'fontSize': '16px'}, 'flowchart': {'wrappingWidth': 500}}}%%
+flowchart TD
+  M{"A column has&lt;br/&gt;missing values"}:::decision
+  M --&gt;|"a few rows, and you&lt;br/&gt;can spare them"| DR["dropna(subset=[...])&lt;br/&gt;drop those rows"]:::proc
+  M --&gt;|"the column is&lt;br/&gt;mostly empty"| DC["dropna(axis=1)&lt;br/&gt;drop the column"]:::proc
+  M --&gt;|"you need to keep&lt;br/&gt;every row"| FI["fillna(value)&lt;br/&gt;put something in&lt;br/&gt;the gap"]:::accent
+  FI --&gt; W["A filled value is a&lt;br/&gt;guess. Say so when&lt;br/&gt;you report the number."]:::warn
+  classDef decision fill:#fff3cd,stroke:#d39e00,color:#1a1a1a
+  classDef proc fill:#dbe9ff,stroke:#1a73e8,color:#1a1a1a
+  classDef accent fill:#ede0ff,stroke:#6a1b9a,color:#1a1a1a
+  classDef warn fill:#ffe8cc,stroke:#e8730c,color:#1a1a1a
+</pre>
+</div>
+<p></p><figcaption> Three ways to handle a gap. Which one is right depends on how much is missing and whether you can spare the rows.</figcaption> </figure><p></p>
+</div>
+</div>
+</div>
 <section id="remove-rows" class="level4">
 <h4 class="anchored" data-anchor-id="remove-rows">Remove rows</h4>
 <div>
@@ -767,6 +870,27 @@ eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoiIyBGaWx0ZXIgdGhlIERhdGFG
 </section>
 <section id="walkthrough-1.3-transforming-and-aggregating-data-with-pandas" class="level2">
 <h2 class="anchored" data-anchor-id="walkthrough-1.3-transforming-and-aggregating-data-with-pandas">Walkthrough 1.3: Transforming and Aggregating Data with Pandas</h2>
+<!-- diagram: split-apply-combine -->
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">%%{init: {'theme': 'base', 'themeVariables': {'fontSize': '16px'}, 'flowchart': {'wrappingWidth': 500}}}%%
+flowchart LR
+  T[("One row per&lt;br/&gt;country and year")]:::data --&gt; S["SPLIT&lt;br/&gt;groupby('income_group')"]:::proc
+  S --&gt; A["APPLY&lt;br/&gt;mean(), agg({...})"]:::proc
+  A --&gt; C["COMBINE"]:::proc
+  C --&gt; O[/"One row per&lt;br/&gt;income group"/]:::good
+  classDef data fill:#d1f0ec,stroke:#0b7a75,color:#1a1a1a
+  classDef proc fill:#dbe9ff,stroke:#1a73e8,color:#1a1a1a
+  classDef good fill:#d8f5d8,stroke:#2e7d32,color:#1a1a1a
+</pre>
+</div>
+<p></p><figcaption> Split, apply, combine: groupby splits the table, the aggregation runs once per group, and pandas stitches the answers back together.</figcaption> </figure><p></p>
+</div>
+</div>
+</div>
 <section id="grouping-data" class="level3">
 <h3 class="anchored" data-anchor-id="grouping-data">Grouping data</h3>
 <div>
@@ -805,6 +929,26 @@ eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoiIyBDYWxjdWxhdGUgdGhlIG1l
 </section>
 <section id="summary-tables" class="level3">
 <h3 class="anchored" data-anchor-id="summary-tables">Summary tables</h3>
+<!-- diagram: summary-table-choice -->
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">%%{init: {'theme': 'base', 'themeVariables': {'fontSize': '16px'}, 'flowchart': {'wrappingWidth': 500}}}%%
+flowchart TD
+  Q{"What goes in&lt;br/&gt;the cells?"}:::decision
+  Q --&gt;|"counts, crossing&lt;br/&gt;two categories"| CT["pd.crosstab(a, b)"]:::proc
+  Q --&gt;|"an aggregate of a&lt;br/&gt;numeric column"| PT["pd.pivot_table(values=,&lt;br/&gt;index=, columns=, aggfunc=)"]:::proc
+  Q --&gt;|"counts within&lt;br/&gt;one category"| VC["series.value_counts()"]:::proc
+  classDef decision fill:#fff3cd,stroke:#d39e00,color:#1a1a1a
+  classDef proc fill:#dbe9ff,stroke:#1a73e8,color:#1a1a1a
+</pre>
+</div>
+<p></p><figcaption> Three summary tools, one question: what do you want sitting in the cells?</figcaption> </figure><p></p>
+</div>
+</div>
+</div>
 <div>
 <div id="pyodide-48" class="exercise-cell">
 
@@ -934,6 +1078,29 @@ eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoiIyBDb3VudCB0aGUgb2NjdXJy
 <h1>Module 2: Data Visualization Basics with Matplotlib and Seaborn</h1>
 <section id="walkthrough-2.1-creating-basic-plots-with-matplotlib" class="level2">
 <h2 class="anchored" data-anchor-id="walkthrough-2.1-creating-basic-plots-with-matplotlib">Walkthrough 2.1: Creating Basic Plots with Matplotlib</h2>
+<!-- diagram: matplotlib-recipe -->
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">%%{init: {'theme': 'base', 'themeVariables': {'fontSize': '16px'}, 'flowchart': {'wrappingWidth': 500}}}%%
+flowchart LR
+  F["plt.figure()&lt;br/&gt;start a NEW canvas"]:::key --&gt; P["plt.plot(), plt.bar()&lt;br/&gt;draw the data"]:::proc
+  P --&gt; L["xlabel, ylabel, title&lt;br/&gt;say what it shows"]:::proc
+  L --&gt; A["ylim, xticks, grid&lt;br/&gt;tidy the axes"]:::proc
+  A --&gt; S["plt.show()&lt;br/&gt;render it"]:::good
+  F -.-&gt;|"skip this one"| X["and the next chart&lt;br/&gt;draws on top of this one"]:::bad
+  classDef key fill:#fff3cd,stroke:#d39e00,stroke-width:2px,color:#1a1a1a
+  classDef proc fill:#dbe9ff,stroke:#1a73e8,color:#1a1a1a
+  classDef good fill:#d8f5d8,stroke:#2e7d32,color:#1a1a1a
+  classDef bad fill:#fde0e0,stroke:#c62828,color:#1a1a1a
+</pre>
+</div>
+<p></p><figcaption> Every matplotlib chart follows the same five steps, and the first one is the step people skip.</figcaption> </figure><p></p>
+</div>
+</div>
+</div>
 <section id="line-plot" class="level3">
 <h3 class="anchored" data-anchor-id="line-plot">Line plot</h3>
 <div>
@@ -1032,6 +1199,27 @@ eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoiIyBGaWx0ZXIgZGF0YSBmb3Ig
 </section>
 <section id="walkthrough-2.2-data-visualization-techniques-with-seaborn" class="level2">
 <h2 class="anchored" data-anchor-id="walkthrough-2.2-data-visualization-techniques-with-seaborn">Walkthrough 2.2: Data Visualization Techniques with Seaborn</h2>
+<!-- diagram: seaborn-choice -->
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">%%{init: {'theme': 'base', 'themeVariables': {'fontSize': '16px'}, 'flowchart': {'wrappingWidth': 500}}}%%
+flowchart TD
+  Q{"What are you&lt;br/&gt;trying to see?"}:::decision
+  Q --&gt;|"how every numeric column&lt;br/&gt;relates to every other"| H["heatmap of .corr()&lt;br/&gt;one number per pair"]:::proc
+  Q --&gt;|"the same thing, but as&lt;br/&gt;real scatterplots"| PP["pairplot"]:::proc
+  Q --&gt;|"the shape of one number&lt;br/&gt;inside each category"| V["violinplot"]:::proc
+  Q --&gt;|"one value compared&lt;br/&gt;across categories"| B["barplot"]:::proc
+  classDef decision fill:#fff3cd,stroke:#d39e00,color:#1a1a1a
+  classDef proc fill:#dbe9ff,stroke:#1a73e8,color:#1a1a1a
+</pre>
+</div>
+<p></p><figcaption> Pick the seaborn plot from the question you are asking, not from the plot you feel like making.</figcaption> </figure><p></p>
+</div>
+</div>
+</div>
 <section id="heatmap" class="level3">
 <h3 class="anchored" data-anchor-id="heatmap">Heatmap</h3>
 <div>
@@ -1144,6 +1332,32 @@ eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoiaW1wb3J0IHNlYWJvcm4gYXMg
 </section>
 <section id="module-3-interactive-data-visualization-with-plotly" class="level1">
 <h1>Module 3: Interactive Data Visualization with Plotly</h1>
+<!-- diagram: static-vs-interactive -->
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">%%{init: {'theme': 'base', 'themeVariables': {'fontSize': '16px'}, 'flowchart': {'wrappingWidth': 500}}}%%
+flowchart TD
+  D[("The same&lt;br/&gt;DataFrame")]:::data --&gt; MPL["matplotlib, seaborn&lt;br/&gt;a fixed picture"]:::proc
+  D --&gt; PLY["plotly&lt;br/&gt;hover, zoom, select"]:::accent
+  PLY --&gt; PX["plotly.express&lt;br/&gt;one line from&lt;br/&gt;a tidy frame"]:::proc
+  PLY --&gt; GO["graph_objects with&lt;br/&gt;make_subplots&lt;br/&gt;one panel at a time"]:::proc
+  PX --&gt; SH["fig.show()"]:::key
+  GO --&gt; SH
+  SH --&gt; O[/"An interactive&lt;br/&gt;figure"/]:::good
+  classDef data fill:#d1f0ec,stroke:#0b7a75,color:#1a1a1a
+  classDef proc fill:#dbe9ff,stroke:#1a73e8,color:#1a1a1a
+  classDef accent fill:#ede0ff,stroke:#6a1b9a,color:#1a1a1a
+  classDef key fill:#fff3cd,stroke:#d39e00,stroke-width:2px,color:#1a1a1a
+  classDef good fill:#d8f5d8,stroke:#2e7d32,color:#1a1a1a
+</pre>
+</div>
+<p></p><figcaption> Plotly has two entry points: express for a quick chart from a tidy frame, graph_objects when you are assembling panels. Both end at fig.show().</figcaption> </figure><p></p>
+</div>
+</div>
+</div>
 <section id="walkthrough-3.1-interactive-charts-and-dashboards-with-plotly" class="level2">
 <h2 class="anchored" data-anchor-id="walkthrough-3.1-interactive-charts-and-dashboards-with-plotly">Walkthrough 3.1: Interactive Charts and Dashboards with Plotly</h2>
 <section id="basic-interactive-chart" class="level3">
@@ -1225,6 +1439,31 @@ eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoiaW1wb3J0IHBsb3RseS5ncmFw
 </section>
 <section id="walkthrough-3.2-creating-a-dynamic-data-report" class="level2">
 <h2 class="anchored" data-anchor-id="walkthrough-3.2-creating-a-dynamic-data-report">Walkthrough 3.2: Creating a Dynamic Data Report</h2>
+<!-- diagram: report-anatomy -->
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">%%{init: {'theme': 'base', 'themeVariables': {'fontSize': '15px'}, 'flowchart': {'wrappingWidth': 500}}}%%
+flowchart TD
+  MS["make_subplots(rows=3, cols=1)&lt;br/&gt;an empty three-row grid"]:::proc --&gt; T1["add_trace(..., row=1, col=1)"]:::proc
+  MS --&gt; T2["add_trace(..., row=2, col=1)"]:::proc
+  MS --&gt; T3["add_trace(..., row=3, col=1)"]:::proc
+  T1 --&gt; UL["update_layout&lt;br/&gt;title, height, legend"]:::proc
+  T2 --&gt; UL
+  T3 --&gt; UL
+  UL --&gt; AN["add_annotation&lt;br/&gt;what each panel means"]:::accent
+  AN --&gt; R[/"One scrollable&lt;br/&gt;report"/]:::good
+  classDef proc fill:#dbe9ff,stroke:#1a73e8,color:#1a1a1a
+  classDef accent fill:#ede0ff,stroke:#6a1b9a,color:#1a1a1a
+  classDef good fill:#d8f5d8,stroke:#2e7d32,color:#1a1a1a
+</pre>
+</div>
+<p></p><figcaption> A report is a grid you fill panel by panel, then label. Rows and columns are numbered from 1, not 0.</figcaption> </figure><p></p>
+</div>
+</div>
+</div>
 <section id="selecting-relevant-data" class="level3">
 <h3 class="anchored" data-anchor-id="selecting-relevant-data">Selecting relevant data</h3>
 <div>
@@ -1312,6 +1551,30 @@ eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoiaW1wb3J0IHBsb3RseS5leHBy
 </section>
 <section id="module-4-real-world-data-analysis-project" class="level1">
 <h1>Module 4: Real-World Data Analysis Project</h1>
+<!-- diagram: project-loop -->
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">%%{init: {'theme': 'base', 'themeVariables': {'fontSize': '16px'}, 'flowchart': {'wrappingWidth': 500}}}%%
+flowchart LR
+  P["Pick a dataset&lt;br/&gt;and a question"]:::proc --&gt; C["Clean and&lt;br/&gt;transform"]:::proc
+  C --&gt; A["Analyze:&lt;br/&gt;group, chart,&lt;br/&gt;compare"]:::proc
+  A --&gt; F["Write the&lt;br/&gt;finding down"]:::accent
+  F --&gt; FB{"Does it answer&lt;br/&gt;the question?"}:::decision
+  FB --&gt;|"not yet"| C
+  FB --&gt;|"yes"| PR[/"Visuals plus&lt;br/&gt;narrative"/]:::good
+  classDef proc fill:#dbe9ff,stroke:#1a73e8,color:#1a1a1a
+  classDef accent fill:#ede0ff,stroke:#6a1b9a,color:#1a1a1a
+  classDef decision fill:#fff3cd,stroke:#d39e00,color:#1a1a1a
+  classDef good fill:#d8f5d8,stroke:#2e7d32,color:#1a1a1a
+</pre>
+</div>
+<p></p><figcaption> The project is a loop, not a line. Expect to go back to cleaning at least once.</figcaption> </figure><p></p>
+</div>
+</div>
+</div>
 <section id="walkthrough-4.1-applying-your-skills-from-data-to-insights" class="level2">
 <h2 class="anchored" data-anchor-id="walkthrough-4.1-applying-your-skills-from-data-to-insights">Walkthrough 4.1: Applying Your Skills, From Data to Insights</h2>
 <section id="selecting-a-dataset" class="level3">
