@@ -6,18 +6,24 @@ For each committed qmd we:
   1. `quarto convert` it to a notebook,
   2. drop the YAML front-matter cell and prepend a title cell,
   2b. clean markdown cells: drop HTML-only <style> blocks and rewrite Quarto
-      ```{mermaid} fences to plain ```mermaid so GitHub renders the diagrams,
+      ```{mermaid} fences to a pre-rendered PNG referenced from
+      raw.githubusercontent.com, so the diagrams render in Google Colab (whose
+      markdown engine has no mermaid support) as well as on GitHub/nbviewer,
   3. make the pip cell robust for a fresh Colab runtime,
   4. strip Quarto `#|` directive lines (noise in a plain notebook),
   5. clear outputs / execution counts and set a clean kernelspec.
 
 Usage:  python3 scripts/build-notebooks.py
-Requires: quarto on PATH.
+Requires: quarto on PATH. Diagrams are rendered with mermaid-cli (`mmdc`); a
+diagram is only (re)rendered when its PNG is missing, so a plain rebuild that
+doesn't change any diagram needs neither mmdc nor a browser. See the header of
+scripts/diagrams.py for the mermaid-cli setup.
 """
 import json
-import re
 import subprocess
 from pathlib import Path
+
+from diagrams import rewrite_markdown
 
 ROOT = Path(__file__).resolve().parent.parent
 
@@ -55,19 +61,12 @@ def clean(nb_name):
     nb = json.loads(Path(nb_name).read_text())
     cells = [c for c in nb["cells"] if not is_yaml_cell(c)]
 
-    def _fix_mermaid(m):
-        body = "\n".join(ln for ln in m.group(1).split("\n")
-                         if not ln.lstrip().startswith("%%|"))
-        return "```mermaid\n" + body + "\n```"
-
     kept = []
     for c in cells:
         if c["cell_type"] == "markdown":
-            text = "".join(c["source"])
-            text = re.sub(r'```\{=html\}\n<style>.*?</style>\n```\n*', '', text, flags=re.S)
-            text = re.sub(r'```\{mermaid\}\n(.*?)\n```', _fix_mermaid, text, flags=re.S)
+            text = rewrite_markdown("".join(c["source"]))
             if not text.strip():
-                continue
+                continue  # drop a now-empty cell (e.g. the CSS-only block)
             c["source"] = text.splitlines(keepends=True)
         kept.append(c)
     cells = kept

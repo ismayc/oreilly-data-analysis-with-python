@@ -6,12 +6,19 @@
 - Strip Quarto cell directives (lines starting with `#|`, e.g. `#| eval: false`,
   `#| include: false`) -- they are meaningful in a .qmd but are just noise in a
   Jupyter notebook. The code cells themselves are kept.
+- Drop the HTML-only <style> block and swap each Quarto ```{mermaid} fence for
+  the pre-rendered PNG in assets/diagrams/ (see scripts/diagrams.py). A `{mermaid}`
+  fence is not a language any notebook front-end knows, so it would otherwise
+  show as raw text. Diagrams are never rendered here, only looked up: if a PNG is
+  missing the fence falls back to plain ```mermaid rather than failing the build.
 
 Usage: clean-notebooks.py nb1.ipynb [nb2.ipynb ...]
 """
 import json
 import re
 import sys
+
+from diagrams import rewrite_markdown
 
 
 def field(name, text):
@@ -51,6 +58,19 @@ for path in sys.argv[1:]:
         if c.get("cell_type") == "code":
             c["source"] = [ln for ln in c.get("source", [])
                            if not ln.lstrip().startswith("#|")]
+
+    # 3. Markdown cells: drop the HTML-only <style> block and turn mermaid
+    #    fences into the committed PNGs. A cell left empty by that (the CSS-only
+    #    block) is dropped.
+    kept = []
+    for c in cells:
+        if c.get("cell_type") == "markdown":
+            text = rewrite_markdown("".join(c.get("source", [])), allow_render=False)
+            if not text.strip():
+                continue
+            c["source"] = text.splitlines(keepends=True)
+        kept.append(c)
+    cells = kept
 
     nb["cells"] = cells
     with open(path, "w", encoding="utf-8") as f:

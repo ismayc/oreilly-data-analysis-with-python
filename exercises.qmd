@@ -12,6 +12,14 @@ execute:
   warning: false
 ---
 
+```{=html}
+<style>
+.cell-output-display:has(.mermaid-js) { text-align: center; }
+.cell-output-display .mermaid-js { display: inline-block; max-width: 100%; }
+.cell-output-display .mermaid-js > svg { max-width: 100%; height: auto; }
+</style>
+```
+
 ```{python}
 #| eval: false
 !pip install pandas matplotlib seaborn plotly openpyxl
@@ -41,6 +49,26 @@ pd.set_option('display.max_columns', None)
 
 
 # Intro: Foundations of Data Analysis with Python
+
+<!-- diagram: course-map -->
+```{mermaid}
+%%| fig-cap: "The arc of the course: a file becomes a table, the table becomes a chart, and the chart becomes something someone can act on."
+%%| fig-align: center
+%%{init: {'theme': 'base', 'themeVariables': {'fontSize': '16px'}, 'flowchart': {'wrappingWidth': 500}}}%%
+flowchart LR
+  F[("A CSV or<br/>Excel file")]:::data --> M1["Module 1<br/>Wrangle it<br/>with pandas"]:::proc
+  M1 --> M2["Module 2<br/>Chart it<br/>matplotlib, seaborn"]:::proc
+  M2 --> M3["Module 3<br/>Make it interactive<br/>plotly"]:::proc
+  M3 --> M4["Module 4<br/>Tell the story"]:::accent
+  M4 --> O[/"A finding someone<br/>can act on"/]:::good
+  classDef data fill:#d1f0ec,stroke:#0b7a75,color:#1a1a1a
+  classDef proc fill:#dbe9ff,stroke:#1a73e8,color:#1a1a1a
+  classDef accent fill:#ede0ff,stroke:#6a1b9a,color:#1a1a1a
+  classDef good fill:#d8f5d8,stroke:#2e7d32,color:#1a1a1a
+```
+
+
+
 
 ## Walkthrough: Setting Up the Python Environment
 
@@ -76,6 +104,29 @@ to move on.
 # Module 1: Data Wrangling with Pandas
 
 ## Walkthrough 1.1: Loading and Inspecting Data with Pandas
+
+<!-- diagram: load-and-inspect -->
+```{mermaid}
+%%| fig-cap: "Either file type lands in the same DataFrame. Four calls then answer four questions about it."
+%%| fig-align: center
+%%{init: {'theme': 'base', 'themeVariables': {'fontSize': '16px'}, 'flowchart': {'wrappingWidth': 500}}}%%
+flowchart TD
+  C[("economies.csv")]:::data --> RC["read_csv()"]:::proc
+  X[("economies.xlsx")]:::data --> RX["read_excel()<br/>needs openpyxl"]:::proc
+  RC --> DF[/"One DataFrame"/]:::good
+  RX --> DF
+  DF --> Q1["head()<br/>what does a row<br/>look like?"]:::accent
+  DF --> Q2["info(), dtypes<br/>what type is<br/>each column?"]:::accent
+  DF --> Q3["describe()<br/>what range are<br/>the numbers in?"]:::accent
+  DF --> Q4["isnull().sum()<br/>what is missing?"]:::accent
+  classDef data fill:#d1f0ec,stroke:#0b7a75,color:#1a1a1a
+  classDef proc fill:#dbe9ff,stroke:#1a73e8,color:#1a1a1a
+  classDef good fill:#d8f5d8,stroke:#2e7d32,color:#1a1a1a
+  classDef accent fill:#ede0ff,stroke:#6a1b9a,color:#1a1a1a
+```
+
+
+
 
 ### Import data from a CSV or from an Excel file
 
@@ -155,7 +206,47 @@ By completing this exercise, you will be able to use `pandas` to
 
 ## Walkthrough 1.2: Cleaning and Preparing Data with Pandas
 
+<!-- diagram: cleaning-order -->
+```{mermaid}
+%%| fig-cap: "Cleaning has an order. Settle what is missing, then types, then names, then the index, and cut down to the rows you want last."
+%%| fig-align: center
+%%{init: {'theme': 'base', 'themeVariables': {'fontSize': '16px'}, 'flowchart': {'wrappingWidth': 500}}}%%
+flowchart LR
+  R[("Raw<br/>DataFrame")]:::data --> A["1. Missing values<br/>dropna, fillna"]:::proc
+  A --> B["2. Types<br/>astype"]:::proc
+  B --> C["3. Names<br/>rename"]:::proc
+  C --> D["4. Index<br/>set_index,<br/>reset_index"]:::proc
+  D --> E["5. Rows you want<br/>boolean filter"]:::proc
+  E --> T[/"A table you can<br/>analyze"/]:::good
+  classDef data fill:#d1f0ec,stroke:#0b7a75,color:#1a1a1a
+  classDef proc fill:#dbe9ff,stroke:#1a73e8,color:#1a1a1a
+  classDef good fill:#d8f5d8,stroke:#2e7d32,color:#1a1a1a
+```
+
+
+
+
 ### Handle missing data
+
+<!-- diagram: missing-data-choice -->
+```{mermaid}
+%%| fig-cap: "Three ways to handle a gap. Which one is right depends on how much is missing and whether you can spare the rows."
+%%| fig-align: center
+%%{init: {'theme': 'base', 'themeVariables': {'fontSize': '16px'}, 'flowchart': {'wrappingWidth': 500}}}%%
+flowchart TD
+  M{"A column has<br/>missing values"}:::decision
+  M -->|"a few rows, and you<br/>can spare them"| DR["dropna(subset=[...])<br/>drop those rows"]:::proc
+  M -->|"the column is<br/>mostly empty"| DC["dropna(axis=1)<br/>drop the column"]:::proc
+  M -->|"you need to keep<br/>every row"| FI["fillna(value)<br/>put something in<br/>the gap"]:::accent
+  FI --> W["A filled value is a<br/>guess. Say so when<br/>you report the number."]:::warn
+  classDef decision fill:#fff3cd,stroke:#d39e00,color:#1a1a1a
+  classDef proc fill:#dbe9ff,stroke:#1a73e8,color:#1a1a1a
+  classDef accent fill:#ede0ff,stroke:#6a1b9a,color:#1a1a1a
+  classDef warn fill:#ffe8cc,stroke:#e8730c,color:#1a1a1a
+```
+
+
+
 
 #### Remove rows
 
@@ -398,6 +489,24 @@ By completing this exercise, you will be able to use `pandas` to
 
 ## Walkthrough 1.3: Transforming and Aggregating Data with Pandas
 
+<!-- diagram: split-apply-combine -->
+```{mermaid}
+%%| fig-cap: "Split, apply, combine: groupby splits the table, the aggregation runs once per group, and pandas stitches the answers back together."
+%%| fig-align: center
+%%{init: {'theme': 'base', 'themeVariables': {'fontSize': '16px'}, 'flowchart': {'wrappingWidth': 500}}}%%
+flowchart LR
+  T[("One row per<br/>country and year")]:::data --> S["SPLIT<br/>groupby('income_group')"]:::proc
+  S --> A["APPLY<br/>mean(), agg({...})"]:::proc
+  A --> C["COMBINE"]:::proc
+  C --> O[/"One row per<br/>income group"/]:::good
+  classDef data fill:#d1f0ec,stroke:#0b7a75,color:#1a1a1a
+  classDef proc fill:#dbe9ff,stroke:#1a73e8,color:#1a1a1a
+  classDef good fill:#d8f5d8,stroke:#2e7d32,color:#1a1a1a
+```
+
+
+
+
 ### Grouping data
 
 ```{python}
@@ -428,6 +537,23 @@ By completing this exercise, you will be able to use `pandas` to
 ```
 
 ### Summary tables
+
+<!-- diagram: summary-table-choice -->
+```{mermaid}
+%%| fig-cap: "Three summary tools, one question: what do you want sitting in the cells?"
+%%| fig-align: center
+%%{init: {'theme': 'base', 'themeVariables': {'fontSize': '16px'}, 'flowchart': {'wrappingWidth': 500}}}%%
+flowchart TD
+  Q{"What goes in<br/>the cells?"}:::decision
+  Q -->|"counts, crossing<br/>two categories"| CT["pd.crosstab(a, b)"]:::proc
+  Q -->|"an aggregate of a<br/>numeric column"| PT["pd.pivot_table(values=,<br/>index=, columns=, aggfunc=)"]:::proc
+  Q -->|"counts within<br/>one category"| VC["series.value_counts()"]:::proc
+  classDef decision fill:#fff3cd,stroke:#d39e00,color:#1a1a1a
+  classDef proc fill:#dbe9ff,stroke:#1a73e8,color:#1a1a1a
+```
+
+
+
 
 ```{python}
 # Create a pivot table of gdp_percapita and inflation_rate by income_group and year
@@ -543,6 +669,26 @@ By the end of this module, you should be able to:
 # Module 2: Data Visualization Basics with Matplotlib and Seaborn
 
 ## Walkthrough 2.1: Creating Basic Plots with Matplotlib
+
+<!-- diagram: matplotlib-recipe -->
+```{mermaid}
+%%| fig-cap: "Every matplotlib chart follows the same five steps, and the first one is the step people skip."
+%%| fig-align: center
+%%{init: {'theme': 'base', 'themeVariables': {'fontSize': '16px'}, 'flowchart': {'wrappingWidth': 500}}}%%
+flowchart LR
+  F["plt.figure()<br/>start a NEW canvas"]:::key --> P["plt.plot(), plt.bar()<br/>draw the data"]:::proc
+  P --> L["xlabel, ylabel, title<br/>say what it shows"]:::proc
+  L --> A["ylim, xticks, grid<br/>tidy the axes"]:::proc
+  A --> S["plt.show()<br/>render it"]:::good
+  F -.->|"skip this one"| X["and the next chart<br/>draws on top of this one"]:::bad
+  classDef key fill:#fff3cd,stroke:#d39e00,stroke-width:2px,color:#1a1a1a
+  classDef proc fill:#dbe9ff,stroke:#1a73e8,color:#1a1a1a
+  classDef good fill:#d8f5d8,stroke:#2e7d32,color:#1a1a1a
+  classDef bad fill:#fde0e0,stroke:#c62828,color:#1a1a1a
+```
+
+
+
 
 ### Line plot
 
@@ -699,6 +845,24 @@ By completing this exercise, you will be able to use `matplotlib` to
 
 ## Walkthrough 2.2: Data Visualization Techniques with Seaborn
 
+<!-- diagram: seaborn-choice -->
+```{mermaid}
+%%| fig-cap: "Pick the seaborn plot from the question you are asking, not from the plot you feel like making."
+%%| fig-align: center
+%%{init: {'theme': 'base', 'themeVariables': {'fontSize': '16px'}, 'flowchart': {'wrappingWidth': 500}}}%%
+flowchart TD
+  Q{"What are you<br/>trying to see?"}:::decision
+  Q -->|"how every numeric column<br/>relates to every other"| H["heatmap of .corr()<br/>one number per pair"]:::proc
+  Q -->|"the same thing, but as<br/>real scatterplots"| PP["pairplot"]:::proc
+  Q -->|"the shape of one number<br/>inside each category"| V["violinplot"]:::proc
+  Q -->|"one value compared<br/>across categories"| B["barplot"]:::proc
+  classDef decision fill:#fff3cd,stroke:#d39e00,color:#1a1a1a
+  classDef proc fill:#dbe9ff,stroke:#1a73e8,color:#1a1a1a
+```
+
+
+
+
 ### Heatmap
 
 ```{python}
@@ -843,6 +1007,29 @@ By the end of this module, you should be able to:
 
 # Module 3: Interactive Data Visualization with Plotly
 
+<!-- diagram: static-vs-interactive -->
+```{mermaid}
+%%| fig-cap: "Plotly has two entry points: express for a quick chart from a tidy frame, graph_objects when you are assembling panels. Both end at fig.show()."
+%%| fig-align: center
+%%{init: {'theme': 'base', 'themeVariables': {'fontSize': '16px'}, 'flowchart': {'wrappingWidth': 500}}}%%
+flowchart TD
+  D[("The same<br/>DataFrame")]:::data --> MPL["matplotlib, seaborn<br/>a fixed picture"]:::proc
+  D --> PLY["plotly<br/>hover, zoom, select"]:::accent
+  PLY --> PX["plotly.express<br/>one line from<br/>a tidy frame"]:::proc
+  PLY --> GO["graph_objects with<br/>make_subplots<br/>one panel at a time"]:::proc
+  PX --> SH["fig.show()"]:::key
+  GO --> SH
+  SH --> O[/"An interactive<br/>figure"/]:::good
+  classDef data fill:#d1f0ec,stroke:#0b7a75,color:#1a1a1a
+  classDef proc fill:#dbe9ff,stroke:#1a73e8,color:#1a1a1a
+  classDef accent fill:#ede0ff,stroke:#6a1b9a,color:#1a1a1a
+  classDef key fill:#fff3cd,stroke:#d39e00,stroke-width:2px,color:#1a1a1a
+  classDef good fill:#d8f5d8,stroke:#2e7d32,color:#1a1a1a
+```
+
+
+
+
 ## Walkthrough 3.1: Interactive Charts and Dashboards with Plotly
 
 ### Basic interactive chart
@@ -963,6 +1150,28 @@ By completing this exercise, you will be able to use `plotly` to
 ```
 
 ## Walkthrough 3.2: Creating a Dynamic Data Report
+
+<!-- diagram: report-anatomy -->
+```{mermaid}
+%%| fig-cap: "A report is a grid you fill panel by panel, then label. Rows and columns are numbered from 1, not 0."
+%%| fig-align: center
+%%{init: {'theme': 'base', 'themeVariables': {'fontSize': '15px'}, 'flowchart': {'wrappingWidth': 500}}}%%
+flowchart TD
+  MS["make_subplots(rows=3, cols=1)<br/>an empty three-row grid"]:::proc --> T1["add_trace(..., row=1, col=1)"]:::proc
+  MS --> T2["add_trace(..., row=2, col=1)"]:::proc
+  MS --> T3["add_trace(..., row=3, col=1)"]:::proc
+  T1 --> UL["update_layout<br/>title, height, legend"]:::proc
+  T2 --> UL
+  T3 --> UL
+  UL --> AN["add_annotation<br/>what each panel means"]:::accent
+  AN --> R[/"One scrollable<br/>report"/]:::good
+  classDef proc fill:#dbe9ff,stroke:#1a73e8,color:#1a1a1a
+  classDef accent fill:#ede0ff,stroke:#6a1b9a,color:#1a1a1a
+  classDef good fill:#d8f5d8,stroke:#2e7d32,color:#1a1a1a
+```
+
+
+
 
 ### Selecting relevant data
 
@@ -1170,6 +1379,27 @@ By the end of this module, you should be able to:
 ---
 
 # Module 4: Real-World Data Analysis Project
+
+<!-- diagram: project-loop -->
+```{mermaid}
+%%| fig-cap: "The project is a loop, not a line. Expect to go back to cleaning at least once."
+%%| fig-align: center
+%%{init: {'theme': 'base', 'themeVariables': {'fontSize': '16px'}, 'flowchart': {'wrappingWidth': 500}}}%%
+flowchart LR
+  P["Pick a dataset<br/>and a question"]:::proc --> C["Clean and<br/>transform"]:::proc
+  C --> A["Analyze:<br/>group, chart,<br/>compare"]:::proc
+  A --> F["Write the<br/>finding down"]:::accent
+  F --> FB{"Does it answer<br/>the question?"}:::decision
+  FB -->|"not yet"| C
+  FB -->|"yes"| PR[/"Visuals plus<br/>narrative"/]:::good
+  classDef proc fill:#dbe9ff,stroke:#1a73e8,color:#1a1a1a
+  classDef accent fill:#ede0ff,stroke:#6a1b9a,color:#1a1a1a
+  classDef decision fill:#fff3cd,stroke:#d39e00,color:#1a1a1a
+  classDef good fill:#d8f5d8,stroke:#2e7d32,color:#1a1a1a
+```
+
+
+
 
 ## Walkthrough 4.1: Applying Your Skills, From Data to Insights
 
