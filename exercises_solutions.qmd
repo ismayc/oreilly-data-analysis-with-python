@@ -382,9 +382,9 @@ deflation_low_income.head()
 ```
 
 ```{python}
-# Filter rows where gdp_percapita is greater than 40,000 and year is less than or equal to 2015
-top_gdp_2010_2015 = economies[(economies['gdp_percapita'] > 40000) & (economies['year'] <= 2015)]
-top_gdp_2010_2015.head()
+# Filter rows where gdp_percapita is greater than 40,000 and year is less than or equal to 2016
+top_gdp_2012_2016 = economies[(economies['gdp_percapita'] > 40000) & (economies['year'] <= 2016)]
+top_gdp_2012_2016.head()
 ```
 
 ## Exercise 1.2: Cleaning and Preparing Data with Pandas
@@ -414,7 +414,7 @@ populations_cleaned_all
 
 ```{python}
 # Remove rows with missing values in specific columns
-populations_cleaned_subset = populations.dropna(subset=['fertility_rate', 'life_expectancy'])
+populations_cleaned_subset = populations.dropna(subset=['infant_mortality'])
 populations_cleaned_subset
 ```
 
@@ -434,6 +434,8 @@ populations_no_missing_columns.head()
 populations_fill_value = populations.fillna({
     'fertility_rate': 0,
     'life_expectancy': 0,
+    'infant_mortality': 0,
+    'sanitation': 0,
     'size': 0,
     'continent': 'Unknown',
     'region': 'Unknown'

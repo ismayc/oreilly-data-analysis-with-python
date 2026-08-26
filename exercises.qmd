@@ -379,7 +379,7 @@ This can be extended to replace missing values with the mean, median, or mode of
 ```
 
 ```{python}
-# Filter rows where gdp_percapita is greater than 40,000 and year is less than or equal to 2015
+# Filter rows where gdp_percapita is greater than 40,000 and year is less than or equal to 2016
 
 
 ```
@@ -408,7 +408,7 @@ By completing this exercise, you will be able to use `pandas` to
 ```
 
 ```{python}
-# Remove rows with missing values in specific columns (e.g., 'fertility_rate', 'life_expectancy')
+# Remove rows with missing values in specific columns (e.g., 'infant_mortality')
 
 ```
 

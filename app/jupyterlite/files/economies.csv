@@ -1,749 +1,749 @@
 code,country,year,gdp_percapita,gross_savings,inflation_rate,total_investment,unemployment_rate,exports,imports,income_group
-ABW,Aruba,2010,24093.14,4.649,2.078,28.283,NA,NA,NA,High income
-ABW,Aruba,2015,27458.22,15.266,0.475,21.539,NA,NA,NA,High income
+ABW,Aruba,2012,25119.666,5.751,0.627,23.523,NA,NA,NA,High income
+ABW,Aruba,2016,27441.55,15.174,-0.931,20.575,NA,NA,NA,High income
 ABW,Aruba,2020,22664.371,3.585,NA,23.931,NA,NA,NA,High income
-ABW,Aruba,2025,NA,NA,NA,NA,NA,NA,NA,High income
-AFG,Afghanistan,2010,560.622,NA,2.179,NA,7.809,NA,NA,Low income
-AFG,Afghanistan,2015,565.57,NA,-0.662,NA,9.032,NA,NA,Low income
+ABW,Aruba,2024,38590.565,NA,NA,25.746,NA,NA,NA,High income
+AFG,Afghanistan,2012,651.417,NA,6.441,NA,7.875,NA,NA,Low income
+AFG,Afghanistan,2016,522.082,NA,4.384,NA,10.116,NA,NA,Low income
 AFG,Afghanistan,2020,510.787,-2.738,5.602,11.5,11.71,NA,NA,Low income
-AFG,Afghanistan,2025,NA,NA,NA,NA,13.351,NA,NA,Low income
-AGO,Angola,2010,4101.637,37.633,14.47,29.764,16.595,-2.379,-11.738,Lower middle income
-AGO,Angola,2015,3641.729,21.127,9.356,29.109,16.472,2.0,-23.91,Lower middle income
+AFG,Afghanistan,2024,416.871,NA,-6.601,17.087,13.687,-0.337,27.591,Low income
+AGO,Angola,2012,5702.453,37.597,10.278,27.969,16.539,5.2,-0.089,Lower middle income
+AGO,Angola,2016,2082.373,26.686,30.694,29.692,16.572,-18.396,-24.739,Lower middle income
 AGO,Angola,2020,1749.179,21.064,22.272,19.758,16.696,-8.0,4.9,Lower middle income
-AGO,Angola,2025,3129.477,NA,20.162,NA,14.108,NA,NA,Lower middle income
-ALB,Albania,2010,4149.145,21.289,3.627,32.493,14.086,19.194,-0.573,Upper middle income
-ALB,Albania,2015,4199.539,19.28,1.896,27.813,17.193,-2.253,-2.674,Upper middle income
+AGO,Angola,2024,2720.819,15.876,28.24,10.638,14.02,1.507,2.705,Lower middle income
+ALB,Albania,2012,4280.933,19.456,2.032,29.715,13.376,0.294,-6.931,Upper middle income
+ALB,Albania,2016,4457.634,19.32,1.275,26.814,15.418,7.573,5.973,Upper middle income
 ALB,Albania,2020,6027.914,17.66,1.621,26.218,11.639,-27.726,-19.79,Upper middle income
-ALB,Albania,2025,12998.148,22.81,2.146,NA,10.926,7.421,3.616,Upper middle income
-ARE,United Arab Emirates,2010,44795.285,NA,0.878,28.919,2.798,6.26,-20.383,High income
-ARE,United Arab Emirates,2015,44910.346,NA,4.07,21.643,1.793,2.725,-5.534,High income
+ALB,Albania,2024,11374.009,22.503,2.216,24.951,10.689,0.11,5.986,Upper middle income
+ARE,United Arab Emirates,2012,53141.625,NA,0.662,23.421,2.323,15.665,8.564,High income
+ARE,United Arab Emirates,2016,42721.114,NA,1.617,20.929,1.64,5.214,1.309,High income
 ARE,United Arab Emirates,2020,37991.738,NA,-2.079,22.827,4.294,3.849,5.146,High income
-ARE,United Arab Emirates,2025,NA,NA,1.251,NA,2.174,NA,NA,High income
-ARG,Argentina,2010,10260.131,17.332,NA,17.706,7.714,13.897,35.204,Upper middle income
-ARG,Argentina,2015,13679.626,14.306,NA,17.071,7.577,-2.777,4.711,Upper middle income
+ARE,United Arab Emirates,2024,50273.513,NA,1.663,NA,2.16,NA,NA,High income
+ARG,Argentina,2012,12949.717,16.21,NA,16.502,7.217,-4.108,-4.728,Upper middle income
+ARG,Argentina,2016,12699.962,14.622,NA,17.663,8.088,5.317,5.824,Upper middle income
 ARG,Argentina,2020,8535.599,15.012,42.015,14.415,11.461,-17.438,-17.211,Upper middle income
-ARG,Argentina,2025,14898.089,13.376,NA,16.114,7.145,7.558,26.974,Upper middle income
-ARM,Armenia,2010,3041.345,13.201,8.176,38.815,19.523,26.5,12.8,Upper middle income
-ARM,Armenia,2015,3512.394,18.454,3.732,20.731,18.261,4.9,-15.3,Upper middle income
+ARG,Argentina,2024,13969.784,16.697,219.884,15.838,7.15,19.804,-10.188,Upper middle income
+ARM,Armenia,2012,3511.564,14.097,2.558,24.681,17.511,9.136,-2.732,Upper middle income
+ARM,Armenia,2016,3524.425,17.875,-1.404,18.016,17.617,21.3,6.3,Upper middle income
 ARM,Armenia,2020,4268.681,15.647,1.211,19.664,18.175,-33.9,-31.9,Upper middle income
-ARM,Armenia,2025,9474.018,16.915,3.307,24.211,12.871,-30.5,-23.7,Upper middle income
-ATG,Antigua and Barbuda,2010,15217.395,NA,3.37,NA,NA,NA,NA,High income
-ATG,Antigua and Barbuda,2015,16077.634,NA,0.969,NA,NA,NA,NA,High income
+ARM,Armenia,2024,8556.214,19.236,0.27,23.833,12.405,27.6,28.3,Upper middle income
+ATG,Antigua and Barbuda,2012,15639.808,NA,3.377,NA,NA,NA,NA,High income
+ATG,Antigua and Barbuda,2016,16556.855,NA,-0.489,NA,NA,NA,NA,High income
 ATG,Antigua and Barbuda,2020,15369.608,NA,0.626,NA,NA,NA,NA,High income
-ATG,Antigua and Barbuda,2025,24819.245,NA,1.369,NA,NA,NA,NA,High income
-AUS,Australia,2010,52313.894,21.709,2.918,26.698,5.214,4.71,6.993,High income
-AUS,Australia,2015,56970.361,22.521,1.508,26.167,6.055,6.891,1.63,High income
+ATG,Antigua and Barbuda,2024,23059.833,NA,6.199,NA,NA,NA,NA,High income
+AUS,Australia,2012,68301.44,24.2,1.763,27.623,5.225,4.603,11.308,High income
+AUS,Australia,2016,50084.444,20.53,1.277,25.348,5.711,6.413,0.105,High income
 AUS,Australia,2020,51983.452,23.233,0.847,22.345,6.394,-1.708,-6.568,High income
-AUS,Australia,2025,65129.723,22.156,2.874,24.461,4.09,0.792,3.072,High income
-AUT,Austria,2010,46611.139,25.902,1.814,22.859,4.883,13.131,11.978,High income
-AUT,Austria,2015,43915.228,25.676,0.897,24.012,5.802,3.027,3.639,High income
+AUS,Australia,2024,64609.987,22.919,3.167,24.324,3.942,3.781,6.299,High income
+AUT,Austria,2012,48250.406,25.9,2.486,24.256,4.909,1.438,0.923,High income
+AUT,Austria,2016,45061.499,27.143,0.892,24.457,6.064,2.993,3.728,High income
 AUT,Austria,2020,48716.41,29.212,1.382,25.653,5.201,-10.489,-9.574,High income
-AUT,Austria,2025,62930.035,25.809,3.527,23.659,5.582,0.295,1.719,High income
-AZE,Azerbaijan,2010,5843.534,44.73,5.727,18.06,5.63,24.2,1.346,Upper middle income
-AZE,Azerbaijan,2015,5500.504,28.122,4.028,27.914,4.96,NA,NA,Upper middle income
+AUT,Austria,2024,58268.879,25.44,2.938,23.577,5.2,-2.292,-2.582,High income
+AZE,Azerbaijan,2012,7495.865,44.27,1.066,22.317,5.19,2.2,2.2,Upper middle income
+AZE,Azerbaijan,2016,3880.685,22.6,12.443,25.681,5.0,NA,NA,Upper middle income
 AZE,Azerbaijan,2020,4229.911,23.569,2.76,23.666,7.24,NA,NA,Upper middle income
-AZE,Azerbaijan,2025,7410.723,23.464,5.622,18.888,5.457,NA,NA,Upper middle income
-BDI,Burundi,2010,216.728,3.213,6.493,NA,1.615,NA,NA,Low income
-BDI,Burundi,2015,254.403,2.954,5.545,NA,1.449,NA,NA,Low income
+AZE,Azerbaijan,2024,7294.643,27.2,2.212,20.7,5.648,NA,NA,Upper middle income
+BDI,Burundi,2012,231.099,10.655,18.161,NA,1.593,NA,NA,Low income
+BDI,Burundi,2016,232.938,6.31,5.558,NA,1.352,NA,NA,Low income
 BDI,Burundi,2020,252.702,24.598,7.321,NA,1.03,NA,NA,Low income
-BDI,Burundi,2025,233.823,43.06,34.134,NA,0.922,NA,NA,Low income
-BEL,Belgium,2010,44197.394,24.399,2.189,22.394,8.293,10.435,9.627,High income
-BEL,Belgium,2015,40893.805,23.96,0.561,23.322,8.482,3.67,4.201,High income
+BDI,Burundi,2024,216.232,40.831,20.212,NA,0.915,NA,NA,Low income
+BEL,Belgium,2012,44874.171,24.225,2.84,23.588,7.542,-0.669,-0.625,High income
+BEL,Belgium,2016,41854.55,23.662,1.974,24.182,7.83,6.144,7.773,High income
 BEL,Belgium,2020,45906.288,24.989,0.741,24.069,5.545,-5.958,-6.724,High income
-BEL,Belgium,2025,60750.274,23.701,2.467,25.747,5.906,-0.288,0.145,High income
-BEN,Benin,2010,973.244,11.387,2.208,15.608,1.04,4.798,7.35,Lower middle income
-BEN,Benin,2015,1002.419,14.098,0.219,20.732,1.886,-20.096,-0.968,Lower middle income
+BEL,Belgium,2024,56581.938,24.233,3.143,24.553,5.7,-1.7,-1.288,High income
+BEN,Benin,2012,1071.526,13.533,6.745,15.276,2.458,24.096,11.362,Lower middle income
+BEN,Benin,2016,1010.534,17.952,-0.793,20.272,1.834,13.481,3.303,Lower middle income
 BEN,Benin,2020,1200.194,21.577,3.023,25.634,1.518,-24.965,-19.793,Lower middle income
-BEN,Benin,2025,1658.273,NA,1.102,35.826,1.589,-0.622,0.865,Lower middle income
-BFA,Burkina Faso,2010,624.957,15.839,-0.764,21.99,3.725,43.174,24.997,Low income
-BFA,Burkina Faso,2015,630.125,11.859,0.725,19.407,4.472,1.549,11.17,Low income
+BEN,Benin,2024,1485.38,NA,1.161,35.062,1.637,4.38,-0.752,Lower middle income
+BFA,Burkina Faso,2012,731.47,18.063,3.818,24.653,3.849,0.198,18.513,Low income
+BFA,Burkina Faso,2016,663.742,13.451,0.441,20.796,4.598,2.616,7.321,Low income
 BFA,Burkina Faso,2020,825.237,20.556,1.885,17.162,4.59,11.896,1.535,Low income
-BFA,Burkina Faso,2025,1147.571,NA,-0.586,17.222,3.477,7.438,7.416,Low income
-BGD,Bangladesh,2010,757.385,38.782,8.127,26.247,3.379,0.942,0.686,Lower middle income
-BGD,Bangladesh,2015,1224.386,36.731,6.194,28.887,4.397,-2.83,3.203,Lower middle income
+BFA,Burkina Faso,2024,982.493,15.886,4.191,21.794,3.441,-4.22,13.208,Low income
+BGD,Bangladesh,2012,859.681,40.6,6.218,28.262,4.07,12.532,10.519,Lower middle income
+BGD,Bangladesh,2016,1649.284,37.28,5.514,30.24,4.35,2.197,-7.092,Lower middle income
 BGD,Bangladesh,2020,2248.851,37.189,5.691,31.308,5.539,-17.502,-11.41,Lower middle income
-BGD,Bangladesh,2025,2597.344,34.813,8.769,28.541,3.778,9.969,6.773,Lower middle income
-BGR,Bulgaria,2010,6854.299,20.6,2.439,22.518,10.279,12.554,9.616,Upper middle income
-BGR,Bulgaria,2015,7269.026,20.935,-0.105,21.0,9.143,8.613,5.028,Upper middle income
+BGD,Bangladesh,2024,2593.416,34.382,10.466,30.7,3.635,-17.133,-4.599,Lower middle income
+BGR,Bulgaria,2012,7432.338,21.106,2.955,21.887,12.27,9.632,4.336,Upper middle income
+BGR,Bulgaria,2016,7822.899,21.963,-0.799,18.962,7.575,5.743,7.302,Upper middle income
 BGR,Bulgaria,2020,10760.762,20.702,1.672,20.152,5.037,11.575,10.693,Upper middle income
-BGR,Bulgaria,2025,20328.167,16.722,4.581,21.717,3.536,0.0,0.0,Upper middle income
-BHR,Bahrain,2010,21819.329,31.466,1.962,28.598,1.13,2.63,17.306,High income
-BHR,Bahrain,2015,23734.055,23.781,1.849,25.625,1.164,-0.845,-5.669,High income
+BGR,Bulgaria,2024,17596.917,18.836,2.447,20.43,4.2,-2.13,5.88,Upper middle income
+BHR,Bahrain,2012,26438.673,36.383,2.757,28.318,1.2,20.804,27.701,High income
+BHR,Bahrain,2016,23800.001,23.883,2.787,27.886,1.19,-2.757,-3.153,High income
 BHR,Bahrain,2020,24342.844,28.242,-2.318,37.296,1.765,-2.548,-0.702,High income
-BHR,Bahrain,2025,30596.579,NA,-0.138,NA,1.102,NA,NA,High income
-BHS,Bahamas,2010,27473.1,23.448,1.344,27.986,14.435,1.275,-0.392,High income
-BHS,Bahamas,2015,30719.405,20.903,1.861,24.611,12.0,1.396,-5.937,High income
+BHR,Bahrain,2024,29717.142,33.408,0.92,28.359,1.084,1.895,1.58,High income
+BHS,Bahamas,2012,28552.024,20.838,1.973,31.342,14.02,49.384,-6.195,High income
+BHS,Bahamas,2016,30616.536,22.835,-0.346,25.781,12.7,-7.018,7.423,High income
 BHS,Bahamas,2020,26178.754,8.754,0.039,23.071,12.016,-45.289,-27.373,High income
-BHS,Bahamas,2025,NA,NA,NA,NA,9.207,NA,NA,High income
-BIH,Bosnia and Herzegovina,2010,4506.478,6.483,1.996,21.915,27.312,13.901,2.479,Upper middle income
-BIH,Bosnia and Herzegovina,2015,4662.259,8.907,-1.036,22.17,27.695,9.783,1.782,Upper middle income
+BHS,Bahamas,2024,39455.447,19.213,0.409,26.806,9.049,6.177,12.71,High income
+BIH,Bosnia and Herzegovina,2012,4693.789,3.89,2.053,22.884,28.01,0.107,0.615,Upper middle income
+BIH,Bosnia and Herzegovina,2016,4928.567,11.514,-1.584,23.33,25.408,9.368,7.195,Upper middle income
 BIH,Bosnia and Herzegovina,2020,6130.312,16.331,-1.051,23.468,15.868,-14.842,-13.425,Upper middle income
-BIH,Bosnia and Herzegovina,2025,10381.846,20.291,NA,28.738,11.037,2.524,5.26,Upper middle income
-BLR,Belarus,2010,6034.679,26.855,7.736,40.656,6.052,7.669,12.225,Upper middle income
-BLR,Belarus,2015,5967.056,28.908,13.534,29.035,5.881,2.101,-10.628,Upper middle income
+BIH,Bosnia and Herzegovina,2024,9397.909,21.411,NA,27.365,10.69,-1.613,4.71,Upper middle income
+BLR,Belarus,2012,6953.216,31.237,59.22,35.094,5.962,11.2,10.9,Upper middle income
+BLR,Belarus,2016,5039.776,26.403,11.837,26.478,5.844,2.6,-1.4,Upper middle income
 BLR,Belarus,2020,6542.856,27.469,5.548,27.455,4.049,-3.75,-7.351,Upper middle income
-BLR,Belarus,2025,10279.255,25.5,6.599,27.122,3.38,-4.7,-0.1,Upper middle income
-BLZ,Belize,2010,5461.407,18.671,0.918,15.451,8.412,0.442,3.168,Upper middle income
-BLZ,Belize,2015,6154.623,20.253,-0.862,16.726,7.578,-2.41,9.351,Upper middle income
+BLR,Belarus,2024,8605.61,25.679,5.785,25.841,3.458,3.018,6.006,Upper middle income
+BLZ,Belize,2012,5732.665,19.906,1.301,13.072,8.378,10.678,7.192,Upper middle income
+BLZ,Belize,2016,6140.867,20.798,0.663,17.973,7.0,-8.961,-0.69,Upper middle income
 BLZ,Belize,2020,5238.541,22.728,0.121,18.443,10.763,-29.579,-22.912,Upper middle income
-BLZ,Belize,2025,7865.479,NA,1.063,NA,8.856,NA,NA,Upper middle income
-BOL,Bolivia,2010,1929.784,24.849,2.503,17.007,2.609,9.853,11.041,Lower middle income
-BOL,Bolivia,2015,2996.013,14.217,4.06,20.281,3.111,-5.919,-5.406,Lower middle income
+BLZ,Belize,2024,7681.244,20.333,3.29,19.788,8.698,5.974,11.723,Upper middle income
+BOL,Bolivia,2012,2575.599,25.694,4.516,17.673,2.066,13.296,4.281,Lower middle income
+BOL,Bolivia,2016,3035.873,15.42,3.623,21.057,3.498,-5.714,-4.193,Lower middle income
 BOL,Bolivia,2020,3580.968,14.933,0.941,17.268,7.903,-23.912,-30.139,Lower middle income
-BOL,Bolivia,2025,5147.811,NA,19.517,NA,2.967,NA,NA,Lower middle income
-BRA,Brazil,2010,11403.282,17.802,5.039,21.801,8.42,11.722,33.639,Upper middle income
-BRA,Brazil,2015,8936.197,14.529,9.03,17.412,8.538,6.82,-14.191,Upper middle income
+BOL,Bolivia,2024,4421.166,13.8,5.1,17.947,3.274,-14.469,-10.444,Lower middle income
+BRA,Brazil,2012,12521.721,17.678,5.403,21.417,7.251,0.708,1.131,Upper middle income
+BRA,Brazil,2016,8836.287,13.422,8.739,14.97,11.58,0.863,-10.343,Upper middle income
 BRA,Brazil,2020,7074.194,14.84,3.212,16.116,13.697,-2.291,-9.477,Upper middle income
-BRA,Brazil,2025,10713.286,14.416,5.017,17.076,5.97,6.165,4.471,Upper middle income
-BRB,Barbados,2010,19723.238,NA,5.824,NA,10.69,NA,NA,High income
-BRB,Barbados,2015,20429.475,NA,-1.113,NA,9.803,NA,NA,High income
+BRA,Brazil,2024,10310.549,14.141,4.367,16.981,6.801,2.763,15.573,Upper middle income
+BRB,Barbados,2012,19811.295,NA,4.533,NA,11.59,NA,NA,High income
+BRB,Barbados,2016,20311.409,NA,1.282,NA,8.247,NA,NA,High income
 BRB,Barbados,2020,19180.992,NA,NA,NA,10.586,NA,NA,High income
-BRB,Barbados,2025,28364.818,NA,0.847,NA,6.524,NA,NA,High income
-BRN,Brunei,2010,34937.556,60.152,0.357,23.69,6.487,11.874,-0.312,High income
-BRN,Brunei,2015,30625.129,57.118,-0.488,35.247,7.703,-9.949,-8.92,High income
+BRB,Barbados,2024,26897.2,NA,1.446,NA,6.448,NA,NA,High income
+BRN,Brunei,2012,46968.597,62.904,0.112,32.882,6.571,1.213,20.594,High income
+BRN,Brunei,2016,26663.297,56.412,-0.279,34.62,8.537,-3.185,-10.804,High income
 BRN,Brunei,2020,26834.359,50.886,1.94,40.588,7.409,7.623,-1.924,High income
-BRN,Brunei,2025,32234.643,45.334,-0.303,27.127,5.277,-4.118,-13.798,High income
-BTN,Bhutan,2010,2435.58,37.035,7.036,62.933,3.32,7.521,28.736,Lower middle income
-BTN,Bhutan,2015,2954.041,27.069,4.548,56.431,2.45,-3.177,17.242,Lower middle income
+BRN,Brunei,2024,33153.474,47.653,-0.389,27.899,5.18,3.075,-1.66,High income
+BTN,Bhutan,2012,2751.213,50.686,10.92,69.449,2.05,-2.401,-7.125,Lower middle income
+BTN,Bhutan,2016,3152.309,32.498,3.22,56.399,2.707,-5.279,-9.321,Lower middle income
 BTN,Bhutan,2020,3191.669,24.442,5.629,39.071,5.03,-19.675,-9.057,Lower middle income
-BTN,Bhutan,2025,4492.784,NA,3.555,NA,3.227,NA,NA,Lower middle income
-BWA,Botswana,2010,6215.732,32.037,6.949,34.702,17.86,18.201,11.02,Upper middle income
-BWA,Botswana,2015,6141.204,31.307,3.062,28.443,18.915,-7.36,5.836,Upper middle income
+BTN,Bhutan,2024,4228.051,22.939,2.761,42.601,3.282,19.325,4.088,Lower middle income
+BWA,Botswana,2012,6595.538,33.477,7.537,36.0,17.916,16.785,25.259,Upper middle income
+BWA,Botswana,2016,6749.06,30.126,2.815,22.068,19.328,-8.368,-20.922,Upper middle income
 BWA,Botswana,2020,6323.297,24.176,1.89,32.727,21.017,-17.031,6.331,Upper middle income
-BWA,Botswana,2025,7778.115,NA,2.66,29.157,24.477,14.789,-18.994,Upper middle income
-CAF,Central African Republic,2010,476.874,NA,1.491,16.844,5.658,42.555,11.088,Low income
-CAF,Central African Republic,2015,366.323,NA,1.403,21.805,5.775,9.99,10.346,Low income
+BWA,Botswana,2024,7649.817,32.001,2.818,36.204,23.81,-9.87,16.381,Upper middle income
+CAF,Central African Republic,2012,544.396,NA,5.478,10.834,5.58,6.75,4.899,Low income
+CAF,Central African Republic,2016,387.176,NA,4.945,22.463,5.793,-8.229,5.232,Low income
 CAF,Central African Republic,2020,462.879,NA,1.71,26.0,6.519,-2.841,1.005,Low income
-CAF,Central African Republic,2025,556.131,NA,1.002,9.304,6.251,38.8,14.4,Low income
-CAN,Canada,2010,47560.838,19.312,1.777,23.482,8.178,6.676,13.784,High income
-CAN,Canada,2015,43594.238,19.569,1.125,23.822,6.945,3.399,0.76,High income
+CAF,Central African Republic,2024,516.161,NA,1.477,23.631,6.253,5.522,9.878,Low income
+CAN,Canada,2012,52670.143,20.918,1.516,24.868,7.392,2.764,3.678,High income
+CAN,Canada,2016,42314.103,19.146,1.429,22.761,7.038,1.525,0.052,High income
 CAN,Canada,2020,43537.898,19.462,0.717,22.675,9.657,-8.981,-9.417,High income
-CAN,Canada,2025,55697.664,22.225,2.072,23.154,6.907,-1.684,-0.408,High income
-CHE,Switzerland,2010,77956.126,40.025,0.688,26.357,4.808,12.547,7.98,High income
-CHE,Switzerland,2015,85265.062,35.237,-1.144,25.941,4.801,3.854,4.759,High income
+CAN,Canada,2024,55015.707,21.328,2.382,23.168,6.351,0.936,0.706,High income
+CHE,Switzerland,2012,87269.559,36.484,-0.693,27.103,4.491,0.379,-2.182,High income
+CHE,Switzerland,2016,83432.411,33.937,-0.435,26.621,4.918,5.865,5.233,High income
 CHE,Switzerland,2020,87529.702,31.999,-0.726,31.302,4.817,-5.119,-2.768,High income
-CHE,Switzerland,2025,114769.012,36.714,0.154,29.488,4.873,4.806,9.701,High income
-CHL,Chile,2010,12632.87,25.628,1.411,24.775,8.547,1.869,25.243,High income
-CHL,Chile,2015,13433.92,22.734,4.349,25.599,6.605,-2.332,-0.854,High income
+CHE,Switzerland,2024,107702.066,34.49,1.062,26.725,4.343,1.705,0.596,High income
+CHL,Chile,2012,15241.907,23.469,3.007,28.791,6.79,0.323,3.816,High income
+CHL,Chile,2016,13649.852,21.088,3.786,23.709,6.926,0.598,1.169,High income
 CHL,Chile,2020,13117.993,19.092,3.045,21.077,10.934,-0.911,-12.326,High income
-CHL,Chile,2025,17994.591,22.815,4.213,24.057,8.974,4.59,10.513,High income
-CHN,China,2010,4629.246,50.795,3.175,46.102,4.53,NA,NA,Upper middle income
-CHN,China,2015,8175.333,45.102,1.437,42.735,4.65,NA,NA,Upper middle income
+CHL,Chile,2024,16658.965,21.948,4.298,23.119,8.718,7.203,2.096,High income
+CHN,China,2012,6405.057,48.196,2.62,45.817,4.58,NA,NA,Upper middle income
+CHN,China,2016,8254.869,43.868,2.0,42.139,4.56,NA,NA,Upper middle income
 CHN,China,2020,10627.464,43.5,2.419,42.572,5.0,NA,NA,Upper middle income
-CHN,China,2025,13861.97,NA,0.06,NA,4.615,NA,NA,Upper middle income
-CIV,Côte dIvoire,2010,1553.549,-11.368,1.226,21.681,6.607,-9.055,13.733,Lower middle income
-CIV,Côte dIvoire,2015,1814.719,22.432,1.251,23.388,2.573,1.663,13.936,Lower middle income
+CHN,China,2024,13293.116,42.715,0.218,40.482,4.59,NA,NA,Upper middle income
+CIV,Côte dIvoire,2012,1546.946,-9.901,1.305,20.451,7.223,10.465,27.721,Lower middle income
+CIV,Côte dIvoire,2016,1862.596,22.431,0.723,23.194,1.896,-0.837,0.044,Lower middle income
 CIV,Côte dIvoire,2020,2179.729,17.748,2.413,21.743,2.588,-4.606,5.766,Lower middle income
-CIV,Côte dIvoire,2025,3050.102,NA,0.125,19.302,2.323,12.317,15.772,Lower middle income
-CMR,Cameroon,2010,1398.587,15.298,1.275,18.228,4.11,13.184,14.303,Lower middle income
-CMR,Cameroon,2015,1415.0,14.316,2.676,18.25,3.518,4.769,-0.109,Lower middle income
+CIV,Côte dIvoire,2024,2727.894,17.151,3.451,20.87,2.273,25.146,3.092,Lower middle income
+CMR,Cameroon,2012,1449.099,15.116,2.735,18.001,3.836,1.226,3.068,Lower middle income
+CMR,Cameroon,2016,1441.72,16.457,0.874,19.818,3.529,2.757,1.031,Lower middle income
 CMR,Cameroon,2020,1555.604,13.349,2.438,17.661,3.881,-14.361,-17.052,Lower middle income
-CMR,Cameroon,2025,1972.382,NA,3.404,19.343,3.602,-7.681,11.088,Lower middle income
-COD,"Congo, The Democratic Republic of the",2010,352.4,16.138,7.1,24.029,4.098,39.926,42.949,Low income
-COD,"Congo, The Democratic Republic of the",2015,495.827,20.304,0.744,28.249,4.441,-3.137,-19.282,Low income
+CMR,Cameroon,2024,1830.008,15.54,4.533,18.906,3.603,-5.05,-2.947,Lower middle income
+COD,"Congo, The Democratic Republic of the",2012,409.931,20.091,9.722,26.112,4.485,0.137,-14.459,Low income
+COD,"Congo, The Democratic Republic of the",2016,459.765,21.378,2.886,25.73,4.528,19.65,16.938,Low income
 COD,"Congo, The Democratic Republic of the",2020,486.426,19.595,NA,21.849,5.355,11.361,0.46,Low income
-COD,"Congo, The Democratic Republic of the",2025,806.776,28.691,NA,31.653,4.434,7.387,-1.665,Low income
-COG,Congo,2010,2946.558,54.044,0.392,47.19,19.3,2.82,8.165,Lower middle income
-COG,Congo,2015,2439.352,39.543,3.169,76.782,20.02,-4.533,24.054,Lower middle income
+COD,"Congo, The Democratic Republic of the",2024,692.888,27.557,NA,31.387,4.421,18.015,14.989,Low income
+COG,Congo,2012,3732.327,57.502,5.01,43.817,19.491,-8.424,-0.318,Lower middle income
+COG,Congo,2016,2093.107,24.87,3.191,71.267,20.298,4.873,-9.03,Lower middle income
 COG,Congo,2020,1993.587,36.293,1.795,23.732,22.286,-9.402,-35.769,Lower middle income
-COG,Congo,2025,2514.734,NA,2.401,29.385,19.876,1.571,4.4,Lower middle income
-COL,Colombia,2010,6398.296,18.456,2.272,21.889,11.153,2.062,10.83,Upper middle income
-COL,Colombia,2015,6248.515,17.37,4.99,23.774,8.572,1.658,-1.081,Upper middle income
+COG,Congo,2024,2482.249,NA,3.091,26.845,19.895,-0.487,5.0,Lower middle income
+COL,Colombia,2012,8108.598,18.371,3.169,22.105,9.959,4.473,9.375,Upper middle income
+COL,Colombia,2016,5959.843,17.478,7.513,23.167,8.922,-0.209,-3.541,Upper middle income
 COL,Colombia,2020,5339.687,14.437,2.527,19.128,15.983,-22.459,-20.092,Upper middle income
-COL,Colombia,2025,8561.621,13.177,5.142,16.719,8.29,1.843,8.419,Upper middle income
-COM,Comoros,2010,1386.575,13.843,3.355,18.175,4.19,14.733,-3.001,Lower middle income
-COM,Comoros,2015,1329.37,13.477,-0.117,13.638,4.031,4.535,1.024,Lower middle income
+COL,Colombia,2024,7951.086,14.485,6.609,16.473,9.619,0.39,1.164,Upper middle income
+COM,Comoros,2012,1490.314,12.044,6.315,16.152,4.091,-1.578,15.728,Lower middle income
+COM,Comoros,2016,1365.484,8.212,0.798,12.561,4.117,8.669,5.06,Lower middle income
 COM,Comoros,2020,1527.17,10.037,0.787,11.802,4.468,-45.926,-9.275,Lower middle income
-COM,Comoros,2025,2055.759,NA,3.249,11.845,3.819,6.341,3.415,Lower middle income
-CPV,Cape Verde,2010,3579.46,34.612,2.079,44.957,10.67,6.574,8.003,Lower middle income
-CPV,Cape Verde,2015,3415.063,28.521,0.131,29.107,11.923,13.541,2.041,Lower middle income
+COM,Comoros,2024,1857.871,NA,5.052,11.992,3.815,-4.884,2.244,Lower middle income
+CPV,Cape Verde,2012,3736.815,29.069,2.54,35.204,11.145,13.733,-8.459,Lower middle income
+CPV,Cape Verde,2016,3608.966,28.053,-1.408,28.555,12.085,8.916,14.09,Lower middle income
 CPV,Cape Verde,2020,3539.227,17.548,0.606,28.962,14.65,-56.543,-25.183,Lower middle income
-CPV,Cape Verde,2025,5796.472,21.134,2.343,17.407,11.939,4.119,3.198,Lower middle income
-CRI,Costa Rica,2010,8265.788,15.802,5.663,19.834,7.171,9.327,18.726,Upper middle income
-CRI,Costa Rica,2015,11714.711,14.623,0.802,18.854,8.415,2.888,4.498,Upper middle income
+CPV,Cape Verde,2024,5170.205,20.253,1.048,16.314,11.883,8.544,4.74,Lower middle income
+CRI,Costa Rica,2012,10126.999,13.838,4.495,19.854,9.11,5.564,7.825,Upper middle income
+CRI,Costa Rica,2016,12091.03,15.881,-0.017,18.889,8.085,9.417,8.938,Upper middle income
 CRI,Costa Rica,2020,12475.685,14.26,0.725,15.53,16.432,-10.633,-12.929,Upper middle income
-CRI,Costa Rica,2025,19970.099,13.586,-0.074,15.785,6.843,8.639,6.472,Upper middle income
-CYP,Cyprus,2010,31105.027,13.04,2.43,23.687,6.359,6.329,10.796,High income
-CYP,Cyprus,2015,23088.43,13.054,-2.097,13.323,15.026,8.924,8.062,High income
+CRI,Costa Rica,2024,18853.283,13.808,-0.413,16.194,6.936,5.724,5.068,Upper middle income
+CYP,Cyprus,2012,28991.93,12.073,2.389,15.818,12.097,-0.575,-3.633,High income
+CYP,Cyprus,2016,24280.045,13.104,-1.429,17.054,13.006,7.22,10.164,High income
 CYP,Cyprus,2020,28130.33,10.953,-0.638,20.645,7.755,1.636,3.265,High income
-CYP,Cyprus,2025,41783.09,12.847,0.127,19.26,4.924,4.962,2.53,High income
-CZE,Czech Republic,2010,20160.436,21.738,1.473,26.731,7.281,14.658,14.812,High income
-CZE,Czech Republic,2015,17931.599,25.659,0.309,26.969,5.048,5.912,6.563,High income
+CYP,Cyprus,2024,38674.312,12.474,1.8,20.678,4.9,5.739,4.643,High income
+CZE,Czech Republic,2012,20014.035,23.527,3.288,25.669,6.979,4.281,2.638,High income
+CZE,Czech Republic,2016,18753.969,24.762,0.684,25.075,3.952,4.137,2.568,High income
 CZE,Czech Republic,2020,23472.892,25.857,3.161,24.73,2.55,-8.516,-8.446,High income
-CZE,Czech Republic,2025,35917.272,27.741,2.46,26.755,2.825,3.902,5.01,High income
-DEU,Germany,2010,42396.967,25.062,1.104,19.531,7.043,14.105,12.477,High income
-DEU,Germany,2015,41929.755,27.625,0.514,19.498,4.612,4.873,5.327,High income
+CZE,Czech Republic,2024,31827.755,28.885,2.435,26.322,2.6,1.525,0.538,High income
+DEU,Germany,2012,44718.016,26.48,2.008,19.472,5.372,2.592,-0.417,High income
+DEU,Germany,2016,42948.938,28.655,0.492,19.712,4.104,1.987,3.742,High income
 DEU,Germany,2020,47394.873,28.021,0.145,21.729,3.881,-9.486,-8.139,High income
-DEU,Germany,2025,60496.435,26.367,2.172,21.931,3.711,-0.443,3.591,High income
-DJI,Djibouti,2010,1213.234,NA,3.95,NA,26.368,NA,NA,Lower middle income
-DJI,Djibouti,2015,2376.126,25.514,-0.522,-3.946,26.063,1.339,-3.232,Lower middle income
+DEU,Germany,2024,56103.732,27.124,2.256,21.499,3.4,-2.065,-0.561,High income
+DJI,Djibouti,2012,1400.194,NA,3.731,NA,26.179,NA,NA,Lower middle income
+DJI,Djibouti,2016,2510.43,20.936,2.403,21.936,25.982,-25.13,-6.709,Lower middle income
 DJI,Djibouti,2020,2844.888,11.337,1.779,-0.249,27.701,-29.705,-29.539,Lower middle income
-DJI,Djibouti,2025,3905.605,NA,-0.314,1.55,26.015,-1.5,-2.9,Lower middle income
-DMA,Dominica,2010,7549.62,NA,2.999,NA,NA,NA,NA,Upper middle income
-DMA,Dominica,2015,8282.599,NA,-0.844,NA,NA,NA,NA,Upper middle income
+DJI,Djibouti,2024,3552.723,14.861,2.112,0.252,26.007,-9.624,-5.457,Lower middle income
+DMA,Dominica,2012,7528.51,NA,1.357,NA,NA,NA,NA,Upper middle income
+DMA,Dominica,2016,8802.562,NA,0.142,NA,NA,NA,NA,Upper middle income
 DMA,Dominica,2020,7827.748,NA,1.22,NA,NA,NA,NA,Upper middle income
-DMA,Dominica,2025,10989.043,NA,2.534,NA,NA,NA,NA,Upper middle income
-DNK,Denmark,2010,58104.545,24.222,2.311,17.822,7.746,3.026,1.315,High income
-DNK,Denmark,2015,53094.013,28.499,0.452,20.544,6.278,3.232,4.063,High income
+DMA,Dominica,2024,10405.279,NA,2.736,NA,NA,NA,NA,Upper middle income
+DNK,Denmark,2012,58443.775,25.285,2.398,19.227,7.798,1.259,2.85,High income
+DNK,Denmark,2016,54500.926,28.767,0.25,21.681,5.989,3.662,4.286,High income
 DNK,Denmark,2020,60985.489,29.988,0.421,22.763,5.644,-6.36,-3.954,High income
-DNK,Denmark,2025,76970.154,NA,1.894,22.122,5.529,3.043,-0.35,High income
-DOM,Dominican Republic,2010,5478.625,18.359,6.33,26.071,5.212,16.191,18.61,Upper middle income
-DOM,Dominican Republic,2015,6800.953,20.937,0.837,22.651,7.605,3.18,10.937,Upper middle income
+DNK,Denmark,2024,71026.483,35.4,1.372,23.207,5.358,7.109,4.142,High income
+DOM,Dominican Republic,2012,6013.82,17.272,3.694,23.753,6.722,5.662,1.443,Upper middle income
+DOM,Dominican Republic,2016,7160.442,21.219,1.614,22.173,7.284,7.61,8.038,Upper middle income
 DOM,Dominican Republic,2020,7135.223,22.929,3.781,24.88,6.126,-28.477,-10.622,Upper middle income
-DOM,Dominican Republic,2025,11059.208,23.282,3.873,24.704,5.092,3.909,-1.801,Upper middle income
-DZA,Algeria,2010,4912.786,51.225,3.911,43.287,9.96,-0.6,5.3,Lower middle income
-DZA,Algeria,2015,4685.059,39.047,4.784,51.78,11.206,0.5,6.9,Lower middle income
+DOM,Dominican Republic,2024,10875.662,23.819,3.302,26.998,5.312,7.78,3.359,Upper middle income
+DZA,Algeria,2012,6033.649,48.721,8.891,40.282,10.97,-3.7,13.5,Lower middle income
+DZA,Algeria,2016,4424.985,39.766,6.398,51.642,10.202,6.9,-3.0,Lower middle income
 DZA,Algeria,2020,3743.542,33.337,2.415,42.949,14.08,-12.2,-16.0,Lower middle income
-DZA,Algeria,2025,6051.003,NA,1.418,45.267,11.633,2.514,17.324,Lower middle income
-ECU,Ecuador,2010,4520.31,24.817,3.554,23.49,4.088,0.512,13.463,Upper middle income
-ECU,Ecuador,2015,5976.16,20.626,3.967,22.686,3.616,-4.805,-5.274,Upper middle income
+DZA,Algeria,2024,5752.991,39.42,4.046,41.098,11.655,-2.4,11.9,Lower middle income
+ECU,Ecuador,2012,5634.084,27.056,5.102,23.013,3.235,4.913,0.994,Upper middle income
+ECU,Ecuador,2016,5917.638,21.259,1.728,20.246,4.597,-4.981,-13.428,Upper middle income
 ECU,Ecuador,2020,5463.645,19.865,-0.339,17.585,6.116,-3.905,-18.282,Upper middle income
-ECU,Ecuador,2025,7125.276,27.088,0.71,20.938,3.308,6.45,3.924,Upper middle income
-EGY,Egypt,2010,2455.082,17.95,11.265,19.501,8.757,-2.984,-3.16,Lower middle income
-EGY,Egypt,2015,3306.982,9.593,10.37,14.289,13.052,-0.039,0.951,Lower middle income
+ECU,Ecuador,2024,6826.529,25.129,1.547,19.506,3.453,0.791,1.456,Upper middle income
+EGY,Egypt,2012,2996.068,12.878,7.112,16.027,12.597,-2.299,10.8,Lower middle income
+EGY,Egypt,2016,3270.629,9.71,13.814,15.04,12.45,-15.029,-2.223,Lower middle income
 EGY,Egypt,2020,3511.114,16.277,5.045,18.818,7.974,-23.659,-18.724,Lower middle income
-EGY,Egypt,2025,3085.807,8.129,14.074,12.891,6.781,23.673,29.156,Lower middle income
-ERI,Eritrea,2010,539.7,NA,NA,12.385,5.854,17.496,11.296,Low income
-ERI,Eritrea,2015,NA,NA,NA,NA,5.751,NA,NA,Low income
+EGY,Egypt,2024,3338.474,9.26,28.271,12.997,6.817,-10.616,4.659,Lower middle income
+ERI,Eritrea,2012,NA,NA,NA,NA,5.692,NA,NA,Low income
+ERI,Eritrea,2016,NA,NA,NA,NA,5.772,NA,NA,Low income
 ERI,Eritrea,2020,NA,NA,NA,NA,6.375,NA,NA,Low income
-ERI,Eritrea,2025,NA,NA,NA,NA,5.978,NA,NA,Low income
-ESP,Spain,2010,30658.742,18.836,1.8,22.399,19.86,8.979,6.198,High income
-ESP,Spain,2015,25982.442,21.416,-0.5,19.373,22.057,4.352,5.092,High income
+ERI,Eritrea,2024,NA,NA,NA,NA,5.947,NA,NA,Low income
+ESP,Spain,2012,28456.444,18.745,2.446,18.594,24.789,0.945,-5.865,High income
+ESP,Spain,2016,26755.606,22.21,-0.203,19.061,19.635,5.392,2.646,High income
 ESP,Spain,2020,27233.943,21.422,-0.323,20.627,15.532,-20.099,-15.148,High income
-ESP,Spain,2025,38627.247,24.325,2.7,21.41,10.376,3.569,6.237,High income
-EST,Estonia,2010,14663.704,23.36,2.972,21.588,16.707,24.217,21.257,High income
-EST,Estonia,2015,17722.156,26.41,-0.492,24.641,6.412,-1.506,-2.138,High income
+ESP,Spain,2024,35326.768,24.352,2.747,21.173,11.4,3.155,2.948,High income
+EST,Estonia,2012,17568.214,27.198,3.933,29.081,10.021,4.826,9.688,High income
+EST,Estonia,2016,18666.374,26.003,0.149,24.702,6.882,4.826,6.058,High income
 EST,Estonia,2020,23933.994,27.148,-0.445,29.654,6.956,-4.117,0.839,High income
-EST,Estonia,2025,34417.632,24.755,4.829,24.848,8.313,4.958,5.046,High income
-ETH,Ethiopia,2010,330.619,NA,8.149,0.0,2.295,NA,NA,Low income
-ETH,Ethiopia,2015,597.912,29.93,9.569,40.671,2.442,-11.219,21.852,Low income
+EST,Estonia,2024,31428.355,23.969,3.519,24.554,7.6,-1.501,0.374,High income
+ETH,Ethiopia,2012,452.101,30.912,23.6,37.098,2.252,-10.361,22.206,Low income
+ETH,Ethiopia,2016,641.652,31.79,6.628,37.349,2.556,-8.141,0.048,Low income
 ETH,Ethiopia,2020,829.791,27.754,20.356,30.579,3.998,-5.399,-1.989,Low income
-ETH,Ethiopia,2025,932.729,NA,13.23,20.12,3.323,54.556,11.801,Low income
-FIN,Finland,2010,46506.292,24.092,1.184,22.607,8.394,6.177,6.299,High income
-FIN,Finland,2015,42560.346,20.733,-0.208,21.906,9.376,0.244,2.135,High income
+ETH,Ethiopia,2024,1133.883,19.673,21.038,20.575,3.357,14.995,25.99,Low income
+FIN,Finland,2012,47551.674,21.331,2.808,23.628,7.689,0.236,1.125,High income
+FIN,Finland,2016,43451.256,21.328,0.357,23.588,8.818,4.187,5.658,High income
 FIN,Finland,2020,48828.685,25.517,0.291,24.984,7.759,-8.501,-6.12,High income
-FIN,Finland,2025,56148.581,23.161,0.338,21.904,9.461,3.413,1.717,High income
-FJI,Fiji Islands,2010,3449.145,14.086,3.689,18.803,4.345,NA,NA,Upper middle income
-FJI,Fiji Islands,2015,5097.531,18.941,1.375,22.418,4.288,NA,NA,Upper middle income
+FIN,Finland,2024,53155.545,21.957,1.566,22.339,8.4,1.759,-0.774,High income
+FJI,Fiji Islands,2012,4341.403,15.831,3.423,17.273,4.375,NA,NA,Upper middle income
+FJI,Fiji Islands,2016,5363.79,17.557,3.863,21.117,4.319,NA,NA,Upper middle income
 FJI,Fiji Islands,2020,4620.646,4.336,-1.7,16.445,5.054,NA,NA,Upper middle income
-FJI,Fiji Islands,2025,6642.004,NA,-1.383,NA,5.347,NA,NA,Upper middle income
-FRA,France,2010,40694.821,20.961,1.531,21.338,9.279,8.543,8.602,High income
-FRA,France,2015,36702.432,21.531,0.038,21.717,10.354,4.525,5.819,High income
+FJI,Fiji Islands,2024,6425.742,13.056,3.891,20.867,5.361,NA,NA,Upper middle income
+FRA,France,2012,40863.581,21.145,1.954,21.83,9.841,2.64,0.331,High income
+FRA,France,2016,37024.216,21.161,0.183,21.598,10.057,2.112,3.801,High income
 FRA,France,2020,39169.861,20.784,0.476,22.804,8.009,-16.572,-12.238,High income
-FRA,France,2025,48985.731,21.459,0.944,21.938,7.542,1.281,2.874,High income
-FSM,"Micronesia, Federated States of",2010,2715.269,NA,3.314,NA,NA,NA,NA,Lower middle income
-FSM,"Micronesia, Federated States of",2015,2869.863,NA,-0.298,NA,NA,NA,NA,Lower middle income
+FRA,France,2024,46103.084,21.435,1.999,21.514,7.4,2.525,-1.21,High income
+FSM,"Micronesia, Federated States of",2012,3003.059,NA,5.019,NA,NA,NA,NA,Lower middle income
+FSM,"Micronesia, Federated States of",2016,2997.937,NA,-1.037,NA,NA,NA,NA,Lower middle income
 FSM,"Micronesia, Federated States of",2020,3362.028,NA,0.555,NA,NA,NA,NA,Lower middle income
-FSM,"Micronesia, Federated States of",2025,4414.007,NA,NA,NA,NA,NA,NA,Lower middle income
-GAB,Gabon,2010,8356.747,41.159,1.462,29.701,20.39,14.81,31.588,Upper middle income
-GAB,Gabon,2015,7047.127,38.378,-0.339,29.231,19.943,8.659,-10.735,Upper middle income
+FSM,"Micronesia, Federated States of",2024,4251.691,NA,NA,NA,NA,NA,NA,Lower middle income
+GAB,Gabon,2012,9296.966,43.89,2.652,26.966,19.661,-3.639,9.146,Upper middle income
+GAB,Gabon,2016,6677.07,NA,2.107,26.982,20.117,-3.297,-6.554,Upper middle income
 GAB,Gabon,2020,6605.803,NA,1.353,19.863,21.279,10.033,-6.011,Upper middle income
-GAB,Gabon,2025,8263.033,NA,1.768,24.826,20.154,0.111,9.093,Upper middle income
-GBR,United Kingdom,2010,39778.322,13.858,2.493,16.618,7.973,6.15,8.65,High income
-GBR,United Kingdom,2015,45256.04,13.696,0.368,18.476,5.552,3.653,4.932,High income
+GAB,Gabon,2024,8230.043,NA,1.173,19.135,20.091,5.49,1.299,Upper middle income
+GBR,United Kingdom,2012,42688.326,13.398,2.573,16.515,8.279,0.535,2.259,High income
+GBR,United Kingdom,2016,41258.537,13.348,1.008,18.596,4.909,3.749,4.481,High income
 GBR,United Kingdom,2020,40815.126,15.561,0.989,18.281,4.472,-12.015,-15.184,High income
-GBR,United Kingdom,2025,57601.962,17.18,3.883,19.688,4.746,2.079,4.058,High income
-GEO,Georgia,2010,3281.729,11.285,7.11,20.929,20.203,NA,NA,Upper middle income
-GEO,Georgia,2015,4086.622,15.233,4.004,26.877,16.506,3.16,5.329,Upper middle income
+GBR,United Kingdom,2024,53341.313,16.755,3.272,19.168,4.361,1.329,2.683,High income
+GEO,Georgia,2012,4530.695,14.884,-0.944,26.028,19.653,9.343,9.385,Upper middle income
+GEO,Georgia,2016,4143.401,16.704,2.135,28.903,16.604,4.083,1.089,Upper middle income
 GEO,Georgia,2020,4300.857,12.093,5.202,24.606,11.734,-37.552,-16.645,Upper middle income
-GEO,Georgia,2025,9691.535,18.528,3.869,21.278,12.097,7.019,5.68,Upper middle income
-GHA,Ghana,2010,1263.893,4.871,10.733,13.1,5.384,24.679,26.701,Lower middle income
-GHA,Ghana,2015,1722.773,21.1,17.15,27.71,6.806,17.627,7.932,Lower middle income
+GEO,Georgia,2024,8967.675,19.179,1.11,24.5,11.557,5.477,9.247,Upper middle income
+GHA,Ghana,2012,1543.775,5.268,11.186,16.968,3.126,15.186,12.786,Lower middle income
+GHA,Ghana,2016,1912.48,18.636,17.455,25.456,5.256,2.894,-1.094,Lower middle income
 GHA,Ghana,2020,2195.455,15.179,9.887,18.224,3.178,-12.79,-8.781,Lower middle income
-GHA,Ghana,2025,3257.159,NA,14.205,NA,2.979,NA,NA,Lower middle income
-GIN,Guinea,2010,659.235,6.585,15.05,20.325,5.018,5.927,3.535,Lower middle income
-GIN,Guinea,2015,747.357,-7.385,11.78,24.163,5.15,-9.119,9.435,Lower middle income
+GHA,Ghana,2024,2419.252,12.389,22.848,9.9,2.82,9.055,9.519,Lower middle income
+GIN,Guinea,2012,699.353,5.759,15.226,26.022,4.874,2.954,12.808,Lower middle income
+GIN,Guinea,2016,711.997,-0.677,8.173,52.67,4.997,38.267,70.958,Lower middle income
 GIN,Guinea,2020,1053.661,9.695,10.602,31.516,6.007,53.172,73.518,Lower middle income
-GIN,Guinea,2025,1877.254,NA,3.546,36.999,5.163,8.2,20.0,Lower middle income
-GMB,Gambia,2010,801.033,-0.353,5.05,13.877,9.673,-3.62,4.696,Low income
-GMB,Gambia,2015,619.536,18.892,6.808,20.35,7.226,-23.463,-7.487,Low income
+GIN,Guinea,2024,1694.954,9.593,8.123,32.103,5.132,4.5,22.0,Lower middle income
+GMB,Gambia,2012,692.579,15.722,4.254,20.877,10.346,18.003,5.606,Low income
+GMB,Gambia,2016,650.057,19.913,7.229,24.92,6.244,-12.612,-1.117,Low income
 GMB,Gambia,2020,720.335,26.889,5.931,32.342,5.84,-49.939,12.218,Low income
-GMB,Gambia,2025,919.06,NA,NA,40.386,6.521,33.989,4.301,Low income
-GNB,Guinea-Bissau,2010,600.194,7.401,2.518,19.494,3.121,-7.451,4.443,Low income
-GNB,Guinea-Bissau,2015,645.067,16.79,1.477,14.686,3.168,6.699,13.81,Low income
+GMB,Gambia,2024,871.34,25.93,11.561,29.939,6.48,17.504,17.174,Low income
+GNB,Guinea-Bissau,2012,635.462,5.173,2.131,19.354,3.135,-13.336,-5.255,Low income
+GNB,Guinea-Bissau,2016,679.665,15.847,1.503,17.671,3.139,0.806,10.185,Low income
 GNB,Guinea-Bissau,2020,846.918,23.565,1.14,25.652,2.887,-11.956,-10.897,Low income
-GNB,Guinea-Bissau,2025,1123.767,NA,0.875,25.812,2.673,25.048,8.231,Low income
-GNQ,Equatorial Guinea,2010,13720.166,NA,7.789,38.056,7.847,-0.159,29.52,Upper middle income
-GNQ,Equatorial Guinea,2015,9068.91,NA,1.677,24.701,7.778,-6.439,-15.453,Upper middle income
+GNB,Guinea-Bissau,2024,998.376,19.08,3.766,26.33,2.647,-29.613,1.409,Low income
+GNQ,Equatorial Guinea,2012,17308.572,NA,3.657,41.148,7.761,4.629,23.81,Upper middle income
+GNQ,Equatorial Guinea,2016,7453.198,NA,1.412,16.699,7.798,-8.974,-16.286,Upper middle income
 GNQ,Equatorial Guinea,2020,5764.055,NA,4.767,6.988,8.625,-8.124,-22.065,Upper middle income
-GNQ,Equatorial Guinea,2025,6615.252,NA,NA,-3.679,8.337,-16.675,0.884,Upper middle income
-GRC,Greece,2010,26653.049,7.729,4.713,18.216,12.719,4.577,-4.266,High income
-GRC,Greece,2015,17980.73,10.051,-1.736,12.008,24.981,5.234,8.177,High income
+GNQ,Equatorial Guinea,2024,7003.581,NA,2.921,5.054,8.293,11.045,33.052,Upper middle income
+GRC,Greece,2012,21624.346,7.534,1.502,12.261,24.731,2.039,-5.492,High income
+GRC,Greece,2016,17919.243,9.703,-0.826,12.468,23.514,-0.395,2.13,High income
 GRC,Greece,2020,17886.733,5.488,-1.248,13.541,15.899,-21.518,-7.295,High income
-GRC,Greece,2025,26948.007,NA,2.482,17.244,8.54,1.651,-1.289,High income
-GRD,Grenada,2010,6909.602,NA,3.437,NA,NA,NA,NA,Upper middle income
-GRD,Grenada,2015,8694.124,NA,-0.515,NA,NA,NA,NA,Upper middle income
+GRC,Greece,2024,24626.148,10.775,2.741,18.293,10.02,0.968,4.774,High income
+GRD,Grenada,2012,7092.72,NA,2.411,NA,NA,NA,NA,Upper middle income
+GRD,Grenada,2016,9221.235,NA,1.65,NA,NA,NA,NA,Upper middle income
 GRD,Grenada,2020,8968.559,NA,-0.741,NA,NA,NA,NA,Upper middle income
-GRD,Grenada,2025,12106.879,NA,0.61,NA,NA,NA,NA,Upper middle income
-GTM,Guatemala,2010,2805.26,11.647,3.86,14.164,3.497,6.134,9.995,Upper middle income
-GTM,Guatemala,2015,3893.505,13.575,2.389,14.828,2.506,2.838,3.648,Upper middle income
+GRD,Grenada,2024,11528.922,NA,1.086,NA,NA,NA,NA,Upper middle income
+GTM,Guatemala,2012,3286.62,11.559,3.782,15.194,2.765,1.754,2.792,Upper middle income
+GTM,Guatemala,2016,4060.138,14.824,4.448,13.862,2.583,2.359,0.942,Upper middle income
 GTM,Guatemala,2020,4477.618,18.526,3.214,13.501,2.965,-7.526,-5.769,Upper middle income
-GTM,Guatemala,2025,6598.18,NA,1.488,16.771,2.604,2.042,7.616,Upper middle income
-GUY,Guyana,2010,4581.762,NA,4.301,NA,11.632,NA,NA,High income
-GUY,Guyana,2015,5640.416,NA,-0.865,NA,13.009,NA,NA,High income
+GTM,Guatemala,2024,6150.895,19.319,2.87,16.425,2.613,2.13,8.872,Upper middle income
+GUY,Guyana,2012,5444.398,NA,2.391,NA,12.029,NA,NA,High income
+GUY,Guyana,2016,5870.878,NA,0.826,NA,13.263,NA,NA,High income
 GUY,Guyana,2020,6775.709,NA,0.722,NA,15.308,NA,NA,High income
-GUY,Guyana,2025,32413.793,NA,3.33,NA,11.962,NA,NA,High income
-HKG,Hong Kong,2010,32550.136,30.892,2.293,23.89,4.329,17.57,18.229,High income
-HKG,Hong Kong,2015,42432.162,24.859,2.991,21.541,3.314,-1.371,-1.764,High income
+GUY,Guyana,2024,29675.25,NA,2.904,NA,11.874,NA,NA,High income
+HKG,Hong Kong,2012,36730.796,26.798,4.054,25.22,3.285,3.205,4.241,High income
+HKG,Hong Kong,2016,43734.198,25.462,2.409,21.507,3.392,0.684,0.868,High income
 HKG,Hong Kong,2020,46109.23,25.971,0.251,18.982,5.808,-6.681,-6.858,High income
-HKG,Hong Kong,2025,56983.066,NA,1.436,18.349,2.799,11.177,11.584,High income
-HND,Honduras,2010,1893.327,17.547,4.699,21.88,4.119,15.685,15.205,Lower middle income
-HND,Honduras,2015,2271.203,19.675,3.158,25.118,6.147,2.9,8.467,Lower middle income
+HKG,Hong Kong,2024,54274.755,29.2,1.73,16.065,2.988,5.123,3.939,High income
+HND,Honduras,2012,2126.035,16.009,5.196,24.564,3.755,9.849,6.279,Lower middle income
+HND,Honduras,2016,2307.345,20.426,2.725,23.377,6.727,0.887,-1.571,Lower middle income
 HND,Honduras,2020,2307.615,21.949,3.468,19.666,10.982,-21.026,-17.637,Lower middle income
-HND,Honduras,2025,3598.215,26.911,4.597,24.165,4.92,-0.421,4.667,Lower middle income
-HRV,Croatia,2010,13729.747,18.191,1.031,20.368,11.62,7.814,-3.011,High income
-HRV,Croatia,2015,12283.875,22.174,-0.464,19.48,16.15,10.244,9.277,High income
+HND,Honduras,2024,3415.96,18.9,4.606,23.195,4.91,-4.747,2.659,Lower middle income
+HRV,Croatia,2012,13507.635,15.967,3.412,18.024,16.046,-1.504,-2.365,High income
+HRV,Croatia,2016,12820.187,22.222,-1.125,19.897,13.015,7.046,6.508,High income
 HRV,Croatia,2020,14807.556,22.13,0.155,23.544,7.389,-23.197,-12.317,High income
-HRV,Croatia,2025,27103.912,NA,3.692,24.585,5.002,0.942,2.78,High income
-HTI,Haiti,2010,1209.727,24.13,4.827,24.988,15.244,-18.077,25.702,Lower middle income
-HTI,Haiti,2015,1411.127,12.361,6.732,13.974,13.785,0.149,6.104,Lower middle income
+HRV,Croatia,2024,24049.944,22.137,2.972,24.32,5.0,1.568,8.386,High income
+HTI,Haiti,2012,1361.394,14.232,5.018,17.509,14.1,-1.193,-7.785,Lower middle income
+HTI,Haiti,2016,1318.403,12.494,11.503,16.837,13.902,-5.588,13.765,Lower middle income
 HTI,Haiti,2020,1290.325,17.722,22.796,17.703,15.573,-24.414,-18.582,Lower middle income
-HTI,Haiti,2025,2694.19,NA,28.643,12.06,14.944,-1.965,1.452,Lower middle income
-HUN,Hungary,2010,13189.843,20.819,4.856,21.189,11.172,11.118,9.789,High income
-HUN,Hungary,2015,12782.941,25.678,-0.062,23.857,6.813,7.363,5.671,High income
+HTI,Haiti,2024,2060.356,13.427,26.949,12.139,14.609,-31.032,-16.167,Lower middle income
+HUN,Hungary,2012,12950.159,21.359,5.652,20.287,11.003,-1.701,-3.093,High income
+HUN,Hungary,2016,13215.861,26.247,0.395,22.032,5.115,3.802,3.446,High income
 HUN,Hungary,2020,16386.931,26.481,3.327,27.464,4.248,-6.145,-3.604,High income
-HUN,Hungary,2025,25907.474,23.835,4.412,22.152,4.521,-1.083,1.212,High income
-IDN,Indonesia,2010,3065.683,32.727,5.134,32.88,5.614,15.266,17.344,Upper middle income
-IDN,Indonesia,2015,3288.223,30.123,6.363,34.063,4.514,-2.12,-6.249,Upper middle income
+HUN,Hungary,2024,23305.448,25.555,3.704,23.664,4.5,-0.504,-1.396,High income
+IDN,Indonesia,2012,3632.273,31.985,4.28,35.072,4.468,1.609,7.998,Upper middle income
+IDN,Indonesia,2016,3521.469,29.923,3.526,33.859,4.301,-1.661,-2.405,Upper middle income
 IDN,Indonesia,2020,3853.703,29.225,1.92,32.343,4.255,-8.418,-17.605,Upper middle income
-IDN,Indonesia,2025,5059.626,35.043,1.913,30.619,3.237,7.034,4.769,Upper middle income
-IND,India,2010,1347.519,36.306,11.989,39.786,7.631,19.478,15.812,Lower middle income
-IND,India,2015,1583.998,32.454,4.907,32.117,7.629,-5.647,-5.85,Lower middle income
+IDN,Indonesia,2024,4925.436,34.683,2.182,31.396,3.301,6.852,8.148,Upper middle income
+IND,India,2012,1429.322,35.261,9.479,38.347,7.645,6.805,6.022,Lower middle income
+IND,India,2016,1707.509,31.726,4.948,30.173,7.611,4.984,4.382,Lower middle income
 IND,India,2020,1907.043,28.68,6.623,28.922,7.859,-6.956,-12.623,Lower middle income
-IND,India,2025,2702.48,34.697,2.399,34.603,4.219,6.458,6.396,Lower middle income
-IRL,Ireland,2010,48623.967,17.24,-0.918,17.291,14.534,5.982,0.568,High income
-IRL,Ireland,2015,64250.139,32.637,-0.331,26.084,9.908,39.427,32.698,High income
+IND,India,2024,2591.992,34.75,4.953,34.346,4.173,6.559,5.307,Lower middle income
+IRL,Ireland,2012,49335.841,16.712,1.695,19.888,15.451,-0.822,-1.015,High income
+IRL,Ireland,2016,64129.557,34.745,0.02,35.629,8.374,5.306,17.49,High income
 IRL,Ireland,2020,86514.071,34.595,-0.326,42.591,5.623,13.557,0.19,High income
-IRL,Ireland,2025,131592.463,NA,2.21,22.932,4.632,9.711,9.479,High income
-IRN,Iran,2010,6291.194,NA,10.089,40.262,13.679,7.496,2.344,Lower middle income
-IRN,Iran,2015,4952.734,NA,12.485,31.982,11.166,10.07,-21.677,Lower middle income
+IRL,Ireland,2024,112894.953,34.862,2.113,18.248,4.3,8.568,2.686,High income
+IRN,Iran,2012,8114.081,NA,27.257,36.351,12.275,-20.992,-21.065,Lower middle income
+IRN,Iran,2016,5710.599,NA,7.245,33.879,12.618,27.423,5.918,Lower middle income
 IRN,Iran,2020,3202.5,NA,30.594,47.921,9.687,-10.015,-20.875,Lower middle income
-IRN,Iran,2025,3924.38,NA,42.171,41.773,8.301,-0.628,-13.5,Lower middle income
-IRQ,Iraq,2010,4461.752,35.978,2.43,15.868,8.267,-3.763,6.055,Upper middle income
-IRQ,Iraq,2015,4440.142,25.072,1.393,20.36,10.865,34.456,-14.076,Upper middle income
+IRN,Iran,2024,5190.17,NA,32.456,44.346,8.146,6.002,2.652,Lower middle income
+IRQ,Iraq,2012,6477.596,41.711,6.089,13.446,7.965,20.71,16.627,Upper middle income
+IRQ,Iraq,2016,4334.421,24.444,0.557,17.877,10.82,-0.865,-22.295,Upper middle income
 IRQ,Iraq,2020,4295.189,24.031,0.574,22.347,15.766,-10.103,-23.945,Upper middle income
-IRQ,Iraq,2025,5409.679,NA,0.303,NA,15.485,NA,NA,Upper middle income
-ISL,Iceland,2010,43776.468,7.983,5.397,13.834,7.564,0.752,2.308,High income
-ISL,Iceland,2015,53505.696,25.49,1.633,19.193,3.979,8.415,12.979,High income
+IRQ,Iraq,2024,6073.61,32.012,2.612,19.136,15.293,6.727,24.808,Upper middle income
+ISL,Iceland,2012,46594.987,12.975,5.186,15.89,6.0,3.127,4.281,High income
+ISL,Iceland,2016,62854.091,29.74,1.697,20.816,2.978,12.246,14.838,High income
 ISL,Iceland,2020,60127.939,22.906,2.848,21.046,5.478,-30.348,-20.224,High income
-ISL,Iceland,2025,98323.485,22.983,4.091,26.574,3.625,0.991,7.151,High income
-ISR,Israel,2010,31398.927,24.298,2.703,21.564,8.48,15.245,15.119,High income
-ISR,Israel,2015,36138.136,26.771,-0.617,22.142,5.176,-1.471,-0.228,High income
+ISL,Iceland,2024,85863.148,23.001,5.857,26.244,3.6,-2.195,4.168,High income
+ISR,Israel,2012,33268.707,23.66,1.676,23.933,6.762,-0.641,2.161,High income
+ISR,Israel,2016,37571.256,26.346,-0.535,23.137,4.723,2.797,9.874,High income
 ISR,Israel,2020,44590.824,28.769,-0.575,24.981,4.169,-3.873,-7.582,High income
-ISR,Israel,2025,60336.848,25.726,3.041,24.347,3.489,5.706,8.166,High income
-ITA,Italy,2010,35856.863,17.563,1.526,20.797,8.363,11.552,11.983,High income
-ITA,Italy,2015,30639.883,18.521,0.039,17.281,11.896,3.986,6.324,High income
+ISR,Israel,2024,54216.522,26.727,3.075,23.8,3.595,-4.692,-0.7,High income
+ITA,Italy,2012,34854.395,17.766,3.041,17.97,10.655,1.833,-8.161,High income
+ITA,Italy,2016,31391.569,20.179,-0.094,17.712,11.688,2.338,3.926,High income
 ITA,Italy,2020,32091.487,21.703,-0.138,17.899,9.192,-13.709,-12.481,High income
-ITA,Italy,2025,43308.64,23.432,1.532,22.25,6.391,1.239,3.639,High income
-JAM,Jamaica,2010,4809.977,NA,12.611,NA,7.63,NA,NA,Upper middle income
-JAM,Jamaica,2015,5339.307,NA,3.692,NA,8.825,NA,NA,Upper middle income
+ITA,Italy,2024,40429.622,23.318,0.982,22.269,6.5,-0.449,-1.027,High income
+JAM,Jamaica,2012,5340.833,NA,6.874,NA,8.695,NA,NA,Upper middle income
+JAM,Jamaica,2016,5302.296,NA,2.351,NA,8.634,NA,NA,Upper middle income
 JAM,Jamaica,2020,5299.045,NA,5.227,NA,6.501,NA,NA,Upper middle income
-JAM,Jamaica,2025,8002.921,NA,4.005,NA,3.286,NA,NA,Upper middle income
-JOR,Jordan,2010,4139.043,NA,4.846,NA,12.5,NA,NA,Lower middle income
-JOR,Jordan,2015,4441.619,NA,-0.877,NA,13.075,NA,NA,Lower middle income
+JAM,Jamaica,2024,7753.812,NA,5.412,NA,3.151,NA,NA,Upper middle income
+JOR,Jordan,2012,4593.836,NA,4.515,NA,12.2,NA,NA,Lower middle income
+JOR,Jordan,2016,4366.07,NA,-0.778,NA,15.275,NA,NA,Lower middle income
 JOR,Jordan,2020,4411.483,NA,0.333,NA,19.213,NA,NA,Lower middle income
-JOR,Jordan,2025,5347.777,NA,1.766,NA,16.535,NA,NA,Lower middle income
-JPN,Japan,2010,45378.138,27.325,-0.728,23.572,5.102,24.872,11.273,High income
-JPN,Japan,2015,35664.645,29.506,0.795,26.552,3.385,3.235,0.479,High income
+JOR,Jordan,2024,5073.921,NA,1.557,NA,16.693,NA,NA,Lower middle income
+JPN,Japan,2012,49626.683,25.869,-0.044,24.987,4.358,0.164,5.482,High income
+JPN,Japan,2016,40214.969,30.05,-0.127,26.24,3.132,1.593,-1.095,High income
 JPN,Japan,2020,41098.974,29.733,-0.025,26.886,2.809,-11.711,-6.854,High income
-JPN,Japan,2025,35951.045,NA,3.173,NA,2.451,NA,NA,High income
-KAZ,Kazakhstan,2010,8793.076,30.389,7.4,25.374,5.77,3.1,2.9,Upper middle income
-KAZ,Kazakhstan,2015,10196.123,27.643,6.678,27.908,4.93,-4.1,-0.1,Upper middle income
+JPN,Japan,2024,33797.101,32.059,2.739,27.679,2.5,0.907,0.887,High income
+KAZ,Kazakhstan,2012,12018.797,29.755,5.196,25.23,5.29,4.8,24.8,Upper middle income
+KAZ,Kazakhstan,2016,7475.567,23.901,14.361,27.828,4.96,-4.5,-2.0,Upper middle income
 KAZ,Kazakhstan,2020,8781.508,26.172,6.718,28.807,4.89,-11.3,-9.0,Upper middle income
-KAZ,Kazakhstan,2025,14692.133,NA,11.388,NA,4.771,NA,NA,Upper middle income
-KEN,Kenya,2010,1091.519,7.117,3.961,21.264,2.793,14.352,10.324,Lower middle income
-KEN,Kenya,2015,1489.12,6.804,6.582,22.103,2.762,-2.185,-4.635,Lower middle income
+KAZ,Kazakhstan,2024,14154.632,28.991,8.691,27.212,4.833,0.3,2.1,Upper middle income
+KEN,Kenya,2012,1285.005,6.499,9.378,22.193,2.678,2.26,0.43,Lower middle income
+KEN,Kenya,2016,1554.126,13.955,6.297,19.348,2.757,-6.569,-7.41,Lower middle income
 KEN,Kenya,2020,1927.665,15.331,5.405,19.652,5.613,9.521,-2.196,Lower middle income
-KEN,Kenya,2025,2362.861,NA,4.069,16.955,5.449,0.118,0.879,Lower middle income
-KGZ,Kyrgyzstan,2010,876.954,19.933,7.968,27.402,3.503,NA,NA,Lower middle income
-KGZ,Kyrgyzstan,2015,1105.652,12.173,6.503,34.671,4.138,-5.633,-13.193,Lower middle income
+KEN,Kenya,2024,2133.462,15.567,4.49,16.482,5.487,6.492,2.562,Lower middle income
+KGZ,Kyrgyzstan,2012,1168.622,12.741,2.768,34.961,3.786,-19.221,12.363,Lower middle income
+KGZ,Kyrgyzstan,2016,1103.275,22.455,0.389,33.939,4.294,-3.836,-1.054,Lower middle income
 KGZ,Kyrgyzstan,2020,1229.518,29.26,6.325,25.03,5.945,-27.171,-27.354,Lower middle income
-KGZ,Kyrgyzstan,2025,3080.969,NA,8.215,27.965,3.526,-35.775,-3.575,Lower middle income
-KHM,Cambodia,2010,952.275,18.342,3.996,22.317,0.771,19.983,18.276,Lower middle income
-KHM,Cambodia,2015,1547.32,22.939,1.224,29.871,0.393,8.625,8.171,Lower middle income
+KGZ,Kyrgyzstan,2024,2514.811,11.946,4.998,21.527,3.491,42.18,1.013,Lower middle income
+KHM,Cambodia,2012,1192.803,18.913,2.934,24.671,0.505,14.819,13.487,Lower middle income
+KHM,Cambodia,2016,1675.196,22.805,3.019,30.385,0.716,8.706,7.797,Lower middle income
 KHM,Cambodia,2020,2081.739,35.761,2.94,31.351,0.172,-12.213,-8.296,Lower middle income
-KHM,Cambodia,2025,2872.429,39.162,2.351,31.524,0.263,14.604,12.458,Lower middle income
-KIR,Kiribati,2010,1522.101,15.882,-3.9,15.916,NA,-20.801,-7.287,Lower middle income
-KIR,Kiribati,2015,1639.853,65.845,0.572,37.769,NA,35.188,18.781,Lower middle income
+KHM,Cambodia,2024,2627.88,40.531,0.808,32.186,0.254,14.442,7.53,Lower middle income
+KIR,Kiribati,2012,1843.553,26.096,-3.046,27.727,NA,18.479,12.727,Lower middle income
+KIR,Kiribati,2016,1742.668,38.539,1.917,29.967,NA,20.134,5.452,Lower middle income
 KIR,Kiribati,2020,1751.872,46.114,2.553,14.697,NA,-33.622,-18.192,Lower middle income
-KIR,Kiribati,2025,2558.666,NA,NA,NA,NA,NA,NA,Lower middle income
-KNA,Saint Kitts and Nevis,2010,16622.946,NA,0.851,NA,NA,NA,NA,High income
-KNA,Saint Kitts and Nevis,2015,20328.8,NA,-2.302,NA,NA,NA,NA,High income
+KIR,Kiribati,2024,2550.984,12.855,2.455,29.914,NA,-20.882,12.143,Lower middle income
+KNA,Saint Kitts and Nevis,2012,17532.056,NA,0.816,NA,NA,NA,NA,High income
+KNA,Saint Kitts and Nevis,2016,21387.542,NA,-0.687,NA,NA,NA,NA,High income
 KNA,Saint Kitts and Nevis,2020,18859.019,NA,-1.167,NA,NA,NA,NA,High income
-KNA,Saint Kitts and Nevis,2025,25223.026,NA,NA,NA,NA,NA,NA,High income
-KOR,South Korea,2010,24071.262,34.993,2.939,32.779,3.324,13.071,17.816,High income
-KOR,South Korea,2015,30171.791,35.834,0.706,29.312,3.546,-0.004,1.942,High income
+KNA,Saint Kitts and Nevis,2024,23960.653,NA,NA,NA,NA,NA,NA,High income
+KOR,South Korea,2012,26600.548,34.337,2.187,31.215,2.812,6.036,2.625,High income
+KOR,South Korea,2016,30832.063,36.291,0.972,29.982,3.65,2.451,5.428,High income
 KOR,South Korea,2020,33645.772,35.776,0.537,31.525,3.931,-1.664,-3.26,High income
-KOR,South Korea,2025,36226.966,35.599,2.123,29.131,2.683,4.222,3.844,High income
-KWT,Kuwait,2010,39212.252,50.688,4.496,17.658,1.82,NA,NA,High income
-KWT,Kuwait,2015,29882.213,30.918,3.272,25.428,2.2,-0.868,6.836,High income
+KOR,South Korea,2024,36238.64,35.031,2.322,29.974,2.784,6.833,2.486,High income
+KWT,Kuwait,2012,52155.223,58.978,3.255,12.835,2.227,7.687,13.964,High income
+KWT,Kuwait,2016,27323.689,25.452,3.198,29.959,2.16,2.461,4.204,High income
 KWT,Kuwait,2020,25236.076,22.952,2.102,18.651,3.489,-2.89,-26.396,High income
-KWT,Kuwait,2025,32312.312,NA,2.362,NA,2.181,NA,NA,High income
-LAO,Laos,2010,1125.916,9.675,5.983,27.462,0.708,15.707,9.241,Lower middle income
-LAO,Laos,2015,2121.013,10.747,1.277,31.557,2.006,6.652,4.048,Lower middle income
+KWT,Kuwait,2024,32855.721,44.126,2.899,15.103,2.151,-3.199,-7.051,High income
+LAO,Laos,2012,1563.565,6.868,4.255,32.504,1.208,6.711,31.03,Lower middle income
+LAO,Laos,2016,2303.222,17.639,1.597,29.008,2.634,10.458,4.552,Lower middle income
 LAO,Laos,2020,2583.777,NA,5.104,NA,2.349,NA,NA,Lower middle income
-LAO,Laos,2025,2324.764,NA,7.742,NA,1.187,NA,NA,Lower middle income
-LBN,Lebanon,2010,7625.811,4.933,3.983,24.937,6.768,9.865,5.891,Lower middle income
-LBN,Lebanon,2015,7714.11,2.44,-3.749,22.223,9.312,9.923,8.735,Lower middle income
+LAO,Laos,2024,2123.979,NA,23.131,NA,1.174,NA,NA,Lower middle income
+LBN,Lebanon,2012,8406.984,-2.527,6.581,24.787,7.952,-14.915,1.433,Lower middle income
+LBN,Lebanon,2016,8089.012,2.064,-0.783,23.143,9.794,-1.423,5.926,Lower middle income
 LBN,Lebanon,2020,5561.192,2.235,84.864,8.098,13.252,-53.744,-46.035,Lower middle income
-LBN,Lebanon,2025,NA,NA,14.598,NA,NA,NA,NA,Lower middle income
-LBR,Liberia,2010,492.253,NA,7.29,NA,2.266,NA,NA,Low income
-LBR,Liberia,2015,692.59,NA,7.749,NA,2.557,NA,NA,Low income
+LBN,Lebanon,2024,4473.271,NA,45.243,1.445,NA,-9.7,-0.1,Lower middle income
+LBR,Liberia,2012,638.369,NA,6.832,NA,2.146,NA,NA,Low income
+LBR,Liberia,2016,714.613,NA,8.834,NA,3.081,NA,NA,Low income
 LBR,Liberia,2020,616.788,NA,16.956,NA,4.102,NA,NA,Low income
-LBR,Liberia,2025,915.329,NA,8.316,NA,2.884,NA,NA,Low income
-LBY,Libyan Arab Jamahiriya,2010,11600.907,51.804,2.8,19.801,19.321,310.214,48.248,Upper middle income
-LBY,Libyan Arab Jamahiriya,2015,7458.489,5.746,10.402,17.382,19.69,-2.11,-26.262,Upper middle income
+LBR,Liberia,2024,851.498,NA,8.215,NA,2.914,NA,NA,Low income
+LBY,Libyan Arab Jamahiriya,2012,14975.89,45.594,6.06,15.219,19.03,211.506,143.392,Upper middle income
+LBY,Libyan Arab Jamahiriya,2016,7525.803,1.836,25.854,13.8,19.559,-5.935,-20.178,Upper middle income
 LBY,Libyan Arab Jamahiriya,2020,6650.338,-0.399,1.447,9.45,19.651,-66.336,-40.2,Upper middle income
-LBY,Libyan Arab Jamahiriya,2025,6448.824,NA,1.842,14.272,18.758,19.141,8.168,Upper middle income
-LCA,Saint Lucia,2010,8673.687,NA,3.25,NA,17.118,NA,NA,Upper middle income
-LCA,Saint Lucia,2015,10334.986,NA,-0.984,NA,20.84,NA,NA,Upper middle income
+LBY,Libyan Arab Jamahiriya,2024,6569.164,NA,2.126,14.271,19.085,-6.903,-3.02,Upper middle income
+LCA,Saint Lucia,2012,9260.3,NA,4.178,NA,19.06,NA,NA,Upper middle income
+LCA,Saint Lucia,2016,10638.127,NA,-3.078,NA,19.932,NA,NA,Upper middle income
 LCA,Saint Lucia,2020,8537.115,NA,-1.756,NA,25.224,NA,NA,Upper middle income
-LCA,Saint Lucia,2025,14745.818,NA,2.027,NA,9.452,NA,NA,Upper middle income
-LKA,Sri Lanka,2010,2808.362,NA,6.218,NA,4.784,NA,NA,Lower middle income
-LKA,Sri Lanka,2015,4057.716,32.048,3.768,34.276,4.519,NA,NA,Lower middle income
+LCA,Saint Lucia,2024,14493.658,NA,-0.674,NA,10.199,NA,NA,Upper middle income
+LKA,Sri Lanka,2012,3327.776,NA,7.543,NA,3.88,NA,NA,Lower middle income
+LKA,Sri Lanka,2016,4149.192,34.468,3.959,36.453,4.242,4.874,6.989,Lower middle income
 LKA,Sri Lanka,2020,3847.601,31.353,6.154,32.871,5.364,-29.559,-20.068,Lower middle income
-LKA,Sri Lanka,2025,5002.079,NA,-4.764,29.645,4.005,5.06,10.845,Lower middle income
-LSO,Lesotho,2010,1119.476,20.19,-2.405,31.301,16.068,0.493,3.871,Lower middle income
-LSO,Lesotho,2015,1121.199,24.499,3.218,30.437,16.223,18.496,7.423,Lower middle income
+LKA,Sri Lanka,2024,4545.36,27.596,-0.429,26.347,4.239,12.397,21.568,Lower middle income
+LSO,Lesotho,2012,1217.931,17.79,6.051,35.721,15.761,-2.232,8.955,Lower middle income
+LSO,Lesotho,2016,992.492,17.466,6.597,28.776,16.138,12.288,1.409,Lower middle income
 LSO,Lesotho,2020,918.583,20.495,4.978,26.265,18.385,-15.375,-0.573,Lower middle income
-LSO,Lesotho,2025,1088.963,13.591,4.27,31.233,16.315,1.519,2.616,Lower middle income
-LTU,Lithuania,2010,11829.123,18.06,1.319,17.858,17.814,16.382,16.811,High income
-LTU,Lithuania,2015,14269.804,20.045,-0.884,22.555,9.12,2.423,9.502,High income
+LSO,Lesotho,2024,1023.042,21.338,6.105,29.672,16.34,26.449,7.303,Lower middle income
+LTU,Lithuania,2012,14288.185,18.705,3.09,20.27,13.365,10.848,5.17,High income
+LTU,Lithuania,2016,14934.27,19.281,0.906,20.288,7.862,4.928,4.044,High income
 LTU,Lithuania,2020,20428.648,23.725,1.2,16.52,8.487,0.068,-4.337,High income
-LTU,Lithuania,2025,32958.671,23.137,3.792,22.238,6.731,5.295,9.272,High income
-LUX,Luxembourg,2010,110885.991,17.935,2.274,18.083,4.423,10.156,14.253,High income
-LUX,Luxembourg,2015,105462.013,17.808,0.475,18.959,6.796,5.139,5.708,High income
+LTU,Lithuania,2024,29603.777,23.883,0.716,20.659,6.851,2.598,2.443,High income
+LUX,Luxembourg,2012,112584.676,25.448,2.663,18.752,5.03,1.619,1.76,High income
+LUX,Luxembourg,2016,106899.294,19.566,0.291,17.932,6.669,5.309,3.752,High income
 LUX,Luxembourg,2020,116860.028,20.573,0.82,17.929,6.766,1.902,1.449,High income
-LUX,Luxembourg,2025,147252.179,14.104,2.257,15.502,6.343,1.165,1.799,High income
-LVA,Latvia,2010,11188.419,22.747,-1.085,20.931,19.482,13.616,12.738,High income
-LVA,Latvia,2015,13321.975,24.034,0.174,24.15,9.873,3.055,1.013,High income
+LUX,Luxembourg,2024,137781.682,12.455,2.051,15.843,6.4,-12.179,-13.602,High income
+LVA,Latvia,2012,13329.35,24.863,2.258,28.64,15.047,9.485,5.219,High income
+LVA,Latvia,2016,13838.527,23.534,0.141,21.756,9.643,3.893,4.19,High income
 LVA,Latvia,2020,17564.232,25.193,0.219,22.155,8.098,-0.298,-1.123,High income
-LVA,Latvia,2025,26311.973,20.71,3.746,24.056,6.568,0.074,5.718,High income
-MAC,Macao,2010,52596.225,52.171,2.809,13.246,2.84,39.71,16.705,High income
-MAC,Macao,2015,69902.961,48.348,4.561,25.398,1.81,-26.563,1.369,High income
+LVA,Latvia,2024,23578.966,19.189,1.266,21.464,6.9,0.108,-1.771,High income
+MAC,Macao,2012,76058.022,53.485,6.107,14.646,1.97,10.529,14.302,High income
+MAC,Macao,2016,68911.676,48.033,2.369,21.899,1.939,-1.949,-10.355,High income
 MAC,Macao,2020,36883.665,39.205,0.811,26.169,2.542,-65.507,-14.128,High income
-MAC,Macao,2025,75901.746,NA,0.333,12.251,2.347,3.998,-2.581,High income
-MAR,Morocco,2010,3067.985,35.044,0.994,31.491,9.09,17.851,7.828,Lower middle income
-MAR,Morocco,2015,3146.248,28.259,1.558,30.177,9.46,4.325,1.331,Lower middle income
+MAC,Macao,2024,72004.744,47.819,0.672,14.085,2.262,6.811,-0.528,High income
+MAR,Morocco,2012,3164.177,31.313,1.287,32.179,8.99,2.653,3.35,Lower middle income
+MAR,Morocco,2016,3140.855,28.27,1.635,31.958,9.3,6.808,14.839,Lower middle income
 MAR,Morocco,2020,3268.03,27.696,0.706,28.777,11.189,-14.987,-11.887,Lower middle income
-MAR,Morocco,2025,4672.468,29.383,0.702,31.871,9.0,6.267,12.722,Lower middle income
-MDA,Moldova,2010,2436.799,17.006,7.484,23.852,2.972,13.727,14.257,Upper middle income
-MDA,Moldova,2015,2749.551,18.313,9.676,24.062,1.781,2.571,-5.774,Upper middle income
+MAR,Morocco,2024,4153.194,28.863,0.985,30.074,9.103,8.037,11.628,Lower middle income
+MDA,Moldova,2012,3044.808,16.755,4.546,24.199,2.189,-0.112,2.734,Upper middle income
+MDA,Moldova,2016,2847.088,18.383,6.359,21.987,1.591,9.317,2.611,Upper middle income
 MDA,Moldova,2020,4375.779,16.12,3.766,23.864,1.206,-14.866,-9.547,Upper middle income
-MDA,Moldova,2025,8621.717,4.098,7.759,24.186,1.505,4.358,12.553,Upper middle income
-MDG,Madagascar,2010,450.009,16.544,9.247,27.027,4.28,5.685,-5.891,Low income
-MDG,Madagascar,2015,445.32,12.905,7.404,15.992,1.785,-0.642,6.546,Low income
+MDA,Moldova,2024,7578.902,5.744,4.678,22.321,1.427,-4.337,5.718,Upper middle income
+MDG,Madagascar,2012,493.511,12.884,5.714,20.169,0.599,-4.962,-3.45,Low income
+MDG,Madagascar,2016,453.971,16.097,6.036,16.366,1.949,-0.98,4.841,Low income
 MDG,Madagascar,2020,450.772,8.178,4.202,17.715,3.292,-36.636,-16.586,Low income
-MDG,Madagascar,2025,599.265,NA,8.051,24.149,3.041,0.456,4.022,Low income
-MDV,Maldives,2010,7173.596,NA,6.15,NA,10.875,NA,NA,Upper middle income
-MDV,Maldives,2015,9644.907,24.631,0.953,31.905,6.611,-3.054,-4.249,Upper middle income
+MDG,Madagascar,2024,550.379,17.527,7.613,23.553,3.051,0.465,13.944,Low income
+MDV,Maldives,2012,7461.297,NA,10.885,NA,9.134,NA,NA,Upper middle income
+MDV,Maldives,2016,9947.807,16.351,0.503,39.766,5.771,4.847,8.922,Upper middle income
 MDV,Maldives,2020,7393.889,-0.287,-1.37,35.512,5.42,-49.238,-43.516,Upper middle income
-MDV,Maldives,2025,14614.721,NA,4.006,NA,4.514,NA,NA,Upper middle income
-MEX,Mexico,2010,9728.801,19.123,4.157,23.331,5.303,23.08,17.111,Upper middle income
-MEX,Mexico,2015,10021.239,18.516,2.721,23.736,4.311,7.029,4.949,Upper middle income
+MDV,Maldives,2024,13379.351,11.193,1.411,30.795,4.278,5.177,12.381,Upper middle income
+MEX,Mexico,2012,10744.134,19.161,4.112,24.378,4.892,7.918,5.648,Upper middle income
+MEX,Mexico,2016,9097.924,19.385,2.822,24.343,3.853,3.067,2.534,Upper middle income
 MEX,Mexico,2020,8841.271,22.193,3.397,20.237,4.44,-7.019,-11.991,Upper middle income
-MEX,Mexico,2025,13889.234,18.258,3.807,22.611,2.673,6.956,3.102,Upper middle income
-MHL,Marshall Islands,2010,3095.458,24.696,NA,42.525,NA,35.489,9.716,Upper middle income
-MHL,Marshall Islands,2015,3764.344,27.403,NA,17.394,NA,-0.871,0.2,Upper middle income
+MEX,Mexico,2024,13988.042,18.423,4.722,23.903,2.678,3.494,3.253,Upper middle income
+MHL,Marshall Islands,2012,3514.265,13.851,NA,12.911,NA,-5.255,1.849,Upper middle income
+MHL,Marshall Islands,2016,4229.81,23.871,NA,20.831,NA,-11.688,-0.342,Upper middle income
 MHL,Marshall Islands,2020,5661.968,15.129,NA,20.694,NA,-4.717,-30.677,Upper middle income
-MHL,Marshall Islands,2025,8489.058,NA,NA,NA,NA,NA,NA,Upper middle income
-MKD,Macedonia,2010,4833.366,23.799,1.51,24.468,33.135,23.68,10.367,Upper middle income
-MKD,Macedonia,2015,5262.687,28.679,-0.3,30.404,26.395,8.476,9.945,Upper middle income
+MHL,Marshall Islands,2024,7590.284,38.088,NA,21.115,NA,18.741,10.694,Upper middle income
+MKD,Macedonia,2012,5049.827,26.661,3.316,28.927,31.096,1.952,8.239,Upper middle income
+MKD,Macedonia,2016,5598.486,30.273,-0.239,32.51,24.312,9.081,11.126,Upper middle income
 MKD,Macedonia,2020,6659.597,27.116,1.2,29.917,16.575,-10.932,-10.861,Upper middle income
-MKD,Macedonia,2025,10489.926,27.549,4.072,31.723,12.256,6.123,6.675,Upper middle income
-MLI,Mali,2010,797.152,13.558,1.109,23.014,1.375,1.445,29.243,Low income
-MLI,Mali,2015,838.12,20.369,1.451,24.895,1.404,15.906,14.502,Low income
+MKD,Macedonia,2024,9291.857,28.449,3.49,30.596,12.265,-3.957,-1.356,Upper middle income
+MLI,Mali,2012,872.506,18.771,5.323,20.693,1.462,12.573,-2.269,Low income
+MLI,Mali,2016,872.469,21.095,-1.8,27.316,1.367,1.501,10.887,Low income
 MLI,Mali,2020,953.243,18.585,0.438,20.652,3.528,-12.637,-2.863,Low income
-MLI,Mali,2025,1193.276,NA,3.278,20.022,2.831,4.423,2.73,Low income
-MLT,Malta,2010,21946.607,18.117,1.516,21.864,6.861,17.663,14.983,High income
-MLT,Malta,2015,25529.669,25.898,1.101,23.455,5.389,24.04,32.041,High income
+MLI,Mali,2024,1093.252,15.081,3.206,19.611,2.924,-1.6,-10.0,Low income
+MLT,Malta,2012,22878.31,18.578,2.376,19.273,6.203,7.527,8.124,High income
+MLT,Malta,2016,26459.064,22.513,0.643,21.94,4.694,8.068,6.712,High income
 MLT,Malta,2020,31823.422,22.294,0.639,20.117,4.856,3.787,3.414,High income
-MLT,Malta,2025,47906.9,NA,2.364,18.708,2.896,4.549,4.386,High income
-MMR,Myanmar,2010,1010.534,NA,7.718,NA,0.725,NA,NA,Lower middle income
-MMR,Myanmar,2015,1166.733,NA,9.454,NA,0.766,NA,NA,Lower middle income
+MLT,Malta,2024,44023.634,25.889,1.651,19.01,3.1,6.29,5.212,High income
+MMR,Myanmar,2012,1202.666,NA,1.468,NA,0.768,NA,NA,Lower middle income
+MMR,Myanmar,2016,1229.197,NA,6.929,NA,1.058,NA,NA,Lower middle income
 MMR,Myanmar,2020,1490.217,NA,NA,NA,1.476,NA,NA,Lower middle income
-MMR,Myanmar,2025,1488.875,NA,NA,NA,3.047,NA,NA,Lower middle income
-MNG,Mongolia,2010,2625.219,26.63,10.046,42.087,6.549,NA,NA,Lower middle income
-MNG,Mongolia,2015,3838.921,16.401,5.736,24.514,4.861,0.122,-11.444,Lower middle income
+MMR,Myanmar,2024,1359.05,NA,NA,NA,2.887,NA,NA,Lower middle income
+MNG,Mongolia,2012,4328.89,27.698,14.33,55.899,3.905,8.305,15.425,Lower middle income
+MNG,Mongolia,2016,3619.9,16.976,0.733,22.629,7.235,15.516,17.545,Lower middle income
 MNG,Mongolia,2020,4001.252,16.307,3.724,22.384,6.413,-5.265,-15.497,Lower middle income
-MNG,Mongolia,2025,7108.227,NA,8.605,31.413,5.233,6.191,-1.051,Lower middle income
-MOZ,Mozambique,2010,496.186,12.196,12.426,23.196,3.259,1.371,1.491,Low income
-MOZ,Mozambique,2015,610.564,11.725,3.551,42.246,3.426,-5.41,-15.607,Low income
+MNG,Mongolia,2024,6750.63,25.645,6.198,35.545,5.158,0.747,17.498,Lower middle income
+MOZ,Mozambique,2012,685.686,10.463,2.602,50.59,3.304,10.411,64.137,Low income
+MOZ,Mozambique,2016,441.49,6.759,17.418,46.28,3.65,-6.666,4.473,Low income
 MOZ,Mozambique,2020,462.434,15.084,3.484,44.827,5.019,-15.159,-4.204,Low income
-MOZ,Mozambique,2025,626.914,NA,4.368,24.196,6.628,-4.004,1.355,Low income
-MRT,Mauritania,2010,1659.964,NA,6.284,32.251,10.093,3.175,18.716,Lower middle income
-MRT,Mauritania,2015,1558.842,21.46,3.255,38.461,10.104,2.596,-7.055,Lower middle income
+MOZ,Mozambique,2024,656.976,1.706,4.079,17.655,6.668,-3.405,-10.681,Low income
+MRT,Mauritania,2012,1859.117,36.687,4.902,49.167,9.864,5.95,30.741,Lower middle income
+MRT,Mauritania,2016,1568.006,27.97,1.472,31.278,10.287,-0.444,-2.926,Lower middle income
 MRT,Mauritania,2020,1795.724,37.553,2.386,38.659,11.051,-9.166,0.381,Lower middle income
-MRT,Mauritania,2025,2197.51,NA,1.548,44.327,10.319,-0.554,4.982,Lower middle income
-MUS,Mauritius,2010,8113.177,15.229,2.932,26.728,7.654,14.195,9.291,Upper middle income
-MUS,Mauritius,2015,9630.544,16.182,1.287,17.27,7.41,3.775,8.624,Upper middle income
+MRT,Mauritania,2024,2104.543,34.428,2.492,43.082,10.257,12.007,7.293,Lower middle income
+MUS,Mauritius,2012,9421.525,18.44,3.852,24.043,7.472,3.512,1.353,Upper middle income
+MUS,Mauritius,2016,10095.123,16.614,0.978,17.052,6.814,-1.028,2.975,Upper middle income
 MUS,Mauritius,2020,9135.848,13.362,2.581,17.966,8.626,-20.73,-22.868,Upper middle income
-MUS,Mauritius,2025,12991.294,NA,3.674,19.902,5.635,2.073,1.913,Upper middle income
-MWI,Malawi,2010,683.125,NA,7.412,NA,4.78,NA,NA,Low income
-MWI,Malawi,2015,539.605,NA,21.867,NA,4.953,NA,NA,Low income
+MUS,Mauritius,2024,11990.936,21.107,3.605,21.08,5.548,2.163,7.325,Upper middle income
+MWI,Malawi,2012,558.462,NA,21.271,NA,4.949,NA,NA,Low income
+MWI,Malawi,2016,450.506,NA,21.711,NA,5.011,NA,NA,Low income
 MWI,Malawi,2020,602.507,2.675,8.626,16.711,5.72,-4.423,8.146,Low income
-MWI,Malawi,2025,671.507,NA,28.37,15.734,5.072,3.0,2.5,Low income
-MYS,Malaysia,2010,8899.345,33.466,1.623,23.387,3.32,10.419,15.523,Upper middle income
-MYS,Malaysia,2015,9648.68,28.399,2.104,25.424,3.1,0.253,0.803,Upper middle income
+MWI,Malawi,2024,522.365,-1.989,32.18,13.721,5.051,2.0,-0.238,Low income
+MYS,Malaysia,2012,10600.574,30.915,1.664,25.749,3.04,-1.742,2.912,Upper middle income
+MYS,Malaysia,2016,9476.534,28.385,2.091,25.996,3.44,1.319,1.434,Upper middle income
 MYS,Malaysia,2020,9957.526,23.821,-1.139,19.658,4.54,-8.561,-7.914,Upper middle income
-MYS,Malaysia,2025,13124.555,NA,1.381,20.461,3.764,3.073,4.557,Upper middle income
-NAM,Namibia,2010,5418.216,18.57,4.875,23.78,22.12,2.766,-10.246,Upper middle income
-NAM,Namibia,2015,4774.107,16.289,3.394,30.556,20.791,-11.973,0.376,Upper middle income
+MYS,Malaysia,2024,11874.427,23.378,1.834,21.954,3.846,8.301,8.245,Upper middle income
+NAM,Namibia,2012,5942.647,14.973,6.722,26.723,16.771,1.006,19.604,Upper middle income
+NAM,Namibia,2016,4395.688,6.044,6.729,22.03,23.352,-0.608,3.936,Upper middle income
 NAM,Namibia,2020,3878.59,17.707,2.209,13.929,21.003,-16.553,-15.043,Upper middle income
-NAM,Namibia,2025,4875.926,NA,3.511,18.675,19.291,11.812,-3.687,Upper middle income
-NER,Niger,2010,474.426,24.289,0.804,32.64,0.718,19.73,11.503,Low income
-NER,Niger,2015,485.663,24.17,-0.576,32.357,0.556,-4.708,7.365,Low income
+NAM,Namibia,2024,4501.848,9.45,4.239,26.013,19.157,-0.604,8.735,Upper middle income
+NER,Niger,2012,528.51,23.307,0.455,29.314,2.177,18.935,-4.312,Low income
+NER,Niger,2016,499.911,23.492,1.654,29.761,0.55,-14.824,-15.108,Low income
 NER,Niger,2020,575.451,19.82,2.898,32.549,0.591,-9.294,1.131,Low income
-NER,Niger,2025,775.354,NA,-4.455,21.977,0.394,75.0,21.1,Low income
-NGA,Nigeria,2010,2202.257,NA,13.74,NA,3.744,NA,NA,Lower middle income
-NGA,Nigeria,2015,2585.734,NA,9.009,NA,4.134,NA,NA,Lower middle income
+NER,Niger,2024,729.857,17.469,9.072,23.497,0.376,22.859,-22.948,Low income
+NGA,Nigeria,2012,2633.197,NA,12.224,NA,3.761,NA,NA,Lower middle income
+NGA,Nigeria,2016,2070.413,NA,15.697,NA,4.499,NA,NA,Lower middle income
 NGA,Nigeria,2020,2797.185,NA,13.246,NA,5.714,NA,NA,Lower middle income
-NGA,Nigeria,2025,1224.254,NA,23.01,NA,3.064,NA,NA,Lower middle income
-NIC,Nicaragua,2010,1526.567,15.873,5.455,24.84,7.83,16.315,12.066,Lower middle income
-NIC,Nicaragua,2015,2074.456,23.489,3.997,33.477,4.7,-0.984,12.002,Lower middle income
+NGA,Nigeria,2024,1084.16,NA,33.242,NA,3.045,NA,NA,Lower middle income
+NIC,Nicaragua,2012,1784.698,19.261,7.194,31.012,5.208,12.396,6.787,Lower middle income
+NIC,Nicaragua,2016,2131.687,22.511,3.523,31.2,3.9,4.596,4.068,Lower middle income
 NIC,Nicaragua,2020,1938.447,23.752,3.682,20.337,6.18,-8.752,0.955,Lower middle income
-NIC,Nicaragua,2025,3173.337,NA,2.081,25.759,5.04,5.841,11.11,Lower middle income
-NLD,Netherlands,2010,51305.734,26.445,1.275,20.037,4.991,9.679,8.444,High income
-NLD,Netherlands,2015,45793.814,26.976,0.6,22.17,6.872,8.371,15.403,High income
+NIC,Nicaragua,2024,2847.876,28.481,4.625,24.747,4.98,-4.906,12.343,Lower middle income
+NLD,Netherlands,2012,50473.944,26.065,2.456,18.583,5.821,3.715,2.893,High income
+NLD,Netherlands,2016,46808.529,26.953,0.317,19.776,6.007,1.963,-2.252,High income
 NLD,Netherlands,2020,53467.928,27.057,1.272,21.352,3.82,-3.831,-4.138,High income
-NLD,Netherlands,2025,73683.917,NA,3.26,19.82,3.874,2.431,2.416,High income
-NOR,Norway,2010,90020.342,33.888,2.419,24.008,3.527,0.46,8.077,High income
-NOR,Norway,2015,77220.952,31.468,2.171,25.577,4.296,3.971,1.971,High income
+NLD,Netherlands,2024,67465.321,28.827,3.348,19.674,3.7,-0.156,0.089,High income
+NOR,Norway,2012,104627.937,36.031,0.697,24.884,3.129,2.133,3.34,High income
+NOR,Norway,2016,73222.401,28.161,3.55,26.165,4.68,0.063,1.709,High income
 NOR,Norway,2020,71057.588,26.464,1.287,29.022,4.424,-2.431,-9.903,High income
-NOR,Norway,2025,94594.193,37.254,3.056,23.213,4.637,2.391,2.58,High income
-NPL,Nepal,2010,585.278,37.75,9.327,38.271,10.563,-10.439,28.258,Lower middle income
-NPL,Nepal,2015,875.544,40.088,7.869,31.277,10.643,2.316,9.583,Lower middle income
+NOR,Norway,2024,89888.954,38.652,3.145,23.666,4.0,5.798,5.018,High income
+NPL,Nepal,2012,788.203,34.555,9.46,28.603,10.632,20.193,3.042,Lower middle income
+NPL,Nepal,2016,877.256,35.305,8.79,28.241,10.714,-17.306,3.151,Lower middle income
 NPL,Nepal,2020,1154.215,32.816,5.056,30.44,13.037,-15.882,-20.848,Lower middle income
-NPL,Nepal,2025,1535.878,NA,2.653,29.404,10.465,22.231,6.295,Lower middle income
-NRU,Nauru,2010,4735.92,NA,NA,NA,NA,NA,NA,High income
-NRU,Nauru,2015,7747.256,NA,NA,NA,NA,NA,NA,High income
+NPL,Nepal,2024,1460.282,36.046,4.685,28.601,10.5,7.677,0.303,Lower middle income
+NRU,Nauru,2012,9842.77,NA,-0.125,NA,NA,NA,NA,High income
+NRU,Nauru,2016,8748.156,NA,NA,NA,NA,NA,NA,High income
 NRU,Nauru,2020,10709.069,NA,NA,NA,NA,NA,NA,High income
-NRU,Nauru,2025,14639.505,NA,NA,NA,NA,NA,NA,High income
-NZL,New Zealand,2010,33761.901,17.733,2.302,20.376,6.557,2.821,11.495,High income
-NZL,New Zealand,2015,38648.73,20.883,0.293,23.285,5.415,6.242,2.274,High income
+NRU,Nauru,2024,14048.164,NA,NA,NA,NA,NA,NA,High income
+NZL,New Zealand,2012,40041.752,17.646,1.06,21.315,6.931,3.041,1.327,High income
+NZL,New Zealand,2016,40088.321,20.713,0.646,23.288,5.147,1.556,5.192,High income
 NZL,New Zealand,2020,42054.674,20.682,1.715,23.259,4.595,-17.631,-15.909,High income
-NZL,New Zealand,2025,49591.041,NA,2.84,NA,5.076,NA,NA,High income
-OMN,Oman,2010,23570.18,36.903,3.257,29.387,3.911,14.649,22.967,High income
-OMN,Oman,2015,18808.308,22.479,0.065,36.372,3.403,-1.253,-0.35,High income
+NZL,New Zealand,2024,49432.363,18.945,2.923,23.093,4.724,3.348,1.482,High income
+OMN,Oman,2012,24642.298,39.177,2.948,30.21,3.753,5.627,19.784,High income
+OMN,Oman,2016,17110.19,19.385,1.109,36.086,3.266,-1.922,-11.968,High income
 OMN,Oman,2020,16784.863,11.346,-0.406,27.621,2.94,-14.63,-8.918,High income
-OMN,Oman,2025,19947.397,NA,0.968,NA,3.251,NA,NA,High income
-PAK,Pakistan,2010,987.305,14.59,12.939,15.962,0.653,7.854,-2.272,Lower middle income
-PAK,Pakistan,2015,1380.47,14.944,2.529,15.811,3.566,-3.829,-0.995,Lower middle income
+OMN,Oman,2024,20285.227,27.713,0.594,24.848,3.203,9.136,9.718,High income
+PAK,Pakistan,2012,1204.365,13.726,9.682,15.169,3.667,-12.926,-4.205,Lower middle income
+PAK,Pakistan,2016,1424.692,14.286,3.765,15.936,2.285,1.45,17.86,Lower middle income
 PAK,Pakistan,2020,1278.397,14.542,9.74,14.816,5.994,1.515,-5.064,Lower middle income
-PAK,Pakistan,2025,1595.909,15.23,3.546,14.283,5.42,0.607,2.533,Lower middle income
-PAN,Panama,2010,8331.464,24.753,3.491,37.341,5.845,5.774,18.64,High income
-PAN,Panama,2015,14082.655,34.082,0.137,42.266,4.335,0.352,-1.061,High income
+PAK,Pakistan,2024,1479.478,13.833,12.633,13.199,5.492,-1.329,5.804,Lower middle income
+PAN,Panama,2012,11064.806,32.002,5.698,42.504,3.691,8.835,10.431,High income
+PAN,Panama,2016,14832.361,32.251,0.74,40.262,4.717,-4.703,-5.537,High income
 PAN,Panama,2020,13290.561,24.664,-1.55,23.955,14.663,-18.014,-26.489,High income
-PAN,Panama,2025,19789.731,NA,-0.19,NA,8.36,NA,NA,High income
-PER,Peru,2010,5072.115,22.446,1.528,23.761,3.6,3.232,26.58,Upper middle income
-PER,Peru,2015,6231.712,20.614,3.398,24.305,3.272,4.262,0.972,Upper middle income
+PAN,Panama,2024,19161.219,33.002,0.693,33.534,8.451,1.646,-2.615,High income
+PER,Peru,2012,6519.379,22.9,3.611,24.606,3.238,3.106,9.998,Upper middle income
+PER,Peru,2016,6217.036,20.39,3.557,22.021,3.741,11.75,1.569,Upper middle income
 PER,Peru,2020,6133.326,19.846,2.002,18.191,7.179,-15.992,-15.55,Upper middle income
-PER,Peru,2025,9684.412,24.048,1.531,20.339,5.117,5.922,13.017,Upper middle income
-PHL,Philippines,2010,2162.914,39.751,3.79,20.442,3.605,20.308,20.747,Lower middle income
-PHL,Philippines,2015,2909.858,35.635,0.674,21.341,3.068,9.967,15.009,Lower middle income
+PER,Peru,2024,8526.297,22.625,2.008,19.729,5.199,7.116,7.659,Upper middle income
+PHL,Philippines,2012,2614.616,35.133,3.027,19.561,3.504,4.507,6.755,Lower middle income
+PHL,Philippines,2016,2985.196,35.055,1.254,24.619,2.695,9.206,18.813,Lower middle income
 PHL,Philippines,2020,3227.579,24.818,2.393,17.433,2.522,-16.143,-21.554,Lower middle income
-PHL,Philippines,2025,4170.723,30.113,1.659,22.141,2.235,8.243,5.042,Lower middle income
-PLW,Palau,2010,10018.065,2.668,1.442,26.11,NA,5.809,0.163,Upper middle income
-PLW,Palau,2015,15938.365,4.742,0.949,28.416,NA,13.254,2.53,Upper middle income
+PHL,Philippines,2024,3985.295,29.132,3.213,23.678,2.202,3.195,4.265,Lower middle income
+PLW,Palau,2012,12098.412,1.587,3.614,28.214,NA,8.688,9.14,Upper middle income
+PLW,Palau,2016,17043.666,8.805,-1.042,28.918,NA,-0.942,7.183,Upper middle income
 PLW,Palau,2020,14556.31,-7.228,0.218,42.155,NA,-42.961,-0.319,Upper middle income
-PLW,Palau,2025,19532.356,NA,-0.418,NA,NA,NA,NA,Upper middle income
-PNG,Papua New Guinea,2010,1866.869,NA,6.014,NA,2.002,NA,NA,Lower middle income
-PNG,Papua New Guinea,2015,2484.596,NA,5.996,NA,2.507,NA,NA,Lower middle income
+PLW,Palau,2024,18169.077,NA,2.232,34.967,NA,40.567,2.786,Upper middle income
+PNG,Papua New Guinea,2012,2635.087,NA,4.537,NA,2.634,NA,NA,Lower middle income
+PNG,Papua New Guinea,2016,2316.395,NA,6.674,NA,2.478,NA,NA,Lower middle income
 PNG,Papua New Guinea,2020,2429.611,NA,4.872,NA,2.903,NA,NA,Lower middle income
-PNG,Papua New Guinea,2025,3019.531,NA,4.421,NA,2.571,NA,NA,Lower middle income
-POL,Poland,2010,12567.732,15.698,2.581,20.859,9.578,12.59,14.709,High income
-POL,Poland,2015,12637.522,19.501,-0.874,20.802,7.475,6.609,5.602,High income
+PNG,Papua New Guinea,2024,2912.491,NA,0.602,NA,2.625,NA,NA,Lower middle income
+POL,Poland,2012,13087.421,16.682,3.56,20.802,10.031,3.92,-0.908,High income
+POL,Poland,2016,12464.012,19.039,-0.665,20.087,6.141,8.959,7.735,High income
 POL,Poland,2020,16150.93,21.226,3.374,18.839,3.155,-1.076,-2.461,High income
-POL,Poland,2025,28419.578,17.089,3.814,17.887,2.976,4.481,5.624,High income
-PRI,Puerto Rico,2010,26414.881,NA,NA,9.16,16.1,NA,NA,High income
-PRI,Puerto Rico,2015,29242.041,NA,NA,8.599,12.0,NA,NA,High income
+POL,Poland,2024,25103.566,18.116,3.791,17.803,2.807,2.0,4.467,High income
+PRI,Puerto Rico,2012,27742.024,NA,NA,10.334,14.5,NA,NA,High income
+PRI,Puerto Rico,2016,29978.089,NA,NA,8.075,11.8,NA,NA,High income
 PRI,Puerto Rico,2020,31427.103,NA,NA,10.881,8.89,NA,NA,High income
-PRI,Puerto Rico,2025,40620.153,NA,NA,14.234,5.991,NA,NA,High income
-PRT,Portugal,2010,22551.935,10.688,1.403,21.199,10.771,9.178,7.789,High income
-PRT,Portugal,2015,19215.781,15.888,0.488,15.938,12.405,6.252,8.066,High income
+PRI,Puerto Rico,2024,39353.224,NA,NA,14.177,5.639,NA,NA,High income
+PRT,Portugal,2012,20593.427,13.951,2.773,15.754,15.509,3.088,-6.298,High income
+PRT,Portugal,2016,19980.281,16.723,0.607,16.028,11.058,4.712,5.221,High income
 PRT,Portugal,2020,22299.404,18.368,-0.012,19.419,6.85,-18.335,-11.59,High income
-PRT,Portugal,2025,32081.811,NA,2.336,21.036,6.164,0.415,4.292,High income
-PRY,Paraguay,2010,4750.963,23.288,4.651,23.835,4.569,23.646,34.845,Upper middle income
-PRY,Paraguay,2015,5879.338,21.65,3.129,21.879,4.556,3.204,-2.988,Upper middle income
+PRT,Portugal,2024,29328.307,21.99,2.416,20.34,6.5,3.235,4.691,High income
+PRY,Paraguay,2012,5642.17,19.591,3.676,21.264,4.085,-5.683,-5.715,Upper middle income
+PRY,Paraguay,2016,5775.16,24.339,4.087,19.806,5.255,9.166,0.923,Upper middle income
 PRY,Paraguay,2020,5365.472,22.353,1.768,20.041,7.548,-9.012,-15.182,Upper middle income
-PRY,Paraguay,2025,7026.619,22.2,4.038,25.287,4.803,3.739,8.908,Upper middle income
-QAT,Qatar,2010,77387.294,NA,-2.425,31.277,0.45,27.298,1.699,High income
-QAT,Qatar,2015,68985.295,45.569,1.814,37.067,0.17,-1.392,-9.173,High income
+PRY,Paraguay,2024,6456.607,19.896,3.835,23.109,5.686,-1.534,4.432,Upper middle income
+QAT,Qatar,2012,108470.379,60.329,2.315,27.144,0.48,11.137,21.54,High income
+QAT,Qatar,2016,61253.638,43.979,2.677,49.487,0.15,-3.884,4.881,High income
 QAT,Qatar,2020,51683.505,41.782,-2.54,43.849,0.14,-1.545,-8.871,High income
-QAT,Qatar,2025,72524.907,NA,NA,NA,0.13,NA,NA,High income
-RUS,Russian Federation,2010,10674.99,26.284,6.849,22.615,7.407,7.0,25.8,Upper middle income
-RUS,Russian Federation,2015,9277.714,26.367,15.534,22.149,5.615,3.673,-25.039,Upper middle income
+QAT,Qatar,2024,75685.087,NA,1.267,NA,0.13,NA,NA,High income
+RUS,Russian Federation,2012,15401.852,27.244,5.075,24.554,5.484,1.36,9.681,Upper middle income
+RUS,Russian Federation,2016,8663.158,25.013,7.042,23.095,5.591,3.168,-3.672,Upper middle income
 RUS,Russian Federation,2020,10108.327,25.768,3.382,23.456,5.62,-4.171,-11.881,Upper middle income
-RUS,Russian Federation,2025,17546.609,28.64,8.72,25.892,2.133,NA,NA,Upper middle income
-RWA,Rwanda,2010,586.6,13.509,-0.246,20.798,11.637,8.434,2.355,Low income
-RWA,Rwanda,2015,725.691,9.986,2.529,24.52,11.831,6.25,23.052,Low income
+RUS,Russian Federation,2024,14961.897,30.841,8.435,26.48,2.43,NA,NA,Upper middle income
+RWA,Rwanda,2012,697.76,13.878,10.271,23.61,11.671,8.996,18.73,Low income
+RWA,Rwanda,2016,721.259,10.669,7.174,26.197,11.788,12.88,7.583,Low income
 RWA,Rwanda,2020,802.639,15.19,9.85,18.186,11.829,-9.576,-3.634,Low income
-RWA,Rwanda,2025,1123.739,NA,5.913,34.126,11.363,-15.543,-8.956,Low income
-SAU,Saudi Arabia,2010,22028.39,45.015,5.339,30.926,5.55,4.354,6.565,High income
-SAU,Saudi Arabia,2015,23256.155,24.842,1.223,32.434,5.6,0.484,-2.477,High income
+RWA,Rwanda,2024,1059.937,22.778,1.77,34.721,11.331,22.621,5.17,Low income
+SAU,Saudi Arabia,2012,28733.438,49.554,2.866,26.458,5.622,3.108,7.766,High income
+SAU,Saudi Arabia,2016,22267.722,24.569,2.053,28.117,5.6,6.864,-18.112,High income
 SAU,Saudi Arabia,2020,24338.831,19.989,3.372,23.316,7.66,-9.919,-19.931,High income
-SAU,Saudi Arabia,2025,34536.656,28.897,2.084,31.625,3.038,8.904,4.675,High income
-SDN,Sudan,2010,1305.636,28.101,12.978,20.399,15.168,9.0,6.773,Low income
-SDN,Sudan,2015,1292.38,8.106,16.91,12.808,14.39,-2.0,8.601,Low income
+SAU,Saudi Arabia,2024,35527.786,30.38,1.688,31.676,3.518,2.482,7.415,High income
+SDN,Sudan,2012,1019.222,9.957,35.559,19.724,16.973,-76.6,-6.0,Low income
+SDN,Sudan,2016,1033.216,9.513,17.75,9.306,13.656,-3.04,27.0,Low income
 SDN,Sudan,2020,577.795,4.65,163.258,5.787,11.995,5.234,-9.0,Low income
-SDN,Sudan,2025,1164.54,NA,NA,0.734,NA,75.0,35.0,Low income
-SEN,Senegal,2010,1275.884,16.283,1.229,20.087,2.795,-0.802,-1.388,Lower middle income
-SEN,Senegal,2015,1218.006,20.54,0.135,25.833,6.757,9.362,7.737,Lower middle income
+SDN,Sudan,2024,984.608,NA,NA,2.887,NA,-30.0,-21.5,Low income
+SEN,Senegal,2012,1326.838,15.846,1.418,24.624,3.896,7.265,5.179,Lower middle income
+SEN,Senegal,2016,1266.44,21.155,0.837,25.362,4.455,4.148,6.748,Lower middle income
 SEN,Senegal,2020,1461.087,24.739,2.543,35.633,3.432,-13.23,6.978,Lower middle income
-SEN,Senegal,2025,1954.712,NA,1.459,26.877,2.735,28.936,-0.473,Lower middle income
-SGP,Singapore,2010,47236.683,50.592,2.829,27.658,4.12,17.788,16.307,High income
-SGP,Singapore,2015,55645.607,44.046,-0.522,25.353,3.79,4.968,3.381,High income
+SEN,Senegal,2024,1738.732,NA,0.805,34.727,2.788,9.297,-5.863,Lower middle income
+SGP,Singapore,2012,55547.555,47.253,4.581,29.263,3.72,1.397,2.582,High income
+SGP,Singapore,2016,57204.034,45.236,-0.53,26.343,4.08,0.03,-0.159,High income
 SGP,Singapore,2020,61772.504,42.081,-0.172,22.931,4.1,-0.64,-2.101,High income
-SGP,Singapore,2025,98813.979,39.976,0.903,22.486,2.818,10.787,11.857,High income
-SLB,Solomon Islands,2010,1685.145,13.789,1.051,17.944,1.617,32.725,52.229,Lower middle income
-SLB,Solomon Islands,2015,2045.477,11.436,-0.574,15.945,0.736,-6.465,0.776,Lower middle income
+SGP,Singapore,2024,94896.562,40.451,2.39,21.849,2.737,5.657,6.743,High income
+SLB,Solomon Islands,2012,2066.257,15.517,5.912,14.618,0.984,13.986,2.0,Lower middle income
+SLB,Solomon Islands,2016,2082.624,9.711,0.512,17.217,0.736,10.702,4.115,Lower middle income
 SLB,Solomon Islands,2020,2063.328,18.634,2.964,16.724,0.868,-21.846,-37.05,Lower middle income
-SLB,Solomon Islands,2025,2086.19,NA,3.365,NA,1.431,NA,NA,Lower middle income
-SLE,Sierra Leone,2010,685.04,34.038,7.186,34.434,4.34,19.427,21.9,Low income
-SLE,Sierra Leone,2015,964.576,9.079,6.689,18.061,4.483,-22.533,-24.408,Low income
+SLB,Solomon Islands,2024,1933.555,1.081,4.322,19.459,1.444,7.83,14.199,Lower middle income
+SLE,Sierra Leone,2012,937.504,17.504,6.588,29.41,4.378,133.776,10.196,Low income
+SLE,Sierra Leone,2016,844.416,13.459,10.886,17.662,4.182,20.616,24.264,Low income
 SLE,Sierra Leone,2020,845.278,10.555,13.447,15.341,3.509,-0.538,-23.827,Low income
-SLE,Sierra Leone,2025,846.296,NA,7.488,23.197,3.15,8.3,11.7,Low income
-SLV,El Salvador,2010,3040.073,13.783,1.179,16.672,4.893,13.432,8.935,Upper middle income
-SLV,El Salvador,2015,3790.341,12.326,-0.731,16.017,3.998,3.28,4.66,Upper middle income
+SLE,Sierra Leone,2024,806.655,19.181,28.634,20.456,3.103,129.184,30.727,Low income
+SLV,El Salvador,2012,3497.913,11.912,1.73,17.71,3.843,0.452,1.126,Upper middle income
+SLV,El Salvador,2016,3901.34,13.69,0.604,15.968,4.418,0.203,-0.516,Upper middle income
 SLV,El Salvador,2020,3997.193,18.293,-0.372,17.212,5.008,-24.069,-14.427,Upper middle income
-SLV,El Salvador,2025,5766.726,22.79,0.258,26.332,3.303,3.741,11.239,Upper middle income
-SMR,San Marino,2010,56543.191,NA,2.585,NA,NA,NA,NA,High income
-SMR,San Marino,2015,43146.804,NA,0.146,12.086,NA,NA,NA,High income
+SLV,El Salvador,2024,5503.103,17.357,0.854,20.122,3.261,5.547,6.208,Upper middle income
+SMR,San Marino,2012,47945.892,NA,2.827,NA,NA,NA,NA,High income
+SMR,San Marino,2016,44359.457,NA,0.644,15.769,NA,1.715,2.645,High income
 SMR,San Marino,2020,44426.626,31.469,-0.133,18.051,NA,-7.136,-9.245,High income
-SMR,San Marino,2025,NA,NA,2.295,NA,NA,NA,NA,High income
-SOM,Somalia,2010,219.202,NA,NA,NA,18.741,NA,NA,Low income
-SOM,Somalia,2015,445.583,NA,NA,13.148,18.495,7.139,5.436,Low income
+SMR,San Marino,2024,NA,NA,1.242,NA,NA,NA,NA,High income
+SOM,Somalia,2012,350.262,NA,NA,15.736,18.771,NA,NA,Low income
+SOM,Somalia,2016,460.928,NA,NA,12.846,18.611,0.24,6.215,Low income
 SOM,Somalia,2020,518.161,NA,NA,16.006,19.414,1.802,4.878,Low income
-SOM,Somalia,2025,661.174,NA,NA,28.114,18.948,-1.201,4.1,Low income
-STP,Sao Tome and Principe,2010,1045.21,-32.818,13.34,25.716,14.628,22.591,22.452,Lower middle income
-STP,Sao Tome and Principe,2015,1298.109,-19.997,5.246,14.55,10.591,19.189,-4.739,Lower middle income
+SOM,Somalia,2024,629.539,NA,NA,26.749,18.949,42.26,28.51,Low income
+STP,Sao Tome and Principe,2012,1210.793,-39.173,10.638,16.556,13.59,2.836,-1.559,Lower middle income
+STP,Sao Tome and Principe,2016,1434.87,-14.282,5.431,13.102,9.684,-24.864,-4.75,Lower middle income
 STP,Sao Tome and Principe,2020,2167.22,-4.388,9.819,11.805,9.679,-32.559,-13.381,Lower middle income
-STP,Sao Tome and Principe,2025,4084.401,NA,11.047,8.742,9.132,-12.185,23.284,Lower middle income
-SUR,Suriname,2010,7943.605,50.34,6.941,36.204,7.15,NA,NA,Upper middle income
-SUR,Suriname,2015,8813.617,NA,6.894,NA,7.22,NA,NA,Upper middle income
+STP,Sao Tome and Principe,2024,3502.618,9.019,14.352,6.921,9.057,6.787,-4.43,Lower middle income
+SUR,Suriname,2012,8851.241,NA,5.007,NA,8.1,NA,NA,Upper middle income
+SUR,Suriname,2016,5644.206,NA,55.412,NA,7.917,NA,NA,Upper middle income
 SUR,Suriname,2020,4755.392,NA,34.89,NA,8.973,NA,NA,Upper middle income
-SUR,Suriname,2025,7069.872,NA,9.205,NA,7.834,NA,NA,Upper middle income
-SVK,Slovakia,2010,16899.449,21.468,0.957,25.378,14.387,18.037,17.601,High income
-SVK,Slovakia,2015,16442.076,24.729,-0.325,25.778,11.492,6.752,9.139,High income
+SUR,Suriname,2024,6961.79,NA,16.23,NA,7.621,NA,NA,Upper middle income
+SVK,Slovakia,2012,17516.969,23.173,3.606,21.475,13.966,9.21,2.21,High income
+SVK,Slovakia,2016,16636.077,22.835,-0.52,24.539,9.679,4.902,4.647,High income
 SVK,Slovakia,2020,19735.486,19.643,1.937,20.227,6.719,-6.355,-7.903,High income
-SVK,Slovakia,2025,28543.665,16.229,4.0,20.084,5.359,3.983,3.713,High income
-SVN,Slovenia,2010,23329.842,22.312,1.801,22.56,7.236,10.323,6.952,High income
-SVN,Slovenia,2015,20697.275,23.617,-0.526,19.469,8.962,5.43,5.273,High income
+SVK,Slovakia,2024,25992.675,15.856,2.758,20.126,5.3,0.022,2.601,High income
+SVN,Slovenia,2012,22442.142,20.675,2.597,18.861,8.841,0.747,-3.175,High income
+SVN,Slovenia,2016,21447.838,24.156,-0.055,18.848,8.0,6.43,6.627,High income
 SVN,Slovenia,2020,25392.065,27.853,-0.055,20.19,4.971,-8.531,-9.117,High income
-SVN,Slovenia,2025,37376.222,25.496,2.373,22.029,3.175,0.303,2.115,High income
-SWE,Sweden,2010,52542.576,28.375,1.158,22.422,8.61,11.051,12.176,High income
-SWE,Sweden,2015,51188.165,26.161,-0.047,23.791,7.432,5.09,5.792,High income
+SVN,Slovenia,2024,34301.032,26.19,1.966,21.534,3.7,2.336,4.286,High income
+SWE,Sweden,2012,57749.562,26.733,0.888,21.994,7.976,0.708,0.551,High income
+SWE,Sweden,2016,51703.509,25.739,0.984,24.349,6.99,3.061,5.63,High income
 SWE,Sweden,2020,52568.573,29.982,0.497,24.421,8.291,-5.428,-6.302,High income
-SWE,Sweden,2025,63133.213,30.618,0.68,25.467,8.694,3.933,4.34,High income
-SWZ,Swaziland,2010,3922.74,NA,4.509,NA,26.856,NA,NA,Lower middle income
-SWZ,Swaziland,2015,3419.823,30.668,4.951,17.222,23.431,-1.847,-2.102,Lower middle income
+SWE,Sweden,2024,57222.71,31.248,2.836,25.119,8.4,2.614,2.452,High income
+SWZ,Swaziland,2012,4224.548,NA,8.94,NA,25.226,NA,NA,Lower middle income
+SWZ,Swaziland,2016,3238.176,25.426,7.847,17.358,22.718,3.304,4.398,Lower middle income
 SWZ,Swaziland,2020,3466.569,22.503,NA,15.29,32.978,-5.154,-5.309,Lower middle income
-SWZ,Swaziland,2025,4108.252,NA,NA,NA,34.202,NA,NA,Lower middle income
-SYC,Seychelles,2010,10934.795,16.566,-2.405,37.031,NA,-4.751,9.078,High income
-SYC,Seychelles,2015,15333.105,11.879,4.042,26.88,NA,-1.037,-7.095,High income
+SWZ,Swaziland,2024,3909.559,17.657,NA,14.972,34.643,14.331,7.147,Lower middle income
+SYC,Seychelles,2012,12337.155,23.583,7.11,37.73,NA,12.847,16.284,High income
+SYC,Seychelles,2016,16566.995,7.39,-1.015,25.135,NA,6.289,9.981,High income
 SYC,Seychelles,2020,14041.475,-3.578,1.203,21.321,NA,-28.432,-15.239,High income
-SYC,Seychelles,2025,19449.384,NA,0.298,18.711,NA,5.403,3.798,High income
-SYR,Syria,2010,2730.615,15.842,4.397,NA,8.61,11.188,15.115,Low income
-SYR,Syria,2015,847.732,NA,38.461,NA,14.244,-4.455,-1.588,Low income
+SYC,Seychelles,2024,18364.526,2.54,0.312,21.304,NA,-0.751,1.864,High income
+SYR,Syria,2012,1897.661,NA,36.702,NA,13.8,-67.159,-45.525,Low income
+SYR,Syria,2016,656.349,NA,47.705,NA,13.798,-4.439,-2.503,Low income
 SYR,Syria,2020,593.912,NA,NA,NA,15.179,47.102,-11.772,Low income
-SYR,Syria,2025,NA,NA,NA,NA,13.569,NA,NA,Low income
-TCD,Chad,2010,1141.801,NA,-2.078,21.854,0.911,4.933,9.981,Low income
-TCD,Chad,2015,993.991,NA,4.377,22.892,1.032,42.648,8.538,Low income
+SYR,Syria,2024,NA,NA,NA,NA,13.359,NA,NA,Low income
+TCD,Chad,2012,1354.343,NA,7.517,24.927,0.886,13.588,-2.004,Low income
+TCD,Chad,2016,861.832,NA,-0.792,18.359,1.091,-14.23,-10.011,Low income
 TCD,Chad,2020,866.948,NA,4.464,22.787,1.695,0.065,-13.482,Low income
-TCD,Chad,2025,1022.336,NA,-3.912,20.357,1.057,13.823,11.765,Low income
-TGO,Togo,2010,750.323,11.501,1.446,15.84,2.379,14.31,11.014,Low income
-TGO,Togo,2015,813.895,17.425,2.585,25.185,2.204,-1.775,10.073,Low income
+TCD,Chad,2024,980.668,NA,8.9,19.582,1.053,1.051,-1.006,Low income
+TGO,Togo,2012,813.612,12.545,2.577,17.696,2.029,10.087,-2.906,Low income
+TGO,Togo,2016,843.114,13.519,1.285,20.157,2.968,6.34,-1.048,Low income
 TGO,Togo,2020,961.22,19.526,1.699,19.811,2.231,1.884,4.488,Low income
-TGO,Togo,2025,1383.9,NA,0.433,NA,1.995,NA,NA,Low income
-THA,Thailand,2010,4973.863,29.628,3.248,25.357,0.622,14.22,22.956,Upper middle income
-THA,Thailand,2015,5688.853,28.044,-0.898,22.356,0.597,1.25,0.004,Upper middle income
+TGO,Togo,2024,1266.088,NA,2.863,NA,1.948,NA,NA,Low income
+THA,Thailand,2012,5725.528,28.931,3.009,28.024,0.58,3.662,5.629,Upper middle income
+THA,Thailand,2016,5833.577,30.077,0.186,21.105,0.688,2.696,-0.992,Upper middle income
 THA,Thailand,2020,6983.034,28.259,-0.846,23.764,1.099,-19.967,-13.911,Upper middle income
-THA,Thailand,2025,8056.564,23.935,-0.134,22.071,0.781,9.215,6.654,Upper middle income
-TJK,Tajikistan,2010,737.339,11.776,6.445,23.846,7.037,23.0,8.0,Lower middle income
-TJK,Tajikistan,2015,956.916,41.67,5.715,44.689,7.033,0.0,0.006,Lower middle income
+THA,Thailand,2024,7386.636,24.09,0.398,21.453,0.781,7.522,5.67,Upper middle income
+TJK,Tajikistan,2012,952.453,11.487,5.831,23.267,7.022,1.0,1.2,Lower middle income
+TJK,Tajikistan,2016,788.71,32.305,6.005,40.522,7.036,15.1,-7.5,Lower middle income
 TJK,Tajikistan,2020,834.312,36.065,NA,33.475,7.576,21.8,-0.4,Lower middle income
-TJK,Tajikistan,2025,1637.254,NA,NA,NA,6.931,NA,NA,Lower middle income
-TKM,Turkmenistan,2010,4058.539,NA,NA,NA,4.0,NA,NA,Upper middle income
-TKM,Turkmenistan,2015,5759.498,NA,NA,NA,4.016,NA,NA,Upper middle income
+TJK,Tajikistan,2024,1362.026,38.752,NA,32.425,7.041,-25.3,2.6,Lower middle income
+TKM,Turkmenistan,2012,6053.875,NA,NA,NA,3.994,NA,NA,Upper middle income
+TKM,Turkmenistan,2016,5238.008,NA,NA,NA,4.026,NA,NA,Upper middle income
 TKM,Turkmenistan,2020,3935.377,NA,NA,NA,4.489,NA,NA,Upper middle income
-TKM,Turkmenistan,2025,6540.179,NA,NA,NA,4.267,NA,NA,Upper middle income
-TON,Tonga,2010,3416.084,15.27,3.535,29.155,1.501,-6.383,2.61,Upper middle income
-TON,Tonga,2015,4123.903,9.122,-1.054,25.361,2.022,8.234,22.666,Upper middle income
+TKM,Turkmenistan,2024,5904.258,NA,NA,NA,4.02,NA,NA,Upper middle income
+TON,Tonga,2012,4384.171,23.699,1.148,36.424,1.638,29.478,5.323,Upper middle income
+TON,Tonga,2016,3987.986,14.717,2.578,24.69,2.048,27.953,16.952,Upper middle income
 TON,Tonga,2020,4792.359,20.793,-0.35,24.573,2.712,-3.13,-5.296,Upper middle income
-TON,Tonga,2025,6547.186,NA,5.593,NA,2.008,NA,NA,Upper middle income
-TTO,Trinidad and Tobago,2010,16815.425,NA,10.549,23.142,4.033,NA,NA,High income
-TTO,Trinidad and Tobago,2015,19887.233,NA,4.661,25.511,2.428,NA,NA,High income
+TON,Tonga,2024,6215.39,18.541,3.182,26.39,1.965,9.018,0.835,Upper middle income
+TTO,Trinidad and Tobago,2012,20332.139,NA,9.26,20.811,3.718,NA,NA,High income
+TTO,Trinidad and Tobago,2016,17449.154,NA,3.071,19.555,3.207,NA,NA,High income
 TTO,Trinidad and Tobago,2020,15283.627,NA,0.599,20.515,4.206,NA,NA,High income
-TTO,Trinidad and Tobago,2025,18967.27,NA,0.994,NA,3.329,NA,NA,High income
-TUN,Tunisia,2010,4291.861,21.428,3.339,25.836,13.049,26.769,45.809,Lower middle income
-TUN,Tunisia,2015,4014.948,12.945,4.437,21.739,15.159,-4.648,-2.246,Lower middle income
+TTO,Trinidad and Tobago,2024,18733.411,NA,0.527,NA,3.318,NA,NA,High income
+TUN,Tunisia,2012,4297.268,16.89,4.612,26.097,17.63,4.158,4.632,Lower middle income
+TUN,Tunisia,2016,3847.804,11.665,3.629,20.475,15.557,0.531,1.89,Lower middle income
 TUN,Tunisia,2020,3548.654,5.62,5.634,12.688,17.651,-20.04,-16.554,Lower middle income
-TUN,Tunisia,2025,4656.638,NA,5.151,15.232,15.108,6.975,10.089,Lower middle income
-TUR,Turkey,2010,10698.97,24.044,8.566,28.452,11.879,2.321,19.337,Upper middle income
-TUR,Turkey,2015,11064.649,27.792,7.671,30.063,10.304,5.056,2.134,Upper middle income
+TUN,Tunisia,2024,4187.641,5.49,7.207,7.858,15.341,-1.569,3.78,Lower middle income
+TUR,Turkey,2012,11776.759,25.445,8.892,29.422,9.21,15.024,0.34,Upper middle income
+TUR,Turkey,2016,10984.364,27.348,7.775,29.829,10.899,-2.196,2.924,Upper middle income
 TUR,Turkey,2020,8798.118,30.093,12.279,34.154,13.148,-16.413,6.843,Upper middle income
-TUR,Turkey,2025,18599.442,NA,34.881,31.667,8.52,-0.319,4.934,Upper middle income
-TUV,Tuvalu,2010,3054.962,NA,NA,NA,NA,NA,NA,Upper middle income
-TUV,Tuvalu,2015,3352.667,NA,NA,NA,NA,NA,NA,Upper middle income
+TUR,Turkey,2024,15892.716,29.914,58.506,30.731,8.8,0.073,-4.397,Upper middle income
+TUV,Tuvalu,2012,3558.897,NA,NA,NA,NA,NA,NA,Upper middle income
+TUV,Tuvalu,2016,3779.153,NA,NA,NA,NA,NA,NA,Upper middle income
 TUV,Tuvalu,2020,5029.572,NA,NA,NA,NA,NA,NA,Upper middle income
-TUV,Tuvalu,2025,6041.449,NA,NA,NA,NA,NA,NA,Upper middle income
-TZA,Tanzania,2010,736.53,25.073,6.2,32.017,3.03,6.326,14.582,Lower middle income
-TZA,Tanzania,2015,939.127,25.695,5.588,32.759,2.009,1.348,-5.222,Lower middle income
+TUV,Tuvalu,2024,5883.503,NA,NA,NA,NA,NA,NA,Upper middle income
+TZA,Tanzania,2012,861.97,22.237,16.001,34.845,3.223,15.274,-0.601,Lower middle income
+TZA,Tanzania,2016,953.011,29.854,5.175,32.175,1.931,-0.004,-8.895,Lower middle income
 TZA,Tanzania,2020,1117.415,36.434,3.29,38.746,1.792,-8.602,-7.584,Lower middle income
-TZA,Tanzania,2025,1318.819,NA,3.327,40.682,1.572,-5.022,2.526,Lower middle income
-UGA,Uganda,2010,823.488,18.691,3.977,27.104,3.623,-8.961,-2.081,Low income
-UGA,Uganda,2015,862.935,16.579,5.59,23.86,2.681,-2.37,14.157,Low income
+TZA,Tanzania,2024,1192.607,36.506,3.057,39.568,1.557,16.351,9.219,Lower middle income
+UGA,Uganda,2012,795.223,18.542,12.679,26.177,3.551,13.987,5.96,Low income
+UGA,Uganda,2016,752.697,24.195,5.706,25.415,3.002,2.933,-8.836,Low income
 UGA,Uganda,2020,845.766,21.809,3.313,24.216,3.819,-1.17,0.443,Low income
-UGA,Uganda,2025,1206.305,NA,3.581,22.646,2.746,23.604,11.682,Low income
-UKR,Ukraine,2010,3039.632,13.944,9.373,18.372,8.1,2.311,10.001,Lower middle income
-UKR,Ukraine,2015,2094.474,21.457,48.7,15.933,9.14,-13.165,-16.672,Lower middle income
+UGA,Uganda,2024,1077.913,24.697,3.323,22.4,2.74,47.059,9.545,Low income
+UKR,Ukraine,2012,3951.342,12.298,0.569,19.615,7.529,-5.49,3.858,Lower middle income
+UKR,Ukraine,2016,2158.461,19.732,13.913,21.724,9.35,-1.818,9.301,Lower middle income
 UKR,Ukraine,2020,3709.769,12.22,2.732,8.932,9.475,-5.81,-6.353,Lower middle income
-UKR,Ukraine,2025,5865.885,NA,12.73,20.779,NA,-12.82,8.321,Lower middle income
-URY,Uruguay,2010,12641.058,17.147,6.699,19.408,7.158,7.179,13.578,High income
-URY,Uruguay,2015,17125.902,15.207,8.666,19.705,7.488,-0.6,-7.265,High income
+UKR,Ukraine,2024,5391.623,11.252,6.502,19.224,NA,10.302,12.54,Lower middle income
+URY,Uruguay,2012,16259.594,12.819,8.098,22.915,6.451,3.642,13.638,High income
+URY,Uruguay,2016,17009.758,18.275,9.639,17.389,7.841,-0.241,-6.555,High income
 URY,Uruguay,2020,15757.534,15.612,9.756,16.234,10.413,-14.311,-11.195,High income
-URY,Uruguay,2025,25215.824,15.525,4.65,16.178,7.516,1.904,4.105,High income
-USA,United States,2010,48642.631,15.383,1.64,18.672,9.633,12.649,12.969,High income
-USA,United States,2015,56849.47,19.698,0.119,21.415,5.28,0.32,5.191,High income
+URY,Uruguay,2024,24308.495,15.061,4.849,15.923,8.209,8.873,-1.413,High income
+USA,United States,2012,51708.394,18.379,2.069,19.951,8.069,4.018,2.448,High income
+USA,United States,2016,57976.628,18.559,1.262,20.888,4.869,0.474,1.457,High income
 USA,United States,2020,64465.297,18.384,1.234,21.438,8.055,-12.623,-8.823,High income
-USA,United States,2025,90026.516,NA,NA,NA,4.198,NA,NA,High income
-UZB,Uzbekistan,2010,1956.781,27.917,NA,25.544,5.36,8.035,-4.156,Lower middle income
-UZB,Uzbekistan,2015,3172.899,21.845,8.752,24.425,5.15,2.162,-10.562,Lower middle income
+USA,United States,2024,86169.664,16.605,2.95,21.533,4.022,3.643,5.769,High income
+UZB,Uzbekistan,2012,2573.956,28.391,13.209,28.062,4.87,-5.114,7.825,Lower middle income
+UZB,Uzbekistan,2016,3128.423,19.73,8.131,23.796,5.16,4.294,-1.262,Lower middle income
 UZB,Uzbekistan,2020,2087.964,31.661,12.868,35.619,5.293,-20.107,-14.856,Lower middle income
-UZB,Uzbekistan,2025,3968.272,29.538,8.796,33.278,4.622,2.515,7.678,Lower middle income
-VCT,Saint Vincent and the Grenadines,2010,6551.968,NA,0.747,NA,19.924,NA,NA,Upper middle income
-VCT,Saint Vincent and the Grenadines,2015,7353.736,NA,-1.734,NA,19.135,NA,NA,Upper middle income
+UZB,Uzbekistan,2024,3337.455,29.664,9.628,39.047,4.439,-5.925,-1.463,Lower middle income
+VCT,Saint Vincent and the Grenadines,2012,6713.808,NA,2.598,NA,19.833,NA,NA,Upper middle income
+VCT,Saint Vincent and the Grenadines,2016,7656.9,NA,-0.15,NA,19.029,NA,NA,Upper middle income
 VCT,Saint Vincent and the Grenadines,2020,8351.203,NA,-0.628,NA,20.635,NA,NA,Upper middle income
-VCT,Saint Vincent and the Grenadines,2025,12561.769,NA,0.815,NA,18.003,NA,NA,Upper middle income
-VEN,Venezuela,2010,13646.305,98.537,28.187,0.0,7.112,-12.877,-2.891,Not classified
-VEN,Venezuela,2015,4096.62,34.328,121.738,19.434,6.139,-1.08,-23.447,Not classified
+VCT,Saint Vincent and the Grenadines,2024,11501.227,NA,3.628,NA,18.093,NA,NA,Upper middle income
+VEN,Venezuela,2012,12582.013,28.539,21.069,23.873,6.601,1.594,24.396,Not classified
+VEN,Venezuela,2016,3671.23,25.224,254.949,10.251,5.319,-11.789,-49.942,Not classified
 VEN,Venezuela,2020,1506.042,NA,NA,9.206,7.53,-59.516,-52.633,Not classified
-VEN,Venezuela,2025,3494.814,NA,NA,5.927,5.307,4.425,-16.878,Not classified
-VNM,Vietnam,2010,1683.162,33.436,9.207,37.099,1.114,8.45,8.223,Lower middle income
-VNM,Vietnam,2015,2577.569,28.073,0.631,32.109,1.848,13.866,15.723,Lower middle income
+VEN,Venezuela,2024,4244.457,NA,NA,4.865,5.321,13.568,12.857,Not classified
+VNM,Vietnam,2012,2185.118,34.865,9.095,30.559,1.027,15.041,11.188,Lower middle income
+VNM,Vietnam,2016,2735.06,28.469,2.668,31.725,1.848,11.004,11.296,Lower middle income
 VNM,Vietnam,2020,3534.04,33.007,3.221,31.916,2.103,4.063,3.284,Lower middle income
-VNM,Vietnam,2025,5065.991,NA,3.31,30.795,1.523,16.275,17.122,Lower middle income
-VUT,Vanuatu,2010,2815.188,17.796,2.763,37.007,4.681,1.024,-0.003,Lower middle income
-VUT,Vanuatu,2015,3214.419,13.801,2.483,28.232,5.168,6.354,26.389,Lower middle income
+VNM,Vietnam,2024,4716.66,37.041,3.621,30.585,1.602,15.643,16.086,Lower middle income
+VUT,Vanuatu,2012,3004.784,14.847,1.347,24.088,4.936,-1.501,-0.003,Lower middle income
+VUT,Vanuatu,2016,3339.834,19.284,0.842,28.884,5.197,18.417,3.647,Lower middle income
 VUT,Vanuatu,2020,3404.304,4.929,5.329,18.673,4.046,-66.391,21.881,Lower middle income
-VUT,Vanuatu,2025,4038.735,NA,0.656,NA,5.073,NA,NA,Lower middle income
-WSM,Samoa,2010,3524.248,29.51,0.777,14.645,5.621,-1.652,4.751,Lower middle income
-WSM,Samoa,2015,4084.361,30.886,0.724,35.862,8.901,1.215,-4.02,Lower middle income
+VUT,Vanuatu,2024,3959.877,NA,1.143,26.086,4.988,8.259,6.303,Lower middle income
+WSM,Samoa,2012,3934.603,31.28,2.049,40.299,8.752,-7.354,8.009,Lower middle income
+WSM,Samoa,2016,4147.071,34.107,1.305,35.465,9.063,13.476,3.227,Lower middle income
 WSM,Samoa,2020,4099.597,33.661,-1.569,33.191,7.467,-20.512,-1.919,Lower middle income
-WSM,Samoa,2025,5872.783,30.028,2.212,30.036,4.996,-2.559,-2.894,Lower middle income
-YEM,Yemen,2010,1155.203,8.25,11.175,11.661,12.777,14.051,-6.811,Low income
-YEM,Yemen,2015,1362.174,-5.09,NA,1.656,17.9,-68.382,-43.812,Low income
+WSM,Samoa,2024,5392.878,30.01,2.172,29.021,4.855,7.674,-1.634,Lower middle income
+YEM,Yemen,2012,1245.051,8.051,9.885,8.704,13.473,-16.09,14.219,Low income
+YEM,Yemen,2016,975.359,-4.507,NA,1.429,18.42,-64.617,-1.584,Low income
 YEM,Yemen,2020,NA,NA,NA,NA,17.963,NA,NA,Low income
-YEM,Yemen,2025,NA,NA,NA,NA,17.322,NA,NA,Low income
-ZAF,South Africa,2010,7973.472,17.142,4.067,17.596,24.683,7.718,10.794,Upper middle income
-ZAF,South Africa,2015,6112.274,14.289,4.519,18.633,25.149,3.06,5.045,Upper middle income
+YEM,Yemen,2024,NA,NA,NA,NA,16.97,NA,NA,Low income
+ZAF,South Africa,2012,8076.977,13.497,5.738,18.585,24.727,1.112,3.868,Upper middle income
+ZAF,South Africa,2016,5651.206,14.288,6.603,16.96,26.536,0.408,-4.133,Upper middle income
 ZAF,South Africa,2020,5580.604,14.308,3.232,12.346,29.217,-12.004,-17.572,Upper middle income
-ZAF,South Africa,2025,6597.715,12.907,3.206,13.871,32.391,-2.453,1.144,Upper middle income
-ZMB,Zambia,2010,1451.106,31.433,8.502,29.878,13.19,17.244,43.937,Lower middle income
-ZMB,Zambia,2015,1295.878,37.724,10.111,42.805,5.951,NA,NA,Lower middle income
+ZAF,South Africa,2024,6267.187,13.582,4.361,14.07,32.279,-2.754,-6.407,Upper middle income
+ZMB,Zambia,2012,1710.051,40.976,6.576,31.518,7.85,NA,NA,Lower middle income
+ZMB,Zambia,2016,1239.085,37.356,17.87,38.206,5.244,NA,NA,Lower middle income
 ZMB,Zambia,2020,951.644,44.95,15.733,32.245,6.032,NA,NA,Lower middle income
-ZMB,Zambia,2025,1317.878,NA,13.91,NA,5.918,NA,NA,Lower middle income
-ZWE,Zimbabwe,2010,902.011,1.507,3.023,18.763,5.469,45.779,21.116,Lower middle income
-ZWE,Zimbabwe,2015,1387.126,-0.991,-2.431,10.036,5.399,48.411,80.606,Lower middle income
+ZMB,Zambia,2024,1187.109,32.157,14.986,23.788,5.898,NA,NA,Lower middle income
+ZWE,Zimbabwe,2012,1239.227,-6.75,3.725,9.856,5.057,-3.274,19.905,Lower middle income
+ZWE,Zimbabwe,2016,1408.139,-1.224,-1.544,9.862,5.896,21.001,-3.276,Lower middle income
 ZWE,Zimbabwe,2020,2059.637,9.777,557.202,7.345,8.617,-48.949,-44.099,Lower middle income
-ZWE,Zimbabwe,2025,3021.43,NA,NA,NA,9.293,NA,NA,Lower middle income
+ZWE,Zimbabwe,2024,2496.155,10.705,NA,8.85,9.435,1.3,0.5,Lower middle income

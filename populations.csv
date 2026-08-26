@@ -1,861 +1,861 @@
-country_code,country,year,fertility_rate,life_expectancy,size,official_state_name,sovereignty,continent,region
-ABW,Aruba,2010,1.855,74.297,101838,Aruba,Netherlands,North America,Caribbean
-ABW,Aruba,2015,1.899,75.405,107906,Aruba,Netherlands,North America,Caribbean
-ABW,Aruba,2020,1.662,75.406,108587,Aruba,Netherlands,North America,Caribbean
-ABW,Aruba,2025,,,108785,Aruba,Netherlands,North America,Caribbean
-AFG,Afghanistan,2010,6.195,60.702,28284089,The Islamic Republic of Afghanistan,UN member,Asia,Southern and Central Asia
-AFG,Afghanistan,2015,5.652,62.27,33831764,The Islamic Republic of Afghanistan,UN member,Asia,Southern and Central Asia
-AFG,Afghanistan,2020,5.145,61.454,39068979,The Islamic Republic of Afghanistan,UN member,Asia,Southern and Central Asia
-AFG,Afghanistan,2025,,,43844111,The Islamic Republic of Afghanistan,UN member,Asia,Southern and Central Asia
-AGO,Angola,2010,6.194,57.242,23294825,The Republic of Angola,UN member,Africa,Central Africa
-AGO,Angola,2015,5.774,61.042,28157798,The Republic of Angola,UN member,Africa,Central Africa
-AGO,Angola,2020,5.371,63.116,33451132,The Republic of Angola,UN member,Africa,Central Africa
-AGO,Angola,2025,,,39040039,The Republic of Angola,UN member,Africa,Central Africa
-ALB,Albania,2010,1.653,78.414,2913021,The Republic of Albania,UN member,Europe,Southern Europe
-ALB,Albania,2015,1.631,78.358,2731293,The Republic of Albania,UN member,Europe,Southern Europe
-ALB,Albania,2020,1.371,77.824,2528480,The Republic of Albania,UN member,Europe,Southern Europe
-ALB,Albania,2025,,,2349580,The Republic of Albania,UN member,Europe,Southern Europe
-AND,Andorra,2010,1.275,84.197,80706,The Principality of Andorra,UN member,Europe,Southern Europe
-AND,Andorra,2015,1.223,84.532,72174,The Principality of Andorra,UN member,Europe,Southern Europe
-AND,Andorra,2020,1.028,79.418,77380,The Principality of Andorra,UN member,Europe,Southern Europe
-AND,Andorra,2025,,,82904,The Principality of Andorra,UN member,Europe,Southern Europe
-ARE,United Arab Emirates,2010,1.565,81.886,6869838,The United Arab Emirates,UN member,Asia,Middle East
-ARE,United Arab Emirates,2015,1.417,82.076,8505237,The United Arab Emirates,UN member,Asia,Middle East
-ARE,United Arab Emirates,2020,1.289,81.936,9401038,The United Arab Emirates,UN member,Asia,Middle East
-ARE,United Arab Emirates,2025,,,11513149,The United Arab Emirates,UN member,Asia,Middle East
-ARG,Argentina,2010,2.411,75.68,41288694,The Argentine Republic,UN member,South America,South America
-ARG,Argentina,2015,2.35,76.6,43477012,The Argentine Republic,UN member,South America,South America
-ARG,Argentina,2020,1.601,75.878,45191965,The Argentine Republic,UN member,South America,South America
-ARG,Argentina,2025,,,45851378,The Argentine Republic,UN member,South America,South America
-ARM,Armenia,2010,1.5,73.1732,3044800,The Republic of Armenia,UN member,Asia,Middle East
-ARM,Armenia,2015,1.6,74.8707,3004600,The Republic of Armenia,UN member,Asia,Middle East
-ARM,Armenia,2020,1.7,73.3756,2961500,The Republic of Armenia,UN member,Asia,Middle East
-ARM,Armenia,2025,,,3086700,The Republic of Armenia,UN member,Asia,Middle East
-ASM,American Samoa,2010,3.292,72.587,55228,The Territory of American Samoa,United States,Oceania,Polynesia
-ASM,American Samoa,2015,2.78,72.654,52878,The Territory of American Samoa,United States,Oceania,Polynesia
-ASM,American Samoa,2020,2.36,72.672,49761,The Territory of American Samoa,United States,Oceania,Polynesia
-ASM,American Samoa,2025,,,46029,The Territory of American Samoa,United States,Oceania,Polynesia
-ATG,Antigua and Barbuda,2010,1.785,76.701,85320,Antigua and Barbuda,UN member,North America,Caribbean
-ATG,Antigua and Barbuda,2015,1.567,76.892,89409,Antigua and Barbuda,UN member,North America,Caribbean
-ATG,Antigua and Barbuda,2020,1.569,77.161,91846,Antigua and Barbuda,UN member,North America,Caribbean
-ATG,Antigua and Barbuda,2025,,,94209,Antigua and Barbuda,UN member,North America,Caribbean
-AUS,Australia,2010,1.928,81.6951,22031750,The Commonwealth of Australia,UN member,Oceania,Australia and New Zealand
-AUS,Australia,2015,1.814,82.4,23815995,The Commonwealth of Australia,UN member,Oceania,Australia and New Zealand
-AUS,Australia,2020,1.581,83.2,25649248,The Commonwealth of Australia,UN member,Oceania,Australia and New Zealand
-AUS,Australia,2025,,,27614411,The Commonwealth of Australia,UN member,Oceania,Australia and New Zealand
-AUT,Austria,2010,1.44,80.5805,8363404,The Republic of Austria,UN member,Europe,Western Europe
-AUT,Austria,2015,1.49,81.1902,8642699,The Republic of Austria,UN member,Europe,Western Europe
-AUT,Austria,2020,1.44,81.1927,8916864,The Republic of Austria,UN member,Europe,Western Europe
-AUT,Austria,2025,,,9208163,The Republic of Austria,UN member,Europe,Western Europe
-AZE,Azerbaijan,2010,1.92,70.309,9054332,The Republic of Azerbaijan,UN member,Asia,Middle East
-AZE,Azerbaijan,2015,1.94,72.349,9649341,The Republic of Azerbaijan,UN member,Asia,Middle East
-AZE,Azerbaijan,2020,1.7,70.312,10093121,The Republic of Azerbaijan,UN member,Asia,Middle East
-AZE,Azerbaijan,2025,,,10246996,The Republic of Azerbaijan,UN member,Asia,Middle East
-BDI,Burundi,2010,6.26,57.088,9376444,The Republic of Burundi,UN member,Africa,Eastern Africa
-BDI,Burundi,2015,5.695,60.107,11047580,The Republic of Burundi,UN member,Africa,Eastern Africa
-BDI,Burundi,2020,5.177,62.569,12617036,The Republic of Burundi,UN member,Africa,Eastern Africa
-BDI,Burundi,2025,,,14390003,The Republic of Burundi,UN member,Africa,Eastern Africa
-BEL,Belgium,2010,1.86,80.1829,10895586,The Kingdom of Belgium,UN member,Europe,Western Europe
-BEL,Belgium,2015,1.7,80.9927,11274196,The Kingdom of Belgium,UN member,Europe,Western Europe
-BEL,Belgium,2020,1.55,80.6951,11538604,The Kingdom of Belgium,UN member,Europe,Western Europe
-BEL,Belgium,2025,,,11941781,The Kingdom of Belgium,UN member,Europe,Western Europe
-BEN,Benin,2010,5.452,58.387,9797484,The Republic of Benin,UN member,Africa,Western Africa
-BEN,Benin,2015,5.32,59.123,11360681,The Republic of Benin,UN member,Africa,Western Africa
-BEN,Benin,2020,4.795,60.154,13070169,The Republic of Benin,UN member,Africa,Western Africa
-BEN,Benin,2025,,,14814460,The Republic of Benin,UN member,Africa,Western Africa
-BFA,Burkina Faso,2010,5.936,56.343,16176498,Burkina Faso,UN member,Africa,Western Africa
-BFA,Burkina Faso,2015,5.478,58.778,18777487,Burkina Faso,UN member,Africa,Western Africa
-BFA,Burkina Faso,2020,4.44,60.454,21478690,Burkina Faso,UN member,Africa,Western Africa
-BFA,Burkina Faso,2025,,,24074580,Burkina Faso,UN member,Africa,Western Africa
-BGD,Bangladesh,2010,2.38,68.009,152201981,The People's Republic of Bangladesh,UN member,Asia,Southern and Central Asia
-BGD,Bangladesh,2015,2.227,70.543,159383179,The People's Republic of Bangladesh,UN member,Asia,Southern and Central Asia
-BGD,Bangladesh,2020,2.175,71.421,166298024,The People's Republic of Bangladesh,UN member,Asia,Southern and Central Asia
-BGD,Bangladesh,2025,,,175686899,The People's Republic of Bangladesh,UN member,Asia,Southern and Central Asia
-BGR,Bulgaria,2010,1.57,73.5122,7395599,The Republic of Bulgaria,UN member,Europe,Eastern Europe
-BGR,Bulgaria,2015,1.64,74.6146,6984225,The Republic of Bulgaria,UN member,Europe,Eastern Europe
-BGR,Bulgaria,2020,1.77,73.3561,6550696,The Republic of Bulgaria,UN member,Europe,Eastern Europe
-BGR,Bulgaria,2025,,,6433302,The Republic of Bulgaria,UN member,Europe,Eastern Europe
-BHR,Bahrain,2010,1.987,78.593,1228543,The Kingdom of Bahrain,UN member,Asia,Middle East
-BHR,Bahrain,2015,2.113,80.338,1370322,The Kingdom of Bahrain,UN member,Asia,Middle East
-BHR,Bahrain,2020,1.86,78.683,1472204,The Kingdom of Bahrain,UN member,Asia,Middle East
-BHR,Bahrain,2025,,,1600366,The Kingdom of Bahrain,UN member,Asia,Middle East
-BHS,Bahamas,2010,1.837,73.449,367478,The Commonwealth of The Bahamas,UN member,North America,Caribbean
-BHS,Bahamas,2015,1.574,73.805,385346,The Commonwealth of The Bahamas,UN member,North America,Caribbean
-BHS,Bahamas,2020,1.386,72.994,395863,The Commonwealth of The Bahamas,UN member,North America,Caribbean
-BHS,Bahamas,2025,,,403033,The Commonwealth of The Bahamas,UN member,North America,Caribbean
-BIH,Bosnia and Herzegovina,2010,1.26,76.827,3811472,Bosnia and Herzegovina,UN member,Europe,Southern Europe
-BIH,Bosnia and Herzegovina,2015,1.322,77.073,3518541,Bosnia and Herzegovina,UN member,Europe,Southern Europe
-BIH,Bosnia and Herzegovina,2020,1.515,76.04,3299349,Bosnia and Herzegovina,UN member,Europe,Southern Europe
-BIH,Bosnia and Herzegovina,2025,,,3140095,Bosnia and Herzegovina,UN member,Europe,Southern Europe
-BLR,Belarus,2010,1.494,70.4049,9483836,The Republic of Belarus,UN member,Europe,Eastern Europe
-BLR,Belarus,2015,1.724,73.6244,9461076,The Republic of Belarus,UN member,Europe,Eastern Europe
-BLR,Belarus,2020,1.369,72.1386,9379952,The Republic of Belarus,UN member,Europe,Eastern Europe
-BLR,Belarus,2025,,,9085991,The Republic of Belarus,UN member,Europe,Eastern Europe
-BLZ,Belize,2010,2.552,70.875,320245,Belize,UN member,North America,Central America
-BLZ,Belize,2015,2.433,71.647,356333,Belize,UN member,North America,Central America
-BLZ,Belize,2020,2.04,71.58,390812,Belize,UN member,North America,Central America
-BLZ,Belize,2025,,,422924,Belize,UN member,North America,Central America
-BMU,Bermuda,2010,1.767,79.414,63725,Bermuda,United Kingdom,North America,North America
-BMU,Bermuda,2015,1.44,80.338,63464,Bermuda,United Kingdom,North America,North America
-BMU,Bermuda,2020,1.451,81.456,64382,Bermuda,United Kingdom,North America,North America
-BMU,Bermuda,2025,,,64555,Bermuda,United Kingdom,North America,North America
-BOL,Bolivia,2010,3.213,66.003,10182345,The Plurinational State of Bolivia,UN member,South America,South America
-BOL,Bolivia,2015,2.886,67.205,11014705,The Plurinational State of Bolivia,UN member,South America,South America
-BOL,Bolivia,2020,2.651,62.906,11816299,The Plurinational State of Bolivia,UN member,South America,South America
-BOL,Bolivia,2025,,,12581843,The Plurinational State of Bolivia,UN member,South America,South America
-BRA,Brazil,2010,1.786,73.779,193701929,The Federative Republic of Brazil,UN member,South America,South America
-BRA,Brazil,2015,1.777,75.106,201675532,The Federative Republic of Brazil,UN member,South America,South America
-BRA,Brazil,2020,1.653,74.506,208660842,The Federative Republic of Brazil,UN member,South America,South America
-BRA,Brazil,2025,,,212812405,The Federative Republic of Brazil,UN member,South America,South America
-BRB,Barbados,2010,1.785,75.488,275243,Barbados,UN member,North America,Caribbean
-BRB,Barbados,2015,1.726,76.055,278990,Barbados,UN member,North America,Caribbean
-BRB,Barbados,2020,1.708,76.647,281698,Barbados,UN member,North America,Caribbean
-BRB,Barbados,2025,,,282623,Barbados,UN member,North America,Caribbean
-BRN,Brunei,2010,1.937,74.82,392332,"The Nation of Brunei, the Abode of Peace",UN member,Asia,Southeast Asia
-BRN,Brunei,2015,1.947,74.88,422212,"The Nation of Brunei, the Abode of Peace",UN member,Asia,Southeast Asia
-BRN,Brunei,2020,1.796,75.114,447404,"The Nation of Brunei, the Abode of Peace",UN member,Asia,Southeast Asia
-BRN,Brunei,2025,,,466330,"The Nation of Brunei, the Abode of Peace",UN member,Asia,Southeast Asia
-BTN,Bhutan,2010,2.252,68.765,701632,The Kingdom of Bhutan,UN member,Asia,Southern and Central Asia
-BTN,Bhutan,2015,1.835,70.797,740618,The Kingdom of Bhutan,UN member,Asia,Southern and Central Asia
-BTN,Bhutan,2020,1.502,72.253,770006,The Kingdom of Bhutan,UN member,Asia,Southern and Central Asia
-BTN,Bhutan,2025,,,796682,The Kingdom of Bhutan,UN member,Asia,Southern and Central Asia
-BWA,Botswana,2010,3.135,59.137,2033111,The Republic of Botswana,UN member,Africa,Southern Africa
-BWA,Botswana,2015,3.008,63.215,2203273,The Republic of Botswana,UN member,Africa,Southern Africa
-BWA,Botswana,2020,2.861,67.643,2365894,The Republic of Botswana,UN member,Africa,Southern Africa
-BWA,Botswana,2025,,,2562122,The Republic of Botswana,UN member,Africa,Southern Africa
-CAF,Central African Republic,2010,5.963,46.871,4492995,The Central African Republic,UN member,Africa,Central Africa
-CAF,Central African Republic,2015,6.126,51.934,4629320,The Central African Republic,UN member,Africa,Central Africa
-CAF,Central African Republic,2020,6.059,50.596,5026628,The Central African Republic,UN member,Africa,Central Africa
-CAF,Central African Republic,2025,,,5513282,The Central African Republic,UN member,Africa,Central Africa
-CAN,Canada,2010,1.65,81.3222,34005902,Canada,UN member,North America,North America
-CAN,Canada,2015,1.6,81.8259,35704498,Canada,UN member,North America,North America
-CAN,Canada,2020,1.41,81.53,38028638,Canada,UN member,North America,North America
-CAN,Canada,2025,,,41651653,Canada,UN member,North America,North America
-CHE,Switzerland,2010,1.52,82.2463,7824909,The Swiss Confederation,UN member,Europe,Western Europe
-CHE,Switzerland,2015,1.54,82.8976,8282396,The Swiss Confederation,UN member,Europe,Western Europe
-CHE,Switzerland,2020,1.46,83.0,8638167,The Swiss Confederation,UN member,Europe,Western Europe
-CHE,Switzerland,2025,,,9092436,The Swiss Confederation,UN member,Europe,Western Europe
-CHL,Chile,2010,1.844,79.095,17181464,The Republic of Chile,UN member,South America,South America
-CHL,Chile,2015,1.737,80.008,18047625,The Republic of Chile,UN member,South America,South America
-CHL,Chile,2020,1.307,79.349,19370624,The Republic of Chile,UN member,South America,South America
-CHL,Chile,2025,,,19859921,The Republic of Chile,UN member,South America,South America
-CHN,China,2010,1.687,75.668,1337705000,The People's Republic of China,UN member,Asia,Eastern Asia
-CHN,China,2015,1.67,76.975,1379860000,The People's Republic of China,UN member,Asia,Eastern Asia
-CHN,China,2020,1.236,78.019,1411100000,The People's Republic of China,UN member,Asia,Eastern Asia
-CHN,China,2025,,,1406585000,The People's Republic of China,UN member,Asia,Eastern Asia
-CIV,Côte d'Ivoire,2010,5.292,55.282,22488065,The Republic of Côte d'Ivoire,UN member,Africa,Western Africa
-CIV,Côte d'Ivoire,2015,4.97,58.281,25246342,The Republic of Côte d'Ivoire,UN member,Africa,Western Africa
-CIV,Côte d'Ivoire,2020,4.461,60.14,28915449,The Republic of Côte d'Ivoire,UN member,Africa,Western Africa
-CIV,Côte d'Ivoire,2025,,,32711547,The Republic of Côte d'Ivoire,UN member,Africa,Western Africa
-CMR,Cameroon,2010,5.154,56.965,19668066,The Republic of Cameroon,UN member,Africa,Central Africa
-CMR,Cameroon,2015,4.841,59.687,22763414,The Republic of Cameroon,UN member,Africa,Central Africa
-CMR,Cameroon,2020,4.557,61.674,26210558,The Republic of Cameroon,UN member,Africa,Central Africa
-CMR,Cameroon,2025,,,29879337,The Republic of Cameroon,UN member,Africa,Central Africa
-COD,Democratic Republic of the Congo,2010,6.587,56.411,68563038,The Democratic Republic of the Congo,UN member,Africa,Central Africa
-COD,Democratic Republic of the Congo,2015,6.437,58.658,81035531,The Democratic Republic of the Congo,UN member,Africa,Central Africa
-COD,Democratic Republic of the Congo,2020,6.206,60.428,95989998,The Democratic Republic of the Congo,UN member,Africa,Central Africa
-COD,Democratic Republic of the Congo,2025,,,112832473,The Democratic Republic of the Congo,UN member,Africa,Central Africa
-COG,Congo,2010,4.851,61.731,4462290,The Republic of the Congo,UN member,Africa,Central Africa
-COG,Congo,2015,4.607,63.662,5097581,The Republic of the Congo,UN member,Africa,Central Africa
-COG,Congo,2020,4.329,64.391,5752791,The Republic of the Congo,UN member,Africa,Central Africa
-COG,Congo,2025,,,6484437,The Republic of the Congo,UN member,Africa,Central Africa
-COL,Colombia,2010,2.01,74.876,44777319,The Republic of Colombia,UN member,South America,South America
-COL,Colombia,2015,1.771,76.067,46969940,The Republic of Colombia,UN member,South America,South America
-COL,Colombia,2020,1.694,74.757,50629997,The Republic of Colombia,UN member,South America,South America
-COL,Colombia,2025,,,53425635,The Republic of Colombia,UN member,South America,South America
-COM,Comoros,2010,4.755,62.747,654836,The Union of the Comoros,UN member,Africa,Eastern Africa
-COM,Comoros,2015,4.42,64.473,726682,The Union of the Comoros,UN member,Africa,Eastern Africa
-COM,Comoros,2020,4.071,65.756,802163,The Union of the Comoros,UN member,Africa,Eastern Africa
-COM,Comoros,2025,,,882847,The Union of the Comoros,UN member,Africa,Eastern Africa
-CPV,Cabo Verde,2010,2.329,72.507,509784,The Republic of Cabo Verde,UN member,Africa,Western Africa
-CPV,Cabo Verde,2015,1.968,74.096,512394,The Republic of Cabo Verde,UN member,Africa,Western Africa
-CPV,Cabo Verde,2020,1.591,73.818,514679,The Republic of Cabo Verde,UN member,Africa,Western Africa
-CPV,Cabo Verde,2025,,,527326,The Republic of Cabo Verde,UN member,Africa,Western Africa
-CRI,Costa Rica,2010,1.827,79.354,4555962,The Republic of Costa Rica,UN member,North America,Central America
-CRI,Costa Rica,2015,1.797,80.407,4818038,The Republic of Costa Rica,UN member,North America,Central America
-CRI,Costa Rica,2020,1.448,79.725,5034320,The Republic of Costa Rica,UN member,North America,Central America
-CRI,Costa Rica,2025,,,5152950,The Republic of Costa Rica,UN member,North America,Central America
-CUB,Cuba,2010,1.673,77.876,11297409,The Republic of Cuba,UN member,North America,Caribbean
-CUB,Cuba,2015,1.685,77.745,11275065,The Republic of Cuba,UN member,North America,Caribbean
-CUB,Cuba,2020,1.489,77.407,11176354,The Republic of Cuba,UN member,North America,Caribbean
-CUB,Cuba,2025,,,10937203,The Republic of Cuba,UN member,North America,Caribbean
-CUW,Curaçao,2010,2.2,75.117,148703,The Country of Curaçao,Netherlands,North America,Caribbean
-CUW,Curaçao,2015,1.9,76.482,157980,The Country of Curaçao,Netherlands,North America,Caribbean
-CUW,Curaçao,2020,1.4,76.501,155482,The Country of Curaçao,Netherlands,North America,Caribbean
-CUW,Curaçao,2025,,,156263,The Country of Curaçao,Netherlands,North America,Caribbean
-CYM,Cayman Islands,2010,1.694,76.069,54099,The Cayman Islands,United Kingdom,North America,Caribbean
-CYM,Cayman Islands,2015,1.269,78.119,61642,The Cayman Islands,United Kingdom,North America,Caribbean
-CYM,Cayman Islands,2020,1.554,79.23,68684,The Cayman Islands,United Kingdom,North America,Caribbean
-CYM,Cayman Islands,2025,,,75844,The Cayman Islands,United Kingdom,North America,Caribbean
-CYP,Cyprus,2010,1.434,80.632,1127816,The Republic of Cyprus,UN member,Asia,Middle East
-CYP,Cyprus,2015,1.323,81.464,1219502,The Republic of Cyprus,UN member,Asia,Middle East
-CYP,Cyprus,2020,1.361,81.23,1302247,The Republic of Cyprus,UN member,Asia,Middle East
-CYP,Cyprus,2025,,,1370754,The Republic of Cyprus,UN member,Asia,Middle East
-CZE,Czechia,2010,1.51,77.4244,10474410,The Czech Republic,UN member,Europe,Eastern Europe
-CZE,Czechia,2015,1.57,78.578,10546059,The Czech Republic,UN member,Europe,Eastern Europe
-CZE,Czechia,2020,1.74,78.2268,10697858,The Czech Republic,UN member,Europe,Eastern Europe
-CZE,Czechia,2025,,,10886878,The Czech Republic,UN member,Europe,Eastern Europe
-DEU,Germany,2010,1.39,79.9878,81776930,The Federal Republic of Germany,UN member,Europe,Western Europe
-DEU,Germany,2015,1.5,80.6415,81686611,The Federal Republic of Germany,UN member,Europe,Western Europe
-DEU,Germany,2020,1.53,81.0415,83160871,The Federal Republic of Germany,UN member,Europe,Western Europe
-DEU,Germany,2025,,,83491249,The Federal Republic of Germany,UN member,Europe,Western Europe
-DJI,Djibouti,2010,3.431,60.743,930251,The Republic of Djibouti,UN member,Africa,Eastern Africa
-DJI,Djibouti,2015,3.041,62.833,1020313,The Republic of Djibouti,UN member,Africa,Eastern Africa
-DJI,Djibouti,2020,2.745,64.2,1105188,The Republic of Djibouti,UN member,Africa,Eastern Africa
-DJI,Djibouti,2025,,,1184076,The Republic of Djibouti,UN member,Africa,Eastern Africa
-DMA,Dominica,2010,1.887,71.68,68859,The Commonwealth of Dominica,UN member,North America,Caribbean
-DMA,Dominica,2015,1.648,69.968,70410,The Commonwealth of Dominica,UN member,North America,Caribbean
-DMA,Dominica,2020,1.495,71.269,67573,The Commonwealth of Dominica,UN member,North America,Caribbean
-DMA,Dominica,2025,,,65871,The Commonwealth of Dominica,UN member,North America,Caribbean
-DNK,Denmark,2010,1.87,79.1,5547683,The Kingdom of Denmark,UN member,Europe,Nordic Countries
-DNK,Denmark,2015,1.71,80.7024,5683483,The Kingdom of Denmark,UN member,Europe,Nordic Countries
-DNK,Denmark,2020,1.68,81.6024,5831404,The Kingdom of Denmark,UN member,Europe,Nordic Countries
-DNK,Denmark,2025,,,6009169,The Kingdom of Denmark,UN member,Europe,Nordic Countries
-DOM,Dominican Republic,2010,2.556,72.039,9820175,The Dominican Republic,UN member,North America,Caribbean
-DOM,Dominican Republic,2015,2.43,72.982,10434829,The Dominican Republic,UN member,North America,Caribbean
-DOM,Dominican Republic,2020,2.329,72.636,11008300,The Dominican Republic,UN member,North America,Caribbean
-DOM,Dominican Republic,2025,,,11520487,The Dominican Republic,UN member,North America,Caribbean
-DZA,Algeria,2010,2.875,74.144,36188236,The People's Democratic Republic of Algeria,UN member,Africa,Northern Africa
-DZA,Algeria,2015,3.091,75.159,40019529,The People's Democratic Republic of Algeria,UN member,Africa,Northern Africa
-DZA,Algeria,2020,2.94,73.257,44042091,The People's Democratic Republic of Algeria,UN member,Africa,Northern Africa
-DZA,Algeria,2025,,,47435312,The People's Democratic Republic of Algeria,UN member,Africa,Northern Africa
-ECU,Ecuador,2010,2.615,75.188,15076695,The Republic of Ecuador,UN member,South America,South America
-ECU,Ecuador,2015,2.209,76.222,16266225,The Republic of Ecuador,UN member,South America,South America
-ECU,Ecuador,2020,1.967,72.004,17546065,The Republic of Ecuador,UN member,South America,South America
-ECU,Ecuador,2025,,,18289896,The Republic of Ecuador,UN member,South America,South America
-EGY,Egypt,2010,3.296,69.078,89196072,The Arab Republic of Egypt,UN member,Africa,Northern Africa
-EGY,Egypt,2015,3.5,70.135,99597342,The Arab Republic of Egypt,UN member,Africa,Northern Africa
-EGY,Egypt,2020,2.85,69.79,109315124,The Arab Republic of Egypt,UN member,Africa,Northern Africa
-EGY,Egypt,2025,,,118365995,The Arab Republic of Egypt,UN member,Africa,Northern Africa
-ERI,Eritrea,2010,4.571,63.665,2945186,The State of Eritrea,UN member,Africa,Eastern Africa
-ERI,Eritrea,2015,4.217,65.909,3105546,The State of Eritrea,UN member,Africa,Eastern Africa
-ERI,Eritrea,2020,3.933,66.98,3291271,The State of Eritrea,UN member,Africa,Eastern Africa
-ERI,Eritrea,2025,,,3607003,The State of Eritrea,UN member,Africa,Eastern Africa
-ESP,Spain,2010,1.37,81.6268,46576897,The Kingdom of Spain,UN member,Europe,Southern Europe
-ESP,Spain,2015,1.33,82.8317,46422303,The Kingdom of Spain,UN member,Europe,Southern Europe
-ESP,Spain,2020,1.18,82.2317,47359424,The Kingdom of Spain,UN member,Europe,Southern Europe
-ESP,Spain,2025,,,49355143,The Kingdom of Spain,UN member,Europe,Southern Europe
-EST,Estonia,2010,1.72,75.4293,1331475,The Republic of Estonia,UN member,Europe,Baltic Countries
-EST,Estonia,2015,1.58,77.5902,1315407,The Republic of Estonia,UN member,Europe,Baltic Countries
-EST,Estonia,2020,1.58,78.5951,1329522,The Republic of Estonia,UN member,Europe,Baltic Countries
-EST,Estonia,2025,,,1366475,The Republic of Estonia,UN member,Europe,Baltic Countries
-ETH,Ethiopia,2010,5.282,59.709,90538514,The Federal Democratic Republic of Ethiopia,UN member,Africa,Eastern Africa
-ETH,Ethiopia,2015,4.529,63.592,103867135,The Federal Democratic Republic of Ethiopia,UN member,Africa,Eastern Africa
-ETH,Ethiopia,2020,4.274,65.969,118917671,The Federal Democratic Republic of Ethiopia,UN member,Africa,Eastern Africa
-ETH,Ethiopia,2025,,,135472051,The Federal Democratic Republic of Ethiopia,UN member,Africa,Eastern Africa
-FIN,Finland,2010,1.87,79.8707,5363352,The Republic of Finland,UN member,Europe,Nordic Countries
-FIN,Finland,2015,1.65,81.4805,5479531,The Republic of Finland,UN member,Europe,Nordic Countries
-FIN,Finland,2020,1.37,81.9317,5529543,The Republic of Finland,UN member,Europe,Nordic Countries
-FIN,Finland,2025,,,5646436,The Republic of Finland,UN member,Europe,Nordic Countries
-FJI,Fiji,2010,2.696,66.778,910419,The Republic of Fiji,UN member,Oceania,Melanesia
-FJI,Fiji,2015,2.567,66.48,918578,The Republic of Fiji,UN member,Oceania,Melanesia
-FJI,Fiji,2020,2.357,66.924,914963,The Republic of Fiji,UN member,Oceania,Melanesia
-FJI,Fiji,2025,,,933154,The Republic of Fiji,UN member,Oceania,Melanesia
-FRA,France,2010,2.03,81.6634,65026211,The French Republic,UN member,Europe,Western Europe
-FRA,France,2015,1.96,82.322,66548272,The French Republic,UN member,Europe,Western Europe
-FRA,France,2020,1.82,82.1756,67601110,The French Republic,UN member,Europe,Western Europe
-FRA,France,2025,,,68720337,The French Republic,UN member,Europe,Western Europe
-FRO,Faroe Islands,2010,2.5033,80.605,48656,The Faroe Islands,Denmark,Europe,Nordic Countries
-FRO,Faroe Islands,2015,2.411,81.7996,48898,The Faroe Islands,Denmark,Europe,Nordic Countries
-FRO,Faroe Islands,2020,2.3301,82.5342,52561,The Faroe Islands,Denmark,Europe,Nordic Countries
-FRO,Faroe Islands,2025,,,54900,The Faroe Islands,Denmark,Europe,Nordic Countries
-FSM,Micronesia,2010,3.271,64.892,107540,The Federated States of Micronesia,UN member,Oceania,Micronesia
-FSM,Micronesia,2015,3.049,65.306,108716,The Federated States of Micronesia,UN member,Oceania,Micronesia
-FSM,Micronesia,2020,2.852,65.878,110916,The Federated States of Micronesia,UN member,Oceania,Micronesia
-FSM,Micronesia,2025,,,113683,The Federated States of Micronesia,UN member,Oceania,Micronesia
-GAB,Gabon,2010,4.153,64.715,1719879,The Gabonese Republic,UN member,Africa,Central Africa
-GAB,Gabon,2015,3.921,66.336,2040989,The Gabonese Republic,UN member,Africa,Central Africa
-GAB,Gabon,2020,3.831,67.073,2322539,The Gabonese Republic,UN member,Africa,Central Africa
-GAB,Gabon,2025,,,2593130,The Gabonese Republic,UN member,Africa,Central Africa
-GBR,United Kingdom,2010,1.92,80.4024,62766365,The United Kingdom of Great Britain and Northern Ireland,UN member,Europe,British Islands
-GBR,United Kingdom,2015,1.8,80.9561,65087000,The United Kingdom of Great Britain and Northern Ireland,UN member,Europe,British Islands
-GBR,United Kingdom,2020,1.571,80.3318,66740000,The United Kingdom of Great Britain and Northern Ireland,UN member,Europe,British Islands
-GBR,United Kingdom,2025,,,69487000,The United Kingdom of Great Britain and Northern Ireland,UN member,Europe,British Islands
-GEO,Georgia,2010,1.973,71.732,3786695,Georgia,UN member,Asia,Middle East
-GEO,Georgia,2015,2.214,73.241,3725276,Georgia,UN member,Asia,Middle East
-GEO,Georgia,2020,1.976,73.509,3722716,Georgia,UN member,Asia,Middle East
-GEO,Georgia,2025,,,3935766,Georgia,UN member,Asia,Middle East
-GHA,Ghana,2010,4.181,61.297,25474995,The Republic of Ghana,UN member,Africa,Western Africa
-GHA,Ghana,2015,3.982,63.175,28696068,The Republic of Ghana,UN member,Africa,Western Africa
-GHA,Ghana,2020,3.541,64.309,31887809,The Republic of Ghana,UN member,Africa,Western Africa
-GHA,Ghana,2025,,,35064272,The Republic of Ghana,UN member,Africa,Western Africa
-GIB,Gibraltar,2010,1.954,82.08,31248,Gibraltar,United Kingdom,Europe,Southern Europe
-GIB,Gibraltar,2015,2.074,82.668,33193,Gibraltar,United Kingdom,Europe,Southern Europe
-GIB,Gibraltar,2020,1.907,83.07,36173,Gibraltar,United Kingdom,Europe,Southern Europe
-GIB,Gibraltar,2025,,,40126,Gibraltar,United Kingdom,Europe,Southern Europe
-GIN,Guinea,2010,5.435,56.431,10396086,The Republic of Guinea,UN member,Africa,Western Africa
-GIN,Guinea,2015,5.002,57.899,11767070,The Republic of Guinea,UN member,Africa,Western Africa
-GIN,Guinea,2020,4.489,59.35,13371183,The Republic of Guinea,UN member,Africa,Western Africa
-GIN,Guinea,2025,,,15099727,The Republic of Guinea,UN member,Africa,Western Africa
-GMB,Gambia,2010,5.558,61.167,1926630,The Republic of The Gambia,UN member,Africa,Western Africa
-GMB,Gambia,2015,5.003,62.971,2224529,The Republic of The Gambia,UN member,Africa,Western Africa
-GMB,Gambia,2020,4.248,64.418,2515733,The Republic of The Gambia,UN member,Africa,Western Africa
-GMB,Gambia,2025,,,2822093,The Republic of The Gambia,UN member,Africa,Western Africa
-GNB,Guinea-Bissau,2010,5.111,56.999,1566347,The Republic of Guinea-Bissau,UN member,Africa,Western Africa
-GNB,Guinea-Bissau,2015,4.661,60.071,1786457,The Republic of Guinea-Bissau,UN member,Africa,Western Africa
-GNB,Guinea-Bissau,2020,4.075,61.343,2013255,The Republic of Guinea-Bissau,UN member,Africa,Western Africa
-GNB,Guinea-Bissau,2025,,,2249515,The Republic of Guinea-Bissau,UN member,Africa,Western Africa
-GNQ,Equatorial Guinea,2010,5.209,58.344,1189085,The Republic of Equatorial Guinea,UN member,Africa,Central Africa
-GNQ,Equatorial Guinea,2015,4.774,60.635,1453923,The Republic of Equatorial Guinea,UN member,Africa,Central Africa
-GNQ,Equatorial Guinea,2020,4.346,62.141,1716468,The Republic of Equatorial Guinea,UN member,Africa,Central Africa
-GNQ,Equatorial Guinea,2025,,,1938431,The Republic of Equatorial Guinea,UN member,Africa,Central Africa
-GRC,Greece,2010,1.48,80.3878,11121341,The Hellenic Republic,UN member,Europe,Southern Europe
-GRC,Greece,2015,1.33,81.0366,10820883,The Hellenic Republic,UN member,Europe,Southern Europe
-GRC,Greece,2020,1.39,81.2878,10698599,The Hellenic Republic,UN member,Europe,Southern Europe
-GRC,Greece,2025,,,10413962,The Hellenic Republic,UN member,Europe,Southern Europe
-GRD,Grenada,2010,2.038,74.731,111586,Grenada,UN member,North America,Caribbean
-GRD,Grenada,2015,1.715,75.037,114676,Grenada,UN member,North America,Caribbean
-GRD,Grenada,2020,1.532,75.019,116341,Grenada,UN member,North America,Caribbean
-GRD,Grenada,2025,,,117303,Grenada,UN member,North America,Caribbean
-GRL,Greenland,2010,2.184,69.3498,56534,Kalaallit Nunaat,Denmark,North America,North America
-GRL,Greenland,2015,2.116,70.9098,56114,Kalaallit Nunaat,Denmark,North America,North America
-GRL,Greenland,2020,2.109,71.2859,56367,Kalaallit Nunaat,Denmark,North America,North America
-GRL,Greenland,2025,,,56831,Kalaallit Nunaat,Denmark,North America,North America
-GTM,Guatemala,2010,3.375,69.885,14500112,The Republic of Guatemala,UN member,North America,Central America
-GTM,Guatemala,2015,3.029,70.915,15971743,The Republic of Guatemala,UN member,North America,Central America
-GTM,Guatemala,2020,2.47,69.971,17357325,The Republic of Guatemala,UN member,North America,Central America
-GTM,Guatemala,2025,,,18687881,The Republic of Guatemala,UN member,North America,Central America
-GUM,Guam,2010,2.973,76.095,166522,The Territory of Guam,United States,Oceania,Micronesia
-GUM,Guam,2015,2.933,76.444,164905,The Territory of Guam,United States,Oceania,Micronesia
-GUM,Guam,2020,2.895,75.529,162158,The Territory of Guam,United States,Oceania,Micronesia
-GUM,Guam,2025,,,168999,The Territory of Guam,United States,Oceania,Micronesia
-GUY,Guyana,2010,2.684,66.204,749256,The Co-operative Republic of Guyana,UN member,South America,South America
-GUY,Guyana,2015,2.667,67.719,758781,The Co-operative Republic of Guyana,UN member,South America,South America
-GUY,Guyana,2020,2.491,67.751,807481,The Co-operative Republic of Guyana,UN member,South America,South America
-GUY,Guyana,2025,,,835986,The Co-operative Republic of Guyana,UN member,South America,South America
-HKG,Hong Kong,2010,1.127,82.9576,7024200,The Hong Kong Special Administrative Region of China,China,Asia,Eastern Asia
-HKG,Hong Kong,2015,1.196,84.2527,7291300,The Hong Kong Special Administrative Region of China,China,Asia,Eastern Asia
-HKG,Hong Kong,2020,0.883,85.4963,7481000,The Hong Kong Special Administrative Region of China,China,Asia,Eastern Asia
-HKG,Hong Kong,2025,,,7498900,The Hong Kong Special Administrative Region of China,China,Asia,Eastern Asia
-HND,Honduras,2010,3.078,69.77,8365878,The Republic of Honduras,UN member,North America,Central America
-HND,Honduras,2015,2.746,71.323,9237305,The Republic of Honduras,UN member,North America,Central America
-HND,Honduras,2020,2.577,70.864,10119640,The Republic of Honduras,UN member,North America,Central America
-HND,Honduras,2025,,,11005850,The Republic of Honduras,UN member,North America,Central America
-HRV,Croatia,2010,1.46,76.4756,4295427,The Republic of Croatia,UN member,Europe,Southern Europe
-HRV,Croatia,2015,1.41,77.2756,4151725,The Republic of Croatia,UN member,Europe,Southern Europe
-HRV,Croatia,2020,1.48,77.5244,3914206,The Republic of Croatia,UN member,Europe,Southern Europe
-HRV,Croatia,2025,,,3876200,The Republic of Croatia,UN member,Europe,Southern Europe
-HTI,Haiti,2010,3.497,45.577,9803294,The Republic of Haiti,UN member,North America,Caribbean
-HTI,Haiti,2015,3.11,63.224,10523242,The Republic of Haiti,UN member,North America,Caribbean
-HTI,Haiti,2020,2.804,63.773,11243848,The Republic of Haiti,UN member,North America,Caribbean
-HTI,Haiti,2025,,,11906095,The Republic of Haiti,UN member,North America,Caribbean
-HUN,Hungary,2010,1.25,74.2073,10000023,Hungary,UN member,Europe,Eastern Europe
-HUN,Hungary,2015,1.46,75.5683,9797755,Hungary,UN member,Europe,Eastern Europe
-HUN,Hungary,2020,1.61,75.4195,9670419,Hungary,UN member,Europe,Eastern Europe
-HUN,Hungary,2025,,,9514251,Hungary,UN member,Europe,Eastern Europe
-IDN,Indonesia,2010,2.462,68.364,246305322,The Republic of Indonesia,UN member,Asia,Southeast Asia
-IDN,Indonesia,2015,2.346,69.52,261799249,The Republic of Indonesia,UN member,Asia,Southeast Asia
-IDN,Indonesia,2020,2.189,68.817,274814866,The Republic of Indonesia,UN member,Asia,Southeast Asia
-IDN,Indonesia,2025,,,285721236,The Republic of Indonesia,UN member,Asia,Southeast Asia
-IMN,Isle of Man,2010,1.928,79.613,83873,The Isle of Man,British Crown,Europe,British Islands
-IMN,Isle of Man,2015,1.748,80.267,83593,The Isle of Man,British Crown,Europe,British Islands
-IMN,Isle of Man,2020,1.585,80.591,84064,The Isle of Man,British Crown,Europe,British Islands
-IMN,Isle of Man,2025,,,84118,The Isle of Man,British Crown,Europe,British Islands
-IND,India,2010,2.598,67.162,1243481564,The Republic of India,UN member,Asia,Southern and Central Asia
-IND,India,2015,2.289,69.326,1328024498,The Republic of India,UN member,Asia,Southern and Central Asia
-IND,India,2020,2.047,70.156,1402617695,The Republic of India,UN member,Asia,Southern and Central Asia
-IND,India,2025,,,1463865525,The Republic of India,UN member,Asia,Southern and Central Asia
-IRL,Ireland,2010,2.05,80.7439,4560155,Ireland,UN member,Europe,British Islands
-IRL,Ireland,2015,1.85,81.4537,4701957,Ireland,UN member,Europe,British Islands
-IRL,Ireland,2020,1.6,82.4561,5039747,Ireland,UN member,Europe,British Islands
-IRL,Ireland,2025,,,5484367,Ireland,UN member,Europe,British Islands
-IRN,Iran,2010,1.749,74.39,77420842,The Islamic Republic of Iran,UN member,Asia,Southern and Central Asia
-IRN,Iran,2015,2.017,75.907,82619362,The Islamic Republic of Iran,UN member,Asia,Southern and Central Asia
-IRN,Iran,2020,1.7,74.141,87723443,The Islamic Republic of Iran,UN member,Asia,Southern and Central Asia
-IRN,Iran,2025,,,92417681,The Islamic Republic of Iran,UN member,Asia,Southern and Central Asia
-IRQ,Iraq,2010,4.457,68.092,31045366,The Republic of Iraq,UN member,Asia,Middle East
-IRQ,Iraq,2015,4.08,69.977,37560535,The Republic of Iraq,UN member,Asia,Middle East
-IRQ,Iraq,2020,3.419,69.651,42116605,The Republic of Iraq,UN member,Asia,Middle East
-IRQ,Iraq,2025,,,47020774,The Republic of Iraq,UN member,Asia,Middle East
-ISL,Iceland,2010,2.2,81.8976,318041,Iceland,UN member,Europe,Nordic Countries
-ISL,Iceland,2015,1.8,82.4683,330815,Iceland,UN member,Europe,Nordic Countries
-ISL,Iceland,2020,1.72,83.0634,366463,Iceland,UN member,Europe,Nordic Countries
-ISL,Iceland,2025,,,392404,Iceland,UN member,Europe,Nordic Countries
-ISR,Israel,2010,3.03,81.6024,7623600,The State of Israel,UN member,Asia,Middle East
-ISR,Israel,2015,3.09,82.0512,8380100,The State of Israel,UN member,Asia,Middle East
-ISR,Israel,2020,2.9,82.6488,9215100,The State of Israel,UN member,Asia,Middle East
-ISR,Israel,2025,,,10122800,The State of Israel,UN member,Asia,Middle East
-ITA,Italy,2010,1.44,82.0366,59819407,The Italian Republic,UN member,Europe,Southern Europe
-ITA,Italy,2015,1.36,82.5439,60229605,The Italian Republic,UN member,Europe,Southern Europe
-ITA,Italy,2020,1.24,82.1951,59438851,The Italian Republic,UN member,Europe,Southern Europe
-ITA,Italy,2025,,,58915656,The Italian Republic,UN member,Europe,Southern Europe
-JAM,Jamaica,2010,1.799,71.979,2748568,Jamaica,UN member,North America,Caribbean
-JAM,Jamaica,2015,1.508,72.214,2802534,Jamaica,UN member,North America,Caribbean
-JAM,Jamaica,2020,1.383,71.452,2830739,Jamaica,UN member,North America,Caribbean
-JAM,Jamaica,2025,,,2837077,Jamaica,UN member,North America,Caribbean
-JOR,Jordan,2010,3.78,73.797,7297043,The Hashemite Kingdom of Jordan,UN member,Asia,Middle East
-JOR,Jordan,2015,3.141,75.06,9544729,The Hashemite Kingdom of Jordan,UN member,Asia,Middle East
-JOR,Jordan,2020,2.791,75.583,10865228,The Hashemite Kingdom of Jordan,UN member,Asia,Middle East
-JOR,Jordan,2025,,,11520684,The Hashemite Kingdom of Jordan,UN member,Asia,Middle East
-JPN,Japan,2010,1.39,82.8427,128070000,Japan,UN member,Asia,Eastern Asia
-JPN,Japan,2015,1.45,83.7939,127141000,Japan,UN member,Asia,Eastern Asia
-JPN,Japan,2020,1.33,84.56,126261000,Japan,UN member,Asia,Eastern Asia
-JPN,Japan,2025,,,123366734,Japan,UN member,Asia,Eastern Asia
-KAZ,Kazakhstan,2010,2.61,68.257,16836810,The Republic of Kazakhstan,UN member,Asia,Southern and Central Asia
-KAZ,Kazakhstan,2015,2.755,72.024,18084169,The Republic of Kazakhstan,UN member,Asia,Southern and Central Asia
-KAZ,Kazakhstan,2020,3.13,71.195,19482117,The Republic of Kazakhstan,UN member,Asia,Southern and Central Asia
-KAZ,Kazakhstan,2025,,,20843754,The Republic of Kazakhstan,UN member,Asia,Southern and Central Asia
-KEN,Kenya,2010,4.446,60.915,41598567,The Republic of Kenya,UN member,Africa,Eastern Africa
-KEN,Kenya,2015,3.766,62.279,47088526,The Republic of Kenya,UN member,Africa,Eastern Africa
-KEN,Kenya,2020,3.364,61.596,52217334,The Republic of Kenya,UN member,Africa,Eastern Africa
-KEN,Kenya,2025,,,57532493,The Republic of Kenya,UN member,Africa,Eastern Africa
-KGZ,Kyrgyzstan,2010,3.1,69.3,5467059,The Kyrgyz Republic,UN member,Asia,Southern and Central Asia
-KGZ,Kyrgyzstan,2015,3.2,70.6512,6040036,The Kyrgyz Republic,UN member,Asia,Southern and Central Asia
-KGZ,Kyrgyzstan,2020,3.1,71.8,6726596,The Kyrgyz Republic,UN member,Asia,Southern and Central Asia
-KGZ,Kyrgyzstan,2025,,,7343064,The Kyrgyz Republic,UN member,Asia,Southern and Central Asia
-KHM,Cambodia,2010,2.859,67.311,14500726,The Kingdom of Cambodia,UN member,Asia,Southeast Asia
-KHM,Cambodia,2015,2.729,69.398,15623251,The Kingdom of Cambodia,UN member,Asia,Southeast Asia
-KHM,Cambodia,2020,2.699,70.059,16725474,The Kingdom of Cambodia,UN member,Asia,Southeast Asia
-KHM,Cambodia,2025,,,17847982,The Kingdom of Cambodia,UN member,Asia,Southeast Asia
-KIR,Kiribati,2010,3.898,65.859,108704,The Republic of Kiribati,UN member,Oceania,Micronesia
-KIR,Kiribati,2015,3.438,65.831,116815,The Republic of Kiribati,UN member,Oceania,Micronesia
-KIR,Kiribati,2020,3.254,65.205,126099,The Republic of Kiribati,UN member,Oceania,Micronesia
-KIR,Kiribati,2025,,,136488,The Republic of Kiribati,UN member,Oceania,Micronesia
-KNA,Saint Kitts and Nevis,2010,1.762,71.452,46846,Saint Kitts and Nevis,UN member,North America,Caribbean
-KNA,Saint Kitts and Nevis,2015,1.643,71.211,47087,Saint Kitts and Nevis,UN member,North America,Caribbean
-KNA,Saint Kitts and Nevis,2020,1.55,71.181,46870,Saint Kitts and Nevis,UN member,North America,Caribbean
-KNA,Saint Kitts and Nevis,2025,,,46922,Saint Kitts and Nevis,UN member,North America,Caribbean
-KOR,South Korea,2010,1.226,80.1171,49554112,The Republic of Korea,UN member,Asia,Eastern Asia
-KOR,South Korea,2015,1.239,82.0244,51014947,The Republic of Korea,UN member,Asia,Eastern Asia
-KOR,South Korea,2020,0.837,83.4268,51836239,The Republic of Korea,UN member,Asia,Eastern Asia
-KOR,South Korea,2025,,,51684564,The Republic of Korea,UN member,Asia,Eastern Asia
-KWT,Kuwait,2010,2.044,77.7262,2943372,The State of Kuwait,UN member,Asia,Middle East
-KWT,Kuwait,2015,2.03,79.3766,3834574,The State of Kuwait,UN member,Asia,Middle East
-KWT,Kuwait,2020,2.033,78.761,4400267,The State of Kuwait,UN member,Asia,Middle East
-KWT,Kuwait,2025,,,4865298,The State of Kuwait,UN member,Asia,Middle East
-LAO,Laos,2010,3.137,63.69,6334194,The Lao People's Democratic Republic,UN member,Asia,Southeast Asia
-LAO,Laos,2015,2.796,66.688,6801645,The Lao People's Democratic Republic,UN member,Asia,Southeast Asia
-LAO,Laos,2020,2.535,68.339,7346533,The Lao People's Democratic Republic,UN member,Asia,Southeast Asia
-LAO,Laos,2025,,,7873046,The Lao People's Democratic Republic,UN member,Asia,Southeast Asia
-LBN,Lebanon,2010,2.256,77.529,5041288,The Lebanese Republic,UN member,Asia,Middle East
-LBN,Lebanon,2015,2.382,78.275,6472469,The Lebanese Republic,UN member,Asia,Middle East
-LBN,Lebanon,2020,2.308,76.299,5702398,The Lebanese Republic,UN member,Asia,Middle East
-LBN,Lebanon,2025,,,5849421,The Lebanese Republic,UN member,Asia,Middle East
-LBR,Liberia,2010,5.058,59.358,4058890,The Republic of Liberia,UN member,Africa,Western Africa
-LBR,Liberia,2015,4.523,59.248,4659431,The Republic of Liberia,UN member,Africa,Western Africa
-LBR,Liberia,2020,4.174,61.267,5149463,The Republic of Liberia,UN member,Africa,Western Africa
-LBR,Liberia,2025,,,5731206,The Republic of Liberia,UN member,Africa,Western Africa
-LBY,Libya,2010,2.603,72.196,6497839,The State of Libya,UN member,Africa,Northern Africa
-LBY,Libya,2015,2.711,71.644,6531819,The State of Libya,UN member,Africa,Northern Africa
-LBY,Libya,2020,2.507,72.388,7045399,The State of Libya,UN member,Africa,Northern Africa
-LBY,Libya,2025,,,7458555,The State of Libya,UN member,Africa,Northern Africa
-LCA,Saint Lucia,2010,1.673,72.768,170906,Saint Lucia,UN member,North America,Caribbean
-LCA,Saint Lucia,2015,1.473,72.932,174905,Saint Lucia,UN member,North America,Caribbean
-LCA,Saint Lucia,2020,1.411,72.308,178250,Saint Lucia,UN member,North America,Caribbean
-LCA,Saint Lucia,2025,,,180149,Saint Lucia,UN member,North America,Caribbean
-LIE,Liechtenstein,2010,1.4,81.8415,36022,The Principality of Liechtenstein,UN member,Europe,Western Europe
-LIE,Liechtenstein,2015,1.4,82.6561,37494,The Principality of Liechtenstein,UN member,Europe,Western Europe
-LIE,Liechtenstein,2020,1.46,81.6585,38901,The Principality of Liechtenstein,UN member,Europe,Western Europe
-LIE,Liechtenstein,2025,,,41024,The Principality of Liechtenstein,UN member,Europe,Western Europe
-LKA,Sri Lanka,2010,2.134,74.463,20879089,The Democratic Socialist Republic of Sri Lanka,UN member,Asia,Southern and Central Asia
-LKA,Sri Lanka,2015,2.09,75.99,20970000,The Democratic Socialist Republic of Sri Lanka,UN member,Asia,Southern and Central Asia
-LKA,Sri Lanka,2020,2.007,76.928,21919000,The Democratic Socialist Republic of Sri Lanka,UN member,Asia,Southern and Central Asia
-LKA,Sri Lanka,2025,,,21756000,The Democratic Socialist Republic of Sri Lanka,UN member,Asia,Southern and Central Asia
-LSO,Lesotho,2010,3.25,46.045,1996251,The Kingdom of Lesotho,UN member,Africa,Southern Africa
-LSO,Lesotho,2015,3.217,51.83,2104611,The Kingdom of Lesotho,UN member,Africa,Southern Africa
-LSO,Lesotho,2020,2.846,55.133,2235727,The Kingdom of Lesotho,UN member,Africa,Southern Africa
-LSO,Lesotho,2025,,,2363325,The Kingdom of Lesotho,UN member,Africa,Southern Africa
-LTU,Lithuania,2010,1.5,73.2683,3097282,The Republic of Lithuania,UN member,Europe,Baltic Countries
-LTU,Lithuania,2015,1.63,74.322,2911109,The Republic of Lithuania,UN member,Europe,Baltic Countries
-LTU,Lithuania,2020,1.36,75.0293,2810369,The Republic of Lithuania,UN member,Europe,Baltic Countries
-LTU,Lithuania,2025,,,2888774,The Republic of Lithuania,UN member,Europe,Baltic Countries
-LUX,Luxembourg,2010,1.63,80.6317,506953,The Grand Duchy of Luxembourg,UN member,Europe,Western Europe
-LUX,Luxembourg,2015,1.47,82.2927,569604,The Grand Duchy of Luxembourg,UN member,Europe,Western Europe
-LUX,Luxembourg,2020,1.36,82.1439,630419,The Grand Duchy of Luxembourg,UN member,Europe,Western Europe
-LUX,Luxembourg,2025,,,686970,The Grand Duchy of Luxembourg,UN member,Europe,Western Europe
-LVA,Latvia,2010,1.36,73.4829,2097555,The Republic of Latvia,UN member,Europe,Baltic Countries
-LVA,Latvia,2015,1.7,74.4805,1977527,The Republic of Latvia,UN member,Europe,Baltic Countries
-LVA,Latvia,2020,1.55,75.1854,1900449,The Republic of Latvia,UN member,Europe,Baltic Countries
-LVA,Latvia,2025,,,1847785,The Republic of Latvia,UN member,Europe,Baltic Countries
-MAC,Macao,2010,1.07,82.2732,537000,The Macao Special Administrative Region of China,China,Asia,Eastern Asia
-MAC,Macao,2015,1.142,83.2244,642900,The Macao Special Administrative Region of China,China,Asia,Eastern Asia
-MAC,Macao,2020,0.841,84.1293,685400,The Macao Special Administrative Region of China,China,Asia,Eastern Asia
-MAC,Macao,2025,,,685900,The Macao Special Administrative Region of China,China,Asia,Eastern Asia
-MAF,Saint Martin,2010,2.4,78.752,36856,The Collectivity of Saint-Martin,France,North America,Caribbean
-MAF,Saint Martin,2015,2.665,79.829,37369,The Collectivity of Saint-Martin,France,North America,Caribbean
-MAF,Saint Martin,2020,2.829,80.085,31786,The Collectivity of Saint-Martin,France,North America,Caribbean
-MAF,Saint Martin,2025,,,24941,The Collectivity of Saint-Martin,France,North America,Caribbean
-MAR,Morocco,2010,2.629,70.821,32467016,The Kingdom of Morocco,UN member,Africa,Northern Africa
-MAR,Morocco,2015,2.406,72.894,34607588,The Kingdom of Morocco,UN member,Africa,Northern Africa
-MAR,Morocco,2020,2.32,73.133,36584208,The Kingdom of Morocco,UN member,Africa,Northern Africa
-MAR,Morocco,2025,,,38430770,The Kingdom of Morocco,UN member,Africa,Northern Africa
-MCO,Monaco,2010,2.385,84.644,33163,The Principality of Monaco,UN member,Europe,Western Europe
-MCO,Monaco,2015,2.503,85.323,36757,The Principality of Monaco,UN member,Europe,Western Europe
-MCO,Monaco,2020,2.38,86.089,38050,The Principality of Monaco,UN member,Europe,Western Europe
-MCO,Monaco,2025,,,38341,The Principality of Monaco,UN member,Europe,Western Europe
-MDA,Moldova,2010,1.703,69.876,2862354,The Republic of Moldova,UN member,Europe,Eastern Europe
-MDA,Moldova,2015,1.87,70.118,2835978,The Republic of Moldova,UN member,Europe,Eastern Europe
-MDA,Moldova,2020,1.77,69.914,2635130,The Republic of Moldova,UN member,Europe,Eastern Europe
-MDA,Moldova,2025,,,2360527,The Republic of Moldova,UN member,Europe,Eastern Europe
-MDG,Madagascar,2010,4.896,62.597,22183340,The Republic of Madagascar,UN member,Africa,Eastern Africa
-MDG,Madagascar,2015,4.335,63.362,25426702,The Republic of Madagascar,UN member,Africa,Eastern Africa
-MDG,Madagascar,2020,4.17,62.706,28953556,The Republic of Madagascar,UN member,Africa,Eastern Africa
-MDG,Madagascar,2025,,,32740678,The Republic of Madagascar,UN member,Africa,Eastern Africa
-MDV,Maldives,2010,2.349,76.756,360792,The Republic of Maldives,UN member,Asia,Southern and Central Asia
-MDV,Maldives,2015,2.004,78.607,428154,The Republic of Maldives,UN member,Asia,Southern and Central Asia
-MDV,Maldives,2020,1.613,78.713,502118,The Republic of Maldives,UN member,Asia,Southern and Central Asia
-MDV,Maldives,2025,,,529676,The Republic of Maldives,UN member,Asia,Southern and Central Asia
-MEX,Mexico,2010,2.34,73.718,113623895,The United Mexican States,UN member,North America,Central America
-MEX,Mexico,2015,2.137,74.431,121072306,The United Mexican States,UN member,North America,Central America
-MEX,Mexico,2020,1.99,70.449,126799054,The United Mexican States,UN member,North America,Central America
-MEX,Mexico,2025,,,131946900,The United Mexican States,UN member,North America,Central America
-MHL,Marshall Islands,2010,3.673,64.498,52044,The Republic of the Marshall Islands,UN member,Oceania,Micronesia
-MHL,Marshall Islands,2015,3.131,65.292,48800,The Republic of the Marshall Islands,UN member,Oceania,Micronesia
-MHL,Marshall Islands,2020,2.989,65.387,42706,The Republic of the Marshall Islands,UN member,Oceania,Micronesia
-MHL,Marshall Islands,2025,,,36282,The Republic of the Marshall Islands,UN member,Oceania,Micronesia
-MKD,North Macedonia,2010,1.6,74.9976,1946298,The Republic of North Macedonia,UN member,Europe,Southern Europe
-MKD,North Macedonia,2015,1.49,75.4024,1912430,The Republic of North Macedonia,UN member,Europe,Southern Europe
-MKD,North Macedonia,2020,1.31,74.3951,1856124,The Republic of North Macedonia,UN member,Europe,Southern Europe
-MKD,North Macedonia,2025,,,1820909,The Republic of North Macedonia,UN member,Europe,Southern Europe
-MLI,Mali,2010,6.579,55.993,15945198,The Republic of Mali,UN member,Africa,Western Africa
-MLI,Mali,2015,6.385,57.852,18593022,The Republic of Mali,UN member,Africa,Western Africa
-MLI,Mali,2020,5.85,58.858,21713836,The Republic of Mali,UN member,Africa,Western Africa
-MLI,Mali,2025,,,25198821,The Republic of Mali,UN member,Africa,Western Africa
-MLT,Malta,2010,1.36,81.3976,414508,The Republic of Malta,UN member,Europe,Southern Europe
-MLT,Malta,2015,1.37,81.7976,444220,The Republic of Malta,UN member,Europe,Southern Europe
-MLT,Malta,2020,1.14,82.0976,515490,The Republic of Malta,UN member,Europe,Southern Europe
-MLT,Malta,2025,,,579704,The Republic of Malta,UN member,Europe,Southern Europe
-MMR,Myanmar,2010,2.335,63.479,49024382,The Republic of the Union of Myanmar,UN member,Asia,Southeast Asia
-MMR,Myanmar,2015,2.266,65.288,51089056,The Republic of the Union of Myanmar,UN member,Asia,Southeast Asia
-MMR,Myanmar,2020,2.179,66.612,53016522,The Republic of the Union of Myanmar,UN member,Asia,Southeast Asia
-MMR,Myanmar,2025,,,54850648,The Republic of the Union of Myanmar,UN member,Asia,Southeast Asia
-MNE,Montenegro,2010,1.7,75.9902,619428,Montenegro,UN member,Europe,Southern Europe
-MNE,Montenegro,2015,1.7,76.6024,624651,Montenegro,UN member,Europe,Southern Europe
-MNE,Montenegro,2020,1.75,75.9317,626590,Montenegro,UN member,Europe,Southern Europe
-MNE,Montenegro,2025,,,623129,Montenegro,UN member,Europe,Southern Europe
-MNG,Mongolia,2010,2.4,68.5056,2738622,Mongolia,UN member,Asia,Eastern Asia
-MNG,Mongolia,2015,3.0,70.8102,3026864,Mongolia,UN member,Asia,Eastern Asia
-MNG,Mongolia,2020,2.9,71.349,3327204,Mongolia,UN member,Asia,Eastern Asia
-MNG,Mongolia,2025,,,3568978,Mongolia,UN member,Asia,Eastern Asia
-MNP,Northern Mariana Islands,2010,2.982,77.8,54091,The Commonwealth of the Northern Mariana Islands,United States,Oceania,Micronesia
-MNP,Northern Mariana Islands,2015,3.134,77.36,51514,The Commonwealth of the Northern Mariana Islands,United States,Oceania,Micronesia
-MNP,Northern Mariana Islands,2020,2.494,78.03,47528,The Commonwealth of the Northern Mariana Islands,United States,Oceania,Micronesia
-MNP,Northern Mariana Islands,2025,,,43541,The Commonwealth of the Northern Mariana Islands,United States,Oceania,Micronesia
-MOZ,Mozambique,2010,5.66,55.04,22999235,The Republic of Mozambique,UN member,Africa,Eastern Africa
-MOZ,Mozambique,2015,5.245,58.711,26547572,The Republic of Mozambique,UN member,Africa,Eastern Africa
-MOZ,Mozambique,2020,4.959,61.39,30783688,The Republic of Mozambique,UN member,Africa,Eastern Africa
-MOZ,Mozambique,2025,,,35631653,The Republic of Mozambique,UN member,Africa,Eastern Africa
-MRT,Mauritania,2010,5.384,65.661,3390965,The Islamic Republic of Mauritania,UN member,Africa,Western Africa
-MRT,Mauritania,2015,5.211,66.498,3965959,The Islamic Republic of Mauritania,UN member,Africa,Western Africa
-MRT,Mauritania,2020,4.912,66.794,4600131,The Islamic Republic of Mauritania,UN member,Africa,Western Africa
-MRT,Mauritania,2025,,,5315065,The Islamic Republic of Mauritania,UN member,Africa,Western Africa
-MUS,Mauritius,2010,1.57,72.9673,1250400,The Republic of Mauritius,UN member,Africa,Eastern Africa
-MUS,Mauritius,2015,1.37,74.3532,1262879,The Republic of Mauritius,UN member,Africa,Eastern Africa
-MUS,Mauritius,2020,1.46,74.1771,1266014,The Republic of Mauritius,UN member,Africa,Eastern Africa
-MUS,Mauritius,2025,,,1243741,The Republic of Mauritius,UN member,Africa,Eastern Africa
-MWI,Malawi,2010,5.263,57.787,14826463,The Republic of Malawi,UN member,Africa,Eastern Africa
-MWI,Malawi,2015,4.384,62.324,17085587,The Republic of Malawi,UN member,Africa,Eastern Africa
-MWI,Malawi,2020,3.877,65.216,19533888,The Republic of Malawi,UN member,Africa,Eastern Africa
-MWI,Malawi,2025,,,22216120,The Republic of Malawi,UN member,Africa,Eastern Africa
-MYS,Malaysia,2010,2.144,75.376,28655776,Malaysia,UN member,Asia,Southeast Asia
-MYS,Malaysia,2015,2.008,75.288,31232798,Malaysia,UN member,Asia,Southeast Asia
-MYS,Malaysia,2020,1.68,76.057,33889558,Malaysia,UN member,Asia,Southeast Asia
-MYS,Malaysia,2025,,,35977838,Malaysia,UN member,Asia,Southeast Asia
-NAM,Namibia,2010,3.657,56.093,2109811,The Republic of Namibia,UN member,Africa,Southern Africa
-NAM,Namibia,2015,3.604,60.008,2374300,The Republic of Namibia,UN member,Africa,Southern Africa
-NAM,Namibia,2020,3.349,64.071,2728762,The Republic of Namibia,UN member,Africa,Southern Africa
-NAM,Namibia,2025,,,3092816,The Republic of Namibia,UN member,Africa,Southern Africa
-NCL,New Caledonia,2010,2.187,75.992,261582,New Caledonia,France,Oceania,Melanesia
-NCL,New Caledonia,2015,2.079,77.206,283168,New Caledonia,France,Oceania,Melanesia
-NCL,New Caledonia,2020,2.022,77.049,284176,New Caledonia,France,Oceania,Melanesia
-NCL,New Caledonia,2025,,,295333,New Caledonia,France,Oceania,Melanesia
-NER,Niger,2010,7.64,57.08,16548835,The Republic of the Niger,UN member,Africa,Western Africa
-NER,Niger,2015,7.215,58.85,19939498,The Republic of the Niger,UN member,Africa,Western Africa
-NER,Niger,2020,6.369,59.89,23717613,The Republic of the Niger,UN member,Africa,Western Africa
-NER,Niger,2025,,,27917831,The Republic of the Niger,UN member,Africa,Western Africa
-NGA,Nigeria,2010,5.948,51.315,166642886,The Federal Republic of Nigeria,UN member,Africa,Western Africa
-NGA,Nigeria,2015,5.503,51.939,190671878,The Federal Republic of Nigeria,UN member,Africa,Western Africa
-NGA,Nigeria,2020,4.7,53.072,213996181,The Federal Republic of Nigeria,UN member,Africa,Western Africa
-NGA,Nigeria,2025,,,237527782,The Federal Republic of Nigeria,UN member,Africa,Western Africa
-NIC,Nicaragua,2010,2.596,71.761,5737450,The Republic of Nicaragua,UN member,North America,Central America
-NIC,Nicaragua,2015,2.434,72.899,6149417,The Republic of Nicaragua,UN member,North America,Central America
-NIC,Nicaragua,2020,2.299,70.766,6565267,The Republic of Nicaragua,UN member,North America,Central America
-NIC,Nicaragua,2025,,,7007502,The Republic of Nicaragua,UN member,North America,Central America
-NLD,Netherlands,2010,1.79,80.7024,16615394,The Kingdom of the Netherlands,UN member,Europe,Western Europe
-NLD,Netherlands,2015,1.66,81.5098,16939923,The Kingdom of the Netherlands,UN member,Europe,Western Europe
-NLD,Netherlands,2020,1.54,81.3585,17441500,The Kingdom of the Netherlands,UN member,Europe,Western Europe
-NLD,Netherlands,2025,,,18087633,The Kingdom of the Netherlands,UN member,Europe,Western Europe
-NOR,Norway,2010,1.95,80.9976,4889252,The Kingdom of Norway,UN member,Europe,Nordic Countries
-NOR,Norway,2015,1.72,82.3049,5188607,The Kingdom of Norway,UN member,Europe,Nordic Countries
-NOR,Norway,2020,1.48,83.2098,5379475,The Kingdom of Norway,UN member,Europe,Nordic Countries
-NOR,Norway,2025,,,5610870,The Kingdom of Norway,UN member,Europe,Nordic Countries
-NPL,Nepal,2010,2.541,66.772,27341952,The Federal Democratic Republic of Nepal,UN member,Asia,Southern and Central Asia
-NPL,Nepal,2015,2.273,67.374,27823629,The Federal Democratic Republic of Nepal,UN member,Asia,Southern and Central Asia
-NPL,Nepal,2020,2.051,69.106,28966574,The Federal Democratic Republic of Nepal,UN member,Asia,Southern and Central Asia
-NPL,Nepal,2025,,,29618118,The Federal Democratic Republic of Nepal,UN member,Asia,Southern and Central Asia
-NRU,Nauru,2010,4.019,60.074,10043,The Republic of Nauru,UN member,Oceania,Micronesia
-NRU,Nauru,2015,4.075,60.897,10954,The Republic of Nauru,UN member,Oceania,Micronesia
-NRU,Nauru,2020,3.466,61.527,11643,The Republic of Nauru,UN member,Oceania,Micronesia
-NRU,Nauru,2025,,,12025,The Republic of Nauru,UN member,Oceania,Micronesia
-NZL,New Zealand,2010,2.17,80.9049,4350700,New Zealand,UN member,Oceania,Australia and New Zealand
-NZL,New Zealand,2015,1.99,81.6124,4609400,New Zealand,UN member,Oceania,Australia and New Zealand
-NZL,New Zealand,2020,1.62,82.2561,5072400,New Zealand,UN member,Oceania,Australia and New Zealand
-NZL,New Zealand,2025,,,5324700,New Zealand,UN member,Oceania,Australia and New Zealand
-OMN,Oman,2010,2.973,77.184,2757446,The Sultanate of Oman,UN member,Asia,Middle East
-OMN,Oman,2015,2.965,79.346,4184895,The Sultanate of Oman,UN member,Asia,Middle East
-OMN,Oman,2020,2.638,77.763,4522497,The Sultanate of Oman,UN member,Asia,Middle East
-OMN,Oman,2025,,,5494691,The Sultanate of Oman,UN member,Asia,Middle East
-PAK,Pakistan,2010,4.398,64.378,199239047,The Islamic Republic of Pakistan,UN member,Asia,Southern and Central Asia
-PAK,Pakistan,2015,3.988,65.641,217290883,The Islamic Republic of Pakistan,UN member,Asia,Southern and Central Asia
-PAK,Pakistan,2020,3.765,65.701,235001746,The Islamic Republic of Pakistan,UN member,Asia,Southern and Central Asia
-PAK,Pakistan,2025,,,255219554,The Islamic Republic of Pakistan,UN member,Asia,Southern and Central Asia
-PAN,Panama,2010,2.587,76.417,3628535,The Republic of Panamá,UN member,North America,Central America
-PAN,Panama,2015,2.53,77.583,3960035,The Republic of Panamá,UN member,North America,Central America
-PAN,Panama,2020,2.184,76.33,4293261,The Republic of Panamá,UN member,North America,Central America
-PAN,Panama,2025,,,4571189,The Republic of Panamá,UN member,North America,Central America
-PER,Peru,2010,2.421,72.886,29086019,The Republic of Perú,UN member,South America,South America
-PER,Peru,2015,2.229,75.732,30457600,The Republic of Perú,UN member,South America,South America
-PER,Peru,2020,2.056,73.832,32838579,The Republic of Perú,UN member,South America,South America
-PER,Peru,2025,,,34576665,The Republic of Perú,UN member,South America,South America
-PHL,Philippines,2010,3.315,68.883,96337125,The Republic of the Philippines,UN member,Asia,Southeast Asia
-PHL,Philippines,2015,2.829,69.45,105312992,The Republic of the Philippines,UN member,Asia,Southeast Asia
-PHL,Philippines,2020,2.075,70.097,112081264,The Republic of the Philippines,UN member,Asia,Southeast Asia
-PHL,Philippines,2025,,,116786962,The Republic of the Philippines,UN member,Asia,Southeast Asia
-PLW,Palau,2010,1.937,68.347,18396,The Republic of Palau,UN member,Oceania,Micronesia
-PLW,Palau,2015,2.002,69.07,17770,The Republic of Palau,UN member,Oceania,Micronesia
-PLW,Palau,2020,1.972,68.689,17792,The Republic of Palau,UN member,Oceania,Micronesia
-PLW,Palau,2025,,,17663,The Republic of Palau,UN member,Oceania,Micronesia
-PNG,Papua New Guinea,2010,3.883,63.056,7633523,The Independent State of Papua New Guinea,UN member,Oceania,Melanesia
-PNG,Papua New Guinea,2015,3.558,64.473,8743246,The Independent State of Papua New Guinea,UN member,Oceania,Melanesia
-PNG,Papua New Guinea,2020,3.274,65.075,9815746,The Independent State of Papua New Guinea,UN member,Oceania,Melanesia
-PNG,Papua New Guinea,2025,,,10762817,The Independent State of Papua New Guinea,UN member,Oceania,Melanesia
-POL,Poland,2010,1.41,76.2463,38042794,The Republic of Poland,UN member,Europe,Eastern Europe
-POL,Poland,2015,1.32,77.4512,37986412,The Republic of Poland,UN member,Europe,Eastern Europe
-POL,Poland,2020,1.39,76.4,37515748,The Republic of Poland,UN member,Europe,Eastern Europe
-POL,Poland,2025,,,36435861,The Republic of Poland,UN member,Europe,Eastern Europe
-PRI,Puerto Rico,2010,1.6235,78.717,3724465,The Commonwealth of Puerto Rico,United States,North America,Caribbean
-PRI,Puerto Rico,2015,1.3365,80.677,3535167,The Commonwealth of Puerto Rico,United States,North America,Caribbean
-PRI,Puerto Rico,2020,0.922,80.009,3281591,The Commonwealth of Puerto Rico,United States,North America,Caribbean
-PRI,Puerto Rico,2025,,,3184835,The Commonwealth of Puerto Rico,United States,North America,Caribbean
-PRK,North Korea,2010,1.89,70.246,24987258,The Democratic People's Republic of Korea,UN member,Asia,Eastern Asia
-PRK,North Korea,2015,1.863,72.825,25575350,The Democratic People's Republic of Korea,UN member,Asia,Eastern Asia
-PRK,North Korea,2020,1.821,72.783,26136312,The Democratic People's Republic of Korea,UN member,Asia,Eastern Asia
-PRK,North Korea,2025,,,26571036,The Democratic People's Republic of Korea,UN member,Asia,Eastern Asia
-PRT,Portugal,2010,1.39,79.0268,10573100,The Portuguese Republic,UN member,Europe,Southern Europe
-PRT,Portugal,2015,1.31,81.1244,10358076,The Portuguese Republic,UN member,Europe,Southern Europe
-PRT,Portugal,2020,1.42,81.3293,10297081,The Portuguese Republic,UN member,Europe,Southern Europe
-PRT,Portugal,2025,,,10804871,The Portuguese Republic,UN member,Europe,Southern Europe
-PRY,Paraguay,2010,2.695,72.551,5737971,The Republic of Paraguay,UN member,South America,South America
-PRY,Paraguay,2015,2.645,73.454,6159103,The Republic of Paraguay,UN member,South America,South America
-PRY,Paraguay,2020,2.497,72.72,6603739,The Republic of Paraguay,UN member,South America,South America
-PRY,Paraguay,2025,,,7013078,The Republic of Paraguay,UN member,South America,South America
-PSE,Palestine,2010,4.434,73.302,3786161,The State of Palestine,UN observer,Asia,Middle East
-PSE,Palestine,2015,3.977,74.577,4270092,The State of Palestine,UN observer,Asia,Middle East
-PSE,Palestine,2020,3.511,74.998,4803269,The State of Palestine,UN observer,Asia,Middle East
-PSE,Palestine,2025,,,5413596,The State of Palestine,UN observer,Asia,Middle East
-PYF,French Polynesia,2010,2.165,81.141,270580,French Polynesia,France,Oceania,Polynesia
-PYF,French Polynesia,2015,1.872,82.339,277866,French Polynesia,France,Oceania,Polynesia
-PYF,French Polynesia,2020,1.57,82.459,279209,French Polynesia,France,Oceania,Polynesia
-PYF,French Polynesia,2025,,,282465,French Polynesia,France,Oceania,Polynesia
-QAT,Qatar,2010,2.137,79.444,1616832,The State of Qatar,UN member,Asia,Middle East
-QAT,Qatar,2015,1.976,81.785,2344557,The State of Qatar,UN member,Asia,Middle East
-QAT,Qatar,2020,1.675,80.409,2794148,The State of Qatar,UN member,Asia,Middle East
-QAT,Qatar,2025,,,2972215,The State of Qatar,UN member,Asia,Middle East
-ROU,Romania,2010,1.59,73.4585,20246871,Romania,UN member,Europe,Eastern Europe
-ROU,Romania,2015,1.62,74.9122,19815616,Romania,UN member,Europe,Eastern Europe
-ROU,Romania,2020,1.8,74.2537,19265250,Romania,UN member,Europe,Eastern Europe
-ROU,Romania,2025,,,19020271,Romania,UN member,Europe,Eastern Europe
-RUS,Russian Federation (the) [w],2010,1.567,68.8412,142849468,The Russian Federation,UN member,Europe,Eastern Europe
-RUS,Russian Federation (the) [w],2015,1.777,71.1834,144640716,The Russian Federation,UN member,Europe,Eastern Europe
-RUS,Russian Federation (the) [w],2020,1.505,71.3388,145245148,The Russian Federation,UN member,Europe,Eastern Europe
-RUS,Russian Federation (the) [w],2025,,,143513328,The Russian Federation,UN member,Europe,Eastern Europe
-RWA,Rwanda,2010,4.522,62.804,10317553,The Republic of Rwanda,UN member,Africa,Eastern Africa
-RWA,Rwanda,2015,4.108,65.419,11640022,The Republic of Rwanda,UN member,Africa,Eastern Africa
-RWA,Rwanda,2020,3.913,66.953,13065837,The Republic of Rwanda,UN member,Africa,Eastern Africa
-RWA,Rwanda,2025,,,14569341,The Republic of Rwanda,UN member,Africa,Eastern Africa
-SAU,Saudi Arabia,2010,2.81,75.616,23978487,The Kingdom of Saudi Arabia,UN member,Asia,Middle East
-SAU,Saudi Arabia,2015,2.63,77.776,29816382,The Kingdom of Saudi Arabia,UN member,Asia,Middle East
-SAU,Saudi Arabia,2020,2.27,77.596,31552510,The Kingdom of Saudi Arabia,UN member,Asia,Middle East
-SAU,Saudi Arabia,2025,,,36973555,The Kingdom of Saudi Arabia,UN member,Asia,Middle East
-SDN,Sudan,2010,5.141,62.979,35414399,The Republic of the Sudan,UN member,Africa,Northern Africa
-SDN,Sudan,2015,4.898,64.375,40024431,The Republic of the Sudan,UN member,Africa,Northern Africa
-SDN,Sudan,2020,4.542,65.124,46789231,The Republic of the Sudan,UN member,Africa,Northern Africa
-SDN,Sudan,2025,,,51662147,The Republic of the Sudan,UN member,Africa,Northern Africa
-SEN,Senegal,2010,5.055,64.221,12635413,The Republic of Senegal,UN member,Africa,Western Africa
-SEN,Senegal,2015,4.751,66.451,14593331,The Republic of Senegal,UN member,Africa,Western Africa
-SEN,Senegal,2020,4.003,67.496,16789219,The Republic of Senegal,UN member,Africa,Western Africa
-SEN,Senegal,2025,,,18931966,The Republic of Senegal,UN member,Africa,Western Africa
-SGP,Singapore,2010,1.15,81.5415,5076732,The Republic of Singapore,UN member,Asia,Southeast Asia
-SGP,Singapore,2015,1.24,82.7439,5535002,The Republic of Singapore,UN member,Asia,Southeast Asia
-SGP,Singapore,2020,1.1,83.5439,5685807,The Republic of Singapore,UN member,Asia,Southeast Asia
-SGP,Singapore,2025,,,6111175,The Republic of Singapore,UN member,Asia,Southeast Asia
-SLB,Solomon Islands,2010,4.341,68.669,532968,The Solomon Islands,UN member,Oceania,Melanesia
-SLB,Solomon Islands,2015,4.291,69.323,639415,The Solomon Islands,UN member,Oceania,Melanesia
-SLB,Solomon Islands,2020,3.749,69.258,744498,The Solomon Islands,UN member,Oceania,Melanesia
-SLB,Solomon Islands,2025,,,838645,The Solomon Islands,UN member,Oceania,Melanesia
-SLE,Sierra Leone,2010,5.327,51.927,6222714,The Republic of Sierra Leone,UN member,Africa,Western Africa
-SLE,Sierra Leone,2015,4.548,55.454,7037655,The Republic of Sierra Leone,UN member,Africa,Western Africa
-SLE,Sierra Leone,2020,4.08,59.694,7912558,The Republic of Sierra Leone,UN member,Africa,Western Africa
-SLE,Sierra Leone,2025,,,8819794,The Republic of Sierra Leone,UN member,Africa,Western Africa
-SLV,El Salvador,2010,2.239,70.909,6068249,The Republic of El Salvador,UN member,North America,Central America
-SLV,El Salvador,2015,2.067,70.952,6183676,The Republic of El Salvador,UN member,North America,Central America
-SLV,El Salvador,2020,1.819,70.244,6234673,The Republic of El Salvador,UN member,North America,Central America
-SLV,El Salvador,2025,,,6365503,The Republic of El Salvador,UN member,North America,Central America
-SMR,San Marino,2010,1.459,83.464,33270,The Republic of San Marino,UN member,Europe,Southern Europe
-SMR,San Marino,2015,1.196,84.596,32897,The Republic of San Marino,UN member,Europe,Southern Europe
-SMR,San Marino,2020,1.113,82.65,34770,The Republic of San Marino,UN member,Europe,Southern Europe
-SMR,San Marino,2025,,,34109,The Republic of San Marino,UN member,Europe,Southern Europe
-SOM,Somalia,2010,7.322,48.9,12261756,The Federal Republic of Somalia,UN member,Africa,Eastern Africa
-SOM,Somalia,2015,6.975,55.056,13806963,The Federal Republic of Somalia,UN member,Africa,Eastern Africa
-SOM,Somalia,2020,6.453,57.095,16651191,The Federal Republic of Somalia,UN member,Africa,Eastern Africa
-SOM,Somalia,2025,,,19654739,The Federal Republic of Somalia,UN member,Africa,Eastern Africa
-SRB,Serbia,2010,1.4,74.3366,7291436,The Republic of Serbia,UN member,Europe,Southern Europe
-SRB,Serbia,2015,1.46,75.2878,7095383,The Republic of Serbia,UN member,Europe,Southern Europe
-SRB,Serbia,2020,1.48,74.478,6899126,The Republic of Serbia,UN member,Europe,Southern Europe
-SRB,Serbia,2025,,,6549143,The Republic of Serbia,UN member,Europe,Southern Europe
-SSD,South Sudan,2010,5.318,57.485,9745953,The Republic of South Sudan,UN member,Africa,Eastern Africa
-SSD,South Sudan,2015,4.695,39.757,11107561,The Republic of South Sudan,UN member,Africa,Eastern Africa
-SSD,South Sudan,2020,4.16,57.648,10698467,The Republic of South Sudan,UN member,Africa,Eastern Africa
-SSD,South Sudan,2025,,,12188788,The Republic of South Sudan,UN member,Africa,Eastern Africa
-STP,Sao Tome and Principe,2010,4.769,63.867,181802,The Democratic Republic of São Tomé and Príncipe,UN member,Africa,Central Africa
-STP,Sao Tome and Principe,2015,4.354,66.023,200291,The Democratic Republic of São Tomé and Príncipe,UN member,Africa,Central Africa
-STP,Sao Tome and Principe,2020,3.827,67.979,217435,The Democratic Republic of São Tomé and Príncipe,UN member,Africa,Central Africa
-STP,Sao Tome and Principe,2025,,,240254,The Democratic Republic of São Tomé and Príncipe,UN member,Africa,Central Africa
-SUR,Suriname,2010,2.688,69.626,549923,The Republic of Suriname,UN member,South America,South America
-SUR,Suriname,2015,2.57,70.567,581627,The Republic of Suriname,UN member,South America,South America
-SUR,Suriname,2020,2.314,72.321,612317,The Republic of Suriname,UN member,South America,South America
-SUR,Suriname,2025,,,639850,The Republic of Suriname,UN member,South America,South America
-SVK,Slovakia,2010,1.43,75.1122,5391428,The Slovak Republic,UN member,Europe,Eastern Europe
-SVK,Slovakia,2015,1.4,76.5634,5423801,The Slovak Republic,UN member,Europe,Eastern Europe
-SVK,Slovakia,2020,1.59,76.8659,5458827,The Slovak Republic,UN member,Europe,Eastern Europe
-SVK,Slovakia,2025,,,5413813,The Slovak Republic,UN member,Europe,Eastern Europe
-SVN,Slovenia,2010,1.57,79.422,2048583,The Republic of Slovenia,UN member,Europe,Southern Europe
-SVN,Slovenia,2015,1.57,80.7756,2063531,The Republic of Slovenia,UN member,Europe,Southern Europe
-SVN,Slovenia,2020,1.59,80.5317,2102419,The Republic of Slovenia,UN member,Europe,Southern Europe
-SVN,Slovenia,2025,,,2130986,The Republic of Slovenia,UN member,Europe,Southern Europe
-SWE,Sweden,2010,1.98,81.4512,9378126,The Kingdom of Sweden,UN member,Europe,Nordic Countries
-SWE,Sweden,2015,1.85,82.2049,9799186,The Kingdom of Sweden,UN member,Europe,Nordic Countries
-SWE,Sweden,2020,1.67,82.3561,10353442,The Kingdom of Sweden,UN member,Europe,Nordic Countries
-SWE,Sweden,2025,,,10596620,The Kingdom of Sweden,UN member,Europe,Nordic Countries
-SWZ,Eswatini,2010,3.375,48.331,1111650,The Kingdom of Eswatini,UN member,Africa,Southern Africa
-SWZ,Eswatini,2015,3.122,54.941,1142813,The Kingdom of Eswatini,UN member,Africa,Southern Africa
-SWZ,Eswatini,2020,2.888,59.862,1192729,The Kingdom of Eswatini,UN member,Africa,Southern Africa
-SWZ,Eswatini,2025,,,1256174,The Kingdom of Eswatini,UN member,Africa,Southern Africa
-SXM,Sint Maarten,2010,1.848,74.821,33794,Sint Maarten,Netherlands,North America,Caribbean
-SXM,Sint Maarten,2015,1.732,75.899,37471,Sint Maarten,Netherlands,North America,Caribbean
-SXM,Sint Maarten,2020,1.467,75.002,41008,Sint Maarten,Netherlands,North America,Caribbean
-SXM,Sint Maarten,2025,,,43923,Sint Maarten,Netherlands,North America,Caribbean
-SYC,Seychelles,2010,2.13,73.1976,89770,The Republic of Seychelles,UN member,Africa,Eastern Africa
-SYC,Seychelles,2015,2.26,74.2951,93419,The Republic of Seychelles,UN member,Africa,Eastern Africa
-SYC,Seychelles,2020,2.2,77.2366,98462,The Republic of Seychelles,UN member,Africa,Eastern Africa
-SYC,Seychelles,2025,,,122730,The Republic of Seychelles,UN member,Africa,Eastern Africa
-SYR,Syria,2010,3.355,73.542,22482421,The Syrian Arab Republic,UN member,Asia,Middle East
-SYR,Syria,2015,3.067,63.265,19424618,The Syrian Arab Republic,UN member,Asia,Middle East
-SYR,Syria,2020,2.837,71.944,21049429,The Syrian Arab Republic,UN member,Asia,Middle East
-SYR,Syria,2025,,,25620427,The Syrian Arab Republic,UN member,Asia,Middle East
-TCA,Turks and Caicos Islands,2010,1.907,76.784,29739,The Turks and Caicos Islands,United Kingdom,North America,Caribbean
-TCA,Turks and Caicos Islands,2015,1.718,77.321,36605,The Turks and Caicos Islands,United Kingdom,North America,Caribbean
-TCA,Turks and Caicos Islands,2020,1.552,77.499,44386,The Turks and Caicos Islands,United Kingdom,North America,Caribbean
-TCA,Turks and Caicos Islands,2025,,,46855,The Turks and Caicos Islands,United Kingdom,North America,Caribbean
-TCD,Chad,2010,6.99,50.107,12312575,The Republic of Chad,UN member,Africa,Central Africa
-TCD,Chad,2015,6.706,51.32,14647621,The Republic of Chad,UN member,Africa,Central Africa
-TCD,Chad,2020,6.346,53.082,17224679,The Republic of Chad,UN member,Africa,Central Africa
-TCD,Chad,2025,,,21003705,The Republic of Chad,UN member,Africa,Central Africa
-TGO,Togo,2010,5.0873,57.24,6325788,The Togolese Republic,UN member,Africa,Western Africa
-TGO,Togo,2015,4.6616,59.23,7071502,The Togolese Republic,UN member,Africa,Western Africa
-TGO,Togo,2020,4.3863,61.14,7788054,The Togolese Republic,UN member,Africa,Western Africa
-TGO,Togo,2025,,,8591626,The Togolese Republic,UN member,Africa,Western Africa
-THA,Thailand,2010,1.562,75.012,68579447,The Kingdom of Thailand,UN member,Asia,Southeast Asia
-THA,Thailand,2015,1.451,76.563,70540795,The Kingdom of Thailand,UN member,Asia,Southeast Asia
-THA,Thailand,2020,1.259,77.331,71641484,The Kingdom of Thailand,UN member,Asia,Southeast Asia
-THA,Thailand,2025,,,71619863,The Kingdom of Thailand,UN member,Asia,Southeast Asia
-TJK,Tajikistan,2010,3.457,68.37,7652141,The Republic of Tajikistan,UN member,Asia,Southern and Central Asia
-TJK,Tajikistan,2015,3.459,69.665,8643840,The Republic of Tajikistan,UN member,Asia,Southern and Central Asia
-TJK,Tajikistan,2020,3.211,68.605,9749310,The Republic of Tajikistan,UN member,Asia,Southern and Central Asia
-TJK,Tajikistan,2025,,,10786734,The Republic of Tajikistan,UN member,Asia,Southern and Central Asia
-TKM,Turkmenistan,2010,2.848,68.608,5564356,Turkmenistan,UN member,Asia,Southern and Central Asia
-TKM,Turkmenistan,2015,3.033,69.061,6215770,Turkmenistan,UN member,Asia,Southern and Central Asia
-TKM,Turkmenistan,2020,2.793,68.846,6949912,Turkmenistan,UN member,Asia,Southern and Central Asia
-TKM,Turkmenistan,2025,,,7618847,Turkmenistan,UN member,Asia,Southern and Central Asia
-TLS,Timor-Leste,2010,4.816,63.66,1084679,The Democratic Republic of Timor-Leste,UN member,Asia,Southeast Asia
-TLS,Timor-Leste,2015,3.779,65.326,1205131,The Democratic Republic of Timor-Leste,UN member,Asia,Southeast Asia
-TLS,Timor-Leste,2020,3.011,66.919,1326053,The Democratic Republic of Timor-Leste,UN member,Asia,Southeast Asia
-TLS,Timor-Leste,2025,,,1418517,The Democratic Republic of Timor-Leste,UN member,Asia,Southeast Asia
-TON,Tonga,2010,3.879,71.319,107400,The Kingdom of Tonga,UN member,Oceania,Polynesia
-TON,Tonga,2015,3.54,71.851,106095,The Kingdom of Tonga,UN member,Oceania,Polynesia
-TON,Tonga,2020,3.234,72.379,105704,The Kingdom of Tonga,UN member,Oceania,Polynesia
-TON,Tonga,2025,,,103742,The Kingdom of Tonga,UN member,Oceania,Polynesia
-TTO,Trinidad and Tobago,2010,1.614,71.809,1317714,The Republic of Trinidad and Tobago,UN member,North America,Caribbean
-TTO,Trinidad and Tobago,2015,1.598,72.882,1349667,The Republic of Trinidad and Tobago,UN member,North America,Caribbean
-TTO,Trinidad and Tobago,2020,1.572,72.645,1366725,The Republic of Trinidad and Tobago,UN member,North America,Caribbean
-TTO,Trinidad and Tobago,2025,,,1367764,The Republic of Trinidad and Tobago,UN member,North America,Caribbean
-TUN,Tunisia,2010,2.075,74.438,10765980,The Republic of Tunisia,UN member,Africa,Northern Africa
-TUN,Tunisia,2015,2.306,74.875,11402264,The Republic of Tunisia,UN member,Africa,Northern Africa
-TUN,Tunisia,2020,2.0,75.004,11974057,The Republic of Tunisia,UN member,Africa,Northern Africa
-TUN,Tunisia,2025,,,12348573,The Republic of Tunisia,UN member,Africa,Northern Africa
-TUR,Türkiye,2010,2.08,74.964,73142150,The Republic of Türkiye,UN member,Asia,Middle East
-TUR,Türkiye,2015,2.16,76.539,78218479,The Republic of Türkiye,UN member,Asia,Middle East
-TUR,Türkiye,2020,1.77,76.525,83384680,The Republic of Türkiye,UN member,Asia,Middle East
-TUR,Türkiye,2025,,,85878556,The Republic of Türkiye,UN member,Asia,Middle East
-TUV,Tuvalu,2010,3.442,64.834,10614,Tuvalu,UN member,Oceania,Polynesia
-TUV,Tuvalu,2015,3.308,65.365,10963,Tuvalu,UN member,Oceania,Polynesia
-TUV,Tuvalu,2020,3.309,66.357,10399,Tuvalu,UN member,Oceania,Polynesia
-TUV,Tuvalu,2025,,,9492,Tuvalu,UN member,Oceania,Polynesia
-TZA,Tanzania,2010,5.225,61.127,44758488,The United Republic of Tanzania,UN member,Africa,Eastern Africa
-TZA,Tanzania,2015,5.025,63.928,52020962,The United Republic of Tanzania,UN member,Africa,Eastern Africa
-TZA,Tanzania,2020,4.801,66.771,60972798,The United Republic of Tanzania,UN member,Africa,Eastern Africa
-TZA,Tanzania,2025,,,70545865,The United Republic of Tanzania,UN member,Africa,Eastern Africa
-UGA,Uganda,2010,6.019,59.959,32390802,The Republic of Uganda,UN member,Africa,Eastern Africa
-UGA,Uganda,2015,5.251,63.831,37531446,The Republic of Uganda,UN member,Africa,Eastern Africa
-UGA,Uganda,2020,4.621,66.41,44457152,The Republic of Uganda,UN member,Africa,Eastern Africa
-UGA,Uganda,2025,,,51384894,The Republic of Uganda,UN member,Africa,Eastern Africa
-UKR,Ukraine,2010,1.436,70.188,46456003,Ukraine,UN member,Europe,Eastern Europe
-UKR,Ukraine,2015,1.387,72.686,45784896,Ukraine,UN member,Europe,Eastern Europe
-UKR,Ukraine,2020,1.208,73.283,44680014,Ukraine,UN member,Europe,Eastern Europe
-UKR,Ukraine,2025,,,38980376,Ukraine,UN member,Europe,Eastern Europe
-URY,Uruguay,2010,2.011,76.691,3318580,The Oriental Republic of Uruguay,UN member,South America,South America
-URY,Uruguay,2015,2.041,77.285,3368017,The Oriental Republic of Uruguay,UN member,South America,South America
-URY,Uruguay,2020,1.497,78.381,3398968,The Oriental Republic of Uruguay,UN member,South America,South America
-URY,Uruguay,2025,,,3384688,The Oriental Republic of Uruguay,UN member,South America,South America
-USA,United States of America,2010,1.931,78.5415,309378227,The United States of America,UN member,North America,North America
-USA,United States of America,2015,1.8435,78.6902,321815121,The United States of America,UN member,North America,North America
-USA,United States of America,2020,1.6415,76.9805,331578104,The United States of America,UN member,North America,North America
-USA,United States of America,2025,,,341784857,The United States of America,UN member,North America,North America
-UZB,Uzbekistan,2010,2.442,69.836,28385506,The Republic of Uzbekistan,UN member,Asia,Southern and Central Asia
-UZB,Uzbekistan,2015,2.583,71.33,30749346,The Republic of Uzbekistan,UN member,Asia,Southern and Central Asia
-UZB,Uzbekistan,2020,3.062,71.461,33586372,The Republic of Uzbekistan,UN member,Asia,Southern and Central Asia
-UZB,Uzbekistan,2025,,,37053428,The Republic of Uzbekistan,UN member,Asia,Southern and Central Asia
-VCT,Saint Vincent and the Grenadines,2010,2.144,70.66,109959,Saint Vincent and the Grenadines,UN member,North America,Caribbean
-VCT,Saint Vincent and the Grenadines,2015,2.133,70.463,106960,Saint Vincent and the Grenadines,UN member,North America,Caribbean
-VCT,Saint Vincent and the Grenadines,2020,1.83,69.605,103526,Saint Vincent and the Grenadines,UN member,North America,Caribbean
-VCT,Saint Vincent and the Grenadines,2025,,,99924,Saint Vincent and the Grenadines,UN member,North America,Caribbean
-VEN,Venezuela,2010,2.396,73.092,28813101,The Bolivarian Republic of Venezuela,UN member,South America,South America
-VEN,Venezuela,2015,2.253,73.004,30573972,The Bolivarian Republic of Venezuela,UN member,South America,South America
-VEN,Venezuela,2020,2.116,72.369,28444077,The Bolivarian Republic of Venezuela,UN member,South America,South America
-VEN,Venezuela,2025,,,28516896,The Bolivarian Republic of Venezuela,UN member,South America,South America
-VGB,British Virgin Islands,2010,1.183,76.289,27675,The Virgin Islands,United Kingdom,North America,Caribbean
-VGB,British Virgin Islands,2015,1.186,76.558,34498,The Virgin Islands,United Kingdom,North America,Caribbean
-VGB,British Virgin Islands,2020,0.975,76.894,37135,The Virgin Islands,United Kingdom,North America,Caribbean
-VGB,British Virgin Islands,2025,,,39732,The Virgin Islands,United Kingdom,North America,Caribbean
-VIR,US Virgin Islands,2010,2.3,77.8659,108357,The Virgin Islands of the United States,United States,North America,Caribbean
-VIR,US Virgin Islands,2015,2.11,79.0171,107712,The Virgin Islands of the United States,United States,North America,Caribbean
-VIR,US Virgin Islands,2020,2.03,79.8195,106290,The Virgin Islands of the United States,United States,North America,Caribbean
-VIR,US Virgin Islands,2025,,,103792,The Virgin Islands of the United States,United States,North America,Caribbean
-VNM,Vietnam,2010,1.906,73.611,87455152,The Socialist Republic of Vietnam,UN member,Asia,Southeast Asia
-VNM,Vietnam,2015,2.1,73.955,92823254,The Socialist Republic of Vietnam,UN member,Asia,Southeast Asia
-VNM,Vietnam,2020,1.957,75.383,98079191,The Socialist Republic of Vietnam,UN member,Asia,Southeast Asia
-VNM,Vietnam,2025,,,101598527,The Socialist Republic of Vietnam,UN member,Asia,Southeast Asia
-VUT,Vanuatu,2010,4.126,69.57,238248,The Republic of Vanuatu,UN member,Oceania,Melanesia
-VUT,Vanuatu,2015,3.952,70.163,266101,The Republic of Vanuatu,UN member,Oceania,Melanesia
-VUT,Vanuatu,2020,3.738,70.385,298858,The Republic of Vanuatu,UN member,Oceania,Melanesia
-VUT,Vanuatu,2025,,,335169,The Republic of Vanuatu,UN member,Oceania,Melanesia
-WSM,Samoa,2010,4.52,71.451,193023,The Independent State of Samoa,UN member,Oceania,Polynesia
-WSM,Samoa,2015,4.344,71.06,201782,The Independent State of Samoa,UN member,Oceania,Polynesia
-WSM,Samoa,2020,4.002,70.727,211944,The Independent State of Samoa,UN member,Oceania,Polynesia
-WSM,Samoa,2025,,,219306,The Independent State of Samoa,UN member,Oceania,Polynesia
-YEM,Yemen,2010,4.81,67.223,26754387,The Republic of Yemen,UN member,Asia,Middle East
-YEM,Yemen,2015,4.617,66.761,31159379,The Republic of Yemen,UN member,Asia,Middle East
-YEM,Yemen,2020,4.6,66.435,36134863,The Republic of Yemen,UN member,Asia,Middle East
-YEM,Yemen,2025,,,41773878,The Republic of Yemen,UN member,Asia,Middle East
-ZAF,South Africa,2010,2.445,58.886,52344051,The Republic of South Africa,UN member,Africa,Southern Africa
-ZAF,South Africa,2015,2.359,64.053,56723537,The Republic of South Africa,UN member,Africa,Southern Africa
-ZAF,South Africa,2020,2.257,65.15,60562381,The Republic of South Africa,UN member,Africa,Southern Africa
-ZAF,South Africa,2025,,,64747319,The Republic of South Africa,UN member,Africa,Southern Africa
-ZMB,Zambia,2010,5.359,56.896,13965594,The Republic of Zambia,UN member,Africa,Eastern Africa
-ZMB,Zambia,2015,4.775,60.728,16399089,The Republic of Zambia,UN member,Africa,Eastern Africa
-ZMB,Zambia,2020,4.323,63.361,19059395,The Republic of Zambia,UN member,Africa,Eastern Africa
-ZMB,Zambia,2025,,,21913874,The Republic of Zambia,UN member,Africa,Eastern Africa
-ZWE,Zimbabwe,2010,4.04,51.925,13356548,The Republic of Zimbabwe,UN member,Africa,Eastern Africa
-ZWE,Zimbabwe,2015,3.911,58.989,14399013,The Republic of Zimbabwe,UN member,Africa,Eastern Africa
-ZWE,Zimbabwe,2020,3.754,61.53,15526888,The Republic of Zimbabwe,UN member,Africa,Eastern Africa
-ZWE,Zimbabwe,2025,,,16950795,The Republic of Zimbabwe,UN member,Africa,Eastern Africa
+country_code,country,year,fertility_rate,life_expectancy,infant_mortality,sanitation,size,official_state_name,sovereignty,continent,region
+ABW,Aruba,2012,1.907,74.841,,98.446,104110,Aruba,Netherlands,North America,Caribbean
+ABW,Aruba,2016,1.848,75.54,,98.6036,108727,Aruba,Netherlands,North America,Caribbean
+ABW,Aruba,2020,1.662,75.406,,98.7612,108587,Aruba,Netherlands,North America,Caribbean
+ABW,Aruba,2024,1.606,76.5,,98.84,107995,Aruba,Netherlands,North America,Caribbean
+AFG,Afghanistan,2012,5.985,61.735,71.2,37.8394,30560034,The Islamic Republic of Afghanistan,UN member,Asia,Southern and Central Asia
+AFG,Afghanistan,2016,5.542,62.646,61.9,43.3699,34700612,The Islamic Republic of Afghanistan,UN member,Asia,Southern and Central Asia
+AFG,Afghanistan,2020,5.145,61.454,54.9,48.9057,39068979,The Islamic Republic of Afghanistan,UN member,Asia,Southern and Central Asia
+AFG,Afghanistan,2024,4.761,66.289,48.3,54.4958,42647492,The Islamic Republic of Afghanistan,UN member,Asia,Southern and Central Asia
+AGO,Angola,2012,6.039,58.916,44.6,44.0453,25177394,The Republic of Angola,UN member,Africa,Central Africa
+AGO,Angola,2016,5.686,61.619,37.6,47.5559,29183070,The Republic of Angola,UN member,Africa,Central Africa
+AGO,Angola,2020,5.371,63.116,34.9,49.8016,33451132,The Republic of Angola,UN member,Africa,Central Africa
+AGO,Angola,2024,5.048,64.805,32.1,,37885849,The Republic of Angola,UN member,Africa,Central Africa
+ALB,Albania,2012,1.719,78.084,8.5,96.2103,2860708,The Republic of Albania,UN member,Europe,Southern Europe
+ALB,Albania,2016,1.555,78.643,7.6,98.1079,2689469,The Republic of Albania,UN member,Europe,Southern Europe
+ALB,Albania,2020,1.371,77.824,8.1,99.2988,2528480,The Republic of Albania,UN member,Europe,Southern Europe
+ALB,Albania,2024,1.341,79.776,8.3,99.2997,2377128,The Republic of Albania,UN member,Europe,Southern Europe
+AND,Andorra,2012,1.26,84.334,3.9,100.0,76834,The Principality of Andorra,UN member,Europe,Southern Europe
+AND,Andorra,2016,1.184,84.489,3.2,100.0,72181,The Principality of Andorra,UN member,Europe,Southern Europe
+AND,Andorra,2020,1.028,79.418,2.8,100.0,77380,The Principality of Andorra,UN member,Europe,Southern Europe
+AND,Andorra,2024,1.087,84.188,2.4,100.0,81938,The Principality of Andorra,UN member,Europe,Southern Europe
+ARE,United Arab Emirates,2012,1.532,81.913,6.7,99.1179,7391448,The United Arab Emirates,UN member,Asia,Middle East
+ARE,United Arab Emirates,2016,1.366,82.195,5.8,99.1063,8935095,The United Arab Emirates,UN member,Asia,Middle East
+ARE,United Arab Emirates,2020,1.289,81.936,4.7,99.096,9401038,The United Arab Emirates,UN member,Asia,Middle East
+ARE,United Arab Emirates,2024,1.213,83.069,3.8,99.0869,10986400,The United Arab Emirates,UN member,Asia,Middle East
+ARG,Argentina,2012,2.304,75.802,11.4,93.2268,42161721,The Argentine Republic,UN member,South America,South America
+ARG,Argentina,2016,2.241,76.105,9.7,94.821,43900313,The Argentine Republic,UN member,South America,South America
+ARG,Argentina,2020,1.601,75.878,8.7,,45191965,The Argentine Republic,UN member,South America,South America
+ARG,Argentina,2024,1.504,77.543,8.0,,45696159,The Argentine Republic,UN member,South America,South America
+ARM,Armenia,2012,1.6,74.1195,14.8,90.764,3024100,The Republic of Armenia,UN member,Asia,Middle East
+ARM,Armenia,2016,1.6,74.8683,12.2,91.7279,2992300,The Republic of Armenia,UN member,Asia,Middle East
+ARM,Armenia,2020,1.7,73.3756,10.2,92.762,2961500,The Republic of Armenia,UN member,Asia,Middle East
+ARM,Armenia,2024,1.7,78.3195,8.5,93.6649,3033500,The Republic of Armenia,UN member,Asia,Middle East
+ASM,American Samoa,2012,3.043,72.709,,62.1987,54489,The Territory of American Samoa,United States,Oceania,Polynesia
+ASM,American Samoa,2016,2.699,72.64,,62.1671,52245,The Territory of American Samoa,United States,Oceania,Polynesia
+ASM,American Samoa,2020,2.36,72.672,,62.1355,49761,The Territory of American Samoa,United States,Oceania,Polynesia
+ASM,American Samoa,2024,2.267,72.992,,62.1197,46765,The Territory of American Samoa,United States,Oceania,Polynesia
+ATG,Antigua and Barbuda,2012,1.655,77.1,9.1,94.0043,87260,Antigua and Barbuda,UN member,North America,Caribbean
+ATG,Antigua and Barbuda,2016,1.458,76.968,8.4,97.0132,89969,Antigua and Barbuda,UN member,North America,Caribbean
+ATG,Antigua and Barbuda,2020,1.569,77.161,7.8,99.6042,91846,Antigua and Barbuda,UN member,North America,Caribbean
+ATG,Antigua and Barbuda,2024,1.582,77.766,7.0,99.6057,93772,Antigua and Barbuda,UN member,North America,Caribbean
+AUS,Australia,2012,1.92,82.0463,3.6,99.9966,22733465,The Commonwealth of Australia,UN member,Oceania,Australia and New Zealand
+AUS,Australia,2016,1.752,82.4488,3.2,99.9985,24190907,The Commonwealth of Australia,UN member,Oceania,Australia and New Zealand
+AUS,Australia,2020,1.581,83.2,3.2,100.0,25649248,The Commonwealth of Australia,UN member,Oceania,Australia and New Zealand
+AUS,Australia,2024,1.481,83.0512,3.1,100.0,27194286,The Commonwealth of Australia,UN member,Oceania,Australia and New Zealand
+AUT,Austria,2012,1.44,80.9366,3.4,99.9823,8429991,The Republic of Austria,UN member,Europe,Western Europe
+AUT,Austria,2016,1.53,81.6415,3.0,99.9748,8736668,The Republic of Austria,UN member,Europe,Western Europe
+AUT,Austria,2020,1.44,81.1927,2.9,99.9726,8916864,The Republic of Austria,UN member,Europe,Western Europe
+AUT,Austria,2024,1.31,81.9951,2.8,99.9721,9177982,The Republic of Austria,UN member,Europe,Western Europe
+AZE,Azerbaijan,2012,2.0,71.08,25.9,83.3901,9295784,The Republic of Azerbaijan,UN member,Asia,Middle East
+AZE,Azerbaijan,2016,1.9,72.568,19.8,88.9091,9757812,The Republic of Azerbaijan,UN member,Asia,Middle East
+AZE,Azerbaijan,2020,1.7,70.312,15.6,94.4852,10093121,The Republic of Azerbaijan,UN member,Asia,Middle East
+AZE,Azerbaijan,2024,1.43,74.576,12.5,98.9785,10202830,The Republic of Azerbaijan,UN member,Asia,Middle East
+BDI,Burundi,2012,5.991,58.501,49.1,45.2416,10071028,The Republic of Burundi,UN member,Africa,Eastern Africa
+BDI,Burundi,2016,5.587,60.789,40.0,44.7586,11239451,The Republic of Burundi,UN member,Africa,Eastern Africa
+BDI,Burundi,2020,5.177,62.569,34.6,44.4548,12617036,The Republic of Burundi,UN member,Africa,Eastern Africa
+BDI,Burundi,2024,4.789,63.818,30.5,44.634,14047786,The Republic of Burundi,UN member,Africa,Eastern Africa
+BEL,Belgium,2012,1.8,80.3854,3.5,99.4861,11106932,The Kingdom of Belgium,UN member,Europe,Western Europe
+BEL,Belgium,2016,1.68,81.439,3.4,99.4862,11331422,The Kingdom of Belgium,UN member,Europe,Western Europe
+BEL,Belgium,2020,1.55,80.6951,3.2,99.4862,11538604,The Kingdom of Belgium,UN member,Europe,Western Europe
+BEL,Belgium,2024,1.44,82.3,3.1,99.4862,11858610,The Kingdom of Belgium,UN member,Europe,Western Europe
+BEN,Benin,2012,5.429,58.559,61.1,14.5443,10397657,The Republic of Benin,UN member,Africa,Western Africa
+BEN,Benin,2016,5.254,59.283,55.8,16.9311,11697842,The Republic of Benin,UN member,Africa,Western Africa
+BEN,Benin,2020,4.795,60.154,50.4,19.5017,13070169,The Republic of Benin,UN member,Africa,Western Africa
+BEN,Benin,2024,4.48,60.961,45.2,22.249,14462724,The Republic of Benin,UN member,Africa,Western Africa
+BFA,Burkina Faso,2012,5.793,57.457,61.7,19.6466,17172287,Burkina Faso,UN member,Africa,Western Africa
+BFA,Burkina Faso,2016,5.331,59.173,54.7,23.6359,19334856,Burkina Faso,UN member,Africa,Western Africa
+BFA,Burkina Faso,2020,4.44,60.454,48.7,27.7597,21478690,Burkina Faso,UN member,Africa,Western Africa
+BFA,Burkina Faso,2024,4.11,61.292,43.6,31.7963,23548781,Burkina Faso,UN member,Africa,Western Africa
+BGD,Bangladesh,2012,2.263,68.989,33.9,44.2976,155070101,The People's Republic of Bangladesh,UN member,Asia,Southern and Central Asia
+BGD,Bangladesh,2016,2.227,71.075,28.5,51.9283,160811932,The People's Republic of Bangladesh,UN member,Asia,Southern and Central Asia
+BGD,Bangladesh,2020,2.175,71.421,24.8,59.7112,166298024,The People's Republic of Bangladesh,UN member,Asia,Southern and Central Asia
+BGD,Bangladesh,2024,2.138,74.93,24.4,67.6172,173562364,The People's Republic of Bangladesh,UN member,Asia,Southern and Central Asia
+BGR,Bulgaria,2012,1.5,74.3146,8.3,85.952,7305888,The Republic of Bulgaria,UN member,Europe,Eastern Europe
+BGR,Bulgaria,2016,1.67,74.8122,6.4,85.9935,6894139,The Republic of Bulgaria,UN member,Europe,Eastern Europe
+BGR,Bulgaria,2020,1.77,73.3561,5.3,86.0351,6550696,The Republic of Bulgaria,UN member,Europe,Eastern Europe
+BGR,Bulgaria,2024,1.72,75.761,4.6,86.0766,6441421,The Republic of Bulgaria,UN member,Europe,Eastern Europe
+BHR,Bahrain,2012,2.11,79.622,6.6,99.9876,1208964,The Kingdom of Bahrain,UN member,Asia,Middle East
+BHR,Bahrain,2016,2.042,80.407,6.3,100.0,1423726,The Kingdom of Bahrain,UN member,Asia,Middle East
+BHR,Bahrain,2020,1.86,78.683,6.6,100.0,1472204,The Kingdom of Bahrain,UN member,Asia,Middle East
+BHR,Bahrain,2024,1.805,81.423,7.3,100.0,1588670,The Kingdom of Bahrain,UN member,Asia,Middle East
+BHS,Bahamas,2012,1.761,73.707,12.9,92.8889,375469,The Commonwealth of The Bahamas,UN member,North America,Caribbean
+BHS,Bahamas,2016,1.495,74.042,12.2,93.71,388055,The Commonwealth of The Bahamas,UN member,North America,Caribbean
+BHS,Bahamas,2020,1.386,72.994,11.9,,395863,The Commonwealth of The Bahamas,UN member,North America,Caribbean
+BHS,Bahamas,2024,1.374,74.71,11.1,,401283,The Commonwealth of The Bahamas,UN member,North America,Caribbean
+BIH,Bosnia and Herzegovina,2012,1.252,77.037,5.9,95.2539,3670113,Bosnia and Herzegovina,UN member,Europe,Southern Europe
+BIH,Bosnia and Herzegovina,2016,1.36,77.124,5.9,95.3361,3473003,Bosnia and Herzegovina,UN member,Europe,Southern Europe
+BIH,Bosnia and Herzegovina,2020,1.515,76.04,5.8,,3299349,Bosnia and Herzegovina,UN member,Europe,Southern Europe
+BIH,Bosnia and Herzegovina,2024,1.492,78.044,5.5,,3164253,Bosnia and Herzegovina,UN member,Europe,Southern Europe
+BLR,Belarus,2012,1.62,71.9659,3.7,96.016,9446836,The Republic of Belarus,UN member,Europe,Eastern Europe
+BLR,Belarus,2016,1.733,73.8268,2.9,97.9567,9469379,The Republic of Belarus,UN member,Europe,Eastern Europe
+BLR,Belarus,2020,1.369,72.1386,2.2,99.594,9379952,The Republic of Belarus,UN member,Europe,Eastern Europe
+BLR,Belarus,2024,1.217,74.3653,1.8,99.7474,9132629,The Republic of Belarus,UN member,Europe,Eastern Europe
+BLZ,Belize,2012,2.51,71.134,14.7,83.9715,334414,Belize,UN member,North America,Central America
+BLZ,Belize,2016,2.396,71.843,12.6,84.008,364705,Belize,UN member,North America,Central America
+BLZ,Belize,2020,2.04,71.58,11.1,84.1194,390812,Belize,UN member,North America,Central America
+BLZ,Belize,2024,2.021,73.739,10.8,84.3018,417072,Belize,UN member,North America,Central America
+BMU,Bermuda,2012,1.528,79.847,,99.9541,63646,Bermuda,United Kingdom,North America,North America
+BMU,Bermuda,2016,1.45,80.476,,99.9458,63449,Bermuda,United Kingdom,North America,North America
+BMU,Bermuda,2020,1.451,81.456,,99.9417,64382,Bermuda,United Kingdom,North America,North America
+BMU,Bermuda,2024,1.405,82.49,,99.9417,64636,Bermuda,United Kingdom,North America,North America
+BOL,Bolivia,2012,3.076,66.586,28.0,51.6492,10515807,The Plurinational State of Bolivia,UN member,South America,South America
+BOL,Bolivia,2016,2.829,67.392,22.1,58.4055,11180020,The Plurinational State of Bolivia,UN member,South America,South America
+BOL,Bolivia,2020,2.651,62.906,17.4,65.4427,11816299,The Plurinational State of Bolivia,UN member,South America,South America
+BOL,Bolivia,2024,2.523,68.739,14.2,71.5839,12413315,The Plurinational State of Bolivia,UN member,South America,South America
+BRA,Brazil,2012,1.766,74.335,14.8,83.3102,196876111,The Federative Republic of Brazil,UN member,South America,South America
+BRA,Brazil,2016,1.727,75.081,14.6,86.4725,203218114,The Federative Republic of Brazil,UN member,South America,South America
+BRA,Brazil,2020,1.653,74.506,12.8,89.5591,208660842,The Federative Republic of Brazil,UN member,South America,South America
+BRA,Brazil,2024,1.614,76.023,12.3,92.4013,211998573,The Federative Republic of Brazil,UN member,South America,South America
+BRB,Barbados,2012,1.731,75.737,12.4,94.3063,276938,Barbados,UN member,North America,Caribbean
+BRB,Barbados,2016,1.724,76.168,11.5,95.8614,279598,Barbados,UN member,North America,Caribbean
+BRB,Barbados,2020,1.708,76.647,10.2,97.3312,281698,Barbados,UN member,North America,Caribbean
+BRB,Barbados,2024,1.708,76.332,9.1,98.0925,282467,Barbados,UN member,North America,Caribbean
+BRN,Brunei,2012,1.973,74.843,8.6,87.3145,405557,"The Nation of Brunei, the Abode of Peace",UN member,Asia,Southeast Asia
+BRN,Brunei,2016,1.915,74.905,9.1,92.181,427564,"The Nation of Brunei, the Abode of Peace",UN member,Asia,Southeast Asia
+BRN,Brunei,2020,1.796,75.114,8.9,97.0476,447404,"The Nation of Brunei, the Abode of Peace",UN member,Asia,Southeast Asia
+BRN,Brunei,2024,1.731,75.501,8.6,100.0,462721,"The Nation of Brunei, the Abode of Peace",UN member,Asia,Southeast Asia
+BTN,Bhutan,2012,2.068,69.759,27.7,66.7005,717279,The Kingdom of Bhutan,UN member,Asia,Southern and Central Asia
+BTN,Bhutan,2016,1.738,71.119,21.6,73.837,747866,The Kingdom of Bhutan,UN member,Asia,Southern and Central Asia
+BTN,Bhutan,2020,1.502,72.253,16.9,80.5348,770006,The Kingdom of Bhutan,UN member,Asia,Southern and Central Asia
+BTN,Bhutan,2024,1.449,73.262,13.7,86.8421,791524,The Kingdom of Bhutan,UN member,Asia,Southern and Central Asia
+BWA,Botswana,2012,3.07,60.384,49.5,65.0373,2108617,The Republic of Botswana,UN member,Africa,Southern Africa
+BWA,Botswana,2016,2.99,64.32,42.8,67.913,2234776,The Republic of Botswana,UN member,Africa,Southern Africa
+BWA,Botswana,2020,2.861,67.643,36.5,70.3974,2365894,The Republic of Botswana,UN member,Africa,Southern Africa
+BWA,Botswana,2024,2.703,69.293,32.1,72.1155,2521139,The Republic of Botswana,UN member,Africa,Southern Africa
+CAF,Central African Republic,2012,6.047,51.336,76.1,17.1122,4610848,The Central African Republic,UN member,Africa,Central Africa
+CAF,Central African Republic,2016,6.126,50.999,77.1,15.5882,4713663,The Central African Republic,UN member,Africa,Central Africa
+CAF,Central African Republic,2020,6.059,50.596,74.7,14.1186,5026628,The Central African Republic,UN member,Africa,Central Africa
+CAF,Central African Republic,2024,5.954,57.671,58.8,14.0363,5330690,The Central African Republic,UN member,Africa,Central Africa
+CAN,Canada,2012,1.63,81.6637,4.8,99.3456,34713395,Canada,UN member,North America,North America
+CAN,Canada,2016,1.59,81.94,4.6,99.0098,36110803,Canada,UN member,North America,North America
+CAN,Canada,2020,1.41,81.53,4.5,98.673,38028638,Canada,UN member,North America,North America
+CAN,Canada,2024,1.25,82.108,4.7,98.5879,41262329,Canada,UN member,North America,North America
+CHE,Switzerland,2012,1.52,82.6976,3.8,99.8869,7996861,The Swiss Confederation,UN member,Europe,Western Europe
+CHE,Switzerland,2016,1.54,83.6024,3.7,99.8983,8373338,The Swiss Confederation,UN member,Europe,Western Europe
+CHE,Switzerland,2020,1.46,83.0,3.5,99.8999,8638167,The Swiss Confederation,UN member,Europe,Western Europe
+CHE,Switzerland,2024,1.29,84.4073,3.4,99.8999,9005582,The Swiss Confederation,UN member,Europe,Western Europe
+CHL,Chile,2012,1.798,79.221,7.3,97.2285,17519119,The Republic of Chile,UN member,South America,South America
+CHL,Chile,2016,1.686,80.295,6.7,98.547,18267221,The Republic of Chile,UN member,South America,South America
+CHL,Chile,2020,1.307,79.349,5.8,99.3145,19370624,The Republic of Chile,UN member,South America,South America
+CHL,Chile,2024,1.14,81.359,5.8,100.0,19764771,The Republic of Chile,UN member,South America,South America
+CHN,China,2012,1.798,76.2,10.5,79.4647,1354190000,The People's Republic of China,UN member,Asia,Eastern Asia
+CHN,China,2016,1.772,77.214,7.6,86.4095,1387790000,The People's Republic of China,UN member,Asia,Eastern Asia
+CHN,China,2020,1.236,78.019,5.5,92.8515,1411100000,The People's Republic of China,UN member,Asia,Eastern Asia
+CHN,China,2024,1.013,78.017,4.1,97.2719,1408975000,The People's Republic of China,UN member,Asia,Eastern Asia
+CIV,Côte d'Ivoire,2012,5.19,56.57,64.5,29.4668,23467078,The Republic of Côte d'Ivoire,UN member,Africa,Western Africa
+CIV,Côte d'Ivoire,2016,4.873,58.814,56.9,33.03,25989405,The Republic of Côte d'Ivoire,UN member,Africa,Western Africa
+CIV,Côte d'Ivoire,2020,4.461,60.14,50.3,36.7506,28915449,The Republic of Côte d'Ivoire,UN member,Africa,Western Africa
+CIV,Côte d'Ivoire,2024,4.23,62.11,44.8,40.4071,31934230,The Republic of Côte d'Ivoire,UN member,Africa,Western Africa
+CMR,Cameroon,2012,4.982,58.17,59.6,41.8814,20809529,The Republic of Cameroon,UN member,Africa,Central Africa
+CMR,Cameroon,2016,4.842,60.293,51.4,43.5553,23454161,The Republic of Cameroon,UN member,Africa,Central Africa
+CMR,Cameroon,2020,4.557,61.674,45.5,45.2885,26210558,The Republic of Cameroon,UN member,Africa,Central Africa
+CMR,Cameroon,2024,4.261,63.968,40.2,47.0729,29123744,The Republic of Cameroon,UN member,Africa,Central Africa
+COD,Democratic Republic of the Congo,2012,6.559,57.35,56.7,18.7547,73254618,The Democratic Republic of the Congo,UN member,Africa,Central Africa
+COD,Democratic Republic of the Congo,2016,6.392,59.081,55.1,17.3684,83956415,The Democratic Republic of the Congo,UN member,Africa,Central Africa
+COD,Democratic Republic of the Congo,2020,6.206,60.428,57.2,16.1159,95989998,The Democratic Republic of the Congo,UN member,Africa,Central Africa
+COD,Democratic Republic of the Congo,2024,5.981,62.074,56.4,16.3033,109276265,The Democratic Republic of the Congo,UN member,Africa,Central Africa
+COG,Congo,2012,4.785,62.662,38.5,17.1843,4740450,The Republic of the Congo,UN member,Africa,Central Africa
+COG,Congo,2016,4.546,63.911,34.2,19.5481,5222536,The Republic of the Congo,UN member,Africa,Central Africa
+COG,Congo,2020,4.329,64.391,30.3,20.4597,5752791,The Republic of the Congo,UN member,Africa,Central Africa
+COG,Congo,2024,4.109,66.001,27.0,,6332961,The Republic of the Congo,UN member,Africa,Central Africa
+COL,Colombia,2012,1.899,75.611,15.2,86.079,45715810,The Republic of Colombia,UN member,South America,South America
+COL,Colombia,2016,1.719,76.228,13.5,89.598,47437512,The Republic of Colombia,UN member,South America,South America
+COL,Colombia,2020,1.694,74.757,11.9,93.0987,50629997,The Republic of Colombia,UN member,South America,South America
+COL,Colombia,2024,1.634,77.913,10.5,96.582,52886363,The Republic of Colombia,UN member,South America,South America
+COM,Comoros,2012,4.652,63.463,45.4,42.3061,681630,The Union of the Comoros,UN member,Africa,Eastern Africa
+COM,Comoros,2016,4.348,64.792,42.0,47.6248,741741,The Union of the Comoros,UN member,Africa,Eastern Africa
+COM,Comoros,2020,4.071,65.756,38.9,52.6066,802163,The Union of the Comoros,UN member,Africa,Eastern Africa
+COM,Comoros,2024,3.822,67.023,35.0,57.2231,866628,The Union of the Comoros,UN member,Africa,Eastern Africa
+CPV,Cabo Verde,2012,2.153,73.315,21.9,63.9531,511955,The Republic of Cabo Verde,UN member,Africa,Western Africa
+CPV,Cabo Verde,2016,1.966,74.35,16.2,72.4969,512554,The Republic of Cabo Verde,UN member,Africa,Western Africa
+CPV,Cabo Verde,2020,1.591,73.818,12.5,80.9181,514679,The Republic of Cabo Verde,UN member,Africa,Western Africa
+CPV,Cabo Verde,2024,1.511,76.224,10.6,83.1279,524877,The Republic of Cabo Verde,UN member,Africa,Western Africa
+CRI,Costa Rica,2012,1.851,79.925,8.5,96.4171,4663934,The Republic of Costa Rica,UN member,North America,Central America
+CRI,Costa Rica,2016,1.746,79.988,7.7,97.3008,4866998,The Republic of Costa Rica,UN member,North America,Central America
+CRI,Costa Rica,2020,1.448,79.725,8.1,98.0824,5034320,The Republic of Costa Rica,UN member,North America,Central America
+CRI,Costa Rica,2024,1.318,80.996,9.1,98.7888,5129910,The Republic of Costa Rica,UN member,North America,Central America
+CUB,Cuba,2012,1.668,78.162,4.8,87.091,11303175,The Republic of Cuba,UN member,North America,Caribbean
+CUB,Cuba,2016,1.6,77.571,4.9,89.6216,11265612,The Republic of Cuba,UN member,North America,Caribbean
+CUB,Cuba,2020,1.489,77.407,5.7,92.1836,11176354,The Republic of Cuba,UN member,North America,Caribbean
+CUB,Cuba,2024,1.445,78.264,6.8,94.7704,10979783,The Republic of Cuba,UN member,North America,Caribbean
+CUW,Curaçao,2012,2.2,75.96,,99.1031,152088,The Country of Curaçao,Netherlands,North America,Caribbean
+CUW,Curaçao,2016,1.7,76.322,,99.1691,159664,The Country of Curaçao,Netherlands,North America,Caribbean
+CUW,Curaçao,2020,1.4,76.501,,,155482,The Country of Curaçao,Netherlands,North America,Caribbean
+CUW,Curaçao,2024,1.4,76.989,,,155967,The Country of Curaçao,Netherlands,North America,Caribbean
+CYM,Cayman Islands,2012,1.531,77.121,,83.4663,57136,The Cayman Islands,United Kingdom,North America,Caribbean
+CYM,Cayman Islands,2016,1.231,78.367,,83.3908,63100,The Cayman Islands,United Kingdom,North America,Caribbean
+CYM,Cayman Islands,2020,1.554,79.23,,83.3093,68684,The Cayman Islands,United Kingdom,North America,Caribbean
+CYM,Cayman Islands,2024,1.525,80.54,,83.2442,74457,The Cayman Islands,United Kingdom,North America,Caribbean
+CYP,Cyprus,2012,1.382,81.128,2.4,99.5524,1165397,The Republic of Cyprus,UN member,Asia,Middle East
+CYP,Cyprus,2016,1.357,81.534,2.1,99.5235,1237112,The Republic of Cyprus,UN member,Asia,Middle East
+CYP,Cyprus,2020,1.361,81.23,2.7,99.4959,1302247,The Republic of Cyprus,UN member,Asia,Middle East
+CYP,Cyprus,2024,1.38,81.821,4.1,99.4777,1358282,The Republic of Cyprus,UN member,Asia,Middle East
+CZE,Czechia,2012,1.45,78.0756,2.6,99.0741,10510785,The Czech Republic,UN member,Europe,Eastern Europe
+CZE,Czechia,2016,1.63,79.0268,2.6,99.0748,10566332,The Czech Republic,UN member,Europe,Eastern Europe
+CZE,Czechia,2020,1.74,78.2268,2.4,99.0728,10697858,The Czech Republic,UN member,Europe,Eastern Europe
+CZE,Czechia,2024,1.36,79.978,2.1,99.0701,10905028,The Czech Republic,UN member,Europe,Eastern Europe
+DEU,Germany,2012,1.41,80.539,3.4,99.2248,80425823,The Federal Republic of Germany,UN member,Europe,Western Europe
+DEU,Germany,2016,1.6,80.9902,3.3,99.2249,82348669,The Federal Republic of Germany,UN member,Europe,Western Europe
+DEU,Germany,2020,1.53,81.0415,3.1,99.2256,83160871,The Federal Republic of Germany,UN member,Europe,Western Europe
+DEU,Germany,2024,1.36,80.7927,3.1,99.227,83516593,The Federal Republic of Germany,UN member,Europe,Western Europe
+DJI,Djibouti,2012,3.255,61.719,61.5,56.031,966747,The Republic of Djibouti,UN member,Africa,Eastern Africa
+DJI,Djibouti,2016,2.969,63.335,55.0,62.0957,1037653,The Republic of Djibouti,UN member,Africa,Eastern Africa
+DJI,Djibouti,2020,2.745,64.2,48.7,66.7421,1105188,The Republic of Djibouti,UN member,Africa,Eastern Africa
+DJI,Djibouti,2024,2.618,66.202,43.0,,1168722,The Republic of Djibouti,UN member,Africa,Eastern Africa
+DMA,Dominica,2012,1.827,71.391,24.1,79.1107,69118,The Commonwealth of Dominica,UN member,North America,Caribbean
+DMA,Dominica,2016,1.581,71.189,27.8,80.3664,69606,The Commonwealth of Dominica,UN member,North America,Caribbean
+DMA,Dominica,2020,1.495,71.269,31.4,,67573,The Commonwealth of Dominica,UN member,North America,Caribbean
+DMA,Dominica,2024,1.48,71.294,33.3,,66205,The Commonwealth of Dominica,UN member,North America,Caribbean
+DNK,Denmark,2012,1.73,80.0512,3.5,99.5972,5591572,The Kingdom of Denmark,UN member,Europe,Nordic Countries
+DNK,Denmark,2016,1.79,80.8537,3.5,99.5972,5728010,The Kingdom of Denmark,UN member,Europe,Nordic Countries
+DNK,Denmark,2020,1.68,81.6024,3.3,99.5972,5831404,The Kingdom of Denmark,UN member,Europe,Nordic Countries
+DNK,Denmark,2024,1.47,82.2537,3.5,99.5972,5976992,The Kingdom of Denmark,UN member,Europe,Nordic Countries
+DOM,Dominican Republic,2012,2.497,72.817,30.6,83.703,10070411,The Dominican Republic,UN member,North America,Caribbean
+DOM,Dominican Republic,2016,2.41,72.889,31.2,85.9157,10551430,The Dominican Republic,UN member,North America,Caribbean
+DOM,Dominican Republic,2020,2.329,72.636,30.4,88.0566,11008300,The Dominican Republic,UN member,North America,Caribbean
+DOM,Dominican Republic,2024,2.222,73.868,27.7,90.1198,11427557,The Dominican Republic,UN member,North America,Caribbean
+DZA,Algeria,2012,2.996,74.609,23.2,87.0935,37646166,The People's Democratic Republic of Algeria,UN member,Africa,Northern Africa
+DZA,Algeria,2016,3.091,75.31,21.6,86.6055,40850721,The People's Democratic Republic of Algeria,UN member,Africa,Northern Africa
+DZA,Algeria,2020,2.94,73.257,20.4,85.9655,44042091,The People's Democratic Republic of Algeria,UN member,Africa,Northern Africa
+DZA,Algeria,2024,2.723,76.475,19.5,85.9065,46814308,The People's Democratic Republic of Algeria,UN member,Africa,Northern Africa
+ECU,Ecuador,2012,2.509,75.486,14.6,81.8482,15572194,The Republic of Ecuador,UN member,South America,South America
+ECU,Ecuador,2016,2.122,76.094,12.5,85.0099,16505139,The Republic of Ecuador,UN member,South America,South America
+ECU,Ecuador,2020,1.967,72.004,11.5,88.1818,17546065,The Republic of Ecuador,UN member,South America,South America
+ECU,Ecuador,2024,1.806,77.579,10.9,91.2043,18135478,The Republic of Ecuador,UN member,South America,South America
+EGY,Egypt,2012,3.4,69.464,25.7,94.5237,93161001,The Arab Republic of Egypt,UN member,Africa,Northern Africa
+EGY,Egypt,2016,3.35,70.437,23.7,95.3608,101644589,The Arab Republic of Egypt,UN member,Africa,Northern Africa
+EGY,Egypt,2020,2.85,69.79,22.6,96.2125,109315124,The Arab Republic of Egypt,UN member,Africa,Northern Africa
+EGY,Egypt,2024,2.735,71.806,20.8,97.0861,116538258,The Arab Republic of Egypt,UN member,Africa,Northern Africa
+ERI,Eritrea,2012,4.407,64.697,35.4,11.5365,3036988,The State of Eritrea,UN member,Africa,Eastern Africa
+ERI,Eritrea,2016,4.164,66.242,31.3,11.94,3124698,The State of Eritrea,UN member,Africa,Eastern Africa
+ERI,Eritrea,2020,3.933,66.98,27.8,,3291271,The State of Eritrea,UN member,Africa,Eastern Africa
+ERI,Eritrea,2024,3.68,68.893,24.7,,3535603,The State of Eritrea,UN member,Africa,Eastern Africa
+ESP,Spain,2012,1.32,82.4268,2.9,99.8919,46773055,The Kingdom of Spain,UN member,Europe,Southern Europe
+ESP,Spain,2016,1.33,83.3293,2.7,99.9189,46458139,The Kingdom of Spain,UN member,Europe,Southern Europe
+ESP,Spain,2020,1.18,82.2317,2.6,99.9191,47359424,The Kingdom of Spain,UN member,Europe,Southern Europe
+ESP,Spain,2024,1.1,83.8878,2.6,99.9181,48848840,The Kingdom of Spain,UN member,Europe,Southern Europe
+EST,Estonia,2012,1.56,76.3268,3.0,99.1575,1322696,The Republic of Estonia,UN member,Europe,Baltic Countries
+EST,Estonia,2016,1.6,77.6415,2.3,99.0342,1315790,The Republic of Estonia,UN member,Europe,Baltic Countries
+EST,Estonia,2020,1.58,78.5951,1.8,99.028,1329522,The Republic of Estonia,UN member,Europe,Baltic Countries
+EST,Estonia,2024,1.18,79.2951,1.5,99.0215,1372341,The Republic of Estonia,UN member,Europe,Baltic Countries
+ETH,Ethiopia,2012,4.887,61.443,54.4,6.4485,95798767,The Federal Democratic Republic of Ethiopia,UN member,Africa,Eastern Africa
+ETH,Ethiopia,2016,4.473,64.162,45.9,7.7144,106718162,The Federal Democratic Republic of Ethiopia,UN member,Africa,Eastern Africa
+ETH,Ethiopia,2020,4.274,65.969,39.4,9.0133,118917671,The Federal Democratic Republic of Ethiopia,UN member,Africa,Eastern Africa
+ETH,Ethiopia,2024,3.909,67.603,34.5,10.3577,132059767,The Federal Democratic Republic of Ethiopia,UN member,Africa,Eastern Africa
+FIN,Finland,2012,1.8,80.6268,2.2,99.448,5413971,The Republic of Finland,UN member,Europe,Nordic Countries
+FIN,Finland,2016,1.57,81.4293,2.0,99.448,5495303,The Republic of Finland,UN member,Europe,Nordic Countries
+FIN,Finland,2020,1.37,81.9317,1.9,99.448,5529543,The Republic of Finland,UN member,Europe,Nordic Countries
+FIN,Finland,2024,1.25,82.3366,1.9,99.4479,5619911,The Republic of Finland,UN member,Europe,Nordic Countries
+FJI,Fiji,2012,2.612,65.812,15.9,91.9124,914918,The Republic of Fiji,UN member,Oceania,Melanesia
+FJI,Fiji,2016,2.518,66.657,16.8,93.0055,919166,The Republic of Fiji,UN member,Oceania,Melanesia
+FJI,Fiji,2020,2.357,66.924,21.6,93.6216,914963,The Republic of Fiji,UN member,Oceania,Melanesia
+FJI,Fiji,2024,2.27,67.463,23.5,92.7543,928784,The Republic of Fiji,UN member,Oceania,Melanesia
+FRA,France,2012,2.01,81.9683,3.1,98.6539,65657659,The French Republic,UN member,Europe,Western Europe
+FRA,France,2016,1.92,82.5732,3.2,98.6508,66724104,The French Republic,UN member,Europe,Western Europe
+FRA,France,2020,1.82,82.1756,3.3,98.6476,67601110,The French Republic,UN member,Europe,Western Europe
+FRA,France,2024,1.61,82.9805,3.4,98.6444,68551653,The French Republic,UN member,Europe,Western Europe
+FRO,Faroe Islands,2012,2.5311,81.1061,,90.8835,48290,The Faroe Islands,Denmark,Europe,Nordic Countries
+FRO,Faroe Islands,2016,2.6078,81.9621,,,49463,The Faroe Islands,Denmark,Europe,Nordic Countries
+FRO,Faroe Islands,2020,2.3301,82.5342,,,52561,The Faroe Islands,Denmark,Europe,Nordic Countries
+FRO,Faroe Islands,2024,1.9129,83.0832,,,54640,The Faroe Islands,Denmark,Europe,Nordic Countries
+FSM,Micronesia,2012,3.18,65.08,29.0,74.1025,107890,The Federated States of Micronesia,UN member,Oceania,Micronesia
+FSM,Micronesia,2016,3.001,65.576,25.9,90.4539,109075,The Federated States of Micronesia,UN member,Oceania,Micronesia
+FSM,Micronesia,2020,2.852,65.878,23.0,90.4539,110916,The Federated States of Micronesia,UN member,Oceania,Micronesia
+FSM,Micronesia,2024,2.743,67.357,20.3,,113160,The Federated States of Micronesia,UN member,Oceania,Micronesia
+GAB,Gabon,2012,4.086,65.438,36.4,41.6563,1846889,The Gabonese Republic,UN member,Africa,Central Africa
+GAB,Gabon,2016,3.921,66.583,32.6,47.1547,2100306,The Gabonese Republic,UN member,Africa,Central Africa
+GAB,Gabon,2020,3.831,67.073,28.8,52.872,2322539,The Gabonese Republic,UN member,Africa,Central Africa
+GAB,Gabon,2024,3.592,68.511,25.9,57.4015,2538952,The Gabonese Republic,UN member,Africa,Central Africa
+GBR,United Kingdom,2012,1.92,80.9049,4.1,99.116,63711000,The United Kingdom of Great Britain and Northern Ireland,UN member,Europe,British Islands
+GBR,United Kingdom,2016,1.79,81.1561,3.8,99.1114,65606000,The United Kingdom of Great Britain and Northern Ireland,UN member,Europe,British Islands
+GBR,United Kingdom,2020,1.571,80.3318,3.9,99.107,66740000,The United Kingdom of Great Britain and Northern Ireland,UN member,Europe,British Islands
+GBR,United Kingdom,2024,1.551,81.3869,4.1,99.1027,69281000,The United Kingdom of Great Britain and Northern Ireland,UN member,Europe,British Islands
+GEO,Georgia,2012,1.929,72.672,10.2,83.0458,3728874,Georgia,UN member,Asia,Middle East
+GEO,Georgia,2016,2.228,73.136,8.7,85.6008,3727505,Georgia,UN member,Asia,Middle East
+GEO,Georgia,2020,1.976,73.509,8.0,88.147,3722716,Georgia,UN member,Asia,Middle East
+GEO,Georgia,2024,1.802,74.657,7.5,90.6807,3812518,Georgia,UN member,Asia,Middle East
+GHA,Ghana,2012,4.154,61.995,42.3,17.1267,26734268,The Republic of Ghana,UN member,Africa,Western Africa
+GHA,Ghana,2016,3.873,63.522,36.6,21.7286,29356742,The Republic of Ghana,UN member,Africa,Western Africa
+GHA,Ghana,2020,3.541,64.309,31.7,26.5532,31887809,The Republic of Ghana,UN member,Africa,Western Africa
+GHA,Ghana,2024,3.344,65.695,27.5,31.5789,34427414,The Republic of Ghana,UN member,Africa,Western Africa
+GIB,Gibraltar,2012,1.999,82.527,,100.0,32029,Gibraltar,United Kingdom,Europe,Southern Europe
+GIB,Gibraltar,2016,1.94,82.741,,100.0,33658,Gibraltar,United Kingdom,Europe,Southern Europe
+GIB,Gibraltar,2020,1.907,83.07,,100.0,36173,Gibraltar,United Kingdom,Europe,Southern Europe
+GIB,Gibraltar,2024,1.885,83.63,,100.0,39329,Gibraltar,United Kingdom,Europe,Southern Europe
+GIN,Guinea,2012,5.232,57.117,72.9,19.8536,10921581,The Republic of Guinea,UN member,Africa,Western Africa
+GIN,Guinea,2016,4.915,58.49,69.9,24.1498,12073030,The Republic of Guinea,UN member,Africa,Western Africa
+GIN,Guinea,2020,4.489,59.35,65.7,28.8045,13371183,The Republic of Guinea,UN member,Africa,Western Africa
+GIN,Guinea,2024,4.131,60.904,59.8,32.6496,14754785,The Republic of Guinea,UN member,Africa,Western Africa
+GMB,Gambia,2012,5.519,61.9,48.1,46.4212,2043094,The Republic of The Gambia,UN member,Africa,Western Africa
+GMB,Gambia,2016,4.809,63.386,42.1,46.7788,2283769,The Republic of The Gambia,UN member,Africa,Western Africa
+GMB,Gambia,2020,4.248,64.418,37.0,47.3646,2515733,The Republic of The Gambia,UN member,Africa,Western Africa
+GMB,Gambia,2024,3.907,66.057,32.7,48.1711,2759988,The Republic of The Gambia,UN member,Africa,Western Africa
+GNB,Guinea-Bissau,2012,5.003,58.27,61.8,16.9842,1651417,The Republic of Guinea-Bissau,UN member,Africa,Western Africa
+GNB,Guinea-Bissau,2016,4.519,60.619,53.4,21.9769,1831893,The Republic of Guinea-Bissau,UN member,Africa,Western Africa
+GNB,Guinea-Bissau,2020,4.075,61.343,47.2,27.2502,2013255,The Republic of Guinea-Bissau,UN member,Africa,Western Africa
+GNB,Guinea-Bissau,2024,3.757,64.254,42.1,28.9416,2201352,The Republic of Guinea-Bissau,UN member,Africa,Western Africa
+GNQ,Equatorial Guinea,2012,5.04,59.301,69.3,65.4061,1293483,The Republic of Equatorial Guinea,UN member,Africa,Central Africa
+GNQ,Equatorial Guinea,2016,4.686,61.081,60.9,66.2485,1508186,The Republic of Equatorial Guinea,UN member,Africa,Central Africa
+GNQ,Equatorial Guinea,2020,4.346,62.141,53.9,,1716468,The Republic of Equatorial Guinea,UN member,Africa,Central Africa
+GNQ,Equatorial Guinea,2024,4.116,63.906,47.6,,1892516,The Republic of Equatorial Guinea,UN member,Africa,Central Africa
+GRC,Greece,2012,1.34,80.6341,3.4,98.7079,11045011,The Hellenic Republic,UN member,Europe,Southern Europe
+GRC,Greece,2016,1.38,81.3878,3.6,98.9564,10775971,The Hellenic Republic,UN member,Europe,Southern Europe
+GRC,Greece,2020,1.39,81.2878,3.4,98.9937,10698599,The Hellenic Republic,UN member,Europe,Southern Europe
+GRC,Greece,2024,1.24,81.839,3.2,99.0073,10405134,The Hellenic Republic,UN member,Europe,Southern Europe
+GRD,Grenada,2012,1.967,74.961,14.6,93.4552,112775,Grenada,UN member,North America,Caribbean
+GRD,Grenada,2016,1.616,75.01,16.1,93.0837,115130,Grenada,UN member,North America,Caribbean
+GRD,Grenada,2020,1.532,75.019,17.0,92.7121,116341,Grenada,UN member,North America,Caribbean
+GRD,Grenada,2024,1.472,75.367,16.4,92.6192,117207,Grenada,UN member,North America,Caribbean
+GRL,Greenland,2012,2.006,69.9595,,,56810,Kalaallit Nunaat,Denmark,North America,North America
+GRL,Greenland,2016,2.066,71.199,,62.5,56186,Kalaallit Nunaat,Denmark,North America,North America
+GRL,Greenland,2020,2.109,71.2859,,62.5,56367,Kalaallit Nunaat,Denmark,North America,North America
+GRL,Greenland,2024,1.706,70.2734,,,56836,Kalaallit Nunaat,Denmark,North America,North America
+GTM,Guatemala,2012,3.219,70.722,26.0,66.1775,15089647,The Republic of Guatemala,UN member,North America,Central America
+GTM,Guatemala,2016,2.973,71.215,22.3,67.5844,16268760,The Republic of Guatemala,UN member,North America,Central America
+GTM,Guatemala,2020,2.47,69.971,19.5,68.8863,17357325,The Republic of Guatemala,UN member,North America,Central America
+GTM,Guatemala,2024,2.287,72.746,17.2,71.1697,18406359,The Republic of Guatemala,UN member,North America,Central America
+GUM,Guam,2012,3.117,76.237,,89.7388,166331,The Territory of Guam,United States,Oceania,Micronesia
+GUM,Guam,2016,3.171,76.449,,89.9939,164233,The Territory of Guam,United States,Oceania,Micronesia
+GUM,Guam,2020,2.895,75.529,,90.249,162158,The Territory of Guam,United States,Oceania,Micronesia
+GUM,Guam,2024,2.748,77.422,,90.3766,167777,The Territory of Guam,United States,Oceania,Micronesia
+GUY,Guyana,2012,2.701,66.443,32.8,84.7315,746288,The Co-operative Republic of Guyana,UN member,South America,South America
+GUY,Guyana,2016,2.634,68.069,29.6,87.3692,763548,The Co-operative Republic of Guyana,UN member,South America,South America
+GUY,Guyana,2020,2.491,67.751,26.3,90.0231,807481,The Co-operative Republic of Guyana,UN member,South America,South America
+GUY,Guyana,2024,2.395,70.319,23.2,91.3087,831087,The Co-operative Republic of Guyana,UN member,South America,South America
+HKG,Hong Kong,2012,1.285,83.4502,,96.294,7150100,The Hong Kong Special Administrative Region of China,China,Asia,Eastern Asia
+HKG,Hong Kong,2016,1.205,84.2115,,95.8074,7336600,The Hong Kong Special Administrative Region of China,China,Asia,Eastern Asia
+HKG,Hong Kong,2020,0.883,85.4963,,95.3209,7481000,The Hong Kong Special Administrative Region of China,China,Asia,Eastern Asia
+HKG,Hong Kong,2024,0.841,85.3927,,94.8344,7524100,The Hong Kong Special Administrative Region of China,China,Asia,Eastern Asia
+HND,Honduras,2012,2.927,70.46,18.8,76.4883,8715076,The Republic of Honduras,UN member,North America,Central America
+HND,Honduras,2016,2.704,71.615,16.5,80.3075,9412380,The Republic of Honduras,UN member,North America,Central America
+HND,Honduras,2020,2.577,70.864,14.5,84.0338,10119640,The Republic of Honduras,UN member,North America,Central America
+HND,Honduras,2024,2.476,73.044,12.8,87.6718,10825703,The Republic of Honduras,UN member,North America,Central America
+HRV,Croatia,2012,1.52,77.1683,4.4,96.129,4260368,The Republic of Croatia,UN member,Europe,Southern Europe
+HRV,Croatia,2016,1.43,77.922,4.1,95.7305,4106867,The Republic of Croatia,UN member,Europe,Southern Europe
+HRV,Croatia,2020,1.48,77.5244,4.0,95.78,3914206,The Republic of Croatia,UN member,Europe,Southern Europe
+HRV,Croatia,2024,1.46,78.9293,4.1,,3866200,The Republic of Croatia,UN member,Europe,Southern Europe
+HTI,Haiti,2012,3.321,62.273,53.2,25.7813,10069771,The Republic of Haiti,UN member,North America,Caribbean
+HTI,Haiti,2016,3.054,63.325,48.5,27.4176,10671457,The Republic of Haiti,UN member,North America,Caribbean
+HTI,Haiti,2020,2.804,63.773,43.6,28.6576,11243848,The Republic of Haiti,UN member,North America,Caribbean
+HTI,Haiti,2024,2.625,65.119,39.0,29.1081,11772557,The Republic of Haiti,UN member,North America,Caribbean
+HUN,Hungary,2012,1.34,75.0634,4.8,98.0022,9920362,Hungary,UN member,Europe,Eastern Europe
+HUN,Hungary,2016,1.55,76.0634,4.0,97.9932,9759755,Hungary,UN member,Europe,Eastern Europe
+HUN,Hungary,2020,1.61,75.4195,3.4,97.9837,9670419,Hungary,UN member,Europe,Eastern Europe
+HUN,Hungary,2024,1.41,76.7244,3.1,97.9736,9562065,Hungary,UN member,Europe,Eastern Europe
+IDN,Indonesia,2012,2.514,68.862,24.9,65.7303,252698525,The Republic of Indonesia,UN member,Asia,Southeast Asia
+IDN,Indonesia,2016,2.311,69.733,21.0,73.9559,264627418,The Republic of Indonesia,UN member,Asia,Southeast Asia
+IDN,Indonesia,2020,2.189,68.817,17.7,82.2571,274814866,The Republic of Indonesia,UN member,Asia,Southeast Asia
+IDN,Indonesia,2024,2.115,71.288,15.2,88.2032,283487931,The Republic of Indonesia,UN member,Asia,Southeast Asia
+IMN,Isle of Man,2012,1.864,80.007,,100.0,84335,The Isle of Man,British Crown,Europe,British Islands
+IMN,Isle of Man,2016,1.713,80.391,,100.0,83466,The Isle of Man,British Crown,Europe,British Islands
+IMN,Isle of Man,2020,1.585,80.591,,100.0,84064,The Isle of Man,British Crown,Europe,British Islands
+IMN,Isle of Man,2024,1.544,81.091,,100.0,84160,The Isle of Man,British Crown,Europe,British Islands
+IND,India,2012,2.47,68.076,42.2,48.3206,1278674502,The Republic of India,UN member,Asia,Southern and Central Asia
+IND,India,2016,2.284,69.709,34.6,60.1238,1343944296,The Republic of India,UN member,Asia,Southern and Central Asia
+IND,India,2020,2.047,70.156,28.3,72.0482,1402617695,The Republic of India,UN member,Asia,Southern and Central Asia
+IND,India,2024,1.962,72.235,23.3,83.3809,1450935791,The Republic of India,UN member,Asia,Southern and Central Asia
+IRL,Ireland,2012,1.98,80.8463,3.4,89.8752,4599533,Ireland,UN member,Europe,British Islands
+IRL,Ireland,2016,1.81,81.6537,3.1,89.835,4762722,Ireland,UN member,Europe,British Islands
+IRL,Ireland,2020,1.6,82.4561,3.1,89.7865,5039747,Ireland,UN member,Europe,British Islands
+IRL,Ireland,2024,1.47,83.0098,3.4,89.7256,5395790,Ireland,UN member,Europe,British Islands
+IRN,Iran,2012,1.851,75.039,15.7,86.4019,79370580,The Islamic Republic of Iran,UN member,Asia,Southern and Central Asia
+IRN,Iran,2016,2.054,76.155,13.5,88.7518,83812228,The Islamic Republic of Iran,UN member,Asia,Southern and Central Asia
+IRN,Iran,2020,1.7,74.141,11.8,90.2668,87723443,The Islamic Republic of Iran,UN member,Asia,Southern and Central Asia
+IRN,Iran,2024,1.684,77.854,10.3,90.4583,91567738,The Islamic Republic of Iran,UN member,Asia,Southern and Central Asia
+IRQ,Iraq,2012,4.544,68.827,29.2,86.4826,33654842,The Republic of Iraq,UN member,Asia,Middle East
+IRQ,Iraq,2016,3.843,68.683,25.9,93.6397,38469627,The Republic of Iraq,UN member,Asia,Middle East
+IRQ,Iraq,2020,3.419,69.651,22.8,98.4933,42116605,The Republic of Iraq,UN member,Asia,Middle East
+IRQ,Iraq,2024,3.221,72.424,20.1,98.5048,46042015,The Republic of Iraq,UN member,Asia,Middle East
+ISL,Iceland,2012,2.04,82.9171,2.0,98.7844,320716,Iceland,UN member,Europe,Nordic Countries
+ISL,Iceland,2016,1.74,82.2049,2.0,98.7827,335439,Iceland,UN member,Europe,Nordic Countries
+ISL,Iceland,2020,1.72,83.0634,2.1,98.7805,366463,Iceland,UN member,Europe,Nordic Countries
+ISL,Iceland,2024,1.56,82.8098,2.1,98.778,386506,Iceland,UN member,Europe,Nordic Countries
+ISR,Israel,2012,3.05,81.7049,3.4,99.9885,7910500,The State of Israel,UN member,Asia,Middle East
+ISR,Israel,2016,3.11,82.4073,3.1,99.961,8546000,The State of Israel,UN member,Asia,Middle East
+ISR,Israel,2020,2.9,82.6488,2.8,99.936,9215100,The State of Israel,UN member,Asia,Middle East
+ISR,Israel,2024,2.87,83.1976,2.7,99.9201,10002200,The State of Israel,UN member,Asia,Middle East
+ITA,Italy,2012,1.42,82.239,3.2,99.8856,60191247,The Italian Republic,UN member,Europe,Southern Europe
+ITA,Italy,2016,1.36,83.2439,2.9,99.8854,60115223,The Italian Republic,UN member,Europe,Southern Europe
+ITA,Italy,2020,1.24,82.1951,2.5,99.8852,59438851,The Italian Republic,UN member,Europe,Southern Europe
+ITA,Italy,2024,1.18,83.9512,2.3,99.8849,58952704,The Italian Republic,UN member,Europe,Southern Europe
+JAM,Jamaica,2012,1.648,72.405,17.3,85.2981,2772430,Jamaica,UN member,North America,Caribbean
+JAM,Jamaica,2016,1.464,72.052,17.1,87.4142,2809915,Jamaica,UN member,North America,Caribbean
+JAM,Jamaica,2020,1.383,71.452,17.2,89.5245,2830739,Jamaica,UN member,North America,Caribbean
+JAM,Jamaica,2024,1.351,71.606,16.4,91.6265,2839175,Jamaica,UN member,North America,Caribbean
+JOR,Jordan,2012,3.568,74.087,16.2,97.6816,7587127,The Hashemite Kingdom of Jordan,UN member,Asia,Middle East
+JOR,Jordan,2016,3.072,75.55,14.7,97.2644,10006367,The Hashemite Kingdom of Jordan,UN member,Asia,Middle East
+JOR,Jordan,2020,2.791,75.583,13.3,96.838,10865228,The Hashemite Kingdom of Jordan,UN member,Asia,Middle East
+JOR,Jordan,2024,2.604,77.981,12.0,96.4148,11552876,The Hashemite Kingdom of Jordan,UN member,Asia,Middle East
+JPN,Japan,2012,1.41,83.0961,2.2,99.9705,127629000,Japan,UN member,Asia,Eastern Asia
+JPN,Japan,2016,1.44,83.9849,2.0,99.9615,127076000,Japan,UN member,Asia,Eastern Asia
+JPN,Japan,2020,1.33,84.56,1.8,99.9524,126261000,Japan,UN member,Asia,Eastern Asia
+JPN,Japan,2024,1.15,84.0363,1.8,99.9433,123975371,Japan,UN member,Asia,Eastern Asia
+KAZ,Kazakhstan,2012,2.64,69.939,13.3,97.4985,17306106,The Republic of Kazakhstan,UN member,Asia,Southern and Central Asia
+KAZ,Kazakhstan,2016,2.795,72.549,8.8,97.7439,18363600,The Republic of Kazakhstan,UN member,Asia,Southern and Central Asia
+KAZ,Kazakhstan,2020,3.13,71.195,8.0,97.9463,19482117,The Republic of Kazakhstan,UN member,Asia,Southern and Central Asia
+KAZ,Kazakhstan,2024,2.984,74.531,7.4,97.9447,20592571,The Republic of Kazakhstan,UN member,Asia,Southern and Central Asia
+KEN,Kenya,2012,4.116,61.537,41.1,32.2455,43888303,The Republic of Kenya,UN member,Africa,Eastern Africa
+KEN,Kenya,2016,3.689,62.526,38.4,35.1355,48139687,The Republic of Kenya,UN member,Africa,Eastern Africa
+KEN,Kenya,2020,3.364,61.596,36.5,38.0183,52217334,The Republic of Kenya,UN member,Africa,Eastern Africa
+KEN,Kenya,2024,3.167,63.834,34.2,40.885,56432944,The Republic of Kenya,UN member,Africa,Eastern Africa
+KGZ,Kyrgyzstan,2012,3.2,70.0024,22.6,95.7313,5652076,The Kyrgyz Republic,UN member,Asia,Southern and Central Asia
+KGZ,Kyrgyzstan,2016,3.1,70.9512,18.4,96.9087,6175338,The Kyrgyz Republic,UN member,Asia,Southern and Central Asia
+KGZ,Kyrgyzstan,2020,3.1,71.8,15.6,98.0176,6726596,The Kyrgyz Republic,UN member,Asia,Southern and Central Asia
+KGZ,Kyrgyzstan,2024,2.6,72.4,14.8,98.5399,7221868,The Kyrgyz Republic,UN member,Asia,Southern and Central Asia
+KHM,Cambodia,2012,2.751,68.371,32.1,44.4636,14945085,The Kingdom of Cambodia,UN member,Asia,Southeast Asia
+KHM,Cambodia,2016,2.725,69.635,24.1,57.417,15852803,The Kingdom of Cambodia,UN member,Asia,Southeast Asia
+KHM,Cambodia,2020,2.699,70.059,19.2,70.491,16725474,The Kingdom of Cambodia,UN member,Asia,Southeast Asia
+KHM,Cambodia,2024,2.548,70.817,16.4,83.3359,17638801,The Kingdom of Cambodia,UN member,Asia,Southeast Asia
+KIR,Kiribati,2012,3.768,65.908,41.9,39.9871,112284,The Republic of Kiribati,UN member,Oceania,Micronesia
+KIR,Kiribati,2016,3.375,65.799,42.9,42.3904,118478,The Republic of Kiribati,UN member,Oceania,Micronesia
+KIR,Kiribati,2020,3.254,65.205,42.3,44.2811,126099,The Republic of Kiribati,UN member,Oceania,Micronesia
+KIR,Kiribati,2024,3.124,66.6,38.8,45.1735,134518,The Republic of Kiribati,UN member,Oceania,Micronesia
+KNA,Saint Kitts and Nevis,2012,1.713,71.362,16.5,94.2995,47033,Saint Kitts and Nevis,UN member,North America,Caribbean
+KNA,Saint Kitts and Nevis,2016,1.633,71.227,16.7,94.9536,47075,Saint Kitts and Nevis,UN member,North America,Caribbean
+KNA,Saint Kitts and Nevis,2020,1.55,71.181,15.5,,46870,Saint Kitts and Nevis,UN member,North America,Caribbean
+KNA,Saint Kitts and Nevis,2024,1.526,72.281,13.9,,46843,Saint Kitts and Nevis,UN member,North America,Caribbean
+KOR,South Korea,2012,1.297,80.8195,3.1,99.9259,50199853,The Republic of Korea,UN member,Asia,Eastern Asia
+KOR,South Korea,2016,1.172,82.2756,2.8,99.8604,51217803,The Republic of Korea,UN member,Asia,Eastern Asia
+KOR,South Korea,2020,0.837,83.4268,2.5,99.7949,51836239,The Republic of Korea,UN member,Asia,Eastern Asia
+KOR,South Korea,2024,0.748,83.6293,2.3,99.7294,51751065,The Republic of Korea,UN member,Asia,Eastern Asia
+KWT,Kuwait,2012,1.99,78.395,8.5,100.0,3337109,The State of Kuwait,UN member,Asia,Middle East
+KWT,Kuwait,2016,2.061,79.6776,7.7,100.0,4004096,The State of Kuwait,UN member,Asia,Middle East
+KWT,Kuwait,2020,2.033,78.761,7.6,100.0,4400267,The State of Kuwait,UN member,Asia,Middle East
+KWT,Kuwait,2024,1.56,84.5805,7.0,100.0,4897263,The State of Kuwait,UN member,Asia,Middle East
+LAO,Laos,2012,2.953,65.126,46.2,61.0006,6518978,The Lao People's Democratic Republic,UN member,Asia,Southeast Asia
+LAO,Laos,2016,2.744,67.014,38.1,70.9711,6908802,The Lao People's Democratic Republic,UN member,Asia,Southeast Asia
+LAO,Laos,2020,2.535,68.339,31.9,80.7027,7346533,The Lao People's Democratic Republic,UN member,Asia,Southeast Asia
+LAO,Laos,2024,2.397,69.225,27.2,88.7314,7769819,The Lao People's Democratic Republic,UN member,Asia,Southeast Asia
+LBN,Lebanon,2012,2.345,77.941,11.1,90.0155,5235742,The Lebanese Republic,UN member,Asia,Middle East
+LBN,Lebanon,2016,2.39,78.306,11.5,95.2522,6323060,The Lebanese Republic,UN member,Asia,Middle East
+LBN,Lebanon,2020,2.308,76.299,13.1,99.2,5702398,The Lebanese Republic,UN member,Asia,Middle East
+LBN,Lebanon,2024,2.227,77.945,15.3,99.2,5805962,The Lebanese Republic,UN member,Asia,Middle East
+LBR,Liberia,2012,4.881,59.785,68.3,16.9137,4373043,The Republic of Liberia,UN member,Africa,Western Africa
+LBR,Liberia,2016,4.461,60.483,64.2,18.9349,4755608,The Republic of Liberia,UN member,Africa,Western Africa
+LBR,Liberia,2020,4.174,61.267,63.4,21.0773,5149463,The Republic of Liberia,UN member,Africa,Western Africa
+LBR,Liberia,2024,3.864,62.324,63.2,23.3352,5612817,The Republic of Liberia,UN member,Africa,Western Africa
+LBY,Libya,2012,2.68,72.188,11.9,89.7818,6179328,The State of Libya,UN member,Africa,Northern Africa
+LBY,Libya,2016,2.673,71.799,10.2,89.3543,6632126,The State of Libya,UN member,Africa,Northern Africa
+LBY,Libya,2020,2.507,72.388,9.0,88.9267,7045399,The State of Libya,UN member,Africa,Northern Africa
+LBY,Libya,2024,2.298,71.121,7.9,88.4991,7381023,The State of Libya,UN member,Africa,Northern Africa
+LCA,Saint Lucia,2012,1.5,72.86,16.9,83.2178,172587,Saint Lucia,UN member,North America,Caribbean
+LCA,Saint Lucia,2016,1.461,72.552,16.8,83.1035,175646,Saint Lucia,UN member,North America,Caribbean
+LCA,Saint Lucia,2020,1.411,72.308,16.5,83.3681,178250,Saint Lucia,UN member,North America,Caribbean
+LCA,Saint Lucia,2024,1.385,72.846,15.8,,179744,Saint Lucia,UN member,North America,Caribbean
+LIE,Liechtenstein,2012,1.51,82.3829,,99.95,36657,The Principality of Liechtenstein,UN member,Europe,Western Europe
+LIE,Liechtenstein,2016,1.61,82.2585,,99.95,37716,The Principality of Liechtenstein,UN member,Europe,Western Europe
+LIE,Liechtenstein,2020,1.46,81.6585,,99.95,38901,The Principality of Liechtenstein,UN member,Europe,Western Europe
+LIE,Liechtenstein,2024,1.37,84.2,,99.95,40450,The Principality of Liechtenstein,UN member,Europe,Western Europe
+LKA,Sri Lanka,2012,2.173,75.187,8.5,86.5764,21169458,The Democratic Socialist Republic of Sri Lanka,UN member,Asia,Southern and Central Asia
+LKA,Sri Lanka,2016,2.062,76.136,7.0,89.9342,21209000,The Democratic Socialist Republic of Sri Lanka,UN member,Asia,Southern and Central Asia
+LKA,Sri Lanka,2020,2.007,76.928,6.0,93.3463,21919000,The Democratic Socialist Republic of Sri Lanka,UN member,Asia,Southern and Central Asia
+LKA,Sri Lanka,2024,1.952,77.672,5.2,95.353,21916000,The Democratic Socialist Republic of Sri Lanka,UN member,Asia,Southern and Central Asia
+LSO,Lesotho,2012,3.296,48.235,71.0,31.8586,2034354,The Kingdom of Lesotho,UN member,Africa,Southern Africa
+LSO,Lesotho,2016,3.18,52.908,68.2,37.3836,2130422,The Kingdom of Lesotho,UN member,Africa,Southern Africa
+LSO,Lesotho,2020,2.846,55.133,62.1,42.7284,2235727,The Kingdom of Lesotho,UN member,Africa,Southern Africa
+LSO,Lesotho,2024,2.664,57.798,56.3,47.8913,2337423,The Kingdom of Lesotho,UN member,Africa,Southern Africa
+LTU,Lithuania,2012,1.6,73.8634,4.3,90.301,2989139,The Republic of Lithuania,UN member,Europe,Baltic Countries
+LTU,Lithuania,2016,1.63,74.6707,4.0,92.5492,2877325,The Republic of Lithuania,UN member,Europe,Baltic Countries
+LTU,Lithuania,2020,1.36,75.0293,3.1,94.7863,2810369,The Republic of Lithuania,UN member,Europe,Baltic Countries
+LTU,Lithuania,2024,1.11,77.1951,2.8,96.3966,2888278,The Republic of Lithuania,UN member,Europe,Baltic Countries
+LUX,Luxembourg,2012,1.57,81.3927,2.2,97.6347,530946,The Grand Duchy of Luxembourg,UN member,Europe,Western Europe
+LUX,Luxembourg,2016,1.41,82.6854,2.1,97.6212,582014,The Grand Duchy of Luxembourg,UN member,Europe,Western Europe
+LUX,Luxembourg,2020,1.36,82.1439,2.0,97.6101,630419,The Grand Duchy of Luxembourg,UN member,Europe,Western Europe
+LUX,Luxembourg,2024,1.25,83.1951,1.9,97.6012,677012,The Grand Duchy of Luxembourg,UN member,Europe,Western Europe
+LVA,Latvia,2012,1.44,73.778,5.5,90.1189,2034319,The Republic of Latvia,UN member,Europe,Baltic Countries
+LVA,Latvia,2016,1.74,74.5805,4.0,90.7423,1959537,The Republic of Latvia,UN member,Europe,Baltic Countries
+LVA,Latvia,2020,1.55,75.1854,3.1,91.7521,1900449,The Republic of Latvia,UN member,Europe,Baltic Countries
+LVA,Latvia,2024,1.24,76.4293,2.2,92.5346,1866124,The Republic of Latvia,UN member,Europe,Baltic Countries
+MAC,Macao,2012,1.357,82.4707,,100.0,567900,The Macao Special Administrative Region of China,China,Asia,Eastern Asia
+MAC,Macao,2016,1.138,83.2756,,100.0,652500,The Macao Special Administrative Region of China,China,Asia,Eastern Asia
+MAC,Macao,2020,0.841,84.1293,,100.0,685400,The Macao Special Administrative Region of China,China,Asia,Eastern Asia
+MAC,Macao,2024,0.582,83.3317,,100.0,687000,The Macao Special Administrative Region of China,China,Asia,Eastern Asia
+MAF,Saint Martin,2012,2.773,79.302,,99.5803,37276,The Collectivity of Saint-Martin,France,North America,Caribbean
+MAF,Saint Martin,2016,2.643,79.885,,99.7852,37175,The Collectivity of Saint-Martin,France,North America,Caribbean
+MAF,Saint Martin,2020,2.829,80.085,,99.9901,31786,The Collectivity of Saint-Martin,France,North America,Caribbean
+MAF,Saint Martin,2024,2.673,80.438,,100.0,26129,The Collectivity of Saint-Martin,France,North America,Caribbean
+MAR,Morocco,2012,2.543,71.674,25.2,79.8029,33355241,The Kingdom of Morocco,UN member,Africa,Northern Africa
+MAR,Morocco,2016,2.396,73.228,20.3,83.5459,35023457,The Kingdom of Morocco,UN member,Africa,Northern Africa
+MAR,Morocco,2020,2.32,73.133,17.1,87.2504,36584208,The Kingdom of Morocco,UN member,Africa,Northern Africa
+MAR,Morocco,2024,2.208,75.493,14.7,87.778,38081173,The Kingdom of Morocco,UN member,Africa,Northern Africa
+MCO,Monaco,2012,2.294,85.045,3.1,100.0,34711,The Principality of Monaco,UN member,Europe,Western Europe
+MCO,Monaco,2016,2.578,85.63,2.8,100.0,37276,The Principality of Monaco,UN member,Europe,Western Europe
+MCO,Monaco,2020,2.38,86.089,2.5,100.0,38050,The Principality of Monaco,UN member,Europe,Western Europe
+MCO,Monaco,2024,2.102,86.497,2.2,100.0,38631,The Principality of Monaco,UN member,Europe,Western Europe
+MDA,Moldova,2012,1.661,70.344,14.7,78.5416,2860324,The Republic of Moldova,UN member,Europe,Eastern Europe
+MDA,Moldova,2016,1.89,70.179,14.1,81.4208,2803186,The Republic of Moldova,UN member,Europe,Eastern Europe
+MDA,Moldova,2020,1.77,69.914,14.3,84.4032,2635130,The Republic of Moldova,UN member,Europe,Eastern Europe
+MDA,Moldova,2024,1.726,71.332,15.1,86.8829,2402306,The Republic of Moldova,UN member,Europe,Eastern Europe
+MDG,Madagascar,2012,4.613,63.007,44.5,9.575,23462438,The Republic of Madagascar,UN member,Africa,Eastern Africa
+MDG,Madagascar,2016,4.285,63.431,43.6,11.6112,26099952,The Republic of Madagascar,UN member,Africa,Eastern Africa
+MDG,Madagascar,2020,4.17,62.706,44.3,13.6947,28953556,The Republic of Madagascar,UN member,Africa,Eastern Africa
+MDG,Madagascar,2024,3.912,63.835,43.0,15.3671,31964956,The Republic of Madagascar,UN member,Africa,Eastern Africa
+MDV,Maldives,2012,2.254,77.512,10.4,89.1748,386818,The Republic of Maldives,UN member,Asia,Southern and Central Asia
+MDV,Maldives,2016,1.903,78.913,8.0,93.3068,443308,The Republic of Maldives,UN member,Asia,Southern and Central Asia
+MDV,Maldives,2020,1.613,78.713,6.0,97.1214,502118,The Republic of Maldives,UN member,Asia,Southern and Central Asia
+MDV,Maldives,2024,1.56,81.285,4.7,99.7013,527799,The Republic of Maldives,UN member,Asia,Southern and Central Asia
+MEX,Mexico,2012,2.294,74.128,16.2,87.0483,116818208,The United Mexican States,UN member,North America,Central America
+MEX,Mexico,2016,2.086,74.376,14.7,89.3924,122251351,The United Mexican States,UN member,North America,Central America
+MEX,Mexico,2020,1.99,70.449,13.4,91.6152,126799054,The United Mexican States,UN member,North America,Central America
+MEX,Mexico,2024,1.892,75.264,12.1,92.9913,130861007,The United Mexican States,UN member,North America,Central America
+MHL,Marshall Islands,2012,3.382,64.776,31.3,77.3953,51419,The Republic of the Marshall Islands,UN member,Oceania,Micronesia
+MHL,Marshall Islands,2016,3.091,65.477,28.6,78.0801,47709,The Republic of the Marshall Islands,UN member,Oceania,Micronesia
+MHL,Marshall Islands,2020,2.989,65.387,25.5,78.6066,42706,The Republic of the Marshall Islands,UN member,Oceania,Micronesia
+MHL,Marshall Islands,2024,2.864,67.075,22.7,78.9586,37548,The Republic of the Marshall Islands,UN member,Oceania,Micronesia
+MKD,North Macedonia,2012,1.5,74.9024,9.2,93.4818,1929821,The Republic of North Macedonia,UN member,Europe,Southern Europe
+MKD,North Macedonia,2016,1.5,75.4,9.4,96.0648,1906313,The Republic of North Macedonia,UN member,Europe,Southern Europe
+MKD,North Macedonia,2020,1.31,74.3951,5.3,98.4278,1856124,The Republic of North Macedonia,UN member,Europe,Southern Europe
+MKD,North Macedonia,2024,1.4,76.6166,2.5,98.9976,1824359,The Republic of North Macedonia,UN member,Europe,Southern Europe
+MLI,Mali,2012,6.523,56.696,72.4,32.2352,16957033,The Republic of Mali,UN member,Africa,Western Africa
+MLI,Mali,2016,6.319,58.286,64.0,37.363,19191289,The Republic of Mali,UN member,Africa,Western Africa
+MLI,Mali,2020,5.85,58.858,55.4,42.5396,21713836,The Republic of Mali,UN member,Africa,Western Africa
+MLI,Mali,2024,5.51,60.675,47.5,47.7562,24478595,The Republic of Mali,UN member,Africa,Western Africa
+MLT,Malta,2012,1.42,80.7463,6.0,99.9576,420028,The Republic of Malta,UN member,Europe,Southern Europe
+MLT,Malta,2016,1.37,82.3537,5.7,99.9764,454505,The Republic of Malta,UN member,Europe,Southern Europe
+MLT,Malta,2020,1.14,82.0976,5.2,99.9953,515490,The Republic of Malta,UN member,Europe,Southern Europe
+MLT,Malta,2024,1.01,82.9561,4.7,100.0,568847,The Republic of Malta,UN member,Europe,Southern Europe
+MMR,Myanmar,2012,2.276,64.251,49.5,69.8075,49837446,The Republic of the Union of Myanmar,UN member,Asia,Southeast Asia
+MMR,Myanmar,2016,2.27,65.64,42.6,71.7359,51495696,The Republic of the Union of Myanmar,UN member,Asia,Southeast Asia
+MMR,Myanmar,2020,2.179,66.612,37.2,73.6369,53016522,The Republic of the Union of Myanmar,UN member,Asia,Southeast Asia
+MMR,Myanmar,2024,2.098,67.095,32.8,74.1835,54500091,The Republic of the Union of Myanmar,UN member,Asia,Southeast Asia
+MNE,Montenegro,2012,1.72,76.3,4.7,93.8898,621418,Montenegro,UN member,Europe,Southern Europe
+MNE,Montenegro,2016,1.8,76.5415,3.2,96.0991,625353,Montenegro,UN member,Europe,Southern Europe
+MNE,Montenegro,2020,1.75,75.9317,2.4,97.7718,626590,Montenegro,UN member,Europe,Southern Europe
+MNE,Montenegro,2024,1.8,77.8902,1.9,97.8491,623525,Montenegro,UN member,Europe,Southern Europe
+MNG,Mongolia,2012,2.7,69.5002,18.2,58.3639,2839705,Mongolia,UN member,Asia,Eastern Asia
+MNG,Mongolia,2016,3.0,70.2239,15.0,63.484,3088856,Mongolia,UN member,Asia,Eastern Asia
+MNG,Mongolia,2020,2.9,71.349,12.2,68.7756,3327204,Mongolia,UN member,Asia,Eastern Asia
+MNG,Mongolia,2024,2.5,72.398,11.2,74.2807,3524788,Mongolia,UN member,Asia,Eastern Asia
+MNP,Northern Mariana Islands,2012,3.328,77.566,,97.1471,53234,The Commonwealth of the Northern Mariana Islands,United States,Oceania,Micronesia
+MNP,Northern Mariana Islands,2016,2.923,77.392,,98.1917,50773,The Commonwealth of the Northern Mariana Islands,United States,Oceania,Micronesia
+MNP,Northern Mariana Islands,2020,2.494,78.03,,99.2363,47528,The Commonwealth of the Northern Mariana Islands,United States,Oceania,Micronesia
+MNP,Northern Mariana Islands,2024,2.324,78.947,,99.7586,44278,The Commonwealth of the Northern Mariana Islands,United States,Oceania,Micronesia
+MOZ,Mozambique,2012,5.518,56.46,57.1,23.4631,24337846,The Republic of Mozambique,UN member,Africa,Eastern Africa
+MOZ,Mozambique,2016,5.188,59.455,52.8,28.3034,27337105,The Republic of Mozambique,UN member,Africa,Eastern Africa
+MOZ,Mozambique,2020,4.959,61.39,48.6,33.3405,30783688,The Republic of Mozambique,UN member,Africa,Eastern Africa
+MOZ,Mozambique,2024,4.69,63.797,43.7,38.5901,34631766,The Republic of Mozambique,UN member,Africa,Eastern Africa
+MRT,Mauritania,2012,5.352,65.808,41.0,36.1779,3619034,The Islamic Republic of Mauritania,UN member,Africa,Western Africa
+MRT,Mauritania,2016,5.157,66.823,37.6,43.7104,4086657,The Islamic Republic of Mauritania,UN member,Africa,Western Africa
+MRT,Mauritania,2020,4.912,66.794,33.9,51.8125,4600131,The Islamic Republic of Mauritania,UN member,Africa,Western Africa
+MRT,Mauritania,2024,4.625,68.713,30.2,58.6769,5169395,The Islamic Republic of Mauritania,UN member,Africa,Western Africa
+MUS,Mauritius,2012,1.56,73.8634,13.2,93.929,1255882,The Republic of Mauritius,UN member,Africa,Eastern Africa
+MUS,Mauritius,2016,1.41,74.3949,13.0,95.0807,1263747,The Republic of Mauritius,UN member,Africa,Eastern Africa
+MUS,Mauritius,2020,1.46,74.1771,14.1,96.2431,1266014,The Republic of Mauritius,UN member,Africa,Eastern Africa
+MUS,Mauritius,2024,1.44,73.789,13.8,97.3737,1245779,The Republic of Mauritius,UN member,Africa,Eastern Africa
+MWI,Malawi,2012,4.902,59.87,45.1,27.4226,15709577,The Republic of Malawi,UN member,Africa,Eastern Africa
+MWI,Malawi,2016,4.216,63.163,39.1,36.2685,17557739,The Republic of Malawi,UN member,Africa,Eastern Africa
+MWI,Malawi,2020,3.877,65.216,38.2,44.9611,19533888,The Republic of Malawi,UN member,Africa,Eastern Africa
+MWI,Malawi,2024,3.59,67.561,38.0,49.2322,21655286,The Republic of Malawi,UN member,Africa,Eastern Africa
+MYS,Malaysia,2012,2.117,75.552,6.5,95.0372,29662831,Malaysia,UN member,Asia,Southeast Asia
+MYS,Malaysia,2016,1.942,75.371,6.7,95.5818,31789685,Malaysia,UN member,Asia,Southeast Asia
+MYS,Malaysia,2020,1.68,76.057,6.8,95.9966,33889558,Malaysia,UN member,Asia,Southeast Asia
+MYS,Malaysia,2024,1.543,76.821,7.0,96.02,35557673,Malaysia,UN member,Asia,Southeast Asia
+NAM,Namibia,2012,3.676,57.733,46.9,33.8119,2194654,The Republic of Namibia,UN member,Africa,Southern Africa
+NAM,Namibia,2016,3.574,60.81,45.3,35.6822,2439213,The Republic of Namibia,UN member,Africa,Southern Africa
+NAM,Namibia,2020,3.349,64.071,41.6,37.3148,2728762,The Republic of Namibia,UN member,Africa,Southern Africa
+NAM,Namibia,2024,3.211,67.516,36.4,38.7229,3030131,The Republic of Namibia,UN member,Africa,Southern Africa
+NCL,New Caledonia,2012,2.202,76.615,,100.0,271633,New Caledonia,France,Oceania,Melanesia
+NCL,New Caledonia,2016,2.078,77.359,,100.0,283423,New Caledonia,France,Oceania,Melanesia
+NCL,New Caledonia,2020,2.022,77.049,,100.0,284176,New Caledonia,France,Oceania,Melanesia
+NCL,New Caledonia,2024,1.964,78.921,,100.0,292639,New Caledonia,France,Oceania,Melanesia
+NER,Niger,2012,7.527,57.987,69.5,11.2812,17836769,The Republic of the Niger,UN member,Africa,Western Africa
+NER,Niger,2016,7.043,59.228,69.2,12.8657,20685753,The Republic of the Niger,UN member,Africa,Western Africa
+NER,Niger,2020,6.369,59.89,69.1,14.5381,23717613,The Republic of the Niger,UN member,Africa,Western Africa
+NER,Niger,2024,5.935,61.433,65.6,16.336,27032412,The Republic of the Niger,UN member,Africa,Western Africa
+NGA,Nigeria,2012,5.797,51.688,69.1,36.4309,176200625,The Federal Republic of Nigeria,UN member,Africa,Western Africa
+NGA,Nigeria,2016,5.343,52.189,68.1,40.1973,195443700,The Federal Republic of Nigeria,UN member,Africa,Western Africa
+NGA,Nigeria,2020,4.7,53.072,69.5,44.3511,213996181,The Federal Republic of Nigeria,UN member,Africa,Western Africa
+NGA,Nigeria,2024,4.382,54.635,69.8,47.9019,232679478,The Federal Republic of Nigeria,UN member,Africa,Western Africa
+NIC,Nicaragua,2012,2.527,72.435,18.0,,5901287,The Republic of Nicaragua,UN member,North America,Central America
+NIC,Nicaragua,2016,2.407,73.18,14.2,,6232666,The Republic of Nicaragua,UN member,North America,Central America
+NIC,Nicaragua,2020,2.299,70.766,12.5,,6565267,The Republic of Nicaragua,UN member,North America,Central America
+NIC,Nicaragua,2024,2.206,75.1,9.4,,6916140,The Republic of Nicaragua,UN member,North America,Central America
+NLD,Netherlands,2012,1.72,81.1049,3.6,97.7733,16754962,The Kingdom of the Netherlands,UN member,Europe,Western Europe
+NLD,Netherlands,2016,1.66,81.561,3.5,97.7241,17030314,The Kingdom of the Netherlands,UN member,Europe,Western Europe
+NLD,Netherlands,2020,1.54,81.3585,3.5,97.6858,17441500,The Kingdom of the Netherlands,UN member,Europe,Western Europe
+NLD,Netherlands,2024,1.43,81.9659,3.4,97.6567,17993485,The Kingdom of the Netherlands,UN member,Europe,Western Europe
+NOR,Norway,2012,1.85,81.4512,2.5,98.0604,5018573,The Kingdom of Norway,UN member,Europe,Nordic Countries
+NOR,Norway,2016,1.71,82.4073,2.1,98.0555,5234519,The Kingdom of Norway,UN member,Europe,Nordic Countries
+NOR,Norway,2020,1.48,83.2098,2.0,98.0511,5379475,The Kingdom of Norway,UN member,Europe,Nordic Countries
+NOR,Norway,2024,1.45,83.161,2.0,98.047,5572279,The Kingdom of Norway,UN member,Europe,Nordic Countries
+NPL,Nepal,2012,2.42,67.364,36.9,47.3623,27534915,The Federal Democratic Republic of Nepal,UN member,Asia,Southern and Central Asia
+NPL,Nepal,2016,2.226,68.444,31.0,59.5972,27955462,The Federal Democratic Republic of Nepal,UN member,Asia,Southern and Central Asia
+NPL,Nepal,2020,2.051,69.106,25.9,72.4985,28966574,The Federal Democratic Republic of Nepal,UN member,Asia,Southern and Central Asia
+NPL,Nepal,2024,1.961,70.636,22.2,86.026,29651054,The Federal Democratic Republic of Nepal,UN member,Asia,Southern and Central Asia
+NRU,Nauru,2012,4.115,60.533,21.0,67.1177,10267,The Republic of Nauru,UN member,Oceania,Micronesia
+NRU,Nauru,2016,4.027,60.996,14.7,68.5191,11150,The Republic of Nauru,UN member,Oceania,Micronesia
+NRU,Nauru,2020,3.466,61.527,10.2,69.9202,11643,The Republic of Nauru,UN member,Oceania,Micronesia
+NRU,Nauru,2024,3.29,62.279,7.7,71.3211,11947,The Republic of Nauru,UN member,Oceania,Micronesia
+NZL,New Zealand,2012,2.1,81.4073,5.0,100.0,4408100,New Zealand,UN member,Oceania,Australia and New Zealand
+NZL,New Zealand,2016,1.87,81.6585,4.6,100.0,4714100,New Zealand,UN member,Oceania,Australia and New Zealand
+NZL,New Zealand,2020,1.62,82.2561,4.3,100.0,5072400,New Zealand,UN member,Oceania,Australia and New Zealand
+NZL,New Zealand,2024,1.57,82.0098,4.0,100.0,5290000,New Zealand,UN member,Oceania,Australia and New Zealand
+OMN,Oman,2012,2.928,78.187,9.3,97.7534,3547106,The Sultanate of Oman,UN member,Asia,Middle East
+OMN,Oman,2016,2.949,79.581,9.0,99.3193,4390877,The Sultanate of Oman,UN member,Asia,Middle East
+OMN,Oman,2020,2.638,77.763,8.6,99.3202,4522497,The Sultanate of Oman,UN member,Asia,Middle East
+OMN,Oman,2024,2.508,80.246,8.3,99.3209,5281538,The Sultanate of Oman,UN member,Asia,Middle East
+PAK,Pakistan,2012,4.204,64.883,69.3,52.9086,207667125,The Islamic Republic of Pakistan,UN member,Asia,Southern and Central Asia
+PAK,Pakistan,2016,3.902,65.943,61.7,60.3757,220138869,The Islamic Republic of Pakistan,UN member,Asia,Southern and Central Asia
+PAK,Pakistan,2020,3.765,65.701,54.6,67.9434,235001746,The Islamic Republic of Pakistan,UN member,Asia,Southern and Central Asia
+PAK,Pakistan,2024,3.547,67.799,48.2,71.8829,251269164,The Islamic Republic of Pakistan,UN member,Asia,Southern and Central Asia
+PAN,Panama,2012,2.591,76.877,14.2,75.2147,3759256,The Republic of Panamá,UN member,North America,Central America
+PAN,Panama,2016,2.502,77.772,13.5,79.7252,4029086,The Republic of Panamá,UN member,North America,Central America
+PAN,Panama,2020,2.184,76.33,12.2,84.3402,4293261,The Republic of Panamá,UN member,North America,Central America
+PAN,Panama,2024,2.106,79.775,12.0,89.054,4515577,The Republic of Panamá,UN member,North America,Central America
+PER,Peru,2012,2.356,73.979,15.2,72.3636,29550366,The Republic of Perú,UN member,South America,South America
+PER,Peru,2016,2.189,75.951,13.4,74.5559,30866494,The Republic of Perú,UN member,South America,South America
+PER,Peru,2020,2.056,73.832,12.2,76.6883,32838579,The Republic of Perú,UN member,South America,South America
+PER,Peru,2024,1.965,77.941,11.0,78.7732,34217848,The Republic of Perú,UN member,South America,South America
+PHL,Philippines,2012,3.143,69.237,22.4,73.5302,100175512,The Republic of the Philippines,UN member,Asia,Southeast Asia
+PHL,Philippines,2016,2.679,69.49,22.2,77.9797,106735719,The Republic of the Philippines,UN member,Asia,Southeast Asia
+PHL,Philippines,2020,2.075,70.097,22.7,82.5281,112081264,The Republic of the Philippines,UN member,Asia,Southeast Asia
+PHL,Philippines,2024,1.894,69.946,21.7,87.1527,115843670,The Republic of the Philippines,UN member,Asia,Southeast Asia
+PLW,Palau,2012,2.006,68.863,16.8,96.3258,17765,The Republic of Palau,UN member,Oceania,Micronesia
+PLW,Palau,2016,2.055,69.046,18.8,97.5006,17797,The Republic of Palau,UN member,Oceania,Micronesia
+PLW,Palau,2020,1.972,68.689,19.8,98.5406,17792,The Republic of Palau,UN member,Oceania,Micronesia
+PLW,Palau,2024,1.883,69.383,18.6,99.0249,17695,The Republic of Palau,UN member,Oceania,Micronesia
+PNG,Papua New Guinea,2012,3.746,63.639,43.8,19.3209,8081390,The Independent State of Papua New Guinea,UN member,Oceania,Melanesia
+PNG,Papua New Guinea,2016,3.495,64.7,39.4,20.7451,8961718,The Independent State of Papua New Guinea,UN member,Oceania,Melanesia
+PNG,Papua New Guinea,2020,3.274,65.075,35.2,22.1691,9815746,The Independent State of Papua New Guinea,UN member,Oceania,Melanesia
+PNG,Papua New Guinea,2024,3.072,66.256,31.3,23.5743,10576502,The Independent State of Papua New Guinea,UN member,Oceania,Melanesia
+POL,Poland,2012,1.33,76.7463,4.7,95.635,38063164,The Republic of Poland,UN member,Europe,Eastern Europe
+POL,Poland,2016,1.39,77.8512,4.1,98.3831,37970087,The Republic of Poland,UN member,Europe,Eastern Europe
+POL,Poland,2020,1.39,76.4,3.8,98.9575,37515748,The Republic of Poland,UN member,Europe,Eastern Europe
+POL,Poland,2024,1.14,78.4098,3.6,98.9562,36559233,The Republic of Poland,UN member,Europe,Eastern Europe
+PRI,Puerto Rico,2012,1.5425,79.258,,99.7776,3661045,The Commonwealth of Puerto Rico,United States,North America,Caribbean
+PRI,Puerto Rico,2016,1.2425,80.355,,100.0,3480432,The Commonwealth of Puerto Rico,United States,North America,Caribbean
+PRI,Puerto Rico,2020,0.922,80.009,,100.0,3281591,The Commonwealth of Puerto Rico,United States,North America,Caribbean
+PRI,Puerto Rico,2024,0.92,81.902,,100.0,3202521,The Commonwealth of Puerto Rico,United States,North America,Caribbean
+PRK,North Korea,2012,1.882,71.317,20.6,79.4723,25211728,The Democratic People's Republic of Korea,UN member,Asia,Eastern Asia
+PRK,North Korea,2016,1.856,72.971,16.5,82.4086,25698326,The Democratic People's Republic of Korea,UN member,Asia,Eastern Asia
+PRK,North Korea,2020,1.821,72.783,14.1,84.6655,26136312,The Democratic People's Republic of Korea,UN member,Asia,Eastern Asia
+PRK,North Korea,2024,1.784,73.743,13.3,,26498823,The Democratic People's Republic of Korea,UN member,Asia,Eastern Asia
+PRT,Portugal,2012,1.28,80.3732,3.0,98.9556,10514844,The Portuguese Republic,UN member,Europe,Southern Europe
+PRT,Portugal,2016,1.37,81.1244,2.9,99.3443,10325452,The Portuguese Republic,UN member,Europe,Southern Europe
+PRT,Portugal,2020,1.42,81.3293,2.8,99.6529,10297081,The Portuguese Republic,UN member,Europe,Southern Europe
+PRT,Portugal,2024,1.41,82.3829,2.7,99.6592,10694681,The Portuguese Republic,UN member,Europe,Southern Europe
+PRY,Paraguay,2012,2.658,73.105,21.2,84.3199,5897008,The Republic of Paraguay,UN member,South America,South America
+PRY,Paraguay,2016,2.624,73.487,18.7,88.4179,6249126,The Republic of Paraguay,UN member,South America,South America
+PRY,Paraguay,2020,2.497,72.72,16.5,92.4079,6603739,The Republic of Paraguay,UN member,South America,South America
+PRY,Paraguay,2024,2.416,73.982,14.5,95.9348,6929153,The Republic of Paraguay,UN member,South America,South America
+PSE,Palestine,2012,4.154,73.722,17.7,94.8007,3979998,The State of Palestine,UN observer,Asia,Middle East
+PSE,Palestine,2016,3.887,74.917,15.2,96.722,4367088,The State of Palestine,UN observer,Asia,Middle East
+PSE,Palestine,2020,3.511,74.998,13.2,98.6216,4803269,The State of Palestine,UN observer,Asia,Middle East
+PSE,Palestine,2024,3.25,69.213,17.0,99.395,5289152,The State of Palestine,UN observer,Asia,Middle East
+PYF,French Polynesia,2012,2.026,81.695,,97.6423,273084,French Polynesia,France,Oceania,Polynesia
+PYF,French Polynesia,2016,1.763,82.555,,97.5981,279178,French Polynesia,France,Oceania,Polynesia
+PYF,French Polynesia,2020,1.57,82.459,,97.554,279209,French Polynesia,France,Oceania,Polynesia
+PYF,French Polynesia,2024,1.491,84.192,,97.5099,281807,French Polynesia,France,Oceania,Polynesia
+QAT,Qatar,2012,2.04,80.499,7.1,99.9365,1722438,The State of Qatar,UN member,Asia,Middle East
+QAT,Qatar,2016,1.856,82.147,6.2,99.9365,2477113,The State of Qatar,UN member,Asia,Middle East
+QAT,Qatar,2020,1.675,80.409,5.2,99.9365,2794148,The State of Qatar,UN member,Asia,Middle East
+QAT,Qatar,2024,1.717,82.522,4.8,99.9365,2857822,The State of Qatar,UN member,Asia,Middle East
+ROU,Romania,2012,1.52,74.4122,9.5,80.7099,20058035,Romania,UN member,Europe,Eastern Europe
+ROU,Romania,2016,1.69,75.2098,7.1,84.2094,19702267,Romania,UN member,Europe,Eastern Europe
+ROU,Romania,2020,1.8,74.2537,5.4,87.7922,19265250,Romania,UN member,Europe,Eastern Europe
+ROU,Romania,2024,1.39,76.4585,6.0,90.5414,19051804,Romania,UN member,Europe,Eastern Europe
+RUS,Russian Federation (the) [w],2012,1.691,70.0722,7.9,85.0561,143378447,The Russian Federation,UN member,Europe,Eastern Europe
+RUS,Russian Federation (the) [w],2016,1.762,71.6512,6.0,87.3592,145015460,The Russian Federation,UN member,Europe,Eastern Europe
+RUS,Russian Federation (the) [w],2020,1.505,71.3388,4.6,89.7409,145245148,The Russian Federation,UN member,Europe,Eastern Europe
+RUS,Russian Federation (the) [w],2024,1.418,73.4405,4.1,92.2176,143669648,The Russian Federation,UN member,Europe,Eastern Europe
+RWA,Rwanda,2012,4.201,64.189,37.4,63.3941,10829901,The Republic of Rwanda,UN member,Africa,Eastern Africa
+RWA,Rwanda,2016,4.106,65.733,33.2,69.6758,11919183,The Republic of Rwanda,UN member,Africa,Eastern Africa
+RWA,Rwanda,2020,3.913,66.953,31.3,75.8419,13065837,The Republic of Rwanda,UN member,Africa,Eastern Africa
+RWA,Rwanda,2024,3.645,68.017,29.4,81.3307,14256567,The Republic of Rwanda,UN member,Africa,Eastern Africa
+SAU,Saudi Arabia,2012,2.78,76.09,9.0,,26168861,The Kingdom of Saudi Arabia,UN member,Asia,Middle East
+SAU,Saudi Arabia,2016,2.65,78.354,6.8,97.5667,30954198,The Kingdom of Saudi Arabia,UN member,Asia,Middle East
+SAU,Saudi Arabia,2020,2.27,77.596,5.4,97.5871,31552510,The Kingdom of Saudi Arabia,UN member,Asia,Middle East
+SAU,Saudi Arabia,2024,2.308,78.982,4.7,97.6075,35300280,The Kingdom of Saudi Arabia,UN member,Asia,Middle East
+SDN,Sudan,2012,5.031,63.427,51.9,33.6684,36923178,The Republic of the Sudan,UN member,Africa,Northern Africa
+SDN,Sudan,2016,4.829,64.677,47.2,43.4248,41259892,The Republic of the Sudan,UN member,Africa,Northern Africa
+SDN,Sudan,2020,4.542,65.124,42.2,54.1197,46789231,The Republic of the Sudan,UN member,Africa,Northern Africa
+SDN,Sudan,2024,4.264,66.521,42.9,65.7086,50448963,The Republic of the Sudan,UN member,Africa,Northern Africa
+SEN,Senegal,2012,5.129,65.229,39.3,49.6299,13310495,The Republic of Senegal,UN member,Africa,Western Africa
+SEN,Senegal,2016,4.648,66.724,36.8,53.9715,15034521,The Republic of Senegal,UN member,Africa,Western Africa
+SEN,Senegal,2020,4.003,67.496,33.7,58.2764,16789219,The Republic of Senegal,UN member,Africa,Western Africa
+SEN,Senegal,2024,3.765,68.924,28.9,62.5196,18501984,The Republic of Senegal,UN member,Africa,Western Africa
+SGP,Singapore,2012,1.29,81.9951,2.2,100.0,5312437,The Republic of Singapore,UN member,Asia,Southeast Asia
+SGP,Singapore,2016,1.2,82.8463,2.1,100.0,5607283,The Republic of Singapore,UN member,Asia,Southeast Asia
+SGP,Singapore,2020,1.1,83.5439,2.0,100.0,5685807,The Republic of Singapore,UN member,Asia,Southeast Asia
+SGP,Singapore,2024,0.97,83.3463,2.2,100.0,6036860,The Republic of Singapore,UN member,Asia,Southeast Asia
+SLB,Solomon Islands,2012,4.332,68.961,20.8,27.8531,573606,The Solomon Islands,UN member,Oceania,Melanesia
+SLB,Solomon Islands,2016,4.2,69.501,19.7,30.5306,662379,The Solomon Islands,UN member,Oceania,Melanesia
+SLB,Solomon Islands,2020,3.749,69.258,18.3,33.2293,744498,The Solomon Islands,UN member,Oceania,Melanesia
+SLB,Solomon Islands,2024,3.513,70.694,16.4,34.6491,819198,The Solomon Islands,UN member,Oceania,Melanesia
+SLE,Sierra Leone,2012,5.064,53.159,83.4,14.3036,6551080,The Republic of Sierra Leone,UN member,Africa,Western Africa
+SLE,Sierra Leone,2016,4.466,56.937,71.3,17.4849,7205328,The Republic of Sierra Leone,UN member,Africa,Western Africa
+SLE,Sierra Leone,2020,4.08,59.694,61.9,21.0167,7912558,The Republic of Sierra Leone,UN member,Africa,Western Africa
+SLE,Sierra Leone,2024,3.703,61.964,54.6,24.9136,8642022,The Republic of Sierra Leone,UN member,Africa,Western Africa
+SLV,El Salvador,2012,2.187,71.42,14.3,84.3807,6113975,The Republic of El Salvador,UN member,North America,Central America
+SLV,El Salvador,2016,1.965,70.908,12.0,85.7892,6200800,The Republic of El Salvador,UN member,North America,Central America
+SLV,El Salvador,2020,1.819,70.244,10.2,87.0097,6234673,The Republic of El Salvador,UN member,North America,Central America
+SLV,El Salvador,2024,1.768,72.302,8.8,88.0411,6338193,The Republic of El Salvador,UN member,North America,Central America
+SMR,San Marino,2012,1.289,83.943,2.2,100.0,33469,The Republic of San Marino,UN member,Europe,Southern Europe
+SMR,San Marino,2016,1.127,84.775,1.7,100.0,33101,The Republic of San Marino,UN member,Europe,Southern Europe
+SMR,San Marino,2020,1.113,82.65,1.4,100.0,34770,The Republic of San Marino,UN member,Europe,Southern Europe
+SMR,San Marino,2024,1.158,85.817,1.2,100.0,33977,The Republic of San Marino,UN member,Europe,Southern Europe
+SOM,Somalia,2012,7.211,49.138,112.2,32.0476,12461160,The Federal Republic of Somalia,UN member,Africa,Eastern Africa
+SOM,Somalia,2016,6.878,55.283,81.5,36.125,14348740,The Federal Republic of Somalia,UN member,Africa,Eastern Africa
+SOM,Somalia,2020,6.453,57.095,72.9,40.2756,16651191,The Federal Republic of Somalia,UN member,Africa,Eastern Africa
+SOM,Somalia,2024,6.013,58.967,65.4,44.4568,19009151,The Federal Republic of Somalia,UN member,Africa,Eastern Africa
+SRB,Serbia,2012,1.45,74.8366,6.1,96.8503,7201497,The Republic of Serbia,UN member,Europe,Southern Europe
+SRB,Serbia,2016,1.46,75.6878,5.2,97.5197,7058322,The Republic of Serbia,UN member,Europe,Southern Europe
+SRB,Serbia,2020,1.48,74.478,4.7,97.9188,6899126,The Republic of Serbia,UN member,Europe,Southern Europe
+SRB,Serbia,2024,1.64,75.9683,4.6,97.9423,6586476,The Republic of Serbia,UN member,Europe,Southern Europe
+SSD,South Sudan,2012,5.061,58.241,73.2,7.5801,10756240,The Republic of South Sudan,UN member,Africa,Eastern Africa
+SSD,South Sudan,2016,4.579,36.72,169.8,10.2324,10830102,The Republic of South Sudan,UN member,Africa,Eastern Africa
+SSD,South Sudan,2020,4.16,57.648,71.9,13.0865,10698467,The Republic of South Sudan,UN member,Africa,Eastern Africa
+SSD,South Sudan,2024,3.785,57.738,71.9,14.4282,11943408,The Republic of South Sudan,UN member,Africa,Eastern Africa
+STP,Sao Tome and Principe,2012,4.664,64.505,19.6,36.2695,189439,The Democratic Republic of São Tomé and Príncipe,UN member,Africa,Central Africa
+STP,Sao Tome and Principe,2016,4.203,66.563,14.0,41.6984,203689,The Democratic Republic of São Tomé and Príncipe,UN member,Africa,Central Africa
+STP,Sao Tome and Principe,2020,3.827,67.979,10.8,47.108,217435,The Democratic Republic of São Tomé and Príncipe,UN member,Africa,Central Africa
+STP,Sao Tome and Principe,2024,3.596,69.905,9.2,48.6785,235536,The Democratic Republic of São Tomé and Príncipe,UN member,Africa,Central Africa
+SUR,Suriname,2012,2.669,69.957,20.3,84.4671,562633,The Republic of Suriname,UN member,South America,South America
+SUR,Suriname,2016,2.5,70.979,18.6,87.163,587757,The Republic of Suriname,UN member,South America,South America
+SUR,Suriname,2020,2.314,72.321,16.6,89.9542,612317,The Republic of Suriname,UN member,South America,South America
+SUR,Suriname,2024,2.231,73.757,14.8,89.9983,634431,The Republic of Suriname,UN member,South America,South America
+SVK,Slovakia,2012,1.34,76.1098,5.4,97.9115,5407579,The Slovak Republic,UN member,Europe,Eastern Europe
+SVK,Slovakia,2016,1.48,77.1659,5.1,97.5263,5430798,The Slovak Republic,UN member,Europe,Eastern Europe
+SVK,Slovakia,2020,1.59,76.8659,5.0,97.5326,5458827,The Slovak Republic,UN member,Europe,Eastern Europe
+SVK,Slovakia,2024,1.46,78.3707,5.3,97.543,5422069,The Slovak Republic,UN member,Europe,Eastern Europe
+SVN,Slovenia,2012,1.58,80.1244,2.4,98.7915,2057159,The Republic of Slovenia,UN member,Europe,Southern Europe
+SVN,Slovenia,2016,1.58,81.1756,2.1,98.578,2065042,The Republic of Slovenia,UN member,Europe,Southern Europe
+SVN,Slovenia,2020,1.59,80.5317,1.9,98.3645,2102419,The Republic of Slovenia,UN member,Europe,Southern Europe
+SVN,Slovenia,2024,1.52,82.2854,1.8,98.3112,2127400,The Republic of Slovenia,UN member,Europe,Southern Europe
+SWE,Sweden,2012,1.91,81.7049,2.4,99.0012,9519374,The Kingdom of Sweden,UN member,Europe,Nordic Countries
+SWE,Sweden,2016,1.85,82.3073,2.3,98.9086,9923085,The Kingdom of Sweden,UN member,Europe,Nordic Countries
+SWE,Sweden,2020,1.67,82.3561,2.1,98.8148,10353442,The Kingdom of Sweden,UN member,Europe,Nordic Countries
+SWE,Sweden,2024,1.43,84.0634,2.0,98.7432,10569709,The Kingdom of Sweden,UN member,Europe,Nordic Countries
+SWZ,Eswatini,2012,3.266,50.714,56.0,57.1723,1123863,The Kingdom of Eswatini,UN member,Africa,Southern Africa
+SWZ,Eswatini,2016,3.068,56.228,51.3,59.6244,1149507,The Kingdom of Eswatini,UN member,Africa,Southern Africa
+SWZ,Eswatini,2020,2.888,59.862,47.3,62.0648,1192729,The Kingdom of Eswatini,UN member,Africa,Southern Africa
+SWZ,Eswatini,2024,2.718,64.264,42.2,64.4605,1242822,The Kingdom of Eswatini,UN member,Africa,Southern Africa
+SXM,Sint Maarten,2012,1.959,75.125,,98.7505,35023,Sint Maarten,Netherlands,North America,Caribbean
+SXM,Sint Maarten,2016,1.642,75.952,,98.781,38249,Sint Maarten,Netherlands,North America,Caribbean
+SXM,Sint Maarten,2020,1.467,75.002,,,41008,Sint Maarten,Netherlands,North America,Caribbean
+SXM,Sint Maarten,2024,1.44,76.528,,,43350,Sint Maarten,Netherlands,North America,Caribbean
+SYC,Seychelles,2012,2.32,74.2756,12.8,97.8595,88303,The Republic of Seychelles,UN member,Africa,Eastern Africa
+SYC,Seychelles,2016,2.33,74.3098,13.3,98.648,94677,The Republic of Seychelles,UN member,Africa,Eastern Africa
+SYC,Seychelles,2020,2.2,77.2366,13.6,98.897,98462,The Republic of Seychelles,UN member,Africa,Eastern Africa
+SYC,Seychelles,2024,1.85,76.2951,12.9,99.7,121354,The Republic of Seychelles,UN member,Africa,Eastern Africa
+SYR,Syria,2012,3.221,66.206,23.8,91.6347,22759763,The Syrian Arab Republic,UN member,Asia,Middle East
+SYR,Syria,2016,3.012,65.19,23.7,92.9046,19193834,The Syrian Arab Republic,UN member,Asia,Middle East
+SYR,Syria,2020,2.837,71.944,20.0,94.3004,21049429,The Syrian Arab Republic,UN member,Asia,Middle East
+SYR,Syria,2024,2.7,72.56,17.7,95.6484,24672760,The Syrian Arab Republic,UN member,Asia,Middle East
+TCA,Turks and Caicos Islands,2012,1.805,76.969,4.5,,32127,The Turks and Caicos Islands,United Kingdom,North America,Caribbean
+TCA,Turks and Caicos Islands,2016,1.713,77.437,3.9,93.1209,38315,The Turks and Caicos Islands,United Kingdom,North America,Caribbean
+TCA,Turks and Caicos Islands,2020,1.552,77.499,3.4,93.1389,44386,The Turks and Caicos Islands,United Kingdom,North America,Caribbean
+TCA,Turks and Caicos Islands,2024,1.452,78.181,3.0,93.1526,46535,The Turks and Caicos Islands,United Kingdom,North America,Caribbean
+TCD,Chad,2012,6.905,50.765,77.8,10.9049,13210998,The Republic of Chad,UN member,Africa,Central Africa
+TCD,Chad,2016,6.623,51.603,70.2,11.6188,15114655,The Republic of Chad,UN member,Africa,Central Africa
+TCD,Chad,2020,6.346,53.082,62.9,12.5503,17224679,The Republic of Chad,UN member,Africa,Central Africa
+TCD,Chad,2024,6.028,55.238,56.3,13.1415,20299123,The Republic of Chad,UN member,Africa,Central Africa
+TGO,Togo,2012,4.8538,57.953,49.8,14.9528,6653718,The Togolese Republic,UN member,Africa,Western Africa
+TGO,Togo,2016,4.6339,59.677,44.0,18.6163,7200884,The Togolese Republic,UN member,Africa,Western Africa
+TGO,Togo,2020,4.3863,61.14,39.1,22.6993,7788054,The Togolese Republic,UN member,Africa,Western Africa
+TGO,Togo,2024,4.1217,62.935,34.8,25.1681,8406558,The Togolese Republic,UN member,Africa,Western Africa
+THA,Thailand,2012,1.563,75.59,11.1,95.4825,69436098,The Kingdom of Thailand,UN member,Asia,Southeast Asia
+THA,Thailand,2016,1.4,76.769,9.8,96.7354,70859841,The Kingdom of Thailand,UN member,Asia,Southeast Asia
+THA,Thailand,2020,1.259,77.331,8.7,98.0345,71641484,The Kingdom of Thailand,UN member,Asia,Southeast Asia
+THA,Thailand,2024,1.204,76.564,7.7,99.3505,71668011,The Kingdom of Thailand,UN member,Asia,Southeast Asia
+TJK,Tajikistan,2012,3.421,69.13,28.4,94.4209,8014084,The Republic of Tajikistan,UN member,Asia,Southern and Central Asia
+TJK,Tajikistan,2016,3.384,69.982,25.8,95.3542,8865631,The Republic of Tajikistan,UN member,Asia,Southern and Central Asia
+TJK,Tajikistan,2020,3.211,68.605,24.9,95.9797,9749310,The Republic of Tajikistan,UN member,Asia,Southern and Central Asia
+TJK,Tajikistan,2024,3.036,71.927,23.5,,10590927,The Republic of Tajikistan,UN member,Asia,Southern and Central Asia
+TKM,Turkmenistan,2012,2.955,68.961,34.2,96.276,5808546,Turkmenistan,UN member,Asia,Southern and Central Asia
+TKM,Turkmenistan,2016,2.99,69.142,34.1,97.7947,6360041,Turkmenistan,UN member,Asia,Southern and Central Asia
+TKM,Turkmenistan,2020,2.793,68.846,33.4,99.355,6949912,Turkmenistan,UN member,Asia,Southern and Central Asia
+TKM,Turkmenistan,2024,2.661,70.201,30.4,99.7354,7494498,Turkmenistan,UN member,Asia,Southern and Central Asia
+TLS,Timor-Leste,2012,4.404,64.384,48.1,43.4106,1134885,The Democratic Republic of Timor-Leste,UN member,Asia,Southeast Asia
+TLS,Timor-Leste,2016,3.582,65.61,42.5,53.2737,1228312,The Democratic Republic of Timor-Leste,UN member,Asia,Southeast Asia
+TLS,Timor-Leste,2020,3.011,66.919,38.7,63.1237,1326053,The Democratic Republic of Timor-Leste,UN member,Asia,Southeast Asia
+TLS,Timor-Leste,2024,2.627,67.904,34.6,72.9358,1400638,The Democratic Republic of Timor-Leste,UN member,Asia,Southeast Asia
+TON,Tonga,2012,3.768,71.546,10.2,92.2619,107460,The Kingdom of Tonga,UN member,Oceania,Polynesia
+TON,Tonga,2016,3.463,71.951,9.4,92.9019,105524,The Kingdom of Tonga,UN member,Oceania,Polynesia
+TON,Tonga,2020,3.234,72.379,8.7,93.5041,105704,The Kingdom of Tonga,UN member,Oceania,Polynesia
+TON,Tonga,2024,3.1,73.07,7.8,93.9335,104175,The Kingdom of Tonga,UN member,Oceania,Polynesia
+TTO,Trinidad and Tobago,2012,1.609,72.513,21.7,94.3615,1335194,The Republic of Trinidad and Tobago,UN member,North America,Caribbean
+TTO,Trinidad and Tobago,2016,1.601,72.935,20.2,94.301,1353895,The Republic of Trinidad and Tobago,UN member,North America,Caribbean
+TTO,Trinidad and Tobago,2020,1.572,72.645,18.8,94.2351,1366725,The Republic of Trinidad and Tobago,UN member,North America,Caribbean
+TTO,Trinidad and Tobago,2024,1.536,73.617,17.0,94.1781,1368333,The Republic of Trinidad and Tobago,UN member,North America,Caribbean
+TUN,Tunisia,2012,2.277,74.599,16.4,88.2787,11009647,The Republic of Tunisia,UN member,Africa,Northern Africa
+TUN,Tunisia,2016,2.275,75.007,15.8,91.8541,11528674,The Republic of Tunisia,UN member,Africa,Northern Africa
+TUN,Tunisia,2020,2.0,75.004,13.5,95.4061,11974057,The Republic of Tunisia,UN member,Africa,Northern Africa
+TUN,Tunisia,2024,1.818,76.711,9.7,98.5373,12277109,The Republic of Tunisia,UN member,Africa,Northern Africa
+TUR,Türkiye,2012,2.11,75.552,12.8,94.5901,75175827,The Republic of Türkiye,UN member,Asia,Middle East
+TUR,Türkiye,2016,2.11,76.595,10.5,97.0181,79277962,The Republic of Türkiye,UN member,Asia,Middle East
+TUR,Türkiye,2020,1.77,76.525,9.1,99.2307,83384680,The Republic of Türkiye,UN member,Asia,Middle East
+TUR,Türkiye,2024,1.48,77.421,8.0,99.2777,85518661,The Republic of Türkiye,UN member,Asia,Middle East
+TUV,Tuvalu,2012,3.47,65.079,24.7,84.4668,10934,Tuvalu,UN member,Oceania,Polynesia
+TUV,Tuvalu,2016,3.297,65.51,21.5,86.2711,10930,Tuvalu,UN member,Oceania,Polynesia
+TUV,Tuvalu,2020,3.309,66.357,18.7,88.0018,10399,Tuvalu,UN member,Oceania,Polynesia
+TUV,Tuvalu,2024,3.174,67.259,16.5,89.6745,9646,Tuvalu,UN member,Oceania,Polynesia
+TZA,Tanzania,2012,5.137,62.286,44.8,19.6471,47374260,The United Republic of Tanzania,UN member,Africa,Eastern Africa
+TZA,Tanzania,2016,5.006,64.404,39.3,25.3154,53824013,The United Republic of Tanzania,UN member,Africa,Eastern Africa
+TZA,Tanzania,2020,4.801,66.771,33.2,31.1603,60972798,The United Republic of Tanzania,UN member,Africa,Eastern Africa
+TZA,Tanzania,2024,4.541,67.212,28.7,37.2194,68560157,The United Republic of Tanzania,UN member,Africa,Eastern Africa
+UGA,Uganda,2012,5.729,61.579,44.4,19.3815,34337438,The Republic of Uganda,UN member,Africa,Eastern Africa
+UGA,Uganda,2016,5.112,64.494,39.1,20.9104,38799152,The Republic of Uganda,UN member,Africa,Eastern Africa
+UGA,Uganda,2020,4.621,66.41,36.6,22.4171,44457152,The Republic of Uganda,UN member,Africa,Eastern Africa
+UGA,Uganda,2024,4.165,68.487,35.9,23.8964,50015092,The Republic of Uganda,UN member,Africa,Eastern Africa
+UKR,Ukraine,2012,1.528,71.09,10.4,96.3729,46210056,Ukraine,UN member,Europe,Eastern Europe
+UKR,Ukraine,2016,1.391,73.389,8.9,96.9523,45616832,Ukraine,UN member,Europe,Eastern Europe
+UKR,Ukraine,2020,1.208,73.283,8.2,97.3955,44680014,Ukraine,UN member,Europe,Eastern Europe
+UKR,Ukraine,2024,0.988,74.692,7.6,97.7258,37860221,Ukraine,UN member,Europe,Eastern Europe
+URY,Uruguay,2012,2.012,76.691,8.5,95.7752,3335401,The Oriental Republic of Uruguay,UN member,South America,South America
+URY,Uruguay,2016,1.966,77.351,7.1,96.9272,3379283,The Oriental Republic of Uruguay,UN member,South America,South America
+URY,Uruguay,2020,1.497,78.381,6.1,98.0693,3398968,The Oriental Republic of Uruguay,UN member,South America,South America
+URY,Uruguay,2024,1.397,78.287,6.2,99.1508,3386588,The Oriental Republic of Uruguay,UN member,South America,South America
+USA,United States of America,2012,1.8805,78.7415,6.0,99.8259,314339099,The United States of America,UN member,North America,North America
+USA,United States of America,2016,1.8205,78.539,5.7,99.7421,324353340,The United States of America,UN member,North America,North America
+USA,United States of America,2020,1.6415,76.9805,5.5,99.6663,331578104,The United States of America,UN member,North America,North America
+USA,United States of America,2024,1.6265,78.8902,5.5,99.6183,340003797,The United States of America,UN member,North America,North America
+UZB,Uzbekistan,2012,2.337,70.411,23.4,95.0891,29261903,The Republic of Uzbekistan,UN member,Asia,Southern and Central Asia
+UZB,Uzbekistan,2016,2.564,71.58,17.4,95.5714,31284568,The Republic of Uzbekistan,UN member,Asia,Southern and Central Asia
+UZB,Uzbekistan,2020,3.062,71.461,14.4,96.0621,33586372,The Republic of Uzbekistan,UN member,Asia,Southern and Central Asia
+UZB,Uzbekistan,2024,3.486,72.528,12.8,96.5478,36361859,The Republic of Uzbekistan,UN member,Asia,Southern and Central Asia
+VCT,Saint Vincent and the Grenadines,2012,2.113,70.539,17.6,86.2035,108736,Saint Vincent and the Grenadines,UN member,North America,Caribbean
+VCT,Saint Vincent and the Grenadines,2016,2.055,70.7,14.8,89.6435,106349,Saint Vincent and the Grenadines,UN member,North America,Caribbean
+VCT,Saint Vincent and the Grenadines,2020,1.83,69.605,12.2,,103526,Saint Vincent and the Grenadines,UN member,North America,Caribbean
+VCT,Saint Vincent and the Grenadines,2024,1.761,71.382,10.2,,100616,Saint Vincent and the Grenadines,UN member,North America,Caribbean
+VEN,Venezuela,2012,2.379,73.086,15.1,92.9427,29553826,The Bolivarian Republic of Venezuela,UN member,South America,South America
+VEN,Venezuela,2016,2.217,72.002,21.2,95.1238,30765720,The Bolivarian Republic of Venezuela,UN member,South America,South America
+VEN,Venezuela,2020,2.116,72.369,21.2,96.9861,28444077,The Bolivarian Republic of Venezuela,UN member,South America,South America
+VEN,Venezuela,2024,2.077,72.673,21.2,98.3956,28405543,The Bolivarian Republic of Venezuela,UN member,South America,South America
+VGB,British Virgin Islands,2012,1.103,76.433,14.1,96.858,30345,The Virgin Islands,United Kingdom,North America,Caribbean
+VGB,British Virgin Islands,2016,0.987,76.624,13.9,96.858,33878,The Virgin Islands,United Kingdom,North America,Caribbean
+VGB,British Virgin Islands,2020,0.975,76.894,12.7,,37135,The Virgin Islands,United Kingdom,North America,Caribbean
+VGB,British Virgin Islands,2024,1.048,77.431,11.4,,39471,The Virgin Islands,United Kingdom,North America,Caribbean
+VIR,US Virgin Islands,2012,2.06,78.5171,,99.1592,108188,The Virgin Islands of the United States,United States,North America,Caribbean
+VIR,US Virgin Islands,2016,2.09,79.1683,,99.1991,107516,The Virgin Islands of the United States,United States,North America,Caribbean
+VIR,US Virgin Islands,2020,2.03,79.8195,,99.2389,106290,The Virgin Islands of the United States,United States,North America,Caribbean
+VIR,US Virgin Islands,2024,1.97,80.7707,,99.2589,104377,The Virgin Islands of the United States,United States,North America,Caribbean
+VNM,Vietnam,2012,1.967,73.762,16.2,73.0593,89510356,The Socialist Republic of Vietnam,UN member,Asia,Southeast Asia
+VNM,Vietnam,2016,2.0,73.984,15.2,80.9141,94000117,The Socialist Republic of Vietnam,UN member,Asia,Southeast Asia
+VNM,Vietnam,2020,1.957,75.383,13.7,88.5744,98079191,The Socialist Republic of Vietnam,UN member,Asia,Southeast Asia
+VNM,Vietnam,2024,1.895,74.736,12.0,95.447,100987686,The Socialist Republic of Vietnam,UN member,Asia,Southeast Asia
+VUT,Vanuatu,2012,4.059,69.898,16.2,52.2923,248883,The Republic of Vanuatu,UN member,Oceania,Melanesia
+VUT,Vanuatu,2016,3.915,70.397,15.3,50.8261,272087,The Republic of Vanuatu,UN member,Oceania,Melanesia
+VUT,Vanuatu,2020,3.738,70.385,15.1,49.3338,298858,The Republic of Vanuatu,UN member,Oceania,Melanesia
+VUT,Vanuatu,2024,3.569,71.654,14.4,47.8142,327777,The Republic of Vanuatu,UN member,Oceania,Melanesia
+WSM,Samoa,2012,4.545,71.159,15.1,94.0016,196498,The Independent State of Samoa,UN member,Oceania,Polynesia
+WSM,Samoa,2016,4.262,71.003,14.6,95.0375,203499,The Independent State of Samoa,UN member,Oceania,Polynesia
+WSM,Samoa,2020,4.002,70.727,13.6,96.0821,211944,The Independent State of Samoa,UN member,Oceania,Polynesia
+WSM,Samoa,2024,3.801,71.826,12.3,97.0991,218019,The Independent State of Samoa,UN member,Oceania,Polynesia
+YEM,Yemen,2012,4.633,67.569,44.0,53.0047,28433647,The Republic of Yemen,UN member,Asia,Middle East
+YEM,Yemen,2016,4.613,67.105,40.7,56.4773,32109010,The Republic of Yemen,UN member,Asia,Middle East
+YEM,Yemen,2020,4.6,66.435,37.6,59.8436,36134863,The Republic of Yemen,UN member,Asia,Middle East
+YEM,Yemen,2024,4.499,69.439,33.8,63.0827,40583164,The Republic of Yemen,UN member,Asia,Middle East
+ZAF,South Africa,2012,2.447,61.737,33.3,69.5473,53782567,The Republic of South Africa,UN member,Africa,Southern Africa
+ZAF,South Africa,2016,2.261,64.749,28.0,72.3045,57259551,The Republic of South Africa,UN member,Africa,Southern Africa
+ZAF,South Africa,2020,2.257,65.15,24.5,74.9179,60562381,The Republic of South Africa,UN member,Africa,Southern Africa
+ZAF,South Africa,2024,2.205,66.312,24.2,77.3845,64007187,The Republic of South Africa,UN member,Africa,Southern Africa
+ZMB,Zambia,2012,5.136,58.704,46.1,29.4447,14913629,The Republic of Zambia,UN member,Africa,Eastern Africa
+ZMB,Zambia,2016,4.669,61.129,40.6,32.0478,16914423,The Republic of Zambia,UN member,Africa,Eastern Africa
+ZMB,Zambia,2020,4.323,63.361,35.7,34.4868,19059395,The Republic of Zambia,UN member,Africa,Eastern Africa
+ZMB,Zambia,2024,4.036,66.528,34.6,37.4763,21314956,The Republic of Zambia,UN member,Africa,Eastern Africa
+ZWE,Zimbabwe,2012,4.134,55.386,58.8,39.9294,13817887,The Republic of Zimbabwe,UN member,Africa,Eastern Africa
+ZWE,Zimbabwe,2016,3.828,59.76,54.3,37.5292,14600294,The Republic of Zimbabwe,UN member,Africa,Eastern Africa
+ZWE,Zimbabwe,2020,3.754,61.53,57.8,35.1924,15526888,The Republic of Zimbabwe,UN member,Africa,Eastern Africa
+ZWE,Zimbabwe,2024,3.674,63.064,62.4,34.6415,16634373,The Republic of Zimbabwe,UN member,Africa,Eastern Africa
