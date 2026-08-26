@@ -11,8 +11,15 @@ on:
     paths:
       - 'exercises_solutions.qmd'
       - 'requirements.txt'
-      - '*.csv'
-      - '*.xlsx'
+      # Explicit data filenames. A bare '*.csv' / '*.xlsx' did NOT fire for the
+      # 2026-08-26 dataset rebuild: the push changed five root-level data files
+      # and GitHub created zero runs, leaving the published HTML stale while the
+      # repo carried new data. Naming them removes the guesswork.
+      - 'economies.csv'
+      - 'economies_indexed.csv'
+      - 'populations.csv'
+      - 'economies.xlsx'
+      - 'populations.xlsx'
       - '.github/workflows/render-solutions.yml'
   workflow_dispatch:
 
