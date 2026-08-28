@@ -1532,7 +1532,7 @@ flowchart LR
   # Analyze the relationship between GDP per capita and gross savings
   sns.scatterplot(data=economies_cleaned, x='gdp_percapita', y='gross_savings', hue='income_group')
   plt.title('GDP Per Capita vs. Gross Savings by Income Group')
-  plt.show()
+  plt.show();
   plt.clf()
 
   # Analyze the trend of inflation rate over time for all classified income groups
