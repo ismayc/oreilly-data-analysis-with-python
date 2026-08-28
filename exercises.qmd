@@ -81,7 +81,10 @@ import seaborn as sns
 import plotly.express as px
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
+```
 
+```{python}
+#| output: false
 # For plotly to load directly in Jupyter notebook
 import plotly.offline as pyo
 pyo.init_notebook_mode(connected=True)
@@ -510,6 +513,7 @@ flowchart LR
 ### Grouping data
 
 ```{python}
+# Group by income_group and take the mean gdp_percapita
 
 
 ```
@@ -885,6 +889,7 @@ flowchart TD
 ### Pair plot
 
 ```{python}
+# Create a pair plot of the numerical columns
 
 
 
@@ -895,6 +900,7 @@ flowchart TD
 ### Violin plot
 
 ```{python}
+# Create a violin plot of gdp_percapita by income_group
 
 
 
