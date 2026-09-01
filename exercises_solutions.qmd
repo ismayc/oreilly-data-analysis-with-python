@@ -40,15 +40,6 @@ if "google.colab" in sys.modules:
             urllib.request.urlretrieve(_DATA_BASE + _fname, _fname)
 ```
 
-```{python}
-#| include: false
-import pandas as pd
-
-# Display all columns
-pd.set_option('display.max_columns', None)
-```
-
-
 # Intro: Foundations of Data Analysis with Python
 
 <!-- diagram: course-map -->
@@ -74,6 +65,13 @@ flowchart LR
 ## Walkthrough: Setting Up the Python Environment
 
 If you haven't already installed Python, Jupyter, and the necessary packages, there are instructions on the course repo in the README to do so [here](https://github.com/ismayc/oreilly-data-analysis-with-python/blob/main/README.md).
+
+```{python}
+import pandas as pd
+
+# Display all columns
+pd.set_option('display.max_columns', None)
+```
 
 ```{python}
 import pandas as pd
@@ -715,7 +713,7 @@ afg_data = economies[economies['code'] == 'AFG']
 plt.figure(figsize=(10, 6))
 plt.plot(afg_data['year'], afg_data['gdp_percapita'],
          marker='o', linestyle='-', color='b')
-plt.show();
+plt.show()
 ```
 
 ### Bar chart
@@ -730,15 +728,15 @@ plt.figure(figsize=(10, 6))
 plt.bar(x=data_2020_caribbean['code'],
         height=data_2020_caribbean['gdp_percapita'],
         color='g')
-plt.xticks(rotation=45);
-plt.show();
+plt.xticks(rotation=45)
+plt.show()
 
 # Horizontal version
 plt.figure(figsize=(10, 6))
 plt.barh(y=data_2020_caribbean['code'],
          width=data_2020_caribbean['gdp_percapita'],
          color='g')
-plt.show();
+plt.show()
 ```
 
 ### Adding labels and titles
@@ -749,12 +747,13 @@ liberia_data = economies[economies['code'] == 'LBR']
 
 # Line plot of gdp_percapita over the years with labels and titles
 plt.figure(figsize=(10, 6))
-plt.plot(liberia_data['year'], liberia_data['gdp_percapita'], marker='o', linestyle='-', color='r');
-plt.xlabel('Year');
-plt.ylabel('GDP Per Capita');
-plt.title('GDP Per Capita Over Years for Liberia (LBR)');
-plt.grid(True);
-plt.show();
+plt.plot(liberia_data['year'], liberia_data['gdp_percapita'], marker='o', linestyle='-', color='r')
+plt.xlabel('Year')
+plt.ylabel('GDP Per Capita')
+plt.title('GDP Per Capita Over Years for Liberia (LBR)')
+# Add gridlines to make values easier to read off the plot
+plt.grid()
+plt.show()
 ```
 
 ### Adjusting axes and tick marks
@@ -769,14 +768,14 @@ plt.ylabel('GDP Per Capita')
 plt.title('GDP Per Capita for Different Countries in 2020')
 
 # Adjust axes
-plt.ylim(0, max(data_2020_caribbean['gdp_percapita']) + 5000);
+plt.ylim(0, max(data_2020_caribbean['gdp_percapita']) + 5000)
 
 # Adjust tick marks
 plt.xticks(rotation=45)
-plt.yticks(range(0, int(max(data_2020_caribbean['gdp_percapita']) + 5000), 5000));
+plt.yticks(range(0, int(max(data_2020_caribbean['gdp_percapita']) + 5000), 5000))
 
 plt.grid(axis='y')
-plt.show();
+plt.show()
 ```
 
 > **Common Pitfall:** Call `plt.figure()` before each new plot and `plt.show()` after it. If you skip `plt.figure()`, matplotlib keeps drawing onto the previous figure, and successive plots can overlap or accumulate unexpectedly within the same axes.
@@ -799,7 +798,7 @@ india_data = populations[populations['country_code'] == 'IND']
 # Line plot of fertility rate over the years
 plt.figure(figsize=(10, 6))
 plt.plot(india_data['year'], india_data['fertility_rate'], marker='o', linestyle='-', color='b')
-plt.show();
+plt.show()
 ```
 
 ### Bar Chart
@@ -812,7 +811,7 @@ data_2020_asia = populations[(populations['year'] == 2020) & (populations['count
 # Bar chart of population size for selected Asian countries in 2020
 plt.figure(figsize=(10, 6))
 plt.bar(data_2020_asia['country_code'], data_2020_asia['size'], color='g')
-plt.show();
+plt.show()
 ```
 
 ### Adding Labels and Titles
@@ -828,8 +827,9 @@ plt.plot(nigeria_data['year'], nigeria_data['life_expectancy'],
 plt.xlabel('Year')
 plt.ylabel('Life Expectancy')
 plt.title('Life Expectancy Over Years for Nigeria (NGA)')
-plt.grid(True)
-plt.show();
+# Add gridlines to make values easier to read off the plot
+plt.grid()
+plt.show()
 ```
 
 ### Adjusting Axes and Tick Marks
@@ -860,7 +860,7 @@ plt.xticks(rotation=45)
 plt.yticks(range(0, int(max(data_2020_africa['fertility_rate']) + 1), 1))
 
 plt.grid(axis='y')
-plt.show();
+plt.show()
 ```
 
 
@@ -898,7 +898,7 @@ corr_matrix = numeric_economies.corr()
 plt.figure(figsize=(10, 8))
 sns.heatmap(corr_matrix, annot=True, cmap='coolwarm', fmt='.2f')
 plt.title('Correlation Heatmap')
-plt.show();
+plt.show()
 ```
 
 > **Common Pitfall:** `corr()` only works on numeric columns. Select numeric columns first (as shown with `select_dtypes`); passing a DataFrame that still contains string columns such as `code` or `income_group` will either error or silently drop them depending on your pandas version.
@@ -908,7 +908,7 @@ plt.show();
 ```{python}
 sns.pairplot(economies, vars=['gdp_percapita', 'gross_savings', 'inflation_rate', 'total_investment'])
 plt.suptitle('Pair Plot of Numerical Columns', y=1)
-plt.show();
+plt.show()
 ```
 
 ### Violin plot
@@ -919,7 +919,7 @@ sns.violinplot(x='income_group', y='gdp_percapita', data=economies)
 plt.xlabel('Income Group')
 plt.ylabel('GDP Per Capita')
 plt.title('Violin Plot of GDP Per Capita by Income Group')
-plt.show();
+plt.show()
 ```
 
 ### Customizing Seaborn plots
@@ -933,12 +933,12 @@ plt.ylabel('GDP Per Capita')
 plt.title('GDP Per Capita for Different Caribbean Countries in 2020')
 
 # Customizing axes and tick marks
-plt.ylim(0, max(data_2020_caribbean['gdp_percapita']) + 5000);
-plt.xticks(rotation=60);
-plt.yticks(range(0, int(max(data_2020_caribbean['gdp_percapita']) + 5000), 5000));
+plt.ylim(0, max(data_2020_caribbean['gdp_percapita']) + 5000)
+plt.xticks(rotation=60)
+plt.yticks(range(0, int(max(data_2020_caribbean['gdp_percapita']) + 5000), 5000))
 
 plt.grid(axis='y')
-plt.show();
+plt.show()
 ```
 
 ## Exercise 2.2: Data Visualization Techniques with Seaborn
@@ -965,7 +965,7 @@ pop_corr_matrix = numeric_populations.corr()
 plt.figure(figsize=(10, 8))
 sns.heatmap(pop_corr_matrix, annot=True, cmap='coolwarm', fmt='.2f')
 plt.title('Correlation Heatmap')
-plt.show();
+plt.show()
 ```
 
 ### Pair Plot
@@ -977,7 +977,7 @@ import matplotlib.pyplot as plt
 # Pair plot of fertility rate, life expectancy, and population size
 sns.pairplot(populations, vars=['fertility_rate', 'life_expectancy', 'size'])
 plt.suptitle('Pair Plot of Selected Numerical Columns', y=1)
-plt.show();
+plt.show()
 ```
 
 ### Violin Plot
@@ -992,7 +992,7 @@ sns.violinplot(x='continent', y='fertility_rate', data=populations)
 plt.xlabel('Continent')
 plt.ylabel('Fertility Rate')
 plt.title('Violin Plot of Fertility Rate by Continent')
-plt.show();
+plt.show()
 ```
 
 ### Customizing Seaborn Plots
@@ -1014,12 +1014,12 @@ plt.ylabel('Life Expectancy')
 plt.title('Life Expectancy for Selected European Countries in 2020')
 
 # Customizing axes and tick marks
-plt.ylim(0, max(data_2020_europe['life_expectancy']) + 10);
-plt.xticks(rotation=45);
-plt.yticks(range(0, int(max(data_2020_europe['life_expectancy']) + 10), 10));
+plt.ylim(0, max(data_2020_europe['life_expectancy']) + 10)
+plt.xticks(rotation=45)
+plt.yticks(range(0, int(max(data_2020_europe['life_expectancy']) + 10), 10))
 
 plt.grid(axis='y')
-plt.show();
+plt.show()
 ```
 
 ### Self-Check
@@ -1070,7 +1070,7 @@ afg_data = economies[economies['code'] == 'AFG']
 
 # Create an interactive line chart
 fig = px.line(afg_data, x='year', y='gdp_percapita', title='GDP Per Capita Over Years for Afghanistan (AFG)')
-fig.show();
+fig.show()
 ```
 
 > **Common Pitfall:** If a Plotly figure shows up blank in a Jupyter notebook, the renderer was likely not initialized. Make sure the setup cell that runs `pyo.init_notebook_mode(connected=True)` was executed first, and remember that you must call `fig.show()`, simply creating `fig` does not display anything.
@@ -1087,7 +1087,7 @@ fig = px.scatter(economies, x='gdp_percapita', y='gross_savings', color='income_
 fig.update_traces(marker=dict(size=10), selector=dict(mode='markers'))
 fig.update_layout(hovermode='closest')
 
-fig.show();
+fig.show()
 ```
 
 ### Designing a simple dashboard
@@ -1101,21 +1101,23 @@ data_2020 = economies[economies['year'] == 2020]
 
 # Create a subplot figure with 1 row and 2 columns
 fig = make_subplots(rows=1, cols=2,
-                    subplot_titles=('GDP Per Capita Over Years for Afghanistan',
-                                    'GDP Per Capita for Different Countries in 2020'))
+                    subplot_titles=('GDP Per Capita Over Years for Germany',
+                                    'GDP Per Capita in Western Europe in 2020'))
 
-# Line chart of GDP Per Capita for Afghanistan
-afg_data = economies[economies['code'] == 'AFG']
-line_chart = go.Scatter(x=afg_data['year'], y=afg_data['gdp_percapita'], mode='lines+markers', name='Afghanistan')
+# Line chart of GDP Per Capita for Germany
+deu_data = economies[economies['code'] == 'DEU']
+line_chart = go.Scatter(x=deu_data['year'], y=deu_data['gdp_percapita'], mode='lines+markers', name='Germany')
 fig.add_trace(line_chart, row=1, col=1)
 
-# Bar chart of GDP Per Capita for different countries in 2020
-bar_chart = go.Bar(x=data_2020['code'], y=data_2020['gdp_percapita'], name='2020')
+# Bar chart of GDP Per Capita for Western European countries in 2020
+western_europe = ['AUT', 'BEL', 'CHE', 'DEU', 'FRA', 'LUX', 'NLD']
+western_data_2020 = data_2020[data_2020['code'].isin(western_europe)]
+bar_chart = go.Bar(x=western_data_2020['code'], y=western_data_2020['gdp_percapita'], name='2020')
 fig.add_trace(bar_chart, row=1, col=2)
 
 # Update layout
 fig.update_layout(title_text='Simple Dashboard with Multiple Charts', showlegend=False)
-fig.show();
+fig.show()
 ```
 
 > **Common Pitfall:** Plotly subplot positions are 1-indexed, so the first cell is `row=1, col=1` (not `0`). The `rows`/`cols` you pass to `make_subplots` must also be large enough to hold every `add_trace` position, or you will get an index error.
@@ -1137,7 +1139,7 @@ bra_data = populations[populations['country_code'] == 'BRA']
 
 # Create an interactive line chart (Fertility Rate Over Years)
 fig = px.line(bra_data, x='year', y='fertility_rate', title='Fertility Rate Over Years for Brazil (BRA)')
-fig.show();
+fig.show()
 ```
 
 ### Adding Interactive Elements
@@ -1154,7 +1156,7 @@ fig = px.scatter(populations, x='fertility_rate', y='life_expectancy', color='co
 fig.update_traces(marker=dict(size=10), selector=dict(mode='markers'))
 fig.update_layout(hovermode='closest')
 
-fig.show();
+fig.show()
 ```
 
 ### Designing a Simple Dashboard
@@ -1181,7 +1183,7 @@ fig.add_trace(bar_chart, row=1, col=2)
 
 # Update layout to add a title and hide the legend
 fig.update_layout(title_text='Simple Dashboard with Multiple Charts', showlegend=False)
-fig.show();
+fig.show()
 ```
 
 ## Walkthrough 3.2: Creating a Dynamic Data Report
@@ -1250,7 +1252,7 @@ fig.add_trace(go.Scatter(x=selected_data['code'], y=selected_data['gross_savings
 # Update layout
 fig.update_layout(title_text='Dynamic Data Report for Economic Indicators (2020)', showlegend=False, height=900)
 
-fig.show();
+fig.show()
 ```
 
 ### Adding contextual text and summaries
@@ -1302,7 +1304,7 @@ fig.add_annotation(text='The scatter plot reveals a positive correlation between
 fig.add_annotation(text='The bar chart shows that high-income countries generally have higher GDP per Capita compared to low-income countries.', xref='paper', yref='paper', x=0, y=0.30, showarrow=False, font=dict(size=12))
 fig.add_annotation(text='The scatter plot indicates no clear relationship between income group and gross savings.', xref='paper', yref='paper', x=0, y=-0.1, showarrow=False, font=dict(size=12))
 
-fig.show();
+fig.show()
 ```
 
 
@@ -1373,7 +1375,7 @@ fig.add_trace(go.Scatter(x=pop_selected_data['country_code'], y=pop_selected_dat
 # Update layout to include title, hide legend, and set height to 900
 fig.update_layout(title_text='Dynamic Data Report for Population Indicators (2020)', showlegend=False, height=900)
 
-fig.show();
+fig.show()
 ```
 
 ### Adding Contextual Text and Summaries
@@ -1426,7 +1428,7 @@ fig.add_annotation(text='A negative correlation between Fertility Rate and Life 
 fig.add_annotation(text='Fertility rates vary significantly across countries, with African countries generally exhibiting higher fertility rates.', xref='paper', yref='paper', x=0, y=0.30, showarrow=False, font=dict(size=12))
 fig.add_annotation(text='Life expectancy varies across countries and continents, with European tending to have higher life expectancies.', xref='paper', yref='paper', x=0, y=-0.1, showarrow=False, font=dict(size=12))
 
-fig.show();
+fig.show()
 ```
 
 ### Self-Check
@@ -1513,7 +1515,7 @@ flowchart LR
   economies_cleaned
   ```
 
-> **Common Pitfall:** Build new columns on a DataFrame you fully own (here `economies_cleaned`, created by `fillna`), not on a filtered slice of another DataFrame. Assigning to a column of a slice can raise pandas' `SettingWithCopyWarning` and may not update the data you expect. When you need an independent copy, use `.copy()`.
+> **Common Pitfall:** Build new columns on a DataFrame you fully own (here `economies_cleaned`, created by `fillna`), not on a filtered slice of another DataFrame. Since pandas 3, copy-on-write is the default: assigning to a column of a slice no longer warns (`SettingWithCopyWarning` is gone) and never updates the original, and chained assignment raises a `ChainedAssignmentError` instead of silently half-working. When you need an independent copy, use `.copy()`.
 
 - **Transforming**:
   ```{python}
@@ -1532,7 +1534,7 @@ flowchart LR
   # Analyze the relationship between GDP per capita and gross savings
   sns.scatterplot(data=economies_cleaned, x='gdp_percapita', y='gross_savings', hue='income_group')
   plt.title('GDP Per Capita vs. Gross Savings by Income Group')
-  plt.show();
+  plt.show()
   plt.clf()
 
   # Analyze the trend of inflation rate over time for all classified income groups
@@ -1541,7 +1543,7 @@ flowchart LR
                hue='income_group', errorbar=None)
   plt.title('Inflation Rate Over Time by Specified Income Group')
   plt.legend(title='Income Group', labels=classified_data['income_group'].unique())
-  plt.show();
+  plt.show()
   ```
 
 ### Initial Findings and Interpretation
@@ -1619,19 +1621,19 @@ By following these steps, you can effectively select, clean, transform, and anal
   bar_fig = px.bar(economies_cleaned, x='code', y='gdp_percapita', color='income_group',
                    title='GDP Per Capita by Country and Income Group (2020)',
                    labels={'gdp_percapita': 'GDP Per Capita', 'code': 'Country Code'})
-  bar_fig.show();
+  bar_fig.show()
 
   # Scatter plot of GDP per Capita vs. Gross Savings by Income Group
   scatter_fig = px.scatter(economies_cleaned, x='gdp_percapita', y='gross_savings', color='income_group',
                            hover_name='code', title='GDP Per Capita vs. Gross Savings (2020)',
                            labels={'gdp_percapita': 'GDP Per Capita', 'gross_savings': 'Gross Savings (%)'})
-  scatter_fig.show();
+  scatter_fig.show()
 
   # Scatter plot of GDP per Capita vs. Unemployment Rate by Income Group
   scatter_fig_2 = px.scatter(economies_cleaned, x='gdp_percapita', y='unemployment_rate', color='income_group',
                              hover_name='code', title='GDP Per Capita vs. Unemployment Rate (2020)',
                              labels={'gdp_percapita': 'GDP Per Capita', 'unemployment_rate': 'Unemployment Rate (%)'})
-  scatter_fig_2.show();
+  scatter_fig_2.show()
   ```
 
 - **Narrative**:
