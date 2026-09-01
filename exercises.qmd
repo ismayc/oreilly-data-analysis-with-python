@@ -61,7 +61,7 @@ flowchart LR
 
 
 
-## Walkthrough: Setting Up the Python Environment
+## Walkthrough #1: Setting Up the Python Environment
 
 If you haven't already installed Python, Jupyter, and the necessary packages, there are instructions on the course repo in the README to do so [here](https://github.com/ismayc/oreilly-data-analysis-with-python/blob/main/README.md).
 
@@ -88,7 +88,7 @@ import plotly.offline as pyo
 pyo.init_notebook_mode(connected=True)
 ```
 
-## Exercise: Setting Up the Python Environment
+## Exercise #1: Setting Up the Python Environment
 
 By completing this exercise, you will be able to
 - Import necessary Python packages
@@ -104,11 +104,11 @@ to move on.
 
 # Module 1: Data Wrangling with Pandas
 
-## Walkthrough 1.1: Loading and Inspecting Data with Pandas
+## Walkthrough #2: Loading and Inspecting Data with Pandas
 
 <!-- diagram: load-and-inspect -->
 ```{mermaid}
-%%| fig-cap: "Either file type lands in the same DataFrame. Four calls then answer four questions about it."
+%%| fig-cap: "Either file type lands in the same DataFrame. Three calls then answer three questions about it."
 %%| fig-align: center
 %%{init: {'theme': 'base', 'themeVariables': {'fontSize': '16px'}, 'flowchart': {'wrappingWidth': 500}}}%%
 flowchart TD
@@ -117,9 +117,8 @@ flowchart TD
   RC --> DF[/"One DataFrame"/]:::good
   RX --> DF
   DF --> Q1["head()<br/>what does a row<br/>look like?"]:::accent
-  DF --> Q2["info(), dtypes<br/>what type is<br/>each column?"]:::accent
+  DF --> Q2["info()<br/>what type is each<br/>column, and what<br/>is missing?"]:::accent
   DF --> Q3["describe()<br/>what range are<br/>the numbers in?"]:::accent
-  DF --> Q4["isnull().sum()<br/>what is missing?"]:::accent
   classDef data fill:#d1f0ec,stroke:#0b7a75,color:#1a1a1a
   classDef proc fill:#dbe9ff,stroke:#1a73e8,color:#1a1a1a
   classDef good fill:#d8f5d8,stroke:#2e7d32,color:#1a1a1a
@@ -158,17 +157,9 @@ flowchart TD
 
 ```
 
-```{python}
-# Check for missing data
 
-```
 
-```{python}
-# Check data types
-
-```
-
-## Exercise 1.1: Loading and Inspecting Data with Pandas
+## Exercise #2: Loading and Inspecting Data with Pandas
 
 By completing this exercise, you will be able to use `pandas` to
 - Import data from a CSV or from an Excel file
@@ -194,30 +185,21 @@ By completing this exercise, you will be able to use `pandas` to
 
 ```
 
-```{python}
-# Check for missing data
-
-```
-
-```{python}
-# Check data types
-
-```
 
 
-## Walkthrough 1.2: Cleaning and Preparing Data with Pandas
+
+## Walkthrough #3: Cleaning and Preparing Data with Pandas
 
 <!-- diagram: cleaning-order -->
 ```{mermaid}
-%%| fig-cap: "Cleaning has an order. Settle what is missing, then types, then names, then the index, and cut down to the rows you want last."
+%%| fig-cap: "Cleaning has an order. Settle what is missing, then types, then names, and cut down to the rows you want last."
 %%| fig-align: center
 %%{init: {'theme': 'base', 'themeVariables': {'fontSize': '16px'}, 'flowchart': {'wrappingWidth': 500}}}%%
 flowchart LR
   R[("Raw<br/>DataFrame")]:::data --> A["1. Missing values<br/>dropna, fillna"]:::proc
   A --> B["2. Types<br/>astype"]:::proc
   B --> C["3. Names<br/>rename"]:::proc
-  C --> D["4. Index<br/>set_index,<br/>reset_index"]:::proc
-  D --> E["5. Rows you want<br/>boolean filter"]:::proc
+  C --> E["4. Rows you want<br/>boolean filter"]:::proc
   E --> T[/"A table you can<br/>analyze"/]:::good
   classDef data fill:#d1f0ec,stroke:#0b7a75,color:#1a1a1a
   classDef proc fill:#dbe9ff,stroke:#1a73e8,color:#1a1a1a
@@ -231,13 +213,12 @@ flowchart LR
 
 <!-- diagram: missing-data-choice -->
 ```{mermaid}
-%%| fig-cap: "Three ways to handle a gap. Which one is right depends on how much is missing and whether you can spare the rows."
+%%| fig-cap: "Two ways to handle a gap. Which one is right depends on whether you can spare the rows."
 %%| fig-align: center
 %%{init: {'theme': 'base', 'themeVariables': {'fontSize': '16px'}, 'flowchart': {'wrappingWidth': 500}}}%%
 flowchart TD
   M{"A column has<br/>missing values"}:::decision
   M -->|"a few rows, and you<br/>can spare them"| DR["dropna(subset=[...])<br/>drop those rows"]:::proc
-  M -->|"the column is<br/>mostly empty"| DC["dropna(axis=1)<br/>drop the column"]:::proc
   M -->|"you need to keep<br/>every row"| FI["fillna(value)<br/>put something in<br/>the gap"]:::accent
   FI --> W["A filled value is a<br/>guess. Say so when<br/>you report the number."]:::warn
   classDef decision fill:#fff3cd,stroke:#d39e00,color:#1a1a1a
@@ -257,25 +238,10 @@ flowchart TD
 
 ```
 
-```{python}
-# Remove rows only if all values are missing
-
-
-```
 
 ```{python}
 # Remove rows with missing values in specific columns
 
-
-```
-
-#### Remove columns
-
-```{python}
-# Remove columns with any missing values
-
-
-# Display the DataFrame after removing columns with missing values
 
 ```
 
@@ -328,24 +294,6 @@ This can be extended to replace missing values with the mean, median, or mode of
 
 ```
 
-### Changing a DataFrame's index
-
-#### Set the index
-
-```{python}
-# Set unique combinations of 'code' and 'year' as the index
-
-
-```
-
-#### Reset the index
-
-```{python}
-# Reset the index
-
-
-```
-
 ### Filtering rows based on conditions
 
 #### Conditions on a single column
@@ -362,11 +310,6 @@ This can be extended to replace missing values with the mean, median, or mode of
 
 ```
 
-```{python}
-# Filter rows where total_investment is not NaN
-
-
-```
 
 > **Common Pitfall:** When combining multiple conditions, wrap each comparison in parentheses and use `&` (and) / `|` (or), not the Python keywords `and`/`or`. Forgetting the parentheses, e.g. `economies['inflation_rate'] < 0 & ...`, triggers an operator-precedence error because `&` binds more tightly than `<`.
 
@@ -379,19 +322,13 @@ This can be extended to replace missing values with the mean, median, or mode of
 
 ```
 
-```{python}
-# Filter rows where gdp_percapita is greater than 40,000 and year is less than or equal to 2016
 
-
-```
-
-## Exercise 1.2: Cleaning and Preparing Data with Pandas
+## Exercise #3: Cleaning and Preparing Data with Pandas
 
 By completing this exercise, you will be able to use `pandas` to
 - Handle missing data
 - Convert a column to a different data type
 - Rename a column
-- Change a DataFrame's index
 - Filter a DataFrame
 
 ### Handle Missing Data
@@ -403,20 +340,9 @@ By completing this exercise, you will be able to use `pandas` to
 
 ```
 
-```{python}
-# Remove rows only if all values are missing
-
-```
 
 ```{python}
 # Remove rows with missing values in specific columns (e.g., 'infant_mortality')
-
-```
-
-#### Remove columns
-
-```{python}
-# Remove columns with any missing values
 
 ```
 
@@ -457,17 +383,7 @@ By completing this exercise, you will be able to use `pandas` to
 
 ```
 
-### Change a DataFrame's Index and Filter a DataFrame
-
-#### Change a DataFrame's Index
-
-```{python}
-# Set the 'country_code' column as the index
-
-
-```
-
-#### Filter a DataFrame
+### Filter a DataFrame
 
 ```{python}
 # Filter the DataFrame to include only rows where the 'continent' is 'Asia'
@@ -488,7 +404,7 @@ By completing this exercise, you will be able to use `pandas` to
 ```
 
 
-## Walkthrough 1.3: Transforming and Aggregating Data with Pandas
+## Walkthrough #4: Transforming and Aggregating Data with Pandas
 
 <!-- diagram: split-apply-combine -->
 ```{mermaid}
@@ -587,7 +503,7 @@ flowchart TD
 
 ```
 
-## Exercise 1.3: Transforming and Aggregating Data with Pandas
+## Exercise #4: Transforming and Aggregating Data with Pandas
 
 By completing this exercise, you will be able to use `pandas` to
 - Aggregate data effectively by grouping it
@@ -660,9 +576,9 @@ By completing this exercise, you will be able to use `pandas` to
 By the end of this module, you should be able to:
 
 - [ ] Load data from CSV and Excel files with `read_csv` and `read_excel`
-- [ ] Inspect a DataFrame using `head()`, `info()`, `describe()`, `dtypes`, and `isnull().sum()`
-- [ ] Handle missing data by dropping rows/columns or filling values with `dropna` and `fillna`
-- [ ] Convert column data types, rename columns, and set or reset the index
+- [ ] Inspect a DataFrame using `head()`, `info()`, and `describe()`
+- [ ] Handle missing data by dropping rows or filling values with `dropna` and `fillna`
+- [ ] Convert column data types and rename columns
 - [ ] Filter rows using single and multiple boolean conditions
 - [ ] Aggregate and summarize data with `groupby`, `agg`, `pivot_table`, `crosstab`, and `value_counts`
 
@@ -670,7 +586,7 @@ By the end of this module, you should be able to:
 
 # Module 2: Data Visualization Basics with Matplotlib and Seaborn
 
-## Walkthrough 2.1: Creating Basic Plots with Matplotlib
+## Walkthrough #5: Data Visualization Techniques with Matplotlib and Seaborn
 
 <!-- diagram: matplotlib-recipe -->
 ```{mermaid}
@@ -762,12 +678,66 @@ flowchart LR
 
 > **Common Pitfall:** Call `plt.figure()` before each new plot and `plt.show()` after it. If you skip `plt.figure()`, matplotlib keeps drawing onto the previous figure, and successive plots can overlap or accumulate unexpectedly within the same axes.
 
-## Exercise 2.1: Creating Basic Plots with Matplotlib
+<!-- diagram: seaborn-choice -->
+```{mermaid}
+%%| fig-cap: "Pick the seaborn plot from the question you are asking, not from the plot you feel like making."
+%%| fig-align: center
+%%{init: {'theme': 'base', 'themeVariables': {'fontSize': '16px'}, 'flowchart': {'wrappingWidth': 500}}}%%
+flowchart TD
+  Q{"What are you<br/>trying to see?"}:::decision
+  Q -->|"how one number<br/>is spread out"| H["histplot<br/>bins plus a density curve"]:::proc
+  Q -->|"the summary of one number<br/>inside each category"| B["boxplot<br/>median, quartiles, outliers"]:::proc
+  Q -->|"the full shape of one number<br/>inside each category"| V["violinplot<br/>the whole distribution"]:::proc
+  classDef decision fill:#fff3cd,stroke:#d39e00,color:#1a1a1a
+  classDef proc fill:#dbe9ff,stroke:#1a73e8,color:#1a1a1a
+```
 
-By completing this exercise, you will be able to use `matplotlib` to
+
+
+
+### Histogram with Seaborn
+
+```{python}
+# Histogram of gdp_percapita
+
+
+
+
+
+
+```
+
+### Boxplot with Seaborn
+
+```{python}
+# Boxplot of gdp_percapita by income_group
+
+
+
+
+
+
+```
+
+### Violin plot with Seaborn
+
+```{python}
+# Violin plot of gdp_percapita by income_group
+
+
+
+
+
+
+```
+
+## Exercise #5: Data Visualization Techniques with Matplotlib and Seaborn
+
+By completing this exercise, you will be able to use `matplotlib` and `seaborn` to
 - Create line plots and bar charts
 - Add labels and titles
 - Adjust axes and tick marks
+- Draw a histogram, boxplot, and violin plot
 
 ### Line Plot
 
@@ -845,61 +815,22 @@ By completing this exercise, you will be able to use `matplotlib` to
 
 ```
 
-
-## Walkthrough 2.2: Data Visualization Techniques with Seaborn
-
-<!-- diagram: seaborn-choice -->
-```{mermaid}
-%%| fig-cap: "Pick the seaborn plot from the question you are asking, not from the plot you feel like making."
-%%| fig-align: center
-%%{init: {'theme': 'base', 'themeVariables': {'fontSize': '16px'}, 'flowchart': {'wrappingWidth': 500}}}%%
-flowchart TD
-  Q{"What are you<br/>trying to see?"}:::decision
-  Q -->|"how every numeric column<br/>relates to every other"| H["heatmap of .corr()<br/>one number per pair"]:::proc
-  Q -->|"the same thing, but as<br/>real scatterplots"| PP["pairplot"]:::proc
-  Q -->|"the shape of one number<br/>inside each category"| V["violinplot"]:::proc
-  Q -->|"one value compared<br/>across categories"| B["barplot"]:::proc
-  classDef decision fill:#fff3cd,stroke:#d39e00,color:#1a1a1a
-  classDef proc fill:#dbe9ff,stroke:#1a73e8,color:#1a1a1a
-```
-
-
-
-
-### Heatmap
+### Histogram with Seaborn
 
 ```{python}
-# Select only the numeric columns
+# Histogram of life expectancy
 
 
-
-# Calculate correlation matrix
-
-
-# Create heatmap
 
 
 
 
 ```
 
-> **Common Pitfall:** `corr()` only works on numeric columns. Select numeric columns first (as with `select_dtypes`); passing a DataFrame that still contains string columns such as `code` or `income_group` will either error or silently drop them depending on your pandas version.
-
-### Pair plot
+### Boxplot with Seaborn
 
 ```{python}
-# Create a pair plot of the numerical columns
-
-
-
-
-
-```
-
-### Violin plot
-
-```{python}
-# Create a violin plot of gdp_percapita by income_group
+# Boxplot of fertility rate by continent
 
 
 
@@ -908,87 +839,10 @@ flowchart TD
 
 ```
 
-### Customizing Seaborn plots
-
-```{python}
-# Bar plot with customization
-
-
-
-
-
-
-# Customizing axes and tick marks
-
-
-
-
-
-
-```
-
-## Exercise 2.2: Data Visualization Techniques with Seaborn
-
-By completing this exercise, you will be able to use `seaborn` to
-- Create heatmaps
-- Design pair plots and violin plots
-- Customize Seaborn plots
-
-### Heatmap
-
-```{python}
-# Select only the numeric columns
-
-
-
-# Calculate correlation matrix
-
-
-# Create heatmap
-
-
-
-
-```
-
-### Pair Plot
-
-```{python}
-# Pair plot of fertility rate, life expectancy, and population size
-
-
-
-
-```
-
-### Violin Plot
+### Violin Plot with Seaborn
 
 ```{python}
 # Violin plot of fertility rate by continent
-
-
-
-
-
-
-```
-
-### Customizing Seaborn Plots
-
-```{python}
-# Filter data for selected European countries ('DEU', 'FRA', 'ITA', 'ESP', 'GBR')
-# and the year 2020
-
-
-
-# Bar plot with customization
-
-
-
-
-
-
-# Customizing axes and tick marks
 
 
 
@@ -1004,9 +858,8 @@ By the end of this module, you should be able to:
 - [ ] Create line plots and bar charts (vertical and horizontal) with `matplotlib`
 - [ ] Add axis labels, titles, and gridlines to a plot
 - [ ] Adjust axis limits and tick marks with `ylim`, `xticks`, and `yticks`
-- [ ] Build heatmaps, pair plots, and violin plots with `seaborn`
-- [ ] Compute a correlation matrix on numeric columns before plotting it
-- [ ] Customize seaborn plots with palettes, hues, and matplotlib styling
+- [ ] Draw a histogram, boxplot, and violin plot with `seaborn`
+- [ ] Explain what each chart type reveals about a distribution or comparison
 
 ---
 
@@ -1035,7 +888,7 @@ flowchart TD
 
 
 
-## Walkthrough 3.1: Interactive Charts and Dashboards with Plotly
+## Walkthrough #6: Interactive Charts and Dashboards with Plotly
 
 ### Basic interactive chart
 
@@ -1098,7 +951,7 @@ flowchart TD
 
 > **Common Pitfall:** Plotly subplot positions are 1-indexed, so the first cell is `row=1, col=1` (not `0`). The `rows`/`cols` you pass to `make_subplots` must also be large enough to hold every `add_trace` position, or you will get an index error.
 
-## Exercise 3.1: Interactive Charts and Dashboards with Plotly
+## Exercise #6: Interactive Charts and Dashboards with Plotly
 
 By completing this exercise, you will be able to use `plotly` to
 - Create a basic interactive chart
@@ -1154,222 +1007,6 @@ By completing this exercise, you will be able to use `plotly` to
 
 ```
 
-## Walkthrough 3.2: Creating a Dynamic Data Report
-
-<!-- diagram: report-anatomy -->
-```{mermaid}
-%%| fig-cap: "A report is a grid you fill panel by panel, then label. Rows and columns are numbered from 1, not 0."
-%%| fig-align: center
-%%{init: {'theme': 'base', 'themeVariables': {'fontSize': '15px'}, 'flowchart': {'wrappingWidth': 500}}}%%
-flowchart TD
-  MS["make_subplots(rows=3, cols=1)<br/>an empty three-row grid"]:::proc --> T1["add_trace(..., row=1, col=1)"]:::proc
-  MS --> T2["add_trace(..., row=2, col=1)"]:::proc
-  MS --> T3["add_trace(..., row=3, col=1)"]:::proc
-  T1 --> UL["update_layout<br/>title, height, legend"]:::proc
-  T2 --> UL
-  T3 --> UL
-  UL --> AN["add_annotation<br/>what each panel means"]:::accent
-  AN --> R[/"One scrollable<br/>report"/]:::good
-  classDef proc fill:#dbe9ff,stroke:#1a73e8,color:#1a1a1a
-  classDef accent fill:#ede0ff,stroke:#6a1b9a,color:#1a1a1a
-  classDef good fill:#d8f5d8,stroke:#2e7d32,color:#1a1a1a
-```
-
-
-
-
-### Selecting relevant data
-
-```{python}
-# Select relevant data for the year 2020 and specific columns
-selected_data = economies[economies['year'] == 2020][['code', 'gdp_percapita', 'gross_savings', 'inflation_rate', 'income_group']]
-selected_data.head()
-```
-
-### Building a dynamic report
-
-```{python}
-# Create a subplot figure with 3 rows
-fig = make_subplots(rows=3, cols=1,
-                    subplot_titles=('GDP Per Capita vs. Gross Savings',
-                                    'GDP Per Capita by Country and Income Group',
-                                    'Gross Savings by Country and Income Group'))
-
-# Add scatter plot
-fig.add_trace(go.Scatter(x=selected_data['gdp_percapita'], y=selected_data['gross_savings'],
-                         mode='markers',
-                         marker=dict(color=selected_data['income_group'].astype('category').cat.codes),
-                         text=selected_data['code'], name='Scatter'),
-              row=1, col=1)
-
-# Add bar chart
-fig.add_trace(go.Bar(x=selected_data['code'], y=selected_data['gdp_percapita'],
-                     marker=dict(color=selected_data['income_group'].astype('category').cat.codes), name='Bar'),
-              row=2, col=1)
-
-# Add another scatter plot
-fig.add_trace(go.Scatter(x=selected_data['code'], y=selected_data['gross_savings'],
-                         mode='markers',
-                         marker=dict(color=selected_data['income_group'].astype('category').cat.codes), text=selected_data['code'], name='Scatter'),
-              row=3, col=1)
-
-# Update layout
-fig.update_layout(title_text='Dynamic Data Report for Economic Indicators (2020)', showlegend=False, height=900)
-
-fig.show()
-```
-
-### Adding contextual text and summaries
-
-```{python}
-import plotly.io as pio
-import plotly.graph_objects as go
-
-# Create a subplot figure with 3 rows
-fig = make_subplots(rows=3, cols=1,
-                    subplot_titles=('GDP Per Capita vs. Gross Savings',
-                                    'GDP Per Capita by Country and Income Group',
-                                    'Gross Savings by Country and Income Group'))
-
-# Add scatter plot
-fig.add_trace(go.Scatter(x=selected_data['gdp_percapita'], y=selected_data['gross_savings'],
-                         mode='markers',
-                         marker=dict(color=selected_data['income_group'].astype('category').cat.codes),
-                         text=selected_data['code'], name='Scatter'),
-              row=1, col=1)
-
-# Add bar chart
-fig.add_trace(go.Bar(x=selected_data['code'], y=selected_data['gdp_percapita'],
-                     marker=dict(color=selected_data['income_group'].astype('category').cat.codes), name='Bar'),
-              row=2, col=1)
-
-# Add another scatter plot
-fig.add_trace(go.Scatter(x=selected_data['code'], y=selected_data['gross_savings'],
-                         mode='markers',
-                         marker=dict(color=selected_data['income_group'].astype('category').cat.codes),
-                         text=selected_data['code'], name='Scatter'),
-              row=3, col=1)
-
-# Update layout
-fig.update_layout(
-    title_text='Dynamic Data Report for Economic Indicators (2020)',
-    showlegend=False,
-    height=900,
-    annotations=[
-        go.layout.Annotation(
-            text='''This report presents key economic indicators for various countries in 2020, categorized by income group. ''',
-            xref='paper', yref='paper', x=0.5, y=1, showarrow=False, font=dict(size=14)
-        )
-    ]
-)
-
-# Add summaries below each subplot
-fig.add_annotation(text='The scatter plot reveals a positive correlation between GDP per Capita and Gross Savings, especially for high-income countries.', xref='paper', yref='paper', x=0, y=0.75, showarrow=False, font=dict(size=12))
-fig.add_annotation(text='The bar chart shows that high-income countries generally have higher GDP per Capita compared to low-income countries.', xref='paper', yref='paper', x=0, y=0.30, showarrow=False, font=dict(size=12))
-fig.add_annotation(text='The scatter plot indicates no clear relationship between income group and gross savings.', xref='paper', yref='paper', x=0, y=-0.1, showarrow=False, font=dict(size=12))
-
-fig.show()
-```
-
-
-## Exercise 3.2: Creating a Dynamic Data Report
-
-By completing this exercise, you will be able to use `pandas` and `plotly` to
-- Select relevant data
-- Build a dynamic report
-- Add contextual text and summaries
-
-### Selecting Relevant Data
-
-```{python}
-# Select relevant data for the year 2020 and specific columns (country_code, fertility_rate, life_expectancy, continent)
-
-
-
-```
-
-### Building a Dynamic Report
-
-```{python}
-import plotly.express as px
-import plotly.graph_objects as go
-from plotly.subplots import make_subplots
-
-# Create a subplot figure with 3 rows and subplot titles
-
-
-
-
-
-# Adding a scatter plot trace to the figure
-# - x-axis: 'fertility_rate' from the selected population data
-# - y-axis: 'life_expectancy' from the selected population data
-# - mode: 'markers' to display points
-# - marker color: based on the 'continent' category codes, to differentiate points by continent
-# - text: 'country_code' to show country codes on hover
-# - name: 'Scatter' to label this trace
-# The trace is added to the first row and first column of the subplot grid
-
-
-
-
-
-# Adding a bar chart trace to the figure
-# - x-axis: 'country_code' from the selected population data
-# - y-axis: 'fertility_rate' from the selected population data
-# - marker color: based on the 'continent' category codes, to differentiate bars by continent
-# - name: 'Bar' to label this trace
-# The trace is added to the second row and first column of the subplot grid
-
-
-
-
-
-# Adding a scatter plot trace to the figure
-# - x-axis: 'country_code' from the selected population data
-# - y-axis: 'life_expectancy' from the selected population data
-# - mode: 'markers' to display points
-# - marker color: based on the 'continent' category codes, to differentiate points by continent
-# - name: 'Scatter' to label this trace
-# The trace is added to the third row and first column of the subplot grid
-
-
-
-
-
-# Update layout to include title, hide legend, and set height to 900
-
-
-
-```
-
-### Adding Contextual Text and Summaries
-
-```{python}
-# Copy over plot creation code from previous
-
-# Updating the layout of the figure
-# - Setting the title text of the entire figure
-# - Disabling the legend display
-# - Setting the height of the figure to 900 pixels
-# - Adding an annotation to provide additional information about the report
-#   - Annotation text: A brief description of the report content
-#   - xref and yref: Setting the reference frame to 'paper' coordinates (relative to the entire figure)
-#   - x and y: Positioning the annotation at the center top of the figure
-#   - showarrow: Disabling the arrow for the annotation
-#   - font: Setting the font size of the annotation text
-
-
-
-
-# Add summaries below each subplot
-fig.add_annotation(text='A negative correlation between Fertility Rate and Life Expectancy.', xref='paper', yref='paper', x=0, y=0.75, showarrow=False, font=dict(size=12))
-fig.add_annotation(text='Fertility rates vary significantly across countries, with African countries generally exhibiting higher fertility rates.', xref='paper', yref='paper', x=0, y=0.30, showarrow=False, font=dict(size=12))
-fig.add_annotation(text='Life expectancy varies across countries and continents, with European tending to have higher life expectancies.', xref='paper', yref='paper', x=0, y=-0.1, showarrow=False, font=dict(size=12))
-
-fig.show()
-```
-
 ### Self-Check
 
 By the end of this module, you should be able to:
@@ -1378,7 +1015,6 @@ By the end of this module, you should be able to:
 - [ ] Add interactive elements such as hover text, color encoding, and custom labels
 - [ ] Build multi-panel dashboards with `make_subplots` and `add_trace`
 - [ ] Combine `go.Scatter` and `go.Bar` traces into a single figure
-- [ ] Add contextual annotations and summary text to a report with `add_annotation`
 - [ ] Confirm Plotly figures render by initializing the notebook mode and calling `fig.show()`
 
 ---
@@ -1406,7 +1042,7 @@ flowchart LR
 
 
 
-## Walkthrough 4.1: Applying Your Skills, From Data to Insights
+## Walkthrough: Applying Your Skills, From Data to Insights
 
 ### Selecting a Dataset
 
@@ -1518,7 +1154,7 @@ flowchart LR
 By following these steps, you can effectively select, clean, transform, and analyze the `economies` dataset to gain valuable insights and address common industry problems or research questions.
 
 
-## Walkthrough 4.2: Finalizing and Presenting Your Data Analysis Project
+## Walkthrough: Finalizing and Presenting Your Data Analysis Project
 
 ### Integrate Feedback to Refine the Analysis
 
