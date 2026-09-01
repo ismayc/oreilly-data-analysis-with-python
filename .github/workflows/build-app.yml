@@ -10,7 +10,6 @@ on:
       - 'exercises.qmd'
       - 'exercises_solutions.qmd'
       - 'economies.csv'
-      - 'economies_indexed.csv'
       - 'populations.csv'
       - 'economies.xlsx'
       - 'populations.xlsx'

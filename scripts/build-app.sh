@@ -28,7 +28,7 @@ transform_body () {
 }
 cat scripts/headers/exercises-header.md <(echo) <(transform_body exercises.qmd)            > live/exercises.qmd
 cat scripts/headers/solutions-header.md <(echo) <(transform_body exercises_solutions.qmd)  > live/solutions.qmd
-cp economies.csv economies_indexed.csv populations.csv economies.xlsx populations.xlsx live/
+cp economies.csv populations.csv economies.xlsx populations.xlsx live/
 
 echo "==> Rendering Quarto Live site"
 ( cd live && rm -rf _site .quarto && quarto render )
@@ -49,7 +49,7 @@ perl -0777 -i -pe 's{!\s*pip install ([^"\\]*)}{my $p=$1;$p=~s/\s+/ /g;$p=~s/^ |
 # Tidy notebooks for plain Jupyter: drop the YAML cell, strip #| directives
 "$PYBIN" scripts/clean-notebooks.py \
   jupyterlite/contents/exercises.ipynb jupyterlite/contents/exercises_solutions.ipynb
-cp economies.csv economies_indexed.csv populations.csv economies.xlsx populations.xlsx jupyterlite/contents/
+cp economies.csv populations.csv economies.xlsx populations.xlsx jupyterlite/contents/
 
 echo "==> Building JupyterLite site"
 "$PYBIN" -m venv jupyterlite/.venv

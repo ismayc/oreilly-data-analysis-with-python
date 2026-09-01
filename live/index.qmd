@@ -36,7 +36,7 @@ or edit a cell to experiment with your own variations.
 - Click **Run Code** on any code cell to execute it in your browser.
 - Run the **import** cell and the **data-loading** cells near the top of a page first, then work top to bottom. Later cells reuse variables from earlier ones.
 - The **first** cell you run takes a few seconds while Python and the data packages load. After that it's fast.
-- The course datasets (`economies.csv`, `populations.csv`, their `.xlsx` versions, and `economies_indexed.csv`) are bundled with the page, so `pd.read_csv(...)` / `pd.read_excel(...)` just work.
+- The course datasets (`economies.csv`, `populations.csv`, and their `.xlsx` versions) are bundled with the page, so `pd.read_csv(...)` / `pd.read_excel(...)` just work.
 
 ::: {.callout-note}
 ## Need the originals?
