@@ -366,14 +366,13 @@ populations_fill_value.head()
 
 ```{python}
 # Convert the 'year' column to string type
-populations['year'] = populations['year'].astype(str)
-populations.dtypes
+populations_char_year = populations.astype({'year': 'str'})
+populations_char_year.dtypes
 ```
 
 ```{python}
 # Convert it back to integer
-populations['year'] = populations['year'].astype(int)
-populations.dtypes
+populations_char_year.astype({'year': 'int'}).dtypes
 ```
 
 #### Rename a Column
@@ -433,20 +432,25 @@ economies.groupby('income_group')['gdp_percapita'].mean()
 #### Applying a function element-wise with `map()`
 
 ```{python}
-# Convert income_group to uppercase using map()
-economies_plus = economies.copy()
-economies_plus['income_group_upper'] = economies['income_group'].map(str.upper)
-economies_plus.head()
+# Map each income_group to a short code using map() and a dictionary
+income_codes = {'High income': 'HIC',
+                'Upper middle income': 'UMC',
+                'Lower middle income': 'LMC',
+                'Low income': 'LIC',
+                'Not classified': 'NC'}
+economies.assign(
+    income_code=economies['income_group'].map(income_codes)
+).head()
 ```
 
 #### Applying a Function to Groups with `groupby()` and `agg()`
 
 ```{python}
 # Calculate the median gdp_percapita and inflation_rate for each income_group
-economies.groupby('income_group').agg({
-    'gdp_percapita': 'median',
-    'inflation_rate': 'median'
-})
+economies.groupby('income_group').agg(
+    gdp_median=('gdp_percapita', 'median'),
+    inflation_median=('inflation_rate', 'median')
+)
 ```
 
 ### Summary tables
@@ -470,11 +474,10 @@ flowchart TD
 
 ```{python}
 # Create a pivot table of gdp_percapita and inflation_rate by income_group and year
-pd.pivot_table(
-    economies,
+economies.pivot_table(
     values=['gdp_percapita', 'inflation_rate'],
-    index=['income_group'],
-    columns=['year'],
+    index='income_group',
+    columns='year',
     aggfunc='mean'
 )
 ```
@@ -516,31 +519,37 @@ populations.groupby('continent')['life_expectancy'].mean()
 #### Applying a function element-wise with `map()`
 
 ```{python}
-# Convert continent to uppercase using map()
-populations_plus = populations.copy()
-populations_plus['continent_upper'] = populations['continent'].map(str.upper)
-populations_plus.head()
+# Map each continent to a broader region using map() and a dictionary
+# (North America and South America combine into 'Americas')
+continent_regions = {'Africa': 'Africa',
+                     'Asia': 'Asia',
+                     'Europe': 'Europe',
+                     'North America': 'Americas',
+                     'South America': 'Americas',
+                     'Oceania': 'Oceania'}
+populations.assign(
+    region_group=populations['continent'].map(continent_regions)
+).head()
 ```
 
 #### Applying a function to groups with `groupby()` and `agg()`
 
 ```{python}
 # Calculate the median fertility rate and life expectancy for each continent
-populations.groupby('continent').agg({
-    'fertility_rate': 'median',
-    'life_expectancy': 'median'
-})
+populations.groupby('continent').agg(
+    fertility_median=('fertility_rate', 'median'),
+    life_expectancy_median=('life_expectancy', 'median')
+)
 ```
 
 ### Summary Tables
 
 ```{python}
 # Create a pivot table of fertility rate and life expectancy by continent and year
-pd.pivot_table(
-    populations,
+populations.pivot_table(
     values=['fertility_rate', 'life_expectancy'],
-    index=['continent'],
-    columns=['year'],
+    index='continent',
+    columns='year',
     aggfunc='mean'
 )
 ```
@@ -787,9 +796,6 @@ plt.show()
 # Filter data for selected African countries ('NGA', 'ETH', 'EGY', 'ZAF', 'DZA')
 # and the year 2020
 african_countries = ['NGA', 'ETH', 'EGY', 'ZAF', 'DZA']
-
-# Need to convert year back to an integer?
-populations['year'] = populations['year'].astype(int)
 
 data_2020_africa = populations[(populations['year'] == 2020) & (populations['country_code'].isin(african_countries))]
 
@@ -1078,16 +1084,10 @@ flowchart LR
 #### Example:
 - **Cleaning**:
   ```{python}
-  # Handle missing values
-  economies_cleaned = economies.fillna({
-      'gdp_percapita': economies['gdp_percapita'].mean(),
-      'gross_savings': economies['gross_savings'].mean(),
-      'inflation_rate': economies['inflation_rate'].mean(),
-      'total_investment': economies['total_investment'].mean(),
-      'unemployment_rate': economies['unemployment_rate'].mean(),
-      'exports': economies['exports'].mean(),
-      'imports': economies['imports'].mean()
-  })
+  # Handle missing values: fill each numeric column with its own mean
+  numeric_cols = ['gdp_percapita', 'gross_savings', 'inflation_rate',
+                  'total_investment', 'unemployment_rate', 'exports', 'imports']
+  economies_cleaned = economies.fillna(economies[numeric_cols].mean())
 
   # Convert categorical variables to category type
   economies_cleaned['income_group'] = economies_cleaned['income_group'].astype('category')
@@ -1099,7 +1099,10 @@ flowchart LR
 - **Transforming**:
   ```{python}
   # Create new columns for analysis
-  economies_cleaned['gdp_growth'] = economies_cleaned.groupby('code')['gdp_percapita'].pct_change()
+  # The data has one row every 4 years (2012, 2016, 2020, 2024), so this is
+  # growth over 4 years. Use the original gdp_percapita so that filled-in
+  # means do not create growth that never happened.
+  economies_cleaned['gdp_growth_4yr'] = economies.groupby('code')['gdp_percapita'].pct_change()
   economies_cleaned
   ```
 
@@ -1108,20 +1111,20 @@ flowchart LR
   import seaborn as sns
   import matplotlib.pyplot as plt
 
-  plt.clf()
-
   # Analyze the relationship between GDP per capita and gross savings
   sns.scatterplot(data=economies_cleaned, x='gdp_percapita', y='gross_savings', hue='income_group')
   plt.title('GDP Per Capita vs. Gross Savings by Income Group')
   plt.show()
-  plt.clf()
 
   # Analyze the trend of inflation rate over time for all classified income groups
   classified_data = economies_cleaned[economies_cleaned['income_group'] != 'Not classified']
+  # Drop the now-empty 'Not classified' category so it stays out of the legend
+  classified_data = classified_data.assign(
+      income_group=classified_data['income_group'].cat.remove_unused_categories())
   sns.lineplot(data=classified_data, x='year', y='inflation_rate',
                hue='income_group', errorbar=None)
   plt.title('Inflation Rate Over Time by Specified Income Group')
-  plt.legend(title='Income Group', labels=classified_data['income_group'].unique())
+  plt.legend(title='Income Group')
   plt.show()
   ```
 
@@ -1196,20 +1199,23 @@ By following these steps, you can effectively select, clean, transform, and anal
   ```{python}
   import plotly.express as px
 
+  # Keep only 2020, so each country appears once in each chart
+  economies_2020 = economies_cleaned[economies_cleaned['year'] == 2020]
+
   # Bar chart of GDP per Capita by Country and Income Group
-  bar_fig = px.bar(economies_cleaned, x='code', y='gdp_percapita', color='income_group',
+  bar_fig = px.bar(economies_2020, x='code', y='gdp_percapita', color='income_group',
                    title='GDP Per Capita by Country and Income Group (2020)',
                    labels={'gdp_percapita': 'GDP Per Capita', 'code': 'Country Code'})
   bar_fig.show()
 
   # Scatter plot of GDP per Capita vs. Gross Savings by Income Group
-  scatter_fig = px.scatter(economies_cleaned, x='gdp_percapita', y='gross_savings', color='income_group',
+  scatter_fig = px.scatter(economies_2020, x='gdp_percapita', y='gross_savings', color='income_group',
                            hover_name='code', title='GDP Per Capita vs. Gross Savings (2020)',
                            labels={'gdp_percapita': 'GDP Per Capita', 'gross_savings': 'Gross Savings (%)'})
   scatter_fig.show()
 
   # Scatter plot of GDP per Capita vs. Unemployment Rate by Income Group
-  scatter_fig_2 = px.scatter(economies_cleaned, x='gdp_percapita', y='unemployment_rate', color='income_group',
+  scatter_fig_2 = px.scatter(economies_2020, x='gdp_percapita', y='unemployment_rate', color='income_group',
                              hover_name='code', title='GDP Per Capita vs. Unemployment Rate (2020)',
                              labels={'gdp_percapita': 'GDP Per Capita', 'unemployment_rate': 'Unemployment Rate (%)'})
   scatter_fig_2.show()
