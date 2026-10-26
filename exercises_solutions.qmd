@@ -281,10 +281,7 @@ economies_char_year.info()
 
 ```{python}
 # Change the year of string type back to integer
-economies_int_year = economies_char_year.astype({'year': 'int'})
-
-# Display the information on the DataFrame with year as a string
-economies_int_year.info()
+economies_char_year.astype({'year': 'int'}).info()
 ```
 
 ### Rename a column
@@ -301,16 +298,14 @@ economies_renamed.head()
 
 ```{python}
 # Filter rows where 'gdp_percapita' is greater than 20,000
-economies_high_gdp = economies[economies['gdp_percapita'] > 20000]
-economies_high_gdp.head()
+economies[economies['gdp_percapita'] > 20000]
 ```
 
 > **Common Pitfall:** When combining multiple conditions, wrap each comparison in parentheses and use `&` (and) / `|` (or), not the Python keywords `and`/`or`. Forgetting the parentheses, e.g. `economies['inflation_rate'] < 0 & ...`, triggers an operator-precedence error because `&` binds more tightly than `<`.
 
 ```{python}
 # Filter rows where 'income_group' is 'High income'
-economies_high_income = economies[economies['income_group'] == 'High income']
-economies_high_income.head()
+economies[economies['income_group'] == 'High income']
 ```
 
 
@@ -318,8 +313,7 @@ economies_high_income.head()
 
 ```{python}
 # Filter rows where inflation_rate is less than 0 and income_group is 'Low income'
-deflation_low_income = economies[(economies['inflation_rate'] < 0) & (economies['income_group'] == 'Low income')]
-deflation_low_income.head()
+economies[(economies['inflation_rate'] < 0) & (economies['income_group'] == 'Low income')]
 ```
 
 
@@ -394,20 +388,17 @@ populations_renamed.head()
 
 ```{python}
 # Filter the DataFrame to include only rows where the 'continent' is 'Asia'
-populations_asia = populations[populations['continent'] == 'Asia']
-populations_asia.head()
+populations[populations['continent'] == 'Asia']
 ```
 
 ```{python}
 # Filter the DataFrame to include only rows where the 'year' is 2020
-populations_2020 = populations[populations['year'] == 2020]
-populations_2020.head()
+populations[populations['year'] == 2020]
 ```
 
 ```{python}
 # Filter the DataFrame to include only rows where the 'fertility_rate' is greater than 2
-populations_high_fertility = populations[populations['fertility_rate'] > 2]
-populations_high_fertility.head()
+populations[populations['fertility_rate'] > 2]
 ```
 
 
@@ -434,8 +425,7 @@ flowchart LR
 ### Grouping data
 
 ```{python}
-grouped_data = economies.groupby('income_group')['gdp_percapita'].mean()
-grouped_data
+economies.groupby('income_group')['gdp_percapita'].mean()
 ```
 
 ### Applying Functions
@@ -453,11 +443,10 @@ economies_plus.head()
 
 ```{python}
 # Calculate the median gdp_percapita and inflation_rate for each income_group
-median_values = economies.groupby('income_group').agg({
+economies.groupby('income_group').agg({
     'gdp_percapita': 'median',
     'inflation_rate': 'median'
 })
-median_values
 ```
 
 ### Summary tables
@@ -481,14 +470,13 @@ flowchart TD
 
 ```{python}
 # Create a pivot table of gdp_percapita and inflation_rate by income_group and year
-pivot_table = pd.pivot_table(
+pd.pivot_table(
     economies,
     values=['gdp_percapita', 'inflation_rate'],
     index=['income_group'],
     columns=['year'],
     aggfunc='mean'
 )
-pivot_table
 ```
 
 ### Analyzing categorical data
@@ -497,16 +485,14 @@ pivot_table
 
 ```{python}
 # Show counts of income_group by year
-cross_tab = pd.crosstab(economies['income_group'], economies['year'])
-cross_tab
+pd.crosstab(economies['income_group'], economies['year'])
 ```
 
 #### By getting group counts
 
 ```{python}
 # Count the occurrences of each income_group
-income_group_counts = economies['income_group'].value_counts()
-income_group_counts
+economies['income_group'].value_counts()
 ```
 
 ## Exercise #4: Transforming and Aggregating Data with Pandas
@@ -522,8 +508,7 @@ By completing this exercise, you will be able to use `pandas` to
 
 ```{python}
 # Group data by continent and calculate the mean life expectancy
-grouped_data = populations.groupby('continent')['life_expectancy'].mean()
-grouped_data
+populations.groupby('continent')['life_expectancy'].mean()
 ```
 
 ### Applying Functions
@@ -541,25 +526,23 @@ populations_plus.head()
 
 ```{python}
 # Calculate the median fertility rate and life expectancy for each continent
-median_values = populations.groupby('continent').agg({
+populations.groupby('continent').agg({
     'fertility_rate': 'median',
     'life_expectancy': 'median'
 })
-median_values
 ```
 
 ### Summary Tables
 
 ```{python}
 # Create a pivot table of fertility rate and life expectancy by continent and year
-pivot_table = pd.pivot_table(
+pd.pivot_table(
     populations,
     values=['fertility_rate', 'life_expectancy'],
     index=['continent'],
     columns=['year'],
     aggfunc='mean'
 )
-pivot_table
 ```
 
 ### Analyzing Categorical Data
@@ -568,16 +551,14 @@ pivot_table
 
 ```{python}
 # Create a cross-tabulation of continent and year
-cross_tab = pd.crosstab(populations['continent'], populations['year'])
-cross_tab
+pd.crosstab(populations['continent'], populations['year'])
 ```
 
 #### By Getting Group Counts
 
 ```{python}
 # Count the occurrences of each region
-region_counts = populations['region'].value_counts()
-region_counts
+populations['region'].value_counts()
 ```
 
 ### Self-Check

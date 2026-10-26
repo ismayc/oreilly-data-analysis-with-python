@@ -282,7 +282,6 @@ This can be extended to replace missing values with the mean, median, or mode of
 # Change the year of string type back to integer
 
 
-# Display the information on the DataFrame with year as a string
 
 ```
 
