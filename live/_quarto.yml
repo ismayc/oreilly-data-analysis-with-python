@@ -41,6 +41,7 @@ format:
         - seaborn
         - plotly
         - openpyxl
+        - nbformat
       resources:
         - economies.csv
         - populations.csv

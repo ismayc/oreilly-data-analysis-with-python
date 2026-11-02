@@ -23,7 +23,7 @@ execute:
 
 ```{python}
 #| eval: false
-!pip install pandas matplotlib seaborn plotly openpyxl
+!pip install pandas matplotlib seaborn plotly openpyxl nbformat
 ```
 
 ```{python}

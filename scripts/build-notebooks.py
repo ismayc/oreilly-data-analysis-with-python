@@ -48,7 +48,7 @@ def title_cell():
 PIP_CELL = [
     "# Run this once if any import below fails.\n",
     "# (Colab already ships most of these packages.)\n",
-    "!pip install -q pandas matplotlib seaborn plotly openpyxl\n",
+    "!pip install -q pandas matplotlib seaborn plotly openpyxl nbformat\n",
 ]
 
 
