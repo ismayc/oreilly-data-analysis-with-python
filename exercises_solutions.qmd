@@ -87,6 +87,12 @@ from plotly.subplots import make_subplots
 # For plotly to load directly in Jupyter notebook
 import plotly.offline as pyo
 pyo.init_notebook_mode(connected=True)
+
+# Colab draws plotly with its own renderer
+import sys
+if "google.colab" in sys.modules:
+    import plotly.io as pio
+    pio.renderers.default = "colab"
 ```
 
 ## Exercise #1: Setting Up the Python Environment
