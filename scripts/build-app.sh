@@ -53,8 +53,10 @@ cp economies.csv populations.csv economies.xlsx populations.xlsx jupyterlite/con
 
 echo "==> Building JupyterLite site"
 "$PYBIN" -m venv jupyterlite/.venv
+# plotly here bundles its jupyterlab-plotly labextension into the site. Without it,
+# figures fall back to a CDN script path that can stay blank on a chart's first run.
 jupyterlite/.venv/bin/python -m pip install -q --upgrade pip \
-  jupyterlite-core jupyterlite-pyodide-kernel jupyter-server
+  jupyterlite-core jupyterlite-pyodide-kernel jupyter-server plotly
 rm -rf jupyterlite/_output jupyterlite/.jupyterlite.doit.db
 jupyterlite/.venv/bin/jupyter lite build \
   --contents jupyterlite/contents --output-dir jupyterlite/_output
