@@ -959,7 +959,7 @@ western_data_2020 = data_2020[data_2020['code'].isin(western_europe)]
 
 
 # Update layout
-fig.update_layout(title_text='Simple Dashboard with Multiple Charts', showlegend=False)
+fig.update_layout(title_text='GDP Per Capita Dashboard', showlegend=False)
 fig.show()
 ```
 
@@ -1025,7 +1025,7 @@ south_american_data_2020 = data_2020[data_2020['continent'] == 'South America']
 
 
 # Update layout to add a title and hide the legend
-fig.update_layout(title_text='Simple Dashboard with Multiple Charts', showlegend=False)
+fig.update_layout(title_text='Life Expectancy Dashboard', showlegend=False)
 fig.show()
 ```
 

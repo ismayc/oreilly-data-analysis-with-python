@@ -932,8 +932,8 @@ data_2020 = economies[economies['year'] == 2020]
 
 # Create a subplot figure with 1 row and 2 columns
 fig = make_subplots(rows=1, cols=2,
-                    subplot_titles=('GDP Per Capita Over Years for Germany',
-                                    'GDP Per Capita in Western Europe in 2020'))
+                    subplot_titles=('Germany Over the Years',
+                                    'Western Europe in 2020'))
 
 # Line chart of GDP Per Capita for Germany
 deu_data = economies[economies['code'] == 'DEU']
@@ -947,7 +947,7 @@ bar_chart = go.Bar(x=western_data_2020['code'], y=western_data_2020['gdp_percapi
 fig.add_trace(bar_chart, row=1, col=2)
 
 # Update layout
-fig.update_layout(title_text='Simple Dashboard with Multiple Charts', showlegend=False)
+fig.update_layout(title_text='GDP Per Capita Dashboard', showlegend=False)
 fig.show()
 ```
 
@@ -1000,7 +1000,7 @@ from plotly.subplots import make_subplots
 data_2020 = populations[populations['year'] == 2020]
 
 # Create a subplot figure with 1 row and 2 columns
-fig = make_subplots(rows=1, cols=2, subplot_titles=('Life Expectancy Over Years for Brazil', 'Life Expectancy for Different Countries in 2020'))
+fig = make_subplots(rows=1, cols=2, subplot_titles=('Brazil Over the Years', 'South America in 2020'))
 
 # Line chart of Life Expectancy for Brazil
 bra_data = populations[populations['country_code'] == 'BRA']
@@ -1013,7 +1013,7 @@ bar_chart = go.Bar(x=south_american_data_2020['country'], y=south_american_data_
 fig.add_trace(bar_chart, row=1, col=2)
 
 # Update layout to add a title and hide the legend
-fig.update_layout(title_text='Simple Dashboard with Multiple Charts', showlegend=False)
+fig.update_layout(title_text='Life Expectancy Dashboard', showlegend=False)
 fig.show()
 ```
 
