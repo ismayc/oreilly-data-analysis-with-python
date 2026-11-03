@@ -431,7 +431,7 @@ flowchart LR
 
 ```{python}
 # Get the overall mean gdp per capita
-economies['gdp_percapita'].mean()
+print(economies['gdp_percapita'].mean())
 ```
 
 ```{python}
