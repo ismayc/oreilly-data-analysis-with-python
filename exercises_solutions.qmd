@@ -258,15 +258,14 @@ economies_cleaned_any
 
 ```{python}
 # Remove rows with missing values in specific columns
-economies_cleaned_subset = economies.dropna(subset=['exports', 'imports'])
-economies_cleaned_subset
+economies.dropna(subset=['exports', 'imports'])
 ```
 
 #### Replace missing values with specific value
 
 ```{python}
 # Replace missing values with a specific value (e.g., 0 for numerical columns, 'Unknown' for categorical columns)
-economies_fill_value = economies.fillna({
+economies.fillna({
     'gdp_percapita': 0,
     'gross_savings': 0,
     'inflation_rate': 0,
@@ -275,15 +274,12 @@ economies_fill_value = economies.fillna({
     'exports': 0,
     'imports': 0,
     'income_group': 'Unknown'
-})
-
-# Display the DataFrame after replacing missing values with specific values
-economies_fill_value.head()
+}).head()
 ```
 
 This can be extended to replace missing values with the mean, median, or mode of the column too.
 
-> **Common Pitfall:** Methods like `dropna`, `fillna`, and `rename` return a new DataFrame by default and do NOT modify the original in place. Assign the result to a variable (or pass `inplace=True`) or your changes will be lost. Reassigning, as done here, is the recommended pattern.
+> **Common Pitfall:** Methods like `dropna`, `fillna`, and `rename` return a new DataFrame by default and do NOT modify the original in place. Assign the result to a variable (or pass `inplace=True`) or your changes will be lost. Assigning, as the first `dropna` cell above does, is the recommended pattern when later code needs the result.
 
 ### Convert a column to a different data type
 
@@ -304,8 +300,7 @@ economies_char_year.astype({'year': 'int'}).info()
 
 ```{python}
 # Rename the 'income_group' column to 'income_category'
-economies_renamed = economies.rename(columns={'income_group': 'income_category'})
-economies_renamed.head()
+economies.rename(columns={'income_group': 'income_category'}).head()
 ```
 
 ### Filtering rows based on conditions
@@ -347,15 +342,13 @@ By completing this exercise, you will be able to use `pandas` to
 
 ```{python}
 # Remove rows with any missing values
-populations_cleaned_any = populations.dropna(how='any')
-populations_cleaned_any
+populations.dropna(how='any')
 ```
 
 
 ```{python}
 # Remove rows with missing values in specific columns
-populations_cleaned_subset = populations.dropna(subset=['infant_mortality'])
-populations_cleaned_subset
+populations.dropna(subset=['infant_mortality'])
 ```
 
 #### Replace missing values with specific value
@@ -363,7 +356,7 @@ populations_cleaned_subset
 ```{python}
 # Replace missing values with a specific value (e.g., 0 for numerical columns,
 # 'Unknown' for categorical columns)
-populations_fill_value = populations.fillna({
+populations.fillna({
     'fertility_rate': 0,
     'life_expectancy': 0,
     'infant_mortality': 0,
@@ -371,9 +364,7 @@ populations_fill_value = populations.fillna({
     'size': 0,
     'continent': 'Unknown',
     'region': 'Unknown'
-})
-
-populations_fill_value.head()
+}).head()
 ```
 
 ### Convert a Column to a Different Data Type and Rename a Column
@@ -395,8 +386,7 @@ populations_char_year.astype({'year': 'int'}).dtypes
 
 ```{python}
 # Rename the 'fertility_rate' column to 'fertility'
-populations_renamed = populations.rename(columns={'fertility_rate': 'fertility'})
-populations_renamed.head()
+populations.rename(columns={'fertility_rate': 'fertility'}).head()
 ```
 
 ### Filter a DataFrame
@@ -440,6 +430,12 @@ flowchart LR
 ### Grouping data
 
 ```{python}
+# Get the overall mean gdp per capita
+economies['gdp_percapita'].mean()
+```
+
+```{python}
+# Break the mean down by income_group
 economies.groupby('income_group')['gdp_percapita'].mean()
 ```
 

@@ -254,25 +254,23 @@ flowchart TD
 #### Replace missing values with specific value
 
 ```{python}
+#| eval: false
 # Replace missing values with a specific value (e.g., 0 for numerical columns, 'Unknown' for categorical columns)
-
-
-
-
-
-
-
-
-
-
-
-# Display the DataFrame after replacing missing values with specific values
-
+economies.fillna({
+    'gdp_percapita': 0,
+    'gross_savings': 0,
+    'inflation_rate': 0,
+    'total_investment': 0,
+    'unemployment_rate': 0,
+    'exports': 0,
+    'imports': 0,
+    'income_group': 'Unknown'
+})
 ```
 
 This can be extended to replace missing values with the mean, median, or mode of the column too.
 
-> **Common Pitfall:** Methods like `dropna`, `fillna`, and `rename` return a new DataFrame by default and do NOT modify the original in place. Assign the result to a variable (or pass `inplace=True`) or your changes will be lost. Reassigning is the recommended pattern.
+> **Common Pitfall:** Methods like `dropna`, `fillna`, and `rename` return a new DataFrame by default and do NOT modify the original in place. Assign the result to a variable (or pass `inplace=True`) or your changes will be lost. Assigning, as the first `dropna` cell above does, is the recommended pattern.
 
 ### Convert a column to a different data type
 
@@ -432,8 +430,12 @@ flowchart LR
 ### Grouping data
 
 ```{python}
-# Group by income_group and take the mean gdp_percapita
+# Get the overall mean gdp per capita
 
+```
+
+```{python}
+# Break the mean down by income_group
 
 ```
 
