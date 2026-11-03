@@ -53,6 +53,11 @@ for path in sys.argv[1:]:
             else:
                 cells.pop(0)
 
+    # 1b. Drop cells meant only for the rendered HTML page.
+    #     (quarto convert moves a cell's `tags` option into its metadata.)
+    cells = [c for c in cells
+             if "html-only" not in c.get("metadata", {}).get("tags", [])]
+
     # 2. Strip Quarto `#|` directive lines from code cells.
     for c in cells:
         if c.get("cell_type") == "code":

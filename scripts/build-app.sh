@@ -21,6 +21,7 @@ echo "==> Generating Quarto Live pages"
 transform_body () {
   perl -0777 -pe '
     s/\A---\n.*?\n---\n//s;                                               # drop YAML front matter
+    s/```\{python\}\n#\| include: false\n#\| tags: \[html-only\]\n.*?\n```\n+//gs;     # drop html-only cells
     s/```\{python[^}\n]*\}/```{pyodide}/g;                                # python cells -> pyodide
     s/^(\s*)!\s*pip install.*/$1# pip install not needed in-browser (packages auto-load)/mg;  # neutralize pip
     s/\A\n+//;                                                            # trim leading blank lines

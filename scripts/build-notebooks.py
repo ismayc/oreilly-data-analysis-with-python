@@ -57,9 +57,14 @@ def is_yaml_cell(cell):
     return cell["cell_type"] == "markdown" and src.startswith("---") and "title:" in src
 
 
+def is_html_only(cell):
+    """A cell tagged html-only runs in the rendered page and never in a notebook."""
+    return "html-only" in cell.get("metadata", {}).get("tags", [])  # quarto convert puts tags here
+
+
 def clean(nb_name):
     nb = json.loads(Path(nb_name).read_text())
-    cells = [c for c in nb["cells"] if not is_yaml_cell(c)]
+    cells = [c for c in nb["cells"] if not is_yaml_cell(c) and not is_html_only(c)]
 
     kept = []
     for c in cells:

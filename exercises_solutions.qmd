@@ -22,6 +22,16 @@ execute:
 ```
 
 ```{python}
+#| include: false
+#| tags: [html-only]
+# Quarto's setup forces a 30 px top margin on every Plotly template, which puts a
+# dashboard's main title on top of its subplot titles. Restore Plotly's default.
+import plotly.io as pio
+for template in pio.templates.keys():
+    pio.templates[template].layout.margin = None
+```
+
+```{python}
 #| eval: false
 !pip install pandas matplotlib seaborn plotly openpyxl nbformat
 ```
