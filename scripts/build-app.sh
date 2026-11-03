@@ -5,6 +5,7 @@
 #
 #   app/
 #   ├── index.html      landing page (from scripts/app-index.html)
+#   ├── reset.html      erases this browser's saved JupyterLite copies
 #   ├── quarto/         Quarto Live site   (rendered from live/)
 #   └── jupyterlite/    JupyterLite site   (built from the .ipynb)
 #
@@ -67,6 +68,7 @@ echo "==> Assembling app/"
 rm -rf app/quarto app/jupyterlite app/index.html
 mkdir -p app
 cp scripts/app-index.html app/index.html
+cp scripts/reset.html app/reset.html   # erases saved JupyterLite copies in the visitor's browser
 cp -R live/_site        app/quarto
 cp -R jupyterlite/_output app/jupyterlite
 
