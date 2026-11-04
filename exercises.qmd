@@ -97,6 +97,7 @@ if "google.colab" in sys.modules:
 ## Exercise #1: Setting Up the Python Environment
 
 By completing this exercise, you will be able to
+
 - Import necessary Python packages
 - Check for successful package loading
 
@@ -168,6 +169,7 @@ flowchart TD
 ## Exercise #2: Loading and Inspecting Data with Pandas
 
 By completing this exercise, you will be able to use `pandas` to
+
 - Import data from a CSV or from an Excel file
 - Perform an initial exploration of the data
 
@@ -329,6 +331,7 @@ This can be extended to replace missing values with the mean, median, or mode of
 ## Exercise #3: Cleaning and Preparing Data with Pandas
 
 By completing this exercise, you will be able to use `pandas` to
+
 - Handle missing data
 - Convert a column to a different data type
 - Rename a column
@@ -518,6 +521,7 @@ flowchart TD
 ## Exercise #4: Transforming and Aggregating Data with Pandas
 
 By completing this exercise, you will be able to use `pandas` to
+
 - Aggregate data effectively by grouping it
 - Transform data by applying functions element-wise or to groups
 - Create summary tables
@@ -760,6 +764,7 @@ plt.show()
 ## Exercise #5: Data Visualization Techniques with Matplotlib and Seaborn
 
 By completing this exercise, you will be able to use `matplotlib` and `seaborn` to
+
 - Create line plots and bar charts
 - Add labels and titles
 - Adjust axes and tick marks
@@ -976,6 +981,7 @@ fig.show()
 ## Exercise #6: Interactive Charts and Dashboards with Plotly
 
 By completing this exercise, you will be able to use `plotly` to
+
 - Create a basic interactive chart
 - Add interactive elements: hover, zoom, and selection tools
 - Design a simple dashboard with multiple charts
