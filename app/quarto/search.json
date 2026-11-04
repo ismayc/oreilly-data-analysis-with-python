@@ -18,7 +18,7 @@
     "href": "solutions.html#exercise-1-setting-up-the-python-environment",
     "title": "Solutions: Data Analysis with Python",
     "section": "Exercise #1: Setting Up the Python Environment",
-    "text": "Exercise #1: Setting Up the Python Environment\nBy completing this exercise, you will be able to - Import necessary Python packages - Check for successful package loading\nFollow the instructions above in Walkthrough to check for correct installation of necessary packages. We’ll wait a few minutes to make sure as many of you are set up as possible. Please give a thumbs up in the pulse check if you are ready to move on."
+    "text": "Exercise #1: Setting Up the Python Environment\nBy completing this exercise, you will be able to\n\nImport necessary Python packages\nCheck for successful package loading\n\nFollow the instructions above in Walkthrough to check for correct installation of necessary packages. We’ll wait a few minutes to make sure as many of you are set up as possible. Please give a thumbs up in the pulse check if you are ready to move on."
   },
   {
     "objectID": "solutions.html#walkthrough-2-loading-and-inspecting-data-with-pandas",
@@ -32,7 +32,7 @@
     "href": "solutions.html#exercise-2-loading-and-inspecting-data-with-pandas",
     "title": "Solutions: Data Analysis with Python",
     "section": "Exercise #2: Loading and Inspecting Data with Pandas",
-    "text": "Exercise #2: Loading and Inspecting Data with Pandas\nBy completing this exercise, you will be able to use pandas to - Import data from a CSV or from an Excel file - Perform an initial exploration of the data"
+    "text": "Exercise #2: Loading and Inspecting Data with Pandas\nBy completing this exercise, you will be able to use pandas to\n\nImport data from a CSV or from an Excel file\nPerform an initial exploration of the data"
   },
   {
     "objectID": "solutions.html#walkthrough-3-cleaning-and-preparing-data-with-pandas",
@@ -46,7 +46,7 @@
     "href": "solutions.html#exercise-3-cleaning-and-preparing-data-with-pandas",
     "title": "Solutions: Data Analysis with Python",
     "section": "Exercise #3: Cleaning and Preparing Data with Pandas",
-    "text": "Exercise #3: Cleaning and Preparing Data with Pandas\nBy completing this exercise, you will be able to use pandas to - Handle missing data - Convert a column to a different data type - Rename a column - Filter a DataFrame\n\nHandle Missing Data\n\nRemove rows\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nReplace missing values with specific value\n\n\n\n\n\n\n\n\n\nConvert a Column to a Different Data Type and Rename a Column\n\nConvert a Column to a Different Data Type\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRename a Column\n\n\n\n\n\n\n\n\n\nFilter a DataFrame"
+    "text": "Exercise #3: Cleaning and Preparing Data with Pandas\nBy completing this exercise, you will be able to use pandas to\n\nHandle missing data\nConvert a column to a different data type\nRename a column\nFilter a DataFrame\n\n\nHandle Missing Data\n\nRemove rows\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nReplace missing values with specific value\n\n\n\n\n\n\n\n\n\nConvert a Column to a Different Data Type and Rename a Column\n\nConvert a Column to a Different Data Type\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRename a Column\n\n\n\n\n\n\n\n\n\nFilter a DataFrame"
   },
   {
     "objectID": "solutions.html#walkthrough-4-transforming-and-aggregating-data-with-pandas",
@@ -60,7 +60,7 @@
     "href": "solutions.html#exercise-4-transforming-and-aggregating-data-with-pandas",
     "title": "Solutions: Data Analysis with Python",
     "section": "Exercise #4: Transforming and Aggregating Data with Pandas",
-    "text": "Exercise #4: Transforming and Aggregating Data with Pandas\nBy completing this exercise, you will be able to use pandas to - Aggregate data effectively by grouping it - Transform data by applying functions element-wise or to groups - Create summary tables - Analyze categorical data using cross-tabulation and counts\n\nGrouping Data\n\n\n\n\n\n\n\n\nApplying Functions\n\nApplying a function element-wise with map()\n\n\n\n\n\n\n\n\nApplying a function to groups with groupby() and agg()\n\n\n\n\n\n\n\n\n\nSummary Tables\n\n\n\n\n\n\n\n\nAnalyzing Categorical Data\n\nUsing Cross-Tabulation\n\n\n\n\n\n\n\n\nBy Getting Group Counts\n\n\n\n\n\n\n\n\n\nSelf-Check\nBy the end of this module, you should be able to:\n\nLoad data from CSV and Excel files with read_csv and read_excel\nInspect a DataFrame using head(), info(), and describe()\nHandle missing data by dropping rows or filling values with dropna and fillna\nConvert column data types and rename columns\nFilter rows using single and multiple boolean conditions\nAggregate and summarize data with groupby, agg, pivot_table, crosstab, and value_counts"
+    "text": "Exercise #4: Transforming and Aggregating Data with Pandas\nBy completing this exercise, you will be able to use pandas to\n\nAggregate data effectively by grouping it\nTransform data by applying functions element-wise or to groups\nCreate summary tables\nAnalyze categorical data using cross-tabulation and counts\n\n\nGrouping Data\n\n\n\n\n\n\n\n\nApplying Functions\n\nApplying a function element-wise with map()\n\n\n\n\n\n\n\n\nApplying a function to groups with groupby() and agg()\n\n\n\n\n\n\n\n\n\nSummary Tables\n\n\n\n\n\n\n\n\nAnalyzing Categorical Data\n\nUsing Cross-Tabulation\n\n\n\n\n\n\n\n\nBy Getting Group Counts\n\n\n\n\n\n\n\n\n\nSelf-Check\nBy the end of this module, you should be able to:\n\nLoad data from CSV and Excel files with read_csv and read_excel\nInspect a DataFrame using head(), info(), and describe()\nHandle missing data by dropping rows or filling values with dropna and fillna\nConvert column data types and rename columns\nFilter rows using single and multiple boolean conditions\nAggregate and summarize data with groupby, agg, pivot_table, crosstab, and value_counts"
   },
   {
     "objectID": "solutions.html#walkthrough-5-data-visualization-techniques-with-matplotlib-and-seaborn",
@@ -74,7 +74,7 @@
     "href": "solutions.html#exercise-5-data-visualization-techniques-with-matplotlib-and-seaborn",
     "title": "Solutions: Data Analysis with Python",
     "section": "Exercise #5: Data Visualization Techniques with Matplotlib and Seaborn",
-    "text": "Exercise #5: Data Visualization Techniques with Matplotlib and Seaborn\nBy completing this exercise, you will be able to use matplotlib and seaborn to - Create line plots and bar charts - Add labels and titles - Adjust axes and tick marks - Draw a histogram, boxplot, and violin plot\n\nLine Plot\n\n\n\n\n\n\n\n\nBar Chart\n\n\n\n\n\n\n\n\nAdding Labels and Titles\n\n\n\n\n\n\n\n\nAdjusting Axes and Tick Marks\n\n\n\n\n\n\n\n\nHistogram with Seaborn\n\n\n\n\n\n\n\n\nBoxplot with Seaborn\n\n\n\n\n\n\n\n\nViolin Plot with Seaborn\n\n\n\n\n\n\n\n\nSelf-Check\nBy the end of this module, you should be able to:\n\nCreate line plots and bar charts (vertical and horizontal) with matplotlib\nAdd axis labels, titles, and gridlines to a plot\nAdjust axis limits and tick marks with ylim, xticks, and yticks\nDraw a histogram, boxplot, and violin plot with seaborn\nExplain what each chart type reveals about a distribution or comparison"
+    "text": "Exercise #5: Data Visualization Techniques with Matplotlib and Seaborn\nBy completing this exercise, you will be able to use matplotlib and seaborn to\n\nCreate line plots and bar charts\nAdd labels and titles\nAdjust axes and tick marks\nDraw a histogram, boxplot, and violin plot\n\n\nLine Plot\n\n\n\n\n\n\n\n\nBar Chart\n\n\n\n\n\n\n\n\nAdding Labels and Titles\n\n\n\n\n\n\n\n\nAdjusting Axes and Tick Marks\n\n\n\n\n\n\n\n\nHistogram with Seaborn\n\n\n\n\n\n\n\n\nBoxplot with Seaborn\n\n\n\n\n\n\n\n\nViolin Plot with Seaborn\n\n\n\n\n\n\n\n\nSelf-Check\nBy the end of this module, you should be able to:\n\nCreate line plots and bar charts (vertical and horizontal) with matplotlib\nAdd axis labels, titles, and gridlines to a plot\nAdjust axis limits and tick marks with ylim, xticks, and yticks\nDraw a histogram, boxplot, and violin plot with seaborn\nExplain what each chart type reveals about a distribution or comparison"
   },
   {
     "objectID": "solutions.html#walkthrough-6-interactive-charts-and-dashboards-with-plotly",
@@ -88,7 +88,7 @@
     "href": "solutions.html#exercise-6-interactive-charts-and-dashboards-with-plotly",
     "title": "Solutions: Data Analysis with Python",
     "section": "Exercise #6: Interactive Charts and Dashboards with Plotly",
-    "text": "Exercise #6: Interactive Charts and Dashboards with Plotly\nBy completing this exercise, you will be able to use plotly to - Create a basic interactive chart - Add interactive elements: hover, zoom, and selection tools - Design a simple dashboard with multiple charts\n\nBasic Interactive Chart\n\n\n\n\n\n\n\n\nAdding Interactive Elements\n\n\n\n\n\n\n\n\nDesigning a Simple Dashboard\n\n\n\n\n\n\n\n\nSelf-Check\nBy the end of this module, you should be able to:\n\nCreate basic interactive charts with Plotly Express (px.line, px.scatter)\nAdd interactive elements such as hover text, color encoding, and custom labels\nBuild multi-panel dashboards with make_subplots and add_trace\nCombine go.Scatter and go.Bar traces into a single figure\nConfirm Plotly figures render by initializing the notebook mode and calling fig.show()"
+    "text": "Exercise #6: Interactive Charts and Dashboards with Plotly\nBy completing this exercise, you will be able to use plotly to\n\nCreate a basic interactive chart\nAdd interactive elements: hover, zoom, and selection tools\nDesign a simple dashboard with multiple charts\n\n\nBasic Interactive Chart\n\n\n\n\n\n\n\n\nAdding Interactive Elements\n\n\n\n\n\n\n\n\nDesigning a Simple Dashboard\n\n\n\n\n\n\n\n\nSelf-Check\nBy the end of this module, you should be able to:\n\nCreate basic interactive charts with Plotly Express (px.line, px.scatter)\nAdd interactive elements such as hover text, color encoding, and custom labels\nBuild multi-panel dashboards with make_subplots and add_trace\nCombine go.Scatter and go.Bar traces into a single figure\nConfirm Plotly figures render by initializing the notebook mode and calling fig.show()"
   },
   {
     "objectID": "solutions.html#walkthrough-applying-your-skills-from-data-to-insights",
@@ -144,7 +144,7 @@
     "href": "exercises.html#exercise-1-setting-up-the-python-environment",
     "title": "Walkthroughs & Exercises: Data Analysis with Python",
     "section": "Exercise #1: Setting Up the Python Environment",
-    "text": "Exercise #1: Setting Up the Python Environment\nBy completing this exercise, you will be able to - Import necessary Python packages - Check for successful package loading\nFollow the instructions above in Walkthrough to check for correct installation of necessary packages. We’ll wait a few minutes to make sure as many of you are set up as possible. Please give a thumbs up in the pulse check if you are ready to move on."
+    "text": "Exercise #1: Setting Up the Python Environment\nBy completing this exercise, you will be able to\n\nImport necessary Python packages\nCheck for successful package loading\n\nFollow the instructions above in Walkthrough to check for correct installation of necessary packages. We’ll wait a few minutes to make sure as many of you are set up as possible. Please give a thumbs up in the pulse check if you are ready to move on."
   },
   {
     "objectID": "exercises.html#walkthrough-2-loading-and-inspecting-data-with-pandas",
@@ -158,7 +158,7 @@
     "href": "exercises.html#exercise-2-loading-and-inspecting-data-with-pandas",
     "title": "Walkthroughs & Exercises: Data Analysis with Python",
     "section": "Exercise #2: Loading and Inspecting Data with Pandas",
-    "text": "Exercise #2: Loading and Inspecting Data with Pandas\nBy completing this exercise, you will be able to use pandas to - Import data from a CSV or from an Excel file - Perform an initial exploration of the data"
+    "text": "Exercise #2: Loading and Inspecting Data with Pandas\nBy completing this exercise, you will be able to use pandas to\n\nImport data from a CSV or from an Excel file\nPerform an initial exploration of the data"
   },
   {
     "objectID": "exercises.html#walkthrough-3-cleaning-and-preparing-data-with-pandas",
@@ -172,7 +172,7 @@
     "href": "exercises.html#exercise-3-cleaning-and-preparing-data-with-pandas",
     "title": "Walkthroughs & Exercises: Data Analysis with Python",
     "section": "Exercise #3: Cleaning and Preparing Data with Pandas",
-    "text": "Exercise #3: Cleaning and Preparing Data with Pandas\nBy completing this exercise, you will be able to use pandas to - Handle missing data - Convert a column to a different data type - Rename a column - Filter a DataFrame\n\nHandle Missing Data\n\nRemove rows\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nReplace missing values with specific value\n\n\n\n\n\n\n\n\n\nConvert a Column to a Different Data Type and Rename a Column\n\nConvert a Column to a Different Data Type\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRename a Column\n\n\n\n\n\n\n\n\n\nFilter a DataFrame"
+    "text": "Exercise #3: Cleaning and Preparing Data with Pandas\nBy completing this exercise, you will be able to use pandas to\n\nHandle missing data\nConvert a column to a different data type\nRename a column\nFilter a DataFrame\n\n\nHandle Missing Data\n\nRemove rows\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nReplace missing values with specific value\n\n\n\n\n\n\n\n\n\nConvert a Column to a Different Data Type and Rename a Column\n\nConvert a Column to a Different Data Type\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRename a Column\n\n\n\n\n\n\n\n\n\nFilter a DataFrame"
   },
   {
     "objectID": "exercises.html#walkthrough-4-transforming-and-aggregating-data-with-pandas",
@@ -186,7 +186,7 @@
     "href": "exercises.html#exercise-4-transforming-and-aggregating-data-with-pandas",
     "title": "Walkthroughs & Exercises: Data Analysis with Python",
     "section": "Exercise #4: Transforming and Aggregating Data with Pandas",
-    "text": "Exercise #4: Transforming and Aggregating Data with Pandas\nBy completing this exercise, you will be able to use pandas to - Aggregate data effectively by grouping it - Transform data by applying functions element-wise or to groups - Create summary tables - Analyze categorical data using cross-tabulation and counts\n\nGrouping Data\n\n\n\n\n\n\n\n\nApplying Functions\n\nApplying a function element-wise with map()\n\n\n\n\n\n\n\n\nApplying a function to groups with groupby() and agg()\n\n\n\n\n\n\n\n\n\nSummary Tables\n\n\n\n\n\n\n\n\nAnalyzing Categorical Data\n\nUsing Cross-Tabulation\n\n\n\n\n\n\n\n\nBy Getting Group Counts\n\n\n\n\n\n\n\n\n\nSelf-Check\nBy the end of this module, you should be able to:\n\nLoad data from CSV and Excel files with read_csv and read_excel\nInspect a DataFrame using head(), info(), and describe()\nHandle missing data by dropping rows or filling values with dropna and fillna\nConvert column data types and rename columns\nFilter rows using single and multiple boolean conditions\nAggregate and summarize data with groupby, agg, pivot_table, crosstab, and value_counts"
+    "text": "Exercise #4: Transforming and Aggregating Data with Pandas\nBy completing this exercise, you will be able to use pandas to\n\nAggregate data effectively by grouping it\nTransform data by applying functions element-wise or to groups\nCreate summary tables\nAnalyze categorical data using cross-tabulation and counts\n\n\nGrouping Data\n\n\n\n\n\n\n\n\nApplying Functions\n\nApplying a function element-wise with map()\n\n\n\n\n\n\n\n\nApplying a function to groups with groupby() and agg()\n\n\n\n\n\n\n\n\n\nSummary Tables\n\n\n\n\n\n\n\n\nAnalyzing Categorical Data\n\nUsing Cross-Tabulation\n\n\n\n\n\n\n\n\nBy Getting Group Counts\n\n\n\n\n\n\n\n\n\nSelf-Check\nBy the end of this module, you should be able to:\n\nLoad data from CSV and Excel files with read_csv and read_excel\nInspect a DataFrame using head(), info(), and describe()\nHandle missing data by dropping rows or filling values with dropna and fillna\nConvert column data types and rename columns\nFilter rows using single and multiple boolean conditions\nAggregate and summarize data with groupby, agg, pivot_table, crosstab, and value_counts"
   },
   {
     "objectID": "exercises.html#walkthrough-5-data-visualization-techniques-with-matplotlib-and-seaborn",
@@ -200,7 +200,7 @@
     "href": "exercises.html#exercise-5-data-visualization-techniques-with-matplotlib-and-seaborn",
     "title": "Walkthroughs & Exercises: Data Analysis with Python",
     "section": "Exercise #5: Data Visualization Techniques with Matplotlib and Seaborn",
-    "text": "Exercise #5: Data Visualization Techniques with Matplotlib and Seaborn\nBy completing this exercise, you will be able to use matplotlib and seaborn to - Create line plots and bar charts - Add labels and titles - Adjust axes and tick marks - Draw a histogram, boxplot, and violin plot\n\nLine Plot\n\n\n\n\n\n\n\n\nBar Chart\n\n\n\n\n\n\n\n\nAdding Labels and Titles\n\n\n\n\n\n\n\n\nAdjusting Axes and Tick Marks\n\n\n\n\n\n\n\n\nHistogram with Seaborn\n\n\n\n\n\n\n\n\nBoxplot with Seaborn\n\n\n\n\n\n\n\n\nViolin Plot with Seaborn\n\n\n\n\n\n\n\n\nSelf-Check\nBy the end of this module, you should be able to:\n\nCreate line plots and bar charts (vertical and horizontal) with matplotlib\nAdd axis labels, titles, and gridlines to a plot\nAdjust axis limits and tick marks with ylim, xticks, and yticks\nDraw a histogram, boxplot, and violin plot with seaborn\nExplain what each chart type reveals about a distribution or comparison"
+    "text": "Exercise #5: Data Visualization Techniques with Matplotlib and Seaborn\nBy completing this exercise, you will be able to use matplotlib and seaborn to\n\nCreate line plots and bar charts\nAdd labels and titles\nAdjust axes and tick marks\nDraw a histogram, boxplot, and violin plot\n\n\nLine Plot\n\n\n\n\n\n\n\n\nBar Chart\n\n\n\n\n\n\n\n\nAdding Labels and Titles\n\n\n\n\n\n\n\n\nAdjusting Axes and Tick Marks\n\n\n\n\n\n\n\n\nHistogram with Seaborn\n\n\n\n\n\n\n\n\nBoxplot with Seaborn\n\n\n\n\n\n\n\n\nViolin Plot with Seaborn\n\n\n\n\n\n\n\n\nSelf-Check\nBy the end of this module, you should be able to:\n\nCreate line plots and bar charts (vertical and horizontal) with matplotlib\nAdd axis labels, titles, and gridlines to a plot\nAdjust axis limits and tick marks with ylim, xticks, and yticks\nDraw a histogram, boxplot, and violin plot with seaborn\nExplain what each chart type reveals about a distribution or comparison"
   },
   {
     "objectID": "exercises.html#walkthrough-6-interactive-charts-and-dashboards-with-plotly",
@@ -214,7 +214,7 @@
     "href": "exercises.html#exercise-6-interactive-charts-and-dashboards-with-plotly",
     "title": "Walkthroughs & Exercises: Data Analysis with Python",
     "section": "Exercise #6: Interactive Charts and Dashboards with Plotly",
-    "text": "Exercise #6: Interactive Charts and Dashboards with Plotly\nBy completing this exercise, you will be able to use plotly to - Create a basic interactive chart - Add interactive elements: hover, zoom, and selection tools - Design a simple dashboard with multiple charts\n\nBasic Interactive Chart\n\n\n\n\n\n\n\n\nAdding Interactive Elements\n\n\n\n\n\n\n\n\nDesigning a Simple Dashboard\n\n\n\n\n\n\n\n\nSelf-Check\nBy the end of this module, you should be able to:\n\nCreate basic interactive charts with Plotly Express (px.line, px.scatter)\nAdd interactive elements such as hover text, color encoding, and custom labels\nBuild multi-panel dashboards with make_subplots and add_trace\nCombine go.Scatter and go.Bar traces into a single figure\nConfirm Plotly figures render by initializing the notebook mode and calling fig.show()"
+    "text": "Exercise #6: Interactive Charts and Dashboards with Plotly\nBy completing this exercise, you will be able to use plotly to\n\nCreate a basic interactive chart\nAdd interactive elements: hover, zoom, and selection tools\nDesign a simple dashboard with multiple charts\n\n\nBasic Interactive Chart\n\n\n\n\n\n\n\n\nAdding Interactive Elements\n\n\n\n\n\n\n\n\nDesigning a Simple Dashboard\n\n\n\n\n\n\n\n\nSelf-Check\nBy the end of this module, you should be able to:\n\nCreate basic interactive charts with Plotly Express (px.line, px.scatter)\nAdd interactive elements such as hover text, color encoding, and custom labels\nBuild multi-panel dashboards with make_subplots and add_trace\nCombine go.Scatter and go.Bar traces into a single figure\nConfirm Plotly figures render by initializing the notebook mode and calling fig.show()"
   },
   {
     "objectID": "exercises.html#walkthrough-applying-your-skills-from-data-to-insights",
